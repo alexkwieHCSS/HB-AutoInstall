@@ -1,6 +1,0 @@
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\bin\Debug\WebWordPressLibrary.rxtmg
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\bin\Debug\WebWordPressLibrary.dll
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\bin\Debug\WebWordPressLibrary.pdb
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\obj\x86\Debug\WebWordPressLibrary.csprojResolveAssemblyReference.cache
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\obj\x86\Debug\WebWordPressLibrary.dll
-C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\Samples\WordPressSample\WebWordPressLibrary\obj\x86\Debug\WebWordPressLibrary.pdb
