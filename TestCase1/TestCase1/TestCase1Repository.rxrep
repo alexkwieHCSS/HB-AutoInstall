@@ -1,0 +1,109 @@
+﻿<repository
+id="83c58481-597d-4471-b9e8-42ea6a93ccdb"
+name="TestCase1Repository"
+rxversion="7.1">
+	<codegen
+	classname="TestCase1Repository"
+	namespace="TestCase1">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="d04a2cf3-3081-4130-8405-309329f54da0"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="015b6236-4e4f-4b93-9782-08ae98336df7"
+		isrooted="True"
+		name="AccessUHUniversityOfHouston"
+		refpath="/dom[@domain='accessuh.uh.edu']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="009b6ef5-c03d-43fc-9e42-2768e7553843"
+			name="HttpsAccessuhUhEduImgIconsLearn9"
+			refimgid="cd7409bc-5142-4814-8460-44786fe0fa97"
+			refpath="/dom[@domain='accessuh.uh.edu']//div[#'portal_area']/div[1]/a/span/img[@src='https://accessuh.uh.edu/img/icons/learn9.png']"
+			searchtimeout="30000ms">
+				/dom[@domain='accessuh.uh.edu']//div[#'portal_area']/?/?/a[@innertext='Blackboard Learn 9']/?/?/img[@src='https://accessuh.uh.edu/img/icons/learn9.png']
+			</item>
+			<basepath>
+				/dom[@domain='accessuh.uh.edu']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="5e875f3f-4c91-49e1-acd1-a2fda019d428"
+		isrooted="True"
+		name="AccessUHUniversityOfHoustonGoogl"
+		refimgid="ae22fa97-e4ca-4d20-8596-aa5983239b86"
+		refpath="/form[@title='AccessUH - University of Houston - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="e7b50c71-08bd-4173-9331-d95280909fba"
+			name="Element1250396752"
+			refimgid="7a096400-e816-49e9-9f25-21100dcfcafe"
+			refpath="/form[@title~'^AccessUH\ -\ University\ of\ ']/element[@controlid='-1250396752']"
+			searchtimeout="30000ms">
+				/form[@title~'^AccessUH\ -\ University\ of\ ']/element[@controlid='-1250396752']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="55f3cb99-1930-4ce6-892d-d0c85eb198d7"
+			name="Element1250361936"
+			refimgid="f241f207-e002-4166-9083-73c0769f3d74"
+			refpath="/form[@title~'^Granblue\ Fantasy\ -\ Google']/element[@controlid='-1250361936']"
+			searchtimeout="30000ms">
+				/form[@title~'^AccessUH\ -\ University\ of\ ']/element[@controlid='-1250361936']
+			</item>
+			<basepath>
+				/form[@title~'^AccessUH\ -\ University\ of\ ']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZJdSFNhHMaXQUFEBaZTZiV1EUQX
+FkRJ6c6m07lvdVPYlujSuygSlOiiEYSQfd10sZp2nFtiu7GPmyBtaoua86smltNzLKQIhGB5BurG
+eXrPOpqjj6se+PHe/H/P/+Xllfz3wCnJmDdrK5lazT3WrB5gK1XDbFWZn5znpk0lmeLYnzNjURWw
+NuMUEcFWl4NIYEylYIwlYAwKsCZljDGVOcTx9AyqC49EqlXfZ81EXCuoKksrYPQU5nQKzBmo86Im
+xunMuHDRvBDWyzEtCH+5AaMjBVo5ZrXFyXmNvEC0JZIDPU2Go676ZK+hCG/Jlg9k86duN16OLPDP
+wos8M/Ec8z4jvnhO4FvvcXB9hYg/LhoUdVLga3Ttf9CI2ktVGKo4CdbjxmU/B+PNOAwE25043s9E
+kQgokQwUIzlUhGSweBl+y+ZUQb6vsT/fdwYH6QbcqqEQGP26LutuEK7H0faIw3KkFXxICX5ECYQJ
+o7ptqYI8T31wr9eBfT4H9NfseBJegl4QRVlLaO3hsBK9CoyrCKWEEvBv1DtSBbKuur493gYICEWv
+J6dXKm//kjXtHPzBGJKRBlEuBT9GbhJVb00V5NL2Vll3PdZQP3ViILKIZi+HJvcSPIEYJibvp21P
+hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
+0rtWRF7o0uREiBrDlGWLqIqBZJO00+qS0nZkE1Egi7bBQRvAj5dvkBXv+AmlTLR+T1aH1ZLttkZ3
+01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

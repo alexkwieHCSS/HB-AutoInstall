@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6D4FBBAD-3EDA-4228-B423-92D89D752EF8}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <MyType>Console</MyType>
+    <RootNamespace>HeavyBid1._</RootNamespace>
+    <AssemblyName>HeavyBid</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>287f4ace-eec8-4d48-bd7e-c37edd189ed9</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG=1,TRACE=1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>TRACE=1</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <id>8daec7a3-89ab-4c95-bd9e-17a1c9a0056e</id>
+    </Compile>
+    <Compile Include="HeavyBid1.0Repository.vb">
+      <BoundTo>287f4ace-eec8-4d48-bd7e-c37edd189ed9</BoundTo>
+      <DependentUpon>HeavyBid1.0Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>768f2b4e-933e-4d8c-8d4c-8ba985150090</id>
+    </Compile>
+    <Compile Include="Program.vb">
+      <id>2b3e72a9-d8c0-4da5-9414-a5b4ba5313e7</id>
+    </Compile>
+    <Compile Include="Recording.UserCode.vb">
+      <BoundTo>e377bd28-e719-4a5c-b764-5f4608f3f067</BoundTo>
+      <DependentUpon>Recording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>778b4e44-088a-4078-ac2c-5e8b48755866</id>
+    </Compile>
+    <Compile Include="Recording.vb">
+      <BoundTo>e377bd28-e719-4a5c-b764-5f4608f3f067</BoundTo>
+      <DependentUpon>Recording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b2cb447-906c-4519-8eb1-ea661d5b8675</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>da6870e7-064e-4f47-b8d1-c124831c9210</id>
+    </None>
+    <None Include="HeavyBid1.0Repository.rximg">
+      <BoundTo>287f4ace-eec8-4d48-bd7e-c37edd189ed9</BoundTo>
+      <DependentUpon>HeavyBid1.0Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>2558c960-72d9-4818-9ad5-be47f1670f4e</id>
+    </None>
+    <None Include="HeavyBid1.0Repository.rxrep">
+      <id>287f4ace-eec8-4d48-bd7e-c37edd189ed9</id>
+      <repoid>5d6997d3-0388-4a4f-a2ca-342a7b9f9990</repoid>
+      <reporootid>68e4a2db-32ab-49b8-8f9b-f3646a746ab5</reporootid>
+    </None>
+    <None Include="Recording.rxrec">
+      <BoundTo>287f4ace-eec8-4d48-bd7e-c37edd189ed9</BoundTo>
+      <id>e377bd28-e719-4a5c-b764-5f4608f3f067</id>
+      <recordtableid>de912ae9-0f9e-4dfa-b5dc-fda764e49c4a</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HeavyBid1.0.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>65af013e-3b06-4472-bec5-8e4dae55d50b</id>
+    </Content>
+    <Content Include="HeavyBid1.0.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>59082827-d9ec-4469-8191-011d66456658</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

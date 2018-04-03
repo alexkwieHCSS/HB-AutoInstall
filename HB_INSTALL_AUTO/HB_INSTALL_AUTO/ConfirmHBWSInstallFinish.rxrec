@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cf428a88-a1c6-4200-9ab2-22e40ed4c0ff"
+mode="Global"
+rxversion="7.1">
+	<name>
+		ConfirmHBWSInstallFinish
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ConfirmHBWSInstallFinish"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="4025325e-45ac-4b5f-97ea-23118dccb534"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2ad4563d-4122-4526-9122-cb80ba07afdf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^HeavyBid\ 2018\.1\ Workstati']/button[@text='&amp;Install']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="42;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cac82522-c842-427b-ba0b-9b58abe0e28f"
+		sx="1037"
+		sy="684"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2ad4563d-4122-4526-9122-cb80ba07afdf"
+			sourcename="Recorder">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="True"
+				index="0"
+				prefcap="button"
+				rect="995,675,106,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&amp;Install
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						1008
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						460138
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						1
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6980
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						msiexec
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, MaximizeBox, Group, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						&amp;Install
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'^HeavyBid\ 2018\.1\ Workstati']/button[@text='&amp;Install']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="0f02fab3-9341-4990-800d-d4c5d722c008">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAEgASADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDT+xzK
+26K4VSC23dHnhjkg89c96dNYpJawwjbiHG3zE3g4GOR3q3RQBSawLJEN8aGH5kEcW1Q2euM9Pb3P
+4SR2rRyRusg+UvuBXqGOfXirNFAFaa1aS48wSBVOzcpXP3TkYOain04SymXMTMWJxLFvXBAHTI54
+61eooAq3Fn51ukW5U2Aj5V4+6RwM8daS5szM5dXQEhfvpuxjPI5BB56irdFAFKSxdl2ifIKKrb1L
+btp789Dnkd6ZFpnlsGEiD5t21I9q9VPAz/s/rWhRQA2NXVcO+85JzjHGeBTqKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACim+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6
+im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/7
+7P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8
+aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+W
+v+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8A
+jQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX
+/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6im+Wv+1/32f8aPLX/a/77P8AjQA6iiigBpkU
+EjnI9AaTzV/2v++TTf43+v8AQUtAC+av+1/3yaPNX/a/75NJVO6vvs8/l4iPyhsNJtZskjCjHJ4o
+Au+av+1/3yaPNX/a/wC+TUBuYhIY2LKRk5ZCB+ZGDUX26PzB94R7SSWjYEnIxgEc9e1AFzzV/wBr
+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
+JS0CCiiimAtFJS0CP//Z
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6d8f3118-be15-4846-8ed7-81a72c64524e"
+		waitaction="Exists"
+		waittimeout="900000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ef2d410-9f3c-4f2b-8e00-0010d1e06303"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="0,0,0,0"
+				role="button"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						263866
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Overlapped
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'^HeavyBid\ 2018\.1\ Workstati']/button[@text='&amp;Finish']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="32;15"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="50e27b6a-9eb3-4bfe-9f53-b884920bc689"
+		sx="1059"
+		sy="690"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ef2d410-9f3c-4f2b-8e00-0010d1e06303"
+			sourcename="Recorder">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="True"
+				index="0"
+				prefcap="button"
+				rect="1027,675,74,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&amp;Finish
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						1093
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						263866
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						1
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6980
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						msiexec
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, MaximizeBox, Group, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						&amp;Finish
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'^HeavyBid\ 2018\.1\ Workstati']/button[@text='&amp;Finish']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="933b2a5a-9111-40d7-93c8-d6a28448aa06">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADwAPADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ConfirmHBWSInstallFinish.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

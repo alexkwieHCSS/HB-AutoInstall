@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1ad177cb8b3f6715"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/2/2018 2:04:13 PM"
+		timestampiso="2018-04-02T19:04:13"
+		endtime="4/2/2018 2:04:27 PM"
+		timeoutfactor="1"
+		module="RegisterHB">
+		<detail>
+			RegisterHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.834"
+			timeRelativeToTestModuleStartTime="00:00.834"
+			timeWallClock="14:04:13"
+			time="00:00.834"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'HeavyBidRegistration.RegistrationEntry'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[1]"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.657"
+			timeRelativeToTestModuleStartTime="00:02.657"
+			timeWallClock="14:04:15"
+			time="00:02.657"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'HeavyBidRegistration.RegistrationEntry' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[1]"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.591"
+			timeRelativeToTestModuleStartTime="00:03.591"
+			timeWallClock="14:04:16"
+			time="00:03.591"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '01AF8E32-C236-435F-8C95-2518C339B7C0' with focus on 'HeavyBidRegistration.RegistrationEntry'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[1]"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.737"
+			timeRelativeToTestModuleStartTime="00:07.737"
+			timeWallClock="14:04:20"
+			time="00:07.737"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.Check' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']//button[@text='Check']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.Check"
+				id="7965edbb7fdd4cfdbe1292582177ed8e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.506"
+			timeRelativeToTestModuleStartTime="00:08.506"
+			timeWallClock="14:04:21"
+			time="00:08.506"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']//button[@text='Submit']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.Submit"
+				id="c61c6cd8dab44f52914d90233ee9b6d2"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="97"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.553"
+			timeRelativeToTestModuleStartTime="00:08.553"
+			timeWallClock="14:04:21"
+			time="00:08.553"
+			level="Info"
+			category="Mouse"
+			errimg=".\Register_2a9414b7_1c3fec13_trace.jpg"
+			errthumb=".\Register_2a9414b7_1c3fec13_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']//button[@text='Submit']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.Submit"
+				id="c61c6cd8dab44f52914d90233ee9b6d2"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="100"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.315"
+			timeRelativeToTestModuleStartTime="00:09.315"
+			timeWallClock="14:04:22"
+			time="00:09.315"
+			level="Info"
+			category="Wait"
+			errimg=".\Register_2a9414b7_0bd551a7_trace.jpg"
+			errthumb=".\Register_2a9414b7_0bd551a7_trace_thumb.jpg">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Activate HeavyBid Server']/element[@controlid='103']//radiobutton[@accessiblename~'^Replace\ the\ existing\ Prod']"
+				fullname="HB_INSTALL_AUTORepository.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW"
+				id="0c89c5e36afc4e9eb16624682fcb9371"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="104"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.255"
+			timeRelativeToTestModuleStartTime="00:14.255"
+			timeWallClock="14:04:27"
+			time="00:14.255"
+			level="Error"
+			category="User"
+			errimg=".\Register_2a9414b7_e18e7b06_trace.jpg"
+			errthumb=".\Register_2a9414b7_e18e7b06_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

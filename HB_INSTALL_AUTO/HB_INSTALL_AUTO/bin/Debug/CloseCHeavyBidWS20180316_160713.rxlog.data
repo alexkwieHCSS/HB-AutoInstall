@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="a832ff4258e2278"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/16/2018 4:07:17 PM"
+		timestampiso="2018-03-16T21:07:17"
+		endtime="3/16/2018 4:07:20 PM"
+		timeoutfactor="1"
+		module="CloseCHeavyBidWS">
+		<detail>
+			CloseCHeavyBidWS
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.644"
+			timeRelativeToTestModuleStartTime="00:00.650"
+			timeWallClock="16:07:18"
+			time="00:00.644"
+			level="Info"
+			category="Application">
+			<message>
+				Closing application containing item 'HeavyBidWS'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBidWS']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWS.Self"
+				id="8049599beeac406c98dfc705973311d8"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CloseCHeavyBidWS.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

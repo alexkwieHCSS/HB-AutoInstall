@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="f18b38b796dbc28"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/2/2018 3:07:43 PM"
+		timestampiso="2018-04-02T20:07:43"
+		endtime="4/2/2018 3:08:47 PM"
+		timeoutfactor="1"
+		module="HBUserLogIn">
+		<detail>
+			HBUserLogIn
+		</detail>
+		<errormessage>
+			Failed to find item 'HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.660"
+			timeRelativeToTestModuleStartTime="00:00.666"
+			timeWallClock="15:07:44"
+			time="00:00.660"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'UserLogin.UserNumberEntry'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.350"
+			timeRelativeToTestModuleStartTime="00:01.356"
+			timeWallClock="15:07:44"
+			time="00:01.350"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'UserLogin.UserNumberEntry' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.055"
+			timeRelativeToTestModuleStartTime="00:02.061"
+			timeWallClock="15:07:45"
+			time="00:02.055"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{NumPad1}{NumPad3}' with focus on 'UserLogin.UserNumberEntry'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.409"
+			timeRelativeToTestModuleStartTime="00:02.415"
+			timeWallClock="15:07:45"
+			time="00:02.409"
+			level="Info"
+			category="Wait"
+			errimg=".\HBUserLo_afe400e_8799bd4d_trace.jpg"
+			errthumb=".\HBUserLo_afe400e_8799bd4d_trace_thumb.jpg">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'UserLogin.ButtonOK'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//?/?/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.UserLogin.ButtonOK"
+				id="79d62785563a4181b4d1e1f5aedea505"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.438"
+			timeRelativeToTestModuleStartTime="00:02.444"
+			timeWallClock="15:07:45"
+			time="00:02.438"
+			level="Info"
+			category="Mouse"
+			errimg=".\HBUserLo_afe400e_8799bd4d_trace.jpg"
+			errthumb=".\HBUserLo_afe400e_8799bd4d_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'UserLogin.ButtonOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//?/?/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.UserLogin.ButtonOK"
+				id="79d62785563a4181b4d1e1f5aedea505"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.141"
+			timeRelativeToTestModuleStartTime="00:03.147"
+			timeWallClock="15:07:46"
+			time="00:03.141"
+			level="Info"
+			category="Mouse"
+			errimg=".\HBUserLo_afe400e_bb189ea0_trace.jpg"
+			errthumb=".\HBUserLo_afe400e_bb189ea0_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.RegistrationEntry' at 26;12.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[1]/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="100"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:03.446"
+			timeRelativeToTestModuleStartTime="01:03.452"
+			timeWallClock="15:08:46"
+			time="01:03.446"
+			level="Error"
+			category="Module"
+			errimg=".\HBUserLo_afe400e_ed0de7e2_trace.jpg"
+			errthumb=".\HBUserLo_afe400e_ed0de7e2_trace_thumb.jpg">
+			<message>
+				Failed to find item 'HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry'.<br/>No element found for path '/form[@title~'[HeavyBid][Registration]']/element[1]/element[@class='DFentry']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)
+   at HB_INSTALL_AUTO.HB_INSTALL_AUTORepositoryFolders.HeavyBidRegistrationAppFolder.get_RegistrationEntry() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HB_INSTALL_AUTORepository.cs:line 615
+   at HB_INSTALL_AUTO.HBUserLogIn.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs:line 101
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="101"
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[1]/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="5">
+			</metainfo>
+		</item>
+	</activity>
+</report>

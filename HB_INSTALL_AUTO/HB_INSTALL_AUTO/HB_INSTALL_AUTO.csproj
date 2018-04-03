@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{860E1650-2004-4602-B17B-B75863CEB56B}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HB_INSTALL_AUTO</RootNamespace>
+    <AssemblyName>HB_INSTALL_AUTO</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>f9ee72cd-2697-45a6-8b95-847c016bece4</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>ac5ce7d4-d060-4501-8966-d3427670deba</id>
+    </Compile>
+    <Compile Include="CloseCHeavyBid.cs">
+      <BoundTo>40033d7b-f24b-4dcf-86b0-ae5030066a9c</BoundTo>
+      <DependentUpon>CloseCHeavyBid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3ca8479-8b75-4200-a9f3-581f017b8011</id>
+    </Compile>
+    <Compile Include="CloseCHeavyBid.UserCode.cs">
+      <BoundTo>40033d7b-f24b-4dcf-86b0-ae5030066a9c</BoundTo>
+      <DependentUpon>CloseCHeavyBid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc6d0faf-f731-436c-956b-e7ec0f091e45</id>
+    </Compile>
+    <Compile Include="CloseCHeavyBidWS.cs">
+      <BoundTo>6105f714-fd44-4bb9-b954-6a0d981951aa</BoundTo>
+      <DependentUpon>CloseCHeavyBidWS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e92b798e-4af6-4cc2-bf22-9744750f796e</id>
+    </Compile>
+    <Compile Include="CloseCHeavyBidWS.UserCode.cs">
+      <BoundTo>6105f714-fd44-4bb9-b954-6a0d981951aa</BoundTo>
+      <DependentUpon>CloseCHeavyBidWS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb575998-a3da-45b4-ba00-e3f797d28749</id>
+    </Compile>
+    <Compile Include="CloseHB.cs">
+      <BoundTo>22d8e070-2437-4762-a956-1684f639b723</BoundTo>
+      <DependentUpon>CloseHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c30ad89a-65e2-4f15-8ea2-c9ff3c354aba</id>
+    </Compile>
+    <Compile Include="CloseHB.UserCode.cs">
+      <BoundTo>22d8e070-2437-4762-a956-1684f639b723</BoundTo>
+      <DependentUpon>CloseHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd6c03a2-464a-45b1-9c3f-ba2982c2a3a6</id>
+    </Compile>
+    <Compile Include="ConfirmHBWSInstallFinish.cs">
+      <BoundTo>4520b5e5-0a43-4697-b3c2-918079ea8eac</BoundTo>
+      <DependentUpon>ConfirmHBWSInstallFinish.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>43697d37-9d8f-438d-8fdd-de110a1c2e12</id>
+    </Compile>
+    <Compile Include="ConfirmHBWSInstallFinish.UserCode.cs">
+      <BoundTo>4520b5e5-0a43-4697-b3c2-918079ea8eac</BoundTo>
+      <DependentUpon>ConfirmHBWSInstallFinish.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23695ffb-04bf-4583-adc6-d40501b61142</id>
+    </Compile>
+    <Compile Include="CrystalInstallWelcome.cs">
+      <BoundTo>89136218-6ede-447e-87de-77ea39c86b4c</BoundTo>
+      <DependentUpon>CrystalInstallWelcome.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19e2c4cb-605a-4ff0-a9da-973db95994eb</id>
+    </Compile>
+    <Compile Include="CrystalInstallWelcome.UserCode.cs">
+      <BoundTo>89136218-6ede-447e-87de-77ea39c86b4c</BoundTo>
+      <DependentUpon>CrystalInstallWelcome.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8d85cbc6-4f25-41c4-9697-e539e0dcdc36</id>
+    </Compile>
+    <Compile Include="CrystalReadyToInstall.cs">
+      <BoundTo>ed781900-6ae8-49a6-a22a-5652078d1670</BoundTo>
+      <DependentUpon>CrystalReadyToInstall.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>638b802d-b777-4020-b593-a55ecd18c3de</id>
+    </Compile>
+    <Compile Include="CrystalReadyToInstall.UserCode.cs">
+      <BoundTo>ed781900-6ae8-49a6-a22a-5652078d1670</BoundTo>
+      <DependentUpon>CrystalReadyToInstall.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be52e589-2d1e-4980-8ad8-f9952cce4f58</id>
+    </Compile>
+    <Compile Include="DestinationFolderHBNetwork.cs">
+      <BoundTo>840a6f16-00ca-40ad-b835-789bdcfa970b</BoundTo>
+      <DependentUpon>DestinationFolderHBNetwork.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ebea6cd-f79b-4079-bdbc-78d9e0c35992</id>
+    </Compile>
+    <Compile Include="DestinationFolderHBNetwork.UserCode.cs">
+      <BoundTo>840a6f16-00ca-40ad-b835-789bdcfa970b</BoundTo>
+      <DependentUpon>DestinationFolderHBNetwork.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>82677b07-34cf-46b1-bd97-9dc7b11f1f49</id>
+    </Compile>
+    <Compile Include="DestinationFolderHBWS.cs">
+      <BoundTo>917fe769-531f-41f4-922a-b1b25a23fad2</BoundTo>
+      <DependentUpon>DestinationFolderHBWS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c1cdcca-e995-40a9-b5a1-8ecc852c4e3d</id>
+    </Compile>
+    <Compile Include="DestinationFolderHBWS.UserCode.cs">
+      <BoundTo>917fe769-531f-41f4-922a-b1b25a23fad2</BoundTo>
+      <DependentUpon>DestinationFolderHBWS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de7a1a1b-e897-4873-a731-0847efcf65eb</id>
+    </Compile>
+    <Compile Include="HBInstallFinishConfirmation.cs">
+      <BoundTo>87b42290-f6c1-47ba-838e-99137fb0065d</BoundTo>
+      <DependentUpon>HBInstallFinishConfirmation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3f706f0d-a1e3-4827-8f2c-6a242da2eb8d</id>
+    </Compile>
+    <Compile Include="HBInstallFinishConfirmation.UserCode.cs">
+      <BoundTo>87b42290-f6c1-47ba-838e-99137fb0065d</BoundTo>
+      <DependentUpon>HBInstallFinishConfirmation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ef19e66-64c4-4717-aef9-e98766f628cb</id>
+    </Compile>
+    <Compile Include="HBUserLogIn.cs">
+      <BoundTo>82a0a8f6-7404-4110-9b12-467b58eabb47</BoundTo>
+      <DependentUpon>HBUserLogIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9302ebb4-4404-4286-adcd-3bb4f7841f08</id>
+    </Compile>
+    <Compile Include="HBUserLogIn.UserCode.cs">
+      <BoundTo>82a0a8f6-7404-4110-9b12-467b58eabb47</BoundTo>
+      <DependentUpon>HBUserLogIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d5424798-0fbf-43bc-8048-dbbb908c68ca</id>
+    </Compile>
+    <Compile Include="HBWSWelcomeSetup.cs">
+      <BoundTo>39a9c75e-51de-4865-898f-abd1a7bed5aa</BoundTo>
+      <DependentUpon>HBWSWelcomeSetup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7d25f46-ac3c-431f-b2e3-9e32aa685e78</id>
+    </Compile>
+    <Compile Include="HBWSWelcomeSetup.UserCode.cs">
+      <BoundTo>39a9c75e-51de-4865-898f-abd1a7bed5aa</BoundTo>
+      <DependentUpon>HBWSWelcomeSetup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7765f617-8500-4cbf-a58a-e1d9ef943015</id>
+    </Compile>
+    <Compile Include="HB_INSTALL_AUTORepository.cs">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <DependentUpon>HB_INSTALL_AUTORepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>21969aa8-b1b9-4ca4-a13f-fd2079dbec2d</id>
+    </Compile>
+    <Compile Include="ConfirmHBInstallFinish.cs">
+      <BoundTo>85f61cfa-810e-42c6-aa29-e5834fdc10ca</BoundTo>
+      <DependentUpon>ConfirmHBInstallFinish.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>567d0a1c-e931-4225-b19c-69db2ee1e61f</id>
+    </Compile>
+    <Compile Include="ConfirmHBInstallFinish.UserCode.cs">
+      <BoundTo>85f61cfa-810e-42c6-aa29-e5834fdc10ca</BoundTo>
+      <DependentUpon>ConfirmHBInstallFinish.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a927e21d-baac-422a-bebf-145b72419dca</id>
+    </Compile>
+    <Compile Include="OpenHB.cs">
+      <BoundTo>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</BoundTo>
+      <DependentUpon>OpenHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cc8f728-6b00-4fc8-af77-de573da27aad</id>
+    </Compile>
+    <Compile Include="OpenHB.UserCode.cs">
+      <BoundTo>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</BoundTo>
+      <DependentUpon>OpenHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e3b512a-fd7f-4790-99cd-523d579cd530</id>
+    </Compile>
+    <Compile Include="NavigateToCHeavyBid.cs">
+      <BoundTo>2a9e9846-3ad0-42cd-8fdf-ff9b954221d8</BoundTo>
+      <DependentUpon>NavigateToCHeavyBid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c3ba2e8-3340-4338-b985-7e0b9996717b</id>
+    </Compile>
+    <Compile Include="NavigateToCHeavyBid.UserCode.cs">
+      <BoundTo>2a9e9846-3ad0-42cd-8fdf-ff9b954221d8</BoundTo>
+      <DependentUpon>NavigateToCHeavyBid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e650e2a7-abb6-4564-8ace-2357ae2e99ed</id>
+    </Compile>
+    <Compile Include="NavigateToCHeavyBidWS.cs">
+      <BoundTo>dd282dd7-3772-4cd1-b51f-503625449088</BoundTo>
+      <DependentUpon>NavigateToCHeavyBidWS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5aee964b-4dc5-46c7-8216-8e78e3ad7e62</id>
+    </Compile>
+    <Compile Include="NavigateToCHeavyBidWS.UserCode.cs">
+      <BoundTo>dd282dd7-3772-4cd1-b51f-503625449088</BoundTo>
+      <DependentUpon>NavigateToCHeavyBidWS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>714abe77-03e8-425c-9b59-35ae47e66526</id>
+    </Compile>
+    <Compile Include="RegisterHB.cs">
+      <BoundTo>72c76099-1b4e-4323-b0e7-3c7920049d72</BoundTo>
+      <DependentUpon>RegisterHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa06d379-ace0-4d9b-9dfd-ef2ba7bfccfa</id>
+    </Compile>
+    <Compile Include="RegisterHB.UserCode.cs">
+      <BoundTo>72c76099-1b4e-4323-b0e7-3c7920049d72</BoundTo>
+      <DependentUpon>RegisterHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b1f1942c-6508-4dce-9bef-e9962caddda9</id>
+    </Compile>
+    <Compile Include="RunWSINST.cs">
+      <BoundTo>dc233b8b-9b97-4da4-8918-d5856396e67a</BoundTo>
+      <DependentUpon>RunWSINST.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c85c2044-6339-4777-afca-b845123bc08c</id>
+    </Compile>
+    <Compile Include="RunWSINST.UserCode.cs">
+      <BoundTo>dc233b8b-9b97-4da4-8918-d5856396e67a</BoundTo>
+      <DependentUpon>RunWSINST.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>783aa01f-3633-47ce-9b86-bedd52fcb35a</id>
+    </Compile>
+    <Compile Include="SelectInstallType.cs">
+      <BoundTo>f734f669-f0cc-4f64-a582-04c474371dc1</BoundTo>
+      <DependentUpon>SelectInstallType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e9b6271-ebac-4f96-8693-2ff0ea8997ce</id>
+    </Compile>
+    <Compile Include="SelectInstallType.UserCode.cs">
+      <BoundTo>f734f669-f0cc-4f64-a582-04c474371dc1</BoundTo>
+      <DependentUpon>SelectInstallType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>268ed628-abd9-4294-8935-a5748676e820</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>30b5eb71-c379-4ef7-9261-0ddea0e8d654</id>
+    </Compile>
+    <Compile Include="OpenInstallFile.cs">
+      <BoundTo>b50af556-3c09-499f-8a3f-f7b46799aa35</BoundTo>
+      <DependentUpon>OpenInstallFile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1370681a-6cb6-4ffd-beeb-3cf28c662a10</id>
+    </Compile>
+    <Compile Include="OpenInstallFile.UserCode.cs">
+      <BoundTo>b50af556-3c09-499f-8a3f-f7b46799aa35</BoundTo>
+      <DependentUpon>OpenInstallFile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>228f17f5-4809-4596-a3b2-ee16eb788434</id>
+    </Compile>
+    <Compile Include="SQL2018FeatureSelection.cs">
+      <BoundTo>96db84f8-35ce-4f19-8c00-cd43a4023eed</BoundTo>
+      <DependentUpon>SQL2018FeatureSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1dfaadf6-9c8c-4e8f-a266-2a8590865549</id>
+    </Compile>
+    <Compile Include="SQL2018FeatureSelection.UserCode.cs">
+      <BoundTo>96db84f8-35ce-4f19-8c00-cd43a4023eed</BoundTo>
+      <DependentUpon>SQL2018FeatureSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b527f09-1367-4079-8c64-660267261043</id>
+    </Compile>
+    <Compile Include="SQL2018Install.cs">
+      <BoundTo>0abcc046-f3ac-4e29-ab95-e37f814427cf</BoundTo>
+      <DependentUpon>SQL2018Install.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e5ac00f0-db3e-48fa-be96-86a213d88736</id>
+    </Compile>
+    <Compile Include="SQL2018Install.UserCode.cs">
+      <BoundTo>0abcc046-f3ac-4e29-ab95-e37f814427cf</BoundTo>
+      <DependentUpon>SQL2018Install.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ceae34f8-c730-4805-b07d-3115799bc1cf</id>
+    </Compile>
+    <Compile Include="SQL2018InstallTOS.cs">
+      <BoundTo>8c7f9ebc-1c8f-44c1-8b25-b650d8e49e05</BoundTo>
+      <DependentUpon>SQL2018InstallTOS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3be2e5ea-fac7-4fcc-a1d9-8597578ffae1</id>
+    </Compile>
+    <Compile Include="SQL2018InstallTOS.UserCode.cs">
+      <BoundTo>8c7f9ebc-1c8f-44c1-8b25-b650d8e49e05</BoundTo>
+      <DependentUpon>SQL2018InstallTOS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5191b202-7506-4d5b-84f0-dd55f0df115b</id>
+    </Compile>
+    <Compile Include="SQL2018InstallWelcome.cs">
+      <BoundTo>b055c6ab-5af0-43bb-b992-c5ba23b8a611</BoundTo>
+      <DependentUpon>SQL2018InstallWelcome.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>36a28969-fb07-40e9-b819-6f0e3f420dff</id>
+    </Compile>
+    <Compile Include="SQL2018InstallWelcome.UserCode.cs">
+      <BoundTo>b055c6ab-5af0-43bb-b992-c5ba23b8a611</BoundTo>
+      <DependentUpon>SQL2018InstallWelcome.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13713efc-f826-4d8d-967d-9099008bd910</id>
+    </Compile>
+    <Compile Include="OpenAddRemovePrograms.cs">
+      <BoundTo>19ea4580-5b59-4df4-99cc-02a8237c1628</BoundTo>
+      <DependentUpon>OpenAddRemovePrograms.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d7133e4-fe6f-4dde-b1bd-8142391878d5</id>
+    </Compile>
+    <Compile Include="OpenAddRemovePrograms.UserCode.cs">
+      <BoundTo>19ea4580-5b59-4df4-99cc-02a8237c1628</BoundTo>
+      <DependentUpon>OpenAddRemovePrograms.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fe9c90d-6d06-44c6-a3bf-690593422feb</id>
+    </Compile>
+    <Compile Include="UninstallCrystal.cs">
+      <BoundTo>80ad8732-a6ba-466b-93f2-30c515151038</BoundTo>
+      <DependentUpon>UninstallCrystal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4b7fa284-39c4-46d4-9bf3-d0cd7646fe60</id>
+    </Compile>
+    <Compile Include="UninstallCrystal.UserCode.cs">
+      <BoundTo>80ad8732-a6ba-466b-93f2-30c515151038</BoundTo>
+      <DependentUpon>UninstallCrystal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>483ee781-a345-4d62-9fc9-081724d6a580</id>
+    </Compile>
+    <Compile Include="UninstallHB.cs">
+      <BoundTo>4ab5c9ed-b440-44ac-be85-deb4ed77f6d6</BoundTo>
+      <DependentUpon>UninstallHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b456b1d7-1400-4c6d-b657-b88de4a83831</id>
+    </Compile>
+    <Compile Include="UninstallHB.UserCode.cs">
+      <BoundTo>4ab5c9ed-b440-44ac-be85-deb4ed77f6d6</BoundTo>
+      <DependentUpon>UninstallHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>54831a19-0ffc-4851-9b81-c2c67dfeaca1</id>
+    </Compile>
+    <Compile Include="UninstallSQL.cs">
+      <BoundTo>83ce02ce-18c0-4780-be79-cae69792a1f9</BoundTo>
+      <DependentUpon>UninstallSQL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b36f8468-e421-4978-8f64-9c67ef7e6827</id>
+    </Compile>
+    <Compile Include="UninstallSQL.UserCode.cs">
+      <BoundTo>83ce02ce-18c0-4780-be79-cae69792a1f9</BoundTo>
+      <DependentUpon>UninstallSQL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bda0a079-0365-465d-ba5a-3cc5affcfacf</id>
+    </Compile>
+    <Compile Include="UserLicense.cs">
+      <BoundTo>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</BoundTo>
+      <DependentUpon>UserLicense.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c56c01b-2b2e-43ae-9943-9092c3ec56bc</id>
+    </Compile>
+    <Compile Include="UserLicense.UserCode.cs">
+      <BoundTo>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</BoundTo>
+      <DependentUpon>UserLicense.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7b0dfce8-5f34-4f4f-94ee-0c21b48a829c</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>890b7378-df21-4b82-9d95-3347ac1669fd</id>
+    </None>
+    <None Include="CloseCHeavyBid.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>40033d7b-f24b-4dcf-86b0-ae5030066a9c</id>
+      <recordtableid>2a76aa71-4e60-4ad7-833b-153efeaaca77</recordtableid>
+    </None>
+    <None Include="CloseCHeavyBidWS.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>6105f714-fd44-4bb9-b954-6a0d981951aa</id>
+      <recordtableid>d1b3a767-1400-4156-9216-54828a34b1ae</recordtableid>
+    </None>
+    <None Include="CloseHB.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>22d8e070-2437-4762-a956-1684f639b723</id>
+      <recordtableid>6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d</recordtableid>
+    </None>
+    <None Include="ConfirmHBWSInstallFinish.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>4520b5e5-0a43-4697-b3c2-918079ea8eac</id>
+      <recordtableid>cf428a88-a1c6-4200-9ab2-22e40ed4c0ff</recordtableid>
+    </None>
+    <None Include="CrystalInstallWelcome.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>89136218-6ede-447e-87de-77ea39c86b4c</id>
+      <recordtableid>ec2ce4a5-32a8-42d1-9b2b-947b74847d8b</recordtableid>
+    </None>
+    <None Include="CrystalReadyToInstall.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>ed781900-6ae8-49a6-a22a-5652078d1670</id>
+      <recordtableid>cab4dd71-3176-47ad-ba07-a5b81f158d78</recordtableid>
+    </None>
+    <None Include="DestinationFolderHBNetwork.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>840a6f16-00ca-40ad-b835-789bdcfa970b</id>
+      <recordtableid>63e8b675-eaaa-495d-8005-30cb67812cea</recordtableid>
+    </None>
+    <None Include="DestinationFolderHBWS.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>917fe769-531f-41f4-922a-b1b25a23fad2</id>
+      <recordtableid>535090f6-8e8c-458f-9f71-ada4e8dc976a</recordtableid>
+    </None>
+    <None Include="HBInstallFinishConfirmation.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>87b42290-f6c1-47ba-838e-99137fb0065d</id>
+      <recordtableid>6b81c96d-4e70-4220-ba27-be851d62cf29</recordtableid>
+    </None>
+    <None Include="HBUserLogIn.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>82a0a8f6-7404-4110-9b12-467b58eabb47</id>
+      <recordtableid>39a778c6-72a6-4992-9789-b63c17daf0e6</recordtableid>
+    </None>
+    <None Include="HBWSWelcomeSetup.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>39a9c75e-51de-4865-898f-abd1a7bed5aa</id>
+      <recordtableid>e29b418e-7757-4f1e-b5d2-20cd70f1177b</recordtableid>
+    </None>
+    <None Include="HB_INSTALL_AUTORepository.rximg">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <DependentUpon>HB_INSTALL_AUTORepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c4bc3fbc-ab10-4197-aff6-d1a3e61e41a3</id>
+    </None>
+    <None Include="HB_INSTALL_AUTORepository.rxrep">
+      <id>f9ee72cd-2697-45a6-8b95-847c016bece4</id>
+      <repoid>a970ed20-62c5-4a8f-946c-ff3e643da1d9</repoid>
+      <reporootid>b36fe32b-c31b-4a2b-9886-acc9b1e6ac67</reporootid>
+    </None>
+    <None Include="ConfirmHBInstallFinish.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>85f61cfa-810e-42c6-aa29-e5834fdc10ca</id>
+      <recordtableid>b3a23dda-b9ca-485f-965b-05d9979d93ac</recordtableid>
+    </None>
+    <None Include="OpenHB.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</id>
+      <recordtableid>1d329228-98ea-4d0a-86e5-cf7640c69a90</recordtableid>
+    </None>
+    <None Include="NavigateToCHeavyBid.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>2a9e9846-3ad0-42cd-8fdf-ff9b954221d8</id>
+      <recordtableid>a2bc4feb-af36-48b1-86ca-3055b612b38b</recordtableid>
+    </None>
+    <None Include="NavigateToCHeavyBidWS.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>dd282dd7-3772-4cd1-b51f-503625449088</id>
+      <recordtableid>6445eca2-afc8-4ce0-9d5b-fcb6946c23e7</recordtableid>
+    </None>
+    <None Include="RegisterHB.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>72c76099-1b4e-4323-b0e7-3c7920049d72</id>
+      <recordtableid>02167738-89fa-4bd8-987f-73d74dc2b4b4</recordtableid>
+    </None>
+    <None Include="RunWSINST.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>dc233b8b-9b97-4da4-8918-d5856396e67a</id>
+      <recordtableid>ecddafd0-84a6-4c63-b9c9-152cc7264a84</recordtableid>
+    </None>
+    <None Include="SelectInstallType.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>f734f669-f0cc-4f64-a582-04c474371dc1</id>
+      <recordtableid>2d19a0cc-3a76-41ca-968f-ac62ff9b9d26</recordtableid>
+    </None>
+    <None Include="OpenInstallFile.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>b50af556-3c09-499f-8a3f-f7b46799aa35</id>
+      <recordtableid>571f330f-34d5-41f8-bdde-be8c3b849738</recordtableid>
+    </None>
+    <None Include="SQL2018FeatureSelection.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>96db84f8-35ce-4f19-8c00-cd43a4023eed</id>
+      <recordtableid>a9f8eb31-2349-4377-9824-0d7444d63b24</recordtableid>
+    </None>
+    <None Include="SQL2018Install.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>0abcc046-f3ac-4e29-ab95-e37f814427cf</id>
+      <recordtableid>938a68a1-403f-42f8-b7bb-3360ba2924aa</recordtableid>
+    </None>
+    <None Include="SQL2018InstallTOS.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>8c7f9ebc-1c8f-44c1-8b25-b650d8e49e05</id>
+      <recordtableid>ade5c7f9-62cc-4ee1-a7e9-bb87d45d9ae7</recordtableid>
+    </None>
+    <None Include="SQL2018InstallWelcome.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>b055c6ab-5af0-43bb-b992-c5ba23b8a611</id>
+      <recordtableid>29202c8a-4d6f-4a68-a1aa-c26196cfcfd0</recordtableid>
+    </None>
+    <None Include="OpenAddRemovePrograms.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>19ea4580-5b59-4df4-99cc-02a8237c1628</id>
+      <recordtableid>52c57138-faa8-4de3-b51b-a991a395efda</recordtableid>
+    </None>
+    <None Include="UninstallCrystal.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>80ad8732-a6ba-466b-93f2-30c515151038</id>
+      <recordtableid>ae8f2f05-5ac9-49af-81aa-e73092f6bb8d</recordtableid>
+    </None>
+    <None Include="UninstallHB.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>4ab5c9ed-b440-44ac-be85-deb4ed77f6d6</id>
+      <recordtableid>2fbb5d9e-bf9e-4f07-ba4a-8888cc9e19fe</recordtableid>
+    </None>
+    <None Include="UninstallSQL.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>83ce02ce-18c0-4780-be79-cae69792a1f9</id>
+      <recordtableid>19c0f50a-d08e-4dfb-82fe-befaf85a22ae</recordtableid>
+    </None>
+    <None Include="UserLicense.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</id>
+      <recordtableid>8696c80c-f1ad-4df9-8250-1402ceac9fad</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HB_INSTALL_AUTO.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>559a07cc-3a92-4510-988e-4fd2b889f171</id>
+    </Content>
+    <Content Include="HB_INSTALL_AUTO.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>65f560b7-8a02-4e3c-bb13-b0aa306c9773</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

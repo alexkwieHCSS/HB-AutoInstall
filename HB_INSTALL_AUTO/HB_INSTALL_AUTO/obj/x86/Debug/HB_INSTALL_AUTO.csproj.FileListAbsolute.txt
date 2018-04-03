@@ -1,0 +1,8 @@
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\bin\Debug\HB_INSTALL_AUTO.rxtmg
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\bin\Debug\HB_INSTALL_AUTO.rxtst
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\bin\Debug\HB_INSTALL_AUTO.exe.config
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\bin\Debug\HB_INSTALL_AUTO.exe
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\bin\Debug\HB_INSTALL_AUTO.pdb
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\obj\x86\Debug\HB_INSTALL_AUTO.csprojResolveAssemblyReference.cache
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\obj\x86\Debug\HB_INSTALL_AUTO.exe
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\obj\x86\Debug\HB_INSTALL_AUTO.pdb

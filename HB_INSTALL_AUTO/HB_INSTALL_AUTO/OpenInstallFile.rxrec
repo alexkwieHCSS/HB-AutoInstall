@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="571f330f-34d5-41f8-bdde-be8c3b849738"
+mode="Global"
+rxversion="7.1">
+	<name>
+		OpenInstallFile
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenInstallFile"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+				Change HB version
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\Users\alex.kwie\Desktop\HeavyBidTrunk_2018-03-14_0042.msi
+			</filename>
+			<workingdir>
+				C:\Users\alex.kwie\Desktop
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="4025325e-45ac-4b5f-97ea-23118dccb534"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d5871a5b-28dc-49bc-ab19-510a037a9d94"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<invokeactionrecorditem
+		action="Press"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2be2aac6-54d5-41ce-9534-8994b3d86eac"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d5871a5b-28dc-49bc-ab19-510a037a9d94"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']
+				</path>
+			</info>
+			<arguments
+			id="60c9a8d9-d52a-4cb4-95c0-d65b4046ad63">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenInstallFile.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

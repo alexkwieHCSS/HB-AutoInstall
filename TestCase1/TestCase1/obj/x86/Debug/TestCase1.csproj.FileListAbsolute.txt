@@ -1,0 +1,8 @@
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\bin\Debug\TestCase1.rxtmg
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\bin\Debug\TestCase1.rxtst
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\bin\Debug\TestCase1.exe.config
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\bin\Debug\TestCase1.exe
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\bin\Debug\TestCase1.pdb
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\obj\x86\Debug\TestCase1.csprojResolveAssemblyReference.cache
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\obj\x86\Debug\TestCase1.exe
+C:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\obj\x86\Debug\TestCase1.pdb

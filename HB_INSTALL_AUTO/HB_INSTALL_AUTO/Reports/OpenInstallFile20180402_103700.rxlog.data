@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="228f1948096798d"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/2/2018 10:37:04 AM"
+		timestampiso="2018-04-02T15:37:04"
+		endtime="4/2/2018 10:37:06 AM"
+		timeoutfactor="1"
+		module="OpenInstallFile">
+		<detail>
+			OpenInstallFile
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.609"
+			timeRelativeToTestModuleStartTime="00:00.609"
+			timeWallClock="10:37:05"
+			time="00:00.609"
+			level="Info"
+			category="Application">
+			<message>
+				Change HB version<br/>Run application 'C:\Users\alex.kwie\Desktop\HeavyBidTrunk_2018-03-14_0042.msi' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.703"
+			timeRelativeToTestModuleStartTime="00:00.703"
+			timeWallClock="10:37:05"
+			time="00:00.703"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBid20181Setup.ButtonNext'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid20181Setup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="87"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.484"
+			timeRelativeToTestModuleStartTime="00:01.484"
+			timeWallClock="10:37:06"
+			time="00:01.484"
+			level="Info"
+			category="Invoke Action">
+			<message>
+				Invoking Press() on item 'HeavyBid20181Setup.ButtonNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid20181Setup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

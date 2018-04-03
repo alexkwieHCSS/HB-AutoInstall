@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="HeavyBid1.0"
+      id="5f0b4f9c-7458-435c-a84e-16e9a2571c3b"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="HeavyBid1.0"
+      id="5f0b4f9c-7458-435c-a84e-16e9a2571c3b"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

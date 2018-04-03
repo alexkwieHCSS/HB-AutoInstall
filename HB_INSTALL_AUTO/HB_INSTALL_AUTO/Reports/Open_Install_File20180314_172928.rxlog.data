@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="6e74e967f85e100"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/14/2018 5:29:33 PM"
+		timestampiso="2018-03-14T22:29:33"
+		endtime="3/14/2018 5:29:36 PM"
+		timeoutfactor="1"
+		module="Open_Install_File">
+		<detail>
+			Open_Install_File
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.702"
+			timeRelativeToTestModuleStartTime="00:00.708"
+			timeWallClock="17:29:33"
+			time="00:00.702"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'Explorer.HeavyBidTrunk201803140042Msi' at 49;56.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='explorer' and @class='WorkerW' and @instance='1']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer.HeavyBidTrunk201803140042Msi"
+				id="d63276b84bfa42ccb1bd989d88b21f5f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Install_File.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.268"
+			timeRelativeToTestModuleStartTime="00:02.274"
+			timeWallClock="17:29:35"
+			time="00:02.268"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBid20181Setup.ButtonNext' at 67;13.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid20181Setup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Install_File.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

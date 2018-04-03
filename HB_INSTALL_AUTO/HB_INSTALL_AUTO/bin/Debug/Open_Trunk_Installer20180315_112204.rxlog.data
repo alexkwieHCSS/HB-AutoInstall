@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="e3b2c1dcd464d06"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/15/2018 11:22:10 AM"
+		timestampiso="2018-03-15T16:22:10"
+		endtime="3/15/2018 11:22:34 AM"
+		timeoutfactor="1"
+		module="Open_Trunk_Installer">
+		<detail>
+			Open_Trunk_Installer
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.624"
+			timeRelativeToTestModuleStartTime="00:00.624"
+			timeWallClock="11:22:10"
+			time="00:00.624"
+			level="Info"
+			category="Mouse"
+			errimg=".\Open_Tru_53dc1ffa_8240bf72_trace.jpg"
+			errthumb=".\Open_Tru_53dc1ffa_8240bf72_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'Explorer1.HeavyBidTrunk201803140042Msi' at 38;38.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer1.HeavyBidTrunk201803140042Msi"
+				id="d8a5d5849e2147988e0ca92235fb09ab"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Trunk_Installer.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.125"
+			timeRelativeToTestModuleStartTime="00:02.125"
+			timeWallClock="11:22:12"
+			time="00:02.125"
+			level="Info"
+			category="Mouse"
+			errimg=".\Open_Tru_53dc1ffa_667e65b2_trace.jpg"
+			errthumb=".\Open_Tru_53dc1ffa_667e65b2_trace_thumb.jpg">
+			<message>
+				Mouse Left DoubleClick item 'Explorer1.HeavyBidTrunk201803140042Msi' at 38;38.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer1.HeavyBidTrunk201803140042Msi"
+				id="d8a5d5849e2147988e0ca92235fb09ab"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Trunk_Installer.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.528"
+			timeRelativeToTestModuleStartTime="00:24.528"
+			timeWallClock="11:22:34"
+			time="00:24.528"
+			level="Error"
+			category="User"
+			errimg=".\Open_Tru_53dc1ffa_27cefada_trace.jpg"
+			errthumb=".\Open_Tru_53dc1ffa_27cefada_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

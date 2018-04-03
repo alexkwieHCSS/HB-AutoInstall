@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="24.95s"
+		durationms="24948"
+		type="root"
+		rid="8cbcf79a0fd818"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/9/2018 4:20:31 PM"
+		timestampiso="2018-03-09T22:20:31"
+		endtime="3/9/2018 4:20:56 PM"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.739"
+			timeRelativeToTestModuleStartTime="00:00.746"
+			timeWallClock="16:20:31"
+			time="00:00.739"
+			level="Info"
+			category="Website">
+			<message>
+				Opening web site 'https://accessuh.uh.edu/login.php' with browser 'Chrome' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\Recording1.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.860"
+			timeRelativeToTestModuleStartTime="00:00.867"
+			timeWallClock="16:20:31"
+			time="00:00.860"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'atjonakw{Tab}stra8{RShiftKey down}GARBAGE!{RShiftKey up}{Return}'.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\Recording1.cs"
+				codeline="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.355"
+			timeRelativeToTestModuleStartTime="00:03.362"
+			timeWallClock="16:20:34"
+			time="00:03.355"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'AccessUHUniversityOfHouston.HttpsAccessuhUhEduImgIconsLearn9' at 22;55.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='accessuh.uh.edu']//div[#'portal_area']/?/?/a[@innertext='Blackboard Learn 9']/?/?/img[@src='https://accessuh.uh.edu/img/icons/learn9.png']"
+				fullname="TestCase1Repository.AccessUHUniversityOfHouston.HttpsAccessuhUhEduImgIconsLearn9"
+				id="009b6ef5c03d43fc9e422768e7553843"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\TestCase1\TestCase1\Recording1.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.948"
+			timeRelativeToTestModuleStartTime="00:24.955"
+			timeWallClock="16:20:56"
+			time="00:24.948"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

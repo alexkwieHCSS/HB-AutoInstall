@@ -1,0 +1,13 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="KeePassTestSuite.rxtst" />
+    <Element value="KeePassTestSuite.rxtmg" />
+    <Element value="Recordings\StartSUT.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+  </Properties>
+</Properties>

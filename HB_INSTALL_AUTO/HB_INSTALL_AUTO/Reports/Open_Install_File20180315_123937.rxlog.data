@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="f57fe7a254bb474"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/15/2018 12:39:42 PM"
+		timestampiso="2018-03-15T17:39:42"
+		endtime="3/15/2018 12:39:45 PM"
+		timeoutfactor="1"
+		module="Open_Install_File">
+		<detail>
+			Open_Install_File
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.611"
+			timeRelativeToTestModuleStartTime="00:00.611"
+			timeWallClock="12:39:43"
+			time="00:00.611"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'Explorer1.HeavyBidTrunk201803140042Msi' at 37;36.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer1.HeavyBidTrunk201803140042Msi"
+				id="d060a410d09c40cb9ee2e838fe2778e2"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Install_File.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.324"
+			timeRelativeToTestModuleStartTime="00:02.324"
+			timeWallClock="12:39:44"
+			time="00:02.324"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer1.HeavyBidTrunk201803140042Msi' at 37;36.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/desktop[@processname='explorer']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer1.HeavyBidTrunk201803140042Msi"
+				id="d060a410d09c40cb9ee2e838fe2778e2"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Install_File.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

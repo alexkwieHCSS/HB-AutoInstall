@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="6961de9f73c8938"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/16/2018 5:11:37 PM"
+		timestampiso="2018-03-16T22:11:37"
+		endtime="3/16/2018 5:11:39 PM"
+		timeoutfactor="1"
+		module="OpenInstallFile">
+		<detail>
+			OpenInstallFile
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.684"
+			timeRelativeToTestModuleStartTime="00:00.691"
+			timeWallClock="17:11:37"
+			time="00:00.684"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\Users\alex.kwie\Desktop\HeavyBidTrunk_2018-03-14_0042.msi' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.795"
+			timeRelativeToTestModuleStartTime="00:00.802"
+			timeWallClock="17:11:37"
+			time="00:00.795"
+			level="Info"
+			category="Invoke Action">
+			<message>
+				Invoking Press() on item 'HeavyBid20181Setup.ButtonNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid20181Setup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

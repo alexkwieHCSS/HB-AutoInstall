@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1efadcbea50878a0"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1536x864"
+		timestamp="3/15/2018 1:07:09 PM"
+		timestampiso="2018-03-15T18:07:09"
+		endtime="3/15/2018 1:07:19 PM"
+		timeoutfactor="1"
+		module="OpenInstallFile">
+		<detail>
+			OpenInstallFile
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.342"
+			timeRelativeToTestModuleStartTime="00:00.342"
+			timeWallClock="13:07:09"
+			time="00:00.342"
+			level="Warn"
+			category="General"
+			errimg=".\OpenInst_17240268_54e6024f_trace.jpg"
+			errthumb=".\OpenInst_17240268_54e6024f_trace_thumb.jpg">
+			<message>
+				Different display DPI scaling values are in use. Please make sure all connected displays have the same DPI scaling value.<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v7.1.1/technology-instrumentation/general-troubleshooting#GeneralTroubleshooting-DifferentDisplayDPIScalingValues<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="DifferentDpi"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.364"
+			timeRelativeToTestModuleStartTime="00:00.364"
+			timeWallClock="13:07:09"
+			time="00:00.364"
+			level="Info"
+			category="Mouse"
+			errimg=".\OpenInst_17240268_54e6024f_trace.jpg"
+			errthumb=".\OpenInst_17240268_54e6024f_trace_thumb.jpg">
+			<message>
+				Mouse Left DoubleClick item 'HeavyBidTrunk201803140042Msi' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='explorer' and @class='WorkerW' and @instance='1']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTrunk201803140042Msi"
+				id="8f1dd399919e4b62ba3aef4dcc1484f3"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.339"
+			timeRelativeToTestModuleStartTime="00:02.339"
+			timeWallClock="13:07:11"
+			time="00:02.339"
+			level="Info"
+			category="Mouse"
+			errimg=".\OpenInst_17240268_25bb083b_trace.jpg"
+			errthumb=".\OpenInst_17240268_25bb083b_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBid20181Setup.ButtonNext' at 57;15.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid20181Setup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenInstallFile.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.895"
+			timeRelativeToTestModuleStartTime="00:09.895"
+			timeWallClock="13:07:19"
+			time="00:09.895"
+			level="Error"
+			category="User"
+			errimg=".\OpenInst_17240268_90bf2afd_trace.jpg"
+			errthumb=".\OpenInst_17240268_90bf2afd_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

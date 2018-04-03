@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6b81c96d-4e70-4220-ba27-be851d62cf29"
+mode="Global"
+rxversion="7.1">
+	<name>
+		HBInstallFinishConfirmation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="HBInstallFinishConfirmation"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f0ee6428-4f55-4058-ac14-17c7d87860a8"
+		waitaction="Exists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73e771ee-4c82-4aa9-b7eb-f38f8137cb9f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="8"
+				prefcap="button"
+				rect="835,1040,49,40"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						HeavyBid - 1 running window
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						HeavyBid - 1 running window
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						HasPopup
+					</attribute>
+				</element>
+				<path>
+					/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HeavyBid\ -\ 1\ running\ wind']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5ff48e66-759f-4ae0-87ad-6d0fc99446df"
+		sx="859"
+		sy="1058"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="73e771ee-4c82-4aa9-b7eb-f38f8137cb9f"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="8"
+				prefcap="button"
+				rect="835,1040,49,40"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						HeavyBid - 1 running window
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						HeavyBid - 1 running window
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						HotTracked, HasPopup
+					</attribute>
+				</element>
+				<path>
+					/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HeavyBid\ -\ 1\ running\ wind']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d9408647-be01-48cb-bc74-9eb8f875a855">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACYAQgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDCpaSl
+rYyCiiimIKKKKACnL938abTl+7+NTLYpbmpounQ6h53nNIvl7cbCB1z7e1af/COWf/PSf/vof4VX
+8Lf8vX/AP61v1maGR/wjln/z0n/76H+FH/COWf8Az0n/AO+h/hWvRSAyP+Ecs/8AnpP/AN9D/Cj/
+AIRyz/56T/8AfQ/wrXooAyP+Eds/+ek//fQ/wo/4R2z/AOek/wD30P8ACteigDI/4R2z/wCek/8A
+30P8KP8AhHbP/npP/wB9D/CteigDI/4R2z/56T/99D/Cj/hHbP8A56T/APfQ/wAK16KAMj/hHbP/
+AJ6T/wDfQ/wo/wCEds/+ek//AH0P8K16KAMj/hHbP/npP/30P8KP+Eds/wDnpP8A99D/AArXooA5
+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
+tszqKKKyNT//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="7ee98c35-bda8-49ef-937d-b0fe3fb01fbe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		HBInstallFinishConfirmation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="15a5b37b68b3483a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1536x864"
+		timestamp="4/2/2018 1:34:13 PM"
+		timestampiso="2018-04-02T18:34:13"
+		endtime="4/2/2018 1:34:14 PM"
+		timeoutfactor="1"
+		module="OpenHB">
+		<detail>
+			OpenHB
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.440"
+			timeRelativeToTestModuleStartTime="00:01.456"
+			timeWallClock="13:34:14"
+			time="00:01.440"
+			level="Warn"
+			category="General">
+			<message>
+				Different display DPI scaling values are in use. Please make sure all connected displays have the same DPI scaling value.<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v7.1.1/technology-instrumentation/general-troubleshooting#GeneralTroubleshooting-DifferentDisplayDPIScalingValues<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="DifferentDpi"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.572"
+			timeRelativeToTestModuleStartTime="00:01.588"
+			timeWallClock="13:34:14"
+			time="00:01.572"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'HEAVYBID.EXE' with arguments ' HEAVYMULT' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenHB.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="b6666eea16baa2c"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/26/2018 1:32:41 PM"
+		timestampiso="2018-03-26T18:32:41"
+		endtime="3/26/2018 1:32:42 PM"
+		timeoutfactor="1"
+		module="UninstallHB">
+		<detail>
+			UninstallHB
+		</detail>
+		<errormessage>
+			Failed to run application 'Control Panel\Programs\Programs and Features'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.625"
+			timeRelativeToTestModuleStartTime="00:00.641"
+			timeWallClock="13:32:42"
+			time="00:00.625"
+			level="Info"
+			category="Application"
+			errimg=".\Uninstal_167133b7_eedd05f6_trace.jpg"
+			errthumb=".\Uninstal_167133b7_eedd05f6_trace_thumb.jpg">
+			<message>
+				Run application 'Control Panel\Programs\Programs and Features' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.688"
+			timeRelativeToTestModuleStartTime="00:00.703"
+			timeWallClock="13:32:42"
+			time="00:00.688"
+			level="Error"
+			category="Module"
+			errimg=".\Uninstal_167133b7_eedd05f6_trace.jpg"
+			errthumb=".\Uninstal_167133b7_eedd05f6_trace_thumb.jpg">
+			<message>
+				Failed to run application 'Control Panel\Programs\Programs and Features'.<br/>The system cannot find the file specified
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Host.RunApplication(String fileName, String arguments, String workingDirectory, Boolean maximized)
+   at HB_INSTALL_AUTO.UninstallHB.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+				codeline="83"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

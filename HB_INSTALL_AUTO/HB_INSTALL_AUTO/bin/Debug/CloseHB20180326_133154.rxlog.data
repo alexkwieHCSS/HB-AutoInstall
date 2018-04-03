@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="14237a9671da86d0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/26/2018 1:31:59 PM"
+		timestampiso="2018-03-26T18:31:59"
+		endtime="3/26/2018 1:32:00 PM"
+		timeoutfactor="1"
+		module="CloseHB">
+		<detail>
+			CloseHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.625"
+			timeRelativeToTestModuleStartTime="00:00.625"
+			timeWallClock="13:31:59"
+			time="00:00.625"
+			level="Info"
+			category="Application">
+			<message>
+				Closing application containing item 'HB20181'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HB 2018.1']"
+				fullname="HB_INSTALL_AUTORepository.HB20181.Self"
+				id="2f898f275ad8489e9722e1d9c63f5289"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CloseHB.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

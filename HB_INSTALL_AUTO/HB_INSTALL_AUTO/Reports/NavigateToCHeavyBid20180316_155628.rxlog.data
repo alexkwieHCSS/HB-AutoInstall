@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1afd74595b7a800"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/16/2018 3:56:33 PM"
+		timestampiso="2018-03-16T20:56:33"
+		endtime="3/16/2018 3:56:45 PM"
+		timeoutfactor="1"
+		module="NavigateToCHeavyBid">
+		<detail>
+			NavigateToCHeavyBid
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.664"
+			timeRelativeToTestModuleStartTime="00:00.669"
+			timeWallClock="15:56:33"
+			time="00:00.664"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\HeavyBid' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToCHeavyBid.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.743"
+			timeRelativeToTestModuleStartTime="00:00.748"
+			timeWallClock="15:56:34"
+			time="00:00.743"
+			level="Info"
+			category="Application">
+			<message>
+				Closing application containing item 'HeavyBid'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBid.Self"
+				id="ab0721fea94f44e5b9f6db7020e9c20a"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToCHeavyBid.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

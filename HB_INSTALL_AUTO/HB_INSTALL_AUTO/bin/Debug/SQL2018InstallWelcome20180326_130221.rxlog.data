@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="15dd33ced2febb92"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/26/2018 1:02:26 PM"
+		timestampiso="2018-03-26T18:02:26"
+		endtime="3/26/2018 1:02:38 PM"
+		timeoutfactor="1"
+		module="SQL2018InstallWelcome">
+		<detail>
+			SQL2018InstallWelcome
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.629"
+			timeRelativeToTestModuleStartTime="00:00.629"
+			timeWallClock="13:02:27"
+			time="00:00.629"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 3m to exist. Associated repository item: 'WindowsMenuBar.MicrosoftSQLServer2012NativeClient'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Microsoft\ SQL\ Server\ 2012']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.MicrosoftSQLServer2012NativeClient"
+				id="6942dacc3d934c04b2664e2483f821da"
+				timeout="180000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SQL2018InstallWelcome.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.410"
+			timeRelativeToTestModuleStartTime="00:01.410"
+			timeWallClock="13:02:27"
+			time="00:01.410"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WindowsMenuBar.MicrosoftSQLServer2012NativeClient' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Microsoft\ SQL\ Server\ 2012']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.MicrosoftSQLServer2012NativeClient"
+				id="6942dacc3d934c04b2664e2483f821da"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SQL2018InstallWelcome.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.199"
+			timeRelativeToTestModuleStartTime="00:02.199"
+			timeWallClock="13:02:28"
+			time="00:02.199"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SQL2018InstallWelcome.cs"
+				codeline="89"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.206"
+			timeRelativeToTestModuleStartTime="00:12.206"
+			timeWallClock="13:02:38"
+			time="00:12.206"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}'.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SQL2018InstallWelcome.cs"
+				codeline="92"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

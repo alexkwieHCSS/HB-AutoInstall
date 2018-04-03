@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="7d990f6cd174c00"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/16/2018 3:44:35 PM"
+		timestampiso="2018-03-16T20:44:35"
+		endtime="3/16/2018 3:44:37 PM"
+		timeoutfactor="1"
+		module="RegisterHB">
+		<detail>
+			RegisterHB
+		</detail>
+		<errormessage>
+			Setting attribute 'ADV MU Registration Code' failed on element '{Unknown:DFentry}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.655"
+			timeRelativeToTestModuleStartTime="00:00.661"
+			timeWallClock="15:44:36"
+			time="00:00.655"
+			level="Info"
+			category="Invoke Action"
+			errimg=".\Register_a3b8227c_7708e0ba_trace.jpg"
+			errthumb=".\Register_a3b8227c_7708e0ba_trace_thumb.jpg">
+			<message>
+				Invoking Focus() on item 'HeavyBidRegistration.HBCheckReg'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid Registration']/element[@controlid='79']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.HBCheckReg"
+				id="3d7de83a2f5c47bcbbdff1cdc20c2432"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.318"
+			timeRelativeToTestModuleStartTime="00:01.323"
+			timeWallClock="15:44:36"
+			time="00:01.318"
+			level="Info"
+			category="Set Value"
+			errimg=".\Register_a3b8227c_7b72e0c1_trace.jpg"
+			errthumb=".\Register_a3b8227c_7b72e0c1_trace_thumb.jpg">
+			<message>
+				Setting attribute ADV MU Registration Code to '01AF8E32-C236-435F-8C95-2518C339B7C0' on item 'HeavyBidRegistration.HBCheckReg'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='HeavyBid Registration']/element[@controlid='79']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.HBCheckReg"
+				id="3d7de83a2f5c47bcbbdff1cdc20c2432"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.380"
+			timeRelativeToTestModuleStartTime="00:01.385"
+			timeWallClock="15:44:36"
+			time="00:01.380"
+			level="Error"
+			category="Module"
+			errimg=".\Register_a3b8227c_3b82d943_trace.jpg"
+			errthumb=".\Register_a3b8227c_3b82d943_trace_thumb.jpg">
+			<message>
+				Setting attribute 'ADV MU Registration Code' failed on element '{Unknown:DFentry}'.<br/>The operation is not supported.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at HB_INSTALL_AUTO.RegisterHB.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs:line 87
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="87"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

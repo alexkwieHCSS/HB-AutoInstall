@@ -1,0 +1,9 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution KeePassTestSuite[KeePassTestSuite[]]]&#xD;&#xA;Solution KeePassTestSuite\KeePassTestSuite\Program.cs&#xD;&#xA;Solution KeePassTestSuite\KeePassTestSuite\bin" />
+  <StartupProject value="{AC2AD819-865C-4A36-9AFC-B17715DBA647}" />
+</Properties>

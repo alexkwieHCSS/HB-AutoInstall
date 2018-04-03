@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="24a75c9db3bd32c6"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="3/15/2018 12:38:09 PM"
+		timestampiso="2018-03-15T17:38:09"
+		endtime="3/15/2018 12:38:28 PM"
+		timeoutfactor="1"
+		module="Open_Install_File">
+		<detail>
+			Open_Install_File
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.625"
+			timeRelativeToTestModuleStartTime="00:00.625"
+			timeWallClock="12:38:10"
+			time="00:00.625"
+			level="Info"
+			category="Mouse"
+			errimg=".\Open_Ins_50dd7b68_15a80d3e_trace.jpg"
+			errthumb=".\Open_Ins_50dd7b68_15a80d3e_trace_thumb.jpg">
+			<message>
+				Mouse Left DoubleClick item 'Explorer.HeavyBidTrunk201803140042Msi' at 49;56.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='explorer' and @class='WorkerW' and @instance='1']/?/?/list[@controlid='1']/listitem[@text~'^HeavyBidTrunk_2018-03-14_']"
+				fullname="HB_INSTALL_AUTORepository.Explorer.HeavyBidTrunk201803140042Msi"
+				id="d63276b84bfa42ccb1bd989d88b21f5f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\Open_Install_File.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.056"
+			timeRelativeToTestModuleStartTime="00:19.056"
+			timeWallClock="12:38:28"
+			time="00:19.056"
+			level="Error"
+			category="User"
+			errimg=".\Open_Ins_50dd7b68_c9b4feea_trace.jpg"
+			errthumb=".\Open_Ins_50dd7b68_c9b4feea_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>
