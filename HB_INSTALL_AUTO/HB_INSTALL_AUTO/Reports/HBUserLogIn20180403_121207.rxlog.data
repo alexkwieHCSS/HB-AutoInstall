@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="25d58a438e60b19b"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/3/2018 12:12:11 PM"
+		timestampiso="2018-04-03T17:12:11"
+		endtime="4/3/2018 12:12:14 PM"
+		timeoutfactor="1"
+		module="HBUserLogIn">
+		<detail>
+			HBUserLogIn
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.663"
+			timeRelativeToTestModuleStartTime="00:00.670"
+			timeWallClock="12:12:12"
+			time="00:00.663"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'UserLogin.UserNumberEntry'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.327"
+			timeRelativeToTestModuleStartTime="00:01.333"
+			timeWallClock="12:12:13"
+			time="00:01.327"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'UserLogin.UserNumberEntry' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.045"
+			timeRelativeToTestModuleStartTime="00:02.052"
+			timeWallClock="12:12:13"
+			time="00:02.045"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{NumPad1}{NumPad3}' with focus on 'UserLogin.UserNumberEntry'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//button[@accessiblename='...']/../.."
+				fullname="HB_INSTALL_AUTORepository.UserLogin.UserNumberEntry"
+				id="5535fdd16eaf41969ddd20e000736e3c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.397"
+			timeRelativeToTestModuleStartTime="00:02.404"
+			timeWallClock="12:12:14"
+			time="00:02.397"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'UserLogin.ButtonOK'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//?/?/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.UserLogin.ButtonOK"
+				id="79d62785563a4181b4d1e1f5aedea505"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.426"
+			timeRelativeToTestModuleStartTime="00:02.433"
+			timeWallClock="12:12:14"
+			time="00:02.426"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'UserLogin.ButtonOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='User Login']//?/?/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.UserLogin.ButtonOK"
+				id="79d62785563a4181b4d1e1f5aedea505"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBUserLogIn.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

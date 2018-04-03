@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="3fcfb0d39022e5a"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/3/2018 12:01:09 PM"
+		timestampiso="2018-04-03T17:01:09"
+		endtime="4/3/2018 12:01:22 PM"
+		timeoutfactor="1"
+		module="CrystalInstallWelcome">
+		<detail>
+			CrystalInstallWelcome
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.663"
+			timeRelativeToTestModuleStartTime="00:00.669"
+			timeWallClock="12:01:10"
+			time="00:00.663"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 3m to exist. Associated repository item: 'WindowsMenuBar.HCSSCrystalXIIntegrationInstallS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar////button[@accessiblename~'HCSS']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.HCSSCrystalXIIntegrationInstallS"
+				id="43f5474f379445d98f095d79fa829cd3"
+				timeout="180000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CrystalInstallWelcome.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.516"
+			timeRelativeToTestModuleStartTime="00:01.523"
+			timeWallClock="12:01:11"
+			time="00:01.516"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WindowsMenuBar.HCSSCrystalXIIntegrationInstallS' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar////button[@accessiblename~'HCSS']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.HCSSCrystalXIIntegrationInstallS"
+				id="43f5474f379445d98f095d79fa829cd3"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CrystalInstallWelcome.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.438"
+			timeRelativeToTestModuleStartTime="00:02.445"
+			timeWallClock="12:01:12"
+			time="00:02.438"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CrystalInstallWelcome.cs"
+				codeline="89"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.454"
+			timeRelativeToTestModuleStartTime="00:12.461"
+			timeWallClock="12:01:22"
+			time="00:12.454"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}'.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CrystalInstallWelcome.cs"
+				codeline="92"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="19202c16cb67678"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/3/2018 10:53:35 AM"
+		timestampiso="2018-04-03T15:53:35"
+		endtime="4/3/2018 10:53:38 AM"
+		timeoutfactor="1"
+		module="SelectInstallType">
+		<detail>
+			SelectInstallType
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.635"
+			timeRelativeToTestModuleStartTime="00:00.635"
+			timeWallClock="10:53:36"
+			time="00:00.635"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInT'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Multi-user]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInT"
+				id="87f3d72aa7d34b0f9b415932103d923d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SelectInstallType.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.250"
+			timeRelativeToTestModuleStartTime="00:01.250"
+			timeWallClock="10:53:37"
+			time="00:01.250"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInT' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Multi-user]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInT"
+				id="87f3d72aa7d34b0f9b415932103d923d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SelectInstallType.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.984"
+			timeRelativeToTestModuleStartTime="00:01.984"
+			timeWallClock="10:53:37"
+			time="00:01.984"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SelectInstallType.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.984"
+			timeRelativeToTestModuleStartTime="00:01.984"
+			timeWallClock="10:53:37"
+			time="00:01.984"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SelectInstallType.cs"
+				codeline="92"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
