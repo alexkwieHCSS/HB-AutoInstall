@@ -257,6 +257,18 @@
       <UserCode>true</UserCode>
       <id>714abe77-03e8-425c-9b59-35ae47e66526</id>
     </Compile>
+    <Compile Include="PreviousServerInstall.cs">
+      <BoundTo>a224a64b-11bc-478a-8681-2a81867aa130</BoundTo>
+      <DependentUpon>PreviousServerInstall.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb043264-9ad8-4987-8b30-73e79a474e84</id>
+    </Compile>
+    <Compile Include="PreviousServerInstall.UserCode.cs">
+      <BoundTo>a224a64b-11bc-478a-8681-2a81867aa130</BoundTo>
+      <DependentUpon>PreviousServerInstall.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23c88ff3-39f9-4422-bcf4-b021f28a59c5</id>
+    </Compile>
     <Compile Include="RegisterHB.cs">
       <BoundTo>72c76099-1b4e-4323-b0e7-3c7920049d72</BoundTo>
       <DependentUpon>RegisterHB.rxrec</DependentUpon>
@@ -268,6 +280,18 @@
       <DependentUpon>RegisterHB.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b1f1942c-6508-4dce-9bef-e9962caddda9</id>
+    </Compile>
+    <Compile Include="RunBatchTrunk.cs">
+      <BoundTo>265bd766-88c0-4e40-a960-82f9ad8bf405</BoundTo>
+      <DependentUpon>RunBatchTrunk.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a69da85-797c-4b69-9539-5e1593b2ed50</id>
+    </Compile>
+    <Compile Include="RunBatchTrunk.UserCode.cs">
+      <BoundTo>265bd766-88c0-4e40-a960-82f9ad8bf405</BoundTo>
+      <DependentUpon>RunBatchTrunk.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8628805f-d81c-440e-a727-dd63179f3b95</id>
     </Compile>
     <Compile Include="RunWSINST.cs">
       <BoundTo>dc233b8b-9b97-4da4-8918-d5856396e67a</BoundTo>
@@ -507,10 +531,20 @@
       <id>dd282dd7-3772-4cd1-b51f-503625449088</id>
       <recordtableid>6445eca2-afc8-4ce0-9d5b-fcb6946c23e7</recordtableid>
     </None>
+    <None Include="PreviousServerInstall.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>a224a64b-11bc-478a-8681-2a81867aa130</id>
+      <recordtableid>6936efa7-f3ef-4abb-967f-75ea9f63544b</recordtableid>
+    </None>
     <None Include="RegisterHB.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>72c76099-1b4e-4323-b0e7-3c7920049d72</id>
       <recordtableid>02167738-89fa-4bd8-987f-73d74dc2b4b4</recordtableid>
+    </None>
+    <None Include="RunBatchTrunk.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>265bd766-88c0-4e40-a960-82f9ad8bf405</id>
+      <recordtableid>8a92616a-86ba-4fc0-855c-6620b301238f</recordtableid>
     </None>
     <None Include="RunWSINST.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>

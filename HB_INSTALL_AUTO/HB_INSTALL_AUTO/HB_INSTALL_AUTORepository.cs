@@ -234,6 +234,7 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _multiusermultipleuserscanworkintInfo;
             RepoItemInfo _buttoninstallInfo;
             RepoItemInfo _buttonfinishInfo;
+            RepoItemInfo _buttonyesInfo;
 
             /// <summary>
             /// Creates a new HeavyBidServerSetup  folder.
@@ -243,9 +244,10 @@ namespace HB_INSTALL_AUTO
             {
                 _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text='&Next']", 30000, null, "d5871a5b-28dc-49bc-ab19-510a037a9d94");
                 _iacceptthetermsinthelicenseagreemInfo = new RepoItemInfo(this, "IAcceptTheTermsInTheLicenseAgreem", "checkbox[@text~'[agree][terms]']", 30000, null, "0b9fc09c-2aa6-473e-b588-b28d927bed0c");
-                _multiusermultipleuserscanworkintInfo = new RepoItemInfo(this, "MultiUserMultipleUsersCanWorkInT", "?/?/radiobutton[@text~'[multi-user]']", 30000, null, "87f3d72a-a7d3-4b0f-9b41-5932103d923d");
+                _multiusermultipleuserscanworkintInfo = new RepoItemInfo(this, "MultiUserMultipleUsersCanWorkInT", "?/?/radiobutton[@text~'^[Multi-user]']", 30000, null, "87f3d72a-a7d3-4b0f-9b41-5932103d923d");
                 _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text='&Install']", 30000, null, "13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda");
                 _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text='&Finish']", 30000, null, "f6d583e3-44b4-4f93-b8a3-91c915c2c48c");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text='Yes']", 30000, null, "1cbaddb5-161e-467e-ae75-42781f0dd64d");
             }
 
             /// <summary>
@@ -389,6 +391,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonfinishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("1cbaddb5-161e-467e-ae75-42781f0dd64d")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("1cbaddb5-161e-467e-ae75-42781f0dd64d")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
                 }
             }
         }
@@ -1013,11 +1039,11 @@ namespace HB_INSTALL_AUTO
             /// Creates a new WindowsMenuBar  folder.
             /// </summary>
             public WindowsMenuBarAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WindowsMenuBar", "/menubar[@class='Shell_TrayWnd']", parentFolder, 30000, null, true, "61625f19-ede6-4d77-b833-f1030fee1a3c", "")
+                    base("WindowsMenuBar", "/menubar", parentFolder, 30000, null, true, "61625f19-ede6-4d77-b833-f1030fee1a3c", "")
             {
-                _hcsscrystalxiintegrationinstallsInfo = new RepoItemInfo(this, "HCSSCrystalXIIntegrationInstallS", "container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HCSS\\ -\\ Crystal\\ XI\\ Integra']", 30000, null, "43f5474f-3794-45d9-8f09-5d79fa829cd3");
-                _microsoftsqlserver2012nativeclientInfo = new RepoItemInfo(this, "MicrosoftSQLServer2012NativeClient", "container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Microsoft\\ SQL\\ Server\\ 2012']", 30000, null, "6942dacc-3d93-4c04-b266-4e2483f821da");
-                _heavybidfinishinstallInfo = new RepoItemInfo(this, "HeavyBidFinishInstall", "container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HeavyBid\\ -\\ 1\\ running\\ wind']", 30000, null, "73e771ee-4c82-4aa9-b7eb-f38f8137cb9f");
+                _hcsscrystalxiintegrationinstallsInfo = new RepoItemInfo(this, "HCSSCrystalXIIntegrationInstallS", ".////button[@accessiblename~'HCSS']", 30000, null, "43f5474f-3794-45d9-8f09-5d79fa829cd3");
+                _microsoftsqlserver2012nativeclientInfo = new RepoItemInfo(this, "MicrosoftSQLServer2012NativeClient", ".////button[@accessiblename~'Microsoft SQL']", 30000, null, "6942dacc-3d93-4c04-b266-4e2483f821da");
+                _heavybidfinishinstallInfo = new RepoItemInfo(this, "HeavyBidFinishInstall", ".////button[@accessiblename~'HeavyBid']", 30000, null, "73e771ee-4c82-4aa9-b7eb-f38f8137cb9f");
             }
 
             /// <summary>

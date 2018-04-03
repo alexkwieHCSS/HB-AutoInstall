@@ -24,6 +24,12 @@ rxversion="7.1">
 			name="Uninstall">
 			</testcase>
 			<testmodule
+			id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
+			name="PreviousServerInstall"
+			ref="6936efa7-f3ef-4abb-967f-75ea9f63544b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="26d76a24-083d-45a6-877c-b4b23b84e3f7"
 			name="OpenInstallFile"
 			ref="571f330f-34d5-41f8-bdde-be8c3b849738"
@@ -110,6 +116,12 @@ rxversion="7.1">
 			id="710e27f3-6598-44a2-aba7-1784e5169982"
 			name="HBWSWelcomeSetup"
 			ref="e29b418e-7757-4f1e-b5d2-20cd70f1177b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="83149741-4804-445e-8d68-204a9161157a"
+			name="RunBatchTrunk"
+			ref="8a92616a-86ba-4fc0-855c-6620b301238f"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -225,6 +237,10 @@ rxversion="7.1">
 						id="e1733192-a28b-4b65-abf2-b0342696439a"
 						name="InstallServer">
 							<testmodule
+							id="83149741-4804-445e-8d68-204a9161157a"
+							name="RunBatchTrunk">
+							</testmodule>
+							<testmodule
 							id="26d76a24-083d-45a6-877c-b4b23b84e3f7"
 							name="OpenInstallFile">
 							</testmodule>
@@ -243,6 +259,10 @@ rxversion="7.1">
 							<testmodule
 							id="c73cb5e6-13a6-46d7-9735-33c1beac9054"
 							name="ConfirmHBInstallFinish">
+							</testmodule>
+							<testmodule
+							id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
+							name="PreviousServerInstall">
 							</testmodule>
 						</testcase>
 						<testcase
@@ -365,7 +385,7 @@ rxversion="7.1">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c">
+			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
 			</testcontainer>
 			<testcontainer
 			id="d76b351a-e0db-4a50-b217-cbd5aed29063">

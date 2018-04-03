@@ -79,17 +79,20 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'WindowsMenuBar.HeavyBidFinishInstall'", repo.WindowsMenuBar.HeavyBidFinishInstallInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.WindowsMenuBar.HeavyBidFinishInstallInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WindowsMenuBar.HeavyBidFinishInstall' at Center.", repo.WindowsMenuBar.HeavyBidFinishInstallInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'WindowsMenuBar.HeavyBidFinishInstall'", repo.WindowsMenuBar.HeavyBidFinishInstallInfo, new ActionTimeout(10000), new RecordItemIndex(1));
+            repo.WindowsMenuBar.HeavyBidFinishInstallInfo.WaitForExists(10000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WindowsMenuBar.HeavyBidFinishInstall' at Center.", repo.WindowsMenuBar.HeavyBidFinishInstallInfo, new RecordItemIndex(2));
             repo.WindowsMenuBar.HeavyBidFinishInstall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
+            Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(4));
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             

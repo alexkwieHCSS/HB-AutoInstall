@@ -47,7 +47,7 @@ rxversion="7.1">
 			name="MultiUserMultipleUsersCanWorkInT"
 			refimgid="e250a277-2cfb-435f-a0ab-5ca4048db85a"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'[multi-user]']
+				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Multi-user]']
 			</item>
 			<item
 			addcaps="button,nativewindow"
@@ -66,6 +66,13 @@ rxversion="7.1">
 			refimgid="8ceea5cf-c0e7-4a44-bb86-1bd77e1c019f"
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Finish']
+			</item>
+			<item
+			capname="button"
+			id="1cbaddb5-161e-467e-ae75-42781f0dd64d"
+			name="ButtonYes"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/button[@text='Yes']
 			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
@@ -373,7 +380,6 @@ AAAAAElFTkSuQmCC
 		id="61625f19-ede6-4d77-b833-f1030fee1a3c"
 		isrooted="True"
 		name="WindowsMenuBar"
-		refpath="/menubar[@processname='explorer' and @class='Shell_TrayWnd']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -382,9 +388,8 @@ AAAAAElFTkSuQmCC
 			id="43f5474f-3794-45d9-8f09-5d79fa829cd3"
 			name="HCSSCrystalXIIntegrationInstallS"
 			refimgid="a2a6e02e-69a5-46a0-98e1-0ebb16e01668"
-			refpath="/menubar[@processname='explorer' and @class='Shell_TrayWnd']/container[@controlid='40965']/container[@caption='Running applications']/element[@class='MSTaskListWClass']/toolbar[@accessiblename='Running applications']/button[@accessiblename='HCSS - Crystal XI Integration - InstallShield Wizard - 1 running window']"
 			searchtimeout="30000ms">
-				/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HCSS\ -\ Crystal\ XI\ Integra']
+				/menubar////button[@accessiblename~'HCSS']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -392,22 +397,21 @@ AAAAAElFTkSuQmCC
 			id="6942dacc-3d93-4c04-b266-4e2483f821da"
 			name="MicrosoftSQLServer2012NativeClient"
 			refimgid="505ee732-643f-43ed-bc82-21f2a434df90"
-			refpath="/menubar[@processname='explorer' and @class='Shell_TrayWnd']/container[@controlid='40965']/container[@caption='Running applications']/element[@class='MSTaskListWClass']/toolbar[@accessiblename='Running applications']/button[@accessiblename='Microsoft SQL Server 2012 Native Client  Setup - 1 running window']"
 			searchtimeout="30000ms">
-				/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Microsoft\ SQL\ Server\ 2012']
+				/menubar////button[@accessiblename~'Microsoft SQL']
 			</item>
 			<item
 			addcaps="button,accessible"
 			capname="button"
+			comment="other HB items will break"
 			id="73e771ee-4c82-4aa9-b7eb-f38f8137cb9f"
 			name="HeavyBidFinishInstall"
 			refimgid="f84d2e38-2f5d-411c-8de9-44136909f922"
-			refpath="/menubar[@processname='explorer' and @class='Shell_TrayWnd']/container[@controlid='40965']/container/element/toolbar/button[@accessiblename~'^HeavyBid\ -\ 1\ running\ wind']"
 			searchtimeout="30000ms">
-				/menubar[@class='Shell_TrayWnd']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^HeavyBid\ -\ 1\ running\ wind']
+				/menubar////button[@accessiblename~'HeavyBid']
 			</item>
 			<basepath>
-				/menubar[@class='Shell_TrayWnd']
+				/menubar
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJN

@@ -97,10 +97,6 @@ namespace HB_INSTALL_AUTO
             repo.UserLogin.ButtonOK.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.RegistrationEntry' at 26;12.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(5));
-            repo.HeavyBidRegistration.RegistrationEntry.Click("26;12");
-            Delay.Milliseconds(200);
-            
         }
 
 #region Image Feature Data
