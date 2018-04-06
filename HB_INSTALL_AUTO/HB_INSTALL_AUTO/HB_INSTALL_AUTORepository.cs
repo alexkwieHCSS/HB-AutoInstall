@@ -39,7 +39,6 @@ namespace HB_INSTALL_AUTO
         HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder _windowsmenubar;
         HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder _programsandfeatures;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder _heavybiduninstall;
-        HB_INSTALL_AUTORepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the HB_INSTALL_AUTORepository element repository.
@@ -68,7 +67,6 @@ namespace HB_INSTALL_AUTO
             _windowsmenubar = new HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder(this);
             _programsandfeatures = new HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder(this);
             _heavybiduninstall = new HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder(this);
-            _explorer = new HB_INSTALL_AUTORepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -205,15 +203,6 @@ namespace HB_INSTALL_AUTO
         public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder HeavyBidUninstall
         {
             get { return _heavybiduninstall; }
-        }
-
-        /// <summary>
-        /// The Explorer folder.
-        /// </summary>
-        [RepositoryFolder("e98b83b8-2efe-453b-8f91-bc7330849ee5")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.ExplorerAppFolder Explorer
-        {
-            get { return _explorer; }
         }
     }
 
@@ -1153,17 +1142,19 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _buttonuninstallInfo;
             RepoItemInfo _buttonyesInfo;
             RepoItemInfo _buttinuninstallorchangeInfo;
+            RepoItemInfo _searcheditboxInfo;
 
             /// <summary>
             /// Creates a new ProgramsAndFeatures  folder.
             /// </summary>
             public ProgramsAndFeaturesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ProgramsAndFeatures", "/form[@title='Programs and Features']", parentFolder, 30000, null, true, "bb83f234-7f01-4a6b-9b28-c7005b669ec4", "")
+                    base("ProgramsAndFeatures", "/form[@title~'Programs and Features']", parentFolder, 30000, null, true, "bb83f234-7f01-4a6b-9b28-c7005b669ec4", "")
             {
                 _row0 = new HB_INSTALL_AUTORepositoryFolders.Row0Folder(this);
                 _buttonuninstallInfo = new RepoItemInfo(this, "ButtonUninstall", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']", 30000, null, "8e655133-0f49-4357-ab46-e1f07390400d");
                 _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "?/?/element[@instance='0']/button[@text='&Yes']", 30000, null, "3efc40c1-ea5d-4004-985f-366e7e176dc9");
                 _buttinuninstallorchangeInfo = new RepoItemInfo(this, "ButtinUninstallOrChange", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']", 30000, null, "71cea4ec-b070-4408-90bc-44a4c19e08d6");
+                _searcheditboxInfo = new RepoItemInfo(this, "SearchEditBox", "?/?/?/?/element[@class='Search Box']", 30000, null, "9c992ed7-95b4-43ac-b064-7b105340fbb8");
             }
 
             /// <summary>
@@ -1259,6 +1250,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttinuninstallorchangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SearchEditBox item.
+            /// </summary>
+            [RepositoryItem("9c992ed7-95b4-43ac-b064-7b105340fbb8")]
+            public virtual Ranorex.Unknown SearchEditBox
+            {
+                get
+                {
+                    return _searcheditboxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchEditBox item info.
+            /// </summary>
+            [RepositoryItemInfo("9c992ed7-95b4-43ac-b064-7b105340fbb8")]
+            public virtual RepoItemInfo SearchEditBoxInfo
+            {
+                get
+                {
+                    return _searcheditboxInfo;
                 }
             }
 
@@ -1452,72 +1467,6 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonyesInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The ExplorerAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("e98b83b8-2efe-453b-8f91-bc7330849ee5")]
-        public partial class ExplorerAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _list1Info;
-
-            /// <summary>
-            /// Creates a new Explorer  folder.
-            /// </summary>
-            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer", "/form[@processname='explorer' and @class='WorkerW' and @instance='1']", parentFolder, 30000, null, true, "e98b83b8-2efe-453b-8f91-bc7330849ee5", "")
-            {
-                _list1Info = new RepoItemInfo(this, "List1", "?/?/list[@controlid='1']", 30000, null, "4af71683-24d3-4ea4-8f96-9d7e1218ca7a");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("e98b83b8-2efe-453b-8f91-bc7330849ee5")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("e98b83b8-2efe-453b-8f91-bc7330849ee5")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The List1 item.
-            /// </summary>
-            [RepositoryItem("4af71683-24d3-4ea4-8f96-9d7e1218ca7a")]
-            public virtual Ranorex.List List1
-            {
-                get
-                {
-                    return _list1Info.CreateAdapter<Ranorex.List>(true);
-                }
-            }
-
-            /// <summary>
-            /// The List1 item info.
-            /// </summary>
-            [RepositoryItemInfo("4af71683-24d3-4ea4-8f96-9d7e1218ca7a")]
-            public virtual RepoItemInfo List1Info
-            {
-                get
-                {
-                    return _list1Info;
                 }
             }
         }

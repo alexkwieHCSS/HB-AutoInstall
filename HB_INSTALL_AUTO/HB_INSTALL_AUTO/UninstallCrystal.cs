@@ -79,24 +79,35 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration'", repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegrationInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'", repo.ProgramsAndFeatures.SearchEditBoxInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.ProgramsAndFeatures.SearchEditBoxInfo.WaitForExists(5000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(1));
+            repo.ProgramsAndFeatures.SearchEditBox.Click("2;10");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'hcss{Space}integration' with focus on 'ProgramsAndFeatures.SearchEditBox'.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(2));
+            repo.ProgramsAndFeatures.SearchEditBox.PressKeys("hcss{Space}integration");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration'", repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegrationInfo, new ActionTimeout(30000), new RecordItemIndex(3));
             repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegrationInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration' at Center.", repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegrationInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration' at Center.", repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegrationInfo, new RecordItemIndex(4));
             repo.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'", repo.ProgramsAndFeatures.ButtonUninstallInfo, new ActionTimeout(10000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'", repo.ProgramsAndFeatures.ButtonUninstallInfo, new ActionTimeout(10000), new RecordItemIndex(5));
             repo.ProgramsAndFeatures.ButtonUninstallInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.", repo.ProgramsAndFeatures.ButtonUninstallInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.", repo.ProgramsAndFeatures.ButtonUninstallInfo, new RecordItemIndex(6));
             repo.ProgramsAndFeatures.ButtonUninstall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'", repo.ProgramsAndFeatures.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'", repo.ProgramsAndFeatures.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(7));
             repo.ProgramsAndFeatures.ButtonYesInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.", repo.ProgramsAndFeatures.ButtonYesInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.", repo.ProgramsAndFeatures.ButtonYesInfo, new RecordItemIndex(8));
             repo.ProgramsAndFeatures.ButtonYes.Click();
             Delay.Milliseconds(200);
             

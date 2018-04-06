@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="175f8364ba7dc000"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 10:49:48 AM"
+		timestampiso="2018-04-06T15:49:48"
+		endtime="4/6/2018 10:49:54 AM"
+		timeoutfactor="1"
+		module="UninstallCrystal">
+		<detail>
+			UninstallCrystal
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.634"
+			timeRelativeToTestModuleStartTime="00:00.634"
+			timeWallClock="10:49:48"
+			time="00:00.634"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="5000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.509"
+			timeRelativeToTestModuleStartTime="00:01.509"
+			timeWallClock="10:49:49"
+			time="00:01.509"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.509"
+			timeRelativeToTestModuleStartTime="00:02.509"
+			timeWallClock="10:49:50"
+			time="00:02.509"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'hcss{Space}integration' with focus on 'ProgramsAndFeatures.SearchEditBox'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.681"
+			timeRelativeToTestModuleStartTime="00:04.681"
+			timeWallClock="10:49:52"
+			time="00:04.681"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration"
+				id="61de3bb2d64b4cdd8275e2d0d84b9fef"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.072"
+			timeRelativeToTestModuleStartTime="00:05.072"
+			timeWallClock="10:49:53"
+			time="00:05.072"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration"
+				id="61de3bb2d64b4cdd8275e2d0d84b9fef"
+				timeout="90000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

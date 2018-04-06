@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="a95d5ac8e4fa29"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 10:57:04 AM"
+		timestampiso="2018-04-06T15:57:04"
+		endtime="4/6/2018 10:57:23 AM"
+		timeoutfactor="1"
+		module="UninstallSQL">
+		<detail>
+			UninstallSQL
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.625"
+			timeRelativeToTestModuleStartTime="00:00.640"
+			timeWallClock="10:57:04"
+			time="00:00.625"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="5000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.500"
+			timeRelativeToTestModuleStartTime="00:01.516"
+			timeWallClock="10:57:05"
+			time="00:01.500"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.563"
+			timeRelativeToTestModuleStartTime="00:02.579"
+			timeWallClock="10:57:06"
+			time="00:02.563"
+			level="Info"
+			category="Keyboard"
+			errimg=".\Uninstal_acd5e178_5a409ebe_trace.jpg"
+			errthumb=".\Uninstal_acd5e178_5a409ebe_trace_thumb.jpg">
+			<message>
+				Key sequence 'microsoft{Space}SQL{Space}2012' with focus on 'ProgramsAndFeatures.SearchEditBox'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.951"
+			timeRelativeToTestModuleStartTime="00:04.967"
+			timeWallClock="10:57:09"
+			time="00:04.951"
+			level="Info"
+			category="Delay"
+			errimg=".\Uninstal_acd5e178_0ff5b976_trace.jpg"
+			errthumb=".\Uninstal_acd5e178_0ff5b976_trace_thumb.jpg">
+			<message>
+				Waiting for 2m.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+				codeline="93"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.412"
+			timeRelativeToTestModuleStartTime="00:19.428"
+			timeWallClock="10:57:23"
+			time="00:19.412"
+			level="Error"
+			category="User"
+			errimg=".\Uninstal_acd5e178_cb79e08b_trace.jpg"
+			errthumb=".\Uninstal_acd5e178_cb79e08b_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

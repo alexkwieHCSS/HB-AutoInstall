@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="25e9690670c76a3"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 10:15:21 AM"
+		timestampiso="2018-04-06T15:15:21"
+		endtime="4/6/2018 10:15:23 AM"
+		timeoutfactor="1"
+		module="UninstallCrystal">
+		<detail>
+			UninstallCrystal
+		</detail>
+		<errormessage>
+			Setting attribute 'HCSSCrystal' failed on element '{Container: Search Programs and Features}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.641"
+			timeRelativeToTestModuleStartTime="00:00.641"
+			timeWallClock="10:15:22"
+			time="00:00.641"
+			level="Info"
+			category="Set Value"
+			errimg=".\Uninstal_17eb4b34_90c28503_trace.jpg"
+			errthumb=".\Uninstal_17eb4b34_90c28503_trace_thumb.jpg">
+			<message>
+				Setting attribute HCSSCrystal to '' on item 'ProgramsAndFeatures.ContainerSearchProgramsAndFeatures'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/element[@class='WorkerW']/container[@controlid='40965']/element[@class='UniversalSearchBand']//container[@caption~'^\ Search\ Programs\ and\ Feat']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ContainerSearchProgramsAndFeatures"
+				id="d19bfc3c00f04bca916b273a594117e7"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.549"
+			timeRelativeToTestModuleStartTime="00:01.549"
+			timeWallClock="10:15:23"
+			time="00:01.549"
+			level="Error"
+			category="Module"
+			errimg=".\Uninstal_17eb4b34_89939839_trace.jpg"
+			errthumb=".\Uninstal_17eb4b34_89939839_trace_thumb.jpg">
+			<message>
+				Setting attribute 'HCSSCrystal' failed on element '{Container: Search Programs and Features}'.<br/>The operation is not supported.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at HB_INSTALL_AUTO.UninstallCrystal.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="83"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

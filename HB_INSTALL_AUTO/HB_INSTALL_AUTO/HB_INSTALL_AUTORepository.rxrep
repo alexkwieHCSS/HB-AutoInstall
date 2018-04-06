@@ -474,7 +474,6 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 		id="bb83f234-7f01-4a6b-9b28-c7005b669ec4"
 		isrooted="True"
 		name="ProgramsAndFeatures"
-		refpath="/form[@title='Programs and Features']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -483,9 +482,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="8e655133-0f49-4357-ab46-e1f07390400d"
 			name="ButtonUninstall"
 			refimgid="e5071ebd-1399-47ab-a6e0-969dda2f59e1"
-			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/container[@automationid='FolderLayoutContainer']/container/toolbar/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']"
 			searchtimeout="30000ms">
-				/form[@title='Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']
+				/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']
 			</item>
 			<item
 			addcaps="button,nativewindow"
@@ -493,9 +491,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="3efc40c1-ea5d-4004-985f-366e7e176dc9"
 			name="ButtonYes"
 			refimgid="8801d049-3848-4980-9105-7a9c535cbf92"
-			refpath="/form[@title='Programs and Features' and @processname='explorer' and @class='#32770']/container/element[@class='CtrlNotifySink' and @instance='0']/button[@text='&amp;Yes']"
 			searchtimeout="30000ms">
-				/form[@title='Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']
+				/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']
 			</item>
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke,uiautomationvalue"
@@ -503,9 +500,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="71cea4ec-b070-4408-90bc-44a4c19e08d6"
 			name="ButtinUninstallOrChange"
 			refimgid="0326f21c-d4b4-4caa-9911-e01c906208ab"
-			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/container[@automationid='FolderLayoutContainer']/container/toolbar/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']"
 			searchtimeout="30000ms">
-				/form[@title='Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']
+				/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']
 			</item>
 			<folder
 			capname="row"
@@ -521,7 +517,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 				name="HeavyBidWorkstation"
 				refimgid="2092d989-222d-477a-85c8-433f4f8f05b1"
 				searchtimeout="30000ms">
-					/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text='HeavyBid Workstation']
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text='HeavyBid Workstation']
 				</item>
 				<item
 				addcaps="cell"
@@ -530,7 +526,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 				name="HCSSCrystalXIIntegration"
 				refimgid="3db9d1ba-cde6-40db-bafa-9b53684dd5d7"
 				searchtimeout="30000ms">
-					/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']
 				</item>
 				<item
 				addcaps="cell"
@@ -539,14 +535,23 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 				name="MicrosoftSQLServer2012NativeClient"
 				refimgid="9515bf54-81b1-4fc5-82ab-1f93c3b222f4"
 				searchtimeout="30000ms">
-					/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text~'^Microsoft\ SQL\ Server\ 2012']
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']/cell[@text~'^Microsoft\ SQL\ Server\ 2012']
 				</item>
 				<basepath>
-					/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index&gt;='0']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="unknown"
+			id="9c992ed7-95b4-43ac-b064-7b105340fbb8"
+			name="SearchEditBox"
+			refimgid="e482d266-4973-4f6c-accc-b96e2386180f"
+			searchtimeout="30000ms">
+				/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']
+			</item>
 			<basepath>
-				/form[@title='Programs and Features']
+				/form[@title~'Programs and Features']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -604,36 +609,6 @@ C4kwCguPGjClUTjS7ZNdWCNzqrsWNtLgpa7D9XLmZQ1yxRoY+jrwYrgZRnUNDMRWcjtVfYYAe2ov
 uU8X5nTi7HkFQiOkiIq/AUVVO0z3lRioL8FgUxnKRdGQCHjuAb6cTPhycojT4ReUhSMnihHKrUR4
 dDVEuXfdL1LinqsGM7CIuAQ+7Gx4sQpAP1xK3hLiQvhw8hAcJnEBodF+Ajezdwp/r0poAAAAAElF
 TkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="e98b83b8-2efe-453b-8f91-bc7330849ee5"
-		isrooted="True"
-		name="Explorer"
-		refpath="/form[@title='' and @processname='explorer' and @class='WorkerW' and @instance='1']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="list,nativewindow"
-			capname="list"
-			id="4af71683-24d3-4ea4-8f96-9d7e1218ca7a"
-			name="List1"
-			refimgid="75cf6f38-a54c-4910-a3e2-d8b40f10bf5a"
-			refpath="/form[@title='' and @processname='explorer' and @class='WorkerW' and @instance='1']/container[@class='SHELLDLL_DefView']/list[@controlid='1']"
-			searchtimeout="30000ms">
-				/form[@processname='explorer' and @class='WorkerW' and @instance='1']/?/?/list[@controlid='1']
-			</item>
-			<basepath>
-				/form[@processname='explorer' and @class='WorkerW' and @instance='1']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACCSURBVDhPY6AY/L5gf+H3RYf/6PjXBfsN/8/b
-C0CV4QYgxVZbn/1HBnCDgIYTNASuGA3/ueL1/9+Dyv//n0/Gif89m3yBAZsEKXi4GbD1yiZwjODD
-IDXIelAMwKYBG0bWQzsDkMXxyVFuACg1EVKESw6cEpEBsiKoEBzgk6MAMDAAAHhShcghofWfAAAA
-AElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

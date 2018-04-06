@@ -79,9 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            // Change HB version
-            Report.Log(ReportLevel.Info, "Application", "Change HB version\r\nRun application 'C:\\Users\\alex.kwie\\Desktop\\HeavyBidTrunk_2018-03-14_0042.msi' with arguments '' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("C:\\Users\\alex.kwie\\Desktop\\HeavyBidTrunk_2018-03-14_0042.msi", "", "C:\\Users\\alex.kwie\\Desktop", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\alex.kwie\\Desktop\\copylatestbuild_original.bat' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("C:\\Users\\alex.kwie\\Desktop\\copylatestbuild_original.bat", "", "C:\\Users\\alex.kwie\\Desktop", false);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(1));

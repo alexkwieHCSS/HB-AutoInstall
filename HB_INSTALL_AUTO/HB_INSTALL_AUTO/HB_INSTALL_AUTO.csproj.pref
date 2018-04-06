@@ -1,19 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="UninstallCrystal.rxrec" />
+    <Element value="HB_INSTALL_AUTO.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="OpenHB.rxrec" />
-    <Element value="HBUserLogIn.rxrec" />
-    <Element value="CloseHB.rxrec" />
-    <Element value="NavigateToCHeavyBid.rxrec" />
-    <Element value="CloseCHeavyBid.rxrec" />
-    <Element value="NavigateToCHeavyBidWS.rxrec" />
-    <Element value="CloseCHeavyBidWS.rxrec" />
-    <Element value="OpenAddRemovePrograms.rxrec" />
-    <Element value="UninstallCrystal.rxrec" />
+    <Element value="OpenInstallFile.rxrec" />
+    <Element value="RunBatchTrunk.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="40dfaef3f228f90"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 10:50:40 AM"
+		timestampiso="2018-04-06T15:50:40"
+		endtime="4/6/2018 10:50:46 AM"
+		timeoutfactor="1"
+		module="UninstallCrystal">
+		<detail>
+			UninstallCrystal
+		</detail>
+		<errormessage>
+			Failed to wait for item to exist.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.626"
+			timeRelativeToTestModuleStartTime="00:00.626"
+			timeWallClock="10:50:41"
+			time="00:00.626"
+			level="Info"
+			category="Wait"
+			errimg=".\Uninstal_9aa4bfd2_9139e256_trace.jpg"
+			errthumb=".\Uninstal_9aa4bfd2_9139e256_trace_thumb.jpg">
+			<message>
+				Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				id="9c992ed795b443acb0647b105340fbb8"
+				timeout="5000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.913"
+			timeRelativeToTestModuleStartTime="00:05.913"
+			timeWallClock="10:50:46"
+			time="00:05.913"
+			level="Error"
+			category="Module"
+			errimg=".\Uninstal_9aa4bfd2_5b84c9f0_trace.jpg"
+			errthumb=".\Uninstal_9aa4bfd2_5b84c9f0_trace_thumb.jpg">
+			<message>
+				Failed to wait for item to exist.<br/>Failed to find item 'HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox'.<br/>No element found for path '/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']' within 5s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.WaitForExists(Duration waitTimeout)
+   at HB_INSTALL_AUTO.UninstallCrystal.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+				codeline="83"
+				loglvl="Error"
+				id="9c992ed795b443acb0647b105340fbb8"
+				path="/form[@title='Programs and Features']/?/?/?/?/element[@class='Search Box']"
+				fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

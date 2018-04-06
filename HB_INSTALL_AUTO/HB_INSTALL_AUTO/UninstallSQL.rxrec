@@ -29,15 +29,467 @@ rxversion="7.1">
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="120000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="5ea7d555-58f9-4955-a317-bb50245e9cb7"
+		waitaction="Exists"
+		waittimeout="5000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="9c992ed7-95b4-43ac-b064-7b105340fbb8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="1450,287,168,15"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						17
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						HCSS Integration &#13;
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						DirectUI
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						&#32;Search Programs and Features
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						edit
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Search Box
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						9536
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+						HCSS Integration&#32;
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Programs and Features']/element[@class='WorkerW']/container[@controlid='40965']/element[@class='UniversalSearchBand']//text[@automationid='SearchEditBox']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="2;10"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4db2289f-e556-4b42-93d3-7dda771f1a61"
+		sx="1452"
+		sy="297"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9c992ed7-95b4-43ac-b064-7b105340fbb8"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="text"
+				rect="1450,287,170,15"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&#13;
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						DirectUI
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						&#32;Search Programs and Features
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						edit
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Search Box
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						9536
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Programs and Features']/element[@class='WorkerW']/container[@controlid='40965']/element[@class='UniversalSearchBand']//text[@automationid='SearchEditBox']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d7ea38d2-c017-42b6-82c7-f2591ec5c75d">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAwAOADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKTc
+Pf8AI0oORkUAFFBIHWqX9rWP/Pf/AMcb/Ck2luVGEpfCrl2iqX9rWP8Az3/8cb/Cj+1rH/nv/wCO
+N/hRzLuV7Gp/K/uLtFUv7Wsf+e//AI43+FH9rWP/AD3/APHG/wAKOZdw9jU/lf3F2iqX9rWP/Pf/
+AMcb/Cj+1rH/AJ7/APjjf4Ucy7h7Gp/K/uLtFUv7Wsf+e/8A443+FH9rWP8Az3/8cb/CjmXcPY1P
+5X9xdoql/a1j/wA9/wDxxv8ACj+1rH/nv/443+FHMu4exqfyv7i7RVL+1rH/AJ7/APjjf4Uf2tY/
+89//ABxv8KOZdw9jU/lf3F2iqX9rWP8Az3/8cb/Cj+1rH/nv/wCON/hRzLuHsan8r+4u0VS/tax/
+57/+ON/hR/a1j/z3/wDHG/wo5l3D2NT+V/cXaKpf2tY/89//ABxv8KP7Wsf+e/8A443+FHMu4exq
+fyv7i7RVL+1rH/nv/wCON/hR/a1j/wA9/wDxxv8ACjmXcPY1P5X9xdoql/a1j/z3/wDHG/wq0kqu
+iuuSrDIOD0oTT2JlCUfiVh9FJuHv+Ro3D3/KmSR28wmiViNrNn5c88HFSJ9xfpVaMGW4RxEYkjB6
+jBJPtVlPuL9KABuq/X+lYGhRxySXPmxpJtVMBhnGd1b7dV+v9Kw/Dv8Arbv/AHU/9mqX8SN6bapS
+t5fqapt7NV3PBAq+pVcUnkWOVHlW+W+6Nq8/Smm2crkBVw+4IrkDpjqOlK1vIdg4CjBx5jHHOT9f
+xp2Rlzy7i+RYgMTFb4Xr8q8U3y7HzNphtwpAIbauDnP+FP8AIdVBXaWWQuATwc5/xokhaTzGIUM8
+e0c5weaLIOeXcbNb26bAlpAxZsDKgdvpSJFZsoLW8CMSRgqOoOKmliMgjBPCtk4JB6H0o8kCRCoA
+VVI9+cUWQc8u4xbeyckLDbsV6gKvFIIbAjIjtiB3CrSfZ38ra5RQkZUMD19z6dKYgNw8hHl4+QZU
+5HBz1osg55dyQQWJYKIrcsRkAKucUnlafgny7bA68LxTmhka4DkgqGyPmPTGMY6fjRFblPKyF+RC
+px6nFFkHPLuBt7IMFMNvuboNq5NDW9krBWhtwx6AquTRFDJGY8bQAoDEN1x7YonhkkkBBG0YP3iM
+YPp3osg55dxBBZF9gity3oFXNNEVm0wjW3gbg5IUcYxx+tSCAjb93iRmP0Of8aSGGRZIywQBEK/L
+1PSiyDnl3GLbwtMyizt9qnBJAz0z0xTvJscMfKtvl+98q8fWnrAvnSSMqlmOVbHI4xUSW0iRlRjI
+AG7zG5Gf0/CiyDnl3Dy7DzEQRW5LjIwq80/7PZYB8m3wRnO0dPWkigeMoflON2fmPc5696b9nlKB
+DsAWNkByec49qLIOeXcd5Nj8v7q3+bgfKvNKtvZMxVYbcsvUBVyKSS3YyhgAw2hSN5XGPp1qSFHR
+2zgJ2UNn8enFFkHPLuU9VtoI9OlZII1YYwQgB6irFvIsWmwyN0WJT+gqPWP+QZN/wH/0IU1A81lB
+bovDRKWcjgDH86n7Rq23RV+/6FiK4ZpBHLE0ZYZXJzmpm6fiP51DFbssokllaQqMLkYxUzdPxH86
+swD5vUflSgYAHpRRQAhBOMHpWdbaU9vnbdycHIVeFz7jPNaVFJpMuNSUU0upnSabMW/d6hcKMdGY
+n+opv9mXX/QSm/X/ABrTopcqLVeouv4IzP7Muv8AoJTfr/jR/Zl1/wBBKb9f8a06KORD+sVP6SMz
++zLr/oJTfr/jR/Zl1/0Epv1/xrToo5EH1ip/SRmf2Zdf9BKb9f8AGj+zLr/oJTfr/jWnRRyIPrFT
++kjM/sy6/wCglN+v+NH9mXX/AEEpv1/xrToo5EH1ip/SRmf2Zdf9BKb9f8aP7Muv+glN+v8AjWnR
+RyIPrFT+kjM/sy6/6CU36/40f2Zdf9BKb9f8a06KORB9Yqf0kZn9mXX/AEEpv1/xo/sy6/6CU36/
+41p0UciD6xU/pIzP7Muv+glN+v8AjR/Zl1/0Epv1/wAa06KORB9Yqf0kZn9mXX/QSm/X/Gj+zLr/
+AKCU36/41p0UciD6xU/pIyn0meRSr6hIynqCCR/OtGGNooI49wOxQucdcCpKKailsROrKasxPm9R
++VBDHqR+VLRTMz//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="microsoft{Space}SQL{Space}2012"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="b466c1c1-ba21-4f45-8214-74708327bd7b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9c992ed7-95b4-43ac-b064-7b105340fbb8"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="text"
+				rect="1450,287,170,15"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&#13;
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						SearchEditBox
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						DirectUI
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						&#32;Search Programs and Features
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						edit
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Search Box
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						9536
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Programs and Features']/element[@class='WorkerW']/container[@controlid='40965']/element[@class='UniversalSearchBand']//text[@automationid='SearchEditBox']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="f125a67d-d031-4a50-a7eb-f5d033501a87">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAwAOADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKTc
+Pf8AI0oORkUAFFBOBk0wzRg4LfpUylGO7sNJsfRUfnR/3v0o86P+9+lT7Wn/ADL7w5X2JKKj86P+
+9+lHnR/3v0o9rT/mX3hyvsSUVH50f979KPOj/vfpR7Wn/MvvDlfYkoqPzo/736UedH/e/Sj2tP8A
+mX3hyvsSUVH50f8Ae/Sjzo/736Ue1p/zL7w5X2JKKj86P+9+lHnR/wB79KPa0/5l94cr7ElFR+dH
+/e/Sjzo/736Ue1p/zL7w5X2JKKj86P8AvfpR50f979KPa0/5l94cr7ElFR+dH/e/Sjzo/wC9+lHt
+af8AMvvDlfYkoqPzo/736UedH/e/Sj2tP+ZfeHK+xJRUfnR/3v0p+4e/5GqjOMtncGmhaKTcPf8A
+I0bh7/kaoRFbXHnISy+Wd20AnrxmpV6fif51V+aeWPbC0YV97Mwxk/1q0vT8T/OgAbp+I/nVUyCO
+cKUDeZLs57cE/wBKtN0/EfzqlLbC6kUOqOiS7mVxkEYYf1rGorzhf+tClsySW4ihmkRogdiKwwBl
+ixIAA/D9abJNJDCzzW0S8gLh8jJOOTgY6+9MbTUEspt1jgVlTbsXGGVickD8Kn/0tomEkNvnGNvm
+EhvXJ28fka05I9hXZG80ivHF9mh85wxwZMLgY6Hbknn0q0EUjlAPbFUDZz/ZPI8qBgxJClyBF6bT
+jt+FXGgEkKRyPISoGWVyhJ/A0ckewXY24dIVXEQd3O1FAHJpA6xx7rtYIOcA78g/iQKdcwvIqNEQ
+JI23Lu6HgjB/A1G8U87QNKsSeXLvIVi3GCOuBzk0ckewXZLvt9ivui2tyDkYPeoReWRnjiWSFjKC
+VKspBx/n9DUMUInNxs2SwDcsY3YBLctyPfuPenx290JIZHZGZN6nLZwDjGDjnGPajlj2C7Fklgkn
+thBJG484q4Rgf4HODj6fpVvYn9xfyrLjtZ4b61lnYFmfaSJGbJCSc89OvQVrUckewXY3Yn9xfyo2
+J/cX8qdRRyR7Bdjdif3F/KjYn9xfyp1FHJHsF2N2J/cX8qNif3F/KnUUckewXY3Yn9xfyo2J/cX8
+qdRRyR7Bdjdif3F/KjYn9xfyp1FHJHsF2QXCqIxhQOewqSaVYU3vnbnBIHSm3P8Aqx9aW4R5IiiM
+FLcEkZ471lBJVJW8v1G9kCTxySMiHcVGSR0/Onv9xvpUNtbm2LKjZiPIB6g1M/3G+lbkh83qPyoU
+YFLRQAjDIqLyW3EiQjJzwKmoqJwjP4hptEXkv/z1ajyX/wCerVLRUewh/TY+ZkXkv/z1ajyX/wCe
+rVLRR7CH9NhzMi8l/wDnq1Hkv/z1apaKPYQ/psOZkXkv/wA9Wo8l/wDnq1S0Uewh/TYczIvJf/nq
+1Hkv/wA9WqWij2EP6bDmZF5L/wDPVqPJf/nq1S0Uewh/TYczIvJf/nq1Hkv/AM9WqWij2EP6bDmZ
+F5L/APPVqPJf/nq1S0Uewh/TYczIvJf/AJ6tR5L/APPVqloo9hD+mw5mReS//PVqPJf/AJ6tUtFH
+sIf02HMyEwMRzIT9al+b1H5UtFXCnGHwibbE+b1H5UhDEEZHPtTqKsR//9k=
+			</helperscreenshot>
+		</keysequenceitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

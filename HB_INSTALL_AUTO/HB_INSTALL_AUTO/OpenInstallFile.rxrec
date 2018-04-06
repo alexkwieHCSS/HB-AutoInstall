@@ -34,12 +34,11 @@ rxversion="7.1">
 		maximized="False"
 		optional="False">
 			<comment>
-				Change HB version
 			</comment>
 			<bindings>
 			</bindings>
 			<filename>
-				C:\Users\alex.kwie\Desktop\HeavyBidTrunk_2018-03-14_0042.msi
+				C:\Users\alex.kwie\Desktop\copylatestbuild_original.bat
 			</filename>
 			<workingdir>
 				C:\Users\alex.kwie\Desktop
