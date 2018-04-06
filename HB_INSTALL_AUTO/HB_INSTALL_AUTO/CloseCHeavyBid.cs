@@ -82,8 +82,8 @@ namespace HB_INSTALL_AUTO
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBid'.", repo.HeavyBid.SelfInfo, new RecordItemIndex(1));
-            Host.Current.CloseApplication(repo.HeavyBid.Self, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidServerFolder'.", repo.HeavyBidServerFolder.SelfInfo, new RecordItemIndex(1));
+            Host.Current.CloseApplication(repo.HeavyBidServerFolder.Self, 1000);
             Delay.Milliseconds(0);
             
         }

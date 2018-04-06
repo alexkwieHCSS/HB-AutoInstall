@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="ed0807cbb70a97"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 3:56:32 PM"
+		timestampiso="2018-04-06T20:56:32"
+		endtime="4/6/2018 3:56:33 PM"
+		timeoutfactor="1"
+		module="ValidateHBLaunch">
+		<detail>
+			ValidateHBLaunch
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.674"
+			timeRelativeToTestModuleStartTime="00:00.690"
+			timeWallClock="15:56:33"
+			time="00:00.674"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/titlebar[@text~'[Welcome][HeavyBid]']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181"
+				id="617ed1c7aa2748e2947bcfe1ac5dc24f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.411"
+			timeRelativeToTestModuleStartTime="00:01.427"
+			timeWallClock="15:56:33"
+			time="00:01.411"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'WelcomeToHeavyBid20181' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/titlebar[@text~'[Welcome][HeavyBid]']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181"
+				id="617ed1c7aa2748e2947bcfe1ac5dc24f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="83"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.414"
+			timeRelativeToTestModuleStartTime="00:01.430"
+			timeWallClock="15:56:33"
+			time="00:01.414"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'WelcomeToHeavyBidScreen.OpenEstimateButton'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenEstimateButton"
+				id="23d83cf4b26a4fbb800d60cd8193746b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.430"
+			timeRelativeToTestModuleStartTime="00:01.446"
+			timeWallClock="15:56:33"
+			time="00:01.430"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'OpenEstimateButton' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenEstimateButton"
+				id="23d83cf4b26a4fbb800d60cd8193746b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="87"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.430"
+			timeRelativeToTestModuleStartTime="00:01.446"
+			timeWallClock="15:56:33"
+			time="00:01.430"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'WelcomeToHeavyBidScreen.CreateNewEstimateButton'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.CreateNewEstimateButton"
+				id="f362dc7e4a8f4de5b2b9497185d51104"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.446"
+			timeRelativeToTestModuleStartTime="00:01.461"
+			timeWallClock="15:56:33"
+			time="00:01.446"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'CreateNewEstimateButton' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.CreateNewEstimateButton"
+				id="f362dc7e4a8f4de5b2b9497185d51104"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="91"
+				loglvl="Success"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.461"
+			timeRelativeToTestModuleStartTime="00:01.477"
+			timeWallClock="15:56:33"
+			time="00:01.461"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'WelcomeToHeavyBidScreen.OpenExistingEstimateButton'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenExistingEstimateButton"
+				id="e0f87a37a2f440b582e3dc421eb4699c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.461"
+			timeRelativeToTestModuleStartTime="00:01.477"
+			timeWallClock="15:56:33"
+			time="00:01.461"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'OpenExistingEstimateButton' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenExistingEstimateButton"
+				id="e0f87a37a2f440b582e3dc421eb4699c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBLaunch.cs"
+				codeline="95"
+				loglvl="Success"
+				itemindex="3">
+			</metainfo>
+		</item>
+	</activity>
+</report>

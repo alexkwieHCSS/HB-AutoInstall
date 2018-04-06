@@ -79,35 +79,38 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'", repo.ProgramsAndFeatures.SearchEditBoxInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m.", new RecordItemIndex(0));
+            Delay.Duration(120000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'", repo.ProgramsAndFeatures.SearchEditBoxInfo, new ActionTimeout(5000), new RecordItemIndex(1));
             repo.ProgramsAndFeatures.SearchEditBoxInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(2));
             repo.ProgramsAndFeatures.SearchEditBox.Click("2;10");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'microsoft{Space}SQL{Space}2012' with focus on 'ProgramsAndFeatures.SearchEditBox'.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'microsoft{Space}SQL{Space}2012' with focus on 'ProgramsAndFeatures.SearchEditBox'.", repo.ProgramsAndFeatures.SearchEditBoxInfo, new RecordItemIndex(3));
             repo.ProgramsAndFeatures.SearchEditBox.PressKeys("microsoft{Space}SQL{Space}2012");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient'", repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClientInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient'", repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClientInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClientInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient' at Center.", repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClientInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient' at Center.", repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClientInfo, new RecordItemIndex(5));
             repo.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'", repo.ProgramsAndFeatures.ButtonUninstallInfo, new ActionTimeout(10000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'", repo.ProgramsAndFeatures.ButtonUninstallInfo, new ActionTimeout(10000), new RecordItemIndex(6));
             repo.ProgramsAndFeatures.ButtonUninstallInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.", repo.ProgramsAndFeatures.ButtonUninstallInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.", repo.ProgramsAndFeatures.ButtonUninstallInfo, new RecordItemIndex(7));
             repo.ProgramsAndFeatures.ButtonUninstall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'", repo.ProgramsAndFeatures.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'", repo.ProgramsAndFeatures.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(8));
             repo.ProgramsAndFeatures.ButtonYesInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.", repo.ProgramsAndFeatures.ButtonYesInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.", repo.ProgramsAndFeatures.ButtonYesInfo, new RecordItemIndex(9));
             repo.ProgramsAndFeatures.ButtonYes.Click();
             Delay.Milliseconds(200);
             

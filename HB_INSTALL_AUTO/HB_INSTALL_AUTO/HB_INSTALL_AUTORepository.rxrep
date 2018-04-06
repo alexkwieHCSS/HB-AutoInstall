@@ -332,7 +332,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		capname="form"
 		id="ab0721fe-a94f-44e5-b9f6-db7020e9c20a"
 		isrooted="True"
-		name="HeavyBid"
+		name="HeavyBidServerFolder"
 		refpath="/form[@title='HeavyBid']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -355,7 +355,7 @@ AAAAAElFTkSuQmCC
 		capname="form"
 		id="8049599b-eeac-406c-98df-c705973311d8"
 		isrooted="True"
-		name="HeavyBidWS"
+		name="HeavyBidWSFolder"
 		refimgid="2370e84f-9533-42b6-981b-1803337c3fd0"
 		refpath="/form[@title='HeavyBidWS']"
 		searchtimeout="30000ms"
@@ -609,6 +609,61 @@ C4kwCguPGjClUTjS7ZNdWCNzqrsWNtLgpa7D9XLmZQ1yxRoY+jrwYrgZRnUNDMRWcjtVfYYAe2ov
 uU8X5nTi7HkFQiOkiIq/AUVVO0z3lRioL8FgUxnKRdGQCHjuAb6cTPhycojT4ReUhSMnihHKrUR4
 dDVEuXfdL1LinqsGM7CIuAQ+7Gx4sQpAP1xK3hLiQvhw8hAcJnEBodF+Ajezdwp/r0poAAAAAElF
 TkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="18f7566c-43cf-4700-b584-eaabae46f352"
+		isrooted="True"
+		name="WelcomeToHeavyBidScreen"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="23d83cf4-b26a-4fbb-800d-60cd8193746b"
+			name="OpenEstimateButton"
+			refimgid="ca0f7813-0ec7-4dee-beaa-8b91d08b16b5"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="617ed1c7-aa27-48e2-947b-cfe1ac5dc24f"
+			name="WelcomeToHeavyBid20181"
+			refimgid="0ff6250c-3ca0-4dfd-b537-fc9b9cb2e9e2"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/titlebar[@text~'[Welcome][HeavyBid]']
+			</item>
+			<item
+			capname="button"
+			id="f362dc7e-4a8f-4de5-b2b9-497185d51104"
+			name="CreateNewEstimateButton"
+			refimgid="ef9241df-9fa0-4e8a-9450-1f3e0f9baa1a"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
+			</item>
+			<item
+			capname="button"
+			id="e0f87a37-a2f4-40b5-82e3-dc421eb4699c"
+			name="OpenExistingEstimateButton"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
+			</item>
+			<basepath>
+				/form[@title~'[Welcome][HeavyBid]']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAE5SURBVDhPY2Ce4tHJMtXjNxD/JxH/BullADHQ
+JP7LzI/8L78gBifmnuELNwRkAIrmmuPz/+MC//79+x+wtf5/wp7u/5zTvcHqMQw4++r2/3V3Dv9f
+cesAGB9/fg2q/f//t98//ffaVP0/fEfLf8WFsdgNuPzm/v+dD8/833L/BBjvArKPPLsCxvc+PkdR
+C8IEDUDG9DNg8Y3d/+dc3Y6BiTZg/rWd/2de3gLGjz+/+p9zcMr/aZc3/7//8QWKWhDGacAMoGYQ
+PgeMFcMVmWAvkGQAzAVX3z74n3do6n/L1fnEG4AMQIln/d2j/y++vovbAFCiACUOUCKZdGH9/wXX
+d6HgF1/fgQ27/eEpdgNAyRKUPI1XZGHFy2/tBxvQfW4VVgPAmQmUQbBlHBiWnR+FoRmIf1OYnT06
+AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

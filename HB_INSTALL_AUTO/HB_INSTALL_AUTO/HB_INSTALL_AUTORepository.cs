@@ -34,11 +34,12 @@ namespace HB_INSTALL_AUTO
         HB_INSTALL_AUTORepositoryFolders.UserLoginAppFolder _userlogin;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidApplicationAppFolder _heavybidapplication;
         HB_INSTALL_AUTORepositoryFolders.ExitHeavyBidAppFolder _exitheavybid;
-        HB_INSTALL_AUTORepositoryFolders.HeavyBidAppFolder _heavybid;
-        HB_INSTALL_AUTORepositoryFolders.HeavyBidWSAppFolder _heavybidws;
+        HB_INSTALL_AUTORepositoryFolders.HeavyBidServerFolderAppFolder _heavybidserverfolder;
+        HB_INSTALL_AUTORepositoryFolders.HeavyBidWSFolderAppFolder _heavybidwsfolder;
         HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder _windowsmenubar;
         HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder _programsandfeatures;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder _heavybiduninstall;
+        HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder _welcometoheavybidscreen;
 
         /// <summary>
         /// Gets the singleton class instance representing the HB_INSTALL_AUTORepository element repository.
@@ -62,11 +63,12 @@ namespace HB_INSTALL_AUTO
             _userlogin = new HB_INSTALL_AUTORepositoryFolders.UserLoginAppFolder(this);
             _heavybidapplication = new HB_INSTALL_AUTORepositoryFolders.HeavyBidApplicationAppFolder(this);
             _exitheavybid = new HB_INSTALL_AUTORepositoryFolders.ExitHeavyBidAppFolder(this);
-            _heavybid = new HB_INSTALL_AUTORepositoryFolders.HeavyBidAppFolder(this);
-            _heavybidws = new HB_INSTALL_AUTORepositoryFolders.HeavyBidWSAppFolder(this);
+            _heavybidserverfolder = new HB_INSTALL_AUTORepositoryFolders.HeavyBidServerFolderAppFolder(this);
+            _heavybidwsfolder = new HB_INSTALL_AUTORepositoryFolders.HeavyBidWSFolderAppFolder(this);
             _windowsmenubar = new HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder(this);
             _programsandfeatures = new HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder(this);
             _heavybiduninstall = new HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder(this);
+            _welcometoheavybidscreen = new HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder(this);
         }
 
 #region Variables
@@ -161,21 +163,21 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The HeavyBid folder.
+        /// The HeavyBidServerFolder folder.
         /// </summary>
         [RepositoryFolder("ab0721fe-a94f-44e5-b9f6-db7020e9c20a")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidAppFolder HeavyBid
+        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidServerFolderAppFolder HeavyBidServerFolder
         {
-            get { return _heavybid; }
+            get { return _heavybidserverfolder; }
         }
 
         /// <summary>
-        /// The HeavyBidWS folder.
+        /// The HeavyBidWSFolder folder.
         /// </summary>
         [RepositoryFolder("8049599b-eeac-406c-98df-c705973311d8")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidWSAppFolder HeavyBidWS
+        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidWSFolderAppFolder HeavyBidWSFolder
         {
-            get { return _heavybidws; }
+            get { return _heavybidwsfolder; }
         }
 
         /// <summary>
@@ -203,6 +205,15 @@ namespace HB_INSTALL_AUTO
         public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder HeavyBidUninstall
         {
             get { return _heavybiduninstall; }
+        }
+
+        /// <summary>
+        /// The WelcomeToHeavyBidScreen folder.
+        /// </summary>
+        [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder WelcomeToHeavyBidScreen
+        {
+            get { return _welcometoheavybidscreen; }
         }
     }
 
@@ -935,17 +946,17 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The HeavyBidAppFolder folder.
+        /// The HeavyBidServerFolderAppFolder folder.
         /// </summary>
         [RepositoryFolder("ab0721fe-a94f-44e5-b9f6-db7020e9c20a")]
-        public partial class HeavyBidAppFolder : RepoGenBaseFolder
+        public partial class HeavyBidServerFolderAppFolder : RepoGenBaseFolder
         {
 
             /// <summary>
-            /// Creates a new HeavyBid  folder.
+            /// Creates a new HeavyBidServerFolder  folder.
             /// </summary>
-            public HeavyBidAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBid", "/form[@title='HeavyBid']", parentFolder, 30000, null, true, "ab0721fe-a94f-44e5-b9f6-db7020e9c20a", "")
+            public HeavyBidServerFolderAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HeavyBidServerFolder", "/form[@title='HeavyBid']", parentFolder, 30000, null, true, "ab0721fe-a94f-44e5-b9f6-db7020e9c20a", "")
             {
             }
 
@@ -975,17 +986,17 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The HeavyBidWSAppFolder folder.
+        /// The HeavyBidWSFolderAppFolder folder.
         /// </summary>
         [RepositoryFolder("8049599b-eeac-406c-98df-c705973311d8")]
-        public partial class HeavyBidWSAppFolder : RepoGenBaseFolder
+        public partial class HeavyBidWSFolderAppFolder : RepoGenBaseFolder
         {
 
             /// <summary>
-            /// Creates a new HeavyBidWS  folder.
+            /// Creates a new HeavyBidWSFolder  folder.
             /// </summary>
-            public HeavyBidWSAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBidWS", "/form[@title='HeavyBidWS']", parentFolder, 30000, null, true, "8049599b-eeac-406c-98df-c705973311d8", "")
+            public HeavyBidWSFolderAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HeavyBidWSFolder", "/form[@title='HeavyBidWS']", parentFolder, 30000, null, true, "8049599b-eeac-406c-98df-c705973311d8", "")
             {
             }
 
@@ -1467,6 +1478,150 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonyesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WelcomeToHeavyBidScreenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
+        public partial class WelcomeToHeavyBidScreenAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _openestimatebuttonInfo;
+            RepoItemInfo _welcometoheavybid20181Info;
+            RepoItemInfo _createnewestimatebuttonInfo;
+            RepoItemInfo _openexistingestimatebuttonInfo;
+
+            /// <summary>
+            /// Creates a new WelcomeToHeavyBidScreen  folder.
+            /// </summary>
+            public WelcomeToHeavyBidScreenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WelcomeToHeavyBidScreen", "/form[@title~'[Welcome][HeavyBid]']", parentFolder, 30000, null, true, "18f7566c-43cf-4700-b584-eaabae46f352", "")
+            {
+                _openestimatebuttonInfo = new RepoItemInfo(this, "OpenEstimateButton", "element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "23d83cf4-b26a-4fbb-800d-60cd8193746b");
+                _welcometoheavybid20181Info = new RepoItemInfo(this, "WelcomeToHeavyBid20181", "titlebar[@text~'[Welcome][HeavyBid]']", 30000, null, "617ed1c7-aa27-48e2-947b-cfe1ac5dc24f");
+                _createnewestimatebuttonInfo = new RepoItemInfo(this, "CreateNewEstimateButton", "element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "f362dc7e-4a8f-4de5-b2b9-497185d51104");
+                _openexistingestimatebuttonInfo = new RepoItemInfo(this, "OpenExistingEstimateButton", "element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "e0f87a37-a2f4-40b5-82e3-dc421eb4699c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("18f7566c-43cf-4700-b584-eaabae46f352")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("18f7566c-43cf-4700-b584-eaabae46f352")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenEstimateButton item.
+            /// </summary>
+            [RepositoryItem("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
+            public virtual Ranorex.Button OpenEstimateButton
+            {
+                get
+                {
+                    return _openestimatebuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenEstimateButton item info.
+            /// </summary>
+            [RepositoryItemInfo("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
+            public virtual RepoItemInfo OpenEstimateButtonInfo
+            {
+                get
+                {
+                    return _openestimatebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeToHeavyBid20181 item.
+            /// </summary>
+            [RepositoryItem("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
+            public virtual Ranorex.TitleBar WelcomeToHeavyBid20181
+            {
+                get
+                {
+                    return _welcometoheavybid20181Info.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeToHeavyBid20181 item info.
+            /// </summary>
+            [RepositoryItemInfo("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
+            public virtual RepoItemInfo WelcomeToHeavyBid20181Info
+            {
+                get
+                {
+                    return _welcometoheavybid20181Info;
+                }
+            }
+
+            /// <summary>
+            /// The CreateNewEstimateButton item.
+            /// </summary>
+            [RepositoryItem("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
+            public virtual Ranorex.Button CreateNewEstimateButton
+            {
+                get
+                {
+                    return _createnewestimatebuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CreateNewEstimateButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
+            public virtual RepoItemInfo CreateNewEstimateButtonInfo
+            {
+                get
+                {
+                    return _createnewestimatebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenExistingEstimateButton item.
+            /// </summary>
+            [RepositoryItem("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
+            public virtual Ranorex.Button OpenExistingEstimateButton
+            {
+                get
+                {
+                    return _openexistingestimatebuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenExistingEstimateButton item info.
+            /// </summary>
+            [RepositoryItemInfo("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
+            public virtual RepoItemInfo OpenExistingEstimateButtonInfo
+            {
+                get
+                {
+                    return _openexistingestimatebuttonInfo;
                 }
             }
         }

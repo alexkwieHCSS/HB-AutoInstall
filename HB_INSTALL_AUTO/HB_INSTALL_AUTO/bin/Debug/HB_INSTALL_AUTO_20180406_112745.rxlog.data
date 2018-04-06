@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4f06711c96a0b5d"
+		totalerrorcount="0"
+		totalwarningcount="4"
+		totalsuccesstestcasecount="1"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/6/2018 11:27:45 AM"
+		timestampiso="2018-04-06T16:27:45"
+		endtime="4/6/2018 11:31:20 AM"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="3.6m"
+			durationms="214254"
+			type="test-suite"
+			rid="f743a8c8cae392c"
+			totalerrorcount="0"
+			totalwarningcount="4"
+			totalsuccesstestcasecount="1"
+			totalfailedtestcasecount="0"
+			totalblockedtestcasecount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			testsuitename="HB_INSTALL_AUTO"
+			headertext="HB_INSTALL_AUTO"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+			</params>
+			<activity
+				result="Success"
+				duration="3.6m"
+				durationms="214195"
+				type="smart-folder"
+				rid="75d6fb827b0bff9"
+				totalerrorcount="0"
+				totalwarningcount="4"
+				totalsuccesstestcasecount="1"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				testcontainername="HB_Install_Auto"
+				testcontainerid="e9b13a9d-4839-4122-b144-45de3a900e83"
+				headertext="HB_Install_Auto"
+				displayName="HB_Install_Auto"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="3.6m"
+					durationms="214181"
+					type="test-case"
+					rid="272a704e2970b641"
+					totalerrorcount="0"
+					totalwarningcount="4"
+					totalsuccesstestcasecount="1"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					totalsuccesscount="4"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					testcontainername="Uninstall"
+					testcontainerid="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
+					headertext="Uninstall"
+					displayName="Uninstall"
+					iteration="1"
+					activity-exectype="execute"
+					conditionstate="none">
+					<activity
+						result="Success"
+						duration="479ms"
+						durationms="479"
+						type="test-module"
+						rid="626df2643c499d4"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="OpenAddRemovePrograms"
+						displayName="OpenAddRemovePrograms"
+						moduleid="52c57138-faa8-4de3-b51b-a991a395efda"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.492"
+							timeRelativeToTestModuleStartTime="00:00.029"
+							timeWallClock="11:27:45"
+							time="00:00.492"
+							level="Info"
+							category="Application">
+							<message>
+								Run application 'appwiz.cpl' with arguments '' in normal mode.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenAddRemovePrograms.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+					<activity
+						result="Success"
+						duration="53.09s"
+						durationms="53085"
+						type="test-module"
+						rid="212d35944017f744"
+						totalerrorcount="0"
+						totalwarningcount="2"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="UninstallCrystal"
+						displayName="UninstallCrystal"
+						moduleid="ae8f2f05-5ac9-49af-81aa-e73092f6bb8d"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.961"
+							timeRelativeToTestModuleStartTime="00:00.013"
+							timeWallClock="11:27:46"
+							time="00:00.961"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="5000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:02.726"
+							timeRelativeToTestModuleStartTime="00:01.778"
+							timeWallClock="11:27:48"
+							time="00:02.726"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="85"
+								itemindex="1"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:03.714"
+							timeRelativeToTestModuleStartTime="00:02.766"
+							timeWallClock="11:27:49"
+							time="00:03.714"
+							level="Info"
+							category="Keyboard">
+							<message>
+								Key sequence 'hcss{Space}integration' with focus on 'ProgramsAndFeatures.SearchEditBox'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="89"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:08.835"
+							timeRelativeToTestModuleStartTime="00:07.887"
+							timeWallClock="11:27:54"
+							time="00:08.835"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration"
+								id="61de3bb2d64b4cdd8275e2d0d84b9fef"
+								timeout="30000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="93"
+								itemindex="3"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:09.219"
+							timeRelativeToTestModuleStartTime="00:08.270"
+							timeWallClock="11:27:54"
+							time="00:09.219"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HCSSCrystalXIIntegration"
+								id="61de3bb2d64b4cdd8275e2d0d84b9fef"
+								timeout="90000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="96"
+								itemindex="4"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:10.219"
+							timeRelativeToTestModuleStartTime="00:09.271"
+							timeWallClock="11:27:55"
+							time="00:10.219"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonUninstall"
+								id="8e6551330f494357ab46e1f07390400d"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="100"
+								itemindex="5"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:10.498"
+							timeRelativeToTestModuleStartTime="00:09.550"
+							timeWallClock="11:27:56"
+							time="00:10.498"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonUninstall"
+								id="8e6551330f494357ab46e1f07390400d"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="103"
+								itemindex="6"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:11.779"
+							timeRelativeToTestModuleStartTime="00:10.830"
+							timeWallClock="11:27:57"
+							time="00:11.779"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="107"
+								itemindex="7"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:22.531"
+							timeRelativeToTestModuleStartTime="00:21.583"
+							timeWallClock="11:28:08"
+							time="00:22.531"
+							level="Warn"
+							category="Repository">
+							<message>
+								Item 'HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'HB_INSTALL_AUTORepository.ProgramsAndFeatures'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+							</message>
+							<metainfo
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="108"
+								loglvl="Warn"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								itemindex="7">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:22.587"
+							timeRelativeToTestModuleStartTime="00:21.638"
+							timeWallClock="11:28:08"
+							time="00:22.587"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="110"
+								itemindex="8"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:53.326"
+							timeRelativeToTestModuleStartTime="00:52.377"
+							timeWallClock="11:28:38"
+							time="00:53.326"
+							level="Warn"
+							category="Repository">
+							<message>
+								Item 'HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'HB_INSTALL_AUTORepository.ProgramsAndFeatures'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+							</message>
+							<metainfo
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallCrystal.cs"
+								codeline="111"
+								loglvl="Warn"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								itemindex="8">
+							</metainfo>
+						</item>
+					</activity>
+					<activity
+						result="Success"
+						duration="1.8m"
+						durationms="106529"
+						type="test-module"
+						rid="4a4e52b4e5368fc"
+						totalerrorcount="0"
+						totalwarningcount="2"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="UninstallSQL"
+						displayName="UninstallSQL"
+						moduleid="19c0f50a-d08e-4dfb-82fe-befaf85a22ae"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:54.049"
+							timeRelativeToTestModuleStartTime="00:00.010"
+							timeWallClock="11:28:39"
+							time="00:54.049"
+							level="Info"
+							category="Delay">
+							<message>
+								Waiting for 2m.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:48.600"
+							timeRelativeToTestModuleStartTime="00:54.562"
+							timeWallClock="11:29:34"
+							time="01:48.600"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="5000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="85"
+								itemindex="1"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:48.923"
+							timeRelativeToTestModuleStartTime="00:54.884"
+							timeWallClock="11:29:34"
+							time="01:48.923"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="88"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:49.884"
+							timeRelativeToTestModuleStartTime="00:55.845"
+							timeWallClock="11:29:35"
+							time="01:49.884"
+							level="Info"
+							category="Keyboard">
+							<message>
+								Key sequence 'microsoft{Space}SQL{Space}2012' with focus on 'ProgramsAndFeatures.SearchEditBox'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="92"
+								itemindex="3"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:55.406"
+							timeRelativeToTestModuleStartTime="01:01.367"
+							timeWallClock="11:29:40"
+							time="01:55.406"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 30s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^Microsoft\ SQL\ Server\ 2012']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient"
+								id="084bd652eb814192901dc5734d7d24ec"
+								timeout="30000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="96"
+								itemindex="4"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:55.762"
+							timeRelativeToTestModuleStartTime="01:01.723"
+							timeWallClock="11:29:41"
+							time="01:55.762"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text~'^Microsoft\ SQL\ Server\ 2012']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.MicrosoftSQLServer2012NativeClient"
+								id="084bd652eb814192901dc5734d7d24ec"
+								timeout="90000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="99"
+								itemindex="5"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:56.760"
+							timeRelativeToTestModuleStartTime="01:02.721"
+							timeWallClock="11:29:42"
+							time="01:56.760"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonUninstall'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonUninstall"
+								id="8e6551330f494357ab46e1f07390400d"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="103"
+								itemindex="6"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:57.031"
+							timeRelativeToTestModuleStartTime="01:02.992"
+							timeWallClock="11:29:42"
+							time="01:57.031"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.ButtonUninstall' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonUninstall"
+								id="8e6551330f494357ab46e1f07390400d"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="106"
+								itemindex="7"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:58.284"
+							timeRelativeToTestModuleStartTime="01:04.245"
+							timeWallClock="11:29:43"
+							time="01:58.284"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtonYes'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="110"
+								itemindex="8"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="02:08.975"
+							timeRelativeToTestModuleStartTime="01:14.937"
+							timeWallClock="11:29:54"
+							time="02:08.975"
+							level="Warn"
+							category="Repository">
+							<message>
+								Item 'HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'HB_INSTALL_AUTORepository.ProgramsAndFeatures'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+							</message>
+							<metainfo
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="111"
+								loglvl="Warn"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								itemindex="8">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="02:09.039"
+							timeRelativeToTestModuleStartTime="01:15.000"
+							timeWallClock="11:29:54"
+							time="02:09.039"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.ButtonYes' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="113"
+								itemindex="9"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="02:39.836"
+							timeRelativeToTestModuleStartTime="01:45.798"
+							timeWallClock="11:30:25"
+							time="02:39.836"
+							level="Warn"
+							category="Repository">
+							<message>
+								Item 'HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'HB_INSTALL_AUTORepository.ProgramsAndFeatures'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+							</message>
+							<metainfo
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallSQL.cs"
+								codeline="114"
+								loglvl="Warn"
+								id="3efc40c1ea5d4004985f366e7e176dc9"
+								path="/form[@title~'Programs and Features']/?/?/element[@instance='0']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtonYes"
+								itemindex="9">
+							</metainfo>
+						</item>
+					</activity>
+					<activity
+						result="Success"
+						duration="54.02s"
+						durationms="54017"
+						type="test-module"
+						rid="39a91275292ad0"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						modulename="UninstallHB"
+						displayName="UninstallHB"
+						moduleid="2fbb5d9e-bf9e-4f07-ba4a-8888cc9e19fe"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="02:40.585"
+							timeRelativeToTestModuleStartTime="00:00.010"
+							timeWallClock="11:30:26"
+							time="02:40.585"
+							level="Info"
+							category="Delay">
+							<message>
+								Waiting for 2m.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:24.288"
+							timeRelativeToTestModuleStartTime="00:43.714"
+							timeWallClock="11:31:09"
+							time="03:24.288"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 5s to exist. Associated repository item: 'ProgramsAndFeatures.SearchEditBox'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="5000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="85"
+								itemindex="1"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:24.591"
+							timeRelativeToTestModuleStartTime="00:44.016"
+							timeWallClock="11:31:10"
+							time="03:24.591"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.SearchEditBox' at 2;10.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="88"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:25.528"
+							timeRelativeToTestModuleStartTime="00:44.953"
+							timeWallClock="11:31:11"
+							time="03:25.528"
+							level="Info"
+							category="Keyboard">
+							<message>
+								Key sequence 'heavybid{Space}workstation' with focus on 'ProgramsAndFeatures.SearchEditBox'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.SearchEditBox"
+								id="9c992ed795b443acb0647b105340fbb8"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="92"
+								itemindex="3"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:27.975"
+							timeRelativeToTestModuleStartTime="00:47.400"
+							timeWallClock="11:31:13"
+							time="03:27.975"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HeavyBidWorkstation'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text='HeavyBid Workstation']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HeavyBidWorkstation"
+								id="be61d9e1da514fdc86893e54667d17f7"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="96"
+								itemindex="4"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:28.367"
+							timeRelativeToTestModuleStartTime="00:47.793"
+							timeWallClock="11:31:13"
+							time="03:28.367"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.Row0.HeavyBidWorkstation' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']/cell[@text='HeavyBid Workstation']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.Row0.HeavyBidWorkstation"
+								id="be61d9e1da514fdc86893e54667d17f7"
+								timeout="90000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="99"
+								itemindex="5"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:29.435"
+							timeRelativeToTestModuleStartTime="00:48.861"
+							timeWallClock="11:31:14"
+							time="03:29.435"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtinUninstallOrChange'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtinUninstallOrChange"
+								id="71cea4ecb070440890bc44a4c19e08d6"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="103"
+								itemindex="6"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:29.715"
+							timeRelativeToTestModuleStartTime="00:49.140"
+							timeWallClock="11:31:15"
+							time="03:29.715"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'ProgramsAndFeatures.ButtinUninstallOrChange' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']"
+								fullname="HB_INSTALL_AUTORepository.ProgramsAndFeatures.ButtinUninstallOrChange"
+								id="71cea4ecb070440890bc44a4c19e08d6"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="106"
+								itemindex="7"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:30.965"
+							timeRelativeToTestModuleStartTime="00:50.391"
+							timeWallClock="11:31:16"
+							time="03:30.965"
+							level="Info"
+							category="Wait">
+							<message>
+								Waiting 10s to exist. Associated repository item: 'HeavyBidUninstall.ButtonYes'
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='HeavyBid Uninstall']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.HeavyBidUninstall.ButtonYes"
+								id="f95b68e9f4de45e8968f0ac4f388600c"
+								timeout="10000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="110"
+								itemindex="8"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="03:33.857"
+							timeRelativeToTestModuleStartTime="00:53.282"
+							timeWallClock="11:31:19"
+							time="03:33.857"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'HeavyBidUninstall.ButtonYes' at Center.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='HeavyBid Uninstall']/button[@text='&amp;Yes']"
+								fullname="HB_INSTALL_AUTORepository.HeavyBidUninstall.ButtonYes"
+								id="f95b68e9f4de45e8968f0ac4f388600c"
+								timeout="60000"
+								codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UninstallHB.cs"
+								codeline="113"
+								itemindex="9"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

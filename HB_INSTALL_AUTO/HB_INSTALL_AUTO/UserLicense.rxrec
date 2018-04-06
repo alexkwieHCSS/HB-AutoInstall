@@ -29,6 +29,26 @@ rxversion="7.1">
 	<variables>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="31901fd8-1408-4a9f-b550-d5324c0c0549">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d5871a5b-28dc-49bc-ab19-510a037a9d94"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+		</validationitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

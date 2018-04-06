@@ -29,6 +29,15 @@ rxversion="7.1">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="120000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

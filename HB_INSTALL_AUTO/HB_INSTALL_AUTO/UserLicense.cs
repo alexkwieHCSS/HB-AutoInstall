@@ -79,17 +79,21 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'HeavyBidServerSetup.ButtonNext'.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(0));
+            Validate.NotExists(repo.HeavyBidServerSetup.ButtonNextInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem' at Center.", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem' at Center.", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new RecordItemIndex(2));
             repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(4));
             repo.HeavyBidServerSetup.ButtonNext.Click();
             Delay.Milliseconds(200);
             

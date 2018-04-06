@@ -221,6 +221,18 @@
       <UserCode>true</UserCode>
       <id>a927e21d-baac-422a-bebf-145b72419dca</id>
     </Compile>
+    <Compile Include="OpenEstimate.cs">
+      <BoundTo>bb358f26-2216-42b9-b1e7-0f556c892d9b</BoundTo>
+      <DependentUpon>OpenEstimate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f87de452-994a-4404-9bf8-1ff9bbb5901b</id>
+    </Compile>
+    <Compile Include="OpenEstimate.UserCode.cs">
+      <BoundTo>bb358f26-2216-42b9-b1e7-0f556c892d9b</BoundTo>
+      <DependentUpon>OpenEstimate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89fdcbe6-cee7-4903-8e1b-65b0f015b0e1</id>
+    </Compile>
     <Compile Include="OpenHB.cs">
       <BoundTo>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</BoundTo>
       <DependentUpon>OpenHB.rxrec</DependentUpon>
@@ -440,6 +452,18 @@
       <UserCode>true</UserCode>
       <id>7b0dfce8-5f34-4f4f-94ee-0c21b48a829c</id>
     </Compile>
+    <Compile Include="ValidateHBLaunch.cs">
+      <BoundTo>eb475209-b588-4f2c-a204-71dc06c3d795</BoundTo>
+      <DependentUpon>ValidateHBLaunch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c3d07ea-f57a-407a-b2d0-0a70b0f13aad</id>
+    </Compile>
+    <Compile Include="ValidateHBLaunch.UserCode.cs">
+      <BoundTo>eb475209-b588-4f2c-a204-71dc06c3d795</BoundTo>
+      <DependentUpon>ValidateHBLaunch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32ef1050-2851-485b-985c-71af677272d5</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -515,6 +539,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>85f61cfa-810e-42c6-aa29-e5834fdc10ca</id>
       <recordtableid>b3a23dda-b9ca-485f-965b-05d9979d93ac</recordtableid>
+    </None>
+    <None Include="OpenEstimate.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>bb358f26-2216-42b9-b1e7-0f556c892d9b</id>
+      <recordtableid>447306e5-8070-4929-bb2d-4496db505397</recordtableid>
     </None>
     <None Include="OpenHB.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -605,6 +634,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</id>
       <recordtableid>8696c80c-f1ad-4df9-8250-1402ceac9fad</recordtableid>
+    </None>
+    <None Include="ValidateHBLaunch.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>eb475209-b588-4f2c-a204-71dc06c3d795</id>
+      <recordtableid>e46c80a6-d7fa-4a4d-817c-02019abb12b8</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

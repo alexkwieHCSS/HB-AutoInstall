@@ -94,6 +94,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
+			name="ValidateHBLaunch"
+			ref="e46c80a6-d7fa-4a4d-817c-02019abb12b8"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6815bc1a-4c56-4711-9575-20fa801a3d3b"
 			name="ConfirmHBWSInstallFinish"
 			ref="cf428a88-a1c6-4200-9ab2-22e40ed4c0ff"
@@ -168,6 +174,12 @@ rxversion="7.1">
 			id="c73cb5e6-13a6-46d7-9735-33c1beac9054"
 			name="ConfirmHBInstallFinish"
 			ref="b3a23dda-b9ca-485f-965b-05d9979d93ac"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
+			name="OpenEstimate"
+			ref="447306e5-8070-4929-bb2d-4496db505397"
 			type="Recording">
 			</testmodule>
 			<modulegroup
@@ -319,6 +331,14 @@ rxversion="7.1">
 							name="HBUserLogIn">
 							</testmodule>
 							<testmodule
+							id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
+							name="ValidateHBLaunch">
+							</testmodule>
+							<testmodule
+							id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
+							name="OpenEstimate">
+							</testmodule>
+							<testmodule
 							id="aad71a13-9257-48af-a937-5cb49b130197"
 							name="CloseHB">
 							</testmodule>
@@ -375,28 +395,13 @@ rxversion="7.1">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c">
-			</testcontainer>
-			<testcontainer
-			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
-			</testcontainer>
-			<testcontainer
-			id="612d0825-8616-4b38-a420-78b7a1668a22">
-			</testcontainer>
-			<testcontainer
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
 			<testcontainer
 			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
 			</testcontainer>
 			<testcontainer
-			id="e1733192-a28b-4b65-abf2-b0342696439a">
-			</testcontainer>
-			<testcontainer
 			id="e9b13a9d-4839-4122-b144-45de3a900e83">
-			</testcontainer>
-			<testcontainer
-			id="e9f8072b-224e-498b-bf2b-064a9232aedf">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

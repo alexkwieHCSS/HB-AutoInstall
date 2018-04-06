@@ -82,8 +82,8 @@ namespace HB_INSTALL_AUTO
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidWS'.", repo.HeavyBidWS.SelfInfo, new RecordItemIndex(1));
-            Host.Current.CloseApplication(repo.HeavyBidWS.Self, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidWSFolder'.", repo.HeavyBidWSFolder.SelfInfo, new RecordItemIndex(1));
+            Host.Current.CloseApplication(repo.HeavyBidWSFolder.Self, 1000);
             Delay.Milliseconds(0);
             
         }
