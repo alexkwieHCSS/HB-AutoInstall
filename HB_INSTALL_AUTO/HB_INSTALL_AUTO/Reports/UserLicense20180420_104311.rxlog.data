@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="7469fc1145d3b4"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/20/2018 10:43:14 AM"
+		timestampiso="2018-04-20T15:43:14"
+		endtime="4/20/2018 10:43:15 AM"
+		timeoutfactor="1"
+		module="UserLicense">
+		<detail>
+			UserLicense
+		</detail>
+		<errormessage>
+			Element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does exist.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.765"
+			timeRelativeToTestModuleStartTime="00:00.780"
+			timeWallClock="10:43:15"
+			time="00:00.765"
+			level="Info"
+			category="Validation"
+			errimg=".\UserLice_d1d6d997_26af3ecd_trace.jpg"
+			errthumb=".\UserLice_d1d6d997_26af3ecd_trace_thumb.jpg">
+			<message>
+				Validating NotExists on item 'HeavyBidServerSetup.ButtonNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.382"
+			timeRelativeToTestModuleStartTime="00:01.397"
+			timeWallClock="10:43:15"
+			time="00:01.382"
+			level="Failure"
+			category="Validation"
+			errimg=".\UserLice_d1d6d997_58add9a4_trace.jpg"
+			errthumb=".\UserLice_d1d6d997_58add9a4_trace_thumb.jpg">
+			<message>
+				Element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="83"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.397"
+			timeRelativeToTestModuleStartTime="00:01.413"
+			timeWallClock="10:43:15"
+			time="00:01.397"
+			level="Error"
+			category="Module"
+			errimg=".\UserLice_d1d6d997_58add9a4_trace.jpg"
+			errthumb=".\UserLice_d1d6d997_58add9a4_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does exist.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.NotExists(RepoItemInfo itemInfo, String message, Options options)
+   at Ranorex.Validate.NotExists(RepoItemInfo itemInfo)
+   at HB_INSTALL_AUTO.UserLicense.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="83"
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

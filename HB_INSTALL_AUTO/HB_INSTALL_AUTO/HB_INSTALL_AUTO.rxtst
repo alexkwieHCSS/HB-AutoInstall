@@ -188,6 +188,12 @@ rxversion="7.1">
 			ref="3e3fc4f5-2ccc-4c0c-8e7e-4f015e72adec">
 			</modulegroup>
 			<testmodule
+			id="d2d2d55c-290f-4b52-b63c-7442d84521ac"
+			name="VerifyServerVersion"
+			ref="c5579e1d-5544-40dc-acf8-545f36cf39c7"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d365644c-ef21-4c55-a27b-3a48b6735758"
 			name="CloseHB"
 			ref="6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d"
@@ -245,6 +251,10 @@ rxversion="7.1">
 							<testmodule
 							id="26d76a24-083d-45a6-877c-b4b23b84e3f7"
 							name="OpenInstallFile">
+							</testmodule>
+							<testmodule
+							id="d2d2d55c-290f-4b52-b63c-7442d84521ac"
+							name="VerifyServerVersion">
 							</testmodule>
 							<testmodule
 							id="c5b13640-303d-4278-bcf8-18ddf8561dc6"
@@ -395,13 +405,28 @@ rxversion="7.1">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c">
+			</testcontainer>
+			<testcontainer
+			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
+			</testcontainer>
+			<testcontainer
+			id="612d0825-8616-4b38-a420-78b7a1668a22">
+			</testcontainer>
+			<testcontainer
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
 			<testcontainer
 			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
 			</testcontainer>
 			<testcontainer
+			id="e1733192-a28b-4b65-abf2-b0342696439a">
+			</testcontainer>
+			<testcontainer
 			id="e9b13a9d-4839-4122-b144-45de3a900e83">
+			</testcontainer>
+			<testcontainer
+			id="e9f8072b-224e-498b-bf2b-064a9232aedf">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

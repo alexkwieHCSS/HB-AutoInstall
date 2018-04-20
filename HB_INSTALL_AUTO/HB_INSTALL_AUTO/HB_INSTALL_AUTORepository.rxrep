@@ -74,6 +74,13 @@ rxversion="7.1">
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Setup]']/button[@text='Yes']
 			</item>
+			<item
+			capname="titlebar"
+			id="7fdd31f1-bfea-4860-8dd4-e0712deabac9"
+			name="ServerInstallTitle"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/titlebar
+			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
 			</basepath>

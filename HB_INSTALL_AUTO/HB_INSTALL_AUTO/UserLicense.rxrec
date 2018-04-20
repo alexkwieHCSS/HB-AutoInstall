@@ -30,7 +30,7 @@ rxversion="7.1">
 	</variables>
 	<recorditems>
 		<validationitem
-		action="NotExists"
+		action="AttributeNotEqual"
 		enabled="True"
 		optional="False"
 		searchpropertyid="31901fd8-1408-4a9f-b550-d5324c0c0549">
@@ -46,7 +46,7 @@ rxversion="7.1">
 				</path>
 			</info>
 			<matchname>
-				Text
+				AccessibleState
 			</matchname>
 		</validationitem>
 		<WaitForRecordItem

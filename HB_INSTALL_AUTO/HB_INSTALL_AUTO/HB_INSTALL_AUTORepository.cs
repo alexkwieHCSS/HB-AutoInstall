@@ -235,6 +235,7 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _buttoninstallInfo;
             RepoItemInfo _buttonfinishInfo;
             RepoItemInfo _buttonyesInfo;
+            RepoItemInfo _serverinstalltitleInfo;
 
             /// <summary>
             /// Creates a new HeavyBidServerSetup  folder.
@@ -248,6 +249,7 @@ namespace HB_INSTALL_AUTO
                 _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text='&Install']", 30000, null, "13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda");
                 _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text='&Finish']", 30000, null, "f6d583e3-44b4-4f93-b8a3-91c915c2c48c");
                 _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text='Yes']", 30000, null, "1cbaddb5-161e-467e-ae75-42781f0dd64d");
+                _serverinstalltitleInfo = new RepoItemInfo(this, "ServerInstallTitle", "titlebar", 30000, null, "7fdd31f1-bfea-4860-8dd4-e0712deabac9");
             }
 
             /// <summary>
@@ -415,6 +417,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonyesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ServerInstallTitle item.
+            /// </summary>
+            [RepositoryItem("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
+            public virtual Ranorex.TitleBar ServerInstallTitle
+            {
+                get
+                {
+                    return _serverinstalltitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ServerInstallTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
+            public virtual RepoItemInfo ServerInstallTitleInfo
+            {
+                get
+                {
+                    return _serverinstalltitleInfo;
                 }
             }
         }

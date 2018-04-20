@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="10e283662acffa20"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/20/2018 11:14:27 AM"
+		timestampiso="2018-04-20T16:14:27"
+		endtime="4/20/2018 11:14:30 AM"
+		timeoutfactor="1"
+		module="CloseHB">
+		<detail>
+			CloseHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.901"
+			timeRelativeToTestModuleStartTime="00:00.910"
+			timeWallClock="11:14:28"
+			time="00:00.901"
+			level="Info"
+			category="Application">
+			<message>
+				Closing application containing item 'HeavyBidApplication'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.Self"
+				id="2f898f275ad8489e9722e1d9c63f5289"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CloseHB.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.961"
+			timeRelativeToTestModuleStartTime="00:01.970"
+			timeWallClock="11:14:29"
+			time="00:01.961"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'ExitHeavyBid.ButtonYes'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Exit][HeavyBid]']/button[@text='&amp;Yes']"
+				fullname="HB_INSTALL_AUTORepository.ExitHeavyBid.ButtonYes"
+				id="a8c789b151204456bde628ab276d37f5"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CloseHB.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.175"
+			timeRelativeToTestModuleStartTime="00:02.184"
+			timeWallClock="11:14:29"
+			time="00:02.175"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ExitHeavyBid.ButtonYes' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Exit][HeavyBid]']/button[@text='&amp;Yes']"
+				fullname="HB_INSTALL_AUTORepository.ExitHeavyBid.ButtonYes"
+				id="a8c789b151204456bde628ab276d37f5"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CloseHB.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="a76b5c30c297615"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/20/2018 10:44:26 AM"
+		timestampiso="2018-04-20T15:44:26"
+		endtime="4/20/2018 10:44:29 AM"
+		timeoutfactor="1"
+		module="UserLicense">
+		<detail>
+			UserLicense
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.744"
+			timeRelativeToTestModuleStartTime="00:00.752"
+			timeWallClock="10:44:27"
+			time="00:00.744"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeNotEqual (AccessibleState!='(null)') on item 'HeavyBidServerSetup.ButtonNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.614"
+			timeRelativeToTestModuleStartTime="00:01.622"
+			timeWallClock="10:44:28"
+			time="00:01.614"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'AccessibleState' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does not match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="83"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.629"
+			timeRelativeToTestModuleStartTime="00:01.637"
+			timeWallClock="10:44:28"
+			time="00:01.629"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/checkbox[@text~'[agree][terms]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem"
+				id="0b9fc09c2aa6473eb588b28d927bed0c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.629"
+			timeRelativeToTestModuleStartTime="00:01.637"
+			timeWallClock="10:44:28"
+			time="00:01.629"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/checkbox[@text~'[agree][terms]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem"
+				id="0b9fc09c2aa6473eb588b28d927bed0c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.351"
+			timeRelativeToTestModuleStartTime="00:02.359"
+			timeWallClock="10:44:28"
+			time="00:02.351"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.351"
+			timeRelativeToTestModuleStartTime="00:02.359"
+			timeWallClock="10:44:28"
+			time="00:02.351"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

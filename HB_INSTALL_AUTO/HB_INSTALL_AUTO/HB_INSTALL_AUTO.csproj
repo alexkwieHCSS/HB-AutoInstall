@@ -464,6 +464,18 @@
       <UserCode>true</UserCode>
       <id>32ef1050-2851-485b-985c-71af677272d5</id>
     </Compile>
+    <Compile Include="VerifyServerVersion.cs">
+      <BoundTo>d52e9eb0-eb00-4794-a870-3ca700a59d31</BoundTo>
+      <DependentUpon>VerifyServerVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5314453-8ca5-4488-9e51-05587d4927e8</id>
+    </Compile>
+    <Compile Include="VerifyServerVersion.UserCode.cs">
+      <BoundTo>d52e9eb0-eb00-4794-a870-3ca700a59d31</BoundTo>
+      <DependentUpon>VerifyServerVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9db71a6e-7b94-403f-8de8-0c113ed831d6</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -639,6 +651,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>eb475209-b588-4f2c-a204-71dc06c3d795</id>
       <recordtableid>e46c80a6-d7fa-4a4d-817c-02019abb12b8</recordtableid>
+    </None>
+    <None Include="VerifyServerVersion.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>d52e9eb0-eb00-4794-a870-3ca700a59d31</id>
+      <recordtableid>c5579e1d-5544-40dc-acf8-545f36cf39c7</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

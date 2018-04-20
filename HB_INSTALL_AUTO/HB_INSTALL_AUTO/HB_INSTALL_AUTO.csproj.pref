@@ -1,11 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="ValidateHBLaunch.rxrec" />
+    <Element value="OpenEstimate.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="ValidateHBLaunch.rxrec" />
+    <Element value="OpenEstimate.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
