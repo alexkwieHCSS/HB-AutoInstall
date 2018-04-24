@@ -41,6 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public ValidateHBLaunch()
         {
+            YearVersion = "2018.1";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable YearVersion.
+        /// </summary>
+        [TestVariable("dbd6732b-4572-4d2f-854e-815aa9fc2566")]
+        public string YearVersion
+        {
+            get { return repo.YearVersion; }
+            set { repo.YearVersion = value; }
+        }
 
 #endregion
 
@@ -79,21 +90,41 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181'.", repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181Info, new RecordItemIndex(0));
-            Validate.Exists(repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBid20181Info);
-            Delay.Milliseconds(0);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitle'.", repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, new RecordItemIndex(0));
+                Validate.Exists(repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeToHeavyBidScreen.OpenEstimateButton'.", repo.WelcomeToHeavyBidScreen.OpenEstimateButtonInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.WelcomeToHeavyBidScreen.OpenEstimateButtonInfo);
-            Delay.Milliseconds(0);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitle'.", repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeToHeavyBidScreen.CreateNewEstimateButton'.", repo.WelcomeToHeavyBidScreen.CreateNewEstimateButtonInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.WelcomeToHeavyBidScreen.CreateNewEstimateButtonInfo);
-            Delay.Milliseconds(0);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.OpenEstimateButton'.", repo.WelcomeToHeavyBidScreen.OpenEstimateButtonInfo, new RecordItemIndex(2));
+                Validate.Exists(repo.WelcomeToHeavyBidScreen.OpenEstimateButtonInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeToHeavyBidScreen.OpenExistingEstimateButton'.", repo.WelcomeToHeavyBidScreen.OpenExistingEstimateButtonInfo, new RecordItemIndex(3));
-            Validate.Exists(repo.WelcomeToHeavyBidScreen.OpenExistingEstimateButtonInfo);
-            Delay.Milliseconds(0);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.CreateNewEstimateButton'.", repo.WelcomeToHeavyBidScreen.CreateNewEstimateButtonInfo, new RecordItemIndex(3));
+                Validate.Exists(repo.WelcomeToHeavyBidScreen.CreateNewEstimateButtonInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.OpenExistingEstimateButton'.", repo.WelcomeToHeavyBidScreen.OpenExistingEstimateButtonInfo, new RecordItemIndex(4));
+                Validate.Exists(repo.WelcomeToHeavyBidScreen.OpenExistingEstimateButtonInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            try {
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(5));
+                //Validate.Exists(repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, Validate.DefaultMessage, false);
+                //Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
         }
 

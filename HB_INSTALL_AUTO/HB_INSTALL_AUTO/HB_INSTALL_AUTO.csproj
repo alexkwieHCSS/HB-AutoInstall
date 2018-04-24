@@ -83,6 +83,18 @@
       <UserCode>true</UserCode>
       <id>ecfa36d5-2056-4757-a55e-7da21ed86bad</id>
     </Compile>
+    <Compile Include="CheckRegistrationFeatures.cs">
+      <BoundTo>15ceb9f3-3641-428d-968b-e4f2d4464d5d</BoundTo>
+      <DependentUpon>CheckRegistrationFeatures.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e677e50-65de-4b83-856c-f12cf82df639</id>
+    </Compile>
+    <Compile Include="CheckRegistrationFeatures.UserCode.cs">
+      <BoundTo>15ceb9f3-3641-428d-968b-e4f2d4464d5d</BoundTo>
+      <DependentUpon>CheckRegistrationFeatures.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ebfcfd0-442c-411e-9c9b-c69a1b7f6c61</id>
+    </Compile>
     <Compile Include="CloseCHeavyBid.cs">
       <BoundTo>40033d7b-f24b-4dcf-86b0-ae5030066a9c</BoundTo>
       <DependentUpon>CloseCHeavyBid.rxrec</DependentUpon>
@@ -232,6 +244,18 @@
       <DependentUpon>ConfirmHBInstallFinish.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a927e21d-baac-422a-bebf-145b72419dca</id>
+    </Compile>
+    <Compile Include="NavigateToSupportHCSS.cs">
+      <BoundTo>5510412d-fc81-44db-bb11-303cf0be8517</BoundTo>
+      <DependentUpon>NavigateToSupportHCSS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d54fb2c-1566-497b-ba7e-b3be836f76ac</id>
+    </Compile>
+    <Compile Include="NavigateToSupportHCSS.UserCode.cs">
+      <BoundTo>5510412d-fc81-44db-bb11-303cf0be8517</BoundTo>
+      <DependentUpon>NavigateToSupportHCSS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fe0fdad-302f-452c-acba-1501e629d85f</id>
     </Compile>
     <Compile Include="OpenEstimate.cs">
       <BoundTo>bb358f26-2216-42b9-b1e7-0f556c892d9b</BoundTo>
@@ -416,6 +440,30 @@
       <UserCode>true</UserCode>
       <id>1fe9c90d-6d06-44c6-a3bf-690593422feb</id>
     </Compile>
+    <Compile Include="TestLinkOnWelcome.cs">
+      <BoundTo>623b52f0-ea59-494a-a88c-420349ca9a40</BoundTo>
+      <DependentUpon>TestLinkOnWelcome.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9da7dd74-9be7-4ad6-8b1e-58fd07de82a2</id>
+    </Compile>
+    <Compile Include="TestLinkOnWelcome.UserCode.cs">
+      <BoundTo>623b52f0-ea59-494a-a88c-420349ca9a40</BoundTo>
+      <DependentUpon>TestLinkOnWelcome.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b4d1f50-c928-477f-96b5-bada54bcd104</id>
+    </Compile>
+    <Compile Include="TestWrongRegCode.cs">
+      <BoundTo>10ea67e3-472d-4387-bc42-4ecc2ffb0197</BoundTo>
+      <DependentUpon>TestWrongRegCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5b1dcc84-2e11-4579-9717-e375fd9fc046</id>
+    </Compile>
+    <Compile Include="TestWrongRegCode.UserCode.cs">
+      <BoundTo>10ea67e3-472d-4387-bc42-4ecc2ffb0197</BoundTo>
+      <DependentUpon>TestWrongRegCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72722250-bd8e-453b-8726-3edeee389892</id>
+    </Compile>
     <Compile Include="UninstallCrystal.cs">
       <BoundTo>80ad8732-a6ba-466b-93f2-30c515151038</BoundTo>
       <DependentUpon>UninstallCrystal.rxrec</DependentUpon>
@@ -476,6 +524,18 @@
       <UserCode>true</UserCode>
       <id>32ef1050-2851-485b-985c-71af677272d5</id>
     </Compile>
+    <Compile Include="ValidateHBHelpScreen.cs">
+      <BoundTo>112d1973-5702-4632-a64e-1758c0089a4d</BoundTo>
+      <DependentUpon>ValidateHBHelpScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39691d09-7b15-4be8-be5c-6105e3826e0a</id>
+    </Compile>
+    <Compile Include="ValidateHBHelpScreen.UserCode.cs">
+      <BoundTo>112d1973-5702-4632-a64e-1758c0089a4d</BoundTo>
+      <DependentUpon>ValidateHBHelpScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6151422b-526e-41f9-bc29-c33e29f46b53</id>
+    </Compile>
     <Compile Include="VerifyServerVersion.cs">
       <BoundTo>d52e9eb0-eb00-4794-a870-3ca700a59d31</BoundTo>
       <DependentUpon>VerifyServerVersion.rxrec</DependentUpon>
@@ -509,6 +569,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>e9cb2207-0974-4bf0-9349-fe09df32f60f</id>
       <recordtableid>62b28ca8-35c6-4831-8ecd-3c62f1608eec</recordtableid>
+    </None>
+    <None Include="CheckRegistrationFeatures.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>15ceb9f3-3641-428d-968b-e4f2d4464d5d</id>
+      <recordtableid>de67b64d-9b75-47d6-91e5-9ab65e70c7b2</recordtableid>
     </None>
     <None Include="CloseCHeavyBid.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -580,6 +645,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>85f61cfa-810e-42c6-aa29-e5834fdc10ca</id>
       <recordtableid>b3a23dda-b9ca-485f-965b-05d9979d93ac</recordtableid>
+    </None>
+    <None Include="NavigateToSupportHCSS.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>5510412d-fc81-44db-bb11-303cf0be8517</id>
+      <recordtableid>407a39a3-ab47-4a2e-b84a-fb8867afa5c9</recordtableid>
     </None>
     <None Include="OpenEstimate.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -656,6 +726,16 @@
       <id>19ea4580-5b59-4df4-99cc-02a8237c1628</id>
       <recordtableid>52c57138-faa8-4de3-b51b-a991a395efda</recordtableid>
     </None>
+    <None Include="TestLinkOnWelcome.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>623b52f0-ea59-494a-a88c-420349ca9a40</id>
+      <recordtableid>b2ddd222-db92-4814-8e24-a6e65764eaa3</recordtableid>
+    </None>
+    <None Include="TestWrongRegCode.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>10ea67e3-472d-4387-bc42-4ecc2ffb0197</id>
+      <recordtableid>78ae137a-02fe-4c28-ba10-108bf3ab76d5</recordtableid>
+    </None>
     <None Include="UninstallCrystal.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>80ad8732-a6ba-466b-93f2-30c515151038</id>
@@ -680,6 +760,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>eb475209-b588-4f2c-a204-71dc06c3d795</id>
       <recordtableid>e46c80a6-d7fa-4a4d-817c-02019abb12b8</recordtableid>
+    </None>
+    <None Include="ValidateHBHelpScreen.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>112d1973-5702-4632-a64e-1758c0089a4d</id>
+      <recordtableid>4fd71e3b-908c-4d93-9811-290c25bd053f</recordtableid>
     </None>
     <None Include="VerifyServerVersion.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>

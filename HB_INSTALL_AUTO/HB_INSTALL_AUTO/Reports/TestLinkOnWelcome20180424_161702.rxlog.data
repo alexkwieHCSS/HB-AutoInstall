@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="b62c328c3609694"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 4:17:06 PM"
+		timestampiso="2018-04-24T21:17:06"
+		endtime="4/24/2018 4:17:22 PM"
+		timeoutfactor="1"
+		module="TestLinkOnWelcome">
+		<detail>
+			TestLinkOnWelcome
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.796"
+			timeRelativeToTestModuleStartTime="00:00.812"
+			timeWallClock="16:17:06"
+			time="00:00.796"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen"
+				id="95bd9c4ab0e54718a26a38888c039a88"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.906"
+			timeRelativeToTestModuleStartTime="00:01.921"
+			timeWallClock="16:17:07"
+			time="00:01.906"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'LinkNewUserWelcomeScreen' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen"
+				id="95bd9c4ab0e54718a26a38888c039a88"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="83"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.921"
+			timeRelativeToTestModuleStartTime="00:01.937"
+			timeWallClock="16:17:07"
+			time="00:01.921"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen"
+				id="95bd9c4ab0e54718a26a38888c039a88"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.913"
+			timeRelativeToTestModuleStartTime="00:02.929"
+			timeWallClock="16:17:08"
+			time="00:02.913"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.2<br/>Validating AttributeRegEx (Text~'[help][hcss]') on item 'GoogleChrome.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="92"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.431"
+			timeRelativeToTestModuleStartTime="00:03.446"
+			timeWallClock="16:17:09"
+			time="00:03.431"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="93"
+				loglvl="Success"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.439"
+			timeRelativeToTestModuleStartTime="00:03.454"
+			timeWallClock="16:17:09"
+			time="00:03.439"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.2<br/>Validating AttributeRegEx (Text~'[Article][List]') on item 'GoogleChrome.Tabs'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="99"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.576"
+			timeRelativeToTestModuleStartTime="00:03.592"
+			timeWallClock="16:17:09"
+			time="00:03.576"
+			level="Failure"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.Tabs' does not match the specified RegEx (actual='(null)', regex='[Article][List]').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="100"
+				loglvl="Failure"
+				itemindex="3">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.586"
+			timeRelativeToTestModuleStartTime="00:03.602"
+			timeWallClock="16:17:09"
+			time="00:03.586"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.2<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.TabSupportHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[HCSS][Support]']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.TabSupportHCSS"
+				id="e10ca42b9e25410190841f1b896e52f6"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="106"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.765"
+			timeRelativeToTestModuleStartTime="00:03.781"
+			timeWallClock="16:17:09"
+			time="00:03.765"
+			level="Info"
+			category="Wait"
+			errimg=".\TestLink_82a45b1_e21410a9_trace.jpg"
+			errthumb=".\TestLink_82a45b1_e21410a9_trace_thumb.jpg">
+			<message>
+				(Optional Action)<br/>E.2<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.LinkSupportHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'support.hcss.com']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.LinkSupportHCSS"
+				id="cf1fa1a10cc34d2dbf1a518dddf7b207"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="112"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.335"
+			timeRelativeToTestModuleStartTime="00:16.350"
+			timeWallClock="16:17:22"
+			time="00:16.335"
+			level="Warn"
+			category="Module"
+			errimg=".\TestLink_82a45b1_efd4d1ce_trace.jpg"
+			errthumb=".\TestLink_82a45b1_efd4d1ce_trace_thumb.jpg">
+			<message>
+				(Optional Action) Failed to wait for item to exist.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestLinkOnWelcome.cs"
+				codeline="114"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.350"
+			timeRelativeToTestModuleStartTime="00:16.366"
+			timeWallClock="16:17:22"
+			time="00:16.350"
+			level="Error"
+			category="User"
+			errimg=".\TestLink_82a45b1_efd4d1ce_trace.jpg"
+			errthumb=".\TestLink_82a45b1_efd4d1ce_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -147,6 +147,16 @@ rxversion="7.1">
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~$InstallTypeButton]
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="0e702a41-674b-4888-a62f-5f9a6e258512"
+			name="SystemInfo"
+			refimgid="ac8b36f6-1569-4df4-8e2d-bc910d63e204"
+			refpath="/form[@title='About HeavyBid']/element[@class='DFDialogClass' and @instance='0']/element[@controlid='2383']/element/button[@accessiblename='System Info']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/element[@controlid='2383']/?/?/button[@accessiblename='System Info']
+			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
 			</basepath>
@@ -258,6 +268,13 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Registration]']/element[1]/element[@class='DFentry']
 			</item>
+			<item
+			capname="unknown"
+			id="fa22d276-4596-47c1-9233-ccf49abd9408"
+			name="LinkRegistrationCode"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Registration]']/element[@windowtext~'Click']
+			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Registration]']
 			</basepath>
@@ -362,6 +379,16 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		name="HeavyBidApplication"
 		searchtimeout="30000ms"
 		usecache="False">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="f7760583-32ad-4ea0-ae2b-7afacacf7a0a"
+			name="Help"
+			refimgid="744188eb-6029-489d-99f3-f2cbe8a8ea58"
+			refpath="/form[@title='HB 2018.1']/element[@controlid='59419']/element[@class='XTPToolBar' and @instance='0']/toolbar[1]/tabpagelist/tabpage[@accessiblename='Help']"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@controlid='59419']/element[2]/toolbar[1]/tabpagelist[@accessiblename='']/tabpage[@accessiblename='Help']
+			</item>
 			<basepath>
 				/form[@title~'HB']
 			</basepath>
@@ -712,7 +739,7 @@ TkSuQmCC
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="617ed1c7-aa27-48e2-947b-cfe1ac5dc24f"
-			name="WelcomeToHeavyBid20181"
+			name="WelcomeToHeavyBidTitle"
 			refimgid="0ff6250c-3ca0-4dfd-b537-fc9b9cb2e9e2"
 			searchtimeout="30000ms">
 				/form[@title~'[Welcome][HeavyBid]']/titlebar[@text~'[Welcome][HeavyBid]']
@@ -729,6 +756,7 @@ TkSuQmCC
 			capname="button"
 			id="e0f87a37-a2f4-40b5-82e3-dc421eb4699c"
 			name="OpenExistingEstimateButton"
+			refimgid="2c673bb7-9d7a-4807-a533-38410f0bb98d"
 			searchtimeout="30000ms">
 				/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
 			</item>
@@ -741,8 +769,120 @@ TkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'[Welcome][HeavyBid]']/element[1]
 			</item>
+			<item
+			capname="unknown"
+			id="95bd9c4a-b0e5-4718-a26a-38888c039a88"
+			name="LinkNewUserWelcomeScreen"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']
+			</item>
 			<basepath>
 				/form[@title~'[Welcome][HeavyBid]']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAE5SURBVDhPY2Ce4tHJMtXjNxD/JxH/BullADHQ
+JP7LzI/8L78gBifmnuELNwRkAIrmmuPz/+MC//79+x+wtf5/wp7u/5zTvcHqMQw4++r2/3V3Dv9f
+cesAGB9/fg2q/f//t98//ffaVP0/fEfLf8WFsdgNuPzm/v+dD8/833L/BBjvArKPPLsCxvc+PkdR
+C8IEDUDG9DNg8Y3d/+dc3Y6BiTZg/rWd/2de3gLGjz+/+p9zcMr/aZc3/7//8QWKWhDGacAMoGYQ
+PgeMFcMVmWAvkGQAzAVX3z74n3do6n/L1fnEG4AMQIln/d2j/y++vovbAFCiACUOUCKZdGH9/wXX
+d6HgF1/fgQ27/eEpdgNAyRKUPI1XZGHFy2/tBxvQfW4VVgPAmQmUQbBlHBiWnR+FoRmIf1OYnT06
+AYyMeLTxHY6uAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="1cc2708b-c467-4997-aa0b-3b1a7bf4b39c"
+		isrooted="True"
+		name="GoogleChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="tabpage"
+			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
+			name="Tabs"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="e10ca42b-9e25-4101-9084-1f1b896e52f6"
+			name="TabSupportHCSS"
+			refimgid="444af49b-3ee6-4f40-8485-c40945be233f"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[HCSS][Support]']
+			</item>
+			<item
+			capname="tabpage"
+			id="5ff2cee5-61e1-4940-b66d-c1692f6171c3"
+			name="TabArticleHCSS"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']
+			</item>
+			<item
+			addcaps="container,accessible"
+			capname="text"
+			id="52cbcae3-0251-4af8-9078-d1c9da742610"
+			name="AddressBar"
+			refimgid="58fae812-5276-456c-a4f2-6efdecef7621"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']
+			</item>
+			<item
+			capname="text"
+			id="cf1fa1a1-0cc3-4d2d-bf1a-518dddf7b207"
+			name="LinkSupportHCSS"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'support.hcss.com']
+			</item>
+			<item
+			capname="text"
+			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
+			name="LinkArticleHCSS"
+			searchtimeout="30000ms">
+				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
+			</item>
+			<basepath>
+				/form[@processname~'chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAoVJREFUOE+tkl1IU2EcxpdBQUQFplNmJXURRBcWREnpzqbTuW91U9iW
+6NK7KBKU6KIRhJB93XSxmnacW2K7sY+bIG1qi5rzqyaW03MspAiEYHkG6sZ5es86mqOPqx748d78
+f8//5eWV/PfAKcmYN2srmVrNPdasHmArVcNsVZmfnOemTSWZ4tifM2NRFbA24xQRwVaXg0hgTKVg
+jCVgDAqwJmWMMZU5xPH0DKoLj0SqVd9nzURcK6gqSytg9BTmdArMGajzoibG6cy4cNG8ENbLMS0I
+f7kBoyMFWjlmtcXJeY28QLQlkgM9TYajrvpkr6EIb8mWD2Tzp243Xo4s8M/Cizwz8RzzPiO+eE7g
+W+9xcH2FiD8uGhR1UuBrdO1/0IjaS1UYqjgJ1uPGZT8H4804DATbnTjez0SRCCiRDBQjOVSEZLB4
+GX7L5lRBvq+xP993BgfpBtyqoRAY/bou624QrsfR9ojDcqQVfEgJfkQJhAmjum2pgjxPfXCv14F9
+Pgf01+x4El6CXhBFWUto7eGwEr0KjKsIpYQS8G/UO1IFsq66vj3eBggIRa8np1cqb/+SNe0c/MEY
+kpEGUS4FP0ZuElVvTRXk0vZWWXc91lA/dWIgsohmL4cm9xI8gRgmJu+nbU+EFLMpWYjMa8vL7bKv
+5nrqsMbh3rNoGe7ElaAPTQ9bkBirWJcxTh4zRDWL+s9kd1idOUSUdp3egB3Su1ZEXujS5ESIGsOU
+ZYuoioFkk7TT6pLSdmQTUSCLtsFBG8CPl2+QFe/4CaVMtH5PVofVku22RnfTVmS6avD5lWZZEFdH
+qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="7323f55f-9ec9-4cd3-8228-b1a2fe845dd8"
+		isrooted="True"
+		name="HEAVYBID"
+		refpath="/form[@title='' and @processname='HEAVYBID' and @class='XTPPopupBar']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="266fcb41-c0c6-40b5-80ac-99b4a2c11ddc"
+			name="AboutHeavyBid"
+			refimgid="39628823-9dc2-473b-9216-24ed729f7f26"
+			refpath="/form[@title='' and @processname='HEAVYBID' and @class='XTPPopupBar']/toolbar[1]/button[@accessiblename='About HeavyBid']"
+			searchtimeout="30000ms">
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/button[@accessiblename='About HeavyBid']
+			</item>
+			<basepath>
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

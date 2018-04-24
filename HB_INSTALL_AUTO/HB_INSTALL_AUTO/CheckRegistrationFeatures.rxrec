@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="de67b64d-9b75-47d6-91e5-9ab65e70c7b2"
+mode="Global"
+rxversion="7.1">
+	<name>
+		CheckRegistrationFeatures
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckRegistrationFeatures"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckRegistrationFeatures.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

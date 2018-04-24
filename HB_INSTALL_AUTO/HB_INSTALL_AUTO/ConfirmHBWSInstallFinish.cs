@@ -82,15 +82,15 @@ namespace HB_INSTALL_AUTO
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.ButtonInstall'", repo.HeavyBidWorkstationSetup.ButtonInstallInfo, new ActionTimeout(60000), new RecordItemIndex(0));
             repo.HeavyBidWorkstationSetup.ButtonInstallInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonInstall' at 42;9.", repo.HeavyBidWorkstationSetup.ButtonInstallInfo, new RecordItemIndex(1));
-            repo.HeavyBidWorkstationSetup.ButtonInstall.Click("42;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonInstall' at Center.", repo.HeavyBidWorkstationSetup.ButtonInstallInfo, new RecordItemIndex(1));
+            repo.HeavyBidWorkstationSetup.ButtonInstall.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 15m to exist. Associated repository item: 'HeavyBidWorkstationSetup.ButtonFinish'", repo.HeavyBidWorkstationSetup.ButtonFinishInfo, new ActionTimeout(900000), new RecordItemIndex(2));
             repo.HeavyBidWorkstationSetup.ButtonFinishInfo.WaitForExists(900000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonFinish' at 32;15.", repo.HeavyBidWorkstationSetup.ButtonFinishInfo, new RecordItemIndex(3));
-            repo.HeavyBidWorkstationSetup.ButtonFinish.Click("32;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonFinish' at Center.", repo.HeavyBidWorkstationSetup.ButtonFinishInfo, new RecordItemIndex(3));
+            repo.HeavyBidWorkstationSetup.ButtonFinish.Click();
             Delay.Milliseconds(200);
             
         }

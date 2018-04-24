@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1cde90cb5f07d58"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 3:34:20 PM"
+		timestampiso="2018-04-24T20:34:20"
+		endtime="4/24/2018 3:34:32 PM"
+		timeoutfactor="1"
+		module="NavigateToSupportHCSS">
+		<detail>
+			NavigateToSupportHCSS
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.806"
+			timeRelativeToTestModuleStartTime="00:00.815"
+			timeWallClock="15:34:21"
+			time="00:00.806"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.LinkRegistrationCode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.LinkRegistrationCode"
+				id="fa22d276459647c19233ccf49abd9408"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.604"
+			timeRelativeToTestModuleStartTime="00:02.613"
+			timeWallClock="15:34:23"
+			time="00:02.604"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~'[support][hcss]') on item 'GoogleChrome.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="87"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.145"
+			timeRelativeToTestModuleStartTime="00:03.154"
+			timeWallClock="15:34:23"
+			time="00:03.145"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="88"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.155"
+			timeRelativeToTestModuleStartTime="00:03.164"
+			timeWallClock="15:34:23"
+			time="00:03.155"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.TabSupportHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.TabSupportHCSS"
+				id="e10ca42b9e25410190841f1b896e52f6"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="99"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.320"
+			timeRelativeToTestModuleStartTime="00:03.329"
+			timeWallClock="15:34:24"
+			time="00:03.320"
+			level="Info"
+			category="Wait"
+			errimg=".\Navigate_1d3eb36e_861c9ef2_trace.jpg"
+			errthumb=".\Navigate_1d3eb36e_861c9ef2_trace_thumb.jpg">
+			<message>
+				(Optional Action)<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.LinkSupportHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'support.hcss.com']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.LinkSupportHCSS"
+				id="cf1fa1a10cc34d2dbf1a518dddf7b207"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="104"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.505"
+			timeRelativeToTestModuleStartTime="00:03.514"
+			timeWallClock="15:34:24"
+			time="00:03.505"
+			level="Info"
+			category="Application"
+			errimg=".\Navigate_1d3eb36e_d1a45a16_trace.jpg"
+			errthumb=".\Navigate_1d3eb36e_d1a45a16_trace_thumb.jpg">
+			<message>
+				Closing application containing item 'GoogleChrome'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Self"
+				id="1cc2708bc4674997aa0b3b1a7bf4b39c"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="108"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.961"
+			timeRelativeToTestModuleStartTime="00:11.970"
+			timeWallClock="15:34:32"
+			time="00:11.961"
+			level="Error"
+			category="User"
+			errimg=".\Navigate_1d3eb36e_004503c8_trace.jpg"
+			errthumb=".\Navigate_1d3eb36e_004503c8_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -40,6 +40,8 @@ namespace HB_INSTALL_AUTO
         HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder _programsandfeatures;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder _heavybiduninstall;
         HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder _welcometoheavybidscreen;
+        HB_INSTALL_AUTORepositoryFolders.GoogleChromeAppFolder _googlechrome;
+        HB_INSTALL_AUTORepositoryFolders.HEAVYBIDAppFolder _heavybid;
 
         /// <summary>
         /// Gets the singleton class instance representing the HB_INSTALL_AUTORepository element repository.
@@ -69,6 +71,8 @@ namespace HB_INSTALL_AUTO
             _programsandfeatures = new HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder(this);
             _heavybiduninstall = new HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder(this);
             _welcometoheavybidscreen = new HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder(this);
+            _googlechrome = new HB_INSTALL_AUTORepositoryFolders.GoogleChromeAppFolder(this);
+            _heavybid = new HB_INSTALL_AUTORepositoryFolders.HEAVYBIDAppFolder(this);
         }
 
 #region Variables
@@ -239,6 +243,24 @@ namespace HB_INSTALL_AUTO
         {
             get { return _welcometoheavybidscreen; }
         }
+
+        /// <summary>
+        /// The GoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.GoogleChromeAppFolder GoogleChrome
+        {
+            get { return _googlechrome; }
+        }
+
+        /// <summary>
+        /// The HEAVYBID folder.
+        /// </summary>
+        [RepositoryFolder("7323f55f-9ec9-4cd3-8228-b1a2fe845dd8")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.HEAVYBIDAppFolder HEAVYBID
+        {
+            get { return _heavybid; }
+        }
     }
 
     /// <summary>
@@ -268,6 +290,7 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _setuptextInfo;
             RepoItemInfo _welcomesetuptextInfo;
             RepoItemInfo _installtyperadiobuttonInfo;
+            RepoItemInfo _systeminfoInfo;
 
             /// <summary>
             /// Creates a new HeavyBidServerSetup  folder.
@@ -290,6 +313,7 @@ namespace HB_INSTALL_AUTO
                 _setuptextInfo = new RepoItemInfo(this, "SetupText", "text[@text~'Setup']", 30000, null, "38d6d211-be2f-46bf-a786-7b767cab3ff1");
                 _welcomesetuptextInfo = new RepoItemInfo(this, "WelcomeSetupText", "text[@text~'Welcome']", 30000, null, "5e367632-95db-45d4-803e-2e5238d5dccd");
                 _installtyperadiobuttonInfo = new RepoItemInfo(this, "InstallTypeRadioButton", "?/?/radiobutton[@text~$InstallTypeButton]", 30000, null, "3b47bf2e-cdab-42af-aae9-6cad57999ad0");
+                _systeminfoInfo = new RepoItemInfo(this, "SystemInfo", "?/?/element[@controlid='2383']/?/?/button[@accessiblename='System Info']", 30000, null, "0e702a41-674b-4888-a62f-5f9a6e258512");
             }
 
             /// <summary>
@@ -675,6 +699,30 @@ namespace HB_INSTALL_AUTO
                     return _installtyperadiobuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The SystemInfo item.
+            /// </summary>
+            [RepositoryItem("0e702a41-674b-4888-a62f-5f9a6e258512")]
+            public virtual Ranorex.Button SystemInfo
+            {
+                get
+                {
+                    return _systeminfoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SystemInfo item info.
+            /// </summary>
+            [RepositoryItemInfo("0e702a41-674b-4888-a62f-5f9a6e258512")]
+            public virtual RepoItemInfo SystemInfoInfo
+            {
+                get
+                {
+                    return _systeminfoInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -830,6 +878,7 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _checkInfo;
             RepoItemInfo _submitInfo;
             RepoItemInfo _registrationentryInfo;
+            RepoItemInfo _linkregistrationcodeInfo;
 
             /// <summary>
             /// Creates a new HeavyBidRegistration  folder.
@@ -840,6 +889,7 @@ namespace HB_INSTALL_AUTO
                 _checkInfo = new RepoItemInfo(this, "Check", ".//button[@text='Check']", 30000, null, "7965edbb-7fdd-4cfd-be12-92582177ed8e");
                 _submitInfo = new RepoItemInfo(this, "Submit", ".//button[@text='Submit']", 30000, null, "c61c6cd8-dab4-4f52-914d-90233ee9b6d2");
                 _registrationentryInfo = new RepoItemInfo(this, "RegistrationEntry", "element[1]/element[@class='DFentry']", 30000, null, "588d4131-a392-43df-92cf-4b8c1e94a82f");
+                _linkregistrationcodeInfo = new RepoItemInfo(this, "LinkRegistrationCode", "element[@windowtext~'Click']", 30000, null, "fa22d276-4596-47c1-9233-ccf49abd9408");
             }
 
             /// <summary>
@@ -935,6 +985,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _registrationentryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkRegistrationCode item.
+            /// </summary>
+            [RepositoryItem("fa22d276-4596-47c1-9233-ccf49abd9408")]
+            public virtual Ranorex.Unknown LinkRegistrationCode
+            {
+                get
+                {
+                    return _linkregistrationcodeInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkRegistrationCode item info.
+            /// </summary>
+            [RepositoryItemInfo("fa22d276-4596-47c1-9233-ccf49abd9408")]
+            public virtual RepoItemInfo LinkRegistrationCodeInfo
+            {
+                get
+                {
+                    return _linkregistrationcodeInfo;
                 }
             }
         }
@@ -1129,6 +1203,7 @@ namespace HB_INSTALL_AUTO
         [RepositoryFolder("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
         public partial class HeavyBidApplicationAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _helpInfo;
 
             /// <summary>
             /// Creates a new HeavyBidApplication  folder.
@@ -1136,6 +1211,7 @@ namespace HB_INSTALL_AUTO
             public HeavyBidApplicationAppFolder(RepoGenBaseFolder parentFolder) :
                     base("HeavyBidApplication", "/form[@title~'HB']", parentFolder, 30000, null, false, "2f898f27-5ad8-489e-9722-e1d9c63f5289", "")
             {
+                _helpInfo = new RepoItemInfo(this, "Help", "element[@controlid='59419']/element[2]/toolbar[1]/tabpagelist[@accessiblename='']/tabpage[@accessiblename='Help']", 30000, null, "f7760583-32ad-4ea0-ae2b-7afacacf7a0a");
             }
 
             /// <summary>
@@ -1159,6 +1235,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help item.
+            /// </summary>
+            [RepositoryItem("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
+            public virtual Ranorex.TabPage Help
+            {
+                get
+                {
+                    return _helpInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help item info.
+            /// </summary>
+            [RepositoryItemInfo("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
+            public virtual RepoItemInfo HelpInfo
+            {
+                get
+                {
+                    return _helpInfo;
                 }
             }
         }
@@ -1773,10 +1873,11 @@ namespace HB_INSTALL_AUTO
         public partial class WelcomeToHeavyBidScreenAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _openestimatebuttonInfo;
-            RepoItemInfo _welcometoheavybid20181Info;
+            RepoItemInfo _welcometoheavybidtitleInfo;
             RepoItemInfo _createnewestimatebuttonInfo;
             RepoItemInfo _openexistingestimatebuttonInfo;
             RepoItemInfo _bitmapimageInfo;
+            RepoItemInfo _linknewuserwelcomescreenInfo;
 
             /// <summary>
             /// Creates a new WelcomeToHeavyBidScreen  folder.
@@ -1785,10 +1886,11 @@ namespace HB_INSTALL_AUTO
                     base("WelcomeToHeavyBidScreen", "/form[@title~'[Welcome][HeavyBid]']", parentFolder, 30000, null, false, "18f7566c-43cf-4700-b584-eaabae46f352", "")
             {
                 _openestimatebuttonInfo = new RepoItemInfo(this, "OpenEstimateButton", "element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "23d83cf4-b26a-4fbb-800d-60cd8193746b");
-                _welcometoheavybid20181Info = new RepoItemInfo(this, "WelcomeToHeavyBid20181", "titlebar[@text~'[Welcome][HeavyBid]']", 30000, null, "617ed1c7-aa27-48e2-947b-cfe1ac5dc24f");
+                _welcometoheavybidtitleInfo = new RepoItemInfo(this, "WelcomeToHeavyBidTitle", "titlebar[@text~'[Welcome][HeavyBid]']", 30000, null, "617ed1c7-aa27-48e2-947b-cfe1ac5dc24f");
                 _createnewestimatebuttonInfo = new RepoItemInfo(this, "CreateNewEstimateButton", "element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "f362dc7e-4a8f-4de5-b2b9-497185d51104");
                 _openexistingestimatebuttonInfo = new RepoItemInfo(this, "OpenExistingEstimateButton", "element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "e0f87a37-a2f4-40b5-82e3-dc421eb4699c");
                 _bitmapimageInfo = new RepoItemInfo(this, "BitmapImage", "element[1]", 30000, null, "00db71f4-73f4-4258-b3fc-748f4ebbcd04");
+                _linknewuserwelcomescreenInfo = new RepoItemInfo(this, "LinkNewUserWelcomeScreen", "element[@windowtext~'Click']", 30000, null, "95bd9c4a-b0e5-4718-a26a-38888c039a88");
             }
 
             /// <summary>
@@ -1840,26 +1942,26 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The WelcomeToHeavyBid20181 item.
+            /// The WelcomeToHeavyBidTitle item.
             /// </summary>
             [RepositoryItem("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
-            public virtual Ranorex.TitleBar WelcomeToHeavyBid20181
+            public virtual Ranorex.TitleBar WelcomeToHeavyBidTitle
             {
                 get
                 {
-                    return _welcometoheavybid20181Info.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _welcometoheavybidtitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The WelcomeToHeavyBid20181 item info.
+            /// The WelcomeToHeavyBidTitle item info.
             /// </summary>
             [RepositoryItemInfo("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
-            public virtual RepoItemInfo WelcomeToHeavyBid20181Info
+            public virtual RepoItemInfo WelcomeToHeavyBidTitleInfo
             {
                 get
                 {
-                    return _welcometoheavybid20181Info;
+                    return _welcometoheavybidtitleInfo;
                 }
             }
 
@@ -1932,6 +2034,292 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _bitmapimageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkNewUserWelcomeScreen item.
+            /// </summary>
+            [RepositoryItem("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
+            public virtual Ranorex.Unknown LinkNewUserWelcomeScreen
+            {
+                get
+                {
+                    return _linknewuserwelcomescreenInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkNewUserWelcomeScreen item info.
+            /// </summary>
+            [RepositoryItemInfo("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
+            public virtual RepoItemInfo LinkNewUserWelcomeScreenInfo
+            {
+                get
+                {
+                    return _linknewuserwelcomescreenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
+        public partial class GoogleChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tabsInfo;
+            RepoItemInfo _tabsupporthcssInfo;
+            RepoItemInfo _tabarticlehcssInfo;
+            RepoItemInfo _addressbarInfo;
+            RepoItemInfo _linksupporthcssInfo;
+            RepoItemInfo _linkarticlehcssInfo;
+
+            /// <summary>
+            /// Creates a new GoogleChrome  folder.
+            /// </summary>
+            public GoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GoogleChrome", "/form[@processname~'chrome']", parentFolder, 30000, null, true, "1cc2708b-c467-4997-aa0b-3b1a7bf4b39c", "")
+            {
+                _tabsInfo = new RepoItemInfo(this, "Tabs", "?/?/?/?/tabpage[@selected='True']", 30000, null, "6c738e7a-7184-4785-8021-78d4e64b01ac");
+                _tabsupporthcssInfo = new RepoItemInfo(this, "TabSupportHCSS", "container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[HCSS][Support]']", 30000, null, "e10ca42b-9e25-4101-9084-1f1b896e52f6");
+                _tabarticlehcssInfo = new RepoItemInfo(this, "TabArticleHCSS", "container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']", 30000, null, "5ff2cee5-61e1-4940-b66d-c1692f6171c3");
+                _addressbarInfo = new RepoItemInfo(this, "AddressBar", "container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']", 30000, null, "52cbcae3-0251-4af8-9078-d1c9da742610");
+                _linksupporthcssInfo = new RepoItemInfo(this, "LinkSupportHCSS", "container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'support.hcss.com']", 30000, null, "cf1fa1a1-0cc3-4d2d-bf1a-518dddf7b207");
+                _linkarticlehcssInfo = new RepoItemInfo(this, "LinkArticleHCSS", "container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']", 30000, null, "9fbd3384-29a8-41d7-a549-8d277cb9ca8f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tabs item.
+            /// </summary>
+            [RepositoryItem("6c738e7a-7184-4785-8021-78d4e64b01ac")]
+            public virtual Ranorex.TabPage Tabs
+            {
+                get
+                {
+                    return _tabsInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tabs item info.
+            /// </summary>
+            [RepositoryItemInfo("6c738e7a-7184-4785-8021-78d4e64b01ac")]
+            public virtual RepoItemInfo TabsInfo
+            {
+                get
+                {
+                    return _tabsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabSupportHCSS item.
+            /// </summary>
+            [RepositoryItem("e10ca42b-9e25-4101-9084-1f1b896e52f6")]
+            public virtual Ranorex.TabPage TabSupportHCSS
+            {
+                get
+                {
+                    return _tabsupporthcssInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabSupportHCSS item info.
+            /// </summary>
+            [RepositoryItemInfo("e10ca42b-9e25-4101-9084-1f1b896e52f6")]
+            public virtual RepoItemInfo TabSupportHCSSInfo
+            {
+                get
+                {
+                    return _tabsupporthcssInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabArticleHCSS item.
+            /// </summary>
+            [RepositoryItem("5ff2cee5-61e1-4940-b66d-c1692f6171c3")]
+            public virtual Ranorex.TabPage TabArticleHCSS
+            {
+                get
+                {
+                    return _tabarticlehcssInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabArticleHCSS item info.
+            /// </summary>
+            [RepositoryItemInfo("5ff2cee5-61e1-4940-b66d-c1692f6171c3")]
+            public virtual RepoItemInfo TabArticleHCSSInfo
+            {
+                get
+                {
+                    return _tabarticlehcssInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddressBar item.
+            /// </summary>
+            [RepositoryItem("52cbcae3-0251-4af8-9078-d1c9da742610")]
+            public virtual Ranorex.Text AddressBar
+            {
+                get
+                {
+                    return _addressbarInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddressBar item info.
+            /// </summary>
+            [RepositoryItemInfo("52cbcae3-0251-4af8-9078-d1c9da742610")]
+            public virtual RepoItemInfo AddressBarInfo
+            {
+                get
+                {
+                    return _addressbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkSupportHCSS item.
+            /// </summary>
+            [RepositoryItem("cf1fa1a1-0cc3-4d2d-bf1a-518dddf7b207")]
+            public virtual Ranorex.Text LinkSupportHCSS
+            {
+                get
+                {
+                    return _linksupporthcssInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkSupportHCSS item info.
+            /// </summary>
+            [RepositoryItemInfo("cf1fa1a1-0cc3-4d2d-bf1a-518dddf7b207")]
+            public virtual RepoItemInfo LinkSupportHCSSInfo
+            {
+                get
+                {
+                    return _linksupporthcssInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkArticleHCSS item.
+            /// </summary>
+            [RepositoryItem("9fbd3384-29a8-41d7-a549-8d277cb9ca8f")]
+            public virtual Ranorex.Text LinkArticleHCSS
+            {
+                get
+                {
+                    return _linkarticlehcssInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkArticleHCSS item info.
+            /// </summary>
+            [RepositoryItemInfo("9fbd3384-29a8-41d7-a549-8d277cb9ca8f")]
+            public virtual RepoItemInfo LinkArticleHCSSInfo
+            {
+                get
+                {
+                    return _linkarticlehcssInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HEAVYBIDAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7323f55f-9ec9-4cd3-8228-b1a2fe845dd8")]
+        public partial class HEAVYBIDAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _aboutheavybidInfo;
+
+            /// <summary>
+            /// Creates a new HEAVYBID  folder.
+            /// </summary>
+            public HEAVYBIDAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HEAVYBID", "/form[@processname='HEAVYBID' and @class='XTPPopupBar']", parentFolder, 30000, null, true, "7323f55f-9ec9-4cd3-8228-b1a2fe845dd8", "")
+            {
+                _aboutheavybidInfo = new RepoItemInfo(this, "AboutHeavyBid", "?/?/button[@accessiblename='About HeavyBid']", 30000, null, "266fcb41-c0c6-40b5-80ac-99b4a2c11ddc");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7323f55f-9ec9-4cd3-8228-b1a2fe845dd8")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7323f55f-9ec9-4cd3-8228-b1a2fe845dd8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AboutHeavyBid item.
+            /// </summary>
+            [RepositoryItem("266fcb41-c0c6-40b5-80ac-99b4a2c11ddc")]
+            public virtual Ranorex.Button AboutHeavyBid
+            {
+                get
+                {
+                    return _aboutheavybidInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AboutHeavyBid item info.
+            /// </summary>
+            [RepositoryItemInfo("266fcb41-c0c6-40b5-80ac-99b4a2c11ddc")]
+            public virtual RepoItemInfo AboutHeavyBidInfo
+            {
+                get
+                {
+                    return _aboutheavybidInfo;
                 }
             }
         }

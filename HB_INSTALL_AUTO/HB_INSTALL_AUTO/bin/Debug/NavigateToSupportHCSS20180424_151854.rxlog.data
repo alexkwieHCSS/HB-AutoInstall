@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4bad954e18164"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 3:18:57 PM"
+		timestampiso="2018-04-24T20:18:57"
+		endtime="4/24/2018 3:19:00 PM"
+		timeoutfactor="1"
+		module="NavigateToSupportHCSS">
+		<detail>
+			NavigateToSupportHCSS
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.833"
+			timeRelativeToTestModuleStartTime="00:00.840"
+			timeWallClock="15:18:58"
+			time="00:00.833"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.LinkRegistrationCode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.LinkRegistrationCode"
+				id="fa22d276459647c19233ccf49abd9408"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.691"
+			timeRelativeToTestModuleStartTime="00:02.698"
+			timeWallClock="15:19:00"
+			time="00:02.691"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeRegEx (Text~'[support][hcss]') on item 'HCSSSupportSupportPortalGoogleCh.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.051"
+			timeRelativeToTestModuleStartTime="00:03.057"
+			timeWallClock="15:19:00"
+			time="00:03.051"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="87"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.059"
+			timeRelativeToTestModuleStartTime="00:03.065"
+			timeWallClock="15:19:00"
+			time="00:03.059"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'HCSSSupportSupportPortalGoogleCh.HCSSTab'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'HCSS Support']"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.HCSSTab"
+				id="e10ca42b9e25410190841f1b896e52f6"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

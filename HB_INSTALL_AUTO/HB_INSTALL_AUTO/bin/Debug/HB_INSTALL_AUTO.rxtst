@@ -10,6 +10,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
+			name="ValidateHBWelcomeScreen"
+			ref="4fd71e3b-908c-4d93-9811-290c25bd053f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0676d0fe-6b4c-432d-bda0-5eaba235eb54"
 			name="SelectInstallType"
 			ref="2d19a0cc-3a76-41ca-968f-ac62ff9b9d26"
@@ -33,6 +39,12 @@ rxversion="7.1">
 			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
 			name="Validation">
 			</testcase>
+			<testmodule
+			id="14fff51c-2a5c-4380-bd01-b1702013a2ec"
+			name="NavigateToSupportHCSS"
+			ref="407a39a3-ab47-4a2e-b84a-fb8867afa5c9"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
 			name="Uninstall">
@@ -127,6 +139,14 @@ rxversion="7.1">
 			name="ValidateHBLaunch"
 			ref="e46c80a6-d7fa-4a4d-817c-02019abb12b8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="dbd6732b-4572-4d2f-854e-815aa9fc2566"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6815bc1a-4c56-4711-9575-20fa801a3d3b"
@@ -163,6 +183,12 @@ rxversion="7.1">
 			id="9d9c855d-3eaf-4b91-8e9d-98869105c987"
 			name="OpenHB"
 			ref="1d329228-98ea-4d0a-86e5-cf7640c69a90"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9fb2e54a-1181-4214-8d43-a98b75d7f059"
+			name="TestLinkOnWelcome"
+			ref="b2ddd222-db92-4814-8e24-a6e65764eaa3"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -265,6 +291,21 @@ rxversion="7.1">
 			name="HB_INSTALL_AUTO"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="d9f4cf4c-2a09-4693-b8ca-6892447ecb32"
+			name="TestWrongRegCode"
+			ref="78ae137a-02fe-4c28-ba10-108bf3ab76d5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RegistrationCode"
+					datasourceid="053681b0-dd1d-42d9-a6b9-70268bd8b4e3"
+					variableid="7371ef27-f2d3-4321-bda2-e53ddec4900b"
+					variablename="RegistrationCode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="dabacc9f-e034-4fdb-9ee2-c44377caf84c"
 			name="DestinationFolderHBWS"
@@ -410,6 +451,14 @@ rxversion="7.1">
 							name="OpenHB">
 							</testmodule>
 							<testmodule
+							id="14fff51c-2a5c-4380-bd01-b1702013a2ec"
+							name="NavigateToSupportHCSS">
+							</testmodule>
+							<testmodule
+							id="d9f4cf4c-2a09-4693-b8ca-6892447ecb32"
+							name="TestWrongRegCode">
+							</testmodule>
+							<testmodule
 							id="4fba360d-337e-4e34-87cf-55779cfe1905"
 							name="RegisterHB">
 							</testmodule>
@@ -432,6 +481,14 @@ rxversion="7.1">
 							<testmodule
 							id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
 							name="ValidateHBLaunch">
+							</testmodule>
+							<testmodule
+							id="9fb2e54a-1181-4214-8d43-a98b75d7f059"
+							name="TestLinkOnWelcome">
+							</testmodule>
+							<testmodule
+							id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
+							name="ValidateHBWelcomeScreen">
 							</testmodule>
 							<testmodule
 							id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
@@ -636,10 +693,10 @@ rxversion="7.1">
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
 			</testcontainer>
 			<testcontainer
-			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
+			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
 			<testcontainer
-			id="e1733192-a28b-4b65-abf2-b0342696439a">
+			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
 			</testcontainer>
 			<testcontainer
 			id="e9b13a9d-4839-4122-b144-45de3a900e83">

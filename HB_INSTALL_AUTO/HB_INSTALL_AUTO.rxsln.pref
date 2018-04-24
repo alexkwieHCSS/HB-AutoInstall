@@ -4,9 +4,10 @@
   <SerializedValue name="ModuleBrowserState">
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <string>{860E1650-2004-4602-B17B-B75863CEB56B}</string>
-      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
-      <string>3e3fc4f5-2ccc-4c0c-8e7e-4f015e72adec</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>02167738-89fa-4bd8-987f-73d74dc2b4b4</string>
+      <string>8696c80c-f1ad-4df9-8250-1402ceac9fad</string>
+      <string>04c9b932-c3bc-478e-be8e-cc2deb04f216</string>
     </ArrayOfString>
   </SerializedValue>
   <ProjectBrowserState value="[Solution HB_INSTALL_AUTO[Solution Items[]]]&#xD;&#xA;Solution HB_INSTALL_AUTO\HB_INSTALL_AUTO&#xD;&#xA;Solution HB_INSTALL_AUTO" />

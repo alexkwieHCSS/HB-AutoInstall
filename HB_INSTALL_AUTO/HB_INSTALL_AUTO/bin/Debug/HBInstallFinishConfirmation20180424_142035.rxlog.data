@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="15ab11e6adcb08b0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 2:20:38 PM"
+		timestampiso="2018-04-24T19:20:38"
+		endtime="4/24/2018 2:20:56 PM"
+		timeoutfactor="1"
+		module="HBInstallFinishConfirmation">
+		<detail>
+			HBInstallFinishConfirmation
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.791"
+			timeRelativeToTestModuleStartTime="00:00.791"
+			timeWallClock="14:20:38"
+			time="00:00.791"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBInstallFinishConfirmation.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.832"
+			timeRelativeToTestModuleStartTime="00:05.832"
+			timeWallClock="14:20:43"
+			time="00:05.832"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 10s to exist. Associated repository item: 'WindowsMenuBar.HeavyBidFinishInstall'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar////button[@accessiblename~'HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.HeavyBidFinishInstall"
+				id="73e771ee4c824aa9b7ebf38f8137cb9f"
+				timeout="10000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBInstallFinishConfirmation.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.164"
+			timeRelativeToTestModuleStartTime="00:07.164"
+			timeWallClock="14:20:45"
+			time="00:07.164"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WindowsMenuBar.HeavyBidFinishInstall' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar////button[@accessiblename~'HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.WindowsMenuBar.HeavyBidFinishInstall"
+				id="73e771ee4c824aa9b7ebf38f8137cb9f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBInstallFinishConfirmation.cs"
+				codeline="88"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.234"
+			timeRelativeToTestModuleStartTime="00:08.234"
+			timeWallClock="14:20:46"
+			time="00:08.234"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBInstallFinishConfirmation.cs"
+				codeline="92"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.244"
+			timeRelativeToTestModuleStartTime="00:18.244"
+			timeWallClock="14:20:56"
+			time="00:18.244"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}'.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBInstallFinishConfirmation.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

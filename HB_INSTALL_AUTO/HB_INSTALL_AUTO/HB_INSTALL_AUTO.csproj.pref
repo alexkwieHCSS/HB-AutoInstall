@@ -1,16 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="DestinationFolderHBNetwork.rxrec" />
+    <Element value="ValidateHBLaunch.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="VerifyWSVersion.rxrec" />
-    <Element value="HBInstallFinishConfirmation.rxrec" />
-    <Element value="CloseHB.rxrec" />
-    <Element value="RegisterHB.rxrec" />
+    <Element value="ValidateHBLaunch.rxrec" />
+    <Element value="NavigateToSupportHCSS.rxrec" />
     <Element value="UserLicense.rxrec" />
-    <Element value="DestinationFolderHBNetwork.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

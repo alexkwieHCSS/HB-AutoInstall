@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2708d1023b056ee"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 3:24:22 PM"
+		timestampiso="2018-04-24T20:24:22"
+		endtime="4/24/2018 3:24:25 PM"
+		timeoutfactor="1"
+		module="NavigateToSupportHCSS">
+		<detail>
+			NavigateToSupportHCSS
+		</detail>
+		<errormessage>
+			Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs' does not match the specified RegEx (actual='(null)', regex='[support][hcss]').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.810"
+			timeRelativeToTestModuleStartTime="00:00.817"
+			timeWallClock="15:24:22"
+			time="00:00.810"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.LinkRegistrationCode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Registration]']/element[@windowtext~'Click']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.LinkRegistrationCode"
+				id="fa22d276459647c19233ccf49abd9408"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.700"
+			timeRelativeToTestModuleStartTime="00:02.707"
+			timeWallClock="15:24:24"
+			time="00:02.700"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeRegEx (Text~'[support][hcss]') on item 'HCSSSupportSupportPortalGoogleCh.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.042"
+			timeRelativeToTestModuleStartTime="00:03.049"
+			timeWallClock="15:24:25"
+			time="00:03.042"
+			level="Success"
+			category="Validation"
+			errimg=".\Navigate_4829b36d_78cba4f9_trace.jpg"
+			errthumb=".\Navigate_4829b36d_78cba4f9_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="87"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.049"
+			timeRelativeToTestModuleStartTime="00:03.056"
+			timeWallClock="15:24:25"
+			time="00:03.049"
+			level="Info"
+			category="Validation"
+			errimg=".\Navigate_4829b36d_78cba4f9_trace.jpg"
+			errthumb=".\Navigate_4829b36d_78cba4f9_trace_thumb.jpg">
+			<message>
+				Validating AttributeRegEx (Text~'[support][hcss]') on item 'HCSSSupportSupportPortalGoogleCh.Tabs'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.173"
+			timeRelativeToTestModuleStartTime="00:03.180"
+			timeWallClock="15:24:25"
+			time="00:03.173"
+			level="Failure"
+			category="Validation"
+			errimg=".\Navigate_4829b36d_5625d0e1_trace.jpg"
+			errthumb=".\Navigate_4829b36d_5625d0e1_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs' does not match the specified RegEx (actual='(null)', regex='[support][hcss]').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="91"
+				loglvl="Failure"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.184"
+			timeRelativeToTestModuleStartTime="00:03.191"
+			timeWallClock="15:24:25"
+			time="00:03.184"
+			level="Error"
+			category="Module"
+			errimg=".\Navigate_4829b36d_5625d0e1_trace.jpg"
+			errthumb=".\Navigate_4829b36d_5625d0e1_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs' does not match the specified RegEx (actual='(null)', regex='[support][hcss]').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeInternal(Element element, String name, Regex regex, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Regex regex, String message, Options options)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Regex regex)
+   at HB_INSTALL_AUTO.NavigateToSupportHCSS.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs:line 91
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\NavigateToSupportHCSS.cs"
+				codeline="91"
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage"
+				fullname="HB_INSTALL_AUTORepository.HCSSSupportSupportPortalGoogleCh.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="2">
+			</metainfo>
+		</item>
+	</activity>
+</report>

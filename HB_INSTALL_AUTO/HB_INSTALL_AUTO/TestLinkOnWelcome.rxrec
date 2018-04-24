@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b2ddd222-db92-4814-8e24-a6e65764eaa3"
+mode="Global"
+rxversion="7.1">
+	<name>
+		TestLinkOnWelcome
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TestLinkOnWelcome"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6fc5c295-7768-4dbb-89d4-7ea22b8df81b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="95bd9c4a-b0e5-4718-a26a-38888c039a88"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="1"
+				prefcap="unknown"
+				rect="109,749,132,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						FCP_HyperLink
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						2243
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						2296816
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2392
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						HEAVYBID
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, ClipSiblings, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						New User? Click Here
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="52479e17-59f3-4a2c-9def-fa9681c7a439"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="95bd9c4a-b0e5-4718-a26a-38888c039a88"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="1"
+				prefcap="unknown"
+				rect="109,749,132,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						FCP_HyperLink
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						2243
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						2296816
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2392
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						HEAVYBID
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, ClipSiblings, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						New User? Click Here
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'[Welcome][HeavyBid]']/element[@windowtext~'Click']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="52cbcae3-0251-4af8-9078-d1c9da742610"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[help][hcss]
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[Article][List]
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ff2cee5-61e1-4940-b66d-c1692f6171c3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="10000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="a05afa31-1ca2-4607-8f4e-2fe5b8cbd140">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1cc2708b-c467-4997-aa0b-3b1a7bf4b39c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="20"
+				prefcap="form"
+				rect="-8,-8,1936,1056"
+				role="form"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="active"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="appicon"
+					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKJSURBVDhPtZNbSFNxHMfPOUOd4nJecoqVZoUm
+hkoP3lrqNq+72MwML2nOfIsCQR98SIwQzC4vCabUmq7QvRhFBJouhxTeq0WltnWDiIJiOUFz7Nv/
+HI+zUdFTH/i+HH6f7+/38D/U/4CR+Au12pio7uak+JHWpHhL3Z5o094g0SmaokL5mT8jFDDJ3Vmp
+z+2lBbAfzoddmwvbIQVsxXLYNDl4VHDAsTMwQMePe+MnYFLMyqzvi6VE3CgoyfMqsKmz8VqVg4Sg
+wNO85oGpqJF/mFJn4QUr/OUCm4oUKMlMkdTFXsu7FCUQ+2tSOqtd/RopnpItr8jmd709sEy8d9+f
+/Oy2zQ3jjbEYHw1p+NqfCudgOjrqdz3kdYoSZezuir15AkebSzBWmAm7oQdnTE4UX1yGhqTyyjJe
+zi9gzSyDy3wQrjEpvg1lrhBVwBWElKc+iDHWIU5fi0tl2TBPf/LIqgskHctou+3EirUJ7gkZ3JMy
+YEoGogZwBcE16eM7+nSINuqgbq/CnaklqFmRl5UkTbecWF04B8zmkihI5KBpagtXIFLuG9zeVws2
+bNHo4+lV7eVNuei8E6ZxB1zWWl5WwD3DXeDHFfjGhjVF9R7HRgrutmDE+gUNfU7U9yzBYHZg7sl1
+r+1DncmLnMzB0Nsiu8t/RBqqsZHE/pNotFxD67gR9QONWJsp9MiYlWF/vKiBt9fxiQtviSCi5Max
+X1IFydUKWEdVXnLv2YQZovium5vQwrSYLom+CuFEZLNVXwmdXgP3bL5HNrUnPhMwdBTv/A4THHBE
+3CBbCNNXILSrDPPDeSus+PZehiM3LaSN/FCB/Og/oCkx48Mk+/owCQxDR5Av64/GC4r6CYQvk8I6
+KcCsAAAAAElFTkSuQmCC
+					</attribute>
+					<attribute
+					name="state"
+					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Maximized
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Chrome_WidgetWin_1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						3411342
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						1252
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						chrome
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, WindowEdge
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, TiledWindow, Maximize, ClipChildren, ClipSiblings, Visible
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@processname~'chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TestLinkOnWelcome.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -79,7 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'HEAVYBID.EXE' with arguments ' HEAVYMULT' in normal mode.", new RecordItemIndex(0));
+            // E.1
+            Report.Log(ReportLevel.Info, "Application", "E.1\r\nRun application 'HEAVYBID.EXE' with arguments ' HEAVYMULT' in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication("HEAVYBID.EXE", " HEAVYMULT", "C:\\HeavyBidWS\\BIN\\", false);
             Delay.Milliseconds(0);
             

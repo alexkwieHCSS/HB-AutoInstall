@@ -79,7 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\HeavyBid\\WSINST.MSI' with arguments '' in normal mode.", new RecordItemIndex(0));
+            // C.3
+            Report.Log(ReportLevel.Info, "Application", "C.3\r\nRun application 'C:\\HeavyBid\\WSINST.MSI' with arguments '' in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication("C:\\HeavyBid\\WSINST.MSI", "", "", false);
             Delay.Milliseconds(0);
             
