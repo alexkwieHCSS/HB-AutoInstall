@@ -27,8 +27,248 @@ rxversion="7.1">
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
+		<var
+		id="b98bd3e5-dd82-4dfd-a981-c5942972b058"
+		name="YearVersion">
+			2018.1
+		</var>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9e6ac39-15f7-49f4-8b3b-d1e84bdd5fab">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7fdd31f1-bfea-4860-8dd4-e0712deabac9"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="titlebar"
+				rect="549,225,477,23"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						HeavyBid 2018.1 Setup
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Displays the name of the window and contains controls to manipulate it
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						HeavyBid 2018.1 Setup
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'[HeavyBid][Setup]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[HeavyBid][Setup]
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3c5e87e2-01c5-434c-b6c1-c7303d1c012e">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="7fdd31f1-bfea-4860-8dd4-e0712deabac9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Setup]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				$YearVersion
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="167b403c-29b6-44df-abd9-7b58139a65ca"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				B.8
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4511593e-7b61-4105-9da4-4ebbc53818be"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Setup]']/button[@text~'Change']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="18546377-914d-4395-a362-62d5ec45f804"
+		sx="3233"
+		sy="395"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7cf2f41a-d66d-4cdc-8567-a04a61a00dc0"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="3212,383,34,25"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Closes the window
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'[HeavyBid][Setup]']/?/?/button[@accessiblename='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ddb7c7b8-f501-4f7a-a29c-b6b213b8d34e">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACuAK4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDOpaKK
+7zhCiiigApaKKAClpKWmIKKKKBBS0UUwCiiigBaKKKBBS0lLTAKWkpaBBS0lLTAgoopazNBKWiig
+QUUtFMAooooAKKWigQUUUUwCloooEFFFFAC0UUUwClpKWgQUUUtMBmwetJsNPpaVkO5FtPpRipaK
+OUOYioqXA9KTYKVg5hlFP2e9JsNFguNpaNpHaigAooooAKWiimAUUUUCCilooAKKKWmAlLRRQIKK
+WigAooooEFFLRQAlFLRTAKKKKQCYB7UbBS0UBcbs96Nhp9FFguR4I7UVJS0WC5HRT8D0o2igLjKK
+ds96NpoC4lFLg0UANozW5/Y1t/el/wC+h/hR/Ytt/el/76H+FYe3ib+wkYeaXNbf9jW396X/AL6H
++FH9jW396X8x/hT9vEPYSMTNFbf9jW396X8x/hS/2Nbf3pfzH+FHt4h7CRh5ozW3/Y1t/el/Mf4U
+f2Nbf3pfzH+FHt4h7CRiZozV6bToRqsNsGfY6ZJyM9/8Ky8VhLF2eiO+nlqnFNzs/T/gk2aM1Dij
+FL64/wCX8TT+yl/P+H/BJs0tQhQSBTouC1aU8Q5ySsc+IwKowcua9vLzt3JaWkFLXWeWFLRRQAUU
+UtABRRS0COmoooryz1wooooAKKKKACiiigDMn/5GG2/65n/2asGt6f8A5GG2/wCuZ/8AZqwaxZ6t
+DZei/Unt40nBi6Sk/I3Y+x/xouEjgPkZzMOXOensP8abHMYo2VFw7cF+4HoKs2Nqup/aFmOJI0jE
+cgHK8t+f0ppX0HVm6fvdCkv3h9aWPqaV45ILgwTrtkX06MPUe1LEfmb61tQVpL1/Q48ZJSpSa7L8
+0SBT6GnBDSg0tekfPNibPcUu0etFFMVwwtLx6UUUCFz7CjJpKKQHSUUUV5h7IUUUUAFFFFABRRRQ
+Bj6hOttrUEzglVj5A6/xCqWdM/6e/wDx2ukLoFLFlCjqc8CozdQiFphIrIvUqc1Dj5nVHExikrfi
+c/nTP+nv/wAdqS0v7Oxe5eESsWRAkb43M2W9O3TmthL6M+YHSSIom8h1wSPUUQXMkkih7dkR13K2
+c/n6UJWIniYzVrP7/wDgGLqN4Lto2cKIiqywOqEt/tKTuAHPB4NVoAWLEAmugmtIYYriZFYOUfq5
+I55OATgZIrNjuuOVrenGV1JdDmq1YRpuDWr6/O5XCkdqWrq3ER+8v6U/Ns3YV1876o83kT2Zn0tX
+/It26H9aQ2cZ+69P2iD2UijRVs2J7MKYbOUehp88SfZy7FeipTbSj+GmmNx1U/lT5kS4s6GiiivN
+PYCiiigAqne6hHaNsKs7kZwOn51crmtQk86+lI5+baPw4qZOxlVm4rQ3rKZ7i2WV1Cls4A7DNZOr
+XUhuniWRhGoAIBxk1sxqtvbqrMAsagEn2rmJJPMmaRhncxYilLYis2opGtsSKKwgmIERyzhumcZA
+P4mpJRbvDK8Fu0qO4WTZxkDuvris+51Oa4GzbGq54G0N/OmC3vbgAGOVgOm7gfhmlfsTzraKuX45
+mSGcCUFSAI0uXGT65p2neV9rLRFIkK48oShtx9cZqmmkXTdQi/Vv8Kuadp0ttcmSVkI2kDaT1/Km
+rjjzNq6L13/x6Tf9c2/lXOLXR3f/AB6Tf9c2/lXOL0rsobMjE7okBp2aYKdXScTHZpQ7DoxplFFh
+EwnkH8Rp4u5B71XopcqKU5LqW1vD3FSC7Q9VqhmlzU+zRSrSOhooorgPWCiiigBk8nkwSSH+FSa5
+eNykivgEqQee9bmtSbLLZ3dgPw6/0rP0m0S5ldpRlExx6k1EtXY5qt5TUUQTy3FypllLMgOM9FB9
+qk0y2S6utsgJRVyRnGat646pHDAoAH3sDt2H9ak0OFkikkZSCxAGR2H/AOulbUlQ/eWepfit4YR+
+6jVfcDn86koorQ67WCiiigCK7/49Jv8Arm38q5xeldHd/wDHpN/1zb+Vc2vSumhszjxO6JBTqaKd
+XUcTCiiigQUUUUALRRRQB0VFM81fR/8Avg/4Ueavo/8A3wf8K8w9ofRTPNX0f/vg/wCFHmr6P/3w
+f8KAKt/YteSR/vAiID2ySTU1naJaRlEJbcckmpPNX0f/AL4P+FHmr6P/AN8H/ClbqTyq9+ovloX3
+lF34xuxzinUzzV9H/wC+D/hR5q+j/wDfB/wplD6KZ5q+j/8AfB/wo81fR/8Avg/4UAPopnmr6P8A
+98H/AAo81fR/++D/AIUANu/+PSb/AK5t/KubXpXRXLhrSbG4fIeqkdq51eldNDZnHid0SCnU0U6u
+o4mFFFFAgooooAKWkpaAN6iiivMPaCiiigAooooAKKKKACiiigAooooAiuv+PWX/AHD/ACrn16V0
+F1/x6y/7h/lXPr0rpobM48TuiQUtIKdXUcTCiiigQUUUUAFLSUUAf//Z
+			</helperscreenshot>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

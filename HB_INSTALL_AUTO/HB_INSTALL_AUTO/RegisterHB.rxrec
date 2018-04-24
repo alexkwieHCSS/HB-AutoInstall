@@ -27,6 +27,11 @@ rxversion="7.1">
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
+		<var
+		id="d65c4ab9-9643-45fd-aeae-c34fd340a0e4"
+		name="RegistrationCode">
+			01AF8E32-C236-435F-8C95-2518C339B7C0
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -316,6 +321,10 @@ rxversion="7.1">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RegistrationCode">
+				</binding>
 			</bindings>
 			<info
 			id="588d4131-a392-43df-92cf-4b8c1e94a82f"

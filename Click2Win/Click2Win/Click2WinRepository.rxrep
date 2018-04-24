@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Click2WinRepository"
+id="f521ba11-39ec-4b47-9453-0637f66768e8"
+rxversion="7.1">
+  <codegen
+  classname="Click2WinRepository"
+  namespace="Click2Win"/>
+  <rootfolder
+  name="Root"
+  id="cd2c57e3-b756-42f6-a549-edb385d4d5eb"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="17e8767128a572ba"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/20/2018 2:13:42 PM"
+		timestampiso="2018-04-20T19:13:42"
+		endtime="4/20/2018 2:13:45 PM"
+		timeoutfactor="1"
+		module="CheckBitImage">
+		<detail>
+			CheckBitImage
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.844"
+			timeRelativeToTestModuleStartTime="00:00.855"
+			timeWallClock="14:13:43"
+			time="00:00.844"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\HeavyBid\BIN\HEAVYBID.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CheckBitImage.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.939"
+			timeRelativeToTestModuleStartTime="00:00.950"
+			timeWallClock="14:13:43"
+			time="00:00.939"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WelcomeToHeavyBid20181.StaticText' at 372;64.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Welcome\ to\ HeavyBid\ 2018\.']/element[@controlid='2238']/text[@accessiblerole='StaticText']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBid20181.StaticText"
+				id="00db71f473f44258b3fc748f4ebbcd04"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CheckBitImage.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

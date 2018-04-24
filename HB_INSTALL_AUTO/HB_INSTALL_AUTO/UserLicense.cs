@@ -41,6 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public UserLicense()
         {
+            YearVersion = "2018.1";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable YearVersion.
+        /// </summary>
+        [TestVariable("04c9b932-c3bc-478e-be8e-cc2deb04f216")]
+        public string YearVersion
+        {
+            get { return repo.YearVersion; }
+            set { repo.YearVersion = value; }
+        }
 
 #endregion
 
@@ -79,21 +90,34 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (AccessibleState!='(null)') on item 'HeavyBidServerSetup.ButtonNext'.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(0));
-            Validate.AttributeNotEqual(repo.HeavyBidServerSetup.ButtonNextInfo, "AccessibleState", (string)null);
+            // B.3
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(0));
+            Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex("[HeavyBid][Setup]"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            
+            // B.4
+            Report.Log(ReportLevel.Info, "Validation", "B.4\r\nValidating AttributeContains (AccessibleState>'Unavailable') on item 'HeavyBidServerSetup.ButtonNext'.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(2));
+            Validate.Attribute(repo.HeavyBidServerSetup.ButtonNextInfo, "AccessibleState", new Regex(Regex.Escape("Unavailable")));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem' at Center.", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem' at Center.", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new RecordItemIndex(4));
             repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(5));
             repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(6));
             repo.HeavyBidServerSetup.ButtonNext.Click();
             Delay.Milliseconds(200);
             

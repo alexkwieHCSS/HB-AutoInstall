@@ -1,11 +1,16 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="OpenEstimate.rxrec" />
+    <Element value="DestinationFolderHBNetwork.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="OpenEstimate.rxrec" />
+    <Element value="VerifyWSVersion.rxrec" />
+    <Element value="HBInstallFinishConfirmation.rxrec" />
+    <Element value="CloseHB.rxrec" />
+    <Element value="RegisterHB.rxrec" />
+    <Element value="UserLicense.rxrec" />
+    <Element value="DestinationFolderHBNetwork.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

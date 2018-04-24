@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="32c42054b14fe8"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1920x1080"
+		timestamp="4/23/2018 10:59:29 AM"
+		timestampiso="2018-04-23T15:59:29"
+		endtime="4/23/2018 10:59:57 AM"
+		timeoutfactor="1"
+		module="VerifyServerVersion">
+		<detail>
+			VerifyServerVersion
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.499"
+			timeRelativeToTestModuleStartTime="00:01.513"
+			timeWallClock="10:59:31"
+			time="00:01.499"
+			level="Info"
+			category="Wait"
+			errimg=".\VerifySe_cfcbb501_7b04e2ee_trace.jpg"
+			errthumb=".\VerifySe_cfcbb501_7b04e2ee_trace_thumb.jpg">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'HeavyBidServerSetup'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.Self"
+				id="de34c2e0f8174a249a91b1fb4eaa598a"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyServerVersion.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.363"
+			timeRelativeToTestModuleStartTime="00:02.377"
+			timeWallClock="10:59:31"
+			time="00:02.363"
+			level="Info"
+			category="Validation"
+			errimg=".\VerifySe_cfcbb501_86b8e68e_trace.jpg"
+			errthumb=".\VerifySe_cfcbb501_86b8e68e_trace_thumb.jpg">
+			<message>
+				Validating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyServerVersion.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.567"
+			timeRelativeToTestModuleStartTime="00:27.581"
+			timeWallClock="10:59:57"
+			time="00:27.567"
+			level="Error"
+			category="User"
+			errimg=".\VerifySe_cfcbb501_724246cc_trace.jpg"
+			errthumb=".\VerifySe_cfcbb501_724246cc_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

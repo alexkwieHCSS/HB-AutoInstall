@@ -14,6 +14,20 @@ rxversion="7.1">
 			name="SelectInstallType"
 			ref="2d19a0cc-3a76-41ca-968f-ac62ff9b9d26"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="502d13db-69c6-4036-95a6-62c32165bf62"
+					variablename="YearVersion">
+					</var>
+					<var
+					dataname="InstallType"
+					datasourceid="b5c1ba81-ec80-48eb-809c-fcf9d4a52df5"
+					variableid="dcc3d5b9-10c0-4f12-93de-438cc6f6a495"
+					variablename="InstallTypeButton">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
@@ -24,6 +38,7 @@ rxversion="7.1">
 			name="Uninstall">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
 			name="PreviousServerInstall"
 			ref="6936efa7-f3ef-4abb-967f-75ea9f63544b"
@@ -33,6 +48,12 @@ rxversion="7.1">
 			id="26d76a24-083d-45a6-877c-b4b23b84e3f7"
 			name="OpenInstallFile"
 			ref="571f330f-34d5-41f8-bdde-be8c3b849738"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="290dcc40-afe3-426e-8d58-dad451da6b04"
+			name="VerifyWSVersion"
+			ref="26545125-eab7-44af-9a9e-580080b6c225"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -58,6 +79,14 @@ rxversion="7.1">
 			name="RegisterHB"
 			ref="02167738-89fa-4bd8-987f-73d74dc2b4b4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RegistrationCode"
+					datasourceid="053681b0-dd1d-42d9-a6b9-70268bd8b4e3"
+					variableid="d65c4ab9-9643-45fd-aeae-c34fd340a0e4"
+					variablename="RegistrationCode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="51c4fd3b-c5c3-4118-8fd1-199f5ed42fcb"
@@ -153,6 +182,14 @@ rxversion="7.1">
 			name="DestinationFolderHBNetwork"
 			ref="63e8b675-eaaa-495d-8005-30cb67812cea"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="b98bd3e5-dd82-4dfd-a981-c5942972b058"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018"
@@ -169,12 +206,28 @@ rxversion="7.1">
 			name="UserLicense"
 			ref="8696c80c-f1ad-4df9-8250-1402ceac9fad"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="04c9b932-c3bc-478e-be8e-cc2deb04f216"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c73cb5e6-13a6-46d7-9735-33c1beac9054"
 			name="ConfirmHBInstallFinish"
 			ref="b3a23dda-b9ca-485f-965b-05d9979d93ac"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="ab7f70f2-343b-412f-a8f5-befaf3a689af"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
@@ -192,6 +245,14 @@ rxversion="7.1">
 			name="VerifyServerVersion"
 			ref="c5579e1d-5544-40dc-acf8-545f36cf39c7"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="4cfee93d-6933-4e82-a63f-0994032a6d7d"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d365644c-ef21-4c55-a27b-3a48b6735758"
@@ -217,17 +278,41 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testcase
+			datasource="InstallType"
 			id="e1733192-a28b-4b65-abf2-b0342696439a"
+			maxrange="1"
+			minrange="1"
 			name="InstallServer">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="HBYearVersion"
 			id="e9b13a9d-4839-4122-b144-45de3a900e83"
+			maxrange="1"
+			minrange="1"
 			name="HB_Install_Auto">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
 			</smartfoldernode>
 			<testcase
+			datarangeactive="True"
+			datasource="RegistrationCodes"
 			id="e9f8072b-224e-498b-bf2b-064a9232aedf"
+			maxrange="1"
+			minrange="1"
 			name="OpenAndRegisterHB">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
+			name="CheckBitImage"
+			ref="62b28ca8-35c6-4831-8ecd-3c62f1608eec"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="fa4b7c50-885a-4571-88ac-baeb8daa329e"
 			name="UninstallSQL"
@@ -283,6 +368,10 @@ rxversion="7.1">
 							<testmodule
 							id="a03d77b9-6909-4ac4-ae68-4bea94a41d56"
 							name="RunWSINST">
+							</testmodule>
+							<testmodule
+							id="290dcc40-afe3-426e-8d58-dad451da6b04"
+							name="VerifyWSVersion">
 							</testmodule>
 							<testmodule
 							id="710e27f3-6598-44a2-aba7-1784e5169982"
@@ -345,6 +434,10 @@ rxversion="7.1">
 							name="ValidateHBLaunch">
 							</testmodule>
 							<testmodule
+							id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
+							name="CheckBitImage">
+							</testmodule>
+							<testmodule
 							id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
 							name="OpenEstimate">
 							</testmodule>
@@ -399,34 +492,166 @@ rxversion="7.1">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="656b9040-9f1a-4629-923d-89f5d61af162"
+		lastknownrowcount="6"
+		name="HBYearVersion"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					HBVersion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						HBVersion
+					</th>
+				</tr>
+				<tr>
+					<td>
+						2018
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2018.1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2018.2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2019
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2019.1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2019.2
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+		<DataSource
+		id="b5c1ba81-ec80-48eb-809c-fcf9d4a52df5"
+		lastknownrowcount="3"
+		name="InstallType"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					InstallType
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						InstallType
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Standalone
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Multi-user
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Training
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+		<DataSource
+		id="053681b0-dd1d-42d9-a6b9-70268bd8b4e3"
+		lastknownrowcount="3"
+		name="RegistrationCodes"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					Configuration
+				</column>
+				<column>
+					RegistrationCode
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						Configuration
+					</th>
+					<th>
+						RegistrationCode
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Basic
+					</td>
+					<td>
+						C08BD512-6891-46F8-877D-3B198254A2D4
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Advanced
+					</td>
+					<td>
+						60EA6B7E-37A2-416A-B762-29345C09EF1D
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Comprehensive
+					</td>
+					<td>
+						3C26D86D-4D56-4016-B218-EFF167374A8E
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="AdvanceMU">
 		<testconfiguration
-		name="TestRun">
-			<testcontainer
-			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c">
-			</testcontainer>
+		name="AdvanceMU">
 			<testcontainer
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
-			</testcontainer>
-			<testcontainer
-			id="612d0825-8616-4b38-a420-78b7a1668a22">
-			</testcontainer>
-			<testcontainer
-			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
 			<testcontainer
 			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
 			</testcontainer>
 			<testcontainer
-			id="e1733192-a28b-4b65-abf2-b0342696439a">
+			id="e9b13a9d-4839-4122-b144-45de3a900e83">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="612d0825-8616-4b38-a420-78b7a1668a22">
+			</testcontainer>
+			<testcontainer
+			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
 			</testcontainer>
 			<testcontainer
 			id="e9b13a9d-4839-4122-b144-45de3a900e83">
-			</testcontainer>
-			<testcontainer
-			id="e9f8072b-224e-498b-bf2b-064a9232aedf">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

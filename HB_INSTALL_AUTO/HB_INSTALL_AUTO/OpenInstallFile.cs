@@ -79,15 +79,9 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\alex.kwie\\Desktop\\copylatestbuild_original.bat' with arguments '' in normal mode.", new RecordItemIndex(0));
+            // B.1
+            Report.Log(ReportLevel.Info, "Application", "B.1\r\nRun application 'C:\\Users\\alex.kwie\\Desktop\\copylatestbuild_original.bat' with arguments '' in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication("C:\\Users\\alex.kwie\\Desktop\\copylatestbuild_original.bat", "", "C:\\Users\\alex.kwie\\Desktop", false);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Invoke Action", "Invoking Press() on item 'HeavyBidServerSetup.ButtonNext'.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(2));
-            repo.HeavyBidServerSetup.ButtonNext.Press();
             Delay.Milliseconds(0);
             
         }

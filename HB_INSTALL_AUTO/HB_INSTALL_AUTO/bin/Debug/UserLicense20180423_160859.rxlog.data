@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="82654df2e8ade10"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/23/2018 4:09:02 PM"
+		timestampiso="2018-04-23T21:09:02"
+		endtime="4/23/2018 4:09:03 PM"
+		timeoutfactor="1"
+		module="UserLicense">
+		<detail>
+			UserLicense
+		</detail>
+		<errormessage>
+			Attribute 'AccessibleState' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does not match the specified value (actual='Unavailable, Default, Focusable', expected='Unavailable').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.794"
+			timeRelativeToTestModuleStartTime="00:00.794"
+			timeWallClock="16:09:02"
+			time="00:00.794"
+			level="Info"
+			category="Validation"
+			errimg=".\UserLice_a7d545e0_0b9e6902_trace.jpg"
+			errthumb=".\UserLice_a7d545e0_0b9e6902_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (AccessibleState='Unavailable') on item 'HeavyBidServerSetup.ButtonNext'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.549"
+			timeRelativeToTestModuleStartTime="00:01.549"
+			timeWallClock="16:09:03"
+			time="00:01.549"
+			level="Failure"
+			category="Validation"
+			errimg=".\UserLice_a7d545e0_0ac79d63_trace.jpg"
+			errthumb=".\UserLice_a7d545e0_0ac79d63_trace_thumb.jpg">
+			<message>
+				Attribute 'AccessibleState' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does not match the specified value (actual='Unavailable, Default, Focusable', expected='Unavailable').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="83"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.549"
+			timeRelativeToTestModuleStartTime="00:01.549"
+			timeWallClock="16:09:03"
+			time="00:01.549"
+			level="Error"
+			category="Module"
+			errimg=".\UserLice_a7d545e0_0ac79d63_trace.jpg"
+			errthumb=".\UserLice_a7d545e0_0ac79d63_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'AccessibleState' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext' does not match the specified value (actual='Unavailable, Default, Focusable', expected='Unavailable').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeInternal(Element element, String name, Object value, String message, Options options, RepoItemInfo itemInfo, Boolean isEq)
+   at Ranorex.Validate.RepoItemAttributeInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options, Boolean isEq)
+   at Ranorex.Validate.Attribute(RepoItemInfo itemInfo, String name, Object value)
+   at HB_INSTALL_AUTO.UserLicense.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\UserLicense.cs"
+				codeline="83"
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

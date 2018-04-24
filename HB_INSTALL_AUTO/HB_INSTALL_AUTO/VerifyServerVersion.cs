@@ -41,6 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public VerifyServerVersion()
         {
+            YearVersion = "2018.1";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable YearVersion.
+        /// </summary>
+        [TestVariable("4cfee93d-6933-4e82-a63f-0994032a6d7d")]
+        public string YearVersion
+        {
+            get { return repo.YearVersion; }
+            set { repo.YearVersion = value; }
+        }
 
 #endregion
 
@@ -79,6 +90,42 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'HeavyBidServerSetup'", repo.HeavyBidServerSetup.SelfInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.HeavyBidServerSetup.SelfInfo.WaitForExists(30000);
+            
+            // B.3
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(1));
+            Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Delay.Milliseconds(0);
+            
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(2));
+                Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.WelcomeSetupText'.", repo.HeavyBidServerSetup.WelcomeSetupTextInfo, new RecordItemIndex(3));
+                Validate.Attribute(repo.HeavyBidServerSetup.WelcomeSetupTextInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.SetupText'.", repo.HeavyBidServerSetup.SetupTextInfo, new RecordItemIndex(4));
+                Validate.Attribute(repo.HeavyBidServerSetup.SetupTextInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(6));
+            repo.HeavyBidServerSetup.ButtonNext.Click();
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

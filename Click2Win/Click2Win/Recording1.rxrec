@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="7.1"
+id="52c3df52-e10d-4e2f-8f3d-8a2104cf3337">
+  <codegen classname="Recording1" namespace="Click2Win"/>
+  <name>
+    Recording1
+  </name>
+  <recorditems/>
+  <repository name="Click2WinRepository" rxversion="7.1" relativepath="Click2WinRepository.rxrep">
+  </repository>
+</recordtable>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="26545125-eab7-44af-9a9e-580080b6c225"
+mode="Global"
+rxversion="7.1">
+	<name>
+		VerifyWSVersion
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyWSVersion"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5f917d57-2b23-479c-b07b-d15f25043e8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[HeavyBid][Setup]
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyWSVersion.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

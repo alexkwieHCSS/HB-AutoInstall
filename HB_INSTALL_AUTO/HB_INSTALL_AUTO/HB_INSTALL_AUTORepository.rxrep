@@ -19,9 +19,9 @@ rxversion="7.1">
 		id="de34c2e0-f817-4a24-9a91-b1fb4eaa598a"
 		isrooted="True"
 		name="HeavyBidServerSetup"
-		refimgid="08bba6dd-33f0-4139-9df9-fd530c4a111b"
+		refimgid="13fd1db5-1a37-43c3-b099-e456c814fcfa"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,nativewindow"
 			capname="button"
@@ -29,7 +29,7 @@ rxversion="7.1">
 			name="ButtonNext"
 			refimgid="343b7940-605a-4b86-a18f-e24202d34324"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Next']
+				/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']
 			</item>
 			<item
 			addcaps="checkbox,nativewindow"
@@ -50,13 +50,31 @@ rxversion="7.1">
 				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Multi-user]']
 			</item>
 			<item
+			addcaps="radiobutton,nativewindow"
+			capname="radiobutton"
+			id="3ca18573-3cd1-442a-82aa-f72fbe2a0b91"
+			name="StandaloneInstallType"
+			refimgid="f1b6a920-2e1d-40ac-a08e-fa7b1d26bdc8"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Standalone]']
+			</item>
+			<item
+			addcaps="radiobutton,nativewindow"
+			capname="radiobutton"
+			id="aa762aff-1fe2-4006-acb0-afc3774cf5dd"
+			name="TrainingInstallType"
+			refimgid="3963b03e-245b-4f90-b59b-e4934ddcfa06"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~'^[Training]']
+			</item>
+			<item
 			addcaps="button,nativewindow"
 			capname="button"
 			id="13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda"
 			name="ButtonInstall"
 			refimgid="a5606c70-a8e6-4ecc-b091-6f586020c3c1"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Install']
+				/form[@title~'[HeavyBid][Setup]']/button[@text~'Install']
 			</item>
 			<item
 			addcaps="button,nativewindow"
@@ -65,14 +83,14 @@ rxversion="7.1">
 			name="ButtonFinish"
 			refimgid="8ceea5cf-c0e7-4a44-bb86-1bd77e1c019f"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;Finish']
+				/form[@title~'[HeavyBid][Setup]']/button[@text~'Finish']
 			</item>
 			<item
 			capname="button"
 			id="1cbaddb5-161e-467e-ae75-42781f0dd64d"
 			name="ButtonYes"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/button[@text='Yes']
+				/form[@title~'[HeavyBid][Setup]']/button[@text~'Yes']
 			</item>
 			<item
 			capname="titlebar"
@@ -80,6 +98,54 @@ rxversion="7.1">
 			name="ServerInstallTitle"
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Setup]']/titlebar
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7cf2f41a-d66d-4cdc-8567-a04a61a00dc0"
+			name="Close"
+			refimgid="7eaf1179-3113-476b-987a-0d4c02f4afad"
+			refpath="/form[@title='Exit HeavyBid']/titlebar/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/button[@accessiblename='Close']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="f5944e1e-65d1-4aa3-8a69-4b02abe23779"
+			name="ButtonNo"
+			refimgid="da681b1b-1eaa-44e5-831c-24c663ddebb1"
+			refpath="/form[@title='Exit HeavyBid']/button[@text='&amp;No']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/button[@text='&amp;No']
+			</item>
+			<item
+			capname="button"
+			id="4511593e-7b61-4105-9da4-4ebbc53818be"
+			name="ButtonChange"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/button[@text~'Change']
+			</item>
+			<item
+			capname="text"
+			id="38d6d211-be2f-46bf-a786-7b767cab3ff1"
+			name="SetupText"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/text[@text~'Setup']
+			</item>
+			<item
+			capname="text"
+			id="5e367632-95db-45d4-803e-2e5238d5dccd"
+			name="WelcomeSetupText"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/text[@text~'Welcome']
+			</item>
+			<item
+			capname="radiobutton"
+			id="3b47bf2e-cdab-42af-aae9-6cad57999ad0"
+			name="InstallTypeRadioButton"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~$InstallTypeButton]
 			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
@@ -105,7 +171,7 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 		name="HeavyBidWorkstationSetup"
 		refimgid="3f723559-62e7-4b8b-a3b1-0f34cc4fdd64"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,nativewindow"
 			capname="button"
@@ -133,6 +199,13 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Workstation]']/button[@text='&amp;Finish']
 			</item>
+			<item
+			capname="titlebar"
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			name="WSInstallTitle"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Workstation]']/titlebar
+			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Workstation]']
 			</basepath>
@@ -156,7 +229,7 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 		isrooted="True"
 		name="HeavyBidRegistration"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -207,7 +280,7 @@ FLIynKZADiT+ScdYBUnBWAWJxAyMAGa1bcxaebzGAAAAAElFTkSuQmCC
 		isrooted="True"
 		name="ActivateHeavyBidServer"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="radiobutton,accessible"
 			capname="radiobutton"
@@ -248,7 +321,7 @@ TkSuQmCC
 		isrooted="True"
 		name="UserLogin"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -288,7 +361,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		isrooted="True"
 		name="HeavyBidApplication"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<basepath>
 				/form[@title~'HB']
 			</basepath>
@@ -309,15 +382,15 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		id="c96d6789-b8f5-40dc-a7e8-56c5eed0baf1"
 		isrooted="True"
 		name="ExitHeavyBid"
-		searchtimeout="30000ms"
-		usecache="True">
+		searchtimeout="10000ms"
+		usecache="False">
 			<item
 			addcaps="button,nativewindow"
 			capname="button"
 			id="a8c789b1-5120-4456-bde6-28ab276d37f5"
 			name="ButtonYes"
 			refimgid="0a676ef2-2e2b-40a9-b49c-0bc0ba09f8cf"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/form[@title~'[Exit][HeavyBid]']/button[@text='&amp;Yes']
 			</item>
 			<basepath>
@@ -342,7 +415,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		name="HeavyBidServerFolder"
 		refpath="/form[@title='HeavyBid']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<basepath>
 				/form[@title='HeavyBid']
 			</basepath>
@@ -366,7 +439,7 @@ AAAAAElFTkSuQmCC
 		refimgid="2370e84f-9533-42b6-981b-1803337c3fd0"
 		refpath="/form[@title='HeavyBidWS']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<basepath>
 				/form[@title='HeavyBidWS']
 			</basepath>
@@ -388,7 +461,7 @@ AAAAAElFTkSuQmCC
 		isrooted="True"
 		name="WindowsMenuBar"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -482,7 +555,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 		isrooted="True"
 		name="ProgramsAndFeatures"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke,uiautomationvalue"
 			capname="button"
@@ -587,7 +660,7 @@ MzMzqb90TInrOo/quoyMfwAGFGQluUenNgAAAABJRU5ErkJggg==
 		name="HeavyBidUninstall"
 		refpath="/form[@title='HeavyBid Uninstall']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,nativewindow"
 			capname="button"
@@ -625,7 +698,7 @@ TkSuQmCC
 		isrooted="True"
 		name="WelcomeToHeavyBidScreen"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -659,6 +732,15 @@ TkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="unknown"
+			id="00db71f4-73f4-4258-b3fc-748f4ebbcd04"
+			name="BitmapImage"
+			refimgid="95fbfe6a-b233-4ca1-9a88-1253c4d2eeb3"
+			searchtimeout="30000ms">
+				/form[@title~'[Welcome][HeavyBid]']/element[1]
+			</item>
 			<basepath>
 				/form[@title~'[Welcome][HeavyBid]']
 			</basepath>
@@ -681,6 +763,16 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		id="0bbe00c3-2097-4c7c-b9b9-26d72daee7e7"
 		name="NewVariable">
 			HeavyBidTrunk_2018-03-14_0042
+		</var>
+		<var
+		id="fa243de8-57b8-4f06-ab31-ecc630eeb011"
+		name="YearVersion">
+			2018.1
+		</var>
+		<var
+		id="dcc3d5b9-10c0-4f12-93de-438cc6f6a495"
+		name="InstallTypeButton">
+			Multi-user
 		</var>
 	</variables>
 </repository>

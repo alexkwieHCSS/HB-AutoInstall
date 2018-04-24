@@ -79,9 +79,11 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExitHeavyBid.ButtonYes' at 20;15.", repo.ExitHeavyBid.ButtonYesInfo, new RecordItemIndex(0));
-            repo.ExitHeavyBid.ButtonYes.Click("20;15");
-            Delay.Milliseconds(200);
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ExitHeavyBid.ButtonYes' at Center.", repo.ExitHeavyBid.ButtonYesInfo, new RecordItemIndex(0));
+                repo.ExitHeavyBid.ButtonYes.Click();
+                Delay.Milliseconds(200);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }
 

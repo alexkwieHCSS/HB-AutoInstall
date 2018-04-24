@@ -34,6 +34,7 @@ rxversion="7.1">
 		maximized="False"
 		optional="False">
 			<comment>
+				B.1
 			</comment>
 			<bindings>
 			</bindings>
@@ -46,45 +47,6 @@ rxversion="7.1">
 			<args>
 			</args>
 		</runapprecorditem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="4025325e-45ac-4b5f-97ea-23118dccb534"
-		waitaction="Exists"
-		waittimeout="60000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d5871a5b-28dc-49bc-ab19-510a037a9d94"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']
-				</path>
-			</info>
-		</WaitForRecordItem>
-		<invokeactionrecorditem
-		action="Press"
-		enabled="True"
-		optional="False"
-		searchpropertyid="2be2aac6-54d5-41ce-9534-8994b3d86eac"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d5871a5b-28dc-49bc-ab19-510a037a9d94"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title='HeavyBid 2018.1 Setup']/button[@text='&amp;Next']
-				</path>
-			</info>
-			<arguments
-			id="60c9a8d9-d52a-4cb4-95c0-d65b4046ad63">
-			</arguments>
-		</invokeactionrecorditem>
 	</recorditems>
 	<repository
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"

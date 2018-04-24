@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="28ea496cb48b8f76"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/24/2018 1:47:54 PM"
+		timestampiso="2018-04-24T18:47:54"
+		endtime="4/24/2018 1:47:55 PM"
+		timeoutfactor="1"
+		module="ConfirmHBInstallFinish">
+		<detail>
+			ConfirmHBInstallFinish
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.754"
+			timeRelativeToTestModuleStartTime="00:00.769"
+			timeWallClock="13:47:55"
+			time="00:00.754"
+			level="Warn"
+			category="Data"
+			errimg=".\ConfirmH_370595a7_abe63109_trace.jpg"
+			errthumb=".\ConfirmH_370595a7_abe63109_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.801"
+			timeRelativeToTestModuleStartTime="00:00.816"
+			timeWallClock="13:47:55"
+			time="00:00.801"
+			level="Info"
+			category="Validation"
+			errimg=".\ConfirmH_370595a7_abe63109_trace.jpg"
+			errthumb=".\ConfirmH_370595a7_abe63109_trace_thumb.jpg">
+			<message>
+				B.3<br/>Validating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBInstallFinish.cs"
+				codeline="94"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.885"
+			timeRelativeToTestModuleStartTime="00:00.901"
+			timeWallClock="13:47:55"
+			time="00:00.885"
+			level="Error"
+			category="User"
+			errimg=".\ConfirmH_370595a7_f191337f_trace.jpg"
+			errthumb=".\ConfirmH_370595a7_f191337f_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.016"
+			timeRelativeToTestModuleStartTime="00:01.032"
+			timeWallClock="13:47:55"
+			time="00:01.016"
+			level="Failure"
+			category="Module"
+			errimg=".\ConfirmH_370595a7_0c7b515c_trace.jpg"
+			errthumb=".\ConfirmH_370595a7_0c7b515c_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at System.Drawing.SafeNativeMethods.Gdip.GdipGetImageThumbnail(HandleRef image, Int32 thumbWidth, Int32 thumbHeight, IntPtr&amp; thumbImage, GetThumbnailImageAbort callback, IntPtr callbackdata)&#13;&#10;   at System.Drawing.Image.GetThumbnailImage(Int32 thumbWidth, Int32 thumbHeight, GetThumbnailImageAbort callback, IntPtr callbackData)&#13;&#10;   at Ranorex.Core.XmlLogger.SaveScreenshot(Bitmap img, Int32 thumbWidth, ReportEnvironment reportEnv, String fullImgSuffix, String thumbImgSuffix, Boolean appendImageCount, Int32&amp; imgCnt, Boolean overwriteExisting, String&amp; imgFileName, String&amp; imgThumbFileName)&#13;&#10;   at Ranorex.Core.Reporting.ReportItem.SaveScreenshot(CompressedImage img)&#13;&#10;   at Ranorex.Core.Reporting.TestReport.SaveLocalScreenshotBuffer(Activity mod)&#13;&#10;   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

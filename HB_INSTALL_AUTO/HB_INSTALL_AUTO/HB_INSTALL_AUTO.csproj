@@ -71,6 +71,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ac5ce7d4-d060-4501-8966-d3427670deba</id>
     </Compile>
+    <Compile Include="CheckBitImage.cs">
+      <BoundTo>e9cb2207-0974-4bf0-9349-fe09df32f60f</BoundTo>
+      <DependentUpon>CheckBitImage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cd0b902a-08cf-42ef-a9b8-0a4c82277d62</id>
+    </Compile>
+    <Compile Include="CheckBitImage.UserCode.cs">
+      <BoundTo>e9cb2207-0974-4bf0-9349-fe09df32f60f</BoundTo>
+      <DependentUpon>CheckBitImage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ecfa36d5-2056-4757-a55e-7da21ed86bad</id>
+    </Compile>
     <Compile Include="CloseCHeavyBid.cs">
       <BoundTo>40033d7b-f24b-4dcf-86b0-ae5030066a9c</BoundTo>
       <DependentUpon>CloseCHeavyBid.rxrec</DependentUpon>
@@ -476,10 +488,27 @@
       <UserCode>true</UserCode>
       <id>9db71a6e-7b94-403f-8de8-0c113ed831d6</id>
     </Compile>
+    <Compile Include="VerifyWSVersion.cs">
+      <BoundTo>362b6fdb-f1d3-40e2-9c45-e5e1091a29a4</BoundTo>
+      <DependentUpon>VerifyWSVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b518592c-0d87-4d6d-80f4-200091c9aa4a</id>
+    </Compile>
+    <Compile Include="VerifyWSVersion.UserCode.cs">
+      <BoundTo>362b6fdb-f1d3-40e2-9c45-e5e1091a29a4</BoundTo>
+      <DependentUpon>VerifyWSVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b46a96ff-21c7-4289-87fc-ce31c47c2e64</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>890b7378-df21-4b82-9d95-3347ac1669fd</id>
+    </None>
+    <None Include="CheckBitImage.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>e9cb2207-0974-4bf0-9349-fe09df32f60f</id>
+      <recordtableid>62b28ca8-35c6-4831-8ecd-3c62f1608eec</recordtableid>
     </None>
     <None Include="CloseCHeavyBid.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -656,6 +685,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>d52e9eb0-eb00-4794-a870-3ca700a59d31</id>
       <recordtableid>c5579e1d-5544-40dc-acf8-545f36cf39c7</recordtableid>
+    </None>
+    <None Include="VerifyWSVersion.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>362b6fdb-f1d3-40e2-9c45-e5e1091a29a4</id>
+      <recordtableid>26545125-eab7-44af-9a9e-580080b6c225</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

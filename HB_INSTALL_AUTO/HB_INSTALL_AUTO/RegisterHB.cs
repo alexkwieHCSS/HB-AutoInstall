@@ -41,6 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public RegisterHB()
         {
+            RegistrationCode = "01AF8E32-C236-435F-8C95-2518C339B7C0";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        string _RegistrationCode;
+
+        /// <summary>
+        /// Gets or sets the value of variable RegistrationCode.
+        /// </summary>
+        [TestVariable("d65c4ab9-9643-45fd-aeae-c34fd340a0e4")]
+        public string RegistrationCode
+        {
+            get { return _RegistrationCode; }
+            set { _RegistrationCode = value; }
+        }
 
 #endregion
 
@@ -89,8 +102,8 @@ namespace HB_INSTALL_AUTO
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '01AF8E32-C236-435F-8C95-2518C339B7C0' with focus on 'HeavyBidRegistration.RegistrationEntry'.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(3));
-            repo.HeavyBidRegistration.RegistrationEntry.PressKeys("01AF8E32-C236-435F-8C95-2518C339B7C0");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RegistrationCode' with focus on 'HeavyBidRegistration.RegistrationEntry'.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(3));
+            repo.HeavyBidRegistration.RegistrationEntry.PressKeys(RegistrationCode);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Check' at Center.", repo.HeavyBidRegistration.CheckInfo, new RecordItemIndex(4));
