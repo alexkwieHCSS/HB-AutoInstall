@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="57f5953a03e1765"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 5:01:05 PM"
+		timestampiso="2018-04-27T22:01:05"
+		endtime="4/27/2018 5:01:15 PM"
+		timeoutfactor="1"
+		module="ValidateHBF1Help">
+		<detail>
+			ValidateHBF1Help
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.734"
+			timeRelativeToTestModuleStartTime="00:00.750"
+			timeWallClock="17:01:05"
+			time="00:00.734"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.781"
+			timeRelativeToTestModuleStartTime="00:00.796"
+			timeWallClock="17:01:06"
+			time="00:00.781"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.HelpTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.HelpTab"
+				id="f776058332ad4ea0ae2b7afacacf7a0a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.625"
+			timeRelativeToTestModuleStartTime="00:02.640"
+			timeWallClock="17:01:07"
+			time="00:02.625"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.HBF1Button' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'HeavyBid Help']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.HBF1Button"
+				id="4f3db4c162c441549c8ac222de37f5b7"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.296"
+			timeRelativeToTestModuleStartTime="00:04.312"
+			timeWallClock="17:01:09"
+			time="00:04.296"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.6<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.LinkHelpHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.LinkHelpHCSS"
+				id="9fbd338429a841d7a5498d277cb9ca8f"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.554"
+			timeRelativeToTestModuleStartTime="00:06.569"
+			timeWallClock="17:01:11"
+			time="00:06.554"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (Text~'[help][hcss]') on item 'GoogleChrome.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="109"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.668"
+			timeRelativeToTestModuleStartTime="00:06.683"
+			timeWallClock="17:01:11"
+			time="00:06.668"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="110"
+				loglvl="Success"
+				itemindex="3">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.674"
+			timeRelativeToTestModuleStartTime="00:06.689"
+			timeWallClock="17:01:11"
+			time="00:06.674"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (Title~'[Category][Home]') on item 'GoogleChrome.Tabs'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="116"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.751"
+			timeRelativeToTestModuleStartTime="00:06.766"
+			timeWallClock="17:01:12"
+			time="00:06.751"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Title' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.Tabs' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="117"
+				loglvl="Success"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.757"
+			timeRelativeToTestModuleStartTime="00:06.772"
+			timeWallClock="17:01:12"
+			time="00:06.757"
+			level="Info"
+			category="Application">
+			<message>
+				E.6<br/>Closing application containing item 'GoogleChrome'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Self"
+				id="1cc2708bc4674997aa0b3b1a7bf4b39c"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBF1Help.cs"
+				codeline="122"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

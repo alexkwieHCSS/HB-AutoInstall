@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d01cce6a-7dfa-487c-b449-7b043debdbc5"
+mode="Global"
+rxversion="7.1">
+	<name>
+		ValidateHBF1Help
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateHBF1Help"
+	namespace="HB_INSTALL_AUTO">
+	</codegen>
+	<variables>
+		<var
+		id="83fd6490-cc3c-439a-ae8a-808dbf37705c"
+		name="YearVersion">
+			2018.1
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="abe6df39-4644-4f84-82d4-a9cf08dd5615"
+		sx="742"
+		sy="41"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f7760583-32ad-4ea0-ae2b-7afacacf7a0a"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
+				index="10"
+				prefcap="tabpage"
+				rect="712,25,54,24"
+				role="tabpage"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						10
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Help
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Switch
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Help
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PageTab
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focused, Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'HB']/element[@controlid='59419']/element[2]/toolbar[1]/tabpagelist[@accessiblename='']/tabpage[@accessiblename='Help']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a0ed7c9e-9b79-4781-85d2-a0644aab3915">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABMANgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoqOig
+CSio6KAJKKjooAkoqOigCSmTSpBEZJW2ovU4zSVT1b/kGy/h/MUm7K5dOKlNRfUf/a1j/wA9/wDx
+xv8ACj+1rH/nv/443+FR21tA9vFmGPPlqSdgJORUv2G3/wCea/8AfC/4VPvGr9inaz/D/IT+1rH/
+AJ7/APjjf4Uf2tY/89//ABxv8KX7Db/881/74X/Cj7Db/wDPNf8Avhf8KfvCvR7P8P8AIT+1rH/n
+v/443+FH9rWP/Pf/AMcb/Cl+w2//ADzX/vhf8KPsNv8A881/74X/AAo94L0ez/D/ACE/tax/57/+
+ON/hVi3uIrlC8LblBxnBHP41AtrbhipgiOADnYP89qq6F/x5P/10P8hRd3swcabg5Rvoa1FR0VRg
+SUVHRQBJRUdFAElFR0UASUVHRQBmG/uWWNIo0eRmkGVGRhTjuw/n+FaSElFLLtYjkelVIre1W2WG
+UwzAEsdwGMnknHbrVgSRKoVXQAcAAjigCSimebH/AM9E/wC+hR5sf/PRP++hQArokiFJFVlPUMMg
+1m2wW3TFtFDHJLcPHvKcAAse2M9MYzWj5sf/AD0T/voUxhbPGY2ELIxyVOCCevSgCst1PIyRKYlk
+O/LlSVO0gcDI9fXjFRpPNJK00KAyNBGcdQPmbJ6jNXHS0eNY3WBo1+6pAIH4USLayAiQQuCACGAO
+QOlAD4JPNgR9wbI6hSufwPIqvq3/ACDZfw/mKsK8KKFRo1UDAAIAFVdVkRtOlAdSeOAfcUpbM0o/
+xI+qJLU4t4v+uSfyNSl+KqwuotovmH+qQdfY07zV/vD86FsTP4mUUkn/ALKt1McYjzH8wkOfvDtt
+/rT5ru4nhuh5QEIWRc8cEAjruz+GKs5i2BMJtGMLgYGKr3qwfZriUJH5pib58Dd09aYhZb64QusX
+lfKyoqspJYlQfXjHJ/Cqsj3DyyEvcu38XlFgq9OAB9RxyaS8t306dWm/eLv3JO3UjbgqT64wffHr
+xTorqWDcI4klV23Bt+3H6c1rFaXSuzCT96zdkWtMvCZVhlkL71AifGScZPJ+n8qfoX/Hk/8A10P8
+hVLTI9t1AodcQZZyWx1BAH6/pVzRHRbNwzKD5h6n2FZ1ElNWOqi26Mr+X6lu94tjIOsZD/kcn9M1
+R3b5Cuci9YFfcA8/+O4rTMsRGC6EH3FNBtxtwYhs4Xp8v09KRmUraaWJxnZ5L3Ei4wdw5Y5z+HSo
+pLy5ljcKypzGyPsxlWbHQMf6d+K0s24xzFw24dOD6/XmmCKyVWVUgCv94ADB+tADLjzbeMvFglm3
+SMULBRtxkKCD2Hc0y/Xz1tAHxulBDDsdrEGp5FtJUVJFhdF6KwBAp5eFsZaM7TkZI4NAGa14yTTy
+BB5yRxoy9gxYj245z2qf7XdRqFmiVZHBCZGMtkY4BPr69jVk/ZmLFvKJcYbOPmHoaREtI1CxrCgU
+7gFAGD60AJaXBuAzbcKMD3zjJ/nRUivCgwjRqM54IHNFAFiiiigAooooAKKKKACiiigAqvfwNc2c
+kKEBmxgseOoNWKKHqOLcWmjKS11aNFRLqEKowBjt/wB807yNX/5+ofy/+xrToqeU29u+y+4zPI1f
+/n6h/L/7GoL2HVBY3BkuYigibcAOoxz2rapssayxPHIMo6lWHqDRy+YnWfZfcU9Qu7MQ3EE487Yg
+aSJBltpPX8Ovt1rLXRbyV5GLFAW48x8Mwx1O3Iz79+takumR7U+z7Y2VmJ3guHDD5g3POeOvpVq2
+i8i1ih3bvLQJnGM4GKpmcZcrva5mw2eqQRLFFcQqijAAH/2NWtLtJLO2aOUqSXLfKT6D/CrlFSo6
+3LlVco8tkvkFFFFUZBRRRQAUUUUAFFFFABRRRQAUVmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2
+yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7
+w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8h
+QBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadF
+Zn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFFAH//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0f2f5769-6757-40b1-a959-c700dbcd507a"
+		sx="527"
+		sy="108"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4f3db4c1-62c4-4154-9c8a-c222de37f5b7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HB']///toolbar/button[@text~'HeavyBid Help']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="52cbcae3-0251-4af8-9078-d1c9da742610"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[help][hcss]
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage
+				</path>
+			</info>
+			<matchname>
+				Title
+			</matchname>
+			<matchvalue>
+				[Category][Home]
+			</matchvalue>
+		</validationitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="3000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="a05afa31-1ca2-4607-8f4e-2fe5b8cbd140">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1cc2708b-c467-4997-aa0b-3b1a7bf4b39c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="20"
+				prefcap="form"
+				rect="-8,-8,1936,1056"
+				role="form"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="active"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="appicon"
+					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJKSURBVDhPtZNdSFNxGMb3RbGICK3msA/romhl
+2FVFmDpnutxHMzPQFW3lRRAFgrvooiGEZJ83XaxGrbkVczdGXZZNZTe1NqtFH7OziCCCIFiewcxx
+nt7/OZtz9HXVAw8Hznl/z/v+X/5H9j+kINvkcvkN8phCoZikZ5jenSJXsoK/qY6AV+nONqQPtCJt
+awG33wDO2gzO0gS1Wp2hGqdU+qu2U8H36U4CiwEde8sCOHMj3puaQLWnJaQkhUql+hQzN+A1A/4w
+AWeigPYGnNDp8sTUSagki86oy4cs9XhBXd5S54/DXgyc9wvuoRGBm3qID0ErPvt34ltoB/jRXaCj
+jhdYmYyW5Nlw5zgOnenAhHE30n4vzoZ5WC9nYSH3XMvizbsU5iJ65CN7kJ+ox+aaihyhymLAo5rg
+MWzyOXClqxGRZ1/mYdMl8sUsBu/xyCVdEJ7oITzVAzE928USMYDGia4NOLEu6IR5yI77sRmYGViA
+28muuzxmU+eARAvZQG5mAcvEAJpgdE3AAWYWtKV226ztagned4FHOJpBPukowAYIcXGCxWIAyVU9
+fBRFtz1wYyz5FX0BHr3eGfgjGUw9v1XWXalUThdYUau1tdofWv8RFL01dBL9kzcxEA2id6Qfc3Hj
+PIyE2L1PQktyVxGouX14ge3QXO9G8rGpDKadxal+kYSVRKuQezQ+O1YRyLzS1wOnzwIh0boQfkm1
+1RLyex2k86VW+LpR6enCxvUVOQay/4AaDNL3pVLZv7WczK6rjlxFli5NmWSyn1+dd3ls5oObAAAA
+AElFTkSuQmCC
+					</attribute>
+					<attribute
+					name="state"
+					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Maximized
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Chrome_WidgetWin_1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						3411342
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						1252
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						chrome
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, WindowEdge
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, TiledWindow, Maximize, ClipChildren, ClipSiblings, Visible
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@processname~'chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
+	name="HB_INSTALL_AUTORepository"
+	relativepath="HB_INSTALL_AUTORepository.rxrep"
+	rxversion="7.1">
+		<codegen
+		classname="HB_INSTALL_AUTORepository"
+		namespace="HB_INSTALL_AUTO">
+		</codegen>
+		<rootfolder
+		id="b36fe32b-c31b-4a2b-9886-acc9b1e6ac67"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateHBF1Help.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -314,6 +314,44 @@ rxversion="7.1">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ff2cee5-61e1-4940-b66d-c1692f6171c3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeRegEx"
 		enabled="True"
@@ -362,44 +400,6 @@ rxversion="7.1">
 				[Article][List]
 			</matchvalue>
 		</validationitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="True"
-		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-				E.6
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ff2cee5-61e1-4940-b66d-c1692f6171c3"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']
-				</path>
-			</info>
-		</WaitForRecordItem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="True"
-		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-				E.6
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<closeapprecorditem
 		enabled="True"
 		graceperiod="10000ms"
@@ -436,19 +436,17 @@ rxversion="7.1">
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKJSURBVDhPtZNbSFNxHMfPOUOd4nJecoqVZoUm
-hkoP3lrqNq+72MwML2nOfIsCQR98SIwQzC4vCabUmq7QvRhFBJouhxTeq0WltnWDiIJiOUFz7Nv/
-HI+zUdFTH/i+HH6f7+/38D/U/4CR+Au12pio7uak+JHWpHhL3Z5o094g0SmaokL5mT8jFDDJ3Vmp
-z+2lBbAfzoddmwvbIQVsxXLYNDl4VHDAsTMwQMePe+MnYFLMyqzvi6VE3CgoyfMqsKmz8VqVg4Sg
-wNO85oGpqJF/mFJn4QUr/OUCm4oUKMlMkdTFXsu7FCUQ+2tSOqtd/RopnpItr8jmd709sEy8d9+f
-/Oy2zQ3jjbEYHw1p+NqfCudgOjrqdz3kdYoSZezuir15AkebSzBWmAm7oQdnTE4UX1yGhqTyyjJe
-zi9gzSyDy3wQrjEpvg1lrhBVwBWElKc+iDHWIU5fi0tl2TBPf/LIqgskHctou+3EirUJ7gkZ3JMy
-YEoGogZwBcE16eM7+nSINuqgbq/CnaklqFmRl5UkTbecWF04B8zmkihI5KBpagtXIFLuG9zeVws2
-bNHo4+lV7eVNuei8E6ZxB1zWWl5WwD3DXeDHFfjGhjVF9R7HRgrutmDE+gUNfU7U9yzBYHZg7sl1
-r+1DncmLnMzB0Nsiu8t/RBqqsZHE/pNotFxD67gR9QONWJsp9MiYlWF/vKiBt9fxiQtviSCi5Max
-X1IFydUKWEdVXnLv2YQZovium5vQwrSYLom+CuFEZLNVXwmdXgP3bL5HNrUnPhMwdBTv/A4THHBE
-3CBbCNNXILSrDPPDeSus+PZehiM3LaSN/FCB/Og/oCkx48Mk+/owCQxDR5Av64/GC4r6CYQvk8I6
-KcCsAAAAAElFTkSuQmCC
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJBSURBVDhPtZNLaBNRFIYnk6BERCQ1pqG+cCME
+F3WlIrVtmtrW5mFqrdBGMdHuRKHQLFwYBCn43riIBh3TRInZVHSpNbZko2lSNeIjdSIiiCAIsRNo
+bZjfc2eSpsHXyh9+Bu6c7z/n3rnD/Q/xZLdGo7lOHud5fpKecVo7Qa5jBX9TIwGv8r2dyO/vQN7d
+DnGfDaKrDaKzFXq9vkA1PrX0V22jgu8zvQRWAnr21ASIjha8t7eCak+qSFW8Tqf7lHI04zUD/jCB
+aKeA7mZYLJYSMY0qqsrJFmPOJrygLm+p88fREAKBgMwsTj/Eh6gLn8M78C22HdLYTtBWn5RZjqND
+Cm6+fQwHT/VgomsX8uEQTscluC4V4SQPXC3izbscFhJWlBK7UZpogsFgmCNUWwl4tCl6FFsELy73
+tSAx9WURtl8kXyhi5J6Euawf8lMr5GdWIGVlZ7FCCaBxkhsiPmyM+uA458H91CwcDCzD3WT/HQnz
+ubNApp1sI7exgFVKAE0wtj7iBTMLMhqN8+4rVXjveQnxZAGlrLcM2yCnlQmWKwEkf8PoEVTc+SCA
+8exXDEUkDIZmEU4UMP38Zk13rVY7U2YVrTObzT/M4cOoeGvsOIYnb+BMMorBu8NYSHctwsgo3YdU
+tKpAPYGmW4eW2APTtX5kH9trYDqzNNUvU7Gq6Cg0QZPgwVoCmY3CAHyCE3KmYyn8kmobVOT3OkD7
+y60R+lEX7FO+NwPZf0ANRuj9SrXs31pNZtfVQq4nq5emRhz3E2Eqdhf8NqZbAAAAAElFTkSuQmCC
 					</attribute>
 					<attribute
 					name="state"

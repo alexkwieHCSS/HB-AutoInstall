@@ -89,28 +89,28 @@ namespace HB_INSTALL_AUTO
             
             // E.6
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Text~'[help][hcss]') on item 'GoogleChrome.AddressBar'.", repo.GoogleChrome.AddressBarInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.GoogleChrome.AddressBarInfo, "Text", new Regex("[help][hcss]"), Validate.DefaultMessage, false);
-                Delay.Milliseconds(0);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.TabArticleHCSS'", repo.GoogleChrome.TabArticleHCSSInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+                repo.GoogleChrome.TabArticleHCSSInfo.WaitForExists(30000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // E.6
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Text~'[Article][List]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(3));
-                Validate.Attribute(repo.GoogleChrome.TabsInfo, "Text", new Regex("[Article][List]"), Validate.DefaultMessage, false);
-                Delay.Milliseconds(0);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.LinkHelpHCSS'", repo.GoogleChrome.LinkHelpHCSSInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+                repo.GoogleChrome.LinkHelpHCSSInfo.WaitForExists(30000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // E.6
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.TabArticleHCSS'", repo.GoogleChrome.TabArticleHCSSInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-                repo.GoogleChrome.TabArticleHCSSInfo.WaitForExists(30000);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Text~'[help][hcss]') on item 'GoogleChrome.AddressBar'.", repo.GoogleChrome.AddressBarInfo, new RecordItemIndex(4));
+                Validate.Attribute(repo.GoogleChrome.AddressBarInfo, "Text", new Regex("[help][hcss]"), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             // E.6
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.LinkArticleHCSS'", repo.GoogleChrome.LinkArticleHCSSInfo, new ActionTimeout(30000), new RecordItemIndex(5));
-                repo.GoogleChrome.LinkArticleHCSSInfo.WaitForExists(30000);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Text~'[Article][List]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(5));
+                Validate.Attribute(repo.GoogleChrome.TabsInfo, "Text", new Regex("[Article][List]"), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             // E.6

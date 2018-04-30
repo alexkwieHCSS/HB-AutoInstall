@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="fb2b9b32cbe28f"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 3:33:07 PM"
+		timestampiso="2018-04-27T20:33:07"
+		endtime="4/27/2018 3:33:13 PM"
+		timeoutfactor="1"
+		module="ValidateHBHelpScreen">
+		<detail>
+			ValidateHBHelpScreen
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.771"
+			timeRelativeToTestModuleStartTime="00:00.780"
+			timeWallClock="15:33:08"
+			time="00:00.771"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.809"
+			timeRelativeToTestModuleStartTime="00:00.818"
+			timeWallClock="15:33:08"
+			time="00:00.809"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.HelpTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.HelpTab"
+				id="f776058332ad4ea0ae2b7afacacf7a0a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.735"
+			timeRelativeToTestModuleStartTime="00:02.744"
+			timeWallClock="15:33:10"
+			time="00:02.735"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.HelpAboutHeavyBidButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.HelpAboutHeavyBidButton"
+				id="abeec274cb754ff4be97d76ab7a91a22"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.168"
+			timeRelativeToTestModuleStartTime="00:04.177"
+			timeWallClock="15:33:11"
+			time="00:04.168"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'AboutHeavyBid'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.Self"
+				id="f74629870de148309a1adef32c221e44"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="102"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.312"
+			timeRelativeToTestModuleStartTime="00:04.321"
+			timeWallClock="15:33:11"
+			time="00:04.312"
+			level="Failure"
+			category="Validation"
+			errimg=".\Validate_19ca8448_2b8d14fe_trace.jpg"
+			errthumb=".\Validate_19ca8448_2b8d14fe_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.AboutHeavyBid.Self' does not match the specified RegEx (actual='(null)', regex='2018.1').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.Self"
+				id="f74629870de148309a1adef32c221e44"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="103"
+				loglvl="Failure"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.318"
+			timeRelativeToTestModuleStartTime="00:04.327"
+			timeWallClock="15:33:11"
+			time="00:04.318"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_19ca8448_2b8d14fe_trace.jpg"
+			errthumb=".\Validate_19ca8448_2b8d14fe_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'AboutHeavyBid.SystemInfo' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']//button[@text~'System Info']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.SystemInfo"
+				id="f9b508e4f6b34b25b9fae48c87faa15c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.013"
+			timeRelativeToTestModuleStartTime="00:05.022"
+			timeWallClock="15:33:12"
+			time="00:05.013"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_19ca8448_9506676d_trace.jpg"
+			errthumb=".\Validate_19ca8448_9506676d_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'SystemInformationAboutHB.CloseButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'System Information']//button[@text~'Close']"
+				fullname="HB_INSTALL_AUTORepository.SystemInformationAboutHB.CloseButton"
+				id="f80cd0171f8f467caae04ae848efd853"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.836"
+			timeRelativeToTestModuleStartTime="00:05.845"
+			timeWallClock="15:33:13"
+			time="00:05.836"
+			level="Error"
+			category="Module"
+			errimg=".\Validate_19ca8448_7d38f141_trace.jpg"
+			errthumb=".\Validate_19ca8448_7d38f141_trace_thumb.jpg">
+			<message>
+				The module has failed because one or more actions have failed.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

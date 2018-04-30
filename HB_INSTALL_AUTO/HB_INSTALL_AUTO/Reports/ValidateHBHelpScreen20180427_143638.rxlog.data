@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="18c2e36f108613f4"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 2:36:41 PM"
+		timestampiso="2018-04-27T19:36:41"
+		endtime="4/27/2018 2:37:18 PM"
+		timeoutfactor="1"
+		module="ValidateHBHelpScreen">
+		<detail>
+			ValidateHBHelpScreen
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.788"
+			timeRelativeToTestModuleStartTime="00:00.794"
+			timeWallClock="14:36:42"
+			time="00:00.788"
+			level="Warn"
+			category="Data"
+			errimg=".\Validate_56b2757c_361216fa_trace.jpg"
+			errthumb=".\Validate_56b2757c_361216fa_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.830"
+			timeRelativeToTestModuleStartTime="00:00.836"
+			timeWallClock="14:36:42"
+			time="00:00.830"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_56b2757c_361216fa_trace.jpg"
+			errthumb=".\Validate_56b2757c_361216fa_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'WelcomeToHeavyBidScreen.OpenExistingEstimateButton' at 56;12.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenExistingEstimateButton"
+				id="e0f87a37a2f440b582e3dc421eb4699c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="93"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:36.098"
+			timeRelativeToTestModuleStartTime="00:36.104"
+			timeWallClock="14:37:17"
+			time="00:36.098"
+			level="Error"
+			category="User"
+			errimg=".\Validate_56b2757c_c9997ecc_trace.jpg"
+			errthumb=".\Validate_56b2757c_c9997ecc_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

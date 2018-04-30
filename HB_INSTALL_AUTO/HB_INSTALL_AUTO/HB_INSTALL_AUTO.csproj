@@ -71,6 +71,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ac5ce7d4-d060-4501-8966-d3427670deba</id>
     </Compile>
+    <Compile Include="BackupEstimates.cs">
+      <BoundTo>1a3f7b3f-98ee-43e0-a3b4-daa4731a1f27</BoundTo>
+      <DependentUpon>BackupEstimates.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a437d50-7788-49bc-8eec-9aaa2cb8f61c</id>
+    </Compile>
+    <Compile Include="BackupEstimates.UserCode.cs">
+      <BoundTo>1a3f7b3f-98ee-43e0-a3b4-daa4731a1f27</BoundTo>
+      <DependentUpon>BackupEstimates.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>031d8f6d-3ad9-4cfb-be72-0d5852e14933</id>
+    </Compile>
     <Compile Include="CheckBitImage.cs">
       <BoundTo>e9cb2207-0974-4bf0-9349-fe09df32f60f</BoundTo>
       <DependentUpon>CheckBitImage.rxrec</DependentUpon>
@@ -244,6 +256,18 @@
       <DependentUpon>ConfirmHBInstallFinish.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a927e21d-baac-422a-bebf-145b72419dca</id>
+    </Compile>
+    <Compile Include="MakeNewEstimate.cs">
+      <BoundTo>5676e1f8-6f52-454a-b451-b974076142d6</BoundTo>
+      <DependentUpon>MakeNewEstimate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19fa9ce1-748b-45de-8584-3dbc0a4d6135</id>
+    </Compile>
+    <Compile Include="MakeNewEstimate.UserCode.cs">
+      <BoundTo>5676e1f8-6f52-454a-b451-b974076142d6</BoundTo>
+      <DependentUpon>MakeNewEstimate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52fb122a-cb74-4427-a3a9-024d587949fd</id>
     </Compile>
     <Compile Include="NavigateToSupportHCSS.cs">
       <BoundTo>5510412d-fc81-44db-bb11-303cf0be8517</BoundTo>
@@ -452,6 +476,18 @@
       <UserCode>true</UserCode>
       <id>2b4d1f50-c928-477f-96b5-bada54bcd104</id>
     </Compile>
+    <Compile Include="TestWhatsNewButton.cs">
+      <BoundTo>33773c6d-61cd-48f8-a378-7c1d8a6d717a</BoundTo>
+      <DependentUpon>TestWhatsNewButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c38c72e-9613-407f-9d9e-8c97584a7715</id>
+    </Compile>
+    <Compile Include="TestWhatsNewButton.UserCode.cs">
+      <BoundTo>33773c6d-61cd-48f8-a378-7c1d8a6d717a</BoundTo>
+      <DependentUpon>TestWhatsNewButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f29f32e-b944-4334-a235-96e745fff993</id>
+    </Compile>
     <Compile Include="TestWrongRegCode.cs">
       <BoundTo>10ea67e3-472d-4387-bc42-4ecc2ffb0197</BoundTo>
       <DependentUpon>TestWrongRegCode.rxrec</DependentUpon>
@@ -512,27 +548,39 @@
       <UserCode>true</UserCode>
       <id>7b0dfce8-5f34-4f4f-94ee-0c21b48a829c</id>
     </Compile>
-    <Compile Include="ValidateHBLaunch.cs">
+    <Compile Include="ValidateHBF1Help.cs">
+      <BoundTo>19bf6d05-4047-4f47-ab31-a1fd0d2891ac</BoundTo>
+      <DependentUpon>ValidateHBF1Help.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b11afd3-cffc-4e37-8e22-bf3ee0d1e6ce</id>
+    </Compile>
+    <Compile Include="ValidateHBF1Help.UserCode.cs">
+      <BoundTo>19bf6d05-4047-4f47-ab31-a1fd0d2891ac</BoundTo>
+      <DependentUpon>ValidateHBF1Help.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>43f10dad-bf71-47e4-a73b-18440722b573</id>
+    </Compile>
+    <Compile Include="ValidateHBWelcomeScreen.cs">
       <BoundTo>eb475209-b588-4f2c-a204-71dc06c3d795</BoundTo>
-      <DependentUpon>ValidateHBLaunch.rxrec</DependentUpon>
+      <DependentUpon>ValidateHBWelcomeScreen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6c3d07ea-f57a-407a-b2d0-0a70b0f13aad</id>
     </Compile>
-    <Compile Include="ValidateHBLaunch.UserCode.cs">
+    <Compile Include="ValidateHBWelcomeScreen.UserCode.cs">
       <BoundTo>eb475209-b588-4f2c-a204-71dc06c3d795</BoundTo>
-      <DependentUpon>ValidateHBLaunch.rxrec</DependentUpon>
+      <DependentUpon>ValidateHBWelcomeScreen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>32ef1050-2851-485b-985c-71af677272d5</id>
     </Compile>
-    <Compile Include="ValidateHBHelpScreen.cs">
+    <Compile Include="ValidateHBAboutHB.cs">
       <BoundTo>112d1973-5702-4632-a64e-1758c0089a4d</BoundTo>
-      <DependentUpon>ValidateHBHelpScreen.rxrec</DependentUpon>
+      <DependentUpon>ValidateHBAboutHB.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>39691d09-7b15-4be8-be5c-6105e3826e0a</id>
     </Compile>
-    <Compile Include="ValidateHBHelpScreen.UserCode.cs">
+    <Compile Include="ValidateHBAboutHB.UserCode.cs">
       <BoundTo>112d1973-5702-4632-a64e-1758c0089a4d</BoundTo>
-      <DependentUpon>ValidateHBHelpScreen.rxrec</DependentUpon>
+      <DependentUpon>ValidateHBAboutHB.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6151422b-526e-41f9-bc29-c33e29f46b53</id>
     </Compile>
@@ -564,6 +612,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>890b7378-df21-4b82-9d95-3347ac1669fd</id>
+    </None>
+    <None Include="BackupEstimates.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>1a3f7b3f-98ee-43e0-a3b4-daa4731a1f27</id>
+      <recordtableid>cd57d786-1425-421b-9c5f-1052aee5c447</recordtableid>
     </None>
     <None Include="CheckBitImage.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -645,6 +698,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>85f61cfa-810e-42c6-aa29-e5834fdc10ca</id>
       <recordtableid>b3a23dda-b9ca-485f-965b-05d9979d93ac</recordtableid>
+    </None>
+    <None Include="MakeNewEstimate.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>5676e1f8-6f52-454a-b451-b974076142d6</id>
+      <recordtableid>b5eb13e6-7043-43ab-993a-9a8fcc0c889f</recordtableid>
     </None>
     <None Include="NavigateToSupportHCSS.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -731,6 +789,11 @@
       <id>623b52f0-ea59-494a-a88c-420349ca9a40</id>
       <recordtableid>b2ddd222-db92-4814-8e24-a6e65764eaa3</recordtableid>
     </None>
+    <None Include="TestWhatsNewButton.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>33773c6d-61cd-48f8-a378-7c1d8a6d717a</id>
+      <recordtableid>00b958dc-dee3-423d-8fd7-6de0378cf8a8</recordtableid>
+    </None>
     <None Include="TestWrongRegCode.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>10ea67e3-472d-4387-bc42-4ecc2ffb0197</id>
@@ -756,12 +819,17 @@
       <id>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</id>
       <recordtableid>8696c80c-f1ad-4df9-8250-1402ceac9fad</recordtableid>
     </None>
-    <None Include="ValidateHBLaunch.rxrec">
+    <None Include="ValidateHBF1Help.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>19bf6d05-4047-4f47-ab31-a1fd0d2891ac</id>
+      <recordtableid>d01cce6a-7dfa-487c-b449-7b043debdbc5</recordtableid>
+    </None>
+    <None Include="ValidateHBWelcomeScreen.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>eb475209-b588-4f2c-a204-71dc06c3d795</id>
       <recordtableid>e46c80a6-d7fa-4a4d-817c-02019abb12b8</recordtableid>
     </None>
-    <None Include="ValidateHBHelpScreen.rxrec">
+    <None Include="ValidateHBAboutHB.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>112d1973-5702-4632-a64e-1758c0089a4d</id>
       <recordtableid>4fd71e3b-908c-4d93-9811-290c25bd053f</recordtableid>

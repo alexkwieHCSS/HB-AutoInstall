@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4cb590f672694c2"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 4:27:51 PM"
+		timestampiso="2018-04-27T21:27:51"
+		endtime="4/27/2018 4:27:57 PM"
+		timeoutfactor="1"
+		module="TestWhatsNewButton">
+		<detail>
+			TestWhatsNewButton
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.783"
+			timeRelativeToTestModuleStartTime="00:00.799"
+			timeWallClock="16:27:52"
+			time="00:00.783"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.WhatsNewTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'What''s New']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.WhatsNewTab"
+				id="840fcc6bd04e419f9b950058e7db6b96"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.785"
+			timeRelativeToTestModuleStartTime="00:02.800"
+			timeWallClock="16:27:54"
+			time="00:02.785"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.NewHeavyBidFeaturesButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'New HeavyBid Features']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.NewHeavyBidFeaturesButton"
+				id="86f8a615a73941c783d8b9ea1053dc08"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.198"
+			timeRelativeToTestModuleStartTime="00:04.214"
+			timeWallClock="16:27:56"
+			time="00:04.198"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.6<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.TabArticleHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.TabArticleHCSS"
+				id="5ff2cee561e14940b66dc1692f6171c3"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="92"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.804"
+			timeRelativeToTestModuleStartTime="00:04.819"
+			timeWallClock="16:27:56"
+			time="00:04.804"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.6<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.LinkArticleHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.LinkArticleHCSS"
+				id="9fbd338429a841d7a5498d277cb9ca8f"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="98"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.951"
+			timeRelativeToTestModuleStartTime="00:04.966"
+			timeWallClock="16:27:56"
+			time="00:04.951"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (Title~'[Article][List]') on item 'GoogleChrome.Tabs'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="104"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.093"
+			timeRelativeToTestModuleStartTime="00:05.108"
+			timeWallClock="16:27:57"
+			time="00:05.093"
+			level="Failure"
+			category="Validation"
+			errimg=".\TestWhat_1d0380f5_2d484cdc_trace.jpg"
+			errthumb=".\TestWhat_1d0380f5_2d484cdc_trace_thumb.jpg">
+			<message>
+				Attribute 'Title' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.Tabs' does not match the specified RegEx (actual='HCSS Help Center', regex='[Article][List]').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="105"
+				loglvl="Failure"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.102"
+			timeRelativeToTestModuleStartTime="00:05.117"
+			timeWallClock="16:27:57"
+			time="00:05.102"
+			level="Info"
+			category="Validation"
+			errimg=".\TestWhat_1d0380f5_2d484cdc_trace.jpg"
+			errthumb=".\TestWhat_1d0380f5_2d484cdc_trace_thumb.jpg">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (Text~'[help][hcss][release]') on item 'GoogleChrome.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="111"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.227"
+			timeRelativeToTestModuleStartTime="00:05.242"
+			timeWallClock="16:27:57"
+			time="00:05.227"
+			level="Success"
+			category="Validation"
+			errimg=".\TestWhat_1d0380f5_47c7bf14_trace.jpg"
+			errthumb=".\TestWhat_1d0380f5_47c7bf14_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="112"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.236"
+			timeRelativeToTestModuleStartTime="00:05.251"
+			timeWallClock="16:27:57"
+			time="00:05.236"
+			level="Error"
+			category="Module"
+			errimg=".\TestWhat_1d0380f5_47c7bf14_trace.jpg"
+			errthumb=".\TestWhat_1d0380f5_47c7bf14_trace_thumb.jpg">
+			<message>
+				The module has failed because one or more actions have failed.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

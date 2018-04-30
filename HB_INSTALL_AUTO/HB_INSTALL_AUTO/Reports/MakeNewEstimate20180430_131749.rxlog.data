@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2162b8bd87fcdba"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 1:17:52 PM"
+		timestampiso="2018-04-30T18:17:52"
+		endtime="4/30/2018 1:17:53 PM"
+		timeoutfactor="1"
+		module="MakeNewEstimate">
+		<detail>
+			MakeNewEstimate
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.795"
+			timeRelativeToTestModuleStartTime="00:00.801"
+			timeWallClock="13:17:53"
+			time="00:00.795"
+			level="Warn"
+			category="Data"
+			errimg=".\MakeNewE_e16f1646_f9f7fb09_trace.jpg"
+			errthumb=".\MakeNewE_e16f1646_f9f7fb09_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewEstimateName, NewEstimateCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.833"
+			timeRelativeToTestModuleStartTime="00:00.839"
+			timeWallClock="13:17:53"
+			time="00:00.833"
+			level="Info"
+			category="Mouse"
+			errimg=".\MakeNewE_e16f1646_f9f7fb09_trace.jpg"
+			errthumb=".\MakeNewE_e16f1646_f9f7fb09_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="106"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.920"
+			timeRelativeToTestModuleStartTime="00:00.926"
+			timeWallClock="13:17:53"
+			time="00:00.920"
+			level="Error"
+			category="User"
+			errimg=".\MakeNewE_e16f1646_b1f09713_trace.jpg"
+			errthumb=".\MakeNewE_e16f1646_b1f09713_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.060"
+			timeRelativeToTestModuleStartTime="00:01.066"
+			timeWallClock="13:17:53"
+			time="00:01.060"
+			level="Failure"
+			category="Module"
+			errimg=".\MakeNewE_e16f1646_ad8d9b9f_trace.jpg"
+			errthumb=".\MakeNewE_e16f1646_ad8d9b9f_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at System.Drawing.SafeNativeMethods.Gdip.GdipImageForceValidation(HandleRef image)
+   at System.Drawing.Image.FromStream(Stream stream, Boolean useEmbeddedColorManagement, Boolean validateImageData)
+   at Ranorex.CompressedImage.get_Image()
+   at Ranorex.Core.Reporting.ReportItem.SaveScreenshot(CompressedImage img)
+   at Ranorex.Core.Reporting.TestReport.SaveLocalScreenshotBuffer(Activity mod)
+   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

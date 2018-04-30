@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="14584ca59646c91e"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 1:53:16 PM"
+		timestampiso="2018-04-27T18:53:16"
+		endtime="4/27/2018 1:54:19 PM"
+		timeoutfactor="1"
+		module="ValidateHBHelpScreen">
+		<detail>
+			ValidateHBHelpScreen
+		</detail>
+		<errormessage>
+			Failed to find item 'HB_INSTALL_AUTORepository.HEAVYBID.AboutHeavyBid'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.769"
+			timeRelativeToTestModuleStartTime="00:00.775"
+			timeWallClock="13:53:16"
+			time="00:00.769"
+			level="Warn"
+			category="Data"
+			errimg=".\Validate_366e1fa3_6003ad07_trace.jpg"
+			errthumb=".\Validate_366e1fa3_6003ad07_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.810"
+			timeRelativeToTestModuleStartTime="00:00.816"
+			timeWallClock="13:53:16"
+			time="00:00.810"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_366e1fa3_6003ad07_trace.jpg"
+			errthumb=".\Validate_366e1fa3_6003ad07_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.HelpTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.HelpTab"
+				id="f776058332ad4ea0ae2b7afacacf7a0a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.842"
+			timeRelativeToTestModuleStartTime="00:02.848"
+			timeWallClock="13:53:18"
+			time="00:02.842"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_366e1fa3_ae4d43a4_trace.jpg"
+			errthumb=".\Validate_366e1fa3_ae4d43a4_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HEAVYBID.AboutHeavyBid' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/button[@accessiblename='About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.HEAVYBID.AboutHeavyBid"
+				id="266fcb41c0c640b580ac99b4a2c11ddc"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:02.969"
+			timeRelativeToTestModuleStartTime="01:02.975"
+			timeWallClock="13:54:19"
+			time="01:02.969"
+			level="Error"
+			category="Module"
+			errimg=".\Validate_366e1fa3_bfb6bd3d_trace.jpg"
+			errthumb=".\Validate_366e1fa3_bfb6bd3d_trace_thumb.jpg">
+			<message>
+				Failed to find item 'HB_INSTALL_AUTORepository.HEAVYBID.AboutHeavyBid'.<br/>No element found for path '/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/button[@accessiblename='About HeavyBid']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)
+   at HB_INSTALL_AUTO.HB_INSTALL_AUTORepositoryFolders.HEAVYBIDAppFolder.get_AboutHeavyBid() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HB_INSTALL_AUTORepository.cs:line 2347
+   at HB_INSTALL_AUTO.ValidateHBHelpScreen.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs:line 98
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBHelpScreen.cs"
+				codeline="98"
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/button[@accessiblename='About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.HEAVYBID.AboutHeavyBid"
+				id="266fcb41c0c640b580ac99b4a2c11ddc"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

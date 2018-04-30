@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="f46cedc08ea76c2"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 1:26:14 PM"
+		timestampiso="2018-04-30T18:26:14"
+		endtime="4/30/2018 1:26:49 PM"
+		timeoutfactor="1"
+		module="BackupEstimates">
+		<detail>
+			BackupEstimates
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.786"
+			timeRelativeToTestModuleStartTime="00:00.794"
+			timeWallClock="13:26:15"
+			time="00:00.786"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DefaultEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.830"
+			timeRelativeToTestModuleStartTime="00:00.838"
+			timeWallClock="13:26:15"
+			time="00:00.830"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.807"
+			timeRelativeToTestModuleStartTime="00:02.815"
+			timeWallClock="13:26:17"
+			time="00:02.807"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonBackupEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'Backup']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonBackupEstimate"
+				id="bc09738913aa49f4a7aecc31e4676ec3"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.198"
+			timeRelativeToTestModuleStartTime="00:04.206"
+			timeWallClock="13:26:18"
+			time="00:04.198"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.BackupEstimateSingle' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Single Estimate']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.BackupEstimateSingle"
+				id="4c2017c7c5da4f66826395cbe5717e6d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.071"
+			timeRelativeToTestModuleStartTime="00:05.079"
+			timeWallClock="13:26:19"
+			time="00:05.071"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimate.Button___' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Backup Estimate']////button[@accessiblename='...']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimate.Button___"
+				id="bcb9c9a137544aa6898e13c5e594dff5"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.001"
+			timeRelativeToTestModuleStartTime="00:06.009"
+			timeWallClock="13:26:20"
+			time="00:06.001"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimateClass.ListExistingEstimates' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@class~'DFDialogClass']/element[@class='DFformlist']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimateClass.ListExistingEstimates"
+				id="127b01f98a454ec19652a2ddbf0addd1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.857"
+			timeRelativeToTestModuleStartTime="00:06.865"
+			timeWallClock="13:26:21"
+			time="00:06.857"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$DefaultEstimates'.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="115"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.905"
+			timeRelativeToTestModuleStartTime="00:07.913"
+			timeWallClock="13:26:22"
+			time="00:07.905"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'EstimateSearch.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Search: Est Code']//button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.EstimateSearch.ButtonOk"
+				id="e35ba4e1d65145cf930693b4d1aadf5f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="119"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.764"
+			timeRelativeToTestModuleStartTime="00:08.772"
+			timeWallClock="13:26:23"
+			time="00:08.764"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimateClass.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@class~'DFDialogClass']//button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimateClass.ButtonOk"
+				id="40be3ffbecab442d971036a7c66920fe"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="123"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.510"
+			timeRelativeToTestModuleStartTime="00:09.518"
+			timeWallClock="13:26:23"
+			time="00:09.510"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimate.ButtonFinish' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Backup Estimate']////button[@accessiblename='Finish']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimate.ButtonFinish"
+				id="17a46077d5cf424cabb324a499c15007"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="127"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.237"
+			timeRelativeToTestModuleStartTime="00:10.245"
+			timeWallClock="13:26:24"
+			time="00:10.237"
+			level="Info"
+			category="Mouse">
+			<message>
+				(Optional Action)<br/>Mouse Left Click item 'HCSSBackupExists.ButtonOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/element/button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.HCSSBackupExists.ButtonOK"
+				id="85c2585677fd462f823e1dab11a53d32"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="132"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:35.332"
+			timeRelativeToTestModuleStartTime="00:35.340"
+			timeWallClock="13:26:49"
+			time="00:35.332"
+			level="Warn"
+			category="Module">
+			<message>
+				(Optional Action) Failed to find item 'HB_INSTALL_AUTORepository.HCSSBackupExists.ButtonOK'.
+			</message>
+			<metainfo
+				itemindex="9"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="135"
+				loglvl="Warn"
+				id="85c2585677fd462f823e1dab11a53d32"
+				path="/element/button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.HCSSBackupExists.ButtonOK">
+			</metainfo>
+		</item>
+	</activity>
+</report>

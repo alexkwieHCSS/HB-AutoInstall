@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="70a4e02d83d1dec"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 11:27:53 AM"
+		timestampiso="2018-04-30T16:27:53"
+		endtime="4/30/2018 11:27:59 AM"
+		timeoutfactor="1"
+		module="BackupEstimates">
+		<detail>
+			BackupEstimates
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.786"
+			timeRelativeToTestModuleStartTime="00:00.802"
+			timeWallClock="11:27:54"
+			time="00:00.786"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.007"
+			timeRelativeToTestModuleStartTime="00:03.023"
+			timeWallClock="11:27:57"
+			time="00:03.007"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonBackupEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'Backup']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonBackupEstimate"
+				id="bc09738913aa49f4a7aecc31e4676ec3"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.406"
+			timeRelativeToTestModuleStartTime="00:04.422"
+			timeWallClock="11:27:58"
+			time="00:04.406"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.BackupEstimateSingle' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Single Estimate']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.BackupEstimateSingle"
+				id="4c2017c7c5da4f66826395cbe5717e6d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

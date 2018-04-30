@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="199a18a0fb495f88"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 10:25:59 AM"
+		timestampiso="2018-04-30T15:25:59"
+		endtime="4/30/2018 10:26:07 AM"
+		timeoutfactor="1"
+		module="MakeNewEstimate">
+		<detail>
+			MakeNewEstimate
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.749"
+			timeRelativeToTestModuleStartTime="00:00.749"
+			timeWallClock="10:26:00"
+			time="00:00.749"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.780"
+			timeRelativeToTestModuleStartTime="00:00.780"
+			timeWallClock="10:26:00"
+			time="00:00.780"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.858"
+			timeRelativeToTestModuleStartTime="00:02.858"
+			timeWallClock="10:26:02"
+			time="00:02.858"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.ButtonNew' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'New']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.ButtonNew"
+				id="6eb328db5a1040e9a492311077d8cafc"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.170"
+			timeRelativeToTestModuleStartTime="00:04.170"
+			timeWallClock="10:26:03"
+			time="00:04.170"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HEAVYBID.NewEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'New Estimate']"
+				fullname="HB_INSTALL_AUTORepository.HEAVYBID.NewEstimate"
+				id="ad0a95efc3a64a2f949d52f0d5f0202f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.013"
+			timeRelativeToTestModuleStartTime="00:05.013"
+			timeWallClock="10:26:04"
+			time="00:05.013"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NewEstimate.EstimateCode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'New Estimate']/?/?/?/element[@class='DFentry' and @enabled='True']"
+				fullname="HB_INSTALL_AUTORepository.NewEstimate.EstimateCode"
+				id="c1389a8404ae45b3a5c50be6064a83b0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.841"
+			timeRelativeToTestModuleStartTime="00:05.841"
+			timeWallClock="10:26:05"
+			time="00:05.841"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$NewEstimates' with focus on 'NewEstimate.EstimateCode'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'New Estimate']/?/?/?/element[@class='DFentry' and @enabled='True']"
+				fullname="HB_INSTALL_AUTORepository.NewEstimate.EstimateCode"
+				id="c1389a8404ae45b3a5c50be6064a83b0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.231"
+			timeRelativeToTestModuleStartTime="00:07.231"
+			timeWallClock="10:26:06"
+			time="00:07.231"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'WelcomeToHeavyBidScreen.OpenExistingEstimateButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']"
+				fullname="HB_INSTALL_AUTORepository.WelcomeToHeavyBidScreen.OpenExistingEstimateButton"
+				id="e0f87a37a2f440b582e3dc421eb4699c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="115"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

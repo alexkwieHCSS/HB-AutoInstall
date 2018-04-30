@@ -11,9 +11,17 @@ rxversion="7.1">
 			</testmodule>
 			<testmodule
 			id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
-			name="ValidateHBHelpScreen"
+			name="ValidateHBAboutHB"
 			ref="4fd71e3b-908c-4d93-9811-290c25bd053f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="HBVersion"
+					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					variableid="5cd460da-091f-49fb-b058-491c186c0db3"
+					variablename="YearVersion">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0676d0fe-6b4c-432d-bda0-5eaba235eb54"
@@ -87,6 +95,26 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3f0775bf-b172-4eaf-8c81-8797da4306bd"
+			name="MakeNewEstimate"
+			ref="b5eb13e6-7043-43ab-993a-9a8fcc0c889f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingEstimateCode"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="d7f1e071-dfc6-48ea-a9b9-31a0e02b1494"
+					variablename="NewEstimateCode">
+					</var>
+					<var
+					dataname="ExistingEstimateName"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="cf17ed8c-3d08-4ca9-96aa-72ec9ac259ab"
+					variablename="NewEstimateName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4fba360d-337e-4e34-87cf-55779cfe1905"
 			name="RegisterHB"
 			ref="02167738-89fa-4bd8-987f-73d74dc2b4b4"
@@ -136,7 +164,7 @@ rxversion="7.1">
 			</testmodule>
 			<testmodule
 			id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
-			name="ValidateHBLaunch"
+			name="ValidateHBWelcomeScreen"
 			ref="e46c80a6-d7fa-4a4d-817c-02019abb12b8"
 			type="Recording">
 				<databinding>
@@ -171,6 +199,18 @@ rxversion="7.1">
 			id="710e27f3-6598-44a2-aba7-1784e5169982"
 			name="HBWSWelcomeSetup"
 			ref="e29b418e-7757-4f1e-b5d2-20cd70f1177b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
+			name="TestWhatsNewButton"
+			ref="00b958dc-dee3-423d-8fd7-6de0378cf8a8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7c1d06f6-605a-4e72-8a06-2f7e7286e704"
+			name="ValidateHBF1Help"
+			ref="d01cce6a-7dfa-487c-b449-7b043debdbc5"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -218,6 +258,7 @@ rxversion="7.1">
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="ExistingEstimates"
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018"
 			name="OpenHBAfterRegister">
 			</testcase>
@@ -319,6 +360,7 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="InstallType"
 			id="e1733192-a28b-4b65-abf2-b0342696439a"
 			maxrange="1"
@@ -359,6 +401,20 @@ rxversion="7.1">
 			name="UninstallSQL"
 			ref="19c0f50a-d08e-4dfb-82fe-befaf85a22ae"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
+			name="BackupEstimates"
+			ref="cd57d786-1425-421b-9c5f-1052aee5c447"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingEstimateCode"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="adb66d9b-4877-4cf5-b01a-983699df60d8"
+					variablename="DefaultEstimates">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -480,19 +536,35 @@ rxversion="7.1">
 							</testmodule>
 							<testmodule
 							id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
-							name="ValidateHBLaunch">
+							name="ValidateHBWelcomeScreen">
 							</testmodule>
 							<testmodule
 							id="9fb2e54a-1181-4214-8d43-a98b75d7f059"
 							name="TestLinkOnWelcome">
 							</testmodule>
 							<testmodule
-							id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
-							name="ValidateHBHelpScreen">
-							</testmodule>
-							<testmodule
 							id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
 							name="CheckBitImage">
+							</testmodule>
+							<testmodule
+							id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
+							name="ValidateHBAboutHB">
+							</testmodule>
+							<testmodule
+							id="7c1d06f6-605a-4e72-8a06-2f7e7286e704"
+							name="ValidateHBF1Help">
+							</testmodule>
+							<testmodule
+							id="3f0775bf-b172-4eaf-8c81-8797da4306bd"
+							name="MakeNewEstimate">
+							</testmodule>
+							<testmodule
+							id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
+							name="BackupEstimates">
+							</testmodule>
+							<testmodule
+							id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
+							name="TestWhatsNewButton">
 							</testmodule>
 							<testmodule
 							id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
@@ -549,6 +621,64 @@ rxversion="7.1">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+		lastknownrowcount="4"
+		name="ExistingEstimates"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					ExistingEstimateCode
+				</column>
+				<column>
+					ExistingEstimateName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						ExistingEstimateCode
+					</th>
+					<th>
+						ExistingEstimateName
+					</th>
+				</tr>
+				<tr>
+					<td>
+						1-BRIDGE
+					</td>
+					<td>
+						Bridge Sample Estimate
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1-EARTH
+					</td>
+					<td>
+						Earthwork Sample Estimate
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1-PAVE
+					</td>
+					<td>
+						Paving Sample Estimate
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1-UTIL
+					</td>
+					<td>
+						Utility Sample Estimate
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 		<DataSource
 		id="656b9040-9f1a-4629-923d-89f5d61af162"
 		lastknownrowcount="6"
@@ -684,13 +814,63 @@ rxversion="7.1">
 				</tr>
 			</table>
 		</DataSource>
+		<DataSource
+		id="22addd12-9554-4822-ab15-aff253eff08a"
+		lastknownrowcount="3"
+		name="TestEstimates"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					TestEstimateCode
+				</column>
+				<column>
+					TestEstimateName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						TestEstimateCode
+					</th>
+					<th>
+						TestEstimateName
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Test1
+					</td>
+					<td>
+						Test Estimate 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Test2
+					</td>
+					<td>
+						Test Estimate 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Test3
+					</td>
+					<td>
+						Test Estimate 3
+					</td>
+				</tr>
+			</table>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="AdvanceMU">
 		<testconfiguration
 		name="AdvanceMU">
 			<testcontainer
-			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1">
+			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
 			<testcontainer
 			id="d76b351a-e0db-4a50-b217-cbd5aed29063">

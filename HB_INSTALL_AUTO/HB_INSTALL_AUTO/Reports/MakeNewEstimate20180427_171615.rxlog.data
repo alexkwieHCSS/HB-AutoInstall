@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="41ec780c63b85ef"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 5:16:18 PM"
+		timestampiso="2018-04-27T22:16:18"
+		endtime="4/27/2018 5:16:55 PM"
+		timeoutfactor="1"
+		module="MakeNewEstimate">
+		<detail>
+			MakeNewEstimate
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.772"
+			timeRelativeToTestModuleStartTime="00:00.787"
+			timeWallClock="17:16:19"
+			time="00:00.772"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.725"
+			timeRelativeToTestModuleStartTime="00:02.741"
+			timeWallClock="17:16:21"
+			time="00:02.725"
+			level="Info"
+			category="Mouse"
+			errimg=".\MakeNewE_80ff0e46_5e1ef1e0_trace.jpg"
+			errthumb=".\MakeNewE_80ff0e46_5e1ef1e0_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.ButtonNew' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'New']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.ButtonNew"
+				id="6eb328db5a1040e9a492311077d8cafc"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.110"
+			timeRelativeToTestModuleStartTime="00:04.125"
+			timeWallClock="17:16:22"
+			time="00:04.110"
+			level="Info"
+			category="Mouse"
+			errimg=".\MakeNewE_80ff0e46_0e89da2e_trace.jpg"
+			errthumb=".\MakeNewE_80ff0e46_0e89da2e_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.NewEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/?/?/menuitem[@accessiblename='New Estimate']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.NewEstimate"
+				id="a216e8ed92534a0faa8e3f23d311700c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\MakeNewEstimate.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.276"
+			timeRelativeToTestModuleStartTime="00:37.291"
+			timeWallClock="17:16:55"
+			time="00:37.276"
+			level="Error"
+			category="User"
+			errimg=".\MakeNewE_80ff0e46_aa88c113_trace.jpg"
+			errthumb=".\MakeNewE_80ff0e46_aa88c113_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

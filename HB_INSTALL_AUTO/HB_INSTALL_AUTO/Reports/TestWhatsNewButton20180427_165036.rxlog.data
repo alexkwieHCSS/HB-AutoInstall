@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2fa7c664d217749"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/27/2018 4:50:39 PM"
+		timestampiso="2018-04-27T21:50:39"
+		endtime="4/27/2018 4:50:44 PM"
+		timeoutfactor="1"
+		module="TestWhatsNewButton">
+		<detail>
+			TestWhatsNewButton
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.805"
+			timeRelativeToTestModuleStartTime="00:00.813"
+			timeWallClock="16:50:40"
+			time="00:00.805"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.WhatsNewTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'What''s New']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.WhatsNewTab"
+				id="840fcc6bd04e419f9b950058e7db6b96"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.782"
+			timeRelativeToTestModuleStartTime="00:02.790"
+			timeWallClock="16:50:42"
+			time="00:02.782"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApplication.NewHeavyBidFeaturesButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'New HeavyBid Features']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApplication.NewHeavyBidFeaturesButton"
+				id="86f8a615a73941c783d8b9ea1053dc08"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.212"
+			timeRelativeToTestModuleStartTime="00:04.220"
+			timeWallClock="16:50:43"
+			time="00:04.212"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.6<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.TabArticleHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.TabArticleHCSS"
+				id="5ff2cee561e14940b66dc1692f6171c3"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="92"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.823"
+			timeRelativeToTestModuleStartTime="00:04.831"
+			timeWallClock="16:50:44"
+			time="00:04.823"
+			level="Info"
+			category="Wait">
+			<message>
+				(Optional Action)<br/>E.6<br/>Waiting 30s to exist. Associated repository item: 'GoogleChrome.LinkArticleHCSS'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.LinkArticleHCSS"
+				id="9fbd338429a841d7a5498d277cb9ca8f"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="98"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.951"
+			timeRelativeToTestModuleStartTime="00:04.959"
+			timeWallClock="16:50:44"
+			time="00:04.951"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (AccessibleName~'[Article][List]') on item 'GoogleChrome.Tabs'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="104"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.095"
+			timeRelativeToTestModuleStartTime="00:05.103"
+			timeWallClock="16:50:44"
+			time="00:05.095"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'AccessibleName' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.Tabs' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.Tabs"
+				id="6c738e7a71844785802178d4e64b01ac"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="105"
+				loglvl="Success"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.102"
+			timeRelativeToTestModuleStartTime="00:05.110"
+			timeWallClock="16:50:44"
+			time="00:05.102"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>E.6<br/>Validating AttributeRegEx (Text~'[help][hcss][release]') on item 'GoogleChrome.AddressBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="111"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.310"
+			timeRelativeToTestModuleStartTime="00:05.318"
+			timeWallClock="16:50:44"
+			time="00:05.310"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.GoogleChrome.AddressBar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.AddressBar"
+				id="52cbcae302514af89078d1c9da742610"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWhatsNewButton.cs"
+				codeline="112"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+	</activity>
+</report>

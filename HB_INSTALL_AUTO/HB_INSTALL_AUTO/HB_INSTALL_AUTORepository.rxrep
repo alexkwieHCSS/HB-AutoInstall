@@ -19,7 +19,7 @@ rxversion="7.1">
 		id="de34c2e0-f817-4a24-9a91-b1fb4eaa598a"
 		isrooted="True"
 		name="HeavyBidServerSetup"
-		refimgid="13fd1db5-1a37-43c3-b099-e456c814fcfa"
+		refimgid="189c48c2-7440-4e4d-9ebf-00d120d59409"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -148,14 +148,33 @@ rxversion="7.1">
 				/form[@title~'[HeavyBid][Setup]']/?/?/radiobutton[@text~$InstallTypeButton]
 			</item>
 			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="0e702a41-674b-4888-a62f-5f9a6e258512"
-			name="SystemInfo"
-			refimgid="ac8b36f6-1569-4df4-8e2d-bc910d63e204"
-			refpath="/form[@title='About HeavyBid']/element[@class='DFDialogClass' and @instance='0']/element[@controlid='2383']/element/button[@accessiblename='System Info']"
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="8a1dff92-5d26-4f76-a932-a1c87d4e5d90"
+			name="DFentry"
+			refimgid="2328b3cc-fc5c-4f37-9895-96c8aebd0776"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Setup]']/?/?/element[@controlid='2383']/?/?/button[@accessiblename='System Info']
+				/form[@title~'[HeavyBid][Setup]']/?/?/?/element[@class='DFentry' and @enabled='True']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="dc99978d-b59b-4506-bd08-ce995fa600e9"
+			name="DFentry1"
+			refimgid="e66723c8-8872-40ae-a43f-e38668c61bc7"
+			refpath="/form[@title='New Estimate ']/element[@class='DFDialogClass']/element[@controlid='3016']/element[@class='DFentry']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/element[@controlid='3016']/element[@class='DFentry']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="0c41c24c-bfb6-4459-aa94-611f6cc611dc"
+			name="Text"
+			refimgid="fc8bbb9f-0a11-47ac-b1f0-e7ed893de919"
+			refpath="/form[@title='New Estimate ']/element[@class='DFDialogClass']/element[@controlid='3077']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/?/?/element[@controlid='3077']/text[@accessiblerole='Text']
 			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
@@ -215,6 +234,16 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="WSInstallTitle"
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Workstation]']/titlebar
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="09ccfd1f-cc0f-43f6-bdbf-bbdeaa82926b"
+			name="ButtonOK"
+			refimgid="b1f4e4b1-e997-4485-aa49-8f973bb8bf55"
+			refpath="/form[@title='HCSS Backup']/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Workstation]']/button[@text='OK']
 			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Workstation]']
@@ -376,18 +405,81 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		capname="form"
 		id="2f898f27-5ad8-489e-9722-e1d9c63f5289"
 		isrooted="True"
-		name="HeavyBidApplication"
+		name="HeavyBidTabs"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
 			addcaps="tabpage,accessible"
 			capname="tabpage"
 			id="f7760583-32ad-4ea0-ae2b-7afacacf7a0a"
-			name="Help"
+			name="HelpTab"
 			refimgid="744188eb-6029-489d-99f3-f2cbe8a8ea58"
-			refpath="/form[@title='HB 2018.1']/element[@controlid='59419']/element[@class='XTPToolBar' and @instance='0']/toolbar[1]/tabpagelist/tabpage[@accessiblename='Help']"
 			searchtimeout="30000ms">
-				/form[@title~'HB']/element[@controlid='59419']/element[2]/toolbar[1]/tabpagelist[@accessiblename='']/tabpage[@accessiblename='Help']
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']
+			</item>
+			<item
+			capname="button"
+			id="4f3db4c1-62c4-4154-9c8a-c222de37f5b7"
+			name="HBF1Button"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'HeavyBid Help']
+			</item>
+			<item
+			capname="button"
+			id="abeec274-cb75-4ff4-be97-d76ab7a91a22"
+			name="HelpAboutHeavyBidButton"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'About HeavyBid']
+			</item>
+			<item
+			capname="button"
+			id="86f8a615-a739-41c7-83d8-b9ea1053dc08"
+			name="NewHeavyBidFeaturesButton"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'New HeavyBid Features']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="840fcc6b-d04e-419f-9b95-0058e7db6b96"
+			name="WhatsNewTab"
+			refimgid="7098d305-7416-4e71-9dc9-df35aafe9886"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'What''s New']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="0295fd3f-fff7-4963-a5b3-c56a9ac69481"
+			name="FileTab"
+			refimgid="822a9e25-4ac3-4715-b00f-2520d551af07"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="6eb328db-5a10-40e9-a492-311077d8cafc"
+			name="ButtonNewEstimate"
+			refimgid="3a25bb29-29ee-402f-90f8-5f8b414112b0"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'New']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="a216e8ed-9253-4a0f-aa8e-3f23d311700c"
+			name="NewEstimate"
+			refimgid="ced2529c-a959-4bbd-b101-bdab883e1777"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/?/?/menuitem[@accessiblename='New Estimate']
+			</item>
+			<item
+			capname="button"
+			id="bc097389-13aa-49f4-a7ae-cc31e4676ec3"
+			name="ButtonBackupEstimate"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'Backup']
 			</item>
 			<basepath>
 				/form[@title~'HB']
@@ -755,7 +847,7 @@ TkSuQmCC
 			<item
 			capname="button"
 			id="e0f87a37-a2f4-40b5-82e3-dc421eb4699c"
-			name="OpenExistingEstimateButton"
+			name="NameButton"
 			refimgid="2c673bb7-9d7a-4807-a533-38410f0bb98d"
 			searchtimeout="30000ms">
 				/form[@title~'[Welcome][HeavyBid]']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
@@ -767,7 +859,7 @@ TkSuQmCC
 			name="BitmapImage"
 			refimgid="95fbfe6a-b233-4ca1-9a88-1253c4d2eeb3"
 			searchtimeout="30000ms">
-				/form[@title~'[Welcome][HeavyBid]']/element[1]
+				/form[@title~'[Welcome][HeavyBid]']/element[@controlid='2243']
 			</item>
 			<item
 			capname="unknown"
@@ -839,7 +931,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			<item
 			capname="text"
 			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
-			name="LinkArticleHCSS"
+			name="LinkHelpHCSS"
 			searchtimeout="30000ms">
 				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
 			</item>
@@ -863,23 +955,131 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
 		<appfolder
+		capname="form"
+		id="f7462987-0de1-4830-9a1a-def32c221e44"
+		isrooted="True"
+		name="AboutHeavyBid"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="78abad0f-0752-4e53-a093-0f0c8446d2b4"
+			name="HBVersionAboutScreen"
+			searchtimeout="30000ms">
+				/form[@title~'About HeavyBid']//text[@accessiblename~'Advanced']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="f9b508e4-f6b3-4b25-b9fa-e48c87faa15c"
+			name="SystemInfo"
+			refimgid="240dc966-acff-4e98-a59b-bb0282b90e4a"
+			searchtimeout="30000ms">
+				/form[@title~'About HeavyBid']//button[@text~'System Info']
+			</item>
+			<item
+			capname="button"
+			id="66b54add-d8ea-49d8-9362-99e8425f9bc4"
+			name="CloseButton"
+			searchtimeout="30000ms">
+				/form[@title~'About HeavyBid']/.//button[@text~'Close']
+			</item>
+			<basepath>
+				/form[@title~'About HeavyBid']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="81a7308a-b5ac-4653-8909-b9bb478ac80f"
+		isrooted="True"
+		name="SystemInformationAboutHB"
+		refimgid="c42eeeff-6fdb-4c12-86f4-a5d06bd402b8"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="f80cd017-1f8f-467c-aae0-4ae848efd853"
+			name="CloseButton"
+			searchtimeout="30000ms">
+				/form[@title~'System Information']//button[@text~'Close']
+			</item>
+			<basepath>
+				/form[@title~'System Information']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="24e3682b-a125-4c8d-8da5-e316227041d1"
+		isrooted="True"
+		name="ArticleList"
+		refpath="/dom[@domain='help.hcss.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="146efcc6-268d-4eb0-aaf0-07b1eb839eaa"
+			name="Footer"
+			refimgid="979356a6-89b4-4e33-89ec-5d940879c43b"
+			refpath="/dom[@domain='help.hcss.com']//div[#'KoaCommunityTemplate']/div[3]/div/div[2]/div/div/div[2]/div[2]/div/ul/li[1]/article/div"
+			searchtimeout="30000ms">
+				/dom[@domain='help.hcss.com']//div[#'KoaCommunityTemplate']/div[3]/div/div[2]/div/div/div[2]//ul/li[1]/article/div
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c48ba810-0149-4dac-963d-688a31502c7e"
+			name="ContainerSiteforceOneColumnLayoutSitef"
+			refimgid="6c8a5c12-fe14-4a7c-af8c-236e127b5e9f"
+			refpath="/dom[25]//div[#'KoaCommunityTemplate']/div[3]/div"
+			searchtimeout="30000ms">
+				/dom[@domain='help.hcss.com']//div[#'KoaCommunityTemplate']/div[3]/div
+			</item>
+			<basepath>
+				/dom[@domain='help.hcss.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
 		addcaps="form,nativewindow"
 		capname="form"
-		id="7323f55f-9ec9-4cd3-8228-b1a2fe845dd8"
+		id="34644c39-f7e5-4c89-ae61-ed3cc659cd5f"
 		isrooted="True"
-		name="HEAVYBID"
+		name="HBButtonDropdownOptions"
 		refpath="/form[@title='' and @processname='HEAVYBID' and @class='XTPPopupBar']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="266fcb41-c0c6-40b5-80ac-99b4a2c11ddc"
-			name="AboutHeavyBid"
-			refimgid="39628823-9dc2-473b-9216-24ed729f7f26"
-			refpath="/form[@title='' and @processname='HEAVYBID' and @class='XTPPopupBar']/toolbar[1]/button[@accessiblename='About HeavyBid']"
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			comment="THIS CAN'T BE RIGHT"
+			id="ad0a95ef-c3a6-4a2f-949d-52f0d5f0202f"
+			name="NewEstimate"
+			refimgid="b1d384ee-5bdf-493b-a101-e54719c7df18"
 			searchtimeout="30000ms">
-				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/button[@accessiblename='About HeavyBid']
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'New Estimate']
+			</item>
+			<item
+			capname="menuitem"
+			id="4c2017c7-c5da-4f66-8263-95cbe5717e6d"
+			name="BackupEstimateSingle"
+			searchtimeout="30000ms">
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Single Estimate']
 			</item>
 			<basepath>
 				/form[@processname='HEAVYBID' and @class='XTPPopupBar']
@@ -894,6 +1094,140 @@ PgeMFcMVmWAvkGQAzAVX3z74n3do6n/L1fnEG4AMQIln/d2j/y++vovbAFCiACUOUCKZdGH9/wXX
 d6HgF1/fgQ27/eEpdgNAyRKUPI1XZGHFy2/tBxvQfW4VVgPAmQmUQbBlHBiWnR+FoRmIf1OYnT06
 AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="3a80063c-0857-4845-9cf7-781e35c94858"
+		isrooted="True"
+		name="NewEstimate"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="c1389a84-04ae-45b3-a5c5-0be6064a83b0"
+			name="EstimateCode"
+			refimgid="5405c8a8-0b90-444f-a180-f188607a54f8"
+			searchtimeout="30000ms">
+				/form[@title~'New Estimate']/?/?/?/element[@class='DFentry' and @enabled='True']
+			</item>
+			<item
+			capname="button"
+			id="68adf6bc-9b6a-4a99-a227-eb9288380d52"
+			name="NextButton"
+			searchtimeout="30000ms">
+				/form[@title~'New Estimate']//button[@text~'Next']
+			</item>
+			<item
+			capname="unknown"
+			id="9652e841-437a-4b39-9b56-ab5b4ee523e6"
+			name="EstimateNameTextBox"
+			searchtimeout="30000ms">
+				/form[@title~'New Estimate']/element[@class='DFDialogClass']/element/element[@class='DFentry']
+			</item>
+			<item
+			capname="text"
+			id="6fb65c7d-707d-4dc8-9892-cd9dcdcbda09"
+			name="EstimateDescriptionTextBox"
+			searchtimeout="30000ms">
+				/form[@title~'New Estimate']/element[@class='DFDialogClass']/?/?/text[@accessiblerole='Text']
+			</item>
+			<item
+			capname="button"
+			id="0bf42967-89c6-4aeb-8274-8747cf2b8e34"
+			name="FinishButton"
+			searchtimeout="30000ms">
+				/form[@title~'New Estimate']//button[@text~'Finish']
+			</item>
+			<basepath>
+				/form[@title~'New Estimate']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="4dab055f-dbe9-41fd-ba28-776ec885b4df"
+		isrooted="True"
+		name="BackupEstimate"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="bcb9c9a1-3754-4aa6-898e-13c5e594dff5"
+			name="Button___"
+			searchtimeout="30000ms">
+				/form[@title~'Backup Estimate']////button[@accessiblename='...']
+			</item>
+			<item
+			capname="button"
+			id="17a46077-d5cf-424c-abb3-24a499c15007"
+			name="ButtonFinish"
+			searchtimeout="30000ms">
+				/form[@title~'Backup Estimate']////button[@accessiblename='Finish']
+			</item>
+			<basepath>
+				/form[@title~'Backup Estimate']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="be6c54b9-5252-4e1f-b2ca-962998a62625"
+		isrooted="True"
+		name="BackupEstimateClass"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="unknown"
+			id="127b01f9-8a45-4ec1-9652-a2ddbf0addd1"
+			name="ListExistingEstimates"
+			searchtimeout="30000ms">
+				/form[@class~'DFDialogClass']/element[@class='DFformlist']
+			</item>
+			<item
+			capname="button"
+			id="40be3ffb-ecab-442d-9710-36a7c66920fe"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@class~'DFDialogClass']//button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@class~'DFDialogClass']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="a8e5c2a5-64e1-48e4-b143-597dbf56c884"
+		isrooted="True"
+		name="EstimateSearch"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="e35ba4e1-d651-45cf-9306-93b4d1aadf5f"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@title~'Search: Est Code']//button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title~'Search: Est Code']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="53921fe6-449b-4502-9bee-3ed08c46e088"
+		isrooted="True"
+		name="HCSSBackupExists"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="85c25856-77fd-462f-823e-1dab11a53d32"
+			name="ButtonOK"
+			searchtimeout="30000ms">
+				/form[@title~'HCSS Backup']/button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title~'HCSS Backup']
+			</basepath>
 		</appfolder>
 		<basepath>
 		</basepath>
@@ -913,6 +1247,11 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		id="dcc3d5b9-10c0-4f12-93de-438cc6f6a495"
 		name="InstallTypeButton">
 			Multi-user
+		</var>
+		<var
+		id="908f7326-7b3d-42fd-984d-42bcd53b2274"
+		name="NewEstimateCode">
+			Estimate-1
 		</var>
 	</variables>
 </repository>

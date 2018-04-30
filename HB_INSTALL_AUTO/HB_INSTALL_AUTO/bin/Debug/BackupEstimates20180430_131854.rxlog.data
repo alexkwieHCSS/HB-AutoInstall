@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="be3f72d297b7769"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 1:18:57 PM"
+		timestampiso="2018-04-30T18:18:57"
+		endtime="4/30/2018 1:18:59 PM"
+		timeoutfactor="1"
+		module="BackupEstimates">
+		<detail>
+			BackupEstimates
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.767"
+			timeRelativeToTestModuleStartTime="00:00.773"
+			timeWallClock="13:18:57"
+			time="00:00.767"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DefaultEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.804"
+			timeRelativeToTestModuleStartTime="00:00.810"
+			timeWallClock="13:18:57"
+			time="00:00.804"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimateClass.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@class~'DFDialogClass']//button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimateClass.ButtonOk"
+				id="40be3ffbecab442d971036a7c66920fe"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupEstimates.cs"
+				codeline="95"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
