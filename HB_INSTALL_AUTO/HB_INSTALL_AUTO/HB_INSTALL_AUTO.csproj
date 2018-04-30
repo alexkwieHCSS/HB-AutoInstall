@@ -83,6 +83,18 @@
       <UserCode>true</UserCode>
       <id>031d8f6d-3ad9-4cfb-be72-0d5852e14933</id>
     </Compile>
+    <Compile Include="BackupSystem.cs">
+      <BoundTo>73efb713-5712-435d-86bd-737526563b41</BoundTo>
+      <DependentUpon>BackupSystem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c212df91-1bf4-4c0d-aed1-c01d70b4e7e9</id>
+    </Compile>
+    <Compile Include="BackupSystem.UserCode.cs">
+      <BoundTo>73efb713-5712-435d-86bd-737526563b41</BoundTo>
+      <DependentUpon>BackupSystem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31e2c6f6-3bf1-4813-8e0b-c7b7e0d6a5b2</id>
+    </Compile>
     <Compile Include="CheckBitImage.cs">
       <BoundTo>e9cb2207-0974-4bf0-9349-fe09df32f60f</BoundTo>
       <DependentUpon>CheckBitImage.rxrec</DependentUpon>
@@ -353,6 +365,30 @@
       <UserCode>true</UserCode>
       <id>b1f1942c-6508-4dce-9bef-e9962caddda9</id>
     </Compile>
+    <Compile Include="RestoreEstimate.cs">
+      <BoundTo>943b60fb-3727-47d0-85e5-5bea2790a008</BoundTo>
+      <DependentUpon>RestoreEstimate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c91f3649-4c01-48e8-b307-a19d76728eb5</id>
+    </Compile>
+    <Compile Include="RestoreEstimate.UserCode.cs">
+      <BoundTo>943b60fb-3727-47d0-85e5-5bea2790a008</BoundTo>
+      <DependentUpon>RestoreEstimate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c19964b8-69a9-4ed1-88ea-34aff413a8dc</id>
+    </Compile>
+    <Compile Include="RestoreSystem.cs">
+      <BoundTo>8ecb61c1-7110-4e51-9f66-4b590c991cbd</BoundTo>
+      <DependentUpon>RestoreSystem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60885f86-4358-4fb9-a431-295281e021d7</id>
+    </Compile>
+    <Compile Include="RestoreSystem.UserCode.cs">
+      <BoundTo>8ecb61c1-7110-4e51-9f66-4b590c991cbd</BoundTo>
+      <DependentUpon>RestoreSystem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>063f381c-90f0-4262-9e15-b67686731b0b</id>
+    </Compile>
     <Compile Include="RunBatchTrunk.cs">
       <BoundTo>265bd766-88c0-4e40-a960-82f9ad8bf405</BoundTo>
       <DependentUpon>RunBatchTrunk.rxrec</DependentUpon>
@@ -618,6 +654,11 @@
       <id>1a3f7b3f-98ee-43e0-a3b4-daa4731a1f27</id>
       <recordtableid>cd57d786-1425-421b-9c5f-1052aee5c447</recordtableid>
     </None>
+    <None Include="BackupSystem.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>73efb713-5712-435d-86bd-737526563b41</id>
+      <recordtableid>9989c876-1438-4146-908f-573b9db14d53</recordtableid>
+    </None>
     <None Include="CheckBitImage.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>e9cb2207-0974-4bf0-9349-fe09df32f60f</id>
@@ -738,6 +779,16 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>72c76099-1b4e-4323-b0e7-3c7920049d72</id>
       <recordtableid>02167738-89fa-4bd8-987f-73d74dc2b4b4</recordtableid>
+    </None>
+    <None Include="RestoreEstimate.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>943b60fb-3727-47d0-85e5-5bea2790a008</id>
+      <recordtableid>96d67d1e-50eb-4f1d-95a2-6513f38e016c</recordtableid>
+    </None>
+    <None Include="RestoreSystem.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>8ecb61c1-7110-4e51-9f66-4b590c991cbd</id>
+      <recordtableid>e98488ca-ce92-4313-ad9d-c786d4f7ec21</recordtableid>
     </None>
     <None Include="RunBatchTrunk.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>

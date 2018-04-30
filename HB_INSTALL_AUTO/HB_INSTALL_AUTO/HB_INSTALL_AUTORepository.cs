@@ -50,6 +50,9 @@ namespace HB_INSTALL_AUTO
         HB_INSTALL_AUTORepositoryFolders.BackupEstimateClassAppFolder _backupestimateclass;
         HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder _estimatesearch;
         HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder _hcssbackupexists;
+        HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesAppFolder _restoreestimates;
+        HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesFoundAppFolder _restoreestimatesfound;
+        HB_INSTALL_AUTORepositoryFolders.RestoreSystemFilesAppFolder _restoresystemfiles;
 
         /// <summary>
         /// Gets the singleton class instance representing the HB_INSTALL_AUTORepository element repository.
@@ -89,6 +92,9 @@ namespace HB_INSTALL_AUTO
             _backupestimateclass = new HB_INSTALL_AUTORepositoryFolders.BackupEstimateClassAppFolder(this);
             _estimatesearch = new HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder(this);
             _hcssbackupexists = new HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder(this);
+            _restoreestimates = new HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesAppFolder(this);
+            _restoreestimatesfound = new HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesFoundAppFolder(this);
+            _restoresystemfiles = new HB_INSTALL_AUTORepositoryFolders.RestoreSystemFilesAppFolder(this);
         }
 
 #region Variables
@@ -139,6 +145,18 @@ namespace HB_INSTALL_AUTO
         {
             get { return _NewEstimateCode; }
             set { _NewEstimateCode = value; }
+        }
+
+        string _NewEstimateName = "Test Estimate 1";
+
+        /// <summary>
+        /// Gets or sets the value of variable NewEstimateName.
+        /// </summary>
+        [TestVariable("4a9c9e81-e30b-48fc-b781-5ee40916d18d")]
+        public string NewEstimateName
+        {
+            get { return _NewEstimateName; }
+            set { _NewEstimateName = value; }
         }
 
 #endregion
@@ -360,6 +378,33 @@ namespace HB_INSTALL_AUTO
         public virtual HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder HCSSBackupExists
         {
             get { return _hcssbackupexists; }
+        }
+
+        /// <summary>
+        /// The RestoreEstimates folder.
+        /// </summary>
+        [RepositoryFolder("91802fb4-f155-4282-9012-598399319c7f")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesAppFolder RestoreEstimates
+        {
+            get { return _restoreestimates; }
+        }
+
+        /// <summary>
+        /// The RestoreEstimatesFound folder.
+        /// </summary>
+        [RepositoryFolder("ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesFoundAppFolder RestoreEstimatesFound
+        {
+            get { return _restoreestimatesfound; }
+        }
+
+        /// <summary>
+        /// The RestoreSystemFiles folder.
+        /// </summary>
+        [RepositoryFolder("2e2791a4-b34d-4e90-b85f-08eec822507f")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.RestoreSystemFilesAppFolder RestoreSystemFiles
+        {
+            get { return _restoresystemfiles; }
         }
     }
 
@@ -1390,6 +1435,9 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _buttonnewestimateInfo;
             RepoItemInfo _newestimateInfo;
             RepoItemInfo _buttonbackupestimateInfo;
+            RepoItemInfo _buttonrestoreesimateInfo;
+            RepoItemInfo _afxad4000081000300Info;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new HeavyBidTabs  folder.
@@ -1406,6 +1454,9 @@ namespace HB_INSTALL_AUTO
                 _buttonnewestimateInfo = new RepoItemInfo(this, "ButtonNewEstimate", ".///toolbar/button[@text~'New']", 30000, null, "6eb328db-5a10-40e9-a492-311077d8cafc");
                 _newestimateInfo = new RepoItemInfo(this, "NewEstimate", "?/?/menuitem[@accessiblename='New Estimate']", 30000, null, "a216e8ed-9253-4a0f-aa8e-3f23d311700c");
                 _buttonbackupestimateInfo = new RepoItemInfo(this, "ButtonBackupEstimate", ".///toolbar/button[@text~'Backup']", 30000, null, "bc097389-13aa-49f4-a7ae-cc31e4676ec3");
+                _buttonrestoreesimateInfo = new RepoItemInfo(this, "ButtonRestoreEsimate", ".///toolbar/button[@text~'Restore']", 30000, null, "0264168d-9bc1-4b50-a882-702a1556551e");
+                _afxad4000081000300Info = new RepoItemInfo(this, "AfxAd4000081000300", "element[@class='Afx:ad40000:8:10003:0:0']", 30000, null, "e1bde496-272a-489a-9c0f-8da419f10914");
+                _closeInfo = new RepoItemInfo(this, "Close", "element[@controlid='3244']/form[@controlid='513']//button[@accessiblekeyboardshortcut='Alt+c']", 30000, null, "e2834541-93fd-4733-8d22-478b0704a261");
             }
 
             /// <summary>
@@ -1645,6 +1696,78 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonbackupestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreEsimate item.
+            /// </summary>
+            [RepositoryItem("0264168d-9bc1-4b50-a882-702a1556551e")]
+            public virtual Ranorex.Button ButtonRestoreEsimate
+            {
+                get
+                {
+                    return _buttonrestoreesimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreEsimate item info.
+            /// </summary>
+            [RepositoryItemInfo("0264168d-9bc1-4b50-a882-702a1556551e")]
+            public virtual RepoItemInfo ButtonRestoreEsimateInfo
+            {
+                get
+                {
+                    return _buttonrestoreesimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AfxAd4000081000300 item.
+            /// </summary>
+            [RepositoryItem("e1bde496-272a-489a-9c0f-8da419f10914")]
+            public virtual Ranorex.Unknown AfxAd4000081000300
+            {
+                get
+                {
+                    return _afxad4000081000300Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AfxAd4000081000300 item info.
+            /// </summary>
+            [RepositoryItemInfo("e1bde496-272a-489a-9c0f-8da419f10914")]
+            public virtual RepoItemInfo AfxAd4000081000300Info
+            {
+                get
+                {
+                    return _afxad4000081000300Info;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("e2834541-93fd-4733-8d22-478b0704a261")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("e2834541-93fd-4733-8d22-478b0704a261")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }
@@ -2927,7 +3050,9 @@ namespace HB_INSTALL_AUTO
         public partial class HBButtonDropdownOptionsAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _newestimateInfo;
-            RepoItemInfo _backupestimatesingleInfo;
+            RepoItemInfo _singleestimateInfo;
+            RepoItemInfo _systemInfo;
+            RepoItemInfo _estimateInfo;
 
             /// <summary>
             /// Creates a new HBButtonDropdownOptions  folder.
@@ -2936,7 +3061,9 @@ namespace HB_INSTALL_AUTO
                     base("HBButtonDropdownOptions", "/form[@processname='HEAVYBID' and @class='XTPPopupBar']", parentFolder, 30000, null, true, "34644c39-f7e5-4c89-ae61-ed3cc659cd5f", "")
             {
                 _newestimateInfo = new RepoItemInfo(this, "NewEstimate", "?/?/menuitem[@text~'New Estimate']", 30000, null, "ad0a95ef-c3a6-4a2f-949d-52f0d5f0202f");
-                _backupestimatesingleInfo = new RepoItemInfo(this, "BackupEstimateSingle", "?/?/menuitem[@text~'Single Estimate']", 30000, null, "4c2017c7-c5da-4f66-8263-95cbe5717e6d");
+                _singleestimateInfo = new RepoItemInfo(this, "SingleEstimate", "?/?/menuitem[@text~'Single Estimate']", 30000, null, "4c2017c7-c5da-4f66-8263-95cbe5717e6d");
+                _systemInfo = new RepoItemInfo(this, "System", "?/?/menuitem[@text~'System']", 30000, null, "437e13f4-d7bf-479a-80bb-bf1782d2e3f5");
+                _estimateInfo = new RepoItemInfo(this, "Estimate", "?/?/menuitem[@text~'Estimate']", 30000, null, "946675a5-6908-47e5-83ea-655a6f7dd425");
             }
 
             /// <summary>
@@ -2988,26 +3115,74 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The BackupEstimateSingle item.
+            /// The SingleEstimate item.
             /// </summary>
             [RepositoryItem("4c2017c7-c5da-4f66-8263-95cbe5717e6d")]
-            public virtual Ranorex.MenuItem BackupEstimateSingle
+            public virtual Ranorex.MenuItem SingleEstimate
             {
                 get
                 {
-                    return _backupestimatesingleInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                    return _singleestimateInfo.CreateAdapter<Ranorex.MenuItem>(true);
                 }
             }
 
             /// <summary>
-            /// The BackupEstimateSingle item info.
+            /// The SingleEstimate item info.
             /// </summary>
             [RepositoryItemInfo("4c2017c7-c5da-4f66-8263-95cbe5717e6d")]
-            public virtual RepoItemInfo BackupEstimateSingleInfo
+            public virtual RepoItemInfo SingleEstimateInfo
             {
                 get
                 {
-                    return _backupestimatesingleInfo;
+                    return _singleestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The System item.
+            /// </summary>
+            [RepositoryItem("437e13f4-d7bf-479a-80bb-bf1782d2e3f5")]
+            public virtual Ranorex.MenuItem System
+            {
+                get
+                {
+                    return _systemInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The System item info.
+            /// </summary>
+            [RepositoryItemInfo("437e13f4-d7bf-479a-80bb-bf1782d2e3f5")]
+            public virtual RepoItemInfo SystemInfo
+            {
+                get
+                {
+                    return _systemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Estimate item.
+            /// </summary>
+            [RepositoryItem("946675a5-6908-47e5-83ea-655a6f7dd425")]
+            public virtual Ranorex.MenuItem Estimate
+            {
+                get
+                {
+                    return _estimateInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Estimate item info.
+            /// </summary>
+            [RepositoryItemInfo("946675a5-6908-47e5-83ea-655a6f7dd425")]
+            public virtual RepoItemInfo EstimateInfo
+            {
+                get
+                {
+                    return _estimateInfo;
                 }
             }
         }
@@ -3188,16 +3363,16 @@ namespace HB_INSTALL_AUTO
         [RepositoryFolder("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
         public partial class BackupEstimateAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _button___Info;
+            RepoItemInfo _buttonellipisisInfo;
             RepoItemInfo _buttonfinishInfo;
 
             /// <summary>
             /// Creates a new BackupEstimate  folder.
             /// </summary>
             public BackupEstimateAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("BackupEstimate", "/form[@title~'Backup Estimate']", parentFolder, 30000, null, true, "4dab055f-dbe9-41fd-ba28-776ec885b4df", "")
+                    base("BackupEstimate", "/form[@title~'Backup']", parentFolder, 30000, null, true, "4dab055f-dbe9-41fd-ba28-776ec885b4df", "")
             {
-                _button___Info = new RepoItemInfo(this, "Button___", ".////button[@accessiblename='...']", 30000, null, "bcb9c9a1-3754-4aa6-898e-13c5e594dff5");
+                _buttonellipisisInfo = new RepoItemInfo(this, "ButtonEllipisis", ".////button[@accessiblename='...']", 30000, null, "bcb9c9a1-3754-4aa6-898e-13c5e594dff5");
                 _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", ".////button[@accessiblename='Finish']", 30000, null, "17a46077-d5cf-424c-abb3-24a499c15007");
             }
 
@@ -3226,26 +3401,26 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The Button___ item.
+            /// The ButtonEllipisis item.
             /// </summary>
             [RepositoryItem("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
-            public virtual Ranorex.Button Button___
+            public virtual Ranorex.Button ButtonEllipisis
             {
                 get
                 {
-                    return _button___Info.CreateAdapter<Ranorex.Button>(true);
+                    return _buttonellipisisInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Button___ item info.
+            /// The ButtonEllipisis item info.
             /// </summary>
             [RepositoryItemInfo("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
-            public virtual RepoItemInfo Button___Info
+            public virtual RepoItemInfo ButtonEllipisisInfo
             {
                 get
                 {
-                    return _button___Info;
+                    return _buttonellipisisInfo;
                 }
             }
 
@@ -3439,6 +3614,7 @@ namespace HB_INSTALL_AUTO
         public partial class HCSSBackupExistsAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _buttonokInfo;
+            RepoItemInfo _buttonyesInfo;
 
             /// <summary>
             /// Creates a new HCSSBackupExists  folder.
@@ -3447,6 +3623,7 @@ namespace HB_INSTALL_AUTO
                     base("HCSSBackupExists", "/form[@title~'HCSS Backup']", parentFolder, 30000, null, true, "53921fe6-449b-4502-9bee-3ed08c46e088", "")
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text~'OK']", 30000, null, "85c25856-77fd-462f-823e-1dab11a53d32");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text~'Yes']", 30000, null, "ff06a4b1-eb87-419e-b335-9b0a47489259");
             }
 
             /// <summary>
@@ -3489,6 +3666,332 @@ namespace HB_INSTALL_AUTO
             /// The ButtonOK item info.
             /// </summary>
             [RepositoryItemInfo("85c25856-77fd-462f-823e-1dab11a53d32")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("ff06a4b1-eb87-419e-b335-9b0a47489259")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("ff06a4b1-eb87-419e-b335-9b0a47489259")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RestoreEstimatesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("91802fb4-f155-4282-9012-598399319c7f")]
+        public partial class RestoreEstimatesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnextInfo;
+            RepoItemInfo _buttonfinishInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new RestoreEstimates  folder.
+            /// </summary>
+            public RestoreEstimatesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RestoreEstimates", "/form[@title~'Restore Estimate']", parentFolder, 30000, null, true, "91802fb4-f155-4282-9012-598399319c7f", "")
+            {
+                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", ".//button[@text~'Next']", 30000, null, "97bd57a5-794c-480d-bdfb-545401b88266");
+                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", ".//button[@text~'Finish']", 30000, null, "3d3123c1-a6f1-42a7-bc61-cb1d5c181dd1");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", "button[@text='OK']", 30000, null, "14a0a12f-89a5-4db1-acd3-d62a1699bf0d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("91802fb4-f155-4282-9012-598399319c7f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("91802fb4-f155-4282-9012-598399319c7f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNext item.
+            /// </summary>
+            [RepositoryItem("97bd57a5-794c-480d-bdfb-545401b88266")]
+            public virtual Ranorex.Button ButtonNext
+            {
+                get
+                {
+                    return _buttonnextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNext item info.
+            /// </summary>
+            [RepositoryItemInfo("97bd57a5-794c-480d-bdfb-545401b88266")]
+            public virtual RepoItemInfo ButtonNextInfo
+            {
+                get
+                {
+                    return _buttonnextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item.
+            /// </summary>
+            [RepositoryItem("3d3123c1-a6f1-42a7-bc61-cb1d5c181dd1")]
+            public virtual Ranorex.Button ButtonFinish
+            {
+                get
+                {
+                    return _buttonfinishInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item info.
+            /// </summary>
+            [RepositoryItemInfo("3d3123c1-a6f1-42a7-bc61-cb1d5c181dd1")]
+            public virtual RepoItemInfo ButtonFinishInfo
+            {
+                get
+                {
+                    return _buttonfinishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item.
+            /// </summary>
+            [RepositoryItem("14a0a12f-89a5-4db1-acd3-d62a1699bf0d")]
+            public virtual Ranorex.Button ButtonOk
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item info.
+            /// </summary>
+            [RepositoryItemInfo("14a0a12f-89a5-4db1-acd3-d62a1699bf0d")]
+            public virtual RepoItemInfo ButtonOkInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RestoreEstimatesFoundAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce")]
+        public partial class RestoreEstimatesFoundAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _listofestimatesInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new RestoreEstimatesFound  folder.
+            /// </summary>
+            public RestoreEstimatesFoundAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RestoreEstimatesFound", "/form[@title~'Estimates Found on']", parentFolder, 30000, null, true, "ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce", "")
+            {
+                _listofestimatesInfo = new RepoItemInfo(this, "ListOfEstimates", "element[@class~'DFformlist']", 30000, null, "0df7409b-8919-4e86-b891-15706be14374");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", ".//button[@text~'OK']", 30000, null, "856fe66e-3814-41bc-ad1d-549eeb560795");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListOfEstimates item.
+            /// </summary>
+            [RepositoryItem("0df7409b-8919-4e86-b891-15706be14374")]
+            public virtual Ranorex.Unknown ListOfEstimates
+            {
+                get
+                {
+                    return _listofestimatesInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListOfEstimates item info.
+            /// </summary>
+            [RepositoryItemInfo("0df7409b-8919-4e86-b891-15706be14374")]
+            public virtual RepoItemInfo ListOfEstimatesInfo
+            {
+                get
+                {
+                    return _listofestimatesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item.
+            /// </summary>
+            [RepositoryItem("856fe66e-3814-41bc-ad1d-549eeb560795")]
+            public virtual Ranorex.Button ButtonOk
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item info.
+            /// </summary>
+            [RepositoryItemInfo("856fe66e-3814-41bc-ad1d-549eeb560795")]
+            public virtual RepoItemInfo ButtonOkInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RestoreSystemFilesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2e2791a4-b34d-4e90-b85f-08eec822507f")]
+        public partial class RestoreSystemFilesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonrestoresystemInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new RestoreSystemFiles  folder.
+            /// </summary>
+            public RestoreSystemFilesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RestoreSystemFiles", "/form[@title~'Restore System Files']", parentFolder, 30000, null, false, "2e2791a4-b34d-4e90-b85f-08eec822507f", "")
+            {
+                _buttonrestoresystemInfo = new RepoItemInfo(this, "ButtonRestoreSystem", ".////button[@text~'[Restore][System]']", 30000, null, "52005dc7-4e4d-4159-9a88-43c03c9140d0");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text~'OK']", 30000, null, "362988d1-b6d5-4ac2-b9a0-d4cacaa5a650");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2e2791a4-b34d-4e90-b85f-08eec822507f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2e2791a4-b34d-4e90-b85f-08eec822507f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreSystem item.
+            /// </summary>
+            [RepositoryItem("52005dc7-4e4d-4159-9a88-43c03c9140d0")]
+            public virtual Ranorex.Button ButtonRestoreSystem
+            {
+                get
+                {
+                    return _buttonrestoresystemInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreSystem item info.
+            /// </summary>
+            [RepositoryItemInfo("52005dc7-4e4d-4159-9a88-43c03c9140d0")]
+            public virtual RepoItemInfo ButtonRestoreSystemInfo
+            {
+                get
+                {
+                    return _buttonrestoresystemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("362988d1-b6d5-4ac2-b9a0-d4cacaa5a650")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("362988d1-b6d5-4ac2-b9a0-d4cacaa5a650")]
             public virtual RepoItemInfo ButtonOKInfo
             {
                 get

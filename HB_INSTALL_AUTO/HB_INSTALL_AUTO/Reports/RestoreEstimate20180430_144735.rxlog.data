@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4b504d10038f842"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 2:47:38 PM"
+		timestampiso="2018-04-30T19:47:38"
+		endtime="4/30/2018 2:48:13 PM"
+		timeoutfactor="1"
+		module="RestoreEstimate">
+		<detail>
+			RestoreEstimate
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.836"
+			timeRelativeToTestModuleStartTime="00:00.842"
+			timeWallClock="14:47:39"
+			time="00:00.836"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DefaultEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.883"
+			timeRelativeToTestModuleStartTime="00:00.889"
+			timeWallClock="14:47:39"
+			time="00:00.883"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.663"
+			timeRelativeToTestModuleStartTime="00:05.670"
+			timeWallClock="14:47:44"
+			time="00:05.663"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonRestoreEsimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'Restore']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonRestoreEsimate"
+				id="0264168d9bc14b50a882702a1556551e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.839"
+			timeRelativeToTestModuleStartTime="00:09.845"
+			timeWallClock="14:47:48"
+			time="00:09.839"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.RestoreEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Estimate']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.RestoreEstimate"
+				id="946675a5690847e583ea655a6f7dd425"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.767"
+			timeRelativeToTestModuleStartTime="00:10.774"
+			timeWallClock="14:47:49"
+			time="00:10.767"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'RestoreEstimates.ButtonNext' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Restore Estimate']//button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.RestoreEstimates.ButtonNext"
+				id="97bd57a5794c480dbdfb545401b88266"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.656"
+			timeRelativeToTestModuleStartTime="00:11.662"
+			timeWallClock="14:47:50"
+			time="00:11.656"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$DefaultEstimates'.
+			</message>
+			<metainfo
+				itemindex="4"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="111"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.607"
+			timeRelativeToTestModuleStartTime="00:12.614"
+			timeWallClock="14:47:51"
+			time="00:12.607"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'RestoreEstimatesFound.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Estimates Found on']//button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.RestoreEstimatesFound.ButtonOk"
+				id="856fe66e381441bcad1d549eeb560795"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="115"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.511"
+			timeRelativeToTestModuleStartTime="00:13.518"
+			timeWallClock="14:47:52"
+			time="00:13.511"
+			level="Info"
+			category="Mouse"
+			errimg=".\RestoreE_f92fb454_c9a92465_trace.jpg"
+			errthumb=".\RestoreE_f92fb454_c9a92465_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'RestoreEstimates.ButtonFinish' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Restore Estimate']//button[@text~'Finish']"
+				fullname="HB_INSTALL_AUTORepository.RestoreEstimates.ButtonFinish"
+				id="3d3123c1a6f142a7bc61cb1d5c181dd1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="119"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.242"
+			timeRelativeToTestModuleStartTime="00:14.248"
+			timeWallClock="14:47:53"
+			time="00:14.242"
+			level="Info"
+			category="Mouse"
+			errimg=".\RestoreE_f92fb454_a3d8774a_trace.jpg"
+			errthumb=".\RestoreE_f92fb454_a3d8774a_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'RestoreEstimates.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Restore Estimate']/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.RestoreEstimates.ButtonOk"
+				id="14a0a12f89a54db1acd3d62a1699bf0d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreEstimate.cs"
+				codeline="123"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.338"
+			timeRelativeToTestModuleStartTime="00:34.345"
+			timeWallClock="14:48:13"
+			time="00:34.338"
+			level="Error"
+			category="User"
+			errimg=".\RestoreE_f92fb454_425af495_trace.jpg"
+			errthumb=".\RestoreE_f92fb454_425af495_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

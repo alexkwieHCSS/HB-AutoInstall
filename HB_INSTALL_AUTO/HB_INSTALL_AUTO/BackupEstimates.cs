@@ -100,12 +100,12 @@ namespace HB_INSTALL_AUTO
             repo.HeavyBidTabs.ButtonBackupEstimate.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.BackupEstimateSingle' at Center.", repo.HBButtonDropdownOptions.BackupEstimateSingleInfo, new RecordItemIndex(2));
-            repo.HBButtonDropdownOptions.BackupEstimateSingle.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.SingleEstimate' at Center.", repo.HBButtonDropdownOptions.SingleEstimateInfo, new RecordItemIndex(2));
+            repo.HBButtonDropdownOptions.SingleEstimate.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimate.Button___' at Center.", repo.BackupEstimate.Button___Info, new RecordItemIndex(3));
-            repo.BackupEstimate.Button___.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimate.ButtonEllipisis' at Center.", repo.BackupEstimate.ButtonEllipisisInfo, new RecordItemIndex(3));
+            repo.BackupEstimate.ButtonEllipisis.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimateClass.ListExistingEstimates' at Center.", repo.BackupEstimateClass.ListExistingEstimatesInfo, new RecordItemIndex(4));

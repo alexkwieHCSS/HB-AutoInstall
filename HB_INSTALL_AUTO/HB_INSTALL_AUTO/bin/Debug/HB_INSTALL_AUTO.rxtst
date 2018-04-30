@@ -99,6 +99,26 @@ rxversion="7.1">
 			name="MakeNewEstimate"
 			ref="b5eb13e6-7043-43ab-993a-9a8fcc0c889f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingEstimateCode"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="d7f1e071-dfc6-48ea-a9b9-31a0e02b1494"
+					variablename="NewEstimateCode">
+					</var>
+					<var
+					dataname="ExistingEstimateName"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="cf17ed8c-3d08-4ca9-96aa-72ec9ac259ab"
+					variablename="NewEstimateName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="48f77905-969f-461d-ae73-1faeab6b6226"
+			name="RestoreSystem"
+			ref="e98488ca-ce92-4313-ad9d-c786d4f7ec21"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="4fba360d-337e-4e34-87cf-55779cfe1905"
@@ -206,6 +226,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8bc56588-f646-4914-9ac2-91cb74a409de"
+			name="BackupSystem"
+			ref="9989c876-1438-4146-908f-573b9db14d53"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9d9c855d-3eaf-4b91-8e9d-98869105c987"
 			name="OpenHB"
 			ref="1d329228-98ea-4d0a-86e5-cf7640c69a90"
@@ -283,6 +309,7 @@ rxversion="7.1">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
 			name="OpenEstimate"
 			ref="447306e5-8070-4929-bb2d-4496db505397"
@@ -353,6 +380,20 @@ rxversion="7.1">
 			minrange="1"
 			name="InstallServer">
 			</testcase>
+			<testmodule
+			id="e28c981d-c5c4-4f35-ba40-760685b83d89"
+			name="RestoreEstimate"
+			ref="96d67d1e-50eb-4f1d-95a2-6513f38e016c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingEstimateCode"
+					datasourceid="9c0ea62b-1a6d-4879-8268-a65fb1673555"
+					variableid="56d32c59-1af1-401f-b7c9-c153b4a1f33a"
+					variablename="DefaultEstimates">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="HBYearVersion"
@@ -547,6 +588,18 @@ rxversion="7.1">
 							<testmodule
 							id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
 							name="BackupEstimates">
+							</testmodule>
+							<testmodule
+							id="8bc56588-f646-4914-9ac2-91cb74a409de"
+							name="BackupSystem">
+							</testmodule>
+							<testmodule
+							id="e28c981d-c5c4-4f35-ba40-760685b83d89"
+							name="RestoreEstimate">
+							</testmodule>
+							<testmodule
+							id="48f77905-969f-461d-ae73-1faeab6b6226"
+							name="RestoreSystem">
 							</testmodule>
 							<testmodule
 							id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"

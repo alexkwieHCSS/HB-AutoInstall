@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="aefb9f4060b9504"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 1:51:31 PM"
+		timestampiso="2018-04-30T18:51:31"
+		endtime="4/30/2018 1:51:51 PM"
+		timeoutfactor="1"
+		module="BackupSystem">
+		<detail>
+			BackupSystem
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.921"
+			timeRelativeToTestModuleStartTime="00:00.929"
+			timeWallClock="13:51:32"
+			time="00:00.921"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DefaultEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.981"
+			timeRelativeToTestModuleStartTime="00:00.989"
+			timeWallClock="13:51:32"
+			time="00:00.981"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupSystem.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.979"
+			timeRelativeToTestModuleStartTime="00:05.987"
+			timeWallClock="13:51:37"
+			time="00:05.979"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonBackupEstimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'Backup']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonBackupEstimate"
+				id="bc09738913aa49f4a7aecc31e4676ec3"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupSystem.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.209"
+			timeRelativeToTestModuleStartTime="00:10.217"
+			timeWallClock="13:51:41"
+			time="00:10.209"
+			level="Info"
+			category="Mouse"
+			errimg=".\BackupSy_d244b396_da99e098_trace.jpg"
+			errthumb=".\BackupSy_d244b396_da99e098_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.BackupSystem' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'System']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.BackupSystem"
+				id="437e13f4d7bf479a80bbbf1782d2e3f5"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupSystem.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.116"
+			timeRelativeToTestModuleStartTime="00:11.124"
+			timeWallClock="13:51:42"
+			time="00:11.116"
+			level="Info"
+			category="Mouse"
+			errimg=".\BackupSy_d244b396_b8e7d95a_trace.jpg"
+			errthumb=".\BackupSy_d244b396_b8e7d95a_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'BackupEstimate.ButtonEllipisis' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Backup']////button[@accessiblename='...']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimate.ButtonEllipisis"
+				id="bcb9c9a137544aa6898e13c5e594dff5"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\BackupSystem.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.491"
+			timeRelativeToTestModuleStartTime="00:19.499"
+			timeWallClock="13:51:51"
+			time="00:19.491"
+			level="Error"
+			category="User"
+			errimg=".\BackupSy_d244b396_fcb9f949_trace.jpg"
+			errthumb=".\BackupSy_d244b396_fcb9f949_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

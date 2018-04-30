@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4d96dccb3978890"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 2:59:58 PM"
+		timestampiso="2018-04-30T19:59:58"
+		endtime="4/30/2018 3:00:19 PM"
+		timeoutfactor="1"
+		module="RestoreSystem">
+		<detail>
+			RestoreSystem
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.820"
+			timeRelativeToTestModuleStartTime="00:00.827"
+			timeWallClock="14:59:59"
+			time="00:00.820"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.797"
+			timeRelativeToTestModuleStartTime="00:05.804"
+			timeWallClock="15:00:04"
+			time="00:05.797"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonRestoreEsimate' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'Restore']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonRestoreEsimate"
+				id="0264168d9bc14b50a882702a1556551e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.923"
+			timeRelativeToTestModuleStartTime="00:09.929"
+			timeWallClock="15:00:08"
+			time="00:09.923"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.System' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'System']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.System"
+				id="437e13f4d7bf479a80bbbf1782d2e3f5"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.802"
+			timeRelativeToTestModuleStartTime="00:10.808"
+			timeWallClock="15:00:09"
+			time="00:10.802"
+			level="Info"
+			category="Mouse"
+			errimg=".\RestoreS_4bba3f34_6fd34a50_trace.jpg"
+			errthumb=".\RestoreS_4bba3f34_6fd34a50_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'RestoreSystemFiles.ButtonRestoreSystem' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Restore][System]']////button[@text~'[Restore][System]']"
+				fullname="HB_INSTALL_AUTORepository.RestoreSystemFiles.ButtonRestoreSystem"
+				id="52005dc74e4d41599a8843c03c9140d0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.272"
+			timeRelativeToTestModuleStartTime="00:12.278"
+			timeWallClock="15:00:10"
+			time="00:12.272"
+			level="Info"
+			category="Mouse"
+			errimg=".\RestoreS_4bba3f34_4f948920_trace.jpg"
+			errthumb=".\RestoreS_4bba3f34_4f948920_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'RestoreSystemFiles.ButtonOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Restore][System]']/button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.RestoreSystemFiles.ButtonOK"
+				id="362988d1b6d54ac2b9a0d4cacaa5a650"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.640"
+			timeRelativeToTestModuleStartTime="00:20.647"
+			timeWallClock="15:00:19"
+			time="00:20.640"
+			level="Error"
+			category="User"
+			errimg=".\RestoreS_4bba3f34_fe83a182_trace.jpg"
+			errthumb=".\RestoreS_4bba3f34_fe83a182_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

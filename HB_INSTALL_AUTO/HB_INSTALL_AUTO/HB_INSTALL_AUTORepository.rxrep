@@ -481,6 +481,33 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'HB']///toolbar/button[@text~'Backup']
 			</item>
+			<item
+			capname="button"
+			id="0264168d-9bc1-4b50-a882-702a1556551e"
+			name="ButtonRestoreEsimate"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/button[@text~'Restore']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="e1bde496-272a-489a-9c0f-8da419f10914"
+			name="AfxAd4000081000300"
+			refimgid="7a77efa0-b9f9-4ddf-bebc-5cb9c554d342"
+			refpath="/form[@title~'^HB\ 2018\.1\ -\ 1-BRIDGE\ -\ Br']/element[@class='Afx:ad40000:8:10003:0:0']"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@class='Afx:ad40000:8:10003:0:0']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e2834541-93fd-4733-8d22-478b0704a261"
+			name="Close"
+			refimgid="3b2a6c69-cc53-458b-aadd-a5b80a7ffe25"
+			refpath="/form[@title='HB 2018.1 - 1-BRIDGE - Bridge Sample Estimate - Estimate created on: 04/30/2018 by User#: 13 - - [Estimate Information Setup]']/element[@controlid='3244']/form[@controlid='513']/element[@controlid='4384']/element[@class='DFbutton']/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@controlid='3244']/form[@controlid='513']//button[@accessiblekeyboardshortcut='Alt+c']
+			</item>
 			<basepath>
 				/form[@title~'HB']
 			</basepath>
@@ -1077,9 +1104,23 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<item
 			capname="menuitem"
 			id="4c2017c7-c5da-4f66-8263-95cbe5717e6d"
-			name="BackupEstimateSingle"
+			name="SingleEstimate"
 			searchtimeout="30000ms">
 				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Single Estimate']
+			</item>
+			<item
+			capname="menuitem"
+			id="437e13f4-d7bf-479a-80bb-bf1782d2e3f5"
+			name="System"
+			searchtimeout="30000ms">
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'System']
+			</item>
+			<item
+			capname="menuitem"
+			id="946675a5-6908-47e5-83ea-655a6f7dd425"
+			name="Estimate"
+			searchtimeout="30000ms">
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Estimate']
 			</item>
 			<basepath>
 				/form[@processname='HEAVYBID' and @class='XTPPopupBar']
@@ -1153,19 +1194,19 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			<item
 			capname="button"
 			id="bcb9c9a1-3754-4aa6-898e-13c5e594dff5"
-			name="Button___"
+			name="ButtonEllipisis"
 			searchtimeout="30000ms">
-				/form[@title~'Backup Estimate']////button[@accessiblename='...']
+				/form[@title~'Backup']////button[@accessiblename='...']
 			</item>
 			<item
 			capname="button"
 			id="17a46077-d5cf-424c-abb3-24a499c15007"
 			name="ButtonFinish"
 			searchtimeout="30000ms">
-				/form[@title~'Backup Estimate']////button[@accessiblename='Finish']
+				/form[@title~'Backup']////button[@accessiblename='Finish']
 			</item>
 			<basepath>
-				/form[@title~'Backup Estimate']
+				/form[@title~'Backup']
 			</basepath>
 		</appfolder>
 		<appfolder
@@ -1173,6 +1214,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		id="be6c54b9-5252-4e1f-b2ca-962998a62625"
 		isrooted="True"
 		name="BackupEstimateClass"
+		refimgid="7bc8d6a1-4bd4-4134-9b20-fd1c54e6afe8"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -1225,8 +1267,98 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title~'HCSS Backup']/button[@text~'OK']
 			</item>
+			<item
+			capname="button"
+			id="ff06a4b1-eb87-419e-b335-9b0a47489259"
+			name="ButtonYes"
+			searchtimeout="30000ms">
+				/form[@title~'HCSS Backup']/button[@text~'Yes']
+			</item>
 			<basepath>
 				/form[@title~'HCSS Backup']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="91802fb4-f155-4282-9012-598399319c7f"
+		isrooted="True"
+		name="RestoreEstimates"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="97bd57a5-794c-480d-bdfb-545401b88266"
+			name="ButtonNext"
+			searchtimeout="30000ms">
+				/form[@title~'Restore Estimate']//button[@text~'Next']
+			</item>
+			<item
+			capname="button"
+			id="3d3123c1-a6f1-42a7-bc61-cb1d5c181dd1"
+			name="ButtonFinish"
+			searchtimeout="30000ms">
+				/form[@title~'Restore Estimate']//button[@text~'Finish']
+			</item>
+			<item
+			capname="button"
+			id="14a0a12f-89a5-4db1-acd3-d62a1699bf0d"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@title~'Restore Estimate']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title~'Restore Estimate']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="ac6e9dd7-8a80-4303-a381-ddd1b5cfbcce"
+		isrooted="True"
+		name="RestoreEstimatesFound"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="unknown"
+			id="0df7409b-8919-4e86-b891-15706be14374"
+			name="ListOfEstimates"
+			refimgid="c33bfbce-edd0-409b-8870-eae256bc0dad"
+			searchtimeout="30000ms">
+				/form[@title~'Estimates Found on']/element[@class~'DFformlist']
+			</item>
+			<item
+			capname="button"
+			id="856fe66e-3814-41bc-ad1d-549eeb560795"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@title~'Estimates Found on']//button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title~'Estimates Found on']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="2e2791a4-b34d-4e90-b85f-08eec822507f"
+		isrooted="True"
+		name="RestoreSystemFiles"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="button"
+			id="52005dc7-4e4d-4159-9a88-43c03c9140d0"
+			name="ButtonRestoreSystem"
+			searchtimeout="30000ms">
+				/form[@title~'Restore System Files']////button[@text~'[Restore][System]']
+			</item>
+			<item
+			capname="button"
+			id="362988d1-b6d5-4ac2-b9a0-d4cacaa5a650"
+			name="ButtonOK"
+			searchtimeout="30000ms">
+				/form[@title~'Restore System Files']/button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title~'Restore System Files']
 			</basepath>
 		</appfolder>
 		<basepath>
@@ -1252,6 +1384,11 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 		id="908f7326-7b3d-42fd-984d-42bcd53b2274"
 		name="NewEstimateCode">
 			Estimate-1
+		</var>
+		<var
+		id="4a9c9e81-e30b-48fc-b781-5ee40916d18d"
+		name="NewEstimateName">
+			Test Estimate 1
 		</var>
 	</variables>
 </repository>

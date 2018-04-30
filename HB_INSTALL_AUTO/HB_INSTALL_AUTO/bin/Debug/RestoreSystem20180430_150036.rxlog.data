@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="9a7c5f5ee309fa0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="4/30/2018 3:00:39 PM"
+		timestampiso="2018-04-30T20:00:39"
+		endtime="4/30/2018 3:00:40 PM"
+		timeoutfactor="1"
+		module="RestoreSystem">
+		<detail>
+			RestoreSystem
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.876"
+			timeRelativeToTestModuleStartTime="00:00.883"
+			timeWallClock="15:00:40"
+			time="00:00.876"
+			level="Info"
+			category="Mouse"
+			errimg=".\RestoreS_7857fad9_34908e83_trace.jpg"
+			errthumb=".\RestoreS_7857fad9_34908e83_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'File']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.FileTab"
+				id="0295fd3ffff74963a5b3c56a9ac69481"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RestoreSystem.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.013"
+			timeRelativeToTestModuleStartTime="00:01.020"
+			timeWallClock="15:00:40"
+			time="00:01.013"
+			level="Error"
+			category="User"
+			errimg=".\RestoreS_7857fad9_d556ee40_trace.jpg"
+			errthumb=".\RestoreS_7857fad9_d556ee40_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

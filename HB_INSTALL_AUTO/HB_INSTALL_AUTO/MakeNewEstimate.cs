@@ -55,18 +55,6 @@ namespace HB_INSTALL_AUTO
 
 #region Variables
 
-        string _NewEstimateName;
-
-        /// <summary>
-        /// Gets or sets the value of variable NewEstimateName.
-        /// </summary>
-        [TestVariable("cf17ed8c-3d08-4ca9-96aa-72ec9ac259ab")]
-        public string NewEstimateName
-        {
-            get { return _NewEstimateName; }
-            set { _NewEstimateName = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable NewEstimateCode.
         /// </summary>
@@ -75,6 +63,16 @@ namespace HB_INSTALL_AUTO
         {
             get { return repo.NewEstimateCode; }
             set { repo.NewEstimateCode = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable NewEstimateName.
+        /// </summary>
+        [TestVariable("cf17ed8c-3d08-4ca9-96aa-72ec9ac259ab")]
+        public string NewEstimateName
+        {
+            get { return repo.NewEstimateName; }
+            set { repo.NewEstimateName = value; }
         }
 
 #endregion
@@ -150,6 +148,10 @@ namespace HB_INSTALL_AUTO
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.FinishButton' at Center.", repo.NewEstimate.FinishButtonInfo, new RecordItemIndex(11));
             repo.NewEstimate.FinishButton.Click();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape}{Escape}'.", new RecordItemIndex(12));
+            Keyboard.Press("{Escape}{Escape}");
+            Delay.Milliseconds(0);
             
         }
 
