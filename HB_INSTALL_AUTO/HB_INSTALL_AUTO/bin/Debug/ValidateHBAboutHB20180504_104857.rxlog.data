@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1555429a8a38ba40"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/4/2018 10:49:00 AM"
+		timestampiso="2018-05-04T15:49:00"
+		endtime="5/4/2018 10:50:26 AM"
+		timeoutfactor="1"
+		module="ValidateHBAboutHB">
+		<detail>
+			ValidateHBAboutHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.765"
+			timeRelativeToTestModuleStartTime="00:00.765"
+			timeWallClock="10:49:01"
+			time="00:00.765"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.796"
+			timeRelativeToTestModuleStartTime="00:00.796"
+			timeWallClock="10:49:01"
+			time="00:00.796"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.HelpTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.HelpTab"
+				id="f776058332ad4ea0ae2b7afacacf7a0a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.671"
+			timeRelativeToTestModuleStartTime="00:02.671"
+			timeWallClock="10:49:03"
+			time="00:02.671"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.HelpAboutHeavyBidButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@text~'About HeavyBid']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.HelpAboutHeavyBidButton"
+				id="abeec274cb754ff4be97d76ab7a91a22"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.062"
+			timeRelativeToTestModuleStartTime="00:04.062"
+			timeWallClock="10:49:04"
+			time="00:04.062"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'AboutHeavyBid.HBVersionAboutScreen'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']//text[@accessiblename~'Advanced']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.HBVersionAboutScreen"
+				id="78abad0f07524e53a0930f0c8446d2b4"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="102"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.176"
+			timeRelativeToTestModuleStartTime="01:04.176"
+			timeWallClock="10:50:04"
+			time="01:04.176"
+			level="Failure"
+			category="Validation"
+			errimg=".\Validate_5d796cd5_05b1617c_trace.jpg"
+			errthumb=".\Validate_5d796cd5_05b1617c_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.AboutHeavyBid.HBVersionAboutScreen' does not match the specified RegEx (Failed to find item 'HB_INSTALL_AUTORepository.AboutHeavyBid.HBVersionAboutScreen'. No element found for path '/form[@title~'About HeavyBid']//text[@accessiblename~'Advanced']' within 1m.).
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']//text[@accessiblename~'Advanced']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.HBVersionAboutScreen"
+				id="78abad0f07524e53a0930f0c8446d2b4"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="103"
+				loglvl="Failure"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.176"
+			timeRelativeToTestModuleStartTime="01:04.176"
+			timeWallClock="10:50:04"
+			time="01:04.176"
+			level="Info"
+			category="Mouse"
+			errimg=".\Validate_5d796cd5_05b1617c_trace.jpg"
+			errthumb=".\Validate_5d796cd5_05b1617c_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'AboutHeavyBid.SystemInfo' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'About HeavyBid']//button[@text~'System Info']"
+				fullname="HB_INSTALL_AUTORepository.AboutHeavyBid.SystemInfo"
+				id="f9b508e4f6b34b25b9fae48c87faa15c"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:26.164"
+			timeRelativeToTestModuleStartTime="01:26.164"
+			timeWallClock="10:50:26"
+			time="01:26.164"
+			level="Error"
+			category="User"
+			errimg=".\Validate_5d796cd5_b3c09197_trace.jpg"
+			errthumb=".\Validate_5d796cd5_b3c09197_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

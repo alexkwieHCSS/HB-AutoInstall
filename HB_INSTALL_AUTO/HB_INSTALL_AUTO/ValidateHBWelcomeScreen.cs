@@ -121,9 +121,9 @@ namespace HB_INSTALL_AUTO
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(5));
-                //Validate.Exists(repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, Validate.DefaultMessage, false);
-                //Delay.Milliseconds(0);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(5));
+                Validate.Exists(repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
         }

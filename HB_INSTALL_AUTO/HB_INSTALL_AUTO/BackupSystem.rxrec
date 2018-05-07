@@ -27,11 +27,6 @@ rxversion="7.1">
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
-		<var
-		id="ae6cbf45-ceb3-40c2-a8cf-a038b1a8e0e9"
-		name="DefaultEstimates">
-			1-Bridge
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem

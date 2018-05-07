@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="d8d6ad492960192"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/4/2018 10:36:36 AM"
+		timestampiso="2018-05-04T15:36:36"
+		endtime="5/4/2018 10:36:38 AM"
+		timeoutfactor="1"
+		module="PreviousServerInstall">
+		<detail>
+			PreviousServerInstall
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.812"
+			timeRelativeToTestModuleStartTime="00:00.828"
+			timeWallClock="10:36:36"
+			time="00:00.812"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating Exists on item 'HeavyBidServerSetup.PreviousInstallPopup'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'[previous][overwritten]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.PreviousInstallPopup"
+				id="8165b2483df34bb681419f36df9ec7e7"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PreviousServerInstall.cs"
+				codeline="83"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.484"
+			timeRelativeToTestModuleStartTime="00:01.500"
+			timeWallClock="10:36:37"
+			time="00:01.484"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'PreviousInstallPopup' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'[previous][overwritten]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.PreviousInstallPopup"
+				id="8165b2483df34bb681419f36df9ec7e7"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PreviousServerInstall.cs"
+				codeline="84"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.500"
+			timeRelativeToTestModuleStartTime="00:01.515"
+			timeWallClock="10:36:37"
+			time="00:01.500"
+			level="Info"
+			category="Mouse">
+			<message>
+				(Optional Action)<br/>Mouse Left Click item 'HeavyBidServerSetup.ButtonYes' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Yes']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ButtonYes"
+				id="1cbaddb5161e467eae7542781f0dd64d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PreviousServerInstall.cs"
+				codeline="89"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

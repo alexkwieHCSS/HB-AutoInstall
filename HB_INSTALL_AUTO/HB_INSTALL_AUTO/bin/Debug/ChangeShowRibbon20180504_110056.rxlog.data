@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1889a41421e60aba"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/4/2018 11:00:59 AM"
+		timestampiso="2018-05-04T16:00:59"
+		endtime="5/4/2018 11:01:16 AM"
+		timeoutfactor="1"
+		module="ChangeShowRibbon">
+		<detail>
+			ChangeShowRibbon
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.765"
+			timeRelativeToTestModuleStartTime="00:00.765"
+			timeWallClock="11:01:00"
+			time="00:00.765"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.HCSSIcon' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar[@accessiblename~'Ribbon Bar']/button[@accessiblename~'App']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.HCSSIcon"
+				id="0cde0962f6ba4e5e99c0dd98a17c0783"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.312"
+			timeRelativeToTestModuleStartTime="00:02.312"
+			timeWallClock="11:01:01"
+			time="00:02.312"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeNotEqual (Checked!='Show Ribbon Bar') on item 'HBButtonDropdownOptions.ShowRibbonBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar"
+				id="514a5807f0da43f8a0465b8a2fcc7dc0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.484"
+			timeRelativeToTestModuleStartTime="00:02.484"
+			timeWallClock="11:01:02"
+			time="00:02.484"
+			level="Success"
+			category="Validation"
+			errimg=".\ChangeSh_ec0f3b82_c2523724_trace.jpg"
+			errthumb=".\ChangeSh_ec0f3b82_c2523724_trace_thumb.jpg">
+			<message>
+				Attribute 'Checked' of element for item 'HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar' does not match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar"
+				id="514a5807f0da43f8a0465b8a2fcc7dc0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="87"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.484"
+			timeRelativeToTestModuleStartTime="00:02.484"
+			timeWallClock="11:01:02"
+			time="00:02.484"
+			level="Info"
+			category="Mouse"
+			errimg=".\ChangeSh_ec0f3b82_c2523724_trace.jpg"
+			errthumb=".\ChangeSh_ec0f3b82_c2523724_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HBButtonDropdownOptions.ShowRibbonBar' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar"
+				id="514a5807f0da43f8a0465b8a2fcc7dc0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.296"
+			timeRelativeToTestModuleStartTime="00:03.296"
+			timeWallClock="11:01:02"
+			time="00:03.296"
+			level="Info"
+			category="Validation"
+			errimg=".\ChangeSh_ec0f3b82_837eeafe_trace.jpg"
+			errthumb=".\ChangeSh_ec0f3b82_837eeafe_trace_thumb.jpg">
+			<message>
+				Validating Exists on item 'HBButtonDropdownOptions.ShowRibbonBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar"
+				id="514a5807f0da43f8a0465b8a2fcc7dc0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.498"
+			timeRelativeToTestModuleStartTime="00:16.498"
+			timeWallClock="11:01:16"
+			time="00:16.498"
+			level="Error"
+			category="User"
+			errimg=".\ChangeSh_ec0f3b82_b9f2b0a2_trace.jpg"
+			errthumb=".\ChangeSh_ec0f3b82_b9f2b0a2_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

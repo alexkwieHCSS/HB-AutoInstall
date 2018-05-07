@@ -108,8 +108,8 @@ namespace HB_INSTALL_AUTO
             
             // E.6
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Text~'[Article][List]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(5));
-                Validate.Attribute(repo.GoogleChrome.TabsInfo, "Text", new Regex("[Article][List]"), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegEx (Title~'[Article][List]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(5));
+                Validate.Attribute(repo.GoogleChrome.TabsInfo, "Title", new Regex("[Article][List]"), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             

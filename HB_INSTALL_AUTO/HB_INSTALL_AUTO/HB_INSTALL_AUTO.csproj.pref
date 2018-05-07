@@ -1,12 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="HB_INSTALL_AUTO.rxtst" />
+    <Element value="CustomReport.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="RestoreEstimate.rxrec" />
-    <Element value="RestoreSystem.rxrec" />
+    <Element value="CustomReport.rxrec" />
+    <Element value="MakeNewEstimate.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

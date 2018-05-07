@@ -41,7 +41,6 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public ValidateHBF1Help()
         {
-            YearVersion = "2018.1";
         }
 
         /// <summary>
@@ -53,16 +52,6 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable YearVersion.
-        /// </summary>
-        [TestVariable("83fd6490-cc3c-439a-ae8a-808dbf37705c")]
-        public string YearVersion
-        {
-            get { return repo.YearVersion; }
-            set { repo.YearVersion = value; }
-        }
 
 #endregion
 

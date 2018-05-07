@@ -176,6 +176,13 @@ rxversion="7.1">
 			searchtimeout="30000ms">
 				/form[@title~'[HeavyBid][Setup]']/?/?/element[@controlid='3077']/text[@accessiblerole='Text']
 			</item>
+			<item
+			capname="text"
+			id="8165b248-3df3-4bb6-8141-9f36df9ec7e7"
+			name="PreviousInstallPopup"
+			searchtimeout="30000ms">
+				/form[@title~'[HeavyBid][Setup]']/text[@text~'[previous][overwritten]']
+			</item>
 			<basepath>
 				/form[@title~'[HeavyBid][Setup]']
 			</basepath>
@@ -507,6 +514,70 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			refpath="/form[@title='HB 2018.1 - 1-BRIDGE - Bridge Sample Estimate - Estimate created on: 04/30/2018 by User#: 13 - - [Estimate Information Setup]']/element[@controlid='3244']/form[@controlid='513']/element[@controlid='4384']/element[@class='DFbutton']/button[@accessiblename='Close']"
 			searchtimeout="30000ms">
 				/form[@title~'HB']/element[@controlid='3244']/form[@controlid='513']//button[@accessiblekeyboardshortcut='Alt+c']
+			</item>
+			<item
+			capname="button"
+			id="0cde0962-f6ba-4e5e-99c0-dd98a17c0783"
+			name="HCSSIcon"
+			refimgid="43587b24-e2f1-467f-bc4f-e1d80bdb3ffc"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar[@accessiblename~'Ribbon Bar']/button[@accessiblename~'App']
+			</item>
+			<item
+			capname="tabpage"
+			id="10c418f8-df89-45d4-ab06-12340733a28d"
+			name="ToolsTab"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Tools']
+			</item>
+			<item
+			capname="button"
+			id="c1df175c-d963-43c1-8296-2e0bda44e88c"
+			name="ReindexFilesButton"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/?/?/toolbar/button[@text~'Reindex Files']
+			</item>
+			<item
+			capname="tabpage"
+			id="6148dba9-921d-472a-ab45-f5436a302652"
+			name="SummaryTab"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Summary']
+			</item>
+			<item
+			capname="button"
+			id="5c354878-490f-49f4-be86-ec18b767aa42"
+			name="ButtonCustomizedReports"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/?/?/toolbar[1]/button[@accessiblename='Customized']
+			</item>
+			<item
+			capname="tabpage"
+			id="5048bb26-2beb-4526-b63f-95ca95f2b8d1"
+			name="ReportTab"
+			searchtimeout="30000ms">
+				/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Report']
+			</item>
+			<item
+			capname="button"
+			id="c972e291-5f87-4f21-a5a4-3bc3f2feb563"
+			name="CostReportsButton"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/?/?/toolbar/button[@text~'Cost Reports']
+			</item>
+			<item
+			capname="unknown"
+			id="3a8341e4-a2dc-4a74-8216-d95c335802a7"
+			name="HBMultiDocumentInterface"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@class='DFMDIClient']
+			</item>
+			<item
+			capname="unknown"
+			id="cb1ae38d-c727-431b-bd52-84cfed7191fa"
+			name="NewItem"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element
 			</item>
 			<basepath>
 				/form[@title~'HB']
@@ -921,7 +992,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
 			name="Tabs"
 			searchtimeout="30000ms">
-				/form[@processname~'chrome']/?/?/?/?/tabpage[@selected='True']
+				/form[@processname~'chrome']/?/?/?/?/?/?/tabpage[@selected='True']
 			</item>
 			<item
 			addcaps="tabpage,accessible"
@@ -946,7 +1017,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			name="AddressBar"
 			refimgid="58fae812-5276-456c-a4f2-6efdecef7621"
 			searchtimeout="30000ms">
-				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']
+				/form[@processname~'chrome']/?/?/?/?/?/?/text[@accessiblename='Address and search bar']
 			</item>
 			<item
 			capname="text"
@@ -960,7 +1031,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			id="9fbd3384-29a8-41d7-a549-8d277cb9ca8f"
 			name="LinkHelpHCSS"
 			searchtimeout="30000ms">
-				/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@text~'help.hcss.com']
+				/form[@processname~'chrome']/?/?/?/?/?/?/text[@text~'https://help.hcss.com']
 			</item>
 			<basepath>
 				/form[@processname~'chrome']
@@ -1122,6 +1193,15 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Estimate']
 			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="514a5807-f0da-43f8-a046-5b8a2fcc7dc0"
+			name="ShowRibbonBar"
+			refimgid="492ab69c-47e7-4354-a68b-69e2a50c80e9"
+			searchtimeout="30000ms">
+				/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']
+			</item>
 			<basepath>
 				/form[@processname='HEAVYBID' and @class='XTPPopupBar']
 			</basepath>
@@ -1221,6 +1301,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			capname="unknown"
 			id="127b01f9-8a45-4ec1-9652-a2ddbf0addd1"
 			name="ListExistingEstimates"
+			refimgid="99ed9cc0-2601-4892-9278-3b344ba1f246"
 			searchtimeout="30000ms">
 				/form[@class~'DFDialogClass']/element[@class='DFformlist']
 			</item>
@@ -1359,6 +1440,181 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			</item>
 			<basepath>
 				/form[@title~'Restore System Files']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="a14de23b-2f66-413d-b20a-5052de247471"
+		isrooted="True"
+		name="ReindexScreen"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="checkbox"
+			id="0524cc31-5048-4725-9e8a-eebd44f42088"
+			name="CurrentEstimateCheckbox"
+			searchtimeout="30000ms">
+				/form[@title='Reindex']//?/?/checkbox[@text~'Estimate']
+			</item>
+			<item
+			capname="checkbox"
+			id="2d545903-656c-4dfd-aaa2-dbe7e4ace38a"
+			name="SystemFilesCheckbox"
+			searchtimeout="30000ms">
+				/form[@title='Reindex']//?/?/checkbox[@text~'System']
+			</item>
+			<item
+			capname="button"
+			id="ae39fc7a-1e07-4702-a858-72287afa0635"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@title='Reindex']/?/?/?/button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title='Reindex']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="5d9cd3ce-3d3b-479e-b6b3-4ab686c60ade"
+		isrooted="True"
+		name="ReindexWarningScreen"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="button"
+			id="0a7b60b1-7318-4927-91da-44a98ba8c417"
+			name="ButtonOk"
+			searchtimeout="30000ms">
+				/form[@title='Reindex' and @accessiblerole~'Dialog']/button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title='Reindex' and @accessiblerole~'Dialog']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="47272f03-bf4a-494a-9b40-147868f4d646"
+		isrooted="True"
+		name="ReindexApplication"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="button"
+			id="43ebab74-0b1a-453c-b15f-fbb03c9f605d"
+			name="ButtonEllipisis"
+			searchtimeout="30000ms">
+				/form[@title~'Reindex An Estimate']/?/?/?/?/button[@text='...']
+			</item>
+			<item
+			capname="unknown"
+			id="2351f469-60d7-4791-b6d3-eb08a252aeff"
+			name="NewItem"
+			searchtimeout="30000ms">
+				/form[@title~'Reindex An Estimate']/element
+			</item>
+			<item
+			capname="checkbox"
+			id="f9f875c4-18e4-4e78-ba4b-8b8b280f648b"
+			name="SystemFilesCheckbox"
+			searchtimeout="30000ms">
+				/form[@title~'Reindex An Estimate']/?/?/?/checkbox[@text~'System']
+			</item>
+			<item
+			capname="checkbox"
+			id="a5df4f7b-446c-4bb4-82c6-39356de4e464"
+			name="CurrentEstimateCheckbox"
+			searchtimeout="30000ms">
+				/form[@title~'Reindex An Estimate']/?/?/?/checkbox[@text~'estimate']
+			</item>
+			<item
+			capname="button"
+			id="ebcf1095-d44e-4f30-8240-deae009ec9d0"
+			name="ButtonOK"
+			searchtimeout="30000ms">
+				/form[@title~'Reindex An Estimate']/?/?/?/button[@text~'OK']
+			</item>
+			<basepath>
+				/form[@title~'Reindex An Estimate']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="1a36fca5-82b7-46cd-a0ad-214a2000d63e"
+		isrooted="True"
+		name="CustomizedBidProposalSetup"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="button"
+			id="aef67740-d538-48a9-b586-0e90e49d9f40"
+			name="ButtonPreviewReport"
+			searchtimeout="30000ms">
+				/form[@title~'Customized Bid Proposal']/?/?/?/button[@text~'Preview Report']
+			</item>
+			<item
+			capname="button"
+			id="d2350da4-370b-4fdf-b08f-589e7c95d66b"
+			name="ButtonCancel"
+			searchtimeout="30000ms">
+				/form[@title~'Customized Bid Proposal']/?/?/?/button[@text~'Cancel']
+			</item>
+			<basepath>
+				/form[@title~'Customized Bid Proposal']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="unknown"
+		id="8dce5a36-0438-4d8a-a430-f5ee5d0dd202"
+		isrooted="True"
+		name="HBMultiDocumentInterface"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="treeitem"
+			id="b949b9a0-eb4c-42aa-8ea6-59c6cfa3cea4"
+			name="CostReport"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Cost Report']
+			</item>
+			<item
+			capname="treeitem"
+			id="35cb090f-0a33-449b-9e8b-6d683f1a2ccd"
+			name="CostReportClassic"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@accessiblename='Cost Report Classic']
+			</item>
+			<basepath>
+				/form[@title~'HB']/element[@class='DFMDIClient']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="854ea1ed-2e7a-4fac-80af-d7ed4d5d8940"
+		isrooted="True"
+		name="HBReportPlusViewer"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			capname="button"
+			id="cb18577a-8a9a-44ba-b589-2341b2976cd9"
+			name="ButtonClosePreview"
+			searchtimeout="30000ms">
+				/form[@text~'HeavyBid Reports Plus']/?//?/button[@text~'Close Print Preview']
+			</item>
+			<basepath>
+				/form[@text~'HeavyBid Reports Plus']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="c91afe55-239b-47e8-ac1a-a6364e311f5d"
+		isrooted="True"
+		name="PrintPreview"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/form[@title~'Print Preview']
 			</basepath>
 		</appfolder>
 		<basepath>

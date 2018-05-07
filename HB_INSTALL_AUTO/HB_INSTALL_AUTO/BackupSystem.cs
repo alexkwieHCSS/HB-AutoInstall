@@ -41,7 +41,6 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public BackupSystem()
         {
-            DefaultEstimates = "1-Bridge";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
-
-        string _DefaultEstimates;
-
-        /// <summary>
-        /// Gets or sets the value of variable DefaultEstimates.
-        /// </summary>
-        [TestVariable("ae6cbf45-ceb3-40c2-a8cf-a038b1a8e0e9")]
-        public string DefaultEstimates
-        {
-            get { return _DefaultEstimates; }
-            set { _DefaultEstimates = value; }
-        }
 
 #endregion
 

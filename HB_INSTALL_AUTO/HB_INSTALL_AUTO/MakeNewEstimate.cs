@@ -149,9 +149,9 @@ namespace HB_INSTALL_AUTO
             repo.NewEstimate.FinishButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape}{Escape}'.", new RecordItemIndex(12));
-            Keyboard.Press("{Escape}{Escape}");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape}{Escape}'.", new RecordItemIndex(12));
+            //Keyboard.Press("{Escape}{Escape}");
+            //Delay.Milliseconds(0);
             
         }
 

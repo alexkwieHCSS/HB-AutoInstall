@@ -43,6 +43,12 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="09abe5c0-261a-44ef-a773-b7d814b662fb"
+			name="CustomReportClassic"
+			ref="619992cd-99e2-4495-a459-7068d3a31470"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
 			name="Validation">
@@ -58,10 +64,15 @@ rxversion="7.1">
 			name="Uninstall">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
 			name="PreviousServerInstall"
 			ref="6936efa7-f3ef-4abb-967f-75ea9f63544b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="251e416f-54d2-4500-a915-2d68435fbab3"
+			name="CostReport"
+			ref="0aeaea00-f4f8-4126-8fcf-4c438d3cb406"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -92,6 +103,12 @@ rxversion="7.1">
 			id="3afd5d86-4f5a-4700-ba4a-ec3feb6b05d6"
 			name="CrystalReadyToInstall"
 			ref="cab4dd71-3176-47ad-ba07-a5b81f158d78"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
+			name="CustomReport"
+			ref="d5416404-1150-4a8b-a89e-00065398e8ce"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -156,6 +173,12 @@ rxversion="7.1">
 			id="5dec2758-08d0-4766-a049-1806d208b0a7"
 			name="CrystalInstallWelcome"
 			ref="ec2ce4a5-32a8-42d1-9b2b-947b74847d8b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="60ea7bd6-e154-4641-ab52-83a71f053569"
+			name="ChangeShowRibbon"
+			ref="db99fbaa-ee00-4634-a8cf-5e650f8418f6"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -226,6 +249,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="89386457-4449-4f96-9904-6166dba7be16"
+			name="ReindexHeavyBidExternal"
+			ref="79760d42-1908-4bfb-a9ea-2af85fc59f6b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8bc56588-f646-4914-9ac2-91cb74a409de"
 			name="BackupSystem"
 			ref="9989c876-1438-4146-908f-573b9db14d53"
@@ -270,9 +299,18 @@ rxversion="7.1">
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="ExistingEstimates"
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018"
+			maxrange="4"
+			minrange="4"
 			name="OpenHBAfterRegister">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="c451ede4-f70a-4f8e-83ce-13e8074c46f1"
@@ -417,6 +455,12 @@ rxversion="7.1">
 			name="OpenAndRegisterHB">
 			</testcase>
 			<testmodule
+			id="ef3b2252-718f-4464-88b5-5c15219008cf"
+			name="ReindexFiles"
+			ref="f248ff38-1a5d-46a7-b8f1-436a46ab7a69"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
 			name="CheckBitImage"
@@ -478,12 +522,12 @@ rxversion="7.1">
 							name="DestinationFolderHBNetwork">
 							</testmodule>
 							<testmodule
-							id="c73cb5e6-13a6-46d7-9735-33c1beac9054"
-							name="ConfirmHBInstallFinish">
-							</testmodule>
-							<testmodule
 							id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
 							name="PreviousServerInstall">
+							</testmodule>
+							<testmodule
+							id="c73cb5e6-13a6-46d7-9735-33c1beac9054"
+							name="ConfirmHBInstallFinish">
 							</testmodule>
 						</testcase>
 						<testcase
@@ -574,6 +618,10 @@ rxversion="7.1">
 							name="CheckBitImage">
 							</testmodule>
 							<testmodule
+							id="60ea7bd6-e154-4641-ab52-83a71f053569"
+							name="ChangeShowRibbon">
+							</testmodule>
+							<testmodule
 							id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
 							name="ValidateHBAboutHB">
 							</testmodule>
@@ -584,6 +632,18 @@ rxversion="7.1">
 							<testmodule
 							id="3f0775bf-b172-4eaf-8c81-8797da4306bd"
 							name="MakeNewEstimate">
+							</testmodule>
+							<testmodule
+							id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
+							name="CustomReport">
+							</testmodule>
+							<testmodule
+							id="09abe5c0-261a-44ef-a773-b7d814b662fb"
+							name="CustomReportClassic">
+							</testmodule>
+							<testmodule
+							id="251e416f-54d2-4500-a915-2d68435fbab3"
+							name="CostReport">
 							</testmodule>
 							<testmodule
 							id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
@@ -613,6 +673,10 @@ rxversion="7.1">
 							id="aad71a13-9257-48af-a937-5cb49b130197"
 							name="CloseHB">
 							</testmodule>
+							<testmodule
+							id="ef3b2252-718f-4464-88b5-5c15219008cf"
+							name="ReindexFiles">
+							</testmodule>
 						</testcase>
 						<testcase
 						id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
@@ -632,6 +696,10 @@ rxversion="7.1">
 							<testmodule
 							id="56e14ee4-9151-46de-80f0-88ff9faab518"
 							name="CloseCHeavyBidWS">
+							</testmodule>
+							<testmodule
+							id="89386457-4449-4f96-9904-6166dba7be16"
+							name="ReindexHeavyBidExternal">
 							</testmodule>
 						</testcase>
 						<testcase
@@ -662,7 +730,7 @@ rxversion="7.1">
 	<datasources>
 		<DataSource
 		id="9c0ea62b-1a6d-4879-8268-a65fb1673555"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="ExistingEstimates"
 		type="Ranorex.Core.Data.SimpleDataConnector">
 			<lastknowncolumns>
@@ -714,6 +782,14 @@ rxversion="7.1">
 					</td>
 					<td>
 						Utility Sample Estimate
+					</td>
+				</tr>
+				<tr>
+					<td>
+						1-EST
+					</td>
+					<td>
+						Estimate 1
 					</td>
 				</tr>
 			</table>

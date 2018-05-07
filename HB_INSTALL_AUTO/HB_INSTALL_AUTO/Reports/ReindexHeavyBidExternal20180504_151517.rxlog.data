@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="df5fc589190c0a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/4/2018 3:15:20 PM"
+		timestampiso="2018-05-04T20:15:20"
+		endtime="5/4/2018 3:15:26 PM"
+		timeoutfactor="1"
+		module="ReindexHeavyBidExternal">
+		<detail>
+			ReindexHeavyBidExternal
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.808"
+			timeRelativeToTestModuleStartTime="00:00.815"
+			timeWallClock="15:15:21"
+			time="00:00.808"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DefaultEstimates
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.849"
+			timeRelativeToTestModuleStartTime="00:00.856"
+			timeWallClock="15:15:21"
+			time="00:00.849"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\HeavyBidWS\BIN\REINDEX.EXE' with arguments ' HEAVYMULT' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReindexHeavyBidExternal.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.909"
+			timeRelativeToTestModuleStartTime="00:00.915"
+			timeWallClock="15:15:21"
+			time="00:00.909"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ReindexApplication.ButtonEllipisis' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[Reindex][Estimate]']/?/?/?/?/button[@text='...']"
+				fullname="HB_INSTALL_AUTORepository.ReindexApplication.ButtonEllipisis"
+				id="43ebab740b1a453cb15ffbb03c9f605d"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReindexHeavyBidExternal.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.320"
+			timeRelativeToTestModuleStartTime="00:03.327"
+			timeWallClock="15:15:23"
+			time="00:03.320"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'BackupEstimateClass.ListExistingEstimates' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@class~'DFDialogClass']/element[@class='DFformlist']"
+				fullname="HB_INSTALL_AUTORepository.BackupEstimateClass.ListExistingEstimates"
+				id="127b01f98a454ec19652a2ddbf0addd1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReindexHeavyBidExternal.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.159"
+			timeRelativeToTestModuleStartTime="00:04.166"
+			timeWallClock="15:15:24"
+			time="00:04.159"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$DefaultEstimates'.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReindexHeavyBidExternal.cs"
+				codeline="107"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.206"
+			timeRelativeToTestModuleStartTime="00:05.212"
+			timeWallClock="15:15:25"
+			time="00:05.206"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'EstimateSearch.ButtonOk' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Search: Est Code']//button[@text~'OK']"
+				fullname="HB_INSTALL_AUTORepository.EstimateSearch.ButtonOk"
+				id="e35ba4e1d65145cf930693b4d1aadf5f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReindexHeavyBidExternal.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

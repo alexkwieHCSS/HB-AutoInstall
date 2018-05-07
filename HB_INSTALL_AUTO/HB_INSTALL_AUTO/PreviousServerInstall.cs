@@ -80,10 +80,16 @@ namespace HB_INSTALL_AUTO
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ExitHeavyBid.ButtonYes' at Center.", repo.ExitHeavyBid.ButtonYesInfo, new RecordItemIndex(0));
-                repo.ExitHeavyBid.ButtonYes.Click();
-                Delay.Milliseconds(200);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HeavyBidServerSetup.PreviousInstallPopup'.", repo.HeavyBidServerSetup.PreviousInstallPopupInfo, new RecordItemIndex(0));
+                Validate.Exists(repo.HeavyBidServerSetup.PreviousInstallPopupInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HeavyBidServerSetup.ButtonYes' at Center.", repo.HeavyBidServerSetup.ButtonYesInfo, new RecordItemIndex(1));
+                repo.HeavyBidServerSetup.ButtonYes.Click();
+                Delay.Milliseconds(200);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
         }
 

@@ -592,7 +592,7 @@ P8KNrf8APR/0/wAKKKADa3/PR/0/wo2t/wA9H/T/AAoooANrf89H/T/Cja3/AD0f9P8ACiigD//Z
 		<keysequenceitem
 		KeySequence="{Escape}{Escape}"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="6b86eade-8644-4d79-a543-1fc5f6b54041">

@@ -136,7 +136,7 @@ rxversion="7.1">
 				AccessibleName
 			</matchname>
 			<matchvalue>
-				[Article][List]
+				[HCSS][Help]
 			</matchvalue>
 		</validationitem>
 		<validationitem

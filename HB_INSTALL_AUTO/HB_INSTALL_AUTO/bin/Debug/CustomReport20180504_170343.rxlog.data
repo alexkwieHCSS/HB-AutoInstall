@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="12218a98125c7c2a"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/4/2018 5:03:46 PM"
+		timestampiso="2018-05-04T22:03:46"
+		endtime="5/4/2018 5:03:48 PM"
+		timeoutfactor="1"
+		module="CustomReport">
+		<detail>
+			CustomReport
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.745"
+			timeRelativeToTestModuleStartTime="00:00.745"
+			timeWallClock="17:03:47"
+			time="00:00.745"
+			level="Info"
+			category="Mouse"
+			errimg=".\CustomRe_40f6bc88_ae4883f8_trace.jpg"
+			errthumb=".\CustomRe_40f6bc88_ae4883f8_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.SummaryTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Summary']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.SummaryTab"
+				id="6148dba9921d472aab45f5436a302652"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.417"
+			timeRelativeToTestModuleStartTime="00:01.417"
+			timeWallClock="17:03:47"
+			time="00:01.417"
+			level="Error"
+			category="User"
+			errimg=".\CustomRe_40f6bc88_74a5aae7_trace.jpg"
+			errthumb=".\CustomRe_40f6bc88_74a5aae7_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.526"
+			timeRelativeToTestModuleStartTime="00:01.526"
+			timeWallClock="17:03:47"
+			time="00:01.526"
+			level="Failure"
+			category="Module"
+			errimg=".\CustomRe_40f6bc88_5e17dbe3_trace.jpg"
+			errthumb=".\CustomRe_40f6bc88_5e17dbe3_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at System.Drawing.SafeNativeMethods.Gdip.GdipGetImageThumbnail(HandleRef image, Int32 thumbWidth, Int32 thumbHeight, IntPtr&amp; thumbImage, GetThumbnailImageAbort callback, IntPtr callbackdata)&#13;&#10;   at System.Drawing.Image.GetThumbnailImage(Int32 thumbWidth, Int32 thumbHeight, GetThumbnailImageAbort callback, IntPtr callbackData)&#13;&#10;   at Ranorex.Core.XmlLogger.SaveScreenshot(Bitmap img, Int32 thumbWidth, ReportEnvironment reportEnv, String fullImgSuffix, String thumbImgSuffix, Boolean appendImageCount, Int32&amp; imgCnt, Boolean overwriteExisting, String&amp; imgFileName, String&amp; imgThumbFileName)&#13;&#10;   at Ranorex.Core.Reporting.ReportItem.SaveScreenshot(CompressedImage img)&#13;&#10;   at Ranorex.Core.Reporting.TestReport.SaveLocalScreenshotBuffer(Activity mod)&#13;&#10;   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>
