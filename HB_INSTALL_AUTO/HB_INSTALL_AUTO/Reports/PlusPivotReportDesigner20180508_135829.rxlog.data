@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="10127d7233d15468"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 1:58:32 PM"
+		timestampiso="2018-05-08T18:58:32"
+		endtime="5/8/2018 1:58:45 PM"
+		timeoutfactor="1"
+		module="PlusPivotReportDesigner">
+		<detail>
+			PlusPivotReportDesigner
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.759"
+			timeRelativeToTestModuleStartTime="00:00.775"
+			timeWallClock="13:58:32"
+			time="00:00.759"
+			level="Info"
+			category="Mouse"
+			errimg=".\PlusPivo_a76f6d22_904c2f8f_trace.jpg"
+			errthumb=".\PlusPivo_a76f6d22_904c2f8f_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.QueryTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~@query]"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.QueryTab"
+				id="d67e9e897e0f43c3805d510a2b64275e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.056"
+			timeRelativeToTestModuleStartTime="00:13.072"
+			timeWallClock="13:58:45"
+			time="00:13.056"
+			level="Error"
+			category="User"
+			errimg=".\PlusPivo_a76f6d22_11836250_trace.jpg"
+			errthumb=".\PlusPivo_a76f6d22_11836250_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

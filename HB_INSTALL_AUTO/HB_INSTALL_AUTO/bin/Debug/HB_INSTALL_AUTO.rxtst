@@ -59,10 +59,22 @@ rxversion="7.1">
 			ref="407a39a3-ab47-4a2e-b84a-fb8867afa5c9"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="1697c281-1aa0-40eb-a0f9-6d5066095766"
+			name="BasicBidProposal"
+			ref="874c3e4e-33fc-4960-af42-c8a84392fb7e"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
 			name="Uninstall">
 			</testcase>
+			<testmodule
+			id="1a50af55-a79c-4f89-ab73-948ed47956d4"
+			name="CostPriceReport"
+			ref="276e2e51-5f83-459a-ae17-244029f13f9f"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
 			name="PreviousServerInstall"
@@ -85,6 +97,12 @@ rxversion="7.1">
 			id="290dcc40-afe3-426e-8d58-dad451da6b04"
 			name="VerifyWSVersion"
 			ref="26545125-eab7-44af-9a9e-580080b6c225"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
+			name="BiditemStructureReport"
+			ref="0aeabb35-224c-499f-8b38-96588eb45051"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -155,6 +173,12 @@ rxversion="7.1">
 			id="51c4fd3b-c5c3-4118-8fd1-199f5ed42fcb"
 			name="HBInstallFinishConfirmation"
 			ref="6b81c96d-4e70-4220-ba27-be851d62cf29"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="52300948-5186-40cb-9605-211fd83534fd"
+			name="EstimateRecapReportClassic"
+			ref="b0a5975c-5977-4f02-9744-57097a368357"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -231,6 +255,18 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="71199b3e-8a35-43b6-8683-931b47a1002b"
+			name="PlusPivotReportDesigner"
+			ref="32db85bf-e5c7-4fb8-943e-88fe1795e724"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="71d8e602-f14d-4955-809f-07aa82298270"
+			name="EquipmentReport"
+			ref="79f80519-dd43-46f6-b6e8-5a0dbf50199f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
 			name="TestWhatsNewButton"
 			ref="00b958dc-dee3-423d-8fd7-6de0378cf8a8"
@@ -297,6 +333,18 @@ rxversion="7.1">
 					variablename="YearVersion">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="abc82c4f-0a95-491b-9003-1909ac616730"
+			name="ChiefEstimatorAnalysisReport"
+			ref="115fe8c9-be9d-417a-b4e2-b70028892096"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b5ccf82f-855f-4c51-aff1-931fe99f2c5f"
+			name="CustomizedCrystalReport"
+			ref="73fc8886-cd4c-4580-859d-b695abe3e1a5"
+			type="Recording">
 			</testmodule>
 			<testcase
 			datarangeactive="True"
@@ -405,6 +453,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
+			name="EstimateRecapReport"
+			ref="5857cd09-9195-4263-99e4-d23dfc9fe0ad"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e1230427-b41f-47f1-8f88-be096dfb0607"
 			name="OpenHB"
 			ref="1d329228-98ea-4d0a-86e5-cf7640c69a90"
@@ -486,6 +540,12 @@ rxversion="7.1">
 					variablename="DefaultEstimates">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
+			name="ExportToAccounting"
+			ref="199414ad-adf1-4143-a78c-006c091b5924"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -634,16 +694,56 @@ rxversion="7.1">
 							name="MakeNewEstimate">
 							</testmodule>
 							<testmodule
+							id="b5ccf82f-855f-4c51-aff1-931fe99f2c5f"
+							name="CustomizedCrystalReport">
+							</testmodule>
+							<testmodule
 							id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
 							name="CustomReport">
+							</testmodule>
+							<testmodule
+							id="251e416f-54d2-4500-a915-2d68435fbab3"
+							name="CostReport">
 							</testmodule>
 							<testmodule
 							id="09abe5c0-261a-44ef-a773-b7d814b662fb"
 							name="CustomReportClassic">
 							</testmodule>
 							<testmodule
-							id="251e416f-54d2-4500-a915-2d68435fbab3"
-							name="CostReport">
+							id="71d8e602-f14d-4955-809f-07aa82298270"
+							name="EquipmentReport">
+							</testmodule>
+							<testmodule
+							id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
+							name="EstimateRecapReport">
+							</testmodule>
+							<testmodule
+							id="52300948-5186-40cb-9605-211fd83534fd"
+							name="EstimateRecapReportClassic">
+							</testmodule>
+							<testmodule
+							id="abc82c4f-0a95-491b-9003-1909ac616730"
+							name="ChiefEstimatorAnalysisReport">
+							</testmodule>
+							<testmodule
+							id="1a50af55-a79c-4f89-ab73-948ed47956d4"
+							name="CostPriceReport">
+							</testmodule>
+							<testmodule
+							id="1697c281-1aa0-40eb-a0f9-6d5066095766"
+							name="BasicBidProposal">
+							</testmodule>
+							<testmodule
+							id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
+							name="BiditemStructureReport">
+							</testmodule>
+							<testmodule
+							id="71199b3e-8a35-43b6-8683-931b47a1002b"
+							name="PlusPivotReportDesigner">
+							</testmodule>
+							<testmodule
+							id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
+							name="ExportToAccounting">
 							</testmodule>
 							<testmodule
 							id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"

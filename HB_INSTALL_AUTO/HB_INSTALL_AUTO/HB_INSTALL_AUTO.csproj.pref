@@ -1,12 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="CustomReport.rxrec" />
+    <Element value="HB_INSTALL_AUTO.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="CustomReport.rxrec" />
-    <Element value="MakeNewEstimate.rxrec" />
+    <Element value="BiditemStructureReport.rxrec" />
+    <Element value="PlusPivotReportDesigner.rxrec" />
+    <Element value="ExportToAccounting.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

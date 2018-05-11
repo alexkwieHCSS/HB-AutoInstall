@@ -91,8 +91,8 @@ namespace HB_INSTALL_AUTO
             repo.CustomizedBidProposalSetup.ButtonPreviewReport.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
+            Delay.Duration(10000, false);
             
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CustomizedBidProposalSetup'.", repo.CustomizedBidProposalSetup.SelfInfo, new RecordItemIndex(4));
             Host.Current.CloseApplication(repo.CustomizedBidProposalSetup.Self, new Duration(0));

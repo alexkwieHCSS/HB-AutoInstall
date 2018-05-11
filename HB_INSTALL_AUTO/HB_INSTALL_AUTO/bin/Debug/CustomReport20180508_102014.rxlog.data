@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="16c7c49e76280d68"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 10:20:17 AM"
+		timestampiso="2018-05-08T15:20:17"
+		endtime="5/8/2018 10:20:35 AM"
+		timeoutfactor="1"
+		module="CustomReport">
+		<detail>
+			CustomReport
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.765"
+			timeRelativeToTestModuleStartTime="00:00.781"
+			timeWallClock="10:20:18"
+			time="00:00.765"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.SummaryTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Summary']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.SummaryTab"
+				id="6148dba9921d472aab45f5436a302652"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.677"
+			timeRelativeToTestModuleStartTime="00:03.693"
+			timeWallClock="10:20:20"
+			time="00:03.677"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonCustomizedReports' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/?/?/toolbar[1]/button[@accessiblename='Customized']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonCustomizedReports"
+				id="5c354878490f49f4be86ec18b767aa42"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.755"
+			timeRelativeToTestModuleStartTime="00:04.771"
+			timeWallClock="10:20:22"
+			time="00:04.755"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'CustomizedBidProposalSetup.ButtonPreviewReport' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Customized Bid Proposal']/?/?/?/button[@text~'Preview Report']"
+				fullname="HB_INSTALL_AUTORepository.CustomizedBidProposalSetup.ButtonPreviewReport"
+				id="aef67740d53848a9b5860e90e49d9f40"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.299"
+			timeRelativeToTestModuleStartTime="00:06.314"
+			timeWallClock="10:20:23"
+			time="00:06.299"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="94"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.300"
+			timeRelativeToTestModuleStartTime="00:16.315"
+			timeWallClock="10:20:33"
+			time="00:16.300"
+			level="Info"
+			category="Application">
+			<message>
+				Closing application containing item 'CustomizedBidProposalSetup'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Customized Bid Proposal']"
+				fullname="HB_INSTALL_AUTORepository.CustomizedBidProposalSetup.Self"
+				id="1a36fca582b746cda0ad214a2000d63e"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="97"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.456"
+			timeRelativeToTestModuleStartTime="00:16.471"
+			timeWallClock="10:20:33"
+			time="00:16.456"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'CustomizedBidProposalSetup.ButtonCancel' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Customized Bid Proposal']/?/?/?/button[@text~'Cancel']"
+				fullname="HB_INSTALL_AUTORepository.CustomizedBidProposalSetup.ButtonCancel"
+				id="d2350da4370b4fdfb08f589e7c95d66b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CustomReport.cs"
+				codeline="101"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

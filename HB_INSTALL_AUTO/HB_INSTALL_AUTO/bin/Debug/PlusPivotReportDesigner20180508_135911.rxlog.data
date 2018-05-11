@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="c197a99b052907"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 1:59:14 PM"
+		timestampiso="2018-05-08T18:59:14"
+		endtime="5/8/2018 1:59:19 PM"
+		timeoutfactor="1"
+		module="PlusPivotReportDesigner">
+		<detail>
+			PlusPivotReportDesigner
+		</detail>
+		<errormessage>
+			Failed to move to location 'Center' within element '{TreeItem:Concise Bid Proposal}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.791"
+			timeRelativeToTestModuleStartTime="00:00.791"
+			timeWallClock="13:59:14"
+			time="00:00.791"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.QueryTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Query']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.QueryTab"
+				id="d67e9e897e0f43c3805d510a2b64275e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.434"
+			timeRelativeToTestModuleStartTime="00:03.434"
+			timeWallClock="13:59:17"
+			time="00:03.434"
+			level="Info"
+			category="Mouse"
+			errimg=".\PlusPivo_32dc6d25_a6141294_trace.jpg"
+			errthumb=".\PlusPivo_32dc6d25_a6141294_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonPivotReports' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/?/?/toolbar[@accessiblename='Ribbon Bar']/button[@text~'Pivot Reports']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonPivotReports"
+				id="c426ef588e704534ad50cc8bf1d78e28"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.684"
+			timeRelativeToTestModuleStartTime="00:04.684"
+			timeWallClock="13:59:18"
+			time="00:04.684"
+			level="Info"
+			category="Mouse"
+			errimg=".\PlusPivo_32dc6d25_5994e3d5_trace.jpg"
+			errthumb=".\PlusPivo_32dc6d25_5994e3d5_trace_thumb.jpg">
+			<message>
+				Mouse Left DoubleClick item 'HBMultiDocumentInterface.ConciseBidProposal' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.ConciseBidProposal"
+				id="2325bde11b6f44a6b651c3e2e8153b0b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.171"
+			timeRelativeToTestModuleStartTime="00:05.171"
+			timeWallClock="13:59:19"
+			time="00:05.171"
+			level="Error"
+			category="Module"
+			errimg=".\PlusPivo_32dc6d25_de9ab8c8_trace.jpg"
+			errthumb=".\PlusPivo_32dc6d25_de9ab8c8_trace_thumb.jpg">
+			<message>
+				Failed to move to location 'Center' within element '{TreeItem:Concise Bid Proposal}'.<br/>The pointer cannot be moved to point '{X=124,Y=-97}' since it is outside of the visible desktop.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Mouse.MoveTo(Element element, Location location, Duration moveTime)
+   at Ranorex.Adapter.DoubleClick(MouseButtons buttons, Location location, Duration moveTime, Boolean showOutOfBoundsWarning)
+   at Ranorex.Adapter.DoubleClick()
+   at HB_INSTALL_AUTO.PlusPivotReportDesigner.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs:line 95
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\PlusPivotReportDesigner.cs"
+				codeline="95"
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.ConciseBidProposal"
+				id="2325bde11b6f44a6b651c3e2e8153b0b"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="3">
+			</metainfo>
+		</item>
+	</activity>
+</report>

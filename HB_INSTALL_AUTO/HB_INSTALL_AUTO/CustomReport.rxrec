@@ -102,7 +102,7 @@ rxversion="7.1">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="10000ms"
 		enabled="True"
 		optional="False">
 			<comment>

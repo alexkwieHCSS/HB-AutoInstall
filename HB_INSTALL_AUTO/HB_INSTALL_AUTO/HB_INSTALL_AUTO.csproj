@@ -95,6 +95,30 @@
       <UserCode>true</UserCode>
       <id>31e2c6f6-3bf1-4813-8e0b-c7b7e0d6a5b2</id>
     </Compile>
+    <Compile Include="BasicBidProposal.cs">
+      <BoundTo>1bb40d82-6907-4674-9ca4-57e2a28ac898</BoundTo>
+      <DependentUpon>BasicBidProposal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>54c86f8b-3569-4809-ac74-39b81da399c0</id>
+    </Compile>
+    <Compile Include="BasicBidProposal.UserCode.cs">
+      <BoundTo>1bb40d82-6907-4674-9ca4-57e2a28ac898</BoundTo>
+      <DependentUpon>BasicBidProposal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8bf93ce4-8764-43d2-af3d-cd8c2883acdd</id>
+    </Compile>
+    <Compile Include="BiditemStructureReport.cs">
+      <BoundTo>f3b477ac-e2fb-4db9-bd07-3113f66b68ee</BoundTo>
+      <DependentUpon>BiditemStructureReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c65d6573-ce8d-4b67-b3b5-221f7d982dbf</id>
+    </Compile>
+    <Compile Include="BiditemStructureReport.UserCode.cs">
+      <BoundTo>f3b477ac-e2fb-4db9-bd07-3113f66b68ee</BoundTo>
+      <DependentUpon>BiditemStructureReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>377ea75c-fa6b-45f0-b19d-f48cbcedef40</id>
+    </Compile>
     <Compile Include="ChangeShowRibbon.cs">
       <BoundTo>356a8581-e81a-433a-9832-546bc95e5b80</BoundTo>
       <DependentUpon>ChangeShowRibbon.rxrec</DependentUpon>
@@ -130,6 +154,18 @@
       <DependentUpon>CheckRegistrationFeatures.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2ebfcfd0-442c-411e-9c9b-c69a1b7f6c61</id>
+    </Compile>
+    <Compile Include="ChiefEstimatorAnalysisReport.cs">
+      <BoundTo>186ffb0d-379d-48d6-a7f0-1678ce8d908e</BoundTo>
+      <DependentUpon>ChiefEstimatorAnalysisReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96352edd-63ed-44af-9140-3381780dcc8c</id>
+    </Compile>
+    <Compile Include="ChiefEstimatorAnalysisReport.UserCode.cs">
+      <BoundTo>186ffb0d-379d-48d6-a7f0-1678ce8d908e</BoundTo>
+      <DependentUpon>ChiefEstimatorAnalysisReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2cf122c0-a433-4373-af5d-c41346fc56b0</id>
     </Compile>
     <Compile Include="CloseCHeavyBid.cs">
       <BoundTo>40033d7b-f24b-4dcf-86b0-ae5030066a9c</BoundTo>
@@ -179,6 +215,18 @@
       <UserCode>true</UserCode>
       <id>23695ffb-04bf-4583-adc6-d40501b61142</id>
     </Compile>
+    <Compile Include="CostPriceReport.cs">
+      <BoundTo>16b469d5-0752-4748-813d-ff010a9fdf39</BoundTo>
+      <DependentUpon>CostPriceReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db0215dd-78d3-43d5-a6eb-8cd047bad06d</id>
+    </Compile>
+    <Compile Include="CostPriceReport.UserCode.cs">
+      <BoundTo>16b469d5-0752-4748-813d-ff010a9fdf39</BoundTo>
+      <DependentUpon>CostPriceReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3be947f3-c409-4242-9599-4a3c5302fb72</id>
+    </Compile>
     <Compile Include="CostReport.cs">
       <BoundTo>ae75cb9f-b48e-4718-b6e3-e531c714473f</BoundTo>
       <DependentUpon>CostReport.rxrec</DependentUpon>
@@ -214,6 +262,18 @@
       <DependentUpon>CrystalReadyToInstall.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>be52e589-2d1e-4980-8ad8-f9952cce4f58</id>
+    </Compile>
+    <Compile Include="CustomizedCrystalReport.cs">
+      <BoundTo>078954f2-4c6b-4c26-b8b1-c058b737b483</BoundTo>
+      <DependentUpon>CustomizedCrystalReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17a46a5e-53c4-4cf9-9b07-74b56f34018f</id>
+    </Compile>
+    <Compile Include="CustomizedCrystalReport.UserCode.cs">
+      <BoundTo>078954f2-4c6b-4c26-b8b1-c058b737b483</BoundTo>
+      <DependentUpon>CustomizedCrystalReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db0fa29b-f88b-4fe2-aa9f-5c94e08bed2b</id>
     </Compile>
     <Compile Include="CustomReport.cs">
       <BoundTo>d8775ed3-3d49-408f-86d2-1a201da8267d</BoundTo>
@@ -262,6 +322,54 @@
       <DependentUpon>DestinationFolderHBWS.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>de7a1a1b-e897-4873-a731-0847efcf65eb</id>
+    </Compile>
+    <Compile Include="EquipmentReport.cs">
+      <BoundTo>0bdeeb90-0d1a-4dcb-bcee-79deaf40b7a9</BoundTo>
+      <DependentUpon>EquipmentReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e24ce0d9-ba52-4f82-846e-a5aaa8ca01a1</id>
+    </Compile>
+    <Compile Include="EquipmentReport.UserCode.cs">
+      <BoundTo>0bdeeb90-0d1a-4dcb-bcee-79deaf40b7a9</BoundTo>
+      <DependentUpon>EquipmentReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b2d6aae-5dee-4206-82c0-6d2b0dc34203</id>
+    </Compile>
+    <Compile Include="EstimateRecapReport.cs">
+      <BoundTo>9ce85f0b-0c32-4cad-a696-933df0054036</BoundTo>
+      <DependentUpon>EstimateRecapReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4c73bf8-d9af-441c-a230-3a6e657713c6</id>
+    </Compile>
+    <Compile Include="EstimateRecapReport.UserCode.cs">
+      <BoundTo>9ce85f0b-0c32-4cad-a696-933df0054036</BoundTo>
+      <DependentUpon>EstimateRecapReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e6647dd-3ea4-4d4c-974c-edb1e8862fbd</id>
+    </Compile>
+    <Compile Include="EstimateRecapReportClassic.cs">
+      <BoundTo>c461e69e-866e-43cd-adc6-a8fcbc0529e7</BoundTo>
+      <DependentUpon>EstimateRecapReportClassic.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>caa1a11e-f287-4e61-8c47-e9d2b04ba343</id>
+    </Compile>
+    <Compile Include="EstimateRecapReportClassic.UserCode.cs">
+      <BoundTo>c461e69e-866e-43cd-adc6-a8fcbc0529e7</BoundTo>
+      <DependentUpon>EstimateRecapReportClassic.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1b6ad27-447c-4426-b524-6766a05170ef</id>
+    </Compile>
+    <Compile Include="ExportToAccounting.cs">
+      <BoundTo>74a833ea-058f-4a36-9a11-50b4b43abfa4</BoundTo>
+      <DependentUpon>ExportToAccounting.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a707d85e-5815-42c2-9ed0-7c7673e8355b</id>
+    </Compile>
+    <Compile Include="ExportToAccounting.UserCode.cs">
+      <BoundTo>74a833ea-058f-4a36-9a11-50b4b43abfa4</BoundTo>
+      <DependentUpon>ExportToAccounting.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c27d6b0-2df6-4b20-bab6-59747f4a5e63</id>
     </Compile>
     <Compile Include="HBInstallFinishConfirmation.cs">
       <BoundTo>87b42290-f6c1-47ba-838e-99137fb0065d</BoundTo>
@@ -353,6 +461,18 @@
       <UserCode>true</UserCode>
       <id>89fdcbe6-cee7-4903-8e1b-65b0f015b0e1</id>
     </Compile>
+    <Compile Include="OpenExistingEstimate.cs">
+      <BoundTo>48d60e7d-903d-4377-bacd-55cbf09aecb2</BoundTo>
+      <DependentUpon>OpenExistingEstimate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65e798f7-d11a-4d45-b481-0d9f0fd3eb0c</id>
+    </Compile>
+    <Compile Include="OpenExistingEstimate.UserCode.cs">
+      <BoundTo>48d60e7d-903d-4377-bacd-55cbf09aecb2</BoundTo>
+      <DependentUpon>OpenExistingEstimate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>03667245-7cd0-4f51-a717-e3a22d26ba6b</id>
+    </Compile>
     <Compile Include="OpenHB.cs">
       <BoundTo>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</BoundTo>
       <DependentUpon>OpenHB.rxrec</DependentUpon>
@@ -436,6 +556,18 @@
       <DependentUpon>ReindexHeavyBidExternal.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>077e60f0-26de-46ef-835d-d4706917ddfb</id>
+    </Compile>
+    <Compile Include="PlusPivotReportDesigner.cs">
+      <BoundTo>e6af394d-fd13-47b1-b47f-a0cb5aeb5f40</BoundTo>
+      <DependentUpon>PlusPivotReportDesigner.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>965066ff-0d1e-42e7-a006-baa50faa58bf</id>
+    </Compile>
+    <Compile Include="PlusPivotReportDesigner.UserCode.cs">
+      <BoundTo>e6af394d-fd13-47b1-b47f-a0cb5aeb5f40</BoundTo>
+      <DependentUpon>PlusPivotReportDesigner.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>080e2765-396d-4ded-8e96-51e0ce97ef59</id>
     </Compile>
     <Compile Include="RestoreEstimate.cs">
       <BoundTo>943b60fb-3727-47d0-85e5-5bea2790a008</BoundTo>
@@ -731,6 +863,16 @@
       <id>73efb713-5712-435d-86bd-737526563b41</id>
       <recordtableid>9989c876-1438-4146-908f-573b9db14d53</recordtableid>
     </None>
+    <None Include="BasicBidProposal.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>1bb40d82-6907-4674-9ca4-57e2a28ac898</id>
+      <recordtableid>874c3e4e-33fc-4960-af42-c8a84392fb7e</recordtableid>
+    </None>
+    <None Include="BiditemStructureReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>f3b477ac-e2fb-4db9-bd07-3113f66b68ee</id>
+      <recordtableid>0aeabb35-224c-499f-8b38-96588eb45051</recordtableid>
+    </None>
     <None Include="ChangeShowRibbon.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>356a8581-e81a-433a-9832-546bc95e5b80</id>
@@ -745,6 +887,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>15ceb9f3-3641-428d-968b-e4f2d4464d5d</id>
       <recordtableid>de67b64d-9b75-47d6-91e5-9ab65e70c7b2</recordtableid>
+    </None>
+    <None Include="ChiefEstimatorAnalysisReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>186ffb0d-379d-48d6-a7f0-1678ce8d908e</id>
+      <recordtableid>115fe8c9-be9d-417a-b4e2-b70028892096</recordtableid>
     </None>
     <None Include="CloseCHeavyBid.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -766,6 +913,11 @@
       <id>4520b5e5-0a43-4697-b3c2-918079ea8eac</id>
       <recordtableid>cf428a88-a1c6-4200-9ab2-22e40ed4c0ff</recordtableid>
     </None>
+    <None Include="CostPriceReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>16b469d5-0752-4748-813d-ff010a9fdf39</id>
+      <recordtableid>276e2e51-5f83-459a-ae17-244029f13f9f</recordtableid>
+    </None>
     <None Include="CostReport.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>ae75cb9f-b48e-4718-b6e3-e531c714473f</id>
@@ -780,6 +932,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>ed781900-6ae8-49a6-a22a-5652078d1670</id>
       <recordtableid>cab4dd71-3176-47ad-ba07-a5b81f158d78</recordtableid>
+    </None>
+    <None Include="CustomizedCrystalReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>078954f2-4c6b-4c26-b8b1-c058b737b483</id>
+      <recordtableid>73fc8886-cd4c-4580-859d-b695abe3e1a5</recordtableid>
     </None>
     <None Include="CustomReport.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -800,6 +957,26 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>917fe769-531f-41f4-922a-b1b25a23fad2</id>
       <recordtableid>535090f6-8e8c-458f-9f71-ada4e8dc976a</recordtableid>
+    </None>
+    <None Include="EquipmentReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>0bdeeb90-0d1a-4dcb-bcee-79deaf40b7a9</id>
+      <recordtableid>79f80519-dd43-46f6-b6e8-5a0dbf50199f</recordtableid>
+    </None>
+    <None Include="EstimateRecapReport.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>9ce85f0b-0c32-4cad-a696-933df0054036</id>
+      <recordtableid>5857cd09-9195-4263-99e4-d23dfc9fe0ad</recordtableid>
+    </None>
+    <None Include="EstimateRecapReportClassic.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>c461e69e-866e-43cd-adc6-a8fcbc0529e7</id>
+      <recordtableid>b0a5975c-5977-4f02-9744-57097a368357</recordtableid>
+    </None>
+    <None Include="ExportToAccounting.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>74a833ea-058f-4a36-9a11-50b4b43abfa4</id>
+      <recordtableid>199414ad-adf1-4143-a78c-006c091b5924</recordtableid>
     </None>
     <None Include="HBInstallFinishConfirmation.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -847,6 +1024,11 @@
       <id>bb358f26-2216-42b9-b1e7-0f556c892d9b</id>
       <recordtableid>447306e5-8070-4929-bb2d-4496db505397</recordtableid>
     </None>
+    <None Include="OpenExistingEstimate.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>48d60e7d-903d-4377-bacd-55cbf09aecb2</id>
+      <recordtableid>8121c69b-5d8f-4a0e-b6f4-0c2db4649a2a</recordtableid>
+    </None>
     <None Include="OpenHB.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>57b81df4-21e9-4ad3-85e1-35ed7ceb2540</id>
@@ -881,6 +1063,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>f85c0769-17bb-4fe7-a401-4b64a58bb89f</id>
       <recordtableid>79760d42-1908-4bfb-a9ea-2af85fc59f6b</recordtableid>
+    </None>
+    <None Include="PlusPivotReportDesigner.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>e6af394d-fd13-47b1-b47f-a0cb5aeb5f40</id>
+      <recordtableid>32db85bf-e5c7-4fb8-943e-88fe1795e724</recordtableid>
     </None>
     <None Include="RestoreEstimate.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="825713c2a3b530e"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 11:40:23 AM"
+		timestampiso="2018-05-08T16:40:23"
+		endtime="5/8/2018 11:40:35 AM"
+		timeoutfactor="1"
+		module="ReportsPlusPivotReportDesignerReport">
+		<detail>
+			ReportsPlusPivotReportDesignerReport
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.743"
+			timeRelativeToTestModuleStartTime="00:00.759"
+			timeWallClock="11:40:23"
+			time="00:00.743"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Report']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ReportTab"
+				id="5048bb262beb4526b63f95ca95f2b8d1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReportsPlusPivotReportDesignerReport.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.481"
+			timeRelativeToTestModuleStartTime="00:04.497"
+			timeWallClock="11:40:27"
+			time="00:04.481"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ButtonPivotReports' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/?/?/toolbar/button[@text~'Pivot Reports']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ButtonPivotReports"
+				id="c426ef588e704534ad50cc8bf1d78e28"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReportsPlusPivotReportDesignerReport.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.796"
+			timeRelativeToTestModuleStartTime="00:05.812"
+			timeWallClock="11:40:28"
+			time="00:05.796"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'HBMultiDocumentInterface.ConciseBidProposal' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.ConciseBidProposal"
+				id="2325bde11b6f44a6b651c3e2e8153b0b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReportsPlusPivotReportDesignerReport.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.354"
+			timeRelativeToTestModuleStartTime="00:07.370"
+			timeWallClock="11:40:30"
+			time="00:07.354"
+			level="Info"
+			category="Delay"
+			errimg=".\ReportsP_f9b98c24_ade3c4d3_trace.jpg"
+			errthumb=".\ReportsP_f9b98c24_ade3c4d3_trace_thumb.jpg">
+			<message>
+				Waiting for 5s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReportsPlusPivotReportDesignerReport.cs"
+				codeline="94"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.369"
+			timeRelativeToTestModuleStartTime="00:12.385"
+			timeWallClock="11:40:35"
+			time="00:12.369"
+			level="Info"
+			category="Application"
+			errimg=".\ReportsP_f9b98c24_d3aed247_trace.jpg"
+			errthumb=".\ReportsP_f9b98c24_d3aed247_trace_thumb.jpg">
+			<message>
+				Closing application containing item 'HeavyBidPivotReports.ButtonClose'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Pivot Reports']/?/?/?/button[@text~'Close']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidPivotReports.ButtonClose"
+				id="fc1e7fdda2b94bb987fe224e293b2469"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ReportsPlusPivotReportDesignerReport.cs"
+				codeline="97"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.530"
+			timeRelativeToTestModuleStartTime="00:12.546"
+			timeWallClock="11:40:35"
+			time="00:12.530"
+			level="Error"
+			category="User"
+			errimg=".\ReportsP_f9b98c24_c144843b_trace.jpg"
+			errthumb=".\ReportsP_f9b98c24_c144843b_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="82a5112bb3f461"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 2:37:14 PM"
+		timestampiso="2018-05-08T19:37:14"
+		endtime="5/8/2018 2:37:27 PM"
+		timeoutfactor="1"
+		module="ExportToAccounting">
+		<detail>
+			ExportToAccounting
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.839"
+			timeRelativeToTestModuleStartTime="00:00.839"
+			timeWallClock="14:37:15"
+			time="00:00.839"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ExchangeTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Exchange']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ExchangeTab"
+				id="335aaa88e0234bafa4a4c3bb609ace02"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ExportToAccounting.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.366"
+			timeRelativeToTestModuleStartTime="00:05.366"
+			timeWallClock="14:37:20"
+			time="00:05.366"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBMultiDocumentInterface.ButtonExportToAccounting' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?//button[@text~'Export to Accounting']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.ButtonExportToAccounting"
+				id="fc04455fdfde49bbb761557a0dca0337"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ExportToAccounting.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.920"
+			timeRelativeToTestModuleStartTime="00:08.920"
+			timeWallClock="14:37:23"
+			time="00:08.920"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBMultiDocumentInterface.ButtonExport' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/?/element[@class='DFbutton']/?/?/button[@accessiblename='Export']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.ButtonExport"
+				id="728688960ebe40e4b939e69880ae4309"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ExportToAccounting.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.889"
+			timeRelativeToTestModuleStartTime="00:10.889"
+			timeWallClock="14:37:25"
+			time="00:10.889"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ExportComplete.ButtonOK' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Export Complete']/button[@text='OK']"
+				fullname="HB_INSTALL_AUTORepository.ExportComplete.ButtonOK"
+				id="cbe021827d094d4593ba19aeffeddb07"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ExportToAccounting.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

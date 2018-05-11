@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="3227d218a9f269a0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/8/2018 10:17:05 AM"
+		timestampiso="2018-05-08T15:17:05"
+		endtime="5/8/2018 10:17:19 AM"
+		timeoutfactor="1"
+		module="EquipmentReport">
+		<detail>
+			EquipmentReport
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.749"
+			timeRelativeToTestModuleStartTime="00:00.749"
+			timeWallClock="10:17:06"
+			time="00:00.749"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Report']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.ReportTab"
+				id="5048bb262beb4526b63f95ca95f2b8d1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\EquipmentReport.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.906"
+			timeRelativeToTestModuleStartTime="00:02.906"
+			timeWallClock="10:17:08"
+			time="00:02.906"
+			level="Info"
+			category="Mouse"
+			errimg=".\Equipmen_afe9b95d_7d7f0977_trace.jpg"
+			errthumb=".\Equipmen_afe9b95d_7d7f0977_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidTabs.CostReportsButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/?/?/toolbar/button[@text~'Cost Reports']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidTabs.CostReportsButton"
+				id="c972e2915f874f21a5a43bc3f2feb563"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\EquipmentReport.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.171"
+			timeRelativeToTestModuleStartTime="00:04.171"
+			timeWallClock="10:17:09"
+			time="00:04.171"
+			level="Info"
+			category="Mouse"
+			errimg=".\Equipmen_afe9b95d_f366cbf8_trace.jpg"
+			errthumb=".\Equipmen_afe9b95d_f366cbf8_trace_thumb.jpg">
+			<message>
+				Mouse Left DoubleClick item 'HBMultiDocumentInterface.EquipmentReport' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Equipment Report']"
+				fullname="HB_INSTALL_AUTORepository.HBMultiDocumentInterface.EquipmentReport"
+				id="cca92ba1e6534b4ebe5109552317a9c9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\EquipmentReport.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.337"
+			timeRelativeToTestModuleStartTime="00:14.337"
+			timeWallClock="10:17:19"
+			time="00:14.337"
+			level="Error"
+			category="User"
+			errimg=".\Equipmen_afe9b95d_852b5e17_trace.jpg"
+			errthumb=".\Equipmen_afe9b95d_852b5e17_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

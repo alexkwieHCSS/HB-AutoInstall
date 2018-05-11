@@ -51,7 +51,7 @@ rxversion="7.1">
 			</testmodule>
 			<testcase
 			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
-			name="Validation">
+			name="ValidationFileStructure">
 			</testcase>
 			<testmodule
 			id="14fff51c-2a5c-4380-bd01-b1702013a2ec"
@@ -59,10 +59,22 @@ rxversion="7.1">
 			ref="407a39a3-ab47-4a2e-b84a-fb8867afa5c9"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="1697c281-1aa0-40eb-a0f9-6d5066095766"
+			name="BasicBidProposal"
+			ref="874c3e4e-33fc-4960-af42-c8a84392fb7e"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
 			name="Uninstall">
 			</testcase>
+			<testmodule
+			id="1a50af55-a79c-4f89-ab73-948ed47956d4"
+			name="CostPriceReport"
+			ref="276e2e51-5f83-459a-ae17-244029f13f9f"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="1e7ee367-072e-4cc8-a62a-6a2bb66a2ba9"
 			name="PreviousServerInstall"
@@ -82,9 +94,21 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="26e2c56b-4fae-42ed-a5bf-d785434323b9"
+			name="OpenExistingEstimate"
+			ref="8121c69b-5d8f-4a0e-b6f4-0c2db4649a2a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="290dcc40-afe3-426e-8d58-dad451da6b04"
 			name="VerifyWSVersion"
 			ref="26545125-eab7-44af-9a9e-580080b6c225"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
+			name="BiditemStructureReport"
+			ref="0aeabb35-224c-499f-8b38-96588eb45051"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -155,6 +179,12 @@ rxversion="7.1">
 			id="51c4fd3b-c5c3-4118-8fd1-199f5ed42fcb"
 			name="HBInstallFinishConfirmation"
 			ref="6b81c96d-4e70-4220-ba27-be851d62cf29"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="52300948-5186-40cb-9605-211fd83534fd"
+			name="EstimateRecapReportClassic"
+			ref="b0a5975c-5977-4f02-9744-57097a368357"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -231,6 +261,22 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="71199b3e-8a35-43b6-8683-931b47a1002b"
+			name="PlusPivotReportDesigner"
+			ref="32db85bf-e5c7-4fb8-943e-88fe1795e724"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="71d8e602-f14d-4955-809f-07aa82298270"
+			name="EquipmentReport"
+			ref="79f80519-dd43-46f6-b6e8-5a0dbf50199f"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="7b0063fb-f54b-4e79-aeed-1604101fa25e"
+			name="ValidateHBFunctionality2">
+			</smartfoldernode>
+			<testmodule
 			id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
 			name="TestWhatsNewButton"
 			ref="00b958dc-dee3-423d-8fd7-6de0378cf8a8"
@@ -298,13 +344,25 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="abc82c4f-0a95-491b-9003-1909ac616730"
+			name="ChiefEstimatorAnalysisReport"
+			ref="115fe8c9-be9d-417a-b4e2-b70028892096"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b5ccf82f-855f-4c51-aff1-931fe99f2c5f"
+			name="CustomizedCrystalReport"
+			ref="73fc8886-cd4c-4580-859d-b695abe3e1a5"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="ExistingEstimates"
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018"
 			maxrange="4"
 			minrange="4"
-			name="OpenHBAfterRegister">
+			name="ValidateHBFunctionality">
 				<parameters>
 					<param
 					name="NewParameter"
@@ -405,6 +463,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
+			name="EstimateRecapReport"
+			ref="5857cd09-9195-4263-99e4-d23dfc9fe0ad"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e1230427-b41f-47f1-8f88-be096dfb0607"
 			name="OpenHB"
 			ref="1d329228-98ea-4d0a-86e5-cf7640c69a90"
@@ -486,6 +550,12 @@ rxversion="7.1">
 					variablename="DefaultEstimates">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
+			name="ExportToAccounting"
+			ref="199414ad-adf1-4143-a78c-006c091b5924"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -594,93 +664,141 @@ rxversion="7.1">
 							name="CloseHB">
 							</testmodule>
 						</testcase>
-						<testcase
-						id="b7e76dd2-5049-419e-9afd-a58c7195d018"
-						name="OpenHBAfterRegister">
-							<testmodule
-							id="9d9c855d-3eaf-4b91-8e9d-98869105c987"
-							name="OpenHB">
-							</testmodule>
-							<testmodule
-							id="61e7735f-60bc-4cb4-9140-219cd0c1312f"
-							name="HBUserLogIn">
-							</testmodule>
-							<testmodule
-							id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
-							name="ValidateHBWelcomeScreen">
-							</testmodule>
-							<testmodule
-							id="9fb2e54a-1181-4214-8d43-a98b75d7f059"
-							name="TestLinkOnWelcome">
-							</testmodule>
-							<testmodule
-							id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
-							name="CheckBitImage">
-							</testmodule>
-							<testmodule
-							id="60ea7bd6-e154-4641-ab52-83a71f053569"
-							name="ChangeShowRibbon">
-							</testmodule>
-							<testmodule
-							id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
-							name="ValidateHBAboutHB">
-							</testmodule>
-							<testmodule
-							id="7c1d06f6-605a-4e72-8a06-2f7e7286e704"
-							name="ValidateHBF1Help">
-							</testmodule>
-							<testmodule
-							id="3f0775bf-b172-4eaf-8c81-8797da4306bd"
-							name="MakeNewEstimate">
-							</testmodule>
-							<testmodule
-							id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
-							name="CustomReport">
-							</testmodule>
-							<testmodule
-							id="09abe5c0-261a-44ef-a773-b7d814b662fb"
-							name="CustomReportClassic">
-							</testmodule>
-							<testmodule
-							id="251e416f-54d2-4500-a915-2d68435fbab3"
-							name="CostReport">
-							</testmodule>
-							<testmodule
-							id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
-							name="BackupEstimates">
-							</testmodule>
-							<testmodule
-							id="8bc56588-f646-4914-9ac2-91cb74a409de"
-							name="BackupSystem">
-							</testmodule>
-							<testmodule
-							id="e28c981d-c5c4-4f35-ba40-760685b83d89"
-							name="RestoreEstimate">
-							</testmodule>
-							<testmodule
-							id="48f77905-969f-461d-ae73-1faeab6b6226"
-							name="RestoreSystem">
-							</testmodule>
-							<testmodule
-							id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
-							name="TestWhatsNewButton">
-							</testmodule>
-							<testmodule
-							id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
-							name="OpenEstimate">
-							</testmodule>
-							<testmodule
-							id="aad71a13-9257-48af-a937-5cb49b130197"
-							name="CloseHB">
-							</testmodule>
-							<testmodule
-							id="ef3b2252-718f-4464-88b5-5c15219008cf"
-							name="ReindexFiles">
-							</testmodule>
-						</testcase>
+						<smartfoldernode
+						id="7b0063fb-f54b-4e79-aeed-1604101fa25e"
+						name="ValidateHBFunctionality2">
+							<testcase
+							id="b7e76dd2-5049-419e-9afd-a58c7195d018"
+							name="ValidateHBFunctionality">
+								<testmodule
+								id="9d9c855d-3eaf-4b91-8e9d-98869105c987"
+								name="OpenHB">
+								</testmodule>
+								<testmodule
+								id="61e7735f-60bc-4cb4-9140-219cd0c1312f"
+								name="HBUserLogIn">
+								</testmodule>
+								<testmodule
+								id="65fa15a7-6f4c-4883-afe5-424f07f3a508"
+								name="ValidateHBWelcomeScreen">
+								</testmodule>
+								<testmodule
+								id="9fb2e54a-1181-4214-8d43-a98b75d7f059"
+								name="TestLinkOnWelcome">
+								</testmodule>
+								<testmodule
+								id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
+								name="CheckBitImage">
+								</testmodule>
+								<testmodule
+								id="60ea7bd6-e154-4641-ab52-83a71f053569"
+								name="ChangeShowRibbon">
+								</testmodule>
+								<testmodule
+								id="05deae5d-cfd2-4904-94f1-fc38956d3a7e"
+								name="ValidateHBAboutHB">
+								</testmodule>
+								<testmodule
+								id="7c1d06f6-605a-4e72-8a06-2f7e7286e704"
+								name="ValidateHBF1Help">
+								</testmodule>
+								<testmodule
+								id="3f0775bf-b172-4eaf-8c81-8797da4306bd"
+								name="MakeNewEstimate">
+								</testmodule>
+								<testmodule
+								id="26e2c56b-4fae-42ed-a5bf-d785434323b9"
+								name="OpenExistingEstimate">
+								</testmodule>
+								<testmodule
+								id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
+								name="CustomReport">
+								</testmodule>
+								<testmodule
+								id="b5ccf82f-855f-4c51-aff1-931fe99f2c5f"
+								name="CustomizedCrystalReport">
+								</testmodule>
+								<testmodule
+								id="251e416f-54d2-4500-a915-2d68435fbab3"
+								name="CostReport">
+								</testmodule>
+								<testmodule
+								id="09abe5c0-261a-44ef-a773-b7d814b662fb"
+								name="CustomReportClassic">
+								</testmodule>
+								<testmodule
+								id="71d8e602-f14d-4955-809f-07aa82298270"
+								name="EquipmentReport">
+								</testmodule>
+								<testmodule
+								id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
+								name="EstimateRecapReport">
+								</testmodule>
+								<testmodule
+								id="52300948-5186-40cb-9605-211fd83534fd"
+								name="EstimateRecapReportClassic">
+								</testmodule>
+								<testmodule
+								id="abc82c4f-0a95-491b-9003-1909ac616730"
+								name="ChiefEstimatorAnalysisReport">
+								</testmodule>
+								<testmodule
+								id="1a50af55-a79c-4f89-ab73-948ed47956d4"
+								name="CostPriceReport">
+								</testmodule>
+								<testmodule
+								id="1697c281-1aa0-40eb-a0f9-6d5066095766"
+								name="BasicBidProposal">
+								</testmodule>
+								<testmodule
+								id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
+								name="BiditemStructureReport">
+								</testmodule>
+								<testmodule
+								id="71199b3e-8a35-43b6-8683-931b47a1002b"
+								name="PlusPivotReportDesigner">
+								</testmodule>
+								<testmodule
+								id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
+								name="ExportToAccounting">
+								</testmodule>
+								<testmodule
+								id="fd3c6b7f-afa5-4ad4-a541-1279a9c58475"
+								name="BackupEstimates">
+								</testmodule>
+								<testmodule
+								id="8bc56588-f646-4914-9ac2-91cb74a409de"
+								name="BackupSystem">
+								</testmodule>
+								<testmodule
+								id="e28c981d-c5c4-4f35-ba40-760685b83d89"
+								name="RestoreEstimate">
+								</testmodule>
+								<testmodule
+								id="48f77905-969f-461d-ae73-1faeab6b6226"
+								name="RestoreSystem">
+								</testmodule>
+								<testmodule
+								id="7bde37b9-5926-47b4-9209-e7e8d99f8a43"
+								name="TestWhatsNewButton">
+								</testmodule>
+								<testmodule
+								id="c75dad5c-a28f-49e2-8ad4-0cad5fc14449"
+								name="OpenEstimate">
+								</testmodule>
+								<testmodule
+								id="aad71a13-9257-48af-a937-5cb49b130197"
+								name="CloseHB">
+								</testmodule>
+								<testmodule
+								id="ef3b2252-718f-4464-88b5-5c15219008cf"
+								name="ReindexFiles">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 						<testcase
 						id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
-						name="Validation">
+						name="ValidationFileStructure">
 							<testmodule
 							id="c451ede4-f70a-4f8e-83ce-13e8074c46f1"
 							name="NavigateToCHeavyBid">
@@ -984,6 +1102,9 @@ rxversion="7.1">
 	default="AdvanceMU">
 		<testconfiguration
 		name="AdvanceMU">
+			<testcontainer
+			id="7b0063fb-f54b-4e79-aeed-1604101fa25e">
+			</testcontainer>
 			<testcontainer
 			id="b7e76dd2-5049-419e-9afd-a58c7195d018">
 			</testcontainer>
