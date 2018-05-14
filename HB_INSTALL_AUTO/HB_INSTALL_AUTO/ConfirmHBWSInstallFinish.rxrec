@@ -27,8 +27,98 @@ rxversion="7.1">
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
+		<var
+		id="368e7f48-9b0f-4a0d-a61a-3eb4d930ed90"
+		name="YearVersion">
+			2018.1
+		</var>
+		<var
+		id="7837f9f6-ffe4-4d33-a291-857343197081"
+		name="WSFilePath">
+			C:\HeavyBidWS\
+		</var>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="c9e6ac39-15f7-49f4-8b3b-d1e84bdd5fab">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[HeavyBid][Workstation]
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3c5e87e2-01c5-434c-b6c1-c7303d1c012e">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				$YearVersion
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="88709d9c-b9bf-4f8a-ab29-86ac16dd0a77">
+			<comment>
+				ASK AUTOMATION
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="WSFilePath">
+				</binding>
+			</bindings>
+			<info
+			id="17b1af75-dfb3-4277-9c7d-08f20936b248"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/text[@text~'$WSFilePath']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"

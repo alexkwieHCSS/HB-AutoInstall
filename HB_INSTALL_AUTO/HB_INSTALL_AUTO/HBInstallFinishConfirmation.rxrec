@@ -32,7 +32,7 @@ rxversion="7.1">
 		<explicitdelayitem
 		duration="5000ms"
 		enabled="True"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -40,7 +40,7 @@ rxversion="7.1">
 		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="f0ee6428-4f55-4058-ac14-17c7d87860a8"
 		waitaction="Exists"
 		waittimeout="10000ms">
@@ -107,7 +107,7 @@ rxversion="7.1">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="False"
+		optional="True"
 		searchpropertyid="5ff48e66-759f-4ae0-87ad-6d0fc99446df"
 		sx="859"
 		sy="1058"
@@ -249,7 +249,7 @@ tszqKKKyNT//2Q==
 		<explicitdelayitem
 		duration="10000ms"
 		enabled="True"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -259,7 +259,7 @@ tszqKKKyNT//2Q==
 		KeySequence="{Return}"
 		duration="100ms"
 		enabled="True"
-		optional="False"
+		optional="True"
 		presstime="100ms"
 		searchpropertyid="7ee98c35-bda8-49ef-937d-b0fe3fb01fbe">
 			<comment>

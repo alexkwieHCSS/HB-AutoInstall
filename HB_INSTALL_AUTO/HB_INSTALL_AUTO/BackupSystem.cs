@@ -79,25 +79,25 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.", repo.HeavyBidTabs.FileTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.FileTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.FileTab' at Center.", repo.HeavyBidApp.Tabs.FileTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.FileTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonBackupEstimate' at Center.", repo.HeavyBidTabs.ButtonBackupEstimateInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonBackupEstimate.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.File.ButtonBackupEstimate' at Center.", repo.HeavyBidApp.Buttons.File.ButtonBackupEstimateInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.File.ButtonBackupEstimate.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.System' at Center.", repo.HBButtonDropdownOptions.SystemInfo, new RecordItemIndex(2));
             repo.HBButtonDropdownOptions.System.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimate.ButtonFinish' at Center.", repo.BackupEstimate.ButtonFinishInfo, new RecordItemIndex(3));
-            repo.BackupEstimate.ButtonFinish.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupEstimate.ButtonFinish' at Center.", repo.HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupEstimate.ButtonFinishInfo, new RecordItemIndex(3));
+            repo.HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupEstimate.ButtonFinish.Click();
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HCSSBackupExists.ButtonYes' at Center.", repo.HCSSBackupExists.ButtonYesInfo, new RecordItemIndex(4));
-                repo.HCSSBackupExists.ButtonYes.Click();
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupExists.ButtonYes' at Center.", repo.HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupExists.ButtonYesInfo, new RecordItemIndex(4));
+                repo.HBPopupScreens.FromFileButtons.BackupEstimateRelated.BackupExists.ButtonYes.Click();
                 Delay.Milliseconds(200);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             

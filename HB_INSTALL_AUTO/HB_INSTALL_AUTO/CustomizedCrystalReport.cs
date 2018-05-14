@@ -79,24 +79,24 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.", repo.HeavyBidTabs.ReportTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ReportTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ReportTab' at Center.", repo.HeavyBidApp.Tabs.ReportTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ReportTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.CustomizedCrystalReports' at Center.", repo.HeavyBidTabs.CustomizedCrystalReportsInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.CustomizedCrystalReports.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Report.CustomizedCrystalReports' at Center.", repo.HeavyBidApp.Buttons.Report.CustomizedCrystalReportsInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Report.CustomizedCrystalReports.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.BidProposalLaborAndMaterialUP' at Center.", repo.HBButtonDropdownOptions.BidProposalLaborAndMaterialUPInfo, new RecordItemIndex(2));
             repo.HBButtonDropdownOptions.BidProposalLaborAndMaterialUP.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintCustomizedCrystalReports.ButtonOK' at Center.", repo.PrintCustomizedCrystalReports.ButtonOKInfo, new RecordItemIndex(3));
-            repo.PrintCustomizedCrystalReports.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromReportsButton.CustomizedCrystalReports.PrintCustomizedCrystalReports.ButtonOK' at Center.", repo.HBPopupScreens.FromReportsButton.CustomizedCrystalReports.PrintCustomizedCrystalReports.ButtonOKInfo, new RecordItemIndex(3));
+            repo.HBPopupScreens.FromReportsButton.CustomizedCrystalReports.PrintCustomizedCrystalReports.ButtonOK.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CustomCrystalBidProposalPreview.ButtonCloseX' at Center.", repo.CustomCrystalBidProposalPreview.ButtonCloseXInfo, new RecordItemIndex(4));
-            repo.CustomCrystalBidProposalPreview.ButtonCloseX.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromReportsButton.CustomizedCrystalReports.CustomCrystalBidProposalPreview.ButtonCloseX' at Center.", repo.HBPopupScreens.FromReportsButton.CustomizedCrystalReports.CustomCrystalBidProposalPreview.ButtonCloseXInfo, new RecordItemIndex(4));
+            repo.HBPopupScreens.FromReportsButton.CustomizedCrystalReports.CustomCrystalBidProposalPreview.ButtonCloseX.Click();
             Delay.Milliseconds(200);
             
         }

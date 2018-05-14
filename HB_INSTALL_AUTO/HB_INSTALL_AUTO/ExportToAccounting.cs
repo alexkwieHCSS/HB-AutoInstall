@@ -79,16 +79,16 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ExchangeTab' at Center.", repo.HeavyBidTabs.ExchangeTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ExchangeTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ExchangeTab' at Center.", repo.HeavyBidApp.Tabs.ExchangeTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ExchangeTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.ButtonExportToAccounting' at Center.", repo.HBMultiDocumentInterface.ButtonExportToAccountingInfo, new RecordItemIndex(1));
-            repo.HBMultiDocumentInterface.ButtonExportToAccounting.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.Buttons.ButtonExportToAccounting' at Center.", repo.HBMultiDocumentInterface.Buttons.ButtonExportToAccountingInfo, new RecordItemIndex(1));
+            repo.HBMultiDocumentInterface.Buttons.ButtonExportToAccounting.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.ButtonExport' at Center.", repo.HBMultiDocumentInterface.ButtonExportInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.ButtonExport.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.Buttons.ButtonExport' at Center.", repo.HBMultiDocumentInterface.Buttons.ButtonExportInfo, new RecordItemIndex(2));
+            repo.HBMultiDocumentInterface.Buttons.ButtonExport.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportComplete.ButtonOK' at Center.", repo.ExportComplete.ButtonOKInfo, new RecordItemIndex(3));

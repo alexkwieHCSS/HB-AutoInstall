@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="14c40c39b5183d33"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/14/2018 12:00:08 PM"
+		timestampiso="2018-05-14T17:00:08"
+		endtime="5/14/2018 12:00:10 PM"
+		timeoutfactor="1"
+		module="OpenHB">
+		<detail>
+			OpenHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.882"
+			timeRelativeToTestModuleStartTime="00:00.888"
+			timeWallClock="12:00:09"
+			time="00:00.882"
+			level="Info"
+			category="Application">
+			<message>
+				E.1<br/>Run application 'HEAVYBID.EXE' with arguments ' HEAVYMULT' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\OpenHB.cs"
+				codeline="83"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

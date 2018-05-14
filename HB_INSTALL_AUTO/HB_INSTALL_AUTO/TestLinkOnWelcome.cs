@@ -79,12 +79,12 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen' at Center.", repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(1));
-            repo.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen' at Center.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(1));
+            repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen.Click();
             Delay.Milliseconds(200);
             
             // E.6

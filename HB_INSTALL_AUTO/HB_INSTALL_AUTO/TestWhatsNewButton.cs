@@ -79,12 +79,12 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.WhatsNewTab' at Center.", repo.HeavyBidTabs.WhatsNewTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.WhatsNewTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.WhatsNewTab' at Center.", repo.HeavyBidApp.Tabs.WhatsNewTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.WhatsNewTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.NewHeavyBidFeaturesButton' at Center.", repo.HeavyBidTabs.NewHeavyBidFeaturesButtonInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.NewHeavyBidFeaturesButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.WhatsNew.NewHeavyBidFeaturesButton' at Center.", repo.HeavyBidApp.Buttons.WhatsNew.NewHeavyBidFeaturesButtonInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.WhatsNew.NewHeavyBidFeaturesButton.Click();
             Delay.Milliseconds(200);
             
             // E.6

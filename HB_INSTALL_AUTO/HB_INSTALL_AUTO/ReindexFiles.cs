@@ -79,12 +79,12 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ToolsTab' at Center.", repo.HeavyBidTabs.ToolsTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ToolsTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ToolsTab' at Center.", repo.HeavyBidApp.Tabs.ToolsTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ToolsTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReindexFilesButton' at Center.", repo.HeavyBidTabs.ReindexFilesButtonInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ReindexFilesButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Tools.ReindexFilesButton' at Center.", repo.HeavyBidApp.Buttons.Tools.ReindexFilesButtonInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Tools.ReindexFilesButton.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Checked to 'True' on item 'ReindexScreen.CurrentEstimateCheckbox'.", repo.ReindexScreen.CurrentEstimateCheckboxInfo, new RecordItemIndex(2));

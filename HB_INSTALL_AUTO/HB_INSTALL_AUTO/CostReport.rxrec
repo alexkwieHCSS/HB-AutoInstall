@@ -94,62 +94,8 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="b949b9a0-eb4c-42aa-8ea6-59c6cfa3cea4"
+			id="9276b565-0af9-4206-89e0-d0cf7040c0cb"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible, accessibletreeitem"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="treeitem"
-				rect="66,236,66,18"
-				role="treeitem"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="checked"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="expanded"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Cost Report
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Cost Report
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						OutlineItem
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						1
-					</attribute>
-				</element>
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Cost Report']
 				</path>

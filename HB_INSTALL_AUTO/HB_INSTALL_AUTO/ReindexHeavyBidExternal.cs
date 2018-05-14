@@ -100,20 +100,20 @@ namespace HB_INSTALL_AUTO
             repo.ReindexApplication.ButtonEllipisis.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimateClass.ListExistingEstimates' at Center.", repo.BackupEstimateClass.ListExistingEstimatesInfo, new RecordItemIndex(2));
-            repo.BackupEstimateClass.ListExistingEstimates.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ListExistingEstimates' at Center.", repo.HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ListExistingEstimatesInfo, new RecordItemIndex(2));
+            repo.HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ListExistingEstimates.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DefaultEstimates'.", new RecordItemIndex(3));
             Keyboard.Press(DefaultEstimates);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EstimateSearch.ButtonOk' at Center.", repo.EstimateSearch.ButtonOkInfo, new RecordItemIndex(4));
-            repo.EstimateSearch.ButtonOk.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.GridViewOfEstimatesPopup.EstimateSearch.ButtonOk' at Center.", repo.HBPopupScreens.GridViewOfEstimatesPopup.EstimateSearch.ButtonOkInfo, new RecordItemIndex(4));
+            repo.HBPopupScreens.GridViewOfEstimatesPopup.EstimateSearch.ButtonOk.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BackupEstimateClass.ButtonOk' at Center.", repo.BackupEstimateClass.ButtonOkInfo, new RecordItemIndex(5));
-            repo.BackupEstimateClass.ButtonOk.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ButtonOk' at Center.", repo.HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ButtonOkInfo, new RecordItemIndex(5));
+            repo.HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ButtonOk.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Checked to 'True' on item 'ReindexApplication.CurrentEstimateCheckbox'.", repo.ReindexApplication.CurrentEstimateCheckboxInfo, new RecordItemIndex(6));

@@ -27,43 +27,30 @@ namespace HB_INSTALL_AUTO
     public partial class HB_INSTALL_AUTORepository : RepoGenBaseFolder
     {
         static HB_INSTALL_AUTORepository instance = new HB_INSTALL_AUTORepository();
+        HB_INSTALL_AUTORepositoryFolders.HeavyBidAppAppFolder _heavybidapp;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidServerSetupAppFolder _heavybidserversetup;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidWorkstationSetupAppFolder _heavybidworkstationsetup;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidRegistrationAppFolder _heavybidregistration;
         HB_INSTALL_AUTORepositoryFolders.ActivateHeavyBidServerAppFolder _activateheavybidserver;
         HB_INSTALL_AUTORepositoryFolders.UserLoginAppFolder _userlogin;
-        HB_INSTALL_AUTORepositoryFolders.HeavyBidTabsAppFolder _heavybidtabs;
         HB_INSTALL_AUTORepositoryFolders.ExitHeavyBidAppFolder _exitheavybid;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidServerFolderAppFolder _heavybidserverfolder;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidWSFolderAppFolder _heavybidwsfolder;
         HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder _windowsmenubar;
         HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder _programsandfeatures;
         HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder _heavybiduninstall;
-        HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder _welcometoheavybidscreen;
         HB_INSTALL_AUTORepositoryFolders.GoogleChromeAppFolder _googlechrome;
-        HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder _aboutheavybid;
-        HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder _systeminformationabouthb;
+        HB_INSTALL_AUTORepositoryFolders.HBPopupScreensFolder _hbpopupscreens;
+        HB_INSTALL_AUTORepositoryFolders.HBReportViewersFolder _hbreportviewers;
         HB_INSTALL_AUTORepositoryFolders.HBButtonDropdownOptionsAppFolder _hbbuttondropdownoptions;
-        HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder _newestimate;
-        HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder _backupestimate;
-        HB_INSTALL_AUTORepositoryFolders.BackupEstimateClassAppFolder _backupestimateclass;
-        HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder _estimatesearch;
-        HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder _hcssbackupexists;
         HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesAppFolder _restoreestimates;
         HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesFoundAppFolder _restoreestimatesfound;
         HB_INSTALL_AUTORepositoryFolders.RestoreSystemFilesAppFolder _restoresystemfiles;
         HB_INSTALL_AUTORepositoryFolders.ReindexScreenAppFolder _reindexscreen;
         HB_INSTALL_AUTORepositoryFolders.ReindexWarningScreenAppFolder _reindexwarningscreen;
         HB_INSTALL_AUTORepositoryFolders.ReindexApplicationAppFolder _reindexapplication;
-        HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder _customizedbidproposalsetup;
-        HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder _hbmultidocumentinterface;
-        HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder _hbreportplusviewer;
-        HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder _printpreview;
-        HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder _heavybidpivotreports;
-        HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder _printcustomizedcrystalreports;
-        HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder _customcrystalbidproposalpreview;
+        HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder1 _hbmultidocumentinterface;
         HB_INSTALL_AUTORepositoryFolders.ExportCompleteAppFolder _exportcomplete;
-        HB_INSTALL_AUTORepositoryFolders.HBInstallPopupsFolder _hbinstallpopups;
 
         /// <summary>
         /// Gets the singleton class instance representing the HB_INSTALL_AUTORepository element repository.
@@ -80,43 +67,30 @@ namespace HB_INSTALL_AUTO
         public HB_INSTALL_AUTORepository() 
             : base("HB_INSTALL_AUTORepository", "/", null, 0, false, "b36fe32b-c31b-4a2b-9886-acc9b1e6ac67", ".\\RepositoryImages\\HB_INSTALL_AUTORepositoryb36fe32b.rximgres")
         {
+            _heavybidapp = new HB_INSTALL_AUTORepositoryFolders.HeavyBidAppAppFolder(this);
             _heavybidserversetup = new HB_INSTALL_AUTORepositoryFolders.HeavyBidServerSetupAppFolder(this);
             _heavybidworkstationsetup = new HB_INSTALL_AUTORepositoryFolders.HeavyBidWorkstationSetupAppFolder(this);
             _heavybidregistration = new HB_INSTALL_AUTORepositoryFolders.HeavyBidRegistrationAppFolder(this);
             _activateheavybidserver = new HB_INSTALL_AUTORepositoryFolders.ActivateHeavyBidServerAppFolder(this);
             _userlogin = new HB_INSTALL_AUTORepositoryFolders.UserLoginAppFolder(this);
-            _heavybidtabs = new HB_INSTALL_AUTORepositoryFolders.HeavyBidTabsAppFolder(this);
             _exitheavybid = new HB_INSTALL_AUTORepositoryFolders.ExitHeavyBidAppFolder(this);
             _heavybidserverfolder = new HB_INSTALL_AUTORepositoryFolders.HeavyBidServerFolderAppFolder(this);
             _heavybidwsfolder = new HB_INSTALL_AUTORepositoryFolders.HeavyBidWSFolderAppFolder(this);
             _windowsmenubar = new HB_INSTALL_AUTORepositoryFolders.WindowsMenuBarAppFolder(this);
             _programsandfeatures = new HB_INSTALL_AUTORepositoryFolders.ProgramsAndFeaturesAppFolder(this);
             _heavybiduninstall = new HB_INSTALL_AUTORepositoryFolders.HeavyBidUninstallAppFolder(this);
-            _welcometoheavybidscreen = new HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder(this);
             _googlechrome = new HB_INSTALL_AUTORepositoryFolders.GoogleChromeAppFolder(this);
-            _aboutheavybid = new HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder(this);
-            _systeminformationabouthb = new HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder(this);
+            _hbpopupscreens = new HB_INSTALL_AUTORepositoryFolders.HBPopupScreensFolder(this);
+            _hbreportviewers = new HB_INSTALL_AUTORepositoryFolders.HBReportViewersFolder(this);
             _hbbuttondropdownoptions = new HB_INSTALL_AUTORepositoryFolders.HBButtonDropdownOptionsAppFolder(this);
-            _newestimate = new HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder(this);
-            _backupestimate = new HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder(this);
-            _backupestimateclass = new HB_INSTALL_AUTORepositoryFolders.BackupEstimateClassAppFolder(this);
-            _estimatesearch = new HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder(this);
-            _hcssbackupexists = new HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder(this);
             _restoreestimates = new HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesAppFolder(this);
             _restoreestimatesfound = new HB_INSTALL_AUTORepositoryFolders.RestoreEstimatesFoundAppFolder(this);
             _restoresystemfiles = new HB_INSTALL_AUTORepositoryFolders.RestoreSystemFilesAppFolder(this);
             _reindexscreen = new HB_INSTALL_AUTORepositoryFolders.ReindexScreenAppFolder(this);
             _reindexwarningscreen = new HB_INSTALL_AUTORepositoryFolders.ReindexWarningScreenAppFolder(this);
             _reindexapplication = new HB_INSTALL_AUTORepositoryFolders.ReindexApplicationAppFolder(this);
-            _customizedbidproposalsetup = new HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder(this);
-            _hbmultidocumentinterface = new HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder(this);
-            _hbreportplusviewer = new HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder(this);
-            _printpreview = new HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder(this);
-            _heavybidpivotreports = new HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder(this);
-            _printcustomizedcrystalreports = new HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder(this);
-            _customcrystalbidproposalpreview = new HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder(this);
+            _hbmultidocumentinterface = new HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder1(this);
             _exportcomplete = new HB_INSTALL_AUTORepositoryFolders.ExportCompleteAppFolder(this);
-            _hbinstallpopups = new HB_INSTALL_AUTORepositoryFolders.HBInstallPopupsFolder(this);
         }
 
 #region Variables
@@ -181,6 +155,18 @@ namespace HB_INSTALL_AUTO
             set { _NewEstimateName = value; }
         }
 
+        string _WSFilePath = "C:\\HeavyBidWS\\";
+
+        /// <summary>
+        /// Gets or sets the value of variable WSFilePath.
+        /// </summary>
+        [TestVariable("b2eae68c-a381-4120-b303-336f93439c6e")]
+        public string WSFilePath
+        {
+            get { return _WSFilePath; }
+            set { _WSFilePath = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -193,6 +179,15 @@ namespace HB_INSTALL_AUTO
             {
                 return _selfInfo;
             }
+        }
+
+        /// <summary>
+        /// The HeavyBidApp folder.
+        /// </summary>
+        [RepositoryFolder("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidAppAppFolder HeavyBidApp
+        {
+            get { return _heavybidapp; }
         }
 
         /// <summary>
@@ -238,15 +233,6 @@ namespace HB_INSTALL_AUTO
         public virtual HB_INSTALL_AUTORepositoryFolders.UserLoginAppFolder UserLogin
         {
             get { return _userlogin; }
-        }
-
-        /// <summary>
-        /// The HeavyBidTabs folder.
-        /// </summary>
-        [RepositoryFolder("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidTabsAppFolder HeavyBidTabs
-        {
-            get { return _heavybidtabs; }
         }
 
         /// <summary>
@@ -304,15 +290,6 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The WelcomeToHeavyBidScreen folder.
-        /// </summary>
-        [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder WelcomeToHeavyBidScreen
-        {
-            get { return _welcometoheavybidscreen; }
-        }
-
-        /// <summary>
         /// The GoogleChrome folder.
         /// </summary>
         [RepositoryFolder("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
@@ -322,21 +299,21 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The AboutHeavyBid folder.
+        /// The HBPopupScreens folder.
         /// </summary>
-        [RepositoryFolder("f7462987-0de1-4830-9a1a-def32c221e44")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder AboutHeavyBid
+        [RepositoryFolder("339e539f-4d83-4e8d-840a-ebf66573dd57")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.HBPopupScreensFolder HBPopupScreens
         {
-            get { return _aboutheavybid; }
+            get { return _hbpopupscreens; }
         }
 
         /// <summary>
-        /// The SystemInformationAboutHB folder.
+        /// The HBReportViewers folder.
         /// </summary>
-        [RepositoryFolder("81a7308a-b5ac-4653-8909-b9bb478ac80f")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder SystemInformationAboutHB
+        [RepositoryFolder("2f992b95-dc30-4fa3-a4d8-4bc7addaa072")]
+        public virtual HB_INSTALL_AUTORepositoryFolders.HBReportViewersFolder HBReportViewers
         {
-            get { return _systeminformationabouthb; }
+            get { return _hbreportviewers; }
         }
 
         /// <summary>
@@ -346,51 +323,6 @@ namespace HB_INSTALL_AUTO
         public virtual HB_INSTALL_AUTORepositoryFolders.HBButtonDropdownOptionsAppFolder HBButtonDropdownOptions
         {
             get { return _hbbuttondropdownoptions; }
-        }
-
-        /// <summary>
-        /// The NewEstimate folder.
-        /// </summary>
-        [RepositoryFolder("3a80063c-0857-4845-9cf7-781e35c94858")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder NewEstimate
-        {
-            get { return _newestimate; }
-        }
-
-        /// <summary>
-        /// The BackupEstimate folder.
-        /// </summary>
-        [RepositoryFolder("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder BackupEstimate
-        {
-            get { return _backupestimate; }
-        }
-
-        /// <summary>
-        /// The BackupEstimateClass folder.
-        /// </summary>
-        [RepositoryFolder("be6c54b9-5252-4e1f-b2ca-962998a62625")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.BackupEstimateClassAppFolder BackupEstimateClass
-        {
-            get { return _backupestimateclass; }
-        }
-
-        /// <summary>
-        /// The EstimateSearch folder.
-        /// </summary>
-        [RepositoryFolder("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder EstimateSearch
-        {
-            get { return _estimatesearch; }
-        }
-
-        /// <summary>
-        /// The HCSSBackupExists folder.
-        /// </summary>
-        [RepositoryFolder("53921fe6-449b-4502-9bee-3ed08c46e088")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HCSSBackupExistsAppFolder HCSSBackupExists
-        {
-            get { return _hcssbackupexists; }
         }
 
         /// <summary>
@@ -448,66 +380,12 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The CustomizedBidProposalSetup folder.
-        /// </summary>
-        [RepositoryFolder("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder CustomizedBidProposalSetup
-        {
-            get { return _customizedbidproposalsetup; }
-        }
-
-        /// <summary>
         /// The HBMultiDocumentInterface folder.
         /// </summary>
         [RepositoryFolder("8dce5a36-0438-4d8a-a430-f5ee5d0dd202")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder HBMultiDocumentInterface
+        public virtual HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceAppFolder1 HBMultiDocumentInterface
         {
             get { return _hbmultidocumentinterface; }
-        }
-
-        /// <summary>
-        /// The HBReportPlusViewer folder.
-        /// </summary>
-        [RepositoryFolder("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder HBReportPlusViewer
-        {
-            get { return _hbreportplusviewer; }
-        }
-
-        /// <summary>
-        /// The PrintPreview folder.
-        /// </summary>
-        [RepositoryFolder("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder PrintPreview
-        {
-            get { return _printpreview; }
-        }
-
-        /// <summary>
-        /// The HeavyBidPivotReports folder.
-        /// </summary>
-        [RepositoryFolder("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder HeavyBidPivotReports
-        {
-            get { return _heavybidpivotreports; }
-        }
-
-        /// <summary>
-        /// The PrintCustomizedCrystalReports folder.
-        /// </summary>
-        [RepositoryFolder("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder PrintCustomizedCrystalReports
-        {
-            get { return _printcustomizedcrystalreports; }
-        }
-
-        /// <summary>
-        /// The CustomCrystalBidProposalPreview folder.
-        /// </summary>
-        [RepositoryFolder("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder CustomCrystalBidProposalPreview
-        {
-            get { return _customcrystalbidproposalpreview; }
         }
 
         /// <summary>
@@ -518,15 +396,6 @@ namespace HB_INSTALL_AUTO
         {
             get { return _exportcomplete; }
         }
-
-        /// <summary>
-        /// The HBInstallPopups folder.
-        /// </summary>
-        [RepositoryFolder("b6540888-48d2-4189-8584-79506a4a3117")]
-        public virtual HB_INSTALL_AUTORepositoryFolders.HBInstallPopupsFolder HBInstallPopups
-        {
-            get { return _hbinstallpopups; }
-        }
     }
 
     /// <summary>
@@ -536,50 +405,1733 @@ namespace HB_INSTALL_AUTO
     public partial class HB_INSTALL_AUTORepositoryFolders
     {
         /// <summary>
+        /// The HeavyBidAppAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
+        public partial class HeavyBidAppAppFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceFolder _hbmultidocumentinterface;
+            HB_INSTALL_AUTORepositoryFolders.TabsFolder _tabs;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder1 _buttons;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _ribbonbarInfo;
+
+            /// <summary>
+            /// Creates a new HeavyBidApp  folder.
+            /// </summary>
+            public HeavyBidAppAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HeavyBidApp", "/form[@title~'HB']", parentFolder, 30000, null, false, "2f898f27-5ad8-489e-9722-e1d9c63f5289", "")
+            {
+                _hbmultidocumentinterface = new HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceFolder(this);
+                _tabs = new HB_INSTALL_AUTORepositoryFolders.TabsFolder(this);
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder1(this);
+                _closeInfo = new RepoItemInfo(this, "Close", "element[@controlid='3244']/form[@controlid='513']//button[@accessiblekeyboardshortcut='Alt+c']", 30000, null, "e2834541-93fd-4733-8d22-478b0704a261");
+                _ribbonbarInfo = new RepoItemInfo(this, "RibbonBar", "element[@controlid='59419']/element[@instance='0']/toolbar[1]", 30000, null, "6168cd49-e208-4702-8166-bd4110f00d62");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("e2834541-93fd-4733-8d22-478b0704a261")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("e2834541-93fd-4733-8d22-478b0704a261")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RibbonBar item.
+            /// </summary>
+            [RepositoryItem("6168cd49-e208-4702-8166-bd4110f00d62")]
+            public virtual Ranorex.ToolBar RibbonBar
+            {
+                get
+                {
+                    return _ribbonbarInfo.CreateAdapter<Ranorex.ToolBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RibbonBar item info.
+            /// </summary>
+            [RepositoryItemInfo("6168cd49-e208-4702-8166-bd4110f00d62")]
+            public virtual RepoItemInfo RibbonBarInfo
+            {
+                get
+                {
+                    return _ribbonbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HBMultiDocumentInterface folder.
+            /// </summary>
+            [RepositoryFolder("e921379f-5bc4-4dc8-b2dc-577c3de064b9")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.HBMultiDocumentInterfaceFolder HBMultiDocumentInterface
+            {
+                get { return _hbmultidocumentinterface; }
+            }
+
+            /// <summary>
+            /// The Tabs folder.
+            /// </summary>
+            [RepositoryFolder("949dce5e-2803-43cc-89a9-e58bd0ef8810")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.TabsFolder Tabs
+            {
+                get { return _tabs; }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("2b09a41e-c44f-4c25-bdbd-ea6c27f14f08")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder1 Buttons
+            {
+                get { return _buttons; }
+            }
+        }
+
+        /// <summary>
+        /// The HBMultiDocumentInterfaceFolder folder.
+        /// </summary>
+        [RepositoryFolder("e921379f-5bc4-4dc8-b2dc-577c3de064b9")]
+        public partial class HBMultiDocumentInterfaceFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.ReportsFolder _reports;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder _buttons;
+
+            /// <summary>
+            /// Creates a new HBMultiDocumentInterface  folder.
+            /// </summary>
+            public HBMultiDocumentInterfaceFolder(RepoGenBaseFolder parentFolder) :
+                    base("HBMultiDocumentInterface", "element[@class='DFMDIClient']", parentFolder, 30000, null, false, "e921379f-5bc4-4dc8-b2dc-577c3de064b9", "")
+            {
+                _reports = new HB_INSTALL_AUTORepositoryFolders.ReportsFolder(this);
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e921379f-5bc4-4dc8-b2dc-577c3de064b9")]
+            public virtual Ranorex.Unknown Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e921379f-5bc4-4dc8-b2dc-577c3de064b9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Reports folder.
+            /// </summary>
+            [RepositoryFolder("71ff5717-d828-48e2-bd40-f9afcf9a1a3e")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ReportsFolder Reports
+            {
+                get { return _reports; }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("6008c782-38c8-4803-a9d4-5b810310e80b")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder Buttons
+            {
+                get { return _buttons; }
+            }
+        }
+
+        /// <summary>
+        /// The ReportsFolder folder.
+        /// </summary>
+        [RepositoryFolder("71ff5717-d828-48e2-bd40-f9afcf9a1a3e")]
+        public partial class ReportsFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.CostReportsFolder _costreports;
+            HB_INSTALL_AUTORepositoryFolders.SummaryReportsFolder _summaryreports;
+            HB_INSTALL_AUTORepositoryFolders.EstimateResourcesReportsFolder _estimateresourcesreports;
+            HB_INSTALL_AUTORepositoryFolders.ReportsPlusPivotFolder _reportspluspivot;
+
+            /// <summary>
+            /// Creates a new Reports  folder.
+            /// </summary>
+            public ReportsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Reports", "", parentFolder, 0, null, false, "71ff5717-d828-48e2-bd40-f9afcf9a1a3e", "")
+            {
+                _costreports = new HB_INSTALL_AUTORepositoryFolders.CostReportsFolder(this);
+                _summaryreports = new HB_INSTALL_AUTORepositoryFolders.SummaryReportsFolder(this);
+                _estimateresourcesreports = new HB_INSTALL_AUTORepositoryFolders.EstimateResourcesReportsFolder(this);
+                _reportspluspivot = new HB_INSTALL_AUTORepositoryFolders.ReportsPlusPivotFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("71ff5717-d828-48e2-bd40-f9afcf9a1a3e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CostReports folder.
+            /// </summary>
+            [RepositoryFolder("386f6870-81c1-4450-bee8-3a5cc2f226b2")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.CostReportsFolder CostReports
+            {
+                get { return _costreports; }
+            }
+
+            /// <summary>
+            /// The SummaryReports folder.
+            /// </summary>
+            [RepositoryFolder("37110408-ce43-48b3-b3a0-60efa41112ed")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.SummaryReportsFolder SummaryReports
+            {
+                get { return _summaryreports; }
+            }
+
+            /// <summary>
+            /// The EstimateResourcesReports folder.
+            /// </summary>
+            [RepositoryFolder("ef5ebe0f-b066-46b4-834c-3e4077a21c93")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.EstimateResourcesReportsFolder EstimateResourcesReports
+            {
+                get { return _estimateresourcesreports; }
+            }
+
+            /// <summary>
+            /// The ReportsPlusPivot folder.
+            /// </summary>
+            [RepositoryFolder("1eca4fb8-e4b7-4d25-8cdf-d38b929a0a95")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ReportsPlusPivotFolder ReportsPlusPivot
+            {
+                get { return _reportspluspivot; }
+            }
+        }
+
+        /// <summary>
+        /// The CostReportsFolder folder.
+        /// </summary>
+        [RepositoryFolder("386f6870-81c1-4450-bee8-3a5cc2f226b2")]
+        public partial class CostReportsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _equipmentreportInfo;
+            RepoItemInfo _costreportclassicInfo;
+            RepoItemInfo _costreportInfo;
+
+            /// <summary>
+            /// Creates a new CostReports  folder.
+            /// </summary>
+            public CostReportsFolder(RepoGenBaseFolder parentFolder) :
+                    base("CostReports", "", parentFolder, 0, null, false, "386f6870-81c1-4450-bee8-3a5cc2f226b2", "")
+            {
+                _equipmentreportInfo = new RepoItemInfo(this, "EquipmentReport", "?/?/?/tree/?/?/treeitem[@text='Equipment Report']", 30000, null, "fb173a9a-3e6d-4b33-8b57-88ba1b10051e");
+                _costreportclassicInfo = new RepoItemInfo(this, "CostReportClassic", "?/?/?/tree/?/?/treeitem[@text='Cost Report Classic']", 30000, null, "92ec3f14-cb7b-400e-b2a2-3f7ff49cee61");
+                _costreportInfo = new RepoItemInfo(this, "CostReport", "?/?/?/tree/?/?/treeitem[@text='Cost Report']", 30000, null, "9276b565-0af9-4206-89e0-d0cf7040c0cb");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("386f6870-81c1-4450-bee8-3a5cc2f226b2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EquipmentReport item.
+            /// </summary>
+            [RepositoryItem("fb173a9a-3e6d-4b33-8b57-88ba1b10051e")]
+            public virtual Ranorex.TreeItem EquipmentReport
+            {
+                get
+                {
+                    return _equipmentreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EquipmentReport item info.
+            /// </summary>
+            [RepositoryItemInfo("fb173a9a-3e6d-4b33-8b57-88ba1b10051e")]
+            public virtual RepoItemInfo EquipmentReportInfo
+            {
+                get
+                {
+                    return _equipmentreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CostReportClassic item.
+            /// </summary>
+            [RepositoryItem("92ec3f14-cb7b-400e-b2a2-3f7ff49cee61")]
+            public virtual Ranorex.TreeItem CostReportClassic
+            {
+                get
+                {
+                    return _costreportclassicInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CostReportClassic item info.
+            /// </summary>
+            [RepositoryItemInfo("92ec3f14-cb7b-400e-b2a2-3f7ff49cee61")]
+            public virtual RepoItemInfo CostReportClassicInfo
+            {
+                get
+                {
+                    return _costreportclassicInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CostReport item.
+            /// </summary>
+            [RepositoryItem("9276b565-0af9-4206-89e0-d0cf7040c0cb")]
+            public virtual Ranorex.TreeItem CostReport
+            {
+                get
+                {
+                    return _costreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CostReport item info.
+            /// </summary>
+            [RepositoryItemInfo("9276b565-0af9-4206-89e0-d0cf7040c0cb")]
+            public virtual RepoItemInfo CostReportInfo
+            {
+                get
+                {
+                    return _costreportInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SummaryReportsFolder folder.
+        /// </summary>
+        [RepositoryFolder("37110408-ce43-48b3-b3a0-60efa41112ed")]
+        public partial class SummaryReportsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _estimaterecapInfo;
+            RepoItemInfo _estimaterecapclassicInfo;
+            RepoItemInfo _chiefestimatoranalysisreportInfo;
+            RepoItemInfo _costpricereportInfo;
+            RepoItemInfo _concisebidproposalInfo;
+
+            /// <summary>
+            /// Creates a new SummaryReports  folder.
+            /// </summary>
+            public SummaryReportsFolder(RepoGenBaseFolder parentFolder) :
+                    base("SummaryReports", "", parentFolder, 0, null, false, "37110408-ce43-48b3-b3a0-60efa41112ed", "")
+            {
+                _estimaterecapInfo = new RepoItemInfo(this, "EstimateRecap", "?/?/?/tree/?/?/treeitem[@text='Estimate Recap']", 30000, null, "285077c8-4ea3-44b3-8a08-3f210440ccbb");
+                _estimaterecapclassicInfo = new RepoItemInfo(this, "EstimateRecapClassic", "?/?/?/tree/?/?/treeitem[@text='Estimate Recap Classic']", 30000, null, "1667e8af-4b79-47e4-8aa4-9731676894fe");
+                _chiefestimatoranalysisreportInfo = new RepoItemInfo(this, "ChiefEstimatorAnalysisReport", "?/?/?/tree/?/?/treeitem[@text~'Chief Estimator''s Analysis']", 30000, null, "16d73fa8-057d-49a9-adce-11a53dde771e");
+                _costpricereportInfo = new RepoItemInfo(this, "CostPriceReport", "?/?/?/tree/?/?/treeitem[@text~'Cost and Price Report']", 30000, null, "817ef5c0-53d5-4153-9d10-40cffaaac04b");
+                _concisebidproposalInfo = new RepoItemInfo(this, "ConciseBidProposal", "?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']", 30000, null, "66e81a8a-d86f-4d50-bd55-300418909da0");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("37110408-ce43-48b3-b3a0-60efa41112ed")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EstimateRecap item.
+            /// </summary>
+            [RepositoryItem("285077c8-4ea3-44b3-8a08-3f210440ccbb")]
+            public virtual Ranorex.TreeItem EstimateRecap
+            {
+                get
+                {
+                    return _estimaterecapInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EstimateRecap item info.
+            /// </summary>
+            [RepositoryItemInfo("285077c8-4ea3-44b3-8a08-3f210440ccbb")]
+            public virtual RepoItemInfo EstimateRecapInfo
+            {
+                get
+                {
+                    return _estimaterecapInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EstimateRecapClassic item.
+            /// </summary>
+            [RepositoryItem("1667e8af-4b79-47e4-8aa4-9731676894fe")]
+            public virtual Ranorex.TreeItem EstimateRecapClassic
+            {
+                get
+                {
+                    return _estimaterecapclassicInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EstimateRecapClassic item info.
+            /// </summary>
+            [RepositoryItemInfo("1667e8af-4b79-47e4-8aa4-9731676894fe")]
+            public virtual RepoItemInfo EstimateRecapClassicInfo
+            {
+                get
+                {
+                    return _estimaterecapclassicInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChiefEstimatorAnalysisReport item.
+            /// </summary>
+            [RepositoryItem("16d73fa8-057d-49a9-adce-11a53dde771e")]
+            public virtual Ranorex.TreeItem ChiefEstimatorAnalysisReport
+            {
+                get
+                {
+                    return _chiefestimatoranalysisreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChiefEstimatorAnalysisReport item info.
+            /// </summary>
+            [RepositoryItemInfo("16d73fa8-057d-49a9-adce-11a53dde771e")]
+            public virtual RepoItemInfo ChiefEstimatorAnalysisReportInfo
+            {
+                get
+                {
+                    return _chiefestimatoranalysisreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CostPriceReport item.
+            /// </summary>
+            [RepositoryItem("817ef5c0-53d5-4153-9d10-40cffaaac04b")]
+            public virtual Ranorex.TreeItem CostPriceReport
+            {
+                get
+                {
+                    return _costpricereportInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CostPriceReport item info.
+            /// </summary>
+            [RepositoryItemInfo("817ef5c0-53d5-4153-9d10-40cffaaac04b")]
+            public virtual RepoItemInfo CostPriceReportInfo
+            {
+                get
+                {
+                    return _costpricereportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConciseBidProposal item.
+            /// </summary>
+            [RepositoryItem("66e81a8a-d86f-4d50-bd55-300418909da0")]
+            public virtual Ranorex.TreeItem ConciseBidProposal
+            {
+                get
+                {
+                    return _concisebidproposalInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConciseBidProposal item info.
+            /// </summary>
+            [RepositoryItemInfo("66e81a8a-d86f-4d50-bd55-300418909da0")]
+            public virtual RepoItemInfo ConciseBidProposalInfo
+            {
+                get
+                {
+                    return _concisebidproposalInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The EstimateResourcesReportsFolder folder.
+        /// </summary>
+        [RepositoryFolder("ef5ebe0f-b066-46b4-834c-3e4077a21c93")]
+        public partial class EstimateResourcesReportsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _biditemstructureInfo;
+
+            /// <summary>
+            /// Creates a new EstimateResourcesReports  folder.
+            /// </summary>
+            public EstimateResourcesReportsFolder(RepoGenBaseFolder parentFolder) :
+                    base("EstimateResourcesReports", "", parentFolder, 0, null, false, "ef5ebe0f-b066-46b4-834c-3e4077a21c93", "")
+            {
+                _biditemstructureInfo = new RepoItemInfo(this, "BiditemStructure", "?/?/?/tree/?/?/treeitem[@text~'Biditem Structure']", 30000, null, "bf254dd9-e65f-4a29-b473-262c06a79189");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ef5ebe0f-b066-46b4-834c-3e4077a21c93")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BiditemStructure item.
+            /// </summary>
+            [RepositoryItem("bf254dd9-e65f-4a29-b473-262c06a79189")]
+            public virtual Ranorex.TreeItem BiditemStructure
+            {
+                get
+                {
+                    return _biditemstructureInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BiditemStructure item info.
+            /// </summary>
+            [RepositoryItemInfo("bf254dd9-e65f-4a29-b473-262c06a79189")]
+            public virtual RepoItemInfo BiditemStructureInfo
+            {
+                get
+                {
+                    return _biditemstructureInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ReportsPlusPivotFolder folder.
+        /// </summary>
+        [RepositoryFolder("1eca4fb8-e4b7-4d25-8cdf-d38b929a0a95")]
+        public partial class ReportsPlusPivotFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _reportdesignerInfo;
+
+            /// <summary>
+            /// Creates a new ReportsPlusPivot  folder.
+            /// </summary>
+            public ReportsPlusPivotFolder(RepoGenBaseFolder parentFolder) :
+                    base("ReportsPlusPivot", "", parentFolder, 0, null, false, "1eca4fb8-e4b7-4d25-8cdf-d38b929a0a95", "")
+            {
+                _reportdesignerInfo = new RepoItemInfo(this, "ReportDesigner", "?/?/?/tree/?/?/treeitem[@text~'Report Designer']", 30000, null, "225b3964-30ef-4006-8218-9c808d58925e");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1eca4fb8-e4b7-4d25-8cdf-d38b929a0a95")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReportDesigner item.
+            /// </summary>
+            [RepositoryItem("225b3964-30ef-4006-8218-9c808d58925e")]
+            public virtual Ranorex.TreeItem ReportDesigner
+            {
+                get
+                {
+                    return _reportdesignerInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReportDesigner item info.
+            /// </summary>
+            [RepositoryItemInfo("225b3964-30ef-4006-8218-9c808d58925e")]
+            public virtual RepoItemInfo ReportDesignerInfo
+            {
+                get
+                {
+                    return _reportdesignerInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder folder.
+        /// </summary>
+        [RepositoryFolder("6008c782-38c8-4803-a9d4-5b810310e80b")]
+        public partial class ButtonsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonexporttoaccountingInfo;
+            RepoItemInfo _buttonexportInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "6008c782-38c8-4803-a9d4-5b810310e80b", "")
+            {
+                _buttonexporttoaccountingInfo = new RepoItemInfo(this, "ButtonExportToAccounting", "?/?//button[@text~'Export to Accounting']", 30000, null, "b5b86fba-138a-4e29-ae0c-58abbcd0bf0a");
+                _buttonexportInfo = new RepoItemInfo(this, "ButtonExport", "?/?/?/?/element[@class='DFbutton']/?/?/button[@accessiblename='Export']", 30000, null, "2db6a250-cf4f-4383-bacf-321ac6b57879");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/?/?/button[@text='OK']", 30000, null, "5daa53c6-434e-4668-a0f7-e362ad6c061e");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6008c782-38c8-4803-a9d4-5b810310e80b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonExportToAccounting item.
+            /// </summary>
+            [RepositoryItem("b5b86fba-138a-4e29-ae0c-58abbcd0bf0a")]
+            public virtual Ranorex.Button ButtonExportToAccounting
+            {
+                get
+                {
+                    return _buttonexporttoaccountingInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonExportToAccounting item info.
+            /// </summary>
+            [RepositoryItemInfo("b5b86fba-138a-4e29-ae0c-58abbcd0bf0a")]
+            public virtual RepoItemInfo ButtonExportToAccountingInfo
+            {
+                get
+                {
+                    return _buttonexporttoaccountingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonExport item.
+            /// </summary>
+            [RepositoryItem("2db6a250-cf4f-4383-bacf-321ac6b57879")]
+            public virtual Ranorex.Button ButtonExport
+            {
+                get
+                {
+                    return _buttonexportInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonExport item info.
+            /// </summary>
+            [RepositoryItemInfo("2db6a250-cf4f-4383-bacf-321ac6b57879")]
+            public virtual RepoItemInfo ButtonExportInfo
+            {
+                get
+                {
+                    return _buttonexportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("5daa53c6-434e-4668-a0f7-e362ad6c061e")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("5daa53c6-434e-4668-a0f7-e362ad6c061e")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TabsFolder folder.
+        /// </summary>
+        [RepositoryFolder("949dce5e-2803-43cc-89a9-e58bd0ef8810")]
+        public partial class TabsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _filetabInfo;
+            RepoItemInfo _querytabInfo;
+            RepoItemInfo _reporttabInfo;
+            RepoItemInfo _summarytabInfo;
+            RepoItemInfo _exchangetabInfo;
+            RepoItemInfo _toolstabInfo;
+            RepoItemInfo _helptabInfo;
+            RepoItemInfo _whatsnewtabInfo;
+
+            /// <summary>
+            /// Creates a new Tabs  folder.
+            /// </summary>
+            public TabsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tabs", "", parentFolder, 0, null, false, "949dce5e-2803-43cc-89a9-e58bd0ef8810", "")
+            {
+                _filetabInfo = new RepoItemInfo(this, "FileTab", ".///toolbar/tabpagelist/tabpage[@title~'File']", 30000, null, "0295fd3f-fff7-4963-a5b3-c56a9ac69481");
+                _querytabInfo = new RepoItemInfo(this, "QueryTab", ".///toolbar/tabpagelist/tabpage[@title~'Query']", 30000, null, "d67e9e89-7e0f-43c3-805d-510a2b64275e");
+                _reporttabInfo = new RepoItemInfo(this, "ReportTab", ".///toolbar/tabpagelist/tabpage[@title~'Report']", 30000, null, "5048bb26-2beb-4526-b63f-95ca95f2b8d1");
+                _summarytabInfo = new RepoItemInfo(this, "SummaryTab", ".///toolbar/tabpagelist/tabpage[@title~'Summary']", 30000, null, "6148dba9-921d-472a-ab45-f5436a302652");
+                _exchangetabInfo = new RepoItemInfo(this, "ExchangeTab", ".///toolbar/tabpagelist/tabpage[@title~'Exchange']", 30000, null, "335aaa88-e023-4baf-a4a4-c3bb609ace02");
+                _toolstabInfo = new RepoItemInfo(this, "ToolsTab", ".///toolbar/tabpagelist/tabpage[@title~'Tools']", 30000, null, "10c418f8-df89-45d4-ab06-12340733a28d");
+                _helptabInfo = new RepoItemInfo(this, "HelpTab", ".///toolbar/tabpagelist/tabpage[@title~'Help']", 30000, null, "f7760583-32ad-4ea0-ae2b-7afacacf7a0a");
+                _whatsnewtabInfo = new RepoItemInfo(this, "WhatsNewTab", ".///toolbar/tabpagelist/tabpage[@title~'What''s New']", 30000, null, "840fcc6b-d04e-419f-9b95-0058e7db6b96");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("949dce5e-2803-43cc-89a9-e58bd0ef8810")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FileTab item.
+            /// </summary>
+            [RepositoryItem("0295fd3f-fff7-4963-a5b3-c56a9ac69481")]
+            public virtual Ranorex.TabPage FileTab
+            {
+                get
+                {
+                    return _filetabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FileTab item info.
+            /// </summary>
+            [RepositoryItemInfo("0295fd3f-fff7-4963-a5b3-c56a9ac69481")]
+            public virtual RepoItemInfo FileTabInfo
+            {
+                get
+                {
+                    return _filetabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The QueryTab item.
+            /// </summary>
+            [RepositoryItem("d67e9e89-7e0f-43c3-805d-510a2b64275e")]
+            public virtual Ranorex.TabPage QueryTab
+            {
+                get
+                {
+                    return _querytabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The QueryTab item info.
+            /// </summary>
+            [RepositoryItemInfo("d67e9e89-7e0f-43c3-805d-510a2b64275e")]
+            public virtual RepoItemInfo QueryTabInfo
+            {
+                get
+                {
+                    return _querytabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReportTab item.
+            /// </summary>
+            [RepositoryItem("5048bb26-2beb-4526-b63f-95ca95f2b8d1")]
+            public virtual Ranorex.TabPage ReportTab
+            {
+                get
+                {
+                    return _reporttabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReportTab item info.
+            /// </summary>
+            [RepositoryItemInfo("5048bb26-2beb-4526-b63f-95ca95f2b8d1")]
+            public virtual RepoItemInfo ReportTabInfo
+            {
+                get
+                {
+                    return _reporttabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SummaryTab item.
+            /// </summary>
+            [RepositoryItem("6148dba9-921d-472a-ab45-f5436a302652")]
+            public virtual Ranorex.TabPage SummaryTab
+            {
+                get
+                {
+                    return _summarytabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SummaryTab item info.
+            /// </summary>
+            [RepositoryItemInfo("6148dba9-921d-472a-ab45-f5436a302652")]
+            public virtual RepoItemInfo SummaryTabInfo
+            {
+                get
+                {
+                    return _summarytabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExchangeTab item.
+            /// </summary>
+            [RepositoryItem("335aaa88-e023-4baf-a4a4-c3bb609ace02")]
+            public virtual Ranorex.TabPage ExchangeTab
+            {
+                get
+                {
+                    return _exchangetabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExchangeTab item info.
+            /// </summary>
+            [RepositoryItemInfo("335aaa88-e023-4baf-a4a4-c3bb609ace02")]
+            public virtual RepoItemInfo ExchangeTabInfo
+            {
+                get
+                {
+                    return _exchangetabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ToolsTab item.
+            /// </summary>
+            [RepositoryItem("10c418f8-df89-45d4-ab06-12340733a28d")]
+            public virtual Ranorex.TabPage ToolsTab
+            {
+                get
+                {
+                    return _toolstabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ToolsTab item info.
+            /// </summary>
+            [RepositoryItemInfo("10c418f8-df89-45d4-ab06-12340733a28d")]
+            public virtual RepoItemInfo ToolsTabInfo
+            {
+                get
+                {
+                    return _toolstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HelpTab item.
+            /// </summary>
+            [RepositoryItem("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
+            public virtual Ranorex.TabPage HelpTab
+            {
+                get
+                {
+                    return _helptabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HelpTab item info.
+            /// </summary>
+            [RepositoryItemInfo("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
+            public virtual RepoItemInfo HelpTabInfo
+            {
+                get
+                {
+                    return _helptabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WhatsNewTab item.
+            /// </summary>
+            [RepositoryItem("840fcc6b-d04e-419f-9b95-0058e7db6b96")]
+            public virtual Ranorex.TabPage WhatsNewTab
+            {
+                get
+                {
+                    return _whatsnewtabInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WhatsNewTab item info.
+            /// </summary>
+            [RepositoryItemInfo("840fcc6b-d04e-419f-9b95-0058e7db6b96")]
+            public virtual RepoItemInfo WhatsNewTabInfo
+            {
+                get
+                {
+                    return _whatsnewtabInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("2b09a41e-c44f-4c25-bdbd-ea6c27f14f08")]
+        public partial class ButtonsFolder1 : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.FileFolder _file;
+            HB_INSTALL_AUTORepositoryFolders.QueryFolder _query;
+            HB_INSTALL_AUTORepositoryFolders.ReportFolder _report;
+            HB_INSTALL_AUTORepositoryFolders.SummaryFolder _summary;
+            HB_INSTALL_AUTORepositoryFolders.ExchangeFolder _exchange;
+            HB_INSTALL_AUTORepositoryFolders.ToolsFolder _tools;
+            HB_INSTALL_AUTORepositoryFolders.HelpFolder _help;
+            HB_INSTALL_AUTORepositoryFolders.WhatsNewFolder _whatsnew;
+            RepoItemInfo _hcssiconInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder1(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "2b09a41e-c44f-4c25-bdbd-ea6c27f14f08", "")
+            {
+                _file = new HB_INSTALL_AUTORepositoryFolders.FileFolder(this);
+                _query = new HB_INSTALL_AUTORepositoryFolders.QueryFolder(this);
+                _report = new HB_INSTALL_AUTORepositoryFolders.ReportFolder(this);
+                _summary = new HB_INSTALL_AUTORepositoryFolders.SummaryFolder(this);
+                _exchange = new HB_INSTALL_AUTORepositoryFolders.ExchangeFolder(this);
+                _tools = new HB_INSTALL_AUTORepositoryFolders.ToolsFolder(this);
+                _help = new HB_INSTALL_AUTORepositoryFolders.HelpFolder(this);
+                _whatsnew = new HB_INSTALL_AUTORepositoryFolders.WhatsNewFolder(this);
+                _hcssiconInfo = new RepoItemInfo(this, "HCSSIcon", ".///toolbar/button[@accessiblename~'App']", 30000, null, "0cde0962-f6ba-4e5e-99c0-dd98a17c0783");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2b09a41e-c44f-4c25-bdbd-ea6c27f14f08")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HCSSIcon item.
+            /// </summary>
+            [RepositoryItem("0cde0962-f6ba-4e5e-99c0-dd98a17c0783")]
+            public virtual Ranorex.Button HCSSIcon
+            {
+                get
+                {
+                    return _hcssiconInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HCSSIcon item info.
+            /// </summary>
+            [RepositoryItemInfo("0cde0962-f6ba-4e5e-99c0-dd98a17c0783")]
+            public virtual RepoItemInfo HCSSIconInfo
+            {
+                get
+                {
+                    return _hcssiconInfo;
+                }
+            }
+
+            /// <summary>
+            /// The File folder.
+            /// </summary>
+            [RepositoryFolder("0e0bf963-cb1b-4e98-94c2-de7b4b360712")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.FileFolder File
+            {
+                get { return _file; }
+            }
+
+            /// <summary>
+            /// The Query folder.
+            /// </summary>
+            [RepositoryFolder("1912ebcc-d939-4f79-92af-c40d2bc0c986")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.QueryFolder Query
+            {
+                get { return _query; }
+            }
+
+            /// <summary>
+            /// The Report folder.
+            /// </summary>
+            [RepositoryFolder("798544bf-c667-4c45-9161-7376d082ba30")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ReportFolder Report
+            {
+                get { return _report; }
+            }
+
+            /// <summary>
+            /// The Summary folder.
+            /// </summary>
+            [RepositoryFolder("567b8f90-eba2-48eb-b3a5-224d8fe225d0")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.SummaryFolder Summary
+            {
+                get { return _summary; }
+            }
+
+            /// <summary>
+            /// The Exchange folder.
+            /// </summary>
+            [RepositoryFolder("f2077619-9772-4a6d-9c6d-05cedc463094")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ExchangeFolder Exchange
+            {
+                get { return _exchange; }
+            }
+
+            /// <summary>
+            /// The Tools folder.
+            /// </summary>
+            [RepositoryFolder("09e5c5e3-8f85-498e-8bb7-cdb3c1db9299")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ToolsFolder Tools
+            {
+                get { return _tools; }
+            }
+
+            /// <summary>
+            /// The Help folder.
+            /// </summary>
+            [RepositoryFolder("c8982949-125a-4c41-b55b-298b23fabaf7")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.HelpFolder Help
+            {
+                get { return _help; }
+            }
+
+            /// <summary>
+            /// The WhatsNew folder.
+            /// </summary>
+            [RepositoryFolder("45a73d0f-e29e-4f5d-8680-7344f01391fd")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.WhatsNewFolder WhatsNew
+            {
+                get { return _whatsnew; }
+            }
+        }
+
+        /// <summary>
+        /// The FileFolder folder.
+        /// </summary>
+        [RepositoryFolder("0e0bf963-cb1b-4e98-94c2-de7b4b360712")]
+        public partial class FileFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnewestimateInfo;
+            RepoItemInfo _buttonopenestimateInfo;
+            RepoItemInfo _buttonbackupestimateInfo;
+            RepoItemInfo _buttonrestoreestimateInfo;
+
+            /// <summary>
+            /// Creates a new File  folder.
+            /// </summary>
+            public FileFolder(RepoGenBaseFolder parentFolder) :
+                    base("File", "", parentFolder, 0, null, false, "0e0bf963-cb1b-4e98-94c2-de7b4b360712", "")
+            {
+                _buttonnewestimateInfo = new RepoItemInfo(this, "ButtonNewEstimate", ".///toolbar/button[@text~'New']", 30000, null, "6eb328db-5a10-40e9-a492-311077d8cafc");
+                _buttonopenestimateInfo = new RepoItemInfo(this, "ButtonOpenEstimate", ".///toolbar/button[@text~'Open']", 30000, null, "2c368f16-881f-4909-9179-4811ff1b86dd");
+                _buttonbackupestimateInfo = new RepoItemInfo(this, "ButtonBackupEstimate", ".///toolbar/button[@text~'Backup']", 30000, null, "bc097389-13aa-49f4-a7ae-cc31e4676ec3");
+                _buttonrestoreestimateInfo = new RepoItemInfo(this, "ButtonRestoreEstimate", ".///toolbar/button[@text~'Restore']", 30000, null, "0264168d-9bc1-4b50-a882-702a1556551e");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0e0bf963-cb1b-4e98-94c2-de7b4b360712")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNewEstimate item.
+            /// </summary>
+            [RepositoryItem("6eb328db-5a10-40e9-a492-311077d8cafc")]
+            public virtual Ranorex.Button ButtonNewEstimate
+            {
+                get
+                {
+                    return _buttonnewestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNewEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("6eb328db-5a10-40e9-a492-311077d8cafc")]
+            public virtual RepoItemInfo ButtonNewEstimateInfo
+            {
+                get
+                {
+                    return _buttonnewestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOpenEstimate item.
+            /// </summary>
+            [RepositoryItem("2c368f16-881f-4909-9179-4811ff1b86dd")]
+            public virtual Ranorex.Button ButtonOpenEstimate
+            {
+                get
+                {
+                    return _buttonopenestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOpenEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("2c368f16-881f-4909-9179-4811ff1b86dd")]
+            public virtual RepoItemInfo ButtonOpenEstimateInfo
+            {
+                get
+                {
+                    return _buttonopenestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonBackupEstimate item.
+            /// </summary>
+            [RepositoryItem("bc097389-13aa-49f4-a7ae-cc31e4676ec3")]
+            public virtual Ranorex.Button ButtonBackupEstimate
+            {
+                get
+                {
+                    return _buttonbackupestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonBackupEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("bc097389-13aa-49f4-a7ae-cc31e4676ec3")]
+            public virtual RepoItemInfo ButtonBackupEstimateInfo
+            {
+                get
+                {
+                    return _buttonbackupestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreEstimate item.
+            /// </summary>
+            [RepositoryItem("0264168d-9bc1-4b50-a882-702a1556551e")]
+            public virtual Ranorex.Button ButtonRestoreEstimate
+            {
+                get
+                {
+                    return _buttonrestoreestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonRestoreEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("0264168d-9bc1-4b50-a882-702a1556551e")]
+            public virtual RepoItemInfo ButtonRestoreEstimateInfo
+            {
+                get
+                {
+                    return _buttonrestoreestimateInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The QueryFolder folder.
+        /// </summary>
+        [RepositoryFolder("1912ebcc-d939-4f79-92af-c40d2bc0c986")]
+        public partial class QueryFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonpivotreportsInfo;
+
+            /// <summary>
+            /// Creates a new Query  folder.
+            /// </summary>
+            public QueryFolder(RepoGenBaseFolder parentFolder) :
+                    base("Query", "", parentFolder, 0, null, false, "1912ebcc-d939-4f79-92af-c40d2bc0c986", "")
+            {
+                _buttonpivotreportsInfo = new RepoItemInfo(this, "ButtonPivotReports", "?/?/toolbar[@accessiblename='Ribbon Bar']/button[@text~'Pivot Reports']", 30000, null, "c426ef58-8e70-4534-ad50-cc8bf1d78e28");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1912ebcc-d939-4f79-92af-c40d2bc0c986")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonPivotReports item.
+            /// </summary>
+            [RepositoryItem("c426ef58-8e70-4534-ad50-cc8bf1d78e28")]
+            public virtual Ranorex.Button ButtonPivotReports
+            {
+                get
+                {
+                    return _buttonpivotreportsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonPivotReports item info.
+            /// </summary>
+            [RepositoryItemInfo("c426ef58-8e70-4534-ad50-cc8bf1d78e28")]
+            public virtual RepoItemInfo ButtonPivotReportsInfo
+            {
+                get
+                {
+                    return _buttonpivotreportsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ReportFolder folder.
+        /// </summary>
+        [RepositoryFolder("798544bf-c667-4c45-9161-7376d082ba30")]
+        public partial class ReportFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _costreportsbuttonInfo;
+            RepoItemInfo _buttonsummaryreportsInfo;
+            RepoItemInfo _buttonestimateresourcereportsInfo;
+            RepoItemInfo _customizedcrystalreportsInfo;
+
+            /// <summary>
+            /// Creates a new Report  folder.
+            /// </summary>
+            public ReportFolder(RepoGenBaseFolder parentFolder) :
+                    base("Report", "", parentFolder, 0, null, false, "798544bf-c667-4c45-9161-7376d082ba30", "")
+            {
+                _costreportsbuttonInfo = new RepoItemInfo(this, "CostReportsButton", "?/?/toolbar/button[@text~'Cost Reports']", 30000, null, "c972e291-5f87-4f21-a5a4-3bc3f2feb563");
+                _buttonsummaryreportsInfo = new RepoItemInfo(this, "ButtonSummaryReports", "?/?/toolbar/button[@text~'Summary Reports']", 30000, null, "b359b124-0373-4f6b-82f4-7640a6ca9e51");
+                _buttonestimateresourcereportsInfo = new RepoItemInfo(this, "ButtonEstimateResourceReports", "?/?/toolbar/button[@text~'Estimate Resource Reports']", 30000, null, "856b74e1-4396-4914-8791-398c82584d2e");
+                _customizedcrystalreportsInfo = new RepoItemInfo(this, "CustomizedCrystalReports", "?/?/toolbar/button[@text~'Customized Crystal Reports']", 30000, null, "381f3ef8-9c30-404b-a6fa-cea364c855d2");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("798544bf-c667-4c45-9161-7376d082ba30")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CostReportsButton item.
+            /// </summary>
+            [RepositoryItem("c972e291-5f87-4f21-a5a4-3bc3f2feb563")]
+            public virtual Ranorex.Button CostReportsButton
+            {
+                get
+                {
+                    return _costreportsbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CostReportsButton item info.
+            /// </summary>
+            [RepositoryItemInfo("c972e291-5f87-4f21-a5a4-3bc3f2feb563")]
+            public virtual RepoItemInfo CostReportsButtonInfo
+            {
+                get
+                {
+                    return _costreportsbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonSummaryReports item.
+            /// </summary>
+            [RepositoryItem("b359b124-0373-4f6b-82f4-7640a6ca9e51")]
+            public virtual Ranorex.Button ButtonSummaryReports
+            {
+                get
+                {
+                    return _buttonsummaryreportsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonSummaryReports item info.
+            /// </summary>
+            [RepositoryItemInfo("b359b124-0373-4f6b-82f4-7640a6ca9e51")]
+            public virtual RepoItemInfo ButtonSummaryReportsInfo
+            {
+                get
+                {
+                    return _buttonsummaryreportsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEstimateResourceReports item.
+            /// </summary>
+            [RepositoryItem("856b74e1-4396-4914-8791-398c82584d2e")]
+            public virtual Ranorex.Button ButtonEstimateResourceReports
+            {
+                get
+                {
+                    return _buttonestimateresourcereportsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEstimateResourceReports item info.
+            /// </summary>
+            [RepositoryItemInfo("856b74e1-4396-4914-8791-398c82584d2e")]
+            public virtual RepoItemInfo ButtonEstimateResourceReportsInfo
+            {
+                get
+                {
+                    return _buttonestimateresourcereportsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomizedCrystalReports item.
+            /// </summary>
+            [RepositoryItem("381f3ef8-9c30-404b-a6fa-cea364c855d2")]
+            public virtual Ranorex.Button CustomizedCrystalReports
+            {
+                get
+                {
+                    return _customizedcrystalreportsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CustomizedCrystalReports item info.
+            /// </summary>
+            [RepositoryItemInfo("381f3ef8-9c30-404b-a6fa-cea364c855d2")]
+            public virtual RepoItemInfo CustomizedCrystalReportsInfo
+            {
+                get
+                {
+                    return _customizedcrystalreportsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SummaryFolder folder.
+        /// </summary>
+        [RepositoryFolder("567b8f90-eba2-48eb-b3a5-224d8fe225d0")]
+        public partial class SummaryFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttoncustomizedreportsInfo;
+
+            /// <summary>
+            /// Creates a new Summary  folder.
+            /// </summary>
+            public SummaryFolder(RepoGenBaseFolder parentFolder) :
+                    base("Summary", "", parentFolder, 0, null, false, "567b8f90-eba2-48eb-b3a5-224d8fe225d0", "")
+            {
+                _buttoncustomizedreportsInfo = new RepoItemInfo(this, "ButtonCustomizedReports", "?/?/toolbar[1]/button[@accessiblename='Customized']", 30000, null, "5c354878-490f-49f4-be86-ec18b767aa42");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("567b8f90-eba2-48eb-b3a5-224d8fe225d0")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCustomizedReports item.
+            /// </summary>
+            [RepositoryItem("5c354878-490f-49f4-be86-ec18b767aa42")]
+            public virtual Ranorex.Button ButtonCustomizedReports
+            {
+                get
+                {
+                    return _buttoncustomizedreportsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCustomizedReports item info.
+            /// </summary>
+            [RepositoryItemInfo("5c354878-490f-49f4-be86-ec18b767aa42")]
+            public virtual RepoItemInfo ButtonCustomizedReportsInfo
+            {
+                get
+                {
+                    return _buttoncustomizedreportsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExchangeFolder folder.
+        /// </summary>
+        [RepositoryFolder("f2077619-9772-4a6d-9c6d-05cedc463094")]
+        public partial class ExchangeFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new Exchange  folder.
+            /// </summary>
+            public ExchangeFolder(RepoGenBaseFolder parentFolder) :
+                    base("Exchange", "", parentFolder, 0, null, false, "f2077619-9772-4a6d-9c6d-05cedc463094", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f2077619-9772-4a6d-9c6d-05cedc463094")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ToolsFolder folder.
+        /// </summary>
+        [RepositoryFolder("09e5c5e3-8f85-498e-8bb7-cdb3c1db9299")]
+        public partial class ToolsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _reindexfilesbuttonInfo;
+
+            /// <summary>
+            /// Creates a new Tools  folder.
+            /// </summary>
+            public ToolsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tools", "", parentFolder, 0, null, false, "09e5c5e3-8f85-498e-8bb7-cdb3c1db9299", "")
+            {
+                _reindexfilesbuttonInfo = new RepoItemInfo(this, "ReindexFilesButton", "?/?/toolbar/button[@text~'Reindex Files']", 30000, null, "c1df175c-d963-43c1-8296-2e0bda44e88c");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("09e5c5e3-8f85-498e-8bb7-cdb3c1db9299")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReindexFilesButton item.
+            /// </summary>
+            [RepositoryItem("c1df175c-d963-43c1-8296-2e0bda44e88c")]
+            public virtual Ranorex.Button ReindexFilesButton
+            {
+                get
+                {
+                    return _reindexfilesbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReindexFilesButton item info.
+            /// </summary>
+            [RepositoryItemInfo("c1df175c-d963-43c1-8296-2e0bda44e88c")]
+            public virtual RepoItemInfo ReindexFilesButtonInfo
+            {
+                get
+                {
+                    return _reindexfilesbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HelpFolder folder.
+        /// </summary>
+        [RepositoryFolder("c8982949-125a-4c41-b55b-298b23fabaf7")]
+        public partial class HelpFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _hbf1buttonInfo;
+            RepoItemInfo _helpaboutheavybidbuttonInfo;
+
+            /// <summary>
+            /// Creates a new Help  folder.
+            /// </summary>
+            public HelpFolder(RepoGenBaseFolder parentFolder) :
+                    base("Help", "", parentFolder, 0, null, false, "c8982949-125a-4c41-b55b-298b23fabaf7", "")
+            {
+                _hbf1buttonInfo = new RepoItemInfo(this, "HBF1Button", ".///toolbar/button[@text~'HeavyBid Help']", 30000, null, "4f3db4c1-62c4-4154-9c8a-c222de37f5b7");
+                _helpaboutheavybidbuttonInfo = new RepoItemInfo(this, "HelpAboutHeavyBidButton", ".///toolbar/button[@text~'About HeavyBid']", 30000, null, "abeec274-cb75-4ff4-be97-d76ab7a91a22");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c8982949-125a-4c41-b55b-298b23fabaf7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HBF1Button item.
+            /// </summary>
+            [RepositoryItem("4f3db4c1-62c4-4154-9c8a-c222de37f5b7")]
+            public virtual Ranorex.Button HBF1Button
+            {
+                get
+                {
+                    return _hbf1buttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HBF1Button item info.
+            /// </summary>
+            [RepositoryItemInfo("4f3db4c1-62c4-4154-9c8a-c222de37f5b7")]
+            public virtual RepoItemInfo HBF1ButtonInfo
+            {
+                get
+                {
+                    return _hbf1buttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HelpAboutHeavyBidButton item.
+            /// </summary>
+            [RepositoryItem("abeec274-cb75-4ff4-be97-d76ab7a91a22")]
+            public virtual Ranorex.Button HelpAboutHeavyBidButton
+            {
+                get
+                {
+                    return _helpaboutheavybidbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HelpAboutHeavyBidButton item info.
+            /// </summary>
+            [RepositoryItemInfo("abeec274-cb75-4ff4-be97-d76ab7a91a22")]
+            public virtual RepoItemInfo HelpAboutHeavyBidButtonInfo
+            {
+                get
+                {
+                    return _helpaboutheavybidbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WhatsNewFolder folder.
+        /// </summary>
+        [RepositoryFolder("45a73d0f-e29e-4f5d-8680-7344f01391fd")]
+        public partial class WhatsNewFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _newheavybidfeaturesbuttonInfo;
+
+            /// <summary>
+            /// Creates a new WhatsNew  folder.
+            /// </summary>
+            public WhatsNewFolder(RepoGenBaseFolder parentFolder) :
+                    base("WhatsNew", "", parentFolder, 0, null, false, "45a73d0f-e29e-4f5d-8680-7344f01391fd", "")
+            {
+                _newheavybidfeaturesbuttonInfo = new RepoItemInfo(this, "NewHeavyBidFeaturesButton", ".///toolbar/button[@text~'New HeavyBid Features']", 30000, null, "86f8a615-a739-41c7-83d8-b9ea1053dc08");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("45a73d0f-e29e-4f5d-8680-7344f01391fd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewHeavyBidFeaturesButton item.
+            /// </summary>
+            [RepositoryItem("86f8a615-a739-41c7-83d8-b9ea1053dc08")]
+            public virtual Ranorex.Button NewHeavyBidFeaturesButton
+            {
+                get
+                {
+                    return _newheavybidfeaturesbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewHeavyBidFeaturesButton item info.
+            /// </summary>
+            [RepositoryItemInfo("86f8a615-a739-41c7-83d8-b9ea1053dc08")]
+            public virtual RepoItemInfo NewHeavyBidFeaturesButtonInfo
+            {
+                get
+                {
+                    return _newheavybidfeaturesbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The HeavyBidServerSetupAppFolder folder.
         /// </summary>
         [RepositoryFolder("de34c2e0-f817-4a24-9a91-b1fb4eaa598a")]
         public partial class HeavyBidServerSetupAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _buttonnextInfo;
+            HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder _textboxforvalidation;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder2 _buttons;
+            HB_INSTALL_AUTORepositoryFolders.InstallTypesFolder _installtypes;
             RepoItemInfo _iacceptthetermsinthelicenseagreemInfo;
-            RepoItemInfo _multiusermultipleuserscanworkintInfo;
-            RepoItemInfo _standaloneinstalltypeInfo;
-            RepoItemInfo _traininginstalltypeInfo;
-            RepoItemInfo _buttoninstallInfo;
-            RepoItemInfo _buttonfinishInfo;
-            RepoItemInfo _buttonyesInfo;
-            RepoItemInfo _serverinstalltitleInfo;
-            RepoItemInfo _closeInfo;
-            RepoItemInfo _buttonnoInfo;
-            RepoItemInfo _buttonchangeInfo;
-            RepoItemInfo _setuptextInfo;
-            RepoItemInfo _welcomesetuptextInfo;
+            RepoItemInfo _titlebarInfo;
             RepoItemInfo _installtyperadiobuttonInfo;
-            RepoItemInfo _previousinstallpopupInfo;
 
             /// <summary>
             /// Creates a new HeavyBidServerSetup  folder.
             /// </summary>
             public HeavyBidServerSetupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBidServerSetup", "/form[@title~'[HeavyBid][Setup]']", parentFolder, 30000, null, false, "de34c2e0-f817-4a24-9a91-b1fb4eaa598a", "")
+                    base("HeavyBidServerSetup", "/form[@title~'HeavyBid' and @title~'Setup']", parentFolder, 30000, null, false, "de34c2e0-f817-4a24-9a91-b1fb4eaa598a", "")
             {
-                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text~'Next']", 30000, null, "d5871a5b-28dc-49bc-ab19-510a037a9d94");
+                _textboxforvalidation = new HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder(this);
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder2(this);
+                _installtypes = new HB_INSTALL_AUTORepositoryFolders.InstallTypesFolder(this);
                 _iacceptthetermsinthelicenseagreemInfo = new RepoItemInfo(this, "IAcceptTheTermsInTheLicenseAgreem", "checkbox[@text~'[agree][terms]']", 30000, null, "0b9fc09c-2aa6-473e-b588-b28d927bed0c");
-                _multiusermultipleuserscanworkintInfo = new RepoItemInfo(this, "MultiUserMultipleUsersCanWorkInT", "?/?/radiobutton[@text~'^[Multi-user]']", 30000, null, "87f3d72a-a7d3-4b0f-9b41-5932103d923d");
-                _standaloneinstalltypeInfo = new RepoItemInfo(this, "StandaloneInstallType", "?/?/radiobutton[@text~'^[Standalone]']", 30000, null, "3ca18573-3cd1-442a-82aa-f72fbe2a0b91");
-                _traininginstalltypeInfo = new RepoItemInfo(this, "TrainingInstallType", "?/?/radiobutton[@text~'^[Training]']", 30000, null, "aa762aff-1fe2-4006-acb0-afc3774cf5dd");
-                _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text~'Install']", 30000, null, "13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda");
-                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text~'Finish']", 30000, null, "f6d583e3-44b4-4f93-b8a3-91c915c2c48c");
-                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text~'Yes']", 30000, null, "1cbaddb5-161e-467e-ae75-42781f0dd64d");
-                _serverinstalltitleInfo = new RepoItemInfo(this, "ServerInstallTitle", "titlebar", 30000, null, "7fdd31f1-bfea-4860-8dd4-e0712deabac9");
-                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "7cf2f41a-d66d-4cdc-8567-a04a61a00dc0");
-                _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "f5944e1e-65d1-4aa3-8a69-4b02abe23779");
-                _buttonchangeInfo = new RepoItemInfo(this, "ButtonChange", "button[@text~'Change']", 30000, null, "4511593e-7b61-4105-9da4-4ebbc53818be");
-                _setuptextInfo = new RepoItemInfo(this, "SetupText", "text[@text~'Setup']", 30000, null, "38d6d211-be2f-46bf-a786-7b767cab3ff1");
-                _welcomesetuptextInfo = new RepoItemInfo(this, "WelcomeSetupText", "text[@text~'Welcome']", 30000, null, "5e367632-95db-45d4-803e-2e5238d5dccd");
+                _titlebarInfo = new RepoItemInfo(this, "Titlebar", "titlebar", 30000, null, "7fdd31f1-bfea-4860-8dd4-e0712deabac9");
                 _installtyperadiobuttonInfo = new RepoItemInfo(this, "InstallTypeRadioButton", "?/?/radiobutton[@text~$InstallTypeButton]", 30000, null, "3b47bf2e-cdab-42af-aae9-6cad57999ad0");
-                _previousinstallpopupInfo = new RepoItemInfo(this, "PreviousInstallPopup", "text[@text~'[previous][overwritten]']", 30000, null, "8165b248-3df3-4bb6-8141-9f36df9ec7e7");
             }
 
             /// <summary>
@@ -598,6 +2150,253 @@ namespace HB_INSTALL_AUTO
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("de34c2e0-f817-4a24-9a91-b1fb4eaa598a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IAcceptTheTermsInTheLicenseAgreem item.
+            /// </summary>
+            [RepositoryItem("0b9fc09c-2aa6-473e-b588-b28d927bed0c")]
+            public virtual Ranorex.CheckBox IAcceptTheTermsInTheLicenseAgreem
+            {
+                get
+                {
+                    return _iacceptthetermsinthelicenseagreemInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IAcceptTheTermsInTheLicenseAgreem item info.
+            /// </summary>
+            [RepositoryItemInfo("0b9fc09c-2aa6-473e-b588-b28d927bed0c")]
+            public virtual RepoItemInfo IAcceptTheTermsInTheLicenseAgreemInfo
+            {
+                get
+                {
+                    return _iacceptthetermsinthelicenseagreemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Titlebar item.
+            /// </summary>
+            [RepositoryItem("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
+            public virtual Ranorex.TitleBar Titlebar
+            {
+                get
+                {
+                    return _titlebarInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Titlebar item info.
+            /// </summary>
+            [RepositoryItemInfo("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
+            public virtual RepoItemInfo TitlebarInfo
+            {
+                get
+                {
+                    return _titlebarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InstallTypeRadioButton item.
+            /// </summary>
+            [RepositoryItem("3b47bf2e-cdab-42af-aae9-6cad57999ad0")]
+            public virtual Ranorex.RadioButton InstallTypeRadioButton
+            {
+                get
+                {
+                    return _installtyperadiobuttonInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InstallTypeRadioButton item info.
+            /// </summary>
+            [RepositoryItemInfo("3b47bf2e-cdab-42af-aae9-6cad57999ad0")]
+            public virtual RepoItemInfo InstallTypeRadioButtonInfo
+            {
+                get
+                {
+                    return _installtyperadiobuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextBoxForValidation folder.
+            /// </summary>
+            [RepositoryFolder("687cbd1d-954d-4f4c-b72d-e380227a5413")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder TextBoxForValidation
+            {
+                get { return _textboxforvalidation; }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("3b1a8e01-f239-44aa-9b37-c7160c3e7edb")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder2 Buttons
+            {
+                get { return _buttons; }
+            }
+
+            /// <summary>
+            /// The InstallTypes folder.
+            /// </summary>
+            [RepositoryFolder("57f8a040-62c7-4885-974f-122dea3674d9")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.InstallTypesFolder InstallTypes
+            {
+                get { return _installtypes; }
+            }
+        }
+
+        /// <summary>
+        /// The TextBoxForValidationFolder folder.
+        /// </summary>
+        [RepositoryFolder("687cbd1d-954d-4f4c-b72d-e380227a5413")]
+        public partial class TextBoxForValidationFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _previousinstallpopupInfo;
+            RepoItemInfo _welcomesetuptextInfo;
+            RepoItemInfo _setuptextInfo;
+
+            /// <summary>
+            /// Creates a new TextBoxForValidation  folder.
+            /// </summary>
+            public TextBoxForValidationFolder(RepoGenBaseFolder parentFolder) :
+                    base("TextBoxForValidation", "", parentFolder, 0, null, false, "687cbd1d-954d-4f4c-b72d-e380227a5413", "")
+            {
+                _previousinstallpopupInfo = new RepoItemInfo(this, "PreviousInstallPopup", "text[@text~'[previous][overwritten]']", 30000, null, "8165b248-3df3-4bb6-8141-9f36df9ec7e7");
+                _welcomesetuptextInfo = new RepoItemInfo(this, "WelcomeSetupText", "text[@text~'Welcome']", 30000, null, "5e367632-95db-45d4-803e-2e5238d5dccd");
+                _setuptextInfo = new RepoItemInfo(this, "SetupText", "text[@text~'Setup']", 30000, null, "38d6d211-be2f-46bf-a786-7b767cab3ff1");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("687cbd1d-954d-4f4c-b72d-e380227a5413")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PreviousInstallPopup item.
+            /// </summary>
+            [RepositoryItem("8165b248-3df3-4bb6-8141-9f36df9ec7e7")]
+            public virtual Ranorex.Text PreviousInstallPopup
+            {
+                get
+                {
+                    return _previousinstallpopupInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PreviousInstallPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("8165b248-3df3-4bb6-8141-9f36df9ec7e7")]
+            public virtual RepoItemInfo PreviousInstallPopupInfo
+            {
+                get
+                {
+                    return _previousinstallpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeSetupText item.
+            /// </summary>
+            [RepositoryItem("5e367632-95db-45d4-803e-2e5238d5dccd")]
+            public virtual Ranorex.Text WelcomeSetupText
+            {
+                get
+                {
+                    return _welcomesetuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeSetupText item info.
+            /// </summary>
+            [RepositoryItemInfo("5e367632-95db-45d4-803e-2e5238d5dccd")]
+            public virtual RepoItemInfo WelcomeSetupTextInfo
+            {
+                get
+                {
+                    return _welcomesetuptextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SetupText item.
+            /// </summary>
+            [RepositoryItem("38d6d211-be2f-46bf-a786-7b767cab3ff1")]
+            public virtual Ranorex.Text SetupText
+            {
+                get
+                {
+                    return _setuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SetupText item info.
+            /// </summary>
+            [RepositoryItemInfo("38d6d211-be2f-46bf-a786-7b767cab3ff1")]
+            public virtual RepoItemInfo SetupTextInfo
+            {
+                get
+                {
+                    return _setuptextInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder2 folder.
+        /// </summary>
+        [RepositoryFolder("3b1a8e01-f239-44aa-9b37-c7160c3e7edb")]
+        public partial class ButtonsFolder2 : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnextInfo;
+            RepoItemInfo _buttonfinishInfo;
+            RepoItemInfo _buttonyesInfo;
+            RepoItemInfo _buttoninstallInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _buttonnoInfo;
+            RepoItemInfo _buttonchangeInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder2(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "3b1a8e01-f239-44aa-9b37-c7160c3e7edb", "")
+            {
+                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text~'Next']", 30000, null, "d5871a5b-28dc-49bc-ab19-510a037a9d94");
+                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text~'Finish']", 30000, null, "f6d583e3-44b4-4f93-b8a3-91c915c2c48c");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text~'Yes']", 30000, null, "1cbaddb5-161e-467e-ae75-42781f0dd64d");
+                _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text~'Install']", 30000, null, "13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "7cf2f41a-d66d-4cdc-8567-a04a61a00dc0");
+                _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "f5944e1e-65d1-4aa3-8a69-4b02abe23779");
+                _buttonchangeInfo = new RepoItemInfo(this, "ButtonChange", "button[@text~'Change']", 30000, null, "4511593e-7b61-4105-9da4-4ebbc53818be");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3b1a8e01-f239-44aa-9b37-c7160c3e7edb")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -627,126 +2426,6 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonnextInfo;
-                }
-            }
-
-            /// <summary>
-            /// The IAcceptTheTermsInTheLicenseAgreem item.
-            /// </summary>
-            [RepositoryItem("0b9fc09c-2aa6-473e-b588-b28d927bed0c")]
-            public virtual Ranorex.CheckBox IAcceptTheTermsInTheLicenseAgreem
-            {
-                get
-                {
-                    return _iacceptthetermsinthelicenseagreemInfo.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The IAcceptTheTermsInTheLicenseAgreem item info.
-            /// </summary>
-            [RepositoryItemInfo("0b9fc09c-2aa6-473e-b588-b28d927bed0c")]
-            public virtual RepoItemInfo IAcceptTheTermsInTheLicenseAgreemInfo
-            {
-                get
-                {
-                    return _iacceptthetermsinthelicenseagreemInfo;
-                }
-            }
-
-            /// <summary>
-            /// The MultiUserMultipleUsersCanWorkInT item.
-            /// </summary>
-            [RepositoryItem("87f3d72a-a7d3-4b0f-9b41-5932103d923d")]
-            public virtual Ranorex.RadioButton MultiUserMultipleUsersCanWorkInT
-            {
-                get
-                {
-                    return _multiusermultipleuserscanworkintInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The MultiUserMultipleUsersCanWorkInT item info.
-            /// </summary>
-            [RepositoryItemInfo("87f3d72a-a7d3-4b0f-9b41-5932103d923d")]
-            public virtual RepoItemInfo MultiUserMultipleUsersCanWorkInTInfo
-            {
-                get
-                {
-                    return _multiusermultipleuserscanworkintInfo;
-                }
-            }
-
-            /// <summary>
-            /// The StandaloneInstallType item.
-            /// </summary>
-            [RepositoryItem("3ca18573-3cd1-442a-82aa-f72fbe2a0b91")]
-            public virtual Ranorex.RadioButton StandaloneInstallType
-            {
-                get
-                {
-                    return _standaloneinstalltypeInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StandaloneInstallType item info.
-            /// </summary>
-            [RepositoryItemInfo("3ca18573-3cd1-442a-82aa-f72fbe2a0b91")]
-            public virtual RepoItemInfo StandaloneInstallTypeInfo
-            {
-                get
-                {
-                    return _standaloneinstalltypeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TrainingInstallType item.
-            /// </summary>
-            [RepositoryItem("aa762aff-1fe2-4006-acb0-afc3774cf5dd")]
-            public virtual Ranorex.RadioButton TrainingInstallType
-            {
-                get
-                {
-                    return _traininginstalltypeInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TrainingInstallType item info.
-            /// </summary>
-            [RepositoryItemInfo("aa762aff-1fe2-4006-acb0-afc3774cf5dd")]
-            public virtual RepoItemInfo TrainingInstallTypeInfo
-            {
-                get
-                {
-                    return _traininginstalltypeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonInstall item.
-            /// </summary>
-            [RepositoryItem("13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda")]
-            public virtual Ranorex.Button ButtonInstall
-            {
-                get
-                {
-                    return _buttoninstallInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonInstall item info.
-            /// </summary>
-            [RepositoryItemInfo("13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda")]
-            public virtual RepoItemInfo ButtonInstallInfo
-            {
-                get
-                {
-                    return _buttoninstallInfo;
                 }
             }
 
@@ -799,26 +2478,26 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The ServerInstallTitle item.
+            /// The ButtonInstall item.
             /// </summary>
-            [RepositoryItem("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
-            public virtual Ranorex.TitleBar ServerInstallTitle
+            [RepositoryItem("13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda")]
+            public virtual Ranorex.Button ButtonInstall
             {
                 get
                 {
-                    return _serverinstalltitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _buttoninstallInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The ServerInstallTitle item info.
+            /// The ButtonInstall item info.
             /// </summary>
-            [RepositoryItemInfo("7fdd31f1-bfea-4860-8dd4-e0712deabac9")]
-            public virtual RepoItemInfo ServerInstallTitleInfo
+            [RepositoryItemInfo("13bbdbc5-9df3-4bf6-8e96-1f4c1a5c6bda")]
+            public virtual RepoItemInfo ButtonInstallInfo
             {
                 get
                 {
-                    return _serverinstalltitleInfo;
+                    return _buttoninstallInfo;
                 }
             }
 
@@ -893,100 +2572,110 @@ namespace HB_INSTALL_AUTO
                     return _buttonchangeInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The InstallTypesFolder folder.
+        /// </summary>
+        [RepositoryFolder("57f8a040-62c7-4885-974f-122dea3674d9")]
+        public partial class InstallTypesFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _multiusermultipleuserscanworkintInfo;
+            RepoItemInfo _standaloneinstalltypeInfo;
+            RepoItemInfo _traininginstalltypeInfo;
 
             /// <summary>
-            /// The SetupText item.
+            /// Creates a new InstallTypes  folder.
             /// </summary>
-            [RepositoryItem("38d6d211-be2f-46bf-a786-7b767cab3ff1")]
-            public virtual Ranorex.Text SetupText
+            public InstallTypesFolder(RepoGenBaseFolder parentFolder) :
+                    base("InstallTypes", "", parentFolder, 0, null, false, "57f8a040-62c7-4885-974f-122dea3674d9", "")
+            {
+                _multiusermultipleuserscanworkintInfo = new RepoItemInfo(this, "MultiUserMultipleUsersCanWorkInT", "?/?/radiobutton[@text~'^[Multi-user]']", 30000, null, "87f3d72a-a7d3-4b0f-9b41-5932103d923d");
+                _standaloneinstalltypeInfo = new RepoItemInfo(this, "StandaloneInstallType", "?/?/radiobutton[@text~'^[Standalone]']", 30000, null, "3ca18573-3cd1-442a-82aa-f72fbe2a0b91");
+                _traininginstalltypeInfo = new RepoItemInfo(this, "TrainingInstallType", "?/?/radiobutton[@text~'^[Training]']", 30000, null, "aa762aff-1fe2-4006-acb0-afc3774cf5dd");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("57f8a040-62c7-4885-974f-122dea3674d9")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _setuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _selfInfo;
                 }
             }
 
             /// <summary>
-            /// The SetupText item info.
+            /// The MultiUserMultipleUsersCanWorkInT item.
             /// </summary>
-            [RepositoryItemInfo("38d6d211-be2f-46bf-a786-7b767cab3ff1")]
-            public virtual RepoItemInfo SetupTextInfo
+            [RepositoryItem("87f3d72a-a7d3-4b0f-9b41-5932103d923d")]
+            public virtual Ranorex.RadioButton MultiUserMultipleUsersCanWorkInT
             {
                 get
                 {
-                    return _setuptextInfo;
+                    return _multiusermultipleuserscanworkintInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The WelcomeSetupText item.
+            /// The MultiUserMultipleUsersCanWorkInT item info.
             /// </summary>
-            [RepositoryItem("5e367632-95db-45d4-803e-2e5238d5dccd")]
-            public virtual Ranorex.Text WelcomeSetupText
+            [RepositoryItemInfo("87f3d72a-a7d3-4b0f-9b41-5932103d923d")]
+            public virtual RepoItemInfo MultiUserMultipleUsersCanWorkInTInfo
             {
                 get
                 {
-                    return _welcomesetuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _multiusermultipleuserscanworkintInfo;
                 }
             }
 
             /// <summary>
-            /// The WelcomeSetupText item info.
+            /// The StandaloneInstallType item.
             /// </summary>
-            [RepositoryItemInfo("5e367632-95db-45d4-803e-2e5238d5dccd")]
-            public virtual RepoItemInfo WelcomeSetupTextInfo
+            [RepositoryItem("3ca18573-3cd1-442a-82aa-f72fbe2a0b91")]
+            public virtual Ranorex.RadioButton StandaloneInstallType
             {
                 get
                 {
-                    return _welcomesetuptextInfo;
+                    return _standaloneinstalltypeInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The InstallTypeRadioButton item.
+            /// The StandaloneInstallType item info.
             /// </summary>
-            [RepositoryItem("3b47bf2e-cdab-42af-aae9-6cad57999ad0")]
-            public virtual Ranorex.RadioButton InstallTypeRadioButton
+            [RepositoryItemInfo("3ca18573-3cd1-442a-82aa-f72fbe2a0b91")]
+            public virtual RepoItemInfo StandaloneInstallTypeInfo
             {
                 get
                 {
-                    return _installtyperadiobuttonInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _standaloneinstalltypeInfo;
                 }
             }
 
             /// <summary>
-            /// The InstallTypeRadioButton item info.
+            /// The TrainingInstallType item.
             /// </summary>
-            [RepositoryItemInfo("3b47bf2e-cdab-42af-aae9-6cad57999ad0")]
-            public virtual RepoItemInfo InstallTypeRadioButtonInfo
+            [RepositoryItem("aa762aff-1fe2-4006-acb0-afc3774cf5dd")]
+            public virtual Ranorex.RadioButton TrainingInstallType
             {
                 get
                 {
-                    return _installtyperadiobuttonInfo;
+                    return _traininginstalltypeInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The PreviousInstallPopup item.
+            /// The TrainingInstallType item info.
             /// </summary>
-            [RepositoryItem("8165b248-3df3-4bb6-8141-9f36df9ec7e7")]
-            public virtual Ranorex.Text PreviousInstallPopup
+            [RepositoryItemInfo("aa762aff-1fe2-4006-acb0-afc3774cf5dd")]
+            public virtual RepoItemInfo TrainingInstallTypeInfo
             {
                 get
                 {
-                    return _previousinstallpopupInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PreviousInstallPopup item info.
-            /// </summary>
-            [RepositoryItemInfo("8165b248-3df3-4bb6-8141-9f36df9ec7e7")]
-            public virtual RepoItemInfo PreviousInstallPopupInfo
-            {
-                get
-                {
-                    return _previousinstallpopupInfo;
+                    return _traininginstalltypeInfo;
                 }
             }
         }
@@ -997,23 +2686,19 @@ namespace HB_INSTALL_AUTO
         [RepositoryFolder("88a24b5a-93b2-4dac-b8ad-8e0a11616d12")]
         public partial class HeavyBidWorkstationSetupAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _buttonnextInfo;
-            RepoItemInfo _buttoninstallInfo;
-            RepoItemInfo _buttonfinishInfo;
-            RepoItemInfo _wsinstalltitleInfo;
-            RepoItemInfo _buttonokInfo;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder3 _buttons;
+            HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder1 _textboxforvalidation;
+            RepoItemInfo _titlebarInfo;
 
             /// <summary>
             /// Creates a new HeavyBidWorkstationSetup  folder.
             /// </summary>
             public HeavyBidWorkstationSetupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBidWorkstationSetup", "/form[@title~'[HeavyBid][Workstation]']", parentFolder, 30000, null, false, "88a24b5a-93b2-4dac-b8ad-8e0a11616d12", "")
+                    base("HeavyBidWorkstationSetup", "/form[@title~'HeavyBid' and @title~'Workstation']", parentFolder, 30000, null, false, "88a24b5a-93b2-4dac-b8ad-8e0a11616d12", "")
             {
-                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text='&Next']", 30000, null, "6d694e30-aaad-4df4-b475-ef46ac6418c2");
-                _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text='&Install']", 30000, null, "2ad4563d-4122-4526-9122-cb80ba07afdf");
-                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text='&Finish']", 30000, null, "5ef2d410-9f3c-4f2b-8e00-0010d1e06303");
-                _wsinstalltitleInfo = new RepoItemInfo(this, "WSInstallTitle", "titlebar", 30000, null, "ce14a383-e632-46f4-ab34-81d90dbcacf8");
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "09ccfd1f-cc0f-43f6-bdbf-bbdeaa82926b");
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder3(this);
+                _textboxforvalidation = new HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder1(this);
+                _titlebarInfo = new RepoItemInfo(this, "Titlebar", "titlebar", 30000, null, "ce14a383-e632-46f4-ab34-81d90dbcacf8");
             }
 
             /// <summary>
@@ -1032,6 +2717,84 @@ namespace HB_INSTALL_AUTO
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("88a24b5a-93b2-4dac-b8ad-8e0a11616d12")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Titlebar item.
+            /// </summary>
+            [RepositoryItem("ce14a383-e632-46f4-ab34-81d90dbcacf8")]
+            public virtual Ranorex.TitleBar Titlebar
+            {
+                get
+                {
+                    return _titlebarInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Titlebar item info.
+            /// </summary>
+            [RepositoryItemInfo("ce14a383-e632-46f4-ab34-81d90dbcacf8")]
+            public virtual RepoItemInfo TitlebarInfo
+            {
+                get
+                {
+                    return _titlebarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("8048663a-5cd8-4ce4-b844-2784e47b3095")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder3 Buttons
+            {
+                get { return _buttons; }
+            }
+
+            /// <summary>
+            /// The TextBoxForValidation folder.
+            /// </summary>
+            [RepositoryFolder("1a01ef99-947e-492d-a465-7579a07c66ac")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.TextBoxForValidationFolder1 TextBoxForValidation
+            {
+                get { return _textboxforvalidation; }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder3 folder.
+        /// </summary>
+        [RepositoryFolder("8048663a-5cd8-4ce4-b844-2784e47b3095")]
+        public partial class ButtonsFolder3 : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnextInfo;
+            RepoItemInfo _buttonfinishInfo;
+            RepoItemInfo _buttoninstallInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder3(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "8048663a-5cd8-4ce4-b844-2784e47b3095", "")
+            {
+                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text='&Next']", 30000, null, "6d694e30-aaad-4df4-b475-ef46ac6418c2");
+                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text='&Finish']", 30000, null, "5ef2d410-9f3c-4f2b-8e00-0010d1e06303");
+                _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text='&Install']", 30000, null, "2ad4563d-4122-4526-9122-cb80ba07afdf");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "09ccfd1f-cc0f-43f6-bdbf-bbdeaa82926b");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8048663a-5cd8-4ce4-b844-2784e47b3095")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -1065,30 +2828,6 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The ButtonInstall item.
-            /// </summary>
-            [RepositoryItem("2ad4563d-4122-4526-9122-cb80ba07afdf")]
-            public virtual Ranorex.Button ButtonInstall
-            {
-                get
-                {
-                    return _buttoninstallInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonInstall item info.
-            /// </summary>
-            [RepositoryItemInfo("2ad4563d-4122-4526-9122-cb80ba07afdf")]
-            public virtual RepoItemInfo ButtonInstallInfo
-            {
-                get
-                {
-                    return _buttoninstallInfo;
-                }
-            }
-
-            /// <summary>
             /// The ButtonFinish item.
             /// </summary>
             [RepositoryItem("5ef2d410-9f3c-4f2b-8e00-0010d1e06303")]
@@ -1113,26 +2852,26 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The WSInstallTitle item.
+            /// The ButtonInstall item.
             /// </summary>
-            [RepositoryItem("ce14a383-e632-46f4-ab34-81d90dbcacf8")]
-            public virtual Ranorex.TitleBar WSInstallTitle
+            [RepositoryItem("2ad4563d-4122-4526-9122-cb80ba07afdf")]
+            public virtual Ranorex.Button ButtonInstall
             {
                 get
                 {
-                    return _wsinstalltitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _buttoninstallInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The WSInstallTitle item info.
+            /// The ButtonInstall item info.
             /// </summary>
-            [RepositoryItemInfo("ce14a383-e632-46f4-ab34-81d90dbcacf8")]
-            public virtual RepoItemInfo WSInstallTitleInfo
+            [RepositoryItemInfo("2ad4563d-4122-4526-9122-cb80ba07afdf")]
+            public virtual RepoItemInfo ButtonInstallInfo
             {
                 get
                 {
-                    return _wsinstalltitleInfo;
+                    return _buttoninstallInfo;
                 }
             }
 
@@ -1162,6 +2901,164 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
+        /// The TextBoxForValidationFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("1a01ef99-947e-492d-a465-7579a07c66ac")]
+        public partial class TextBoxForValidationFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _previousinstallpopupInfo;
+            RepoItemInfo _setuptextInfo;
+            RepoItemInfo _welcomesetuptextInfo;
+            RepoItemInfo _inputforfilepathInfo;
+            RepoItemInfo _outputforfilepathInfo;
+
+            /// <summary>
+            /// Creates a new TextBoxForValidation  folder.
+            /// </summary>
+            public TextBoxForValidationFolder1(RepoGenBaseFolder parentFolder) :
+                    base("TextBoxForValidation", "", parentFolder, 0, null, false, "1a01ef99-947e-492d-a465-7579a07c66ac", "")
+            {
+                _previousinstallpopupInfo = new RepoItemInfo(this, "PreviousInstallPopup", "text[@text~'[previous][overwritten]']", 30000, null, "3ddafc46-f543-475d-81bd-dc2d5fa225d2");
+                _setuptextInfo = new RepoItemInfo(this, "SetupText", "text[@text~'Setup']", 30000, null, "4c4f0b8a-d203-49ec-b061-a5ad09ffc1e3");
+                _welcomesetuptextInfo = new RepoItemInfo(this, "WelcomeSetupText", "text[@text~'Welcome']", 30000, null, "9fa518f6-ca6a-41a2-a775-26cb01e2653a");
+                _inputforfilepathInfo = new RepoItemInfo(this, "InputForFilePath", "text[@accessiblerole='Text']", 30000, null, "ab1c1564-5343-47a8-9441-2c813b0d2c7b");
+                _outputforfilepathInfo = new RepoItemInfo(this, "OutputForFilePath", "text[@text~'HeavyBid in:']", 30000, null, "17b1af75-dfb3-4277-9c7d-08f20936b248");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1a01ef99-947e-492d-a465-7579a07c66ac")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PreviousInstallPopup item.
+            /// </summary>
+            [RepositoryItem("3ddafc46-f543-475d-81bd-dc2d5fa225d2")]
+            public virtual Ranorex.Text PreviousInstallPopup
+            {
+                get
+                {
+                    return _previousinstallpopupInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PreviousInstallPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("3ddafc46-f543-475d-81bd-dc2d5fa225d2")]
+            public virtual RepoItemInfo PreviousInstallPopupInfo
+            {
+                get
+                {
+                    return _previousinstallpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SetupText item.
+            /// </summary>
+            [RepositoryItem("4c4f0b8a-d203-49ec-b061-a5ad09ffc1e3")]
+            public virtual Ranorex.Text SetupText
+            {
+                get
+                {
+                    return _setuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SetupText item info.
+            /// </summary>
+            [RepositoryItemInfo("4c4f0b8a-d203-49ec-b061-a5ad09ffc1e3")]
+            public virtual RepoItemInfo SetupTextInfo
+            {
+                get
+                {
+                    return _setuptextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeSetupText item.
+            /// </summary>
+            [RepositoryItem("9fa518f6-ca6a-41a2-a775-26cb01e2653a")]
+            public virtual Ranorex.Text WelcomeSetupText
+            {
+                get
+                {
+                    return _welcomesetuptextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeSetupText item info.
+            /// </summary>
+            [RepositoryItemInfo("9fa518f6-ca6a-41a2-a775-26cb01e2653a")]
+            public virtual RepoItemInfo WelcomeSetupTextInfo
+            {
+                get
+                {
+                    return _welcomesetuptextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InputForFilePath item.
+            /// </summary>
+            [RepositoryItem("ab1c1564-5343-47a8-9441-2c813b0d2c7b")]
+            public virtual Ranorex.Text InputForFilePath
+            {
+                get
+                {
+                    return _inputforfilepathInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InputForFilePath item info.
+            /// </summary>
+            [RepositoryItemInfo("ab1c1564-5343-47a8-9441-2c813b0d2c7b")]
+            public virtual RepoItemInfo InputForFilePathInfo
+            {
+                get
+                {
+                    return _inputforfilepathInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OutputForFilePath item.
+            /// </summary>
+            [RepositoryItem("17b1af75-dfb3-4277-9c7d-08f20936b248")]
+            public virtual Ranorex.Text OutputForFilePath
+            {
+                get
+                {
+                    return _outputforfilepathInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OutputForFilePath item info.
+            /// </summary>
+            [RepositoryItemInfo("17b1af75-dfb3-4277-9c7d-08f20936b248")]
+            public virtual RepoItemInfo OutputForFilePathInfo
+            {
+                get
+                {
+                    return _outputforfilepathInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The HeavyBidRegistrationAppFolder folder.
         /// </summary>
         [RepositoryFolder("bbd82d23-584f-4b0c-801e-cd4629776ace")]
@@ -1171,6 +3068,7 @@ namespace HB_INSTALL_AUTO
             RepoItemInfo _submitInfo;
             RepoItemInfo _registrationentryInfo;
             RepoItemInfo _linkregistrationcodeInfo;
+            RepoItemInfo _textboxsystemdescriptionInfo;
 
             /// <summary>
             /// Creates a new HeavyBidRegistration  folder.
@@ -1180,8 +3078,9 @@ namespace HB_INSTALL_AUTO
             {
                 _checkInfo = new RepoItemInfo(this, "Check", ".//button[@text='Check']", 30000, null, "7965edbb-7fdd-4cfd-be12-92582177ed8e");
                 _submitInfo = new RepoItemInfo(this, "Submit", ".//button[@text='Submit']", 30000, null, "c61c6cd8-dab4-4f52-914d-90233ee9b6d2");
-                _registrationentryInfo = new RepoItemInfo(this, "RegistrationEntry", "element[1]/element[@class='DFentry']", 30000, null, "588d4131-a392-43df-92cf-4b8c1e94a82f");
+                _registrationentryInfo = new RepoItemInfo(this, "RegistrationEntry", "element/element[@class='DFentry']", 30000, null, "588d4131-a392-43df-92cf-4b8c1e94a82f");
                 _linkregistrationcodeInfo = new RepoItemInfo(this, "LinkRegistrationCode", "element[@windowtext~'Click']", 30000, null, "fa22d276-4596-47c1-9233-ccf49abd9408");
+                _textboxsystemdescriptionInfo = new RepoItemInfo(this, "TextboxSystemDescription", "element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']", 30000, null, "aed41150-5eac-430e-9c33-27609edb7586");
             }
 
             /// <summary>
@@ -1301,6 +3200,30 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _linkregistrationcodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextboxSystemDescription item.
+            /// </summary>
+            [RepositoryItem("aed41150-5eac-430e-9c33-27609edb7586")]
+            public virtual Ranorex.Unknown TextboxSystemDescription
+            {
+                get
+                {
+                    return _textboxsystemdescriptionInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextboxSystemDescription item info.
+            /// </summary>
+            [RepositoryItemInfo("aed41150-5eac-430e-9c33-27609edb7586")]
+            public virtual RepoItemInfo TextboxSystemDescriptionInfo
+            {
+                get
+                {
+                    return _textboxsystemdescriptionInfo;
                 }
             }
         }
@@ -1485,722 +3408,6 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _usernumberentryInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The HeavyBidTabsAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
-        public partial class HeavyBidTabsAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _helptabInfo;
-            RepoItemInfo _hbf1buttonInfo;
-            RepoItemInfo _helpaboutheavybidbuttonInfo;
-            RepoItemInfo _newheavybidfeaturesbuttonInfo;
-            RepoItemInfo _whatsnewtabInfo;
-            RepoItemInfo _filetabInfo;
-            RepoItemInfo _buttonnewestimateInfo;
-            RepoItemInfo _newestimateInfo;
-            RepoItemInfo _buttonbackupestimateInfo;
-            RepoItemInfo _buttonrestoreesimateInfo;
-            RepoItemInfo _closeInfo;
-            RepoItemInfo _hcssiconInfo;
-            RepoItemInfo _toolstabInfo;
-            RepoItemInfo _reindexfilesbuttonInfo;
-            RepoItemInfo _summarytabInfo;
-            RepoItemInfo _buttoncustomizedreportsInfo;
-            RepoItemInfo _reporttabInfo;
-            RepoItemInfo _costreportsbuttonInfo;
-            RepoItemInfo _hbmultidocumentinterfaceInfo;
-            RepoItemInfo _customizedcrystalreportsInfo;
-            RepoItemInfo _buttonsummaryreportsInfo;
-            RepoItemInfo _buttonestimateresourcereportsInfo;
-            RepoItemInfo _buttonpivotreportsInfo;
-            RepoItemInfo _querytabInfo;
-            RepoItemInfo _exchangetabInfo;
-            RepoItemInfo _buttonopenestimateInfo;
-
-            /// <summary>
-            /// Creates a new HeavyBidTabs  folder.
-            /// </summary>
-            public HeavyBidTabsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBidTabs", "/form[@title~'HB']", parentFolder, 30000, null, false, "2f898f27-5ad8-489e-9722-e1d9c63f5289", "")
-            {
-                _helptabInfo = new RepoItemInfo(this, "HelpTab", ".///toolbar/tabpagelist/tabpage[@title~'Help']", 30000, null, "f7760583-32ad-4ea0-ae2b-7afacacf7a0a");
-                _hbf1buttonInfo = new RepoItemInfo(this, "HBF1Button", ".///toolbar/button[@text~'HeavyBid Help']", 30000, null, "4f3db4c1-62c4-4154-9c8a-c222de37f5b7");
-                _helpaboutheavybidbuttonInfo = new RepoItemInfo(this, "HelpAboutHeavyBidButton", ".///toolbar/button[@text~'About HeavyBid']", 30000, null, "abeec274-cb75-4ff4-be97-d76ab7a91a22");
-                _newheavybidfeaturesbuttonInfo = new RepoItemInfo(this, "NewHeavyBidFeaturesButton", ".///toolbar/button[@text~'New HeavyBid Features']", 30000, null, "86f8a615-a739-41c7-83d8-b9ea1053dc08");
-                _whatsnewtabInfo = new RepoItemInfo(this, "WhatsNewTab", ".///toolbar/tabpagelist/tabpage[@title~'What''s New']", 30000, null, "840fcc6b-d04e-419f-9b95-0058e7db6b96");
-                _filetabInfo = new RepoItemInfo(this, "FileTab", ".///toolbar/tabpagelist/tabpage[@title~'File']", 30000, null, "0295fd3f-fff7-4963-a5b3-c56a9ac69481");
-                _buttonnewestimateInfo = new RepoItemInfo(this, "ButtonNewEstimate", ".///toolbar/button[@text~'New']", 30000, null, "6eb328db-5a10-40e9-a492-311077d8cafc");
-                _newestimateInfo = new RepoItemInfo(this, "NewEstimate", "?/?/menuitem[@accessiblename='New Estimate']", 30000, null, "a216e8ed-9253-4a0f-aa8e-3f23d311700c");
-                _buttonbackupestimateInfo = new RepoItemInfo(this, "ButtonBackupEstimate", ".///toolbar/button[@text~'Backup']", 30000, null, "bc097389-13aa-49f4-a7ae-cc31e4676ec3");
-                _buttonrestoreesimateInfo = new RepoItemInfo(this, "ButtonRestoreEsimate", ".///toolbar/button[@text~'Restore']", 30000, null, "0264168d-9bc1-4b50-a882-702a1556551e");
-                _closeInfo = new RepoItemInfo(this, "Close", "element[@controlid='3244']/form[@controlid='513']//button[@accessiblekeyboardshortcut='Alt+c']", 30000, null, "e2834541-93fd-4733-8d22-478b0704a261");
-                _hcssiconInfo = new RepoItemInfo(this, "HCSSIcon", ".///toolbar[@accessiblename~'Ribbon Bar']/button[@accessiblename~'App']", 30000, null, "0cde0962-f6ba-4e5e-99c0-dd98a17c0783");
-                _toolstabInfo = new RepoItemInfo(this, "ToolsTab", ".///toolbar/tabpagelist/tabpage[@title~'Tools']", 30000, null, "10c418f8-df89-45d4-ab06-12340733a28d");
-                _reindexfilesbuttonInfo = new RepoItemInfo(this, "ReindexFilesButton", "?/?/toolbar/button[@text~'Reindex Files']", 30000, null, "c1df175c-d963-43c1-8296-2e0bda44e88c");
-                _summarytabInfo = new RepoItemInfo(this, "SummaryTab", ".///toolbar/tabpagelist/tabpage[@title~'Summary']", 30000, null, "6148dba9-921d-472a-ab45-f5436a302652");
-                _buttoncustomizedreportsInfo = new RepoItemInfo(this, "ButtonCustomizedReports", "?/?/toolbar[1]/button[@accessiblename='Customized']", 30000, null, "5c354878-490f-49f4-be86-ec18b767aa42");
-                _reporttabInfo = new RepoItemInfo(this, "ReportTab", ".///toolbar/tabpagelist/tabpage[@title~'Report']", 30000, null, "5048bb26-2beb-4526-b63f-95ca95f2b8d1");
-                _costreportsbuttonInfo = new RepoItemInfo(this, "CostReportsButton", "?/?/toolbar/button[@text~'Cost Reports']", 30000, null, "c972e291-5f87-4f21-a5a4-3bc3f2feb563");
-                _hbmultidocumentinterfaceInfo = new RepoItemInfo(this, "HBMultiDocumentInterface", "element[@class='DFMDIClient']", 30000, null, "3a8341e4-a2dc-4a74-8216-d95c335802a7");
-                _customizedcrystalreportsInfo = new RepoItemInfo(this, "CustomizedCrystalReports", "?/?/toolbar/button[@text~'Customized Crystal Reports']", 30000, null, "381f3ef8-9c30-404b-a6fa-cea364c855d2");
-                _buttonsummaryreportsInfo = new RepoItemInfo(this, "ButtonSummaryReports", "?/?/toolbar/button[@text~'Summary Reports']", 30000, null, "b359b124-0373-4f6b-82f4-7640a6ca9e51");
-                _buttonestimateresourcereportsInfo = new RepoItemInfo(this, "ButtonEstimateResourceReports", "?/?/toolbar/button[@text~'Estimate Resource Reports']", 30000, null, "856b74e1-4396-4914-8791-398c82584d2e");
-                _buttonpivotreportsInfo = new RepoItemInfo(this, "ButtonPivotReports", "?/?/toolbar[@accessiblename='Ribbon Bar']/button[@text~'Pivot Reports']", 30000, null, "c426ef58-8e70-4534-ad50-cc8bf1d78e28");
-                _querytabInfo = new RepoItemInfo(this, "QueryTab", ".///toolbar/tabpagelist/tabpage[@title~'Query']", 30000, null, "d67e9e89-7e0f-43c3-805d-510a2b64275e");
-                _exchangetabInfo = new RepoItemInfo(this, "ExchangeTab", ".///toolbar/tabpagelist/tabpage[@title~'Exchange']", 30000, null, "335aaa88-e023-4baf-a4a4-c3bb609ace02");
-                _buttonopenestimateInfo = new RepoItemInfo(this, "ButtonOpenEstimate", ".///toolbar/button[@text~'Open']", 30000, null, "2c368f16-881f-4909-9179-4811ff1b86dd");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("2f898f27-5ad8-489e-9722-e1d9c63f5289")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HelpTab item.
-            /// </summary>
-            [RepositoryItem("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
-            public virtual Ranorex.TabPage HelpTab
-            {
-                get
-                {
-                    return _helptabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HelpTab item info.
-            /// </summary>
-            [RepositoryItemInfo("f7760583-32ad-4ea0-ae2b-7afacacf7a0a")]
-            public virtual RepoItemInfo HelpTabInfo
-            {
-                get
-                {
-                    return _helptabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HBF1Button item.
-            /// </summary>
-            [RepositoryItem("4f3db4c1-62c4-4154-9c8a-c222de37f5b7")]
-            public virtual Ranorex.Button HBF1Button
-            {
-                get
-                {
-                    return _hbf1buttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HBF1Button item info.
-            /// </summary>
-            [RepositoryItemInfo("4f3db4c1-62c4-4154-9c8a-c222de37f5b7")]
-            public virtual RepoItemInfo HBF1ButtonInfo
-            {
-                get
-                {
-                    return _hbf1buttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HelpAboutHeavyBidButton item.
-            /// </summary>
-            [RepositoryItem("abeec274-cb75-4ff4-be97-d76ab7a91a22")]
-            public virtual Ranorex.Button HelpAboutHeavyBidButton
-            {
-                get
-                {
-                    return _helpaboutheavybidbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HelpAboutHeavyBidButton item info.
-            /// </summary>
-            [RepositoryItemInfo("abeec274-cb75-4ff4-be97-d76ab7a91a22")]
-            public virtual RepoItemInfo HelpAboutHeavyBidButtonInfo
-            {
-                get
-                {
-                    return _helpaboutheavybidbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NewHeavyBidFeaturesButton item.
-            /// </summary>
-            [RepositoryItem("86f8a615-a739-41c7-83d8-b9ea1053dc08")]
-            public virtual Ranorex.Button NewHeavyBidFeaturesButton
-            {
-                get
-                {
-                    return _newheavybidfeaturesbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NewHeavyBidFeaturesButton item info.
-            /// </summary>
-            [RepositoryItemInfo("86f8a615-a739-41c7-83d8-b9ea1053dc08")]
-            public virtual RepoItemInfo NewHeavyBidFeaturesButtonInfo
-            {
-                get
-                {
-                    return _newheavybidfeaturesbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WhatsNewTab item.
-            /// </summary>
-            [RepositoryItem("840fcc6b-d04e-419f-9b95-0058e7db6b96")]
-            public virtual Ranorex.TabPage WhatsNewTab
-            {
-                get
-                {
-                    return _whatsnewtabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WhatsNewTab item info.
-            /// </summary>
-            [RepositoryItemInfo("840fcc6b-d04e-419f-9b95-0058e7db6b96")]
-            public virtual RepoItemInfo WhatsNewTabInfo
-            {
-                get
-                {
-                    return _whatsnewtabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FileTab item.
-            /// </summary>
-            [RepositoryItem("0295fd3f-fff7-4963-a5b3-c56a9ac69481")]
-            public virtual Ranorex.TabPage FileTab
-            {
-                get
-                {
-                    return _filetabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FileTab item info.
-            /// </summary>
-            [RepositoryItemInfo("0295fd3f-fff7-4963-a5b3-c56a9ac69481")]
-            public virtual RepoItemInfo FileTabInfo
-            {
-                get
-                {
-                    return _filetabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonNewEstimate item.
-            /// </summary>
-            [RepositoryItem("6eb328db-5a10-40e9-a492-311077d8cafc")]
-            public virtual Ranorex.Button ButtonNewEstimate
-            {
-                get
-                {
-                    return _buttonnewestimateInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonNewEstimate item info.
-            /// </summary>
-            [RepositoryItemInfo("6eb328db-5a10-40e9-a492-311077d8cafc")]
-            public virtual RepoItemInfo ButtonNewEstimateInfo
-            {
-                get
-                {
-                    return _buttonnewestimateInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NewEstimate item.
-            /// </summary>
-            [RepositoryItem("a216e8ed-9253-4a0f-aa8e-3f23d311700c")]
-            public virtual Ranorex.MenuItem NewEstimate
-            {
-                get
-                {
-                    return _newestimateInfo.CreateAdapter<Ranorex.MenuItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NewEstimate item info.
-            /// </summary>
-            [RepositoryItemInfo("a216e8ed-9253-4a0f-aa8e-3f23d311700c")]
-            public virtual RepoItemInfo NewEstimateInfo
-            {
-                get
-                {
-                    return _newestimateInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonBackupEstimate item.
-            /// </summary>
-            [RepositoryItem("bc097389-13aa-49f4-a7ae-cc31e4676ec3")]
-            public virtual Ranorex.Button ButtonBackupEstimate
-            {
-                get
-                {
-                    return _buttonbackupestimateInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonBackupEstimate item info.
-            /// </summary>
-            [RepositoryItemInfo("bc097389-13aa-49f4-a7ae-cc31e4676ec3")]
-            public virtual RepoItemInfo ButtonBackupEstimateInfo
-            {
-                get
-                {
-                    return _buttonbackupestimateInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonRestoreEsimate item.
-            /// </summary>
-            [RepositoryItem("0264168d-9bc1-4b50-a882-702a1556551e")]
-            public virtual Ranorex.Button ButtonRestoreEsimate
-            {
-                get
-                {
-                    return _buttonrestoreesimateInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonRestoreEsimate item info.
-            /// </summary>
-            [RepositoryItemInfo("0264168d-9bc1-4b50-a882-702a1556551e")]
-            public virtual RepoItemInfo ButtonRestoreEsimateInfo
-            {
-                get
-                {
-                    return _buttonrestoreesimateInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Close item.
-            /// </summary>
-            [RepositoryItem("e2834541-93fd-4733-8d22-478b0704a261")]
-            public virtual Ranorex.Button Close
-            {
-                get
-                {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close item info.
-            /// </summary>
-            [RepositoryItemInfo("e2834541-93fd-4733-8d22-478b0704a261")]
-            public virtual RepoItemInfo CloseInfo
-            {
-                get
-                {
-                    return _closeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HCSSIcon item.
-            /// </summary>
-            [RepositoryItem("0cde0962-f6ba-4e5e-99c0-dd98a17c0783")]
-            public virtual Ranorex.Button HCSSIcon
-            {
-                get
-                {
-                    return _hcssiconInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HCSSIcon item info.
-            /// </summary>
-            [RepositoryItemInfo("0cde0962-f6ba-4e5e-99c0-dd98a17c0783")]
-            public virtual RepoItemInfo HCSSIconInfo
-            {
-                get
-                {
-                    return _hcssiconInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ToolsTab item.
-            /// </summary>
-            [RepositoryItem("10c418f8-df89-45d4-ab06-12340733a28d")]
-            public virtual Ranorex.TabPage ToolsTab
-            {
-                get
-                {
-                    return _toolstabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ToolsTab item info.
-            /// </summary>
-            [RepositoryItemInfo("10c418f8-df89-45d4-ab06-12340733a28d")]
-            public virtual RepoItemInfo ToolsTabInfo
-            {
-                get
-                {
-                    return _toolstabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ReindexFilesButton item.
-            /// </summary>
-            [RepositoryItem("c1df175c-d963-43c1-8296-2e0bda44e88c")]
-            public virtual Ranorex.Button ReindexFilesButton
-            {
-                get
-                {
-                    return _reindexfilesbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ReindexFilesButton item info.
-            /// </summary>
-            [RepositoryItemInfo("c1df175c-d963-43c1-8296-2e0bda44e88c")]
-            public virtual RepoItemInfo ReindexFilesButtonInfo
-            {
-                get
-                {
-                    return _reindexfilesbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SummaryTab item.
-            /// </summary>
-            [RepositoryItem("6148dba9-921d-472a-ab45-f5436a302652")]
-            public virtual Ranorex.TabPage SummaryTab
-            {
-                get
-                {
-                    return _summarytabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SummaryTab item info.
-            /// </summary>
-            [RepositoryItemInfo("6148dba9-921d-472a-ab45-f5436a302652")]
-            public virtual RepoItemInfo SummaryTabInfo
-            {
-                get
-                {
-                    return _summarytabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCustomizedReports item.
-            /// </summary>
-            [RepositoryItem("5c354878-490f-49f4-be86-ec18b767aa42")]
-            public virtual Ranorex.Button ButtonCustomizedReports
-            {
-                get
-                {
-                    return _buttoncustomizedreportsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCustomizedReports item info.
-            /// </summary>
-            [RepositoryItemInfo("5c354878-490f-49f4-be86-ec18b767aa42")]
-            public virtual RepoItemInfo ButtonCustomizedReportsInfo
-            {
-                get
-                {
-                    return _buttoncustomizedreportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ReportTab item.
-            /// </summary>
-            [RepositoryItem("5048bb26-2beb-4526-b63f-95ca95f2b8d1")]
-            public virtual Ranorex.TabPage ReportTab
-            {
-                get
-                {
-                    return _reporttabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ReportTab item info.
-            /// </summary>
-            [RepositoryItemInfo("5048bb26-2beb-4526-b63f-95ca95f2b8d1")]
-            public virtual RepoItemInfo ReportTabInfo
-            {
-                get
-                {
-                    return _reporttabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CostReportsButton item.
-            /// </summary>
-            [RepositoryItem("c972e291-5f87-4f21-a5a4-3bc3f2feb563")]
-            public virtual Ranorex.Button CostReportsButton
-            {
-                get
-                {
-                    return _costreportsbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CostReportsButton item info.
-            /// </summary>
-            [RepositoryItemInfo("c972e291-5f87-4f21-a5a4-3bc3f2feb563")]
-            public virtual RepoItemInfo CostReportsButtonInfo
-            {
-                get
-                {
-                    return _costreportsbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The HBMultiDocumentInterface item.
-            /// </summary>
-            [RepositoryItem("3a8341e4-a2dc-4a74-8216-d95c335802a7")]
-            public virtual Ranorex.Unknown HBMultiDocumentInterface
-            {
-                get
-                {
-                    return _hbmultidocumentinterfaceInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The HBMultiDocumentInterface item info.
-            /// </summary>
-            [RepositoryItemInfo("3a8341e4-a2dc-4a74-8216-d95c335802a7")]
-            public virtual RepoItemInfo HBMultiDocumentInterfaceInfo
-            {
-                get
-                {
-                    return _hbmultidocumentinterfaceInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CustomizedCrystalReports item.
-            /// </summary>
-            [RepositoryItem("381f3ef8-9c30-404b-a6fa-cea364c855d2")]
-            public virtual Ranorex.Button CustomizedCrystalReports
-            {
-                get
-                {
-                    return _customizedcrystalreportsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CustomizedCrystalReports item info.
-            /// </summary>
-            [RepositoryItemInfo("381f3ef8-9c30-404b-a6fa-cea364c855d2")]
-            public virtual RepoItemInfo CustomizedCrystalReportsInfo
-            {
-                get
-                {
-                    return _customizedcrystalreportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonSummaryReports item.
-            /// </summary>
-            [RepositoryItem("b359b124-0373-4f6b-82f4-7640a6ca9e51")]
-            public virtual Ranorex.Button ButtonSummaryReports
-            {
-                get
-                {
-                    return _buttonsummaryreportsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonSummaryReports item info.
-            /// </summary>
-            [RepositoryItemInfo("b359b124-0373-4f6b-82f4-7640a6ca9e51")]
-            public virtual RepoItemInfo ButtonSummaryReportsInfo
-            {
-                get
-                {
-                    return _buttonsummaryreportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonEstimateResourceReports item.
-            /// </summary>
-            [RepositoryItem("856b74e1-4396-4914-8791-398c82584d2e")]
-            public virtual Ranorex.Button ButtonEstimateResourceReports
-            {
-                get
-                {
-                    return _buttonestimateresourcereportsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonEstimateResourceReports item info.
-            /// </summary>
-            [RepositoryItemInfo("856b74e1-4396-4914-8791-398c82584d2e")]
-            public virtual RepoItemInfo ButtonEstimateResourceReportsInfo
-            {
-                get
-                {
-                    return _buttonestimateresourcereportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonPivotReports item.
-            /// </summary>
-            [RepositoryItem("c426ef58-8e70-4534-ad50-cc8bf1d78e28")]
-            public virtual Ranorex.Button ButtonPivotReports
-            {
-                get
-                {
-                    return _buttonpivotreportsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonPivotReports item info.
-            /// </summary>
-            [RepositoryItemInfo("c426ef58-8e70-4534-ad50-cc8bf1d78e28")]
-            public virtual RepoItemInfo ButtonPivotReportsInfo
-            {
-                get
-                {
-                    return _buttonpivotreportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The QueryTab item.
-            /// </summary>
-            [RepositoryItem("d67e9e89-7e0f-43c3-805d-510a2b64275e")]
-            public virtual Ranorex.TabPage QueryTab
-            {
-                get
-                {
-                    return _querytabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The QueryTab item info.
-            /// </summary>
-            [RepositoryItemInfo("d67e9e89-7e0f-43c3-805d-510a2b64275e")]
-            public virtual RepoItemInfo QueryTabInfo
-            {
-                get
-                {
-                    return _querytabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ExchangeTab item.
-            /// </summary>
-            [RepositoryItem("335aaa88-e023-4baf-a4a4-c3bb609ace02")]
-            public virtual Ranorex.TabPage ExchangeTab
-            {
-                get
-                {
-                    return _exchangetabInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ExchangeTab item info.
-            /// </summary>
-            [RepositoryItemInfo("335aaa88-e023-4baf-a4a4-c3bb609ace02")]
-            public virtual RepoItemInfo ExchangeTabInfo
-            {
-                get
-                {
-                    return _exchangetabInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOpenEstimate item.
-            /// </summary>
-            [RepositoryItem("2c368f16-881f-4909-9179-4811ff1b86dd")]
-            public virtual Ranorex.Button ButtonOpenEstimate
-            {
-                get
-                {
-                    return _buttonopenestimateInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOpenEstimate item info.
-            /// </summary>
-            [RepositoryItemInfo("2c368f16-881f-4909-9179-4811ff1b86dd")]
-            public virtual RepoItemInfo ButtonOpenEstimateInfo
-            {
-                get
-                {
-                    return _buttonopenestimateInfo;
                 }
             }
         }
@@ -2475,10 +3682,8 @@ namespace HB_INSTALL_AUTO
         [RepositoryFolder("bb83f234-7f01-4a6b-9b28-c7005b669ec4")]
         public partial class ProgramsAndFeaturesAppFolder : RepoGenBaseFolder
         {
-            HB_INSTALL_AUTORepositoryFolders.Row0Folder _row0;
-            RepoItemInfo _buttonuninstallInfo;
-            RepoItemInfo _buttonyesInfo;
-            RepoItemInfo _buttinuninstallorchangeInfo;
+            HB_INSTALL_AUTORepositoryFolders.UninstallProgramTableFolder _uninstallprogramtable;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder4 _buttons;
             RepoItemInfo _searcheditboxInfo;
 
             /// <summary>
@@ -2487,10 +3692,8 @@ namespace HB_INSTALL_AUTO
             public ProgramsAndFeaturesAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ProgramsAndFeatures", "/form[@title~'Programs and Features']", parentFolder, 30000, null, false, "bb83f234-7f01-4a6b-9b28-c7005b669ec4", "")
             {
-                _row0 = new HB_INSTALL_AUTORepositoryFolders.Row0Folder(this);
-                _buttonuninstallInfo = new RepoItemInfo(this, "ButtonUninstall", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{3E2267F1-30BD-489B-9DD6-2887121113E8}']", 30000, null, "8e655133-0f49-4357-ab46-e1f07390400d");
-                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "?/?/element[@instance='0']/button[@text='&Yes']", 30000, null, "3efc40c1-ea5d-4004-985f-366e7e176dc9");
-                _buttinuninstallorchangeInfo = new RepoItemInfo(this, "ButtinUninstallOrChange", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar[@automationid='FolderBandModuleInner']/button[@automationid='{D57F5067-EB9C-4863-B510-FC2C6A710454}']", 30000, null, "71cea4ec-b070-4408-90bc-44a4c19e08d6");
+                _uninstallprogramtable = new HB_INSTALL_AUTORepositoryFolders.UninstallProgramTableFolder(this);
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder4(this);
                 _searcheditboxInfo = new RepoItemInfo(this, "SearchEditBox", "?/?/?/?/element[@class='Search Box']", 30000, null, "9c992ed7-95b4-43ac-b064-7b105340fbb8");
             }
 
@@ -2519,78 +3722,6 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The ButtonUninstall item.
-            /// </summary>
-            [RepositoryItem("8e655133-0f49-4357-ab46-e1f07390400d")]
-            public virtual Ranorex.Button ButtonUninstall
-            {
-                get
-                {
-                    return _buttonuninstallInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonUninstall item info.
-            /// </summary>
-            [RepositoryItemInfo("8e655133-0f49-4357-ab46-e1f07390400d")]
-            public virtual RepoItemInfo ButtonUninstallInfo
-            {
-                get
-                {
-                    return _buttonuninstallInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonYes item.
-            /// </summary>
-            [RepositoryItem("3efc40c1-ea5d-4004-985f-366e7e176dc9")]
-            public virtual Ranorex.Button ButtonYes
-            {
-                get
-                {
-                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonYes item info.
-            /// </summary>
-            [RepositoryItemInfo("3efc40c1-ea5d-4004-985f-366e7e176dc9")]
-            public virtual RepoItemInfo ButtonYesInfo
-            {
-                get
-                {
-                    return _buttonyesInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtinUninstallOrChange item.
-            /// </summary>
-            [RepositoryItem("71cea4ec-b070-4408-90bc-44a4c19e08d6")]
-            public virtual Ranorex.Button ButtinUninstallOrChange
-            {
-                get
-                {
-                    return _buttinuninstallorchangeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtinUninstallOrChange item info.
-            /// </summary>
-            [RepositoryItemInfo("71cea4ec-b070-4408-90bc-44a4c19e08d6")]
-            public virtual RepoItemInfo ButtinUninstallOrChangeInfo
-            {
-                get
-                {
-                    return _buttinuninstallorchangeInfo;
-                }
-            }
-
-            /// <summary>
             /// The SearchEditBox item.
             /// </summary>
             [RepositoryItem("9c992ed7-95b4-43ac-b064-7b105340fbb8")]
@@ -2615,30 +3746,39 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The Row0 folder.
+            /// The UninstallProgramTable folder.
             /// </summary>
             [RepositoryFolder("537a4c93-ac0a-47f6-a3ce-eafa40b9e810")]
-            public virtual HB_INSTALL_AUTORepositoryFolders.Row0Folder Row0
+            public virtual HB_INSTALL_AUTORepositoryFolders.UninstallProgramTableFolder UninstallProgramTable
             {
-                get { return _row0; }
+                get { return _uninstallprogramtable; }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("32bf1f5b-e045-435f-ba98-a44c0e78c467")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder4 Buttons
+            {
+                get { return _buttons; }
             }
         }
 
         /// <summary>
-        /// The Row0Folder folder.
+        /// The UninstallProgramTableFolder folder.
         /// </summary>
         [RepositoryFolder("537a4c93-ac0a-47f6-a3ce-eafa40b9e810")]
-        public partial class Row0Folder : RepoGenBaseFolder
+        public partial class UninstallProgramTableFolder : RepoGenBaseFolder
         {
             RepoItemInfo _heavybidworkstationInfo;
             RepoItemInfo _hcsscrystalxiintegrationInfo;
             RepoItemInfo _microsoftsqlserver2012nativeclientInfo;
 
             /// <summary>
-            /// Creates a new Row0  folder.
+            /// Creates a new UninstallProgramTable  folder.
             /// </summary>
-            public Row0Folder(RepoGenBaseFolder parentFolder) :
-                    base("Row0", ".//container[@caption='ShellView']/table[@controlid='1']/row[@index>='0']", parentFolder, 30000, null, false, "537a4c93-ac0a-47f6-a3ce-eafa40b9e810", "")
+            public UninstallProgramTableFolder(RepoGenBaseFolder parentFolder) :
+                    base("UninstallProgramTable", ".//container[@caption='ShellView']/table/row[@index>='0']", parentFolder, 30000, null, false, "537a4c93-ac0a-47f6-a3ce-eafa40b9e810", "")
             {
                 _heavybidworkstationInfo = new RepoItemInfo(this, "HeavyBidWorkstation", "cell[@text='HeavyBid Workstation']", 30000, null, "be61d9e1-da51-4fdc-8689-3e54667d17f7");
                 _hcsscrystalxiintegrationInfo = new RepoItemInfo(this, "HCSSCrystalXIIntegration", "cell[@text~'^HCSS\\ -\\ Crystal\\ XI\\ Integra']", 30000, null, "61de3bb2-d64b-4cdd-8275-e2d0d84b9fef");
@@ -2743,6 +3883,112 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
+        /// The ButtonsFolder4 folder.
+        /// </summary>
+        [RepositoryFolder("32bf1f5b-e045-435f-ba98-a44c0e78c467")]
+        public partial class ButtonsFolder4 : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonuninstallInfo;
+            RepoItemInfo _buttonyesInfo;
+            RepoItemInfo _buttinuninstallorchangeInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder4(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "32bf1f5b-e045-435f-ba98-a44c0e78c467", "")
+            {
+                _buttonuninstallInfo = new RepoItemInfo(this, "ButtonUninstall", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar/button[@text~'Uninstall']", 30000, null, "8e655133-0f49-4357-ab46-e1f07390400d");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "?/?/element/button[@text='&Yes']", 30000, null, "3efc40c1-ea5d-4004-985f-366e7e176dc9");
+                _buttinuninstallorchangeInfo = new RepoItemInfo(this, "ButtinUninstallOrChange", ".//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar/button[@text~'Uninstall']", 30000, null, "71cea4ec-b070-4408-90bc-44a4c19e08d6");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("32bf1f5b-e045-435f-ba98-a44c0e78c467")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUninstall item.
+            /// </summary>
+            [RepositoryItem("8e655133-0f49-4357-ab46-e1f07390400d")]
+            public virtual Ranorex.Button ButtonUninstall
+            {
+                get
+                {
+                    return _buttonuninstallInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUninstall item info.
+            /// </summary>
+            [RepositoryItemInfo("8e655133-0f49-4357-ab46-e1f07390400d")]
+            public virtual RepoItemInfo ButtonUninstallInfo
+            {
+                get
+                {
+                    return _buttonuninstallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("3efc40c1-ea5d-4004-985f-366e7e176dc9")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("3efc40c1-ea5d-4004-985f-366e7e176dc9")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtinUninstallOrChange item.
+            /// </summary>
+            [RepositoryItem("71cea4ec-b070-4408-90bc-44a4c19e08d6")]
+            public virtual Ranorex.Button ButtinUninstallOrChange
+            {
+                get
+                {
+                    return _buttinuninstallorchangeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtinUninstallOrChange item info.
+            /// </summary>
+            [RepositoryItemInfo("71cea4ec-b070-4408-90bc-44a4c19e08d6")]
+            public virtual RepoItemInfo ButtinUninstallOrChangeInfo
+            {
+                get
+                {
+                    return _buttinuninstallorchangeInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The HeavyBidUninstallAppFolder folder.
         /// </summary>
         [RepositoryFolder("8e490430-7c24-4311-bae2-b5cb60265e78")]
@@ -2809,207 +4055,13 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The WelcomeToHeavyBidScreenAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
-        public partial class WelcomeToHeavyBidScreenAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _openestimatebuttonInfo;
-            RepoItemInfo _welcometoheavybidtitleInfo;
-            RepoItemInfo _createnewestimatebuttonInfo;
-            RepoItemInfo _namebuttonInfo;
-            RepoItemInfo _bitmapimageInfo;
-            RepoItemInfo _linknewuserwelcomescreenInfo;
-
-            /// <summary>
-            /// Creates a new WelcomeToHeavyBidScreen  folder.
-            /// </summary>
-            public WelcomeToHeavyBidScreenAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WelcomeToHeavyBidScreen", "/form[@title~'[Welcome][HeavyBid]']", parentFolder, 30000, null, false, "18f7566c-43cf-4700-b584-eaabae46f352", "")
-            {
-                _openestimatebuttonInfo = new RepoItemInfo(this, "OpenEstimateButton", "element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "23d83cf4-b26a-4fbb-800d-60cd8193746b");
-                _welcometoheavybidtitleInfo = new RepoItemInfo(this, "WelcomeToHeavyBidTitle", "titlebar[@text~'[Welcome][HeavyBid]']", 30000, null, "617ed1c7-aa27-48e2-947b-cfe1ac5dc24f");
-                _createnewestimatebuttonInfo = new RepoItemInfo(this, "CreateNewEstimateButton", "element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "f362dc7e-4a8f-4de5-b2b9-497185d51104");
-                _namebuttonInfo = new RepoItemInfo(this, "NameButton", "element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "e0f87a37-a2f4-40b5-82e3-dc421eb4699c");
-                _bitmapimageInfo = new RepoItemInfo(this, "BitmapImage", "element[@controlid='2243']", 30000, null, "00db71f4-73f4-4258-b3fc-748f4ebbcd04");
-                _linknewuserwelcomescreenInfo = new RepoItemInfo(this, "LinkNewUserWelcomeScreen", "element[@windowtext~'Click']", 30000, null, "95bd9c4a-b0e5-4718-a26a-38888c039a88");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("18f7566c-43cf-4700-b584-eaabae46f352")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("18f7566c-43cf-4700-b584-eaabae46f352")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The OpenEstimateButton item.
-            /// </summary>
-            [RepositoryItem("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
-            public virtual Ranorex.Button OpenEstimateButton
-            {
-                get
-                {
-                    return _openestimatebuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The OpenEstimateButton item info.
-            /// </summary>
-            [RepositoryItemInfo("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
-            public virtual RepoItemInfo OpenEstimateButtonInfo
-            {
-                get
-                {
-                    return _openestimatebuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WelcomeToHeavyBidTitle item.
-            /// </summary>
-            [RepositoryItem("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
-            public virtual Ranorex.TitleBar WelcomeToHeavyBidTitle
-            {
-                get
-                {
-                    return _welcometoheavybidtitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WelcomeToHeavyBidTitle item info.
-            /// </summary>
-            [RepositoryItemInfo("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
-            public virtual RepoItemInfo WelcomeToHeavyBidTitleInfo
-            {
-                get
-                {
-                    return _welcometoheavybidtitleInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CreateNewEstimateButton item.
-            /// </summary>
-            [RepositoryItem("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
-            public virtual Ranorex.Button CreateNewEstimateButton
-            {
-                get
-                {
-                    return _createnewestimatebuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CreateNewEstimateButton item info.
-            /// </summary>
-            [RepositoryItemInfo("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
-            public virtual RepoItemInfo CreateNewEstimateButtonInfo
-            {
-                get
-                {
-                    return _createnewestimatebuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NameButton item.
-            /// </summary>
-            [RepositoryItem("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
-            public virtual Ranorex.Button NameButton
-            {
-                get
-                {
-                    return _namebuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NameButton item info.
-            /// </summary>
-            [RepositoryItemInfo("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
-            public virtual RepoItemInfo NameButtonInfo
-            {
-                get
-                {
-                    return _namebuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The BitmapImage item.
-            /// </summary>
-            [RepositoryItem("00db71f4-73f4-4258-b3fc-748f4ebbcd04")]
-            public virtual Ranorex.Unknown BitmapImage
-            {
-                get
-                {
-                    return _bitmapimageInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BitmapImage item info.
-            /// </summary>
-            [RepositoryItemInfo("00db71f4-73f4-4258-b3fc-748f4ebbcd04")]
-            public virtual RepoItemInfo BitmapImageInfo
-            {
-                get
-                {
-                    return _bitmapimageInfo;
-                }
-            }
-
-            /// <summary>
-            /// The LinkNewUserWelcomeScreen item.
-            /// </summary>
-            [RepositoryItem("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
-            public virtual Ranorex.Unknown LinkNewUserWelcomeScreen
-            {
-                get
-                {
-                    return _linknewuserwelcomescreenInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LinkNewUserWelcomeScreen item info.
-            /// </summary>
-            [RepositoryItemInfo("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
-            public virtual RepoItemInfo LinkNewUserWelcomeScreenInfo
-            {
-                get
-                {
-                    return _linknewuserwelcomescreenInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The GoogleChromeAppFolder folder.
         /// </summary>
         [RepositoryFolder("1cc2708b-c467-4997-aa0b-3b1a7bf4b39c")]
         public partial class GoogleChromeAppFolder : RepoGenBaseFolder
         {
+            HB_INSTALL_AUTORepositoryFolders.ChromeTabsFolder _chrometabs;
+            HB_INSTALL_AUTORepositoryFolders.ChromeURLsFolder _chromeurls;
             RepoItemInfo _tabsInfo;
             RepoItemInfo _tabsupporthcssInfo;
             RepoItemInfo _tabarticlehcssInfo;
@@ -3023,6 +4075,8 @@ namespace HB_INSTALL_AUTO
             public GoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("GoogleChrome", "/form[@processname~'chrome']", parentFolder, 30000, null, true, "1cc2708b-c467-4997-aa0b-3b1a7bf4b39c", "")
             {
+                _chrometabs = new HB_INSTALL_AUTORepositoryFolders.ChromeTabsFolder(this);
+                _chromeurls = new HB_INSTALL_AUTORepositoryFolders.ChromeURLsFolder(this);
                 _tabsInfo = new RepoItemInfo(this, "Tabs", "?/?/?/?/?/?/tabpage[@selected='True']", 30000, null, "6c738e7a-7184-4785-8021-78d4e64b01ac");
                 _tabsupporthcssInfo = new RepoItemInfo(this, "TabSupportHCSS", "container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[HCSS][Support]']", 30000, null, "e10ca42b-9e25-4101-9084-1f1b896e52f6");
                 _tabarticlehcssInfo = new RepoItemInfo(this, "TabArticleHCSS", "container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage[@title~'[Article][List]']", 30000, null, "5ff2cee5-61e1-4940-b66d-c1692f6171c3");
@@ -3198,6 +4252,717 @@ namespace HB_INSTALL_AUTO
                     return _linkhelphcssInfo;
                 }
             }
+
+            /// <summary>
+            /// The ChromeTabs folder.
+            /// </summary>
+            [RepositoryFolder("8932b5c8-248b-487c-a5ed-668428e6037a")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ChromeTabsFolder ChromeTabs
+            {
+                get { return _chrometabs; }
+            }
+
+            /// <summary>
+            /// The ChromeURLs folder.
+            /// </summary>
+            [RepositoryFolder("c764098f-f4bb-4bfc-9e40-81bc3d3512ca")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ChromeURLsFolder ChromeURLs
+            {
+                get { return _chromeurls; }
+            }
+        }
+
+        /// <summary>
+        /// The ChromeTabsFolder folder.
+        /// </summary>
+        [RepositoryFolder("8932b5c8-248b-487c-a5ed-668428e6037a")]
+        public partial class ChromeTabsFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new ChromeTabs  folder.
+            /// </summary>
+            public ChromeTabsFolder(RepoGenBaseFolder parentFolder) :
+                    base("ChromeTabs", "", parentFolder, 0, null, false, "8932b5c8-248b-487c-a5ed-668428e6037a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8932b5c8-248b-487c-a5ed-668428e6037a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ChromeURLsFolder folder.
+        /// </summary>
+        [RepositoryFolder("c764098f-f4bb-4bfc-9e40-81bc3d3512ca")]
+        public partial class ChromeURLsFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new ChromeURLs  folder.
+            /// </summary>
+            public ChromeURLsFolder(RepoGenBaseFolder parentFolder) :
+                    base("ChromeURLs", "", parentFolder, 0, null, false, "c764098f-f4bb-4bfc-9e40-81bc3d3512ca", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c764098f-f4bb-4bfc-9e40-81bc3d3512ca")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HBPopupScreensFolder folder.
+        /// </summary>
+        [RepositoryFolder("339e539f-4d83-4e8d-840a-ebf66573dd57")]
+        public partial class HBPopupScreensFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.FromFileButtonsFolder _fromfilebuttons;
+            HB_INSTALL_AUTORepositoryFolders.FromHelpButtonsFolder _fromhelpbuttons;
+            HB_INSTALL_AUTORepositoryFolders.GridViewOfEstimatesPopupFolder _gridviewofestimatespopup;
+            HB_INSTALL_AUTORepositoryFolders.FromSummaryButtonsFolder _fromsummarybuttons;
+            HB_INSTALL_AUTORepositoryFolders.FromReportsButtonFolder _fromreportsbutton;
+
+            /// <summary>
+            /// Creates a new HBPopupScreens  folder.
+            /// </summary>
+            public HBPopupScreensFolder(RepoGenBaseFolder parentFolder) :
+                    base("HBPopupScreens", "", parentFolder, 0, null, false, "339e539f-4d83-4e8d-840a-ebf66573dd57", "")
+            {
+                _fromfilebuttons = new HB_INSTALL_AUTORepositoryFolders.FromFileButtonsFolder(this);
+                _fromhelpbuttons = new HB_INSTALL_AUTORepositoryFolders.FromHelpButtonsFolder(this);
+                _gridviewofestimatespopup = new HB_INSTALL_AUTORepositoryFolders.GridViewOfEstimatesPopupFolder(this);
+                _fromsummarybuttons = new HB_INSTALL_AUTORepositoryFolders.FromSummaryButtonsFolder(this);
+                _fromreportsbutton = new HB_INSTALL_AUTORepositoryFolders.FromReportsButtonFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("339e539f-4d83-4e8d-840a-ebf66573dd57")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FromFileButtons folder.
+            /// </summary>
+            [RepositoryFolder("d3dc8bad-89f6-4b06-9ef6-947cd4a19b9e")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.FromFileButtonsFolder FromFileButtons
+            {
+                get { return _fromfilebuttons; }
+            }
+
+            /// <summary>
+            /// The FromHelpButtons folder.
+            /// </summary>
+            [RepositoryFolder("3945500a-ba28-41ab-a3f0-dd29ee170c92")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.FromHelpButtonsFolder FromHelpButtons
+            {
+                get { return _fromhelpbuttons; }
+            }
+
+            /// <summary>
+            /// The GridViewOfEstimatesPopup folder.
+            /// </summary>
+            [RepositoryFolder("d91a6cd4-c213-445d-9e32-ced1e0d92344")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.GridViewOfEstimatesPopupFolder GridViewOfEstimatesPopup
+            {
+                get { return _gridviewofestimatespopup; }
+            }
+
+            /// <summary>
+            /// The FromSummaryButtons folder.
+            /// </summary>
+            [RepositoryFolder("1b9db097-3862-455e-9012-aa727e405642")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.FromSummaryButtonsFolder FromSummaryButtons
+            {
+                get { return _fromsummarybuttons; }
+            }
+
+            /// <summary>
+            /// The FromReportsButton folder.
+            /// </summary>
+            [RepositoryFolder("958365ac-3b0e-4cfb-9053-a41cb05cbcaf")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.FromReportsButtonFolder FromReportsButton
+            {
+                get { return _fromreportsbutton; }
+            }
+        }
+
+        /// <summary>
+        /// The FromFileButtonsFolder folder.
+        /// </summary>
+        [RepositoryFolder("d3dc8bad-89f6-4b06-9ef6-947cd4a19b9e")]
+        public partial class FromFileButtonsFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.NewEstimateRelatedFolder _newestimaterelated;
+            HB_INSTALL_AUTORepositoryFolders.BackupEstimateRelatedFolder _backupestimaterelated;
+
+            /// <summary>
+            /// Creates a new FromFileButtons  folder.
+            /// </summary>
+            public FromFileButtonsFolder(RepoGenBaseFolder parentFolder) :
+                    base("FromFileButtons", "", parentFolder, 0, null, false, "d3dc8bad-89f6-4b06-9ef6-947cd4a19b9e", "")
+            {
+                _newestimaterelated = new HB_INSTALL_AUTORepositoryFolders.NewEstimateRelatedFolder(this);
+                _backupestimaterelated = new HB_INSTALL_AUTORepositoryFolders.BackupEstimateRelatedFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d3dc8bad-89f6-4b06-9ef6-947cd4a19b9e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewEstimateRelated folder.
+            /// </summary>
+            [RepositoryFolder("8dcd5ef4-2b48-4ca5-9980-a0a63c9ae1c4")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.NewEstimateRelatedFolder NewEstimateRelated
+            {
+                get { return _newestimaterelated; }
+            }
+
+            /// <summary>
+            /// The BackupEstimateRelated folder.
+            /// </summary>
+            [RepositoryFolder("a0679ec7-6593-417f-91a2-8d1e3c18c9df")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.BackupEstimateRelatedFolder BackupEstimateRelated
+            {
+                get { return _backupestimaterelated; }
+            }
+        }
+
+        /// <summary>
+        /// The NewEstimateRelatedFolder folder.
+        /// </summary>
+        [RepositoryFolder("8dcd5ef4-2b48-4ca5-9980-a0a63c9ae1c4")]
+        public partial class NewEstimateRelatedFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder _newestimate;
+
+            /// <summary>
+            /// Creates a new NewEstimateRelated  folder.
+            /// </summary>
+            public NewEstimateRelatedFolder(RepoGenBaseFolder parentFolder) :
+                    base("NewEstimateRelated", "", parentFolder, 0, null, false, "8dcd5ef4-2b48-4ca5-9980-a0a63c9ae1c4", "")
+            {
+                _newestimate = new HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8dcd5ef4-2b48-4ca5-9980-a0a63c9ae1c4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewEstimate folder.
+            /// </summary>
+            [RepositoryFolder("3a80063c-0857-4845-9cf7-781e35c94858")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.NewEstimateAppFolder NewEstimate
+            {
+                get { return _newestimate; }
+            }
+        }
+
+        /// <summary>
+        /// The NewEstimateAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3a80063c-0857-4845-9cf7-781e35c94858")]
+        public partial class NewEstimateAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _estimatecodeInfo;
+            RepoItemInfo _estimatenametextboxInfo;
+            RepoItemInfo _nextbuttonInfo;
+            RepoItemInfo _estimatedescriptiontextboxInfo;
+            RepoItemInfo _finishbuttonInfo;
+
+            /// <summary>
+            /// Creates a new NewEstimate  folder.
+            /// </summary>
+            public NewEstimateAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NewEstimate", "/form[@title~'New Estimate']", parentFolder, 30000, null, true, "3a80063c-0857-4845-9cf7-781e35c94858", "")
+            {
+                _estimatecodeInfo = new RepoItemInfo(this, "EstimateCode", "?/?/?/element[@class='DFentry' and @enabled='True']", 30000, null, "c1389a84-04ae-45b3-a5c5-0be6064a83b0");
+                _estimatenametextboxInfo = new RepoItemInfo(this, "EstimateNameTextBox", "element[@class='DFDialogClass']/element/element[@class='DFentry']", 30000, null, "9652e841-437a-4b39-9b56-ab5b4ee523e6");
+                _nextbuttonInfo = new RepoItemInfo(this, "NextButton", ".//button[@text~'Next']", 30000, null, "68adf6bc-9b6a-4a99-a227-eb9288380d52");
+                _estimatedescriptiontextboxInfo = new RepoItemInfo(this, "EstimateDescriptionTextBox", "element[@class='DFDialogClass']/?/?/text[@accessiblerole='Text']", 30000, null, "6fb65c7d-707d-4dc8-9892-cd9dcdcbda09");
+                _finishbuttonInfo = new RepoItemInfo(this, "FinishButton", ".//button[@text~'Finish']", 30000, null, "0bf42967-89c6-4aeb-8274-8747cf2b8e34");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3a80063c-0857-4845-9cf7-781e35c94858")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3a80063c-0857-4845-9cf7-781e35c94858")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EstimateCode item.
+            /// </summary>
+            [RepositoryItem("c1389a84-04ae-45b3-a5c5-0be6064a83b0")]
+            public virtual Ranorex.Unknown EstimateCode
+            {
+                get
+                {
+                    return _estimatecodeInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EstimateCode item info.
+            /// </summary>
+            [RepositoryItemInfo("c1389a84-04ae-45b3-a5c5-0be6064a83b0")]
+            public virtual RepoItemInfo EstimateCodeInfo
+            {
+                get
+                {
+                    return _estimatecodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EstimateNameTextBox item.
+            /// </summary>
+            [RepositoryItem("9652e841-437a-4b39-9b56-ab5b4ee523e6")]
+            public virtual Ranorex.Unknown EstimateNameTextBox
+            {
+                get
+                {
+                    return _estimatenametextboxInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EstimateNameTextBox item info.
+            /// </summary>
+            [RepositoryItemInfo("9652e841-437a-4b39-9b56-ab5b4ee523e6")]
+            public virtual RepoItemInfo EstimateNameTextBoxInfo
+            {
+                get
+                {
+                    return _estimatenametextboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NextButton item.
+            /// </summary>
+            [RepositoryItem("68adf6bc-9b6a-4a99-a227-eb9288380d52")]
+            public virtual Ranorex.Button NextButton
+            {
+                get
+                {
+                    return _nextbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NextButton item info.
+            /// </summary>
+            [RepositoryItemInfo("68adf6bc-9b6a-4a99-a227-eb9288380d52")]
+            public virtual RepoItemInfo NextButtonInfo
+            {
+                get
+                {
+                    return _nextbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EstimateDescriptionTextBox item.
+            /// </summary>
+            [RepositoryItem("6fb65c7d-707d-4dc8-9892-cd9dcdcbda09")]
+            public virtual Ranorex.Text EstimateDescriptionTextBox
+            {
+                get
+                {
+                    return _estimatedescriptiontextboxInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EstimateDescriptionTextBox item info.
+            /// </summary>
+            [RepositoryItemInfo("6fb65c7d-707d-4dc8-9892-cd9dcdcbda09")]
+            public virtual RepoItemInfo EstimateDescriptionTextBoxInfo
+            {
+                get
+                {
+                    return _estimatedescriptiontextboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FinishButton item.
+            /// </summary>
+            [RepositoryItem("0bf42967-89c6-4aeb-8274-8747cf2b8e34")]
+            public virtual Ranorex.Button FinishButton
+            {
+                get
+                {
+                    return _finishbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FinishButton item info.
+            /// </summary>
+            [RepositoryItemInfo("0bf42967-89c6-4aeb-8274-8747cf2b8e34")]
+            public virtual RepoItemInfo FinishButtonInfo
+            {
+                get
+                {
+                    return _finishbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BackupEstimateRelatedFolder folder.
+        /// </summary>
+        [RepositoryFolder("a0679ec7-6593-417f-91a2-8d1e3c18c9df")]
+        public partial class BackupEstimateRelatedFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder _backupestimate;
+            HB_INSTALL_AUTORepositoryFolders.BackupExistsAppFolder _backupexists;
+
+            /// <summary>
+            /// Creates a new BackupEstimateRelated  folder.
+            /// </summary>
+            public BackupEstimateRelatedFolder(RepoGenBaseFolder parentFolder) :
+                    base("BackupEstimateRelated", "", parentFolder, 0, null, false, "a0679ec7-6593-417f-91a2-8d1e3c18c9df", "")
+            {
+                _backupestimate = new HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder(this);
+                _backupexists = new HB_INSTALL_AUTORepositoryFolders.BackupExistsAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a0679ec7-6593-417f-91a2-8d1e3c18c9df")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BackupEstimate folder.
+            /// </summary>
+            [RepositoryFolder("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.BackupEstimateAppFolder BackupEstimate
+            {
+                get { return _backupestimate; }
+            }
+
+            /// <summary>
+            /// The BackupExists folder.
+            /// </summary>
+            [RepositoryFolder("53921fe6-449b-4502-9bee-3ed08c46e088")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.BackupExistsAppFolder BackupExists
+            {
+                get { return _backupexists; }
+            }
+        }
+
+        /// <summary>
+        /// The BackupEstimateAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
+        public partial class BackupEstimateAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonellipisisInfo;
+            RepoItemInfo _buttonfinishInfo;
+
+            /// <summary>
+            /// Creates a new BackupEstimate  folder.
+            /// </summary>
+            public BackupEstimateAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("BackupEstimate", "/form[@title~'Backup']", parentFolder, 30000, null, true, "4dab055f-dbe9-41fd-ba28-776ec885b4df", "")
+            {
+                _buttonellipisisInfo = new RepoItemInfo(this, "ButtonEllipisis", ".////button[@accessiblename='...']", 30000, null, "bcb9c9a1-3754-4aa6-898e-13c5e594dff5");
+                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", ".////button[@accessiblename='Finish']", 30000, null, "17a46077-d5cf-424c-abb3-24a499c15007");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEllipisis item.
+            /// </summary>
+            [RepositoryItem("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
+            public virtual Ranorex.Button ButtonEllipisis
+            {
+                get
+                {
+                    return _buttonellipisisInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEllipisis item info.
+            /// </summary>
+            [RepositoryItemInfo("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
+            public virtual RepoItemInfo ButtonEllipisisInfo
+            {
+                get
+                {
+                    return _buttonellipisisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item.
+            /// </summary>
+            [RepositoryItem("17a46077-d5cf-424c-abb3-24a499c15007")]
+            public virtual Ranorex.Button ButtonFinish
+            {
+                get
+                {
+                    return _buttonfinishInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item info.
+            /// </summary>
+            [RepositoryItemInfo("17a46077-d5cf-424c-abb3-24a499c15007")]
+            public virtual RepoItemInfo ButtonFinishInfo
+            {
+                get
+                {
+                    return _buttonfinishInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BackupExistsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("53921fe6-449b-4502-9bee-3ed08c46e088")]
+        public partial class BackupExistsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _buttonyesInfo;
+
+            /// <summary>
+            /// Creates a new BackupExists  folder.
+            /// </summary>
+            public BackupExistsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("BackupExists", "/form[@title~'HCSS Backup']", parentFolder, 30000, null, true, "53921fe6-449b-4502-9bee-3ed08c46e088", "")
+            {
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text~'OK']", 30000, null, "85c25856-77fd-462f-823e-1dab11a53d32");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text~'Yes']", 30000, null, "ff06a4b1-eb87-419e-b335-9b0a47489259");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("53921fe6-449b-4502-9bee-3ed08c46e088")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("53921fe6-449b-4502-9bee-3ed08c46e088")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("85c25856-77fd-462f-823e-1dab11a53d32")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("85c25856-77fd-462f-823e-1dab11a53d32")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("ff06a4b1-eb87-419e-b335-9b0a47489259")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("ff06a4b1-eb87-419e-b335-9b0a47489259")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FromHelpButtonsFolder folder.
+        /// </summary>
+        [RepositoryFolder("3945500a-ba28-41ab-a3f0-dd29ee170c92")]
+        public partial class FromHelpButtonsFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder _aboutheavybid;
+            HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder _systeminformationabouthb;
+            HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder _welcometoheavybidscreen;
+
+            /// <summary>
+            /// Creates a new FromHelpButtons  folder.
+            /// </summary>
+            public FromHelpButtonsFolder(RepoGenBaseFolder parentFolder) :
+                    base("FromHelpButtons", "", parentFolder, 0, null, false, "3945500a-ba28-41ab-a3f0-dd29ee170c92", "")
+            {
+                _aboutheavybid = new HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder(this);
+                _systeminformationabouthb = new HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder(this);
+                _welcometoheavybidscreen = new HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3945500a-ba28-41ab-a3f0-dd29ee170c92")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AboutHeavyBid folder.
+            /// </summary>
+            [RepositoryFolder("f7462987-0de1-4830-9a1a-def32c221e44")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.AboutHeavyBidAppFolder AboutHeavyBid
+            {
+                get { return _aboutheavybid; }
+            }
+
+            /// <summary>
+            /// The SystemInformationAboutHB folder.
+            /// </summary>
+            [RepositoryFolder("81a7308a-b5ac-4653-8909-b9bb478ac80f")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.SystemInformationAboutHBAppFolder SystemInformationAboutHB
+            {
+                get { return _systeminformationabouthb; }
+            }
+
+            /// <summary>
+            /// The WelcomeToHeavyBidScreen folder.
+            /// </summary>
+            [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.WelcomeToHeavyBidScreenAppFolder WelcomeToHeavyBidScreen
+            {
+                get { return _welcometoheavybidscreen; }
+            }
         }
 
         /// <summary>
@@ -3206,7 +4971,7 @@ namespace HB_INSTALL_AUTO
         [RepositoryFolder("f7462987-0de1-4830-9a1a-def32c221e44")]
         public partial class AboutHeavyBidAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _hbversionaboutscreenInfo;
+            RepoItemInfo _hbtextlineInfo;
             RepoItemInfo _systeminfoInfo;
             RepoItemInfo _closebuttonInfo;
 
@@ -3216,7 +4981,7 @@ namespace HB_INSTALL_AUTO
             public AboutHeavyBidAppFolder(RepoGenBaseFolder parentFolder) :
                     base("AboutHeavyBid", "/form[@title~'About HeavyBid']", parentFolder, 30000, null, true, "f7462987-0de1-4830-9a1a-def32c221e44", "")
             {
-                _hbversionaboutscreenInfo = new RepoItemInfo(this, "HBVersionAboutScreen", ".//text[@accessiblename~'Advanced']", 30000, null, "78abad0f-0752-4e53-a093-0f0c8446d2b4");
+                _hbtextlineInfo = new RepoItemInfo(this, "HBTextLine", ".//text[@text~'HeavyBid']", 30000, null, "78abad0f-0752-4e53-a093-0f0c8446d2b4");
                 _systeminfoInfo = new RepoItemInfo(this, "SystemInfo", ".//button[@text~'System Info']", 30000, null, "f9b508e4-f6b3-4b25-b9fa-e48c87faa15c");
                 _closebuttonInfo = new RepoItemInfo(this, "CloseButton", ".//button[@text~'Close']", 30000, null, "66b54add-d8ea-49d8-9362-99e8425f9bc4");
             }
@@ -3246,26 +5011,26 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The HBVersionAboutScreen item.
+            /// The HBTextLine item.
             /// </summary>
             [RepositoryItem("78abad0f-0752-4e53-a093-0f0c8446d2b4")]
-            public virtual Ranorex.Text HBVersionAboutScreen
+            public virtual Ranorex.Text HBTextLine
             {
                 get
                 {
-                    return _hbversionaboutscreenInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _hbtextlineInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The HBVersionAboutScreen item info.
+            /// The HBTextLine item info.
             /// </summary>
             [RepositoryItemInfo("78abad0f-0752-4e53-a093-0f0c8446d2b4")]
-            public virtual RepoItemInfo HBVersionAboutScreenInfo
+            public virtual RepoItemInfo HBTextLineInfo
             {
                 get
                 {
-                    return _hbversionaboutscreenInfo;
+                    return _hbtextlineInfo;
                 }
             }
 
@@ -3380,6 +5145,1111 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _closebuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WelcomeToHeavyBidScreenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("18f7566c-43cf-4700-b584-eaabae46f352")]
+        public partial class WelcomeToHeavyBidScreenAppFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder5 _buttons;
+            RepoItemInfo _welcometoheavybidtitleInfo;
+            RepoItemInfo _bitmapimageInfo;
+            RepoItemInfo _linknewuserwelcomescreenInfo;
+
+            /// <summary>
+            /// Creates a new WelcomeToHeavyBidScreen  folder.
+            /// </summary>
+            public WelcomeToHeavyBidScreenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WelcomeToHeavyBidScreen", "/form[@title~'Welcome' and @title~'HeavyBid']", parentFolder, 30000, null, false, "18f7566c-43cf-4700-b584-eaabae46f352", "")
+            {
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder5(this);
+                _welcometoheavybidtitleInfo = new RepoItemInfo(this, "WelcomeToHeavyBidTitle", "titlebar[@text~'[Welcome][HeavyBid]']", 30000, null, "617ed1c7-aa27-48e2-947b-cfe1ac5dc24f");
+                _bitmapimageInfo = new RepoItemInfo(this, "BitmapImage", "element[@controlid='2243']", 30000, null, "00db71f4-73f4-4258-b3fc-748f4ebbcd04");
+                _linknewuserwelcomescreenInfo = new RepoItemInfo(this, "LinkNewUserWelcomeScreen", "element[@windowtext~'Click']", 30000, null, "95bd9c4a-b0e5-4718-a26a-38888c039a88");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("18f7566c-43cf-4700-b584-eaabae46f352")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("18f7566c-43cf-4700-b584-eaabae46f352")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeToHeavyBidTitle item.
+            /// </summary>
+            [RepositoryItem("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
+            public virtual Ranorex.TitleBar WelcomeToHeavyBidTitle
+            {
+                get
+                {
+                    return _welcometoheavybidtitleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WelcomeToHeavyBidTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("617ed1c7-aa27-48e2-947b-cfe1ac5dc24f")]
+            public virtual RepoItemInfo WelcomeToHeavyBidTitleInfo
+            {
+                get
+                {
+                    return _welcometoheavybidtitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BitmapImage item.
+            /// </summary>
+            [RepositoryItem("00db71f4-73f4-4258-b3fc-748f4ebbcd04")]
+            public virtual Ranorex.Unknown BitmapImage
+            {
+                get
+                {
+                    return _bitmapimageInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BitmapImage item info.
+            /// </summary>
+            [RepositoryItemInfo("00db71f4-73f4-4258-b3fc-748f4ebbcd04")]
+            public virtual RepoItemInfo BitmapImageInfo
+            {
+                get
+                {
+                    return _bitmapimageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinkNewUserWelcomeScreen item.
+            /// </summary>
+            [RepositoryItem("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
+            public virtual Ranorex.Unknown LinkNewUserWelcomeScreen
+            {
+                get
+                {
+                    return _linknewuserwelcomescreenInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinkNewUserWelcomeScreen item info.
+            /// </summary>
+            [RepositoryItemInfo("95bd9c4a-b0e5-4718-a26a-38888c039a88")]
+            public virtual RepoItemInfo LinkNewUserWelcomeScreenInfo
+            {
+                get
+                {
+                    return _linknewuserwelcomescreenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Buttons folder.
+            /// </summary>
+            [RepositoryFolder("4715da90-1a89-4169-be39-f610882d3474")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder5 Buttons
+            {
+                get { return _buttons; }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder5 folder.
+        /// </summary>
+        [RepositoryFolder("4715da90-1a89-4169-be39-f610882d3474")]
+        public partial class ButtonsFolder5 : RepoGenBaseFolder
+        {
+            RepoItemInfo _opencurrentestimateInfo;
+            RepoItemInfo _createnewestimateInfo;
+            RepoItemInfo _openexistingestimateInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder5(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "4715da90-1a89-4169-be39-f610882d3474", "")
+            {
+                _opencurrentestimateInfo = new RepoItemInfo(this, "OpenCurrentEstimate", "element[1]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "23d83cf4-b26a-4fbb-800d-60cd8193746b");
+                _createnewestimateInfo = new RepoItemInfo(this, "CreateNewEstimate", "element[6]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "f362dc7e-4a8f-4de5-b2b9-497185d51104");
+                _openexistingestimateInfo = new RepoItemInfo(this, "OpenExistingEstimate", "element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']", 30000, null, "e0f87a37-a2f4-40b5-82e3-dc421eb4699c");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4715da90-1a89-4169-be39-f610882d3474")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenCurrentEstimate item.
+            /// </summary>
+            [RepositoryItem("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
+            public virtual Ranorex.Button OpenCurrentEstimate
+            {
+                get
+                {
+                    return _opencurrentestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenCurrentEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("23d83cf4-b26a-4fbb-800d-60cd8193746b")]
+            public virtual RepoItemInfo OpenCurrentEstimateInfo
+            {
+                get
+                {
+                    return _opencurrentestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CreateNewEstimate item.
+            /// </summary>
+            [RepositoryItem("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
+            public virtual Ranorex.Button CreateNewEstimate
+            {
+                get
+                {
+                    return _createnewestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CreateNewEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("f362dc7e-4a8f-4de5-b2b9-497185d51104")]
+            public virtual RepoItemInfo CreateNewEstimateInfo
+            {
+                get
+                {
+                    return _createnewestimateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenExistingEstimate item.
+            /// </summary>
+            [RepositoryItem("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
+            public virtual Ranorex.Button OpenExistingEstimate
+            {
+                get
+                {
+                    return _openexistingestimateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenExistingEstimate item info.
+            /// </summary>
+            [RepositoryItemInfo("e0f87a37-a2f4-40b5-82e3-dc421eb4699c")]
+            public virtual RepoItemInfo OpenExistingEstimateInfo
+            {
+                get
+                {
+                    return _openexistingestimateInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GridViewOfEstimatesPopupFolder folder.
+        /// </summary>
+        [RepositoryFolder("d91a6cd4-c213-445d-9e32-ced1e0d92344")]
+        public partial class GridViewOfEstimatesPopupFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.ListOfEstimatesPopupAppFolder _listofestimatespopup;
+            HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder _estimatesearch;
+
+            /// <summary>
+            /// Creates a new GridViewOfEstimatesPopup  folder.
+            /// </summary>
+            public GridViewOfEstimatesPopupFolder(RepoGenBaseFolder parentFolder) :
+                    base("GridViewOfEstimatesPopup", "", parentFolder, 0, null, false, "d91a6cd4-c213-445d-9e32-ced1e0d92344", "")
+            {
+                _listofestimatespopup = new HB_INSTALL_AUTORepositoryFolders.ListOfEstimatesPopupAppFolder(this);
+                _estimatesearch = new HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d91a6cd4-c213-445d-9e32-ced1e0d92344")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListOfEstimatesPopup folder.
+            /// </summary>
+            [RepositoryFolder("be6c54b9-5252-4e1f-b2ca-962998a62625")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ListOfEstimatesPopupAppFolder ListOfEstimatesPopup
+            {
+                get { return _listofestimatespopup; }
+            }
+
+            /// <summary>
+            /// The EstimateSearch folder.
+            /// </summary>
+            [RepositoryFolder("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.EstimateSearchAppFolder EstimateSearch
+            {
+                get { return _estimatesearch; }
+            }
+        }
+
+        /// <summary>
+        /// The ListOfEstimatesPopupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("be6c54b9-5252-4e1f-b2ca-962998a62625")]
+        public partial class ListOfEstimatesPopupAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _listexistingestimatesInfo;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new ListOfEstimatesPopup  folder.
+            /// </summary>
+            public ListOfEstimatesPopupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ListOfEstimatesPopup", "/form[@class~'DFDialogClass']", parentFolder, 30000, null, true, "be6c54b9-5252-4e1f-b2ca-962998a62625", "")
+            {
+                _listexistingestimatesInfo = new RepoItemInfo(this, "ListExistingEstimates", "element[@class='DFformlist']", 30000, null, "127b01f9-8a45-4ec1-9652-a2ddbf0addd1");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", ".//button[@text~'OK']", 30000, null, "40be3ffb-ecab-442d-9710-36a7c66920fe");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("be6c54b9-5252-4e1f-b2ca-962998a62625")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("be6c54b9-5252-4e1f-b2ca-962998a62625")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListExistingEstimates item.
+            /// </summary>
+            [RepositoryItem("127b01f9-8a45-4ec1-9652-a2ddbf0addd1")]
+            public virtual Ranorex.Unknown ListExistingEstimates
+            {
+                get
+                {
+                    return _listexistingestimatesInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListExistingEstimates item info.
+            /// </summary>
+            [RepositoryItemInfo("127b01f9-8a45-4ec1-9652-a2ddbf0addd1")]
+            public virtual RepoItemInfo ListExistingEstimatesInfo
+            {
+                get
+                {
+                    return _listexistingestimatesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item.
+            /// </summary>
+            [RepositoryItem("40be3ffb-ecab-442d-9710-36a7c66920fe")]
+            public virtual Ranorex.Button ButtonOk
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item info.
+            /// </summary>
+            [RepositoryItemInfo("40be3ffb-ecab-442d-9710-36a7c66920fe")]
+            public virtual RepoItemInfo ButtonOkInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The EstimateSearchAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
+        public partial class EstimateSearchAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new EstimateSearch  folder.
+            /// </summary>
+            public EstimateSearchAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("EstimateSearch", "/form[@title~'Search: Est Code']", parentFolder, 30000, null, true, "a8e5c2a5-64e1-48e4-b143-597dbf56c884", "")
+            {
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", ".//button[@text~'OK']", 30000, null, "e35ba4e1-d651-45cf-9306-93b4d1aadf5f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item.
+            /// </summary>
+            [RepositoryItem("e35ba4e1-d651-45cf-9306-93b4d1aadf5f")]
+            public virtual Ranorex.Button ButtonOk
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOk item info.
+            /// </summary>
+            [RepositoryItemInfo("e35ba4e1-d651-45cf-9306-93b4d1aadf5f")]
+            public virtual RepoItemInfo ButtonOkInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FromSummaryButtonsFolder folder.
+        /// </summary>
+        [RepositoryFolder("1b9db097-3862-455e-9012-aa727e405642")]
+        public partial class FromSummaryButtonsFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder _customizedbidproposalsetup;
+
+            /// <summary>
+            /// Creates a new FromSummaryButtons  folder.
+            /// </summary>
+            public FromSummaryButtonsFolder(RepoGenBaseFolder parentFolder) :
+                    base("FromSummaryButtons", "", parentFolder, 0, null, false, "1b9db097-3862-455e-9012-aa727e405642", "")
+            {
+                _customizedbidproposalsetup = new HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1b9db097-3862-455e-9012-aa727e405642")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomizedBidProposalSetup folder.
+            /// </summary>
+            [RepositoryFolder("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalSetupAppFolder CustomizedBidProposalSetup
+            {
+                get { return _customizedbidproposalsetup; }
+            }
+        }
+
+        /// <summary>
+        /// The CustomizedBidProposalSetupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
+        public partial class CustomizedBidProposalSetupAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonpreviewreportInfo;
+            RepoItemInfo _buttoncancelInfo;
+
+            /// <summary>
+            /// Creates a new CustomizedBidProposalSetup  folder.
+            /// </summary>
+            public CustomizedBidProposalSetupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CustomizedBidProposalSetup", "/form[@title~'Customized Bid Proposal Setup']", parentFolder, 30000, null, false, "1a36fca5-82b7-46cd-a0ad-214a2000d63e", "")
+            {
+                _buttonpreviewreportInfo = new RepoItemInfo(this, "ButtonPreviewReport", "?/?/?/button[@text~'Preview Report']", 30000, null, "aef67740-d538-48a9-b586-0e90e49d9f40");
+                _buttoncancelInfo = new RepoItemInfo(this, "ButtonCancel", "?/?/?/button[@text~'Cancel']", 30000, null, "d2350da4-370b-4fdf-b08f-589e7c95d66b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonPreviewReport item.
+            /// </summary>
+            [RepositoryItem("aef67740-d538-48a9-b586-0e90e49d9f40")]
+            public virtual Ranorex.Button ButtonPreviewReport
+            {
+                get
+                {
+                    return _buttonpreviewreportInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonPreviewReport item info.
+            /// </summary>
+            [RepositoryItemInfo("aef67740-d538-48a9-b586-0e90e49d9f40")]
+            public virtual RepoItemInfo ButtonPreviewReportInfo
+            {
+                get
+                {
+                    return _buttonpreviewreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCancel item.
+            /// </summary>
+            [RepositoryItem("d2350da4-370b-4fdf-b08f-589e7c95d66b")]
+            public virtual Ranorex.Button ButtonCancel
+            {
+                get
+                {
+                    return _buttoncancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCancel item info.
+            /// </summary>
+            [RepositoryItemInfo("d2350da4-370b-4fdf-b08f-589e7c95d66b")]
+            public virtual RepoItemInfo ButtonCancelInfo
+            {
+                get
+                {
+                    return _buttoncancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FromReportsButtonFolder folder.
+        /// </summary>
+        [RepositoryFolder("958365ac-3b0e-4cfb-9053-a41cb05cbcaf")]
+        public partial class FromReportsButtonFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.CustomizedCrystalReportsFolder _customizedcrystalreports;
+
+            /// <summary>
+            /// Creates a new FromReportsButton  folder.
+            /// </summary>
+            public FromReportsButtonFolder(RepoGenBaseFolder parentFolder) :
+                    base("FromReportsButton", "", parentFolder, 0, null, false, "958365ac-3b0e-4cfb-9053-a41cb05cbcaf", "")
+            {
+                _customizedcrystalreports = new HB_INSTALL_AUTORepositoryFolders.CustomizedCrystalReportsFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("958365ac-3b0e-4cfb-9053-a41cb05cbcaf")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomizedCrystalReports folder.
+            /// </summary>
+            [RepositoryFolder("81e23c06-22d9-420a-9ee7-f497aea47547")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.CustomizedCrystalReportsFolder CustomizedCrystalReports
+            {
+                get { return _customizedcrystalreports; }
+            }
+        }
+
+        /// <summary>
+        /// The CustomizedCrystalReportsFolder folder.
+        /// </summary>
+        [RepositoryFolder("81e23c06-22d9-420a-9ee7-f497aea47547")]
+        public partial class CustomizedCrystalReportsFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder _printcustomizedcrystalreports;
+            HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder _customcrystalbidproposalpreview;
+
+            /// <summary>
+            /// Creates a new CustomizedCrystalReports  folder.
+            /// </summary>
+            public CustomizedCrystalReportsFolder(RepoGenBaseFolder parentFolder) :
+                    base("CustomizedCrystalReports", "", parentFolder, 0, null, false, "81e23c06-22d9-420a-9ee7-f497aea47547", "")
+            {
+                _printcustomizedcrystalreports = new HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder(this);
+                _customcrystalbidproposalpreview = new HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("81e23c06-22d9-420a-9ee7-f497aea47547")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PrintCustomizedCrystalReports folder.
+            /// </summary>
+            [RepositoryFolder("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.PrintCustomizedCrystalReportsAppFolder PrintCustomizedCrystalReports
+            {
+                get { return _printcustomizedcrystalreports; }
+            }
+
+            /// <summary>
+            /// The CustomCrystalBidProposalPreview folder.
+            /// </summary>
+            [RepositoryFolder("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.CustomCrystalBidProposalPreviewAppFolder CustomCrystalBidProposalPreview
+            {
+                get { return _customcrystalbidproposalpreview; }
+            }
+        }
+
+        /// <summary>
+        /// The PrintCustomizedCrystalReportsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
+        public partial class PrintCustomizedCrystalReportsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new PrintCustomizedCrystalReports  folder.
+            /// </summary>
+            public PrintCustomizedCrystalReportsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("PrintCustomizedCrystalReports", "/form[@title~'Print Customized Crystal Report']", parentFolder, 30000, null, false, "6a7172f1-cf0d-43b6-b341-94940ace8d9b", "")
+            {
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/?/?/button[@text~'OK']", 30000, null, "a8813abb-db53-4145-a7b5-444dd429a4af");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("a8813abb-db53-4145-a7b5-444dd429a4af")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("a8813abb-db53-4145-a7b5-444dd429a4af")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CustomCrystalBidProposalPreviewAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
+        public partial class CustomCrystalBidProposalPreviewAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonclosexInfo;
+
+            /// <summary>
+            /// Creates a new CustomCrystalBidProposalPreview  folder.
+            /// </summary>
+            public CustomCrystalBidProposalPreviewAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CustomCrystalBidProposalPreview", "/form[@title~'Custom Crystal Report']", parentFolder, 30000, null, false, "fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4", "")
+            {
+                _buttonclosexInfo = new RepoItemInfo(this, "ButtonCloseX", "?/button[@text~'Close']", 30000, null, "744a0081-77a5-4e7a-8c69-b478fff77d1b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCloseX item.
+            /// </summary>
+            [RepositoryItem("744a0081-77a5-4e7a-8c69-b478fff77d1b")]
+            public virtual Ranorex.Button ButtonCloseX
+            {
+                get
+                {
+                    return _buttonclosexInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonCloseX item info.
+            /// </summary>
+            [RepositoryItemInfo("744a0081-77a5-4e7a-8c69-b478fff77d1b")]
+            public virtual RepoItemInfo ButtonCloseXInfo
+            {
+                get
+                {
+                    return _buttonclosexInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HBReportViewersFolder folder.
+        /// </summary>
+        [RepositoryFolder("2f992b95-dc30-4fa3-a4d8-4bc7addaa072")]
+        public partial class HBReportViewersFolder : RepoGenBaseFolder
+        {
+            HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder _hbreportplusviewer;
+            HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalAppFolder _customizedbidproposal;
+            HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder _printpreview;
+            HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder _heavybidpivotreports;
+
+            /// <summary>
+            /// Creates a new HBReportViewers  folder.
+            /// </summary>
+            public HBReportViewersFolder(RepoGenBaseFolder parentFolder) :
+                    base("HBReportViewers", "", parentFolder, 0, null, false, "2f992b95-dc30-4fa3-a4d8-4bc7addaa072", "")
+            {
+                _hbreportplusviewer = new HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder(this);
+                _customizedbidproposal = new HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalAppFolder(this);
+                _printpreview = new HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder(this);
+                _heavybidpivotreports = new HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2f992b95-dc30-4fa3-a4d8-4bc7addaa072")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HBReportPlusViewer folder.
+            /// </summary>
+            [RepositoryFolder("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.HBReportPlusViewerAppFolder HBReportPlusViewer
+            {
+                get { return _hbreportplusviewer; }
+            }
+
+            /// <summary>
+            /// The CustomizedBidProposal folder.
+            /// </summary>
+            [RepositoryFolder("959dd8da-908d-4810-a350-c3a5e4b9b839")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.CustomizedBidProposalAppFolder CustomizedBidProposal
+            {
+                get { return _customizedbidproposal; }
+            }
+
+            /// <summary>
+            /// The PrintPreview folder.
+            /// </summary>
+            [RepositoryFolder("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.PrintPreviewAppFolder PrintPreview
+            {
+                get { return _printpreview; }
+            }
+
+            /// <summary>
+            /// The HeavyBidPivotReports folder.
+            /// </summary>
+            [RepositoryFolder("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.HeavyBidPivotReportsAppFolder HeavyBidPivotReports
+            {
+                get { return _heavybidpivotreports; }
+            }
+        }
+
+        /// <summary>
+        /// The HBReportPlusViewerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
+        public partial class HBReportPlusViewerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonclosepreviewInfo;
+
+            /// <summary>
+            /// Creates a new HBReportPlusViewer  folder.
+            /// </summary>
+            public HBReportPlusViewerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HBReportPlusViewer", "/form[@text~'HeavyBid Reports Plus']", parentFolder, 30000, null, false, "854ea1ed-2e7a-4fac-80af-d7ed4d5d8940", "")
+            {
+                _buttonclosepreviewInfo = new RepoItemInfo(this, "ButtonClosePreview", "?//?/button[@text~'Close Print Preview']", 30000, null, "cb18577a-8a9a-44ba-b589-2341b2976cd9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClosePreview item.
+            /// </summary>
+            [RepositoryItem("cb18577a-8a9a-44ba-b589-2341b2976cd9")]
+            public virtual Ranorex.Button ButtonClosePreview
+            {
+                get
+                {
+                    return _buttonclosepreviewInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClosePreview item info.
+            /// </summary>
+            [RepositoryItemInfo("cb18577a-8a9a-44ba-b589-2341b2976cd9")]
+            public virtual RepoItemInfo ButtonClosePreviewInfo
+            {
+                get
+                {
+                    return _buttonclosepreviewInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CustomizedBidProposalAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("959dd8da-908d-4810-a350-c3a5e4b9b839")]
+        public partial class CustomizedBidProposalAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new CustomizedBidProposal  folder.
+            /// </summary>
+            public CustomizedBidProposalAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CustomizedBidProposal", "/form[@title='Customized Bid Proposal']", parentFolder, 30000, null, false, "959dd8da-908d-4810-a350-c3a5e4b9b839", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("959dd8da-908d-4810-a350-c3a5e4b9b839")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("959dd8da-908d-4810-a350-c3a5e4b9b839")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PrintPreviewAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
+        public partial class PrintPreviewAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new PrintPreview  folder.
+            /// </summary>
+            public PrintPreviewAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("PrintPreview", "/form[@title~'Print Preview']", parentFolder, 30000, null, false, "c91afe55-239b-47e8-ac1a-a6364e311f5d", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HeavyBidPivotReportsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
+        public partial class HeavyBidPivotReportsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttoncloseInfo;
+
+            /// <summary>
+            /// Creates a new HeavyBidPivotReports  folder.
+            /// </summary>
+            public HeavyBidPivotReportsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HeavyBidPivotReports", "/form[@title~'HeavyBid Pivot Reports']", parentFolder, 30000, null, false, "bae78860-d83b-4734-a95d-0878f5e7f9d2", "")
+            {
+                _buttoncloseInfo = new RepoItemInfo(this, "ButtonClose", "?/?/?/button[@text~'Close']", 30000, null, "fc1e7fdd-a2b9-4bb9-87fe-224e293b2469");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item.
+            /// </summary>
+            [RepositoryItem("fc1e7fdd-a2b9-4bb9-87fe-224e293b2469")]
+            public virtual Ranorex.Button ButtonClose
+            {
+                get
+                {
+                    return _buttoncloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item info.
+            /// </summary>
+            [RepositoryItemInfo("fc1e7fdd-a2b9-4bb9-87fe-224e293b2469")]
+            public virtual RepoItemInfo ButtonCloseInfo
+            {
+                get
+                {
+                    return _buttoncloseInfo;
                 }
             }
         }
@@ -3576,544 +6446,6 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _bidproposallaborandmaterialupInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The NewEstimateAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("3a80063c-0857-4845-9cf7-781e35c94858")]
-        public partial class NewEstimateAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _estimatecodeInfo;
-            RepoItemInfo _nextbuttonInfo;
-            RepoItemInfo _estimatenametextboxInfo;
-            RepoItemInfo _estimatedescriptiontextboxInfo;
-            RepoItemInfo _finishbuttonInfo;
-
-            /// <summary>
-            /// Creates a new NewEstimate  folder.
-            /// </summary>
-            public NewEstimateAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NewEstimate", "/form[@title~'New Estimate']", parentFolder, 30000, null, true, "3a80063c-0857-4845-9cf7-781e35c94858", "")
-            {
-                _estimatecodeInfo = new RepoItemInfo(this, "EstimateCode", "?/?/?/element[@class='DFentry' and @enabled='True']", 30000, null, "c1389a84-04ae-45b3-a5c5-0be6064a83b0");
-                _nextbuttonInfo = new RepoItemInfo(this, "NextButton", ".//button[@text~'Next']", 30000, null, "68adf6bc-9b6a-4a99-a227-eb9288380d52");
-                _estimatenametextboxInfo = new RepoItemInfo(this, "EstimateNameTextBox", "element[@class='DFDialogClass']/element/element[@class='DFentry']", 30000, null, "9652e841-437a-4b39-9b56-ab5b4ee523e6");
-                _estimatedescriptiontextboxInfo = new RepoItemInfo(this, "EstimateDescriptionTextBox", "element[@class='DFDialogClass']/?/?/text[@accessiblerole='Text']", 30000, null, "6fb65c7d-707d-4dc8-9892-cd9dcdcbda09");
-                _finishbuttonInfo = new RepoItemInfo(this, "FinishButton", ".//button[@text~'Finish']", 30000, null, "0bf42967-89c6-4aeb-8274-8747cf2b8e34");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("3a80063c-0857-4845-9cf7-781e35c94858")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("3a80063c-0857-4845-9cf7-781e35c94858")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EstimateCode item.
-            /// </summary>
-            [RepositoryItem("c1389a84-04ae-45b3-a5c5-0be6064a83b0")]
-            public virtual Ranorex.Unknown EstimateCode
-            {
-                get
-                {
-                    return _estimatecodeInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EstimateCode item info.
-            /// </summary>
-            [RepositoryItemInfo("c1389a84-04ae-45b3-a5c5-0be6064a83b0")]
-            public virtual RepoItemInfo EstimateCodeInfo
-            {
-                get
-                {
-                    return _estimatecodeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NextButton item.
-            /// </summary>
-            [RepositoryItem("68adf6bc-9b6a-4a99-a227-eb9288380d52")]
-            public virtual Ranorex.Button NextButton
-            {
-                get
-                {
-                    return _nextbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NextButton item info.
-            /// </summary>
-            [RepositoryItemInfo("68adf6bc-9b6a-4a99-a227-eb9288380d52")]
-            public virtual RepoItemInfo NextButtonInfo
-            {
-                get
-                {
-                    return _nextbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EstimateNameTextBox item.
-            /// </summary>
-            [RepositoryItem("9652e841-437a-4b39-9b56-ab5b4ee523e6")]
-            public virtual Ranorex.Unknown EstimateNameTextBox
-            {
-                get
-                {
-                    return _estimatenametextboxInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EstimateNameTextBox item info.
-            /// </summary>
-            [RepositoryItemInfo("9652e841-437a-4b39-9b56-ab5b4ee523e6")]
-            public virtual RepoItemInfo EstimateNameTextBoxInfo
-            {
-                get
-                {
-                    return _estimatenametextboxInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EstimateDescriptionTextBox item.
-            /// </summary>
-            [RepositoryItem("6fb65c7d-707d-4dc8-9892-cd9dcdcbda09")]
-            public virtual Ranorex.Text EstimateDescriptionTextBox
-            {
-                get
-                {
-                    return _estimatedescriptiontextboxInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EstimateDescriptionTextBox item info.
-            /// </summary>
-            [RepositoryItemInfo("6fb65c7d-707d-4dc8-9892-cd9dcdcbda09")]
-            public virtual RepoItemInfo EstimateDescriptionTextBoxInfo
-            {
-                get
-                {
-                    return _estimatedescriptiontextboxInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FinishButton item.
-            /// </summary>
-            [RepositoryItem("0bf42967-89c6-4aeb-8274-8747cf2b8e34")]
-            public virtual Ranorex.Button FinishButton
-            {
-                get
-                {
-                    return _finishbuttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FinishButton item info.
-            /// </summary>
-            [RepositoryItemInfo("0bf42967-89c6-4aeb-8274-8747cf2b8e34")]
-            public virtual RepoItemInfo FinishButtonInfo
-            {
-                get
-                {
-                    return _finishbuttonInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The BackupEstimateAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
-        public partial class BackupEstimateAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonellipisisInfo;
-            RepoItemInfo _buttonfinishInfo;
-
-            /// <summary>
-            /// Creates a new BackupEstimate  folder.
-            /// </summary>
-            public BackupEstimateAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("BackupEstimate", "/form[@title~'Backup']", parentFolder, 30000, null, true, "4dab055f-dbe9-41fd-ba28-776ec885b4df", "")
-            {
-                _buttonellipisisInfo = new RepoItemInfo(this, "ButtonEllipisis", ".////button[@accessiblename='...']", 30000, null, "bcb9c9a1-3754-4aa6-898e-13c5e594dff5");
-                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", ".////button[@accessiblename='Finish']", 30000, null, "17a46077-d5cf-424c-abb3-24a499c15007");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("4dab055f-dbe9-41fd-ba28-776ec885b4df")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonEllipisis item.
-            /// </summary>
-            [RepositoryItem("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
-            public virtual Ranorex.Button ButtonEllipisis
-            {
-                get
-                {
-                    return _buttonellipisisInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonEllipisis item info.
-            /// </summary>
-            [RepositoryItemInfo("bcb9c9a1-3754-4aa6-898e-13c5e594dff5")]
-            public virtual RepoItemInfo ButtonEllipisisInfo
-            {
-                get
-                {
-                    return _buttonellipisisInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonFinish item.
-            /// </summary>
-            [RepositoryItem("17a46077-d5cf-424c-abb3-24a499c15007")]
-            public virtual Ranorex.Button ButtonFinish
-            {
-                get
-                {
-                    return _buttonfinishInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonFinish item info.
-            /// </summary>
-            [RepositoryItemInfo("17a46077-d5cf-424c-abb3-24a499c15007")]
-            public virtual RepoItemInfo ButtonFinishInfo
-            {
-                get
-                {
-                    return _buttonfinishInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The BackupEstimateClassAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("be6c54b9-5252-4e1f-b2ca-962998a62625")]
-        public partial class BackupEstimateClassAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _listexistingestimatesInfo;
-            RepoItemInfo _buttonokInfo;
-            RepoItemInfo _closeInfo;
-
-            /// <summary>
-            /// Creates a new BackupEstimateClass  folder.
-            /// </summary>
-            public BackupEstimateClassAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("BackupEstimateClass", "/form[@class~'DFDialogClass']", parentFolder, 30000, null, true, "be6c54b9-5252-4e1f-b2ca-962998a62625", "")
-            {
-                _listexistingestimatesInfo = new RepoItemInfo(this, "ListExistingEstimates", "element[@class='DFformlist']", 30000, null, "127b01f9-8a45-4ec1-9652-a2ddbf0addd1");
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", ".//button[@text~'OK']", 30000, null, "40be3ffb-ecab-442d-9710-36a7c66920fe");
-                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("be6c54b9-5252-4e1f-b2ca-962998a62625")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("be6c54b9-5252-4e1f-b2ca-962998a62625")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ListExistingEstimates item.
-            /// </summary>
-            [RepositoryItem("127b01f9-8a45-4ec1-9652-a2ddbf0addd1")]
-            public virtual Ranorex.Unknown ListExistingEstimates
-            {
-                get
-                {
-                    return _listexistingestimatesInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ListExistingEstimates item info.
-            /// </summary>
-            [RepositoryItemInfo("127b01f9-8a45-4ec1-9652-a2ddbf0addd1")]
-            public virtual RepoItemInfo ListExistingEstimatesInfo
-            {
-                get
-                {
-                    return _listexistingestimatesInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOk item.
-            /// </summary>
-            [RepositoryItem("40be3ffb-ecab-442d-9710-36a7c66920fe")]
-            public virtual Ranorex.Button ButtonOk
-            {
-                get
-                {
-                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOk item info.
-            /// </summary>
-            [RepositoryItemInfo("40be3ffb-ecab-442d-9710-36a7c66920fe")]
-            public virtual RepoItemInfo ButtonOkInfo
-            {
-                get
-                {
-                    return _buttonokInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Close item.
-            /// </summary>
-            [RepositoryItem("53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5")]
-            public virtual Ranorex.Button Close
-            {
-                get
-                {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close item info.
-            /// </summary>
-            [RepositoryItemInfo("53c2d8d9-d2c4-40b3-aa15-2d81d0c0efc5")]
-            public virtual RepoItemInfo CloseInfo
-            {
-                get
-                {
-                    return _closeInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The EstimateSearchAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
-        public partial class EstimateSearchAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonokInfo;
-
-            /// <summary>
-            /// Creates a new EstimateSearch  folder.
-            /// </summary>
-            public EstimateSearchAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("EstimateSearch", "/form[@title~'Search: Est Code']", parentFolder, 30000, null, true, "a8e5c2a5-64e1-48e4-b143-597dbf56c884", "")
-            {
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOk", ".//button[@text~'OK']", 30000, null, "e35ba4e1-d651-45cf-9306-93b4d1aadf5f");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("a8e5c2a5-64e1-48e4-b143-597dbf56c884")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOk item.
-            /// </summary>
-            [RepositoryItem("e35ba4e1-d651-45cf-9306-93b4d1aadf5f")]
-            public virtual Ranorex.Button ButtonOk
-            {
-                get
-                {
-                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOk item info.
-            /// </summary>
-            [RepositoryItemInfo("e35ba4e1-d651-45cf-9306-93b4d1aadf5f")]
-            public virtual RepoItemInfo ButtonOkInfo
-            {
-                get
-                {
-                    return _buttonokInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The HCSSBackupExistsAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("53921fe6-449b-4502-9bee-3ed08c46e088")]
-        public partial class HCSSBackupExistsAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonokInfo;
-            RepoItemInfo _buttonyesInfo;
-
-            /// <summary>
-            /// Creates a new HCSSBackupExists  folder.
-            /// </summary>
-            public HCSSBackupExistsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HCSSBackupExists", "/form[@title~'HCSS Backup']", parentFolder, 30000, null, true, "53921fe6-449b-4502-9bee-3ed08c46e088", "")
-            {
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text~'OK']", 30000, null, "85c25856-77fd-462f-823e-1dab11a53d32");
-                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text~'Yes']", 30000, null, "ff06a4b1-eb87-419e-b335-9b0a47489259");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("53921fe6-449b-4502-9bee-3ed08c46e088")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("53921fe6-449b-4502-9bee-3ed08c46e088")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOK item.
-            /// </summary>
-            [RepositoryItem("85c25856-77fd-462f-823e-1dab11a53d32")]
-            public virtual Ranorex.Button ButtonOK
-            {
-                get
-                {
-                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOK item info.
-            /// </summary>
-            [RepositoryItemInfo("85c25856-77fd-462f-823e-1dab11a53d32")]
-            public virtual RepoItemInfo ButtonOKInfo
-            {
-                get
-                {
-                    return _buttonokInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonYes item.
-            /// </summary>
-            [RepositoryItem("ff06a4b1-eb87-419e-b335-9b0a47489259")]
-            public virtual Ranorex.Button ButtonYes
-            {
-                get
-                {
-                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonYes item info.
-            /// </summary>
-            [RepositoryItemInfo("ff06a4b1-eb87-419e-b335-9b0a47489259")]
-            public virtual RepoItemInfo ButtonYesInfo
-            {
-                get
-                {
-                    return _buttonyesInfo;
                 }
             }
         }
@@ -4749,136 +7081,20 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The CustomizedBidProposalSetupAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
-        public partial class CustomizedBidProposalSetupAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonpreviewreportInfo;
-            RepoItemInfo _buttoncancelInfo;
-
-            /// <summary>
-            /// Creates a new CustomizedBidProposalSetup  folder.
-            /// </summary>
-            public CustomizedBidProposalSetupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CustomizedBidProposalSetup", "/form[@title~'Customized Bid Proposal']", parentFolder, 30000, null, false, "1a36fca5-82b7-46cd-a0ad-214a2000d63e", "")
-            {
-                _buttonpreviewreportInfo = new RepoItemInfo(this, "ButtonPreviewReport", "?/?/?/button[@text~'Preview Report']", 30000, null, "aef67740-d538-48a9-b586-0e90e49d9f40");
-                _buttoncancelInfo = new RepoItemInfo(this, "ButtonCancel", "?/?/?/button[@text~'Cancel']", 30000, null, "d2350da4-370b-4fdf-b08f-589e7c95d66b");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1a36fca5-82b7-46cd-a0ad-214a2000d63e")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonPreviewReport item.
-            /// </summary>
-            [RepositoryItem("aef67740-d538-48a9-b586-0e90e49d9f40")]
-            public virtual Ranorex.Button ButtonPreviewReport
-            {
-                get
-                {
-                    return _buttonpreviewreportInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonPreviewReport item info.
-            /// </summary>
-            [RepositoryItemInfo("aef67740-d538-48a9-b586-0e90e49d9f40")]
-            public virtual RepoItemInfo ButtonPreviewReportInfo
-            {
-                get
-                {
-                    return _buttonpreviewreportInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCancel item.
-            /// </summary>
-            [RepositoryItem("d2350da4-370b-4fdf-b08f-589e7c95d66b")]
-            public virtual Ranorex.Button ButtonCancel
-            {
-                get
-                {
-                    return _buttoncancelInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCancel item info.
-            /// </summary>
-            [RepositoryItemInfo("d2350da4-370b-4fdf-b08f-589e7c95d66b")]
-            public virtual RepoItemInfo ButtonCancelInfo
-            {
-                get
-                {
-                    return _buttoncancelInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The HBMultiDocumentInterfaceAppFolder folder.
+        /// The HBMultiDocumentInterfaceAppFolder1 folder.
         /// </summary>
         [RepositoryFolder("8dce5a36-0438-4d8a-a430-f5ee5d0dd202")]
-        public partial class HBMultiDocumentInterfaceAppFolder : RepoGenBaseFolder
+        public partial class HBMultiDocumentInterfaceAppFolder1 : RepoGenBaseFolder
         {
-            RepoItemInfo _costreportInfo;
-            RepoItemInfo _costreportclassicInfo;
-            RepoItemInfo _equipmentreportInfo;
-            RepoItemInfo _estimaterecapInfo;
-            RepoItemInfo _estimaterecapclassicInfo;
-            RepoItemInfo _chiefestimatoranalysisreportInfo;
-            RepoItemInfo _costpricereportInfo;
-            RepoItemInfo _concisebidproposalInfo;
-            RepoItemInfo _biditemstructureInfo;
-            RepoItemInfo _reportdesignerInfo;
-            RepoItemInfo _buttonexporttoaccountingInfo;
-            RepoItemInfo _buttonexportInfo;
-            RepoItemInfo _buttonokInfo;
+            HB_INSTALL_AUTORepositoryFolders.ButtonsFolder6 _buttons;
 
             /// <summary>
             /// Creates a new HBMultiDocumentInterface  folder.
             /// </summary>
-            public HBMultiDocumentInterfaceAppFolder(RepoGenBaseFolder parentFolder) :
+            public HBMultiDocumentInterfaceAppFolder1(RepoGenBaseFolder parentFolder) :
                     base("HBMultiDocumentInterface", "/form[@title~'HB']/element[@class='DFMDIClient']", parentFolder, 30000, null, false, "8dce5a36-0438-4d8a-a430-f5ee5d0dd202", "")
             {
-                _costreportInfo = new RepoItemInfo(this, "CostReport", "?/?/?/tree/?/?/treeitem[@text='Cost Report']", 30000, null, "b949b9a0-eb4c-42aa-8ea6-59c6cfa3cea4");
-                _costreportclassicInfo = new RepoItemInfo(this, "CostReportClassic", "?/?/?/tree/?/?/treeitem[@text='Cost Report Classic']", 30000, null, "35cb090f-0a33-449b-9e8b-6d683f1a2ccd");
-                _equipmentreportInfo = new RepoItemInfo(this, "EquipmentReport", "?/?/?/tree/?/?/treeitem[@text='Equipment Report']", 30000, null, "cca92ba1-e653-4b4e-be51-09552317a9c9");
-                _estimaterecapInfo = new RepoItemInfo(this, "EstimateRecap", "?/?/?/tree/?/?/treeitem[@text='Estimate Recap']", 30000, null, "44882484-e45c-40cf-a06c-be7ad78dcf57");
-                _estimaterecapclassicInfo = new RepoItemInfo(this, "EstimateRecapClassic", "?/?/?/tree/?/?/treeitem[@text='Estimate Recap Classic']", 30000, null, "16988ce8-cbe9-4461-a356-66f222df15b1");
-                _chiefestimatoranalysisreportInfo = new RepoItemInfo(this, "ChiefEstimatorAnalysisReport", "?/?/?/tree/?/?/treeitem[@text~'Chief Estimator''s Analysis']", 30000, null, "8803bafa-92e1-4eab-81ba-077b07c7df0d");
-                _costpricereportInfo = new RepoItemInfo(this, "CostPriceReport", "?/?/?/tree/?/?/treeitem[@text~'Cost and Price Report']", 30000, null, "65fb5572-a040-4681-a5ad-60bf0c001463");
-                _concisebidproposalInfo = new RepoItemInfo(this, "ConciseBidProposal", "?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']", 30000, null, "2325bde1-1b6f-44a6-b651-c3e2e8153b0b");
-                _biditemstructureInfo = new RepoItemInfo(this, "BiditemStructure", "?/?/?/tree/?/?/treeitem[@text~'Biditem Structure']", 30000, null, "5e5abf61-a124-47d4-9809-cba3a9ad3983");
-                _reportdesignerInfo = new RepoItemInfo(this, "ReportDesigner", "?/?/?/tree/?/?/treeitem[@text~'Report Designer']", 30000, null, "de546f52-711e-40d5-b9e6-a0c23cc38404");
-                _buttonexporttoaccountingInfo = new RepoItemInfo(this, "ButtonExportToAccounting", "?/?//button[@text~'Export to Accounting']", 30000, null, "fc04455f-dfde-49bb-b761-557a0dca0337");
-                _buttonexportInfo = new RepoItemInfo(this, "ButtonExport", "?/?/?/?/element[@class='DFbutton']/?/?/button[@accessiblename='Export']", 30000, null, "72868896-0ebe-40e4-b939-e69880ae4309");
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/?/?/button[@text='OK']", 30000, null, "dd566b78-cb10-40b0-a567-725bd34298d0");
+                _buttons = new HB_INSTALL_AUTORepositoryFolders.ButtonsFolder6(this);
             }
 
             /// <summary>
@@ -4906,242 +7122,45 @@ namespace HB_INSTALL_AUTO
             }
 
             /// <summary>
-            /// The CostReport item.
+            /// The Buttons folder.
             /// </summary>
-            [RepositoryItem("b949b9a0-eb4c-42aa-8ea6-59c6cfa3cea4")]
-            public virtual Ranorex.TreeItem CostReport
+            [RepositoryFolder("01ae7aa1-2c31-46cf-8644-9a167aaaff4f")]
+            public virtual HB_INSTALL_AUTORepositoryFolders.ButtonsFolder6 Buttons
             {
-                get
-                {
-                    return _costreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
+                get { return _buttons; }
+            }
+        }
+
+        /// <summary>
+        /// The ButtonsFolder6 folder.
+        /// </summary>
+        [RepositoryFolder("01ae7aa1-2c31-46cf-8644-9a167aaaff4f")]
+        public partial class ButtonsFolder6 : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonexporttoaccountingInfo;
+            RepoItemInfo _buttonexportInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new Buttons  folder.
+            /// </summary>
+            public ButtonsFolder6(RepoGenBaseFolder parentFolder) :
+                    base("Buttons", "", parentFolder, 0, null, false, "01ae7aa1-2c31-46cf-8644-9a167aaaff4f", "")
+            {
+                _buttonexporttoaccountingInfo = new RepoItemInfo(this, "ButtonExportToAccounting", "?/?//button[@text~'Export to Accounting']", 30000, null, "fc04455f-dfde-49bb-b761-557a0dca0337");
+                _buttonexportInfo = new RepoItemInfo(this, "ButtonExport", "?/?/?/?/element[@class='DFbutton']/?/?/button[@accessiblename='Export']", 30000, null, "72868896-0ebe-40e4-b939-e69880ae4309");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/?/?/button[@text='OK']", 30000, null, "dd566b78-cb10-40b0-a567-725bd34298d0");
             }
 
             /// <summary>
-            /// The CostReport item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("b949b9a0-eb4c-42aa-8ea6-59c6cfa3cea4")]
-            public virtual RepoItemInfo CostReportInfo
+            [RepositoryItemInfo("01ae7aa1-2c31-46cf-8644-9a167aaaff4f")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _costreportInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CostReportClassic item.
-            /// </summary>
-            [RepositoryItem("35cb090f-0a33-449b-9e8b-6d683f1a2ccd")]
-            public virtual Ranorex.TreeItem CostReportClassic
-            {
-                get
-                {
-                    return _costreportclassicInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CostReportClassic item info.
-            /// </summary>
-            [RepositoryItemInfo("35cb090f-0a33-449b-9e8b-6d683f1a2ccd")]
-            public virtual RepoItemInfo CostReportClassicInfo
-            {
-                get
-                {
-                    return _costreportclassicInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EquipmentReport item.
-            /// </summary>
-            [RepositoryItem("cca92ba1-e653-4b4e-be51-09552317a9c9")]
-            public virtual Ranorex.TreeItem EquipmentReport
-            {
-                get
-                {
-                    return _equipmentreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EquipmentReport item info.
-            /// </summary>
-            [RepositoryItemInfo("cca92ba1-e653-4b4e-be51-09552317a9c9")]
-            public virtual RepoItemInfo EquipmentReportInfo
-            {
-                get
-                {
-                    return _equipmentreportInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EstimateRecap item.
-            /// </summary>
-            [RepositoryItem("44882484-e45c-40cf-a06c-be7ad78dcf57")]
-            public virtual Ranorex.TreeItem EstimateRecap
-            {
-                get
-                {
-                    return _estimaterecapInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EstimateRecap item info.
-            /// </summary>
-            [RepositoryItemInfo("44882484-e45c-40cf-a06c-be7ad78dcf57")]
-            public virtual RepoItemInfo EstimateRecapInfo
-            {
-                get
-                {
-                    return _estimaterecapInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EstimateRecapClassic item.
-            /// </summary>
-            [RepositoryItem("16988ce8-cbe9-4461-a356-66f222df15b1")]
-            public virtual Ranorex.TreeItem EstimateRecapClassic
-            {
-                get
-                {
-                    return _estimaterecapclassicInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EstimateRecapClassic item info.
-            /// </summary>
-            [RepositoryItemInfo("16988ce8-cbe9-4461-a356-66f222df15b1")]
-            public virtual RepoItemInfo EstimateRecapClassicInfo
-            {
-                get
-                {
-                    return _estimaterecapclassicInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ChiefEstimatorAnalysisReport item.
-            /// </summary>
-            [RepositoryItem("8803bafa-92e1-4eab-81ba-077b07c7df0d")]
-            public virtual Ranorex.TreeItem ChiefEstimatorAnalysisReport
-            {
-                get
-                {
-                    return _chiefestimatoranalysisreportInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ChiefEstimatorAnalysisReport item info.
-            /// </summary>
-            [RepositoryItemInfo("8803bafa-92e1-4eab-81ba-077b07c7df0d")]
-            public virtual RepoItemInfo ChiefEstimatorAnalysisReportInfo
-            {
-                get
-                {
-                    return _chiefestimatoranalysisreportInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CostPriceReport item.
-            /// </summary>
-            [RepositoryItem("65fb5572-a040-4681-a5ad-60bf0c001463")]
-            public virtual Ranorex.TreeItem CostPriceReport
-            {
-                get
-                {
-                    return _costpricereportInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CostPriceReport item info.
-            /// </summary>
-            [RepositoryItemInfo("65fb5572-a040-4681-a5ad-60bf0c001463")]
-            public virtual RepoItemInfo CostPriceReportInfo
-            {
-                get
-                {
-                    return _costpricereportInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ConciseBidProposal item.
-            /// </summary>
-            [RepositoryItem("2325bde1-1b6f-44a6-b651-c3e2e8153b0b")]
-            public virtual Ranorex.TreeItem ConciseBidProposal
-            {
-                get
-                {
-                    return _concisebidproposalInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ConciseBidProposal item info.
-            /// </summary>
-            [RepositoryItemInfo("2325bde1-1b6f-44a6-b651-c3e2e8153b0b")]
-            public virtual RepoItemInfo ConciseBidProposalInfo
-            {
-                get
-                {
-                    return _concisebidproposalInfo;
-                }
-            }
-
-            /// <summary>
-            /// The BiditemStructure item.
-            /// </summary>
-            [RepositoryItem("5e5abf61-a124-47d4-9809-cba3a9ad3983")]
-            public virtual Ranorex.TreeItem BiditemStructure
-            {
-                get
-                {
-                    return _biditemstructureInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BiditemStructure item info.
-            /// </summary>
-            [RepositoryItemInfo("5e5abf61-a124-47d4-9809-cba3a9ad3983")]
-            public virtual RepoItemInfo BiditemStructureInfo
-            {
-                get
-                {
-                    return _biditemstructureInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ReportDesigner item.
-            /// </summary>
-            [RepositoryItem("de546f52-711e-40d5-b9e6-a0c23cc38404")]
-            public virtual Ranorex.TreeItem ReportDesigner
-            {
-                get
-                {
-                    return _reportdesignerInfo.CreateAdapter<Ranorex.TreeItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ReportDesigner item info.
-            /// </summary>
-            [RepositoryItemInfo("de546f52-711e-40d5-b9e6-a0c23cc38404")]
-            public virtual RepoItemInfo ReportDesignerInfo
-            {
-                get
-                {
-                    return _reportdesignerInfo;
+                    return _selfInfo;
                 }
             }
 
@@ -5219,310 +7238,6 @@ namespace HB_INSTALL_AUTO
         }
 
         /// <summary>
-        /// The HBReportPlusViewerAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
-        public partial class HBReportPlusViewerAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonclosepreviewInfo;
-
-            /// <summary>
-            /// Creates a new HBReportPlusViewer  folder.
-            /// </summary>
-            public HBReportPlusViewerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HBReportPlusViewer", "/form[@text~'HeavyBid Reports Plus']", parentFolder, 30000, null, false, "854ea1ed-2e7a-4fac-80af-d7ed4d5d8940", "")
-            {
-                _buttonclosepreviewInfo = new RepoItemInfo(this, "ButtonClosePreview", "?//?/button[@text~'Close Print Preview']", 30000, null, "cb18577a-8a9a-44ba-b589-2341b2976cd9");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("854ea1ed-2e7a-4fac-80af-d7ed4d5d8940")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonClosePreview item.
-            /// </summary>
-            [RepositoryItem("cb18577a-8a9a-44ba-b589-2341b2976cd9")]
-            public virtual Ranorex.Button ButtonClosePreview
-            {
-                get
-                {
-                    return _buttonclosepreviewInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonClosePreview item info.
-            /// </summary>
-            [RepositoryItemInfo("cb18577a-8a9a-44ba-b589-2341b2976cd9")]
-            public virtual RepoItemInfo ButtonClosePreviewInfo
-            {
-                get
-                {
-                    return _buttonclosepreviewInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The PrintPreviewAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
-        public partial class PrintPreviewAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new PrintPreview  folder.
-            /// </summary>
-            public PrintPreviewAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PrintPreview", "/form[@title~'Print Preview']", parentFolder, 30000, null, false, "c91afe55-239b-47e8-ac1a-a6364e311f5d", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("c91afe55-239b-47e8-ac1a-a6364e311f5d")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The HeavyBidPivotReportsAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
-        public partial class HeavyBidPivotReportsAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttoncloseInfo;
-
-            /// <summary>
-            /// Creates a new HeavyBidPivotReports  folder.
-            /// </summary>
-            public HeavyBidPivotReportsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeavyBidPivotReports", "/form[@title~'HeavyBid Pivot Reports']", parentFolder, 30000, null, false, "bae78860-d83b-4734-a95d-0878f5e7f9d2", "")
-            {
-                _buttoncloseInfo = new RepoItemInfo(this, "ButtonClose", "?/?/?/button[@text~'Close']", 30000, null, "fc1e7fdd-a2b9-4bb9-87fe-224e293b2469");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("bae78860-d83b-4734-a95d-0878f5e7f9d2")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonClose item.
-            /// </summary>
-            [RepositoryItem("fc1e7fdd-a2b9-4bb9-87fe-224e293b2469")]
-            public virtual Ranorex.Button ButtonClose
-            {
-                get
-                {
-                    return _buttoncloseInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonClose item info.
-            /// </summary>
-            [RepositoryItemInfo("fc1e7fdd-a2b9-4bb9-87fe-224e293b2469")]
-            public virtual RepoItemInfo ButtonCloseInfo
-            {
-                get
-                {
-                    return _buttoncloseInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The PrintCustomizedCrystalReportsAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
-        public partial class PrintCustomizedCrystalReportsAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonokInfo;
-
-            /// <summary>
-            /// Creates a new PrintCustomizedCrystalReports  folder.
-            /// </summary>
-            public PrintCustomizedCrystalReportsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PrintCustomizedCrystalReports", "/form[@title~'Print Customized Crystal Report']", parentFolder, 30000, null, false, "6a7172f1-cf0d-43b6-b341-94940ace8d9b", "")
-            {
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/?/?/button[@text~'OK']", 30000, null, "a8813abb-db53-4145-a7b5-444dd429a4af");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("6a7172f1-cf0d-43b6-b341-94940ace8d9b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOK item.
-            /// </summary>
-            [RepositoryItem("a8813abb-db53-4145-a7b5-444dd429a4af")]
-            public virtual Ranorex.Button ButtonOK
-            {
-                get
-                {
-                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonOK item info.
-            /// </summary>
-            [RepositoryItemInfo("a8813abb-db53-4145-a7b5-444dd429a4af")]
-            public virtual RepoItemInfo ButtonOKInfo
-            {
-                get
-                {
-                    return _buttonokInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The CustomCrystalBidProposalPreviewAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
-        public partial class CustomCrystalBidProposalPreviewAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _buttonclosexInfo;
-
-            /// <summary>
-            /// Creates a new CustomCrystalBidProposalPreview  folder.
-            /// </summary>
-            public CustomCrystalBidProposalPreviewAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CustomCrystalBidProposalPreview", "/form[@title~'Custom Crystal Report']", parentFolder, 30000, null, false, "fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4", "")
-            {
-                _buttonclosexInfo = new RepoItemInfo(this, "ButtonCloseX", "?/button[@text~'Close']", 30000, null, "744a0081-77a5-4e7a-8c69-b478fff77d1b");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("fd8d30e2-1e4b-4bd4-a324-6a9fbeb9c4c4")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCloseX item.
-            /// </summary>
-            [RepositoryItem("744a0081-77a5-4e7a-8c69-b478fff77d1b")]
-            public virtual Ranorex.Button ButtonCloseX
-            {
-                get
-                {
-                    return _buttonclosexInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonCloseX item info.
-            /// </summary>
-            [RepositoryItemInfo("744a0081-77a5-4e7a-8c69-b478fff77d1b")]
-            public virtual RepoItemInfo ButtonCloseXInfo
-            {
-                get
-                {
-                    return _buttonclosexInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The ExportCompleteAppFolder folder.
         /// </summary>
         [RepositoryFolder("073e1eb9-07dc-4f64-8d2d-64189feec399")]
@@ -5584,34 +7299,6 @@ namespace HB_INSTALL_AUTO
                 get
                 {
                     return _buttonokInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The HBInstallPopupsFolder folder.
-        /// </summary>
-        [RepositoryFolder("b6540888-48d2-4189-8584-79506a4a3117")]
-        public partial class HBInstallPopupsFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new HBInstallPopups  folder.
-            /// </summary>
-            public HBInstallPopupsFolder(RepoGenBaseFolder parentFolder) :
-                    base("HBInstallPopups", "", parentFolder, 0, null, false, "b6540888-48d2-4189-8584-79506a4a3117", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("b6540888-48d2-4189-8584-79506a4a3117")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

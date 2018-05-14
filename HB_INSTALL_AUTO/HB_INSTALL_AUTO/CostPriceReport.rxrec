@@ -94,7 +94,7 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="65fb5572-a040-4681-a5ad-60bf0c001463"
+			id="817ef5c0-53d5-4153-9d10-40cffaaac04b"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Cost and Price Report']

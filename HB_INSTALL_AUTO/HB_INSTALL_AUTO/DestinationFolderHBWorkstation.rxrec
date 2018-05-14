@@ -5,7 +5,7 @@ id="e29b418e-7757-4f1e-b5d2-20cd70f1177b"
 mode="Global"
 rxversion="7.1">
 	<name>
-		HBWSWelcomeSetup
+		DestinationFolderHBWorkstation
 	</name>
 	<repeatcount>
 		1
@@ -23,12 +23,236 @@ rxversion="7.1">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="HBWSWelcomeSetup"
+	classname="DestinationFolderHBWorkstation"
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
+		<var
+		id="afde2e05-3d60-4fc0-8298-c4fe89094ac8"
+		name="WSFilePath">
+			C:\HeavyBidWS\
+		</var>
+		<var
+		id="03e23963-f813-40bc-92dc-c43717e37d5c"
+		name="YearVersion">
+			2018.1
+		</var>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="c9e6ac39-15f7-49f4-8b3b-d1e84bdd5fab">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[HeavyBid][Workstation]
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3c5e87e2-01c5-434c-b6c1-c7303d1c012e">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				$YearVersion
+			</matchvalue>
+		</validationitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="74e9de4f-a898-4069-837a-989992ceba39">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="WSFilePath">
+				</binding>
+			</bindings>
+			<info
+			id="ab1c1564-5343-47a8-9441-2c813b0d2c7b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="4"
+				prefcap="text"
+				rect="739,484,426,24"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						14
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						C:\HeavyBidWS\
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						C:\HeavyBidWS\
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						RichEdit20W
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						1074
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						68006
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						9200
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						msiexec
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, ClientEdge
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, MaximizeBox, Group, Border, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						C:\HeavyBidWS\
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/text[@accessiblestate='Focusable']
+				</path>
+			</info>
+		</keysequenceitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -279,7 +503,7 @@ RRQB/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		HBWSWelcomeSetup.UserCode.cs
+		DestinationFolderHBWorkstation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

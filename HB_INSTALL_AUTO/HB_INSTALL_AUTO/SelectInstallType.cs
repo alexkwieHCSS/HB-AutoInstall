@@ -102,35 +102,35 @@ namespace HB_INSTALL_AUTO
             Init();
 
             // B.3
-            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(0));
-            Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
+            Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
             Delay.Milliseconds(0);
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.StandaloneInstallType'.", repo.HeavyBidServerSetup.StandaloneInstallTypeInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.HeavyBidServerSetup.StandaloneInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.StandaloneInstallType'.", repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, new RecordItemIndex(2));
+                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInT'.", repo.HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInTInfo, new RecordItemIndex(3));
-                Validate.Attribute(repo.HeavyBidServerSetup.MultiUserMultipleUsersCanWorkInTInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInT'.", repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, new RecordItemIndex(3));
+                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.TrainingInstallType'.", repo.HeavyBidServerSetup.TrainingInstallTypeInfo, new RecordItemIndex(4));
-                Validate.Attribute(repo.HeavyBidServerSetup.TrainingInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.TrainingInstallType'.", repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, new RecordItemIndex(4));
+                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
@@ -138,11 +138,11 @@ namespace HB_INSTALL_AUTO
             repo.HeavyBidServerSetup.InstallTypeRadioButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(6));
-            repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.Buttons.ButtonNext'", repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.HeavyBidServerSetup.Buttons.ButtonNextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(7));
-            repo.HeavyBidServerSetup.ButtonNext.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.Buttons.ButtonNext' at Center.", repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, new RecordItemIndex(7));
+            repo.HeavyBidServerSetup.Buttons.ButtonNext.Click();
             Delay.Milliseconds(200);
             
         }

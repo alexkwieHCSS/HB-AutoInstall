@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace HB_INSTALL_AUTO
 {
-    public partial class HBWSWelcomeSetup
+    public partial class DestinationFolderHBWorkstation
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

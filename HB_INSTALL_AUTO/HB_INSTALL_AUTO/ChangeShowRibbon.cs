@@ -79,8 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.HCSSIcon' at Center.", repo.HeavyBidTabs.HCSSIconInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.HCSSIcon.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.HCSSIcon' at Center.", repo.HeavyBidApp.Buttons.HCSSIconInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Buttons.HCSSIcon.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (Checked!='Show Ribbon Bar') on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(1));
@@ -91,8 +91,8 @@ namespace HB_INSTALL_AUTO
             repo.HBButtonDropdownOptions.ShowRibbonBar.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.HCSSIcon' at Center.", repo.HeavyBidTabs.HCSSIconInfo, new RecordItemIndex(3));
-            repo.HeavyBidTabs.HCSSIcon.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.HCSSIcon' at Center.", repo.HeavyBidApp.Buttons.HCSSIconInfo, new RecordItemIndex(3));
+            repo.HeavyBidApp.Buttons.HCSSIcon.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(4));

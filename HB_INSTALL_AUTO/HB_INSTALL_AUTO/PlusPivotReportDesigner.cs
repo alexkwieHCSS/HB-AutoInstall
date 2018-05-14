@@ -79,27 +79,23 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.", repo.HeavyBidTabs.ReportTabInfo, new RecordItemIndex(0));
-            //repo.HeavyBidTabs.ReportTab.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.QueryTab' at Center.", repo.HeavyBidTabs.QueryTabInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.QueryTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.QueryTab' at Center.", repo.HeavyBidApp.Tabs.QueryTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.QueryTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonPivotReports' at Center.", repo.HeavyBidTabs.ButtonPivotReportsInfo, new RecordItemIndex(2));
-            repo.HeavyBidTabs.ButtonPivotReports.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Query.ButtonPivotReports' at Center.", repo.HeavyBidApp.Buttons.Query.ButtonPivotReportsInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Query.ButtonPivotReports.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HBMultiDocumentInterface.ReportDesigner' at Center.", repo.HBMultiDocumentInterface.ReportDesignerInfo, new RecordItemIndex(3));
-            repo.HBMultiDocumentInterface.ReportDesigner.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidApp.HBMultiDocumentInterface.Reports.ReportsPlusPivot.ReportDesigner' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Reports.ReportsPlusPivot.ReportDesignerInfo, new RecordItemIndex(2));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Reports.ReportsPlusPivot.ReportDesigner.DoubleClick();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidPivotReports.ButtonClose'.", repo.HeavyBidPivotReports.ButtonCloseInfo, new RecordItemIndex(5));
-            Host.Current.CloseApplication(repo.HeavyBidPivotReports.ButtonClose, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HBReportViewers.HeavyBidPivotReports.ButtonClose'.", repo.HBReportViewers.HeavyBidPivotReports.ButtonCloseInfo, new RecordItemIndex(4));
+            Host.Current.CloseApplication(repo.HBReportViewers.HeavyBidPivotReports.ButtonClose, 1000);
             Delay.Milliseconds(0);
             
         }

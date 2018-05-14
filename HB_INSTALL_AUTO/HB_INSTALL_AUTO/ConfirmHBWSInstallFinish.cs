@@ -41,6 +41,8 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public ConfirmHBWSInstallFinish()
         {
+            YearVersion = "2018.1";
+            WSFilePath = "C:\\HeavyBidWS\\";
         }
 
         /// <summary>
@@ -52,6 +54,26 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable YearVersion.
+        /// </summary>
+        [TestVariable("368e7f48-9b0f-4a0d-a61a-3eb4d930ed90")]
+        public string YearVersion
+        {
+            get { return repo.YearVersion; }
+            set { repo.YearVersion = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable WSFilePath.
+        /// </summary>
+        [TestVariable("7837f9f6-ffe4-4d33-a291-857343197081")]
+        public string WSFilePath
+        {
+            get { return repo.WSFilePath; }
+            set { repo.WSFilePath = value; }
+        }
 
 #endregion
 
@@ -79,18 +101,39 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.ButtonInstall'", repo.HeavyBidWorkstationSetup.ButtonInstallInfo, new ActionTimeout(60000), new RecordItemIndex(0));
-            repo.HeavyBidWorkstationSetup.ButtonInstallInfo.WaitForExists(60000);
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(0));
+                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Workstation]"), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonInstall' at Center.", repo.HeavyBidWorkstationSetup.ButtonInstallInfo, new RecordItemIndex(1));
-            repo.HeavyBidWorkstationSetup.ButtonInstall.Click();
+            // B.3
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            
+            // ASK AUTOMATION
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nASK AUTOMATION\r\nValidating AttributeRegEx (Text~$WSFilePath) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, new RecordItemIndex(2));
+                Validate.Attribute(repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, "Text", new Regex(WSFilePath), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.Buttons.ButtonInstall'", repo.HeavyBidWorkstationSetup.Buttons.ButtonInstallInfo, new ActionTimeout(60000), new RecordItemIndex(3));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonInstallInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.Buttons.ButtonInstall' at Center.", repo.HeavyBidWorkstationSetup.Buttons.ButtonInstallInfo, new RecordItemIndex(4));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonInstall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 15m to exist. Associated repository item: 'HeavyBidWorkstationSetup.ButtonFinish'", repo.HeavyBidWorkstationSetup.ButtonFinishInfo, new ActionTimeout(900000), new RecordItemIndex(2));
-            repo.HeavyBidWorkstationSetup.ButtonFinishInfo.WaitForExists(900000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 15m to exist. Associated repository item: 'HeavyBidWorkstationSetup.Buttons.ButtonFinish'", repo.HeavyBidWorkstationSetup.Buttons.ButtonFinishInfo, new ActionTimeout(900000), new RecordItemIndex(5));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonFinishInfo.WaitForExists(900000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonFinish' at Center.", repo.HeavyBidWorkstationSetup.ButtonFinishInfo, new RecordItemIndex(3));
-            repo.HeavyBidWorkstationSetup.ButtonFinish.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.Buttons.ButtonFinish' at Center.", repo.HeavyBidWorkstationSetup.Buttons.ButtonFinishInfo, new RecordItemIndex(6));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonFinish.Click();
             Delay.Milliseconds(200);
             
         }

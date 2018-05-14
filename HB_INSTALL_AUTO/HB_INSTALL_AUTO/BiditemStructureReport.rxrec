@@ -94,7 +94,7 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="5e5abf61-a124-47d4-9809-cba3a9ad3983"
+			id="bf254dd9-e65f-4a29-b473-262c06a79189"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Biditem Structure']

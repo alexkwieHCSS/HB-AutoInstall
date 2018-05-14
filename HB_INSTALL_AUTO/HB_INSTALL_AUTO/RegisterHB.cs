@@ -41,7 +41,8 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public RegisterHB()
         {
-            RegistrationCode = "01AF8E32-C236-435F-8C95-2518C339B7C0";
+            RegistrationCode = "01af8e32-c236-435f-8c95-2518c339b7c0";
+            SystemType = "Advanced Multiuser";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace HB_INSTALL_AUTO
         {
             get { return _RegistrationCode; }
             set { _RegistrationCode = value; }
+        }
+
+        string _SystemType;
+
+        /// <summary>
+        /// Gets or sets the value of variable SystemType.
+        /// </summary>
+        [TestVariable("661975a3-4416-4542-b175-b94e52478a5b")]
+        public string SystemType
+        {
+            get { return _SystemType; }
+            set { _SystemType = value; }
         }
 
 #endregion
@@ -110,26 +123,40 @@ namespace HB_INSTALL_AUTO
             repo.HeavyBidRegistration.Check.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'", repo.HeavyBidRegistration.SubmitInfo, new ActionTimeout(10000), new RecordItemIndex(5));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.", repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, new RecordItemIndex(5));
+                Validate.Attribute(repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, "Text", new Regex(SystemType), Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'", repo.HeavyBidRegistration.SubmitInfo, new ActionTimeout(10000), new RecordItemIndex(6));
             repo.HeavyBidRegistration.SubmitInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(7));
             repo.HeavyBidRegistration.Submit.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(10000), new RecordItemIndex(7));
-            repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(10000);
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(10000), new RecordItemIndex(8));
+                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(10000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW' at Center.", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new RecordItemIndex(8));
-            repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW.Click();
-            Delay.Milliseconds(200);
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW' at Center.", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new RecordItemIndex(9));
+                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW.Click();
+                Delay.Milliseconds(200);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(10000), new RecordItemIndex(9));
-            repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(10000);
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(10000), new RecordItemIndex(10));
+                repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(10000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(10));
-            repo.ActivateHeavyBidServer.ButtonOK.Click();
-            Delay.Milliseconds(200);
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(11));
+                repo.ActivateHeavyBidServer.ButtonOK.Click();
+                Delay.Milliseconds(200);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
         }
 

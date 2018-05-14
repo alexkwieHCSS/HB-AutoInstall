@@ -94,7 +94,7 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="2325bde1-1b6f-44a6-b651-c3e2e8153b0b"
+			id="66e81a8a-d86f-4d50-bd55-300418909da0"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Concise Bid Proposal']

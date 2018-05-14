@@ -33,30 +33,6 @@ rxversion="7.1">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4c8eba34-468d-4107-8f15-791e89603705"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5048bb26-2beb-4526-b63f-95ca95f2b8d1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Report']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
@@ -118,7 +94,7 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="de546f52-711e-40d5-b9e6-a0c23cc38404"
+			id="225b3964-30ef-4006-8218-9c808d58925e"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text~'Report Designer']

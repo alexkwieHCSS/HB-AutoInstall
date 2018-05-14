@@ -143,7 +143,7 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="cca92ba1-e653-4b4e-be51-09552317a9c9"
+			id="fb173a9a-3e6d-4b33-8b57-88ba1b10051e"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Equipment Report']

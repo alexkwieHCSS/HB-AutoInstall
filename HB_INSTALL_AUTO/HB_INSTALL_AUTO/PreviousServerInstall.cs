@@ -41,6 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public PreviousServerInstall()
         {
+            YearVersion = "2018.1";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable YearVersion.
+        /// </summary>
+        [TestVariable("14080096-9f7d-4e4d-b702-8245c47ff8d5")]
+        public string YearVersion
+        {
+            get { return repo.YearVersion; }
+            set { repo.YearVersion = value; }
+        }
 
 #endregion
 
@@ -79,17 +90,29 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
+            // B.3
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
+            Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Delay.Milliseconds(0);
+            
+            // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HeavyBidServerSetup.PreviousInstallPopup'.", repo.HeavyBidServerSetup.PreviousInstallPopupInfo, new RecordItemIndex(0));
-                Validate.Exists(repo.HeavyBidServerSetup.PreviousInstallPopupInfo, Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HeavyBidServerSetup.ButtonYes' at Center.", repo.HeavyBidServerSetup.ButtonYesInfo, new RecordItemIndex(1));
-                repo.HeavyBidServerSetup.ButtonYes.Click();
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HeavyBidServerSetup.TextBoxForValidation.PreviousInstallPopup'.", repo.HeavyBidServerSetup.TextBoxForValidation.PreviousInstallPopupInfo, new RecordItemIndex(2));
+                Validate.Exists(repo.HeavyBidServerSetup.TextBoxForValidation.PreviousInstallPopupInfo, Validate.DefaultMessage, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'HeavyBidServerSetup.Buttons.ButtonYes' at Center.", repo.HeavyBidServerSetup.Buttons.ButtonYesInfo, new RecordItemIndex(3));
+                repo.HeavyBidServerSetup.Buttons.ButtonYes.Click();
                 Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
         }
 

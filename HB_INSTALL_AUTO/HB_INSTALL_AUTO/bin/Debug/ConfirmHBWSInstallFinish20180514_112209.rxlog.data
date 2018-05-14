@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="af7ebbf2cdf0fac"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/14/2018 11:22:11 AM"
+		timestampiso="2018-05-14T16:22:11"
+		endtime="5/14/2018 11:22:33 AM"
+		timeoutfactor="1"
+		module="ConfirmHBWSInstallFinish">
+		<detail>
+			ConfirmHBWSInstallFinish
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.717"
+			timeRelativeToTestModuleStartTime="00:00.732"
+			timeWallClock="11:22:12"
+			time="00:00.717"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>WSFilePath, YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.764"
+			timeRelativeToTestModuleStartTime="00:00.779"
+			timeWallClock="11:22:12"
+			time="00:00.764"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>B.3<br/>Validating AttributeRegEx (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="106"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.476"
+			timeRelativeToTestModuleStartTime="00:01.492"
+			timeWallClock="11:22:13"
+			time="00:01.476"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="107"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.476"
+			timeRelativeToTestModuleStartTime="00:01.492"
+			timeWallClock="11:22:13"
+			time="00:01.476"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>B.3<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="113"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.718"
+			timeRelativeToTestModuleStartTime="00:01.733"
+			timeWallClock="11:22:13"
+			time="00:01.718"
+			level="Failure"
+			category="Validation"
+			errimg=".\ConfirmH_e471abe4_15e78ea4_trace.jpg"
+			errthumb=".\ConfirmH_e471abe4_15e78ea4_trace_thumb.jpg">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar' does not match the specified RegEx (actual='Priya Pai says... - Google Chrome', regex='2018.1').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Titlebar"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="114"
+				loglvl="Failure"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.733"
+			timeRelativeToTestModuleStartTime="00:01.749"
+			timeWallClock="11:22:13"
+			time="00:01.733"
+			level="Info"
+			category="Validation"
+			errimg=".\ConfirmH_e471abe4_15e78ea4_trace.jpg"
+			errthumb=".\ConfirmH_e471abe4_15e78ea4_trace_thumb.jpg">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~$WSFilePath) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/text[@text~'C:\HeavyBidWS\']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath"
+				id="17b1af75dfb342779c7d08f20936b248"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="119"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.749"
+			timeRelativeToTestModuleStartTime="00:01.765"
+			timeWallClock="11:22:13"
+			time="00:01.749"
+			level="Warn"
+			category="Module"
+			errimg=".\ConfirmH_e471abe4_15e78ea4_trace.jpg"
+			errthumb=".\ConfirmH_e471abe4_15e78ea4_trace_thumb.jpg">
+			<message>
+				(Optional Action) parsing &quot;C:\HeavyBidWS\&quot; - Unrecognized escape sequence \H.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="122"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.749"
+			timeRelativeToTestModuleStartTime="00:01.765"
+			timeWallClock="11:22:13"
+			time="00:01.749"
+			level="Info"
+			category="Wait"
+			errimg=".\ConfirmH_e471abe4_15e78ea4_trace.jpg"
+			errthumb=".\ConfirmH_e471abe4_15e78ea4_trace_thumb.jpg">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.Buttons.ButtonInstall'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/button[@text='&amp;Install']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Buttons.ButtonInstall"
+				id="2ad4563d412245269122cb80ba07afdf"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="124"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.716"
+			timeRelativeToTestModuleStartTime="00:21.732"
+			timeWallClock="11:22:33"
+			time="00:21.716"
+			level="Error"
+			category="User"
+			errimg=".\ConfirmH_e471abe4_82bd5450_trace.jpg"
+			errthumb=".\ConfirmH_e471abe4_82bd5450_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

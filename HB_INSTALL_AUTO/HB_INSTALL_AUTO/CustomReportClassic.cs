@@ -79,23 +79,23 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.", repo.HeavyBidTabs.ReportTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ReportTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ReportTab' at Center.", repo.HeavyBidApp.Tabs.ReportTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ReportTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.CostReportsButton' at Center.", repo.HeavyBidTabs.CostReportsButtonInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.CostReportsButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Report.CostReportsButton' at Center.", repo.HeavyBidApp.Buttons.Report.CostReportsButtonInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Report.CostReportsButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HBMultiDocumentInterface.CostReportClassic' at Center.", repo.HBMultiDocumentInterface.CostReportClassicInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.CostReportClassic.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.CostReportClassic' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.CostReportClassicInfo, new RecordItemIndex(2));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.CostReportClassic.DoubleClick();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(4));
-            Host.Current.CloseApplication(repo.PrintPreview.Self, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HBReportViewers.PrintPreview'.", repo.HBReportViewers.PrintPreview.SelfInfo, new RecordItemIndex(4));
+            Host.Current.CloseApplication(repo.HBReportViewers.PrintPreview.Self, 1000);
             Delay.Milliseconds(0);
             
         }

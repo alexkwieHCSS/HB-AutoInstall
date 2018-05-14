@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="7f5e15a784acfc0"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/14/2018 10:50:34 AM"
+		timestampiso="2018-05-14T15:50:34"
+		endtime="5/14/2018 10:51:05 AM"
+		timeoutfactor="1"
+		module="HBWSWelcomeSetup">
+		<detail>
+			HBWSWelcomeSetup
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.757"
+			timeRelativeToTestModuleStartTime="00:00.773"
+			timeWallClock="10:50:35"
+			time="00:00.757"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>WSFilePath
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.788"
+			timeRelativeToTestModuleStartTime="00:00.804"
+			timeWallClock="10:50:35"
+			time="00:00.788"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidWorkstationSetup.TextBoxForValidation.InputForFilePath' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/text[@accessiblestate='Focusable']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.TextBoxForValidation.InputForFilePath"
+				id="ab1c1564534347a894412c813b0d2c7b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBWSWelcomeSetup.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.117"
+			timeRelativeToTestModuleStartTime="00:02.132"
+			timeWallClock="10:50:36"
+			time="00:02.117"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$WSFilePath' with focus on 'HeavyBidWorkstationSetup.TextBoxForValidation.InputForFilePath'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/text[@accessiblestate='Focusable']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.TextBoxForValidation.InputForFilePath"
+				id="ab1c1564534347a894412c813b0d2c7b"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBWSWelcomeSetup.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:30.125"
+			timeRelativeToTestModuleStartTime="00:30.141"
+			timeWallClock="10:51:04"
+			time="00:30.125"
+			level="Info"
+			category="Wait"
+			errimg=".\HBWSWelc_132b5173_166d6c61_trace.jpg"
+			errthumb=".\HBWSWelc_132b5173_166d6c61_trace_thumb.jpg">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.Buttons.ButtonNext'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Buttons.ButtonNext"
+				id="6d694e30aaad4df4b475ef46ac6418c2"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBWSWelcomeSetup.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:30.282"
+			timeRelativeToTestModuleStartTime="00:30.297"
+			timeWallClock="10:51:04"
+			time="00:30.282"
+			level="Info"
+			category="Mouse"
+			errimg=".\HBWSWelc_132b5173_c94c8877_trace.jpg"
+			errthumb=".\HBWSWelc_132b5173_c94c8877_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'HeavyBidWorkstationSetup.Buttons.ButtonNext' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/button[@text='&amp;Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.Buttons.ButtonNext"
+				id="6d694e30aaad4df4b475ef46ac6418c2"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\HBWSWelcomeSetup.cs"
+				codeline="106"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:30.875"
+			timeRelativeToTestModuleStartTime="00:30.891"
+			timeWallClock="10:51:05"
+			time="00:30.875"
+			level="Error"
+			category="User"
+			errimg=".\HBWSWelc_132b5173_3246fc4b_trace.jpg"
+			errthumb=".\HBWSWelc_132b5173_3246fc4b_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

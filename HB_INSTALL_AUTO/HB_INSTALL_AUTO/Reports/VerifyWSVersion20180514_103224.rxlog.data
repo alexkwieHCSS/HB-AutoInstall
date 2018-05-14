@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="41bdde828997c38"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/14/2018 10:32:27 AM"
+		timestampiso="2018-05-14T15:32:27"
+		endtime="5/14/2018 10:32:30 AM"
+		timeoutfactor="1"
+		module="VerifyWSVersion">
+		<detail>
+			VerifyWSVersion
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.749"
+			timeRelativeToTestModuleStartTime="00:00.749"
+			timeWallClock="10:32:27"
+			time="00:00.749"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.781"
+			timeRelativeToTestModuleStartTime="00:00.781"
+			timeWallClock="10:32:27"
+			time="00:00.781"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidWorkstationSetup.WSInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="94"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.749"
+			timeRelativeToTestModuleStartTime="00:01.749"
+			timeWallClock="10:32:28"
+			time="00:01.749"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="95"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.749"
+			timeRelativeToTestModuleStartTime="00:01.749"
+			timeWallClock="10:32:28"
+			time="00:01.749"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.WSInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="100"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.937"
+			timeRelativeToTestModuleStartTime="00:01.937"
+			timeWallClock="10:32:28"
+			time="00:01.937"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.WSInstallTitle"
+				id="ce14a383e63246f4ab3481d90dbcacf8"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="101"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.953"
+			timeRelativeToTestModuleStartTime="00:01.953"
+			timeWallClock="10:32:28"
+			time="00:01.953"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 30s to exist. Associated repository item: 'HeavyBidServerSetup'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.Self"
+				id="de34c2e0f8174a249a91b1fb4eaa598a"
+				timeout="30000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="105"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.078"
+			timeRelativeToTestModuleStartTime="00:02.078"
+			timeWallClock="10:32:29"
+			time="00:02.078"
+			level="Info"
+			category="Validation">
+			<message>
+				B.3<br/>Validating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="109"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.249"
+			timeRelativeToTestModuleStartTime="00:02.249"
+			timeWallClock="10:32:29"
+			time="00:02.249"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="110"
+				loglvl="Success"
+				itemindex="3">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.249"
+			timeRelativeToTestModuleStartTime="00:02.249"
+			timeWallClock="10:32:29"
+			time="00:02.249"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>B.3<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.ServerInstallTitle'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="115"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.421"
+			timeRelativeToTestModuleStartTime="00:02.421"
+			timeWallClock="10:32:29"
+			time="00:02.421"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/titlebar"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.ServerInstallTitle"
+				id="7fdd31f1bfea48608dd4e0712deabac9"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="116"
+				loglvl="Success"
+				itemindex="4">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.421"
+			timeRelativeToTestModuleStartTime="00:02.421"
+			timeWallClock="10:32:29"
+			time="00:02.421"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>B.3<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.TextBoxForValidation.WelcomeSetupText'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'Welcome']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.WelcomeSetupText"
+				id="5e36763295db45d4803e2e5238d5dccd"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="122"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.624"
+			timeRelativeToTestModuleStartTime="00:02.624"
+			timeWallClock="10:32:29"
+			time="00:02.624"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.WelcomeSetupText' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'Welcome']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.WelcomeSetupText"
+				id="5e36763295db45d4803e2e5238d5dccd"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="123"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.624"
+			timeRelativeToTestModuleStartTime="00:02.624"
+			timeWallClock="10:32:29"
+			time="00:02.624"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>B.3<br/>Validating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.TextBoxForValidation.SetupText'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'Setup']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.SetupText"
+				id="38d6d211be2f46bfa7867b767cab3ff1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="129"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.796"
+			timeRelativeToTestModuleStartTime="00:02.796"
+			timeWallClock="10:32:29"
+			time="00:02.796"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.SetupText' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/text[@text~'Setup']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.TextBoxForValidation.SetupText"
+				id="38d6d211be2f46bfa7867b767cab3ff1"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="130"
+				loglvl="Success"
+				itemindex="6">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.812"
+			timeRelativeToTestModuleStartTime="00:02.812"
+			timeWallClock="10:32:29"
+			time="00:02.812"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.Buttons.ButtonNext'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.Buttons.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="134"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.984"
+			timeRelativeToTestModuleStartTime="00:02.984"
+			timeWallClock="10:32:30"
+			time="00:02.984"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidServerSetup.Buttons.ButtonNext' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Setup]']/button[@text~'Next']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidServerSetup.Buttons.ButtonNext"
+				id="d5871a5b28dc49bcab19510a037a9d94"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\VerifyWSVersion.cs"
+				codeline="137"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

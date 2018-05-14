@@ -92,12 +92,12 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.", repo.HeavyBidTabs.FileTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.FileTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.FileTab' at Center.", repo.HeavyBidApp.Tabs.FileTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.FileTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonRestoreEsimate' at Center.", repo.HeavyBidTabs.ButtonRestoreEsimateInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonRestoreEsimate.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.File.ButtonRestoreEstimate' at Center.", repo.HeavyBidApp.Buttons.File.ButtonRestoreEstimateInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.File.ButtonRestoreEstimate.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.Estimate' at Center.", repo.HBButtonDropdownOptions.EstimateInfo, new RecordItemIndex(2));

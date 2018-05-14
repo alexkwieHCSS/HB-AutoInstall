@@ -79,11 +79,11 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.ButtonNext'", repo.HeavyBidWorkstationSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(0));
-            repo.HeavyBidWorkstationSetup.ButtonNextInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidWorkstationSetup.Buttons.ButtonNext'", repo.HeavyBidWorkstationSetup.Buttons.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonNextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.ButtonNext' at Center.", repo.HeavyBidWorkstationSetup.ButtonNextInfo, new RecordItemIndex(1));
-            repo.HeavyBidWorkstationSetup.ButtonNext.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidWorkstationSetup.Buttons.ButtonNext' at Center.", repo.HeavyBidWorkstationSetup.Buttons.ButtonNextInfo, new RecordItemIndex(1));
+            repo.HeavyBidWorkstationSetup.Buttons.ButtonNext.Click();
             Delay.Milliseconds(200);
             
         }

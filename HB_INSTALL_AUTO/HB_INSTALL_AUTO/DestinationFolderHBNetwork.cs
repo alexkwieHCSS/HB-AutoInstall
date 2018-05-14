@@ -91,31 +91,31 @@ namespace HB_INSTALL_AUTO
             Init();
 
             // B.3
-            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(0));
-            Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
+            Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
             Delay.Milliseconds(0);
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.ServerInstallTitle'.", repo.HeavyBidServerSetup.ServerInstallTitleInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidServerSetup.ServerInstallTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // B.8
-            Report.Log(ReportLevel.Info, "Mouse", "B.8\r\nMouse Left Click item 'HeavyBidServerSetup.ButtonChange' at Center.", repo.HeavyBidServerSetup.ButtonChangeInfo, new RecordItemIndex(2));
-            repo.HeavyBidServerSetup.ButtonChange.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "B.8\r\nMouse Left Click item 'HeavyBidServerSetup.Buttons.ButtonChange' at Center.", repo.HeavyBidServerSetup.Buttons.ButtonChangeInfo, new RecordItemIndex(2));
+            repo.HeavyBidServerSetup.Buttons.ButtonChange.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.Close' at Center.", repo.HeavyBidServerSetup.CloseInfo, new RecordItemIndex(3));
-            repo.HeavyBidServerSetup.Close.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.Buttons.Close' at Center.", repo.HeavyBidServerSetup.Buttons.CloseInfo, new RecordItemIndex(3));
+            repo.HeavyBidServerSetup.Buttons.Close.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.ButtonNext'", repo.HeavyBidServerSetup.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(4));
-            repo.HeavyBidServerSetup.ButtonNextInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.Buttons.ButtonNext'", repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.HeavyBidServerSetup.Buttons.ButtonNextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.ButtonNext' at Center.", repo.HeavyBidServerSetup.ButtonNextInfo, new RecordItemIndex(5));
-            repo.HeavyBidServerSetup.ButtonNext.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidServerSetup.Buttons.ButtonNext' at Center.", repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, new RecordItemIndex(5));
+            repo.HeavyBidServerSetup.Buttons.ButtonNext.Click();
             Delay.Milliseconds(200);
             
         }

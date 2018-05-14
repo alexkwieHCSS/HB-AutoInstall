@@ -101,52 +101,52 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.", repo.HeavyBidTabs.FileTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.FileTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.FileTab' at Center.", repo.HeavyBidApp.Tabs.FileTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.FileTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonNewEstimate' at Center.", repo.HeavyBidTabs.ButtonNewEstimateInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonNewEstimate.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.File.ButtonNewEstimate' at Center.", repo.HeavyBidApp.Buttons.File.ButtonNewEstimateInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.File.ButtonNewEstimate.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.NewEstimate' at Center.", repo.HBButtonDropdownOptions.NewEstimateInfo, new RecordItemIndex(2));
             repo.HBButtonDropdownOptions.NewEstimate.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.EstimateCode' at Center.", repo.NewEstimate.EstimateCodeInfo, new RecordItemIndex(3));
-            repo.NewEstimate.EstimateCode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCode' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCodeInfo, new RecordItemIndex(3));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NewEstimateCode' with focus on 'NewEstimate.EstimateCode'.", repo.NewEstimate.EstimateCodeInfo, new RecordItemIndex(4));
-            repo.NewEstimate.EstimateCode.PressKeys(NewEstimateCode);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NewEstimateCode' with focus on 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCode'.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCodeInfo, new RecordItemIndex(4));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateCode.PressKeys(NewEstimateCode);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.NextButton' at Center.", repo.NewEstimate.NextButtonInfo, new RecordItemIndex(5));
-            repo.NewEstimate.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButton' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButtonInfo, new RecordItemIndex(5));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.EstimateNameTextBox' at Center.", repo.NewEstimate.EstimateNameTextBoxInfo, new RecordItemIndex(6));
-            repo.NewEstimate.EstimateNameTextBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBox' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBoxInfo, new RecordItemIndex(6));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NewEstimateName' with focus on 'NewEstimate.EstimateNameTextBox'.", repo.NewEstimate.EstimateNameTextBoxInfo, new RecordItemIndex(7));
-            repo.NewEstimate.EstimateNameTextBox.PressKeys(NewEstimateName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NewEstimateName' with focus on 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBox'.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBoxInfo, new RecordItemIndex(7));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateNameTextBox.PressKeys(NewEstimateName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.EstimateDescriptionTextBox' at Center.", repo.NewEstimate.EstimateDescriptionTextBoxInfo, new RecordItemIndex(8));
-            repo.NewEstimate.EstimateDescriptionTextBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBox' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBoxInfo, new RecordItemIndex(8));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{RShiftKey down}THIS{Space}IS{Space down}A{Space up}{Space}TEST{Space}ESTIMATE{RShiftKey up}' with focus on 'NewEstimate.EstimateDescriptionTextBox'.", repo.NewEstimate.EstimateDescriptionTextBoxInfo, new RecordItemIndex(9));
-            repo.NewEstimate.EstimateDescriptionTextBox.PressKeys("{RShiftKey down}THIS{Space}IS{Space down}A{Space up}{Space}TEST{Space}ESTIMATE{RShiftKey up}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{RShiftKey down}THIS{Space}IS{Space down}A{Space up}{Space}TEST{Space}ESTIMATE{RShiftKey up}' with focus on 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBox'.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBoxInfo, new RecordItemIndex(9));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.EstimateDescriptionTextBox.PressKeys("{RShiftKey down}THIS{Space}IS{Space down}A{Space up}{Space}TEST{Space}ESTIMATE{RShiftKey up}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.NextButton' at Center.", repo.NewEstimate.NextButtonInfo, new RecordItemIndex(10));
-            repo.NewEstimate.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButton' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButtonInfo, new RecordItemIndex(10));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NewEstimate.FinishButton' at Center.", repo.NewEstimate.FinishButtonInfo, new RecordItemIndex(11));
-            repo.NewEstimate.FinishButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.FinishButton' at Center.", repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.FinishButtonInfo, new RecordItemIndex(11));
+            repo.HBPopupScreens.FromFileButtons.NewEstimateRelated.NewEstimate.FinishButton.Click();
             Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape}{Escape}'.", new RecordItemIndex(12));

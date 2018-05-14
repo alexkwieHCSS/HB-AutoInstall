@@ -79,27 +79,27 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.SummaryTab' at Center.", repo.HeavyBidTabs.SummaryTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.SummaryTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.SummaryTab' at Center.", repo.HeavyBidApp.Tabs.SummaryTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.SummaryTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonCustomizedReports' at Center.", repo.HeavyBidTabs.ButtonCustomizedReportsInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonCustomizedReports.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Summary.ButtonCustomizedReports' at Center.", repo.HeavyBidApp.Buttons.Summary.ButtonCustomizedReportsInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Summary.ButtonCustomizedReports.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CustomizedBidProposalSetup.ButtonPreviewReport' at Center.", repo.CustomizedBidProposalSetup.ButtonPreviewReportInfo, new RecordItemIndex(2));
-            repo.CustomizedBidProposalSetup.ButtonPreviewReport.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonPreviewReport' at Center.", repo.HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonPreviewReportInfo, new RecordItemIndex(2));
+            repo.HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonPreviewReport.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CustomizedBidProposalSetup'.", repo.CustomizedBidProposalSetup.SelfInfo, new RecordItemIndex(4));
-            Host.Current.CloseApplication(repo.CustomizedBidProposalSetup.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HBReportViewers.CustomizedBidProposal'.", repo.HBReportViewers.CustomizedBidProposal.SelfInfo, new RecordItemIndex(4));
+            Host.Current.CloseApplication(repo.HBReportViewers.CustomizedBidProposal.Self, new Duration(0));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CustomizedBidProposalSetup.ButtonCancel' at Center.", repo.CustomizedBidProposalSetup.ButtonCancelInfo, new RecordItemIndex(5));
-            repo.CustomizedBidProposalSetup.ButtonCancel.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonCancel' at Center.", repo.HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonCancelInfo, new RecordItemIndex(5));
+            repo.HBPopupScreens.FromSummaryButtons.CustomizedBidProposalSetup.ButtonCancel.Click();
             Delay.Milliseconds(200);
             
         }

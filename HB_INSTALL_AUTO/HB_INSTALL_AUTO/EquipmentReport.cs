@@ -79,23 +79,23 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.", repo.HeavyBidTabs.ReportTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ReportTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ReportTab' at Center.", repo.HeavyBidApp.Tabs.ReportTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ReportTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.CostReportsButton' at Center.", repo.HeavyBidTabs.CostReportsButtonInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.CostReportsButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Report.CostReportsButton' at Center.", repo.HeavyBidApp.Buttons.Report.CostReportsButtonInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Report.CostReportsButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HBMultiDocumentInterface.EquipmentReport' at Center.", repo.HBMultiDocumentInterface.EquipmentReportInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.EquipmentReport.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.EquipmentReport' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.EquipmentReportInfo, new RecordItemIndex(2));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Reports.CostReports.EquipmentReport.DoubleClick();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidPivotReports.ButtonClose' at Center.", repo.HeavyBidPivotReports.ButtonCloseInfo, new RecordItemIndex(4));
-            repo.HeavyBidPivotReports.ButtonClose.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBReportViewers.HeavyBidPivotReports.ButtonClose' at Center.", repo.HBReportViewers.HeavyBidPivotReports.ButtonCloseInfo, new RecordItemIndex(4));
+            repo.HBReportViewers.HeavyBidPivotReports.ButtonClose.Click();
             Delay.Milliseconds(200);
             
         }

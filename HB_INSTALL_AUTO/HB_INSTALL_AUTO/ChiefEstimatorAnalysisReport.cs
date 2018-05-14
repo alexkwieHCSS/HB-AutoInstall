@@ -79,23 +79,23 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ReportTab' at Center.", repo.HeavyBidTabs.ReportTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.ReportTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.ReportTab' at Center.", repo.HeavyBidApp.Tabs.ReportTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.ReportTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonSummaryReports' at Center.", repo.HeavyBidTabs.ButtonSummaryReportsInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonSummaryReports.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Report.ButtonSummaryReports' at Center.", repo.HeavyBidApp.Buttons.Report.ButtonSummaryReportsInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Report.ButtonSummaryReports.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HBMultiDocumentInterface.ChiefEstimatorAnalysisReport' at Center.", repo.HBMultiDocumentInterface.ChiefEstimatorAnalysisReportInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.ChiefEstimatorAnalysisReport.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidApp.HBMultiDocumentInterface.Reports.SummaryReports.ChiefEstimatorAnalysisReport' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Reports.SummaryReports.ChiefEstimatorAnalysisReportInfo, new RecordItemIndex(2));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Reports.SummaryReports.ChiefEstimatorAnalysisReport.DoubleClick();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBReportPlusViewer.ButtonClosePreview' at Center.", repo.HBReportPlusViewer.ButtonClosePreviewInfo, new RecordItemIndex(4));
-            repo.HBReportPlusViewer.ButtonClosePreview.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBReportViewers.HBReportPlusViewer.ButtonClosePreview' at Center.", repo.HBReportViewers.HBReportPlusViewer.ButtonClosePreviewInfo, new RecordItemIndex(4));
+            repo.HBReportViewers.HBReportPlusViewer.ButtonClosePreview.Click();
             Delay.Milliseconds(200);
             
         }

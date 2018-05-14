@@ -27,14 +27,38 @@ rxversion="7.1">
 	namespace="HB_INSTALL_AUTO">
 	</codegen>
 	<variables>
+		<var
+		id="091a7e8a-8fb8-450b-b9e4-0ff251a97627"
+		name="YearVersion">
+			2018.1
+		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6770a8b6-afd6-432b-9941-9bc54aa65599"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="88a24b5a-93b2-4dac-b8ad-8e0a11616d12"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeRegEx"
 		enabled="True"
-		optional="False"
-		searchpropertyid="5f917d57-2b23-479c-b07b-d15f25043e8e">
+		optional="True"
+		searchpropertyid="c9e6ac39-15f7-49f4-8b3b-d1e84bdd5fab">
 			<comment>
+				B.3
 			</comment>
 			<bindings>
 			</bindings>
@@ -49,9 +73,274 @@ rxversion="7.1">
 				Text
 			</matchname>
 			<matchvalue>
-				[HeavyBid][Setup]
+				[HeavyBid][Workstation]
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3c5e87e2-01c5-434c-b6c1-c7303d1c012e">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="ce14a383-e632-46f4-ab34-81d90dbcacf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/titlebar
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				$YearVersion
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="99acf716-62c9-4812-a02b-6adcc6d31206">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="9fa518f6-ca6a-41a2-a775-26cb01e2653a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="5"
+				prefcap="text"
+				rect="893,377,293,80"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Welcome to the HeavyBid 2018.1 Workstation Setup Wizard
+					</attribute>
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						1350966002
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						1943210272
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Welcome to the HeavyBid 2018.1 Workstation Setup Wizard
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Static
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						140
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						984336
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						2
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						9200
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						msiexec
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, Transparent
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, Group, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						Welcome to the HeavyBid 2018.1 Workstation Setup Wizard
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title~'[HeavyBid][Workstation]']/text[@text~'Welcome']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegEx"
+		enabled="True"
+		optional="True"
+		searchpropertyid="99acf716-62c9-4812-a02b-6adcc6d31206">
+			<comment>
+				B.3
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="YearVersion">
+				</binding>
+			</bindings>
+			<info
+			id="4c4f0b8a-d203-49ec-b061-a5ad09ffc1e3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HeavyBid' and @title~'Workstation']/text[@text~'Setup']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="4025325e-45ac-4b5f-97ea-23118dccb534"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d694e30-aaad-4df4-b475-ef46ac6418c2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HeavyBid' and @title~'Workstation']/button[@text='&amp;Next']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0109582a-9bc0-4d63-901b-30b9ee9f891e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d694e30-aaad-4df4-b475-ef46ac6418c2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HeavyBid' and @title~'Workstation']/button[@text='&amp;Next']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"

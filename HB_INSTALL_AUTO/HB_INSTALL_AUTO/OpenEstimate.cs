@@ -79,8 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WelcomeToHeavyBidScreen.OpenEstimateButton' at Center.", repo.WelcomeToHeavyBidScreen.OpenEstimateButtonInfo, new RecordItemIndex(0));
-            repo.WelcomeToHeavyBidScreen.OpenEstimateButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimate' at Center.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimateInfo, new RecordItemIndex(0));
+            repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimate.Click();
             Delay.Milliseconds(200);
             
         }

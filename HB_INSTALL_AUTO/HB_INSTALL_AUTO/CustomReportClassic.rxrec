@@ -143,10 +143,10 @@ rxversion="7.1">
 			<bindings>
 			</bindings>
 			<info
-			id="35cb090f-0a33-449b-9e8b-6d683f1a2ccd"
+			id="92ec3f14-cb7b-400e-b2a2-3f7ff49cee61"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Cost Report']
+					/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/?/?/treeitem[@text='Cost Report Classic']
 				</path>
 			</info>
 		</mouseitem>

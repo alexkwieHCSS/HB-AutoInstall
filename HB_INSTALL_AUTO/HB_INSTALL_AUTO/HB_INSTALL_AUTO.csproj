@@ -395,15 +395,15 @@
       <UserCode>true</UserCode>
       <id>d5424798-0fbf-43bc-8048-dbbb908c68ca</id>
     </Compile>
-    <Compile Include="HBWSWelcomeSetup.cs">
+    <Compile Include="DestinationFolderHBWorkstation.cs">
       <BoundTo>39a9c75e-51de-4865-898f-abd1a7bed5aa</BoundTo>
-      <DependentUpon>HBWSWelcomeSetup.rxrec</DependentUpon>
+      <DependentUpon>DestinationFolderHBWorkstation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f7d25f46-ac3c-431f-b2e3-9e32aa685e78</id>
     </Compile>
-    <Compile Include="HBWSWelcomeSetup.UserCode.cs">
+    <Compile Include="DestinationFolderHBWorkstation.UserCode.cs">
       <BoundTo>39a9c75e-51de-4865-898f-abd1a7bed5aa</BoundTo>
-      <DependentUpon>HBWSWelcomeSetup.rxrec</DependentUpon>
+      <DependentUpon>DestinationFolderHBWorkstation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7765f617-8500-4cbf-a58a-e1d9ef943015</id>
     </Compile>
@@ -988,7 +988,7 @@
       <id>82a0a8f6-7404-4110-9b12-467b58eabb47</id>
       <recordtableid>39a778c6-72a6-4992-9789-b63c17daf0e6</recordtableid>
     </None>
-    <None Include="HBWSWelcomeSetup.rxrec">
+    <None Include="DestinationFolderHBWorkstation.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>39a9c75e-51de-4865-898f-abd1a7bed5aa</id>
       <recordtableid>e29b418e-7757-4f1e-b5d2-20cd70f1177b</recordtableid>

@@ -93,18 +93,18 @@ namespace HB_INSTALL_AUTO
             repo.ProgramsAndFeatures.SearchEditBox.PressKeys("heavybid{Space}workstation");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.Row0.HeavyBidWorkstation'", repo.ProgramsAndFeatures.Row0.HeavyBidWorkstationInfo, new ActionTimeout(10000), new RecordItemIndex(4));
-            repo.ProgramsAndFeatures.Row0.HeavyBidWorkstationInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstation'", repo.ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstationInfo, new ActionTimeout(10000), new RecordItemIndex(4));
+            repo.ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstationInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Row0.HeavyBidWorkstation' at Center.", repo.ProgramsAndFeatures.Row0.HeavyBidWorkstationInfo, new RecordItemIndex(5));
-            repo.ProgramsAndFeatures.Row0.HeavyBidWorkstation.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstation' at Center.", repo.ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstationInfo, new RecordItemIndex(5));
+            repo.ProgramsAndFeatures.UninstallProgramTable.HeavyBidWorkstation.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.ButtinUninstallOrChange'", repo.ProgramsAndFeatures.ButtinUninstallOrChangeInfo, new ActionTimeout(10000), new RecordItemIndex(6));
-            repo.ProgramsAndFeatures.ButtinUninstallOrChangeInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ProgramsAndFeatures.Buttons.ButtinUninstallOrChange'", repo.ProgramsAndFeatures.Buttons.ButtinUninstallOrChangeInfo, new ActionTimeout(10000), new RecordItemIndex(6));
+            repo.ProgramsAndFeatures.Buttons.ButtinUninstallOrChangeInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.ButtinUninstallOrChange' at Center.", repo.ProgramsAndFeatures.ButtinUninstallOrChangeInfo, new RecordItemIndex(7));
-            repo.ProgramsAndFeatures.ButtinUninstallOrChange.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Buttons.ButtinUninstallOrChange' at Center.", repo.ProgramsAndFeatures.Buttons.ButtinUninstallOrChangeInfo, new RecordItemIndex(7));
+            repo.ProgramsAndFeatures.Buttons.ButtinUninstallOrChange.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidUninstall.ButtonYes'", repo.HeavyBidUninstall.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(8));

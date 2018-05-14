@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="16635c9deaa9b99"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="alex.kwie"
+		rxversion="7.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/14/2018 11:27:42 AM"
+		timestampiso="2018-05-14T16:27:42"
+		endtime="5/14/2018 11:28:04 AM"
+		timeoutfactor="1"
+		module="ConfirmHBWSInstallFinish">
+		<detail>
+			ConfirmHBWSInstallFinish
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.734"
+			timeRelativeToTestModuleStartTime="00:00.734"
+			timeWallClock="11:27:43"
+			time="00:00.734"
+			level="Warn"
+			category="Data"
+			errimg=".\ConfirmH_e474abe1_7df564fc_trace.jpg"
+			errthumb=".\ConfirmH_e474abe1_7df564fc_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>WSFilePath, YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.781"
+			timeRelativeToTestModuleStartTime="00:00.781"
+			timeWallClock="11:27:43"
+			time="00:00.781"
+			level="Info"
+			category="Validation"
+			errimg=".\ConfirmH_e474abe1_7df564fc_trace.jpg"
+			errthumb=".\ConfirmH_e474abe1_7df564fc_trace_thumb.jpg">
+			<message>
+				(Optional Action)<br/>ASK AUTOMATION<br/>Validating AttributeEqual (Text=$WSFilePath) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'[HeavyBid][Workstation]']/text[@text='C:\HeavyBidWS\']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath"
+				id="17b1af75dfb342779c7d08f20936b248"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="106"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.876"
+			timeRelativeToTestModuleStartTime="00:21.876"
+			timeWallClock="11:28:04"
+			time="00:21.876"
+			level="Warn"
+			category="Module"
+			errimg=".\ConfirmH_e474abe1_6c2d6d0c_trace.jpg"
+			errthumb=".\ConfirmH_e474abe1_6c2d6d0c_trace_thumb.jpg">
+			<message>
+				(Optional Action) Thread was being aborted.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ConfirmHBWSInstallFinish.cs"
+				codeline="109"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.876"
+			timeRelativeToTestModuleStartTime="00:21.876"
+			timeWallClock="11:28:04"
+			time="00:21.876"
+			level="Error"
+			category="User"
+			errimg=".\ConfirmH_e474abe1_6c2d6d0c_trace.jpg"
+			errthumb=".\ConfirmH_e474abe1_6c2d6d0c_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

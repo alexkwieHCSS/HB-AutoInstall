@@ -90,30 +90,30 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.HelpTab' at Center.", repo.HeavyBidTabs.HelpTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.HelpTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.HelpTab' at Center.", repo.HeavyBidApp.Tabs.HelpTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.HelpTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.HelpAboutHeavyBidButton' at Center.", repo.HeavyBidTabs.HelpAboutHeavyBidButtonInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.HelpAboutHeavyBidButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Help.HelpAboutHeavyBidButton' at Center.", repo.HeavyBidApp.Buttons.Help.HelpAboutHeavyBidButtonInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Help.HelpAboutHeavyBidButton.Click();
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'AboutHeavyBid.HBVersionAboutScreen'.", repo.AboutHeavyBid.HBVersionAboutScreenInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.AboutHeavyBid.HBVersionAboutScreenInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, new RecordItemIndex(2));
+                Validate.Attribute(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AboutHeavyBid.SystemInfo' at Center.", repo.AboutHeavyBid.SystemInfoInfo, new RecordItemIndex(3));
-            repo.AboutHeavyBid.SystemInfo.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfo' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfoInfo, new RecordItemIndex(3));
+            repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfo.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SystemInformationAboutHB.CloseButton' at Center.", repo.SystemInformationAboutHB.CloseButtonInfo, new RecordItemIndex(4));
-            repo.SystemInformationAboutHB.CloseButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButtonInfo, new RecordItemIndex(4));
+            repo.HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AboutHeavyBid.CloseButton' at Center.", repo.AboutHeavyBid.CloseButtonInfo, new RecordItemIndex(5));
-            repo.AboutHeavyBid.CloseButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButtonInfo, new RecordItemIndex(5));
+            repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButton.Click();
             Delay.Milliseconds(200);
             
         }

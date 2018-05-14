@@ -79,16 +79,16 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.FileTab' at Center.", repo.HeavyBidTabs.FileTabInfo, new RecordItemIndex(0));
-            repo.HeavyBidTabs.FileTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Tabs.FileTab' at Center.", repo.HeavyBidApp.Tabs.FileTabInfo, new RecordItemIndex(0));
+            repo.HeavyBidApp.Tabs.FileTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidTabs.ButtonOpenEstimate' at Center.", repo.HeavyBidTabs.ButtonOpenEstimateInfo, new RecordItemIndex(1));
-            repo.HeavyBidTabs.ButtonOpenEstimate.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.File.ButtonOpenEstimate' at Center.", repo.HeavyBidApp.Buttons.File.ButtonOpenEstimateInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.File.ButtonOpenEstimate.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.ButtonOK' at Center.", repo.HBMultiDocumentInterface.ButtonOKInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.Buttons.ButtonOK' at Center.", repo.HBMultiDocumentInterface.Buttons.ButtonOKInfo, new RecordItemIndex(2));
+            repo.HBMultiDocumentInterface.Buttons.ButtonOK.Click();
             Delay.Milliseconds(200);
             
         }

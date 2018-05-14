@@ -79,8 +79,8 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidTabs'.", repo.HeavyBidTabs.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.HeavyBidTabs.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'HeavyBidApp'.", repo.HeavyBidApp.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.HeavyBidApp.Self, new Duration(0));
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ExitHeavyBid.ButtonYes'", repo.ExitHeavyBid.ButtonYesInfo, new ActionTimeout(10000), new RecordItemIndex(1));
