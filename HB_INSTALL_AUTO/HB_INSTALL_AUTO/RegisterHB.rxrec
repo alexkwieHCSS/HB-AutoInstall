@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="02167738-89fa-4bd8-987f-73d74dc2b4b4"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		RegisterHB
 	</name>
@@ -40,7 +40,7 @@ rxversion="7.1">
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="72da6c51-8416-44e2-b7be-06db9c3e90f1"
 		waitaction="Exists"
@@ -174,7 +174,7 @@ rxversion="7.1">
 		action="DoubleClick"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -764,7 +764,7 @@ loooAMUUtFACUUtFACUuKKKYgxRRS0AFGKKWgQlLiiimAUUtFACUtFFMQtFFFAj/2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<validationitem
-		action="AttributeRegEx"
+		action="AttributeRegex"
 		enabled="True"
 		optional="True"
 		searchpropertyid="9d60b40a-062b-48ac-a251-529a21fcb13a">
@@ -1140,7 +1140,7 @@ CjFFLQISlxRRTAKKWigBKWiimIWiiigR/9k=
 		optional="True"
 		searchpropertyid="72da6c51-8416-44e2-b7be-06db9c3e90f1"
 		waitaction="Exists"
-		waittimeout="10000ms">
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -1389,7 +1389,7 @@ FFbUfiMa3wn/2Q==
 		optional="True"
 		searchpropertyid="72da6c51-8416-44e2-b7be-06db9c3e90f1"
 		waitaction="Exists"
-		waittimeout="10000ms">
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -1556,7 +1556,7 @@ wCilApcUCEpaMUuKBXEoxTsUYoC4mKXFLRQITFLijIo3D1oAMUuKbvFHmCgLM//Z
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 	name="HB_INSTALL_AUTORepository"
 	relativepath="HB_INSTALL_AUTORepository.rxrep"
-	rxversion="7.1">
+	rxversion="8.1">
 		<codegen
 		classname="HB_INSTALL_AUTORepository"
 		namespace="HB_INSTALL_AUTO">

@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="6936efa7-f3ef-4abb-967f-75ea9f63544b"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		PreviousServerInstall
 	</name>

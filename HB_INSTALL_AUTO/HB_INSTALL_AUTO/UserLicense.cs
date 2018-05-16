@@ -69,7 +69,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -81,7 +81,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -91,20 +91,20 @@ namespace HB_INSTALL_AUTO
             Init();
 
             // B.3
-            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
-            Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegex (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
+            Validate.AttributeRegex(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
             Delay.Milliseconds(0);
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // B.4
             Report.Log(ReportLevel.Info, "Validation", "B.4\r\nValidating AttributeContains (AccessibleState>'Unavailable') on item 'HeavyBidServerSetup.Buttons.ButtonNext'.", repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, new RecordItemIndex(2));
-            Validate.Attribute(repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, "AccessibleState", new Regex(Regex.Escape("Unavailable")));
+            Validate.AttributeContains(repo.HeavyBidServerSetup.Buttons.ButtonNextInfo, "AccessibleState", "Unavailable");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreem'", repo.HeavyBidServerSetup.IAcceptTheTermsInTheLicenseAgreemInfo, new ActionTimeout(60000), new RecordItemIndex(3));

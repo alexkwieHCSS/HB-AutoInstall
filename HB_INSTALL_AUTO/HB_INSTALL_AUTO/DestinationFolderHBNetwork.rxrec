@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="63e8b675-eaaa-495d-8005-30cb67812cea"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		DestinationFolderHBNetwork
 	</name>

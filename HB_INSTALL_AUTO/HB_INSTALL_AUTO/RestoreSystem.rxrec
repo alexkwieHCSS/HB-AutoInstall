@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="e98488ca-ce92-4313-ad9d-c786d4f7ec21"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		RestoreSystem
 	</name>

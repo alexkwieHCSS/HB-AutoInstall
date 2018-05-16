@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="619992cd-99e2-4495-a459-7068d3a31470"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CustomReportClassic
 	</name>

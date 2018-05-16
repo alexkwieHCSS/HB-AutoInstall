@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="407a39a3-ab47-4a2e-b84a-fb8867afa5c9"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		NavigateToSupportHCSS
 	</name>
@@ -55,7 +55,7 @@ rxversion="7.1">
 			</info>
 		</mouseitem>
 		<validationitem
-		action="AttributeRegEx"
+		action="AttributeRegex"
 		enabled="True"
 		optional="True"
 		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
@@ -79,7 +79,7 @@ rxversion="7.1">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegEx"
+		action="AttributeRegex"
 		enabled="False"
 		optional="True"
 		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
@@ -309,7 +309,7 @@ y60R+lEX7FO+NwPZf0ANRuj9SrXs31pNZtfVQq4nq5emRhz3E2Eqdhf8NqZbAAAAAElFTkSuQmCC
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 	name="HB_INSTALL_AUTORepository"
 	relativepath="HB_INSTALL_AUTORepository.rxrep"
-	rxversion="7.1">
+	rxversion="8.1">
 		<codegen
 		classname="HB_INSTALL_AUTORepository"
 		namespace="HB_INSTALL_AUTO">

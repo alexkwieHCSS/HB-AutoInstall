@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="52c57138-faa8-4de3-b51b-a991a395efda"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		OpenAddRemovePrograms
 	</name>

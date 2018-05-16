@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="e29b418e-7757-4f1e-b5d2-20cd70f1177b"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		DestinationFolderHBWorkstation
 	</name>

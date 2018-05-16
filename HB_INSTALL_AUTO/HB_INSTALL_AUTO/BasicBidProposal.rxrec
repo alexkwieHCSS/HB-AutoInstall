@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="874c3e4e-33fc-4960-af42-c8a84392fb7e"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		BasicBidProposal
 	</name>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="75e2bca26d9cdc"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/15/2018 2:58:26 PM"
+		timestampiso="2018-05-15T19:58:26"
+		endtime="5/15/2018 2:58:31 PM"
+		timeoutfactor="1"
+		module="TestWrongRegCode">
+		<detail>
+			TestWrongRegCode
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.166"
+			timeRelativeToTestModuleStartTime="00:03.166"
+			timeWallClock="14:58:29"
+			time="00:03.166"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RegistrationCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.197"
+			timeRelativeToTestModuleStartTime="00:03.197"
+			timeWallClock="14:58:29"
+			time="00:03.197"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeRegex (Text~'attempting') on item 'HeavyBidRegistration.WrongRegistrationCodeTextbox'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@class='DFtextbox'][1]/text"
+				itempath="element[@class='DFtextbox'][1]/text"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.WrongRegistrationCodeTextbox"
+				id="1262704615d34506aa0195d90e13b06a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWrongRegCode.cs"
+				codeline="95"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.688"
+			timeRelativeToTestModuleStartTime="00:04.688"
+			timeWallClock="14:58:31"
+			time="00:04.688"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'HB_INSTALL_AUTORepository.HeavyBidRegistration.WrongRegistrationCodeTextbox' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@class='DFtextbox'][1]/text"
+				itempath="element[@class='DFtextbox'][1]/text"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.WrongRegistrationCodeTextbox"
+				id="1262704615d34506aa0195d90e13b06a"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\TestWrongRegCode.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="4">
+			</metainfo>
+		</item>
+	</activity>
+</report>

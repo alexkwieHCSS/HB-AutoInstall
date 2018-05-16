@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="571f330f-34d5-41f8-bdde-be8c3b849738"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		OpenInstallFile
 	</name>

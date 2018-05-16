@@ -1,17 +1,16 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="CostReport.rxrec" />
-  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="HB_INSTALL_AUTO.rxtst" />
-    <Element value="CustomReport.rxrec" />
-    <Element value="CostReport.rxrec" />
+    <Element value="OpenInstallFile.rxrec" />
+    <Element value="RunSpreadsheetCalculations.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
-    <Array name="recentusercodeselections" />
+    <Array name="recentusercodeselections">
+      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist(String path, String pattern, Int32 expectedCount, Int32 timeout)" />
+    </Array>
   </Properties>
 </Properties>

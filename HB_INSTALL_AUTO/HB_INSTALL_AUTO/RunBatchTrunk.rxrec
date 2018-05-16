@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="8a92616a-86ba-4fc0-855c-6620b301238f"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		RunBatchTrunk
 	</name>

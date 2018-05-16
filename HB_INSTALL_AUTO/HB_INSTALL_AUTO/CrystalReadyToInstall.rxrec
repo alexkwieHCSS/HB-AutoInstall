@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="cab4dd71-3176-47ad-ba07-a5b81f158d78"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CrystalReadyToInstall
 	</name>

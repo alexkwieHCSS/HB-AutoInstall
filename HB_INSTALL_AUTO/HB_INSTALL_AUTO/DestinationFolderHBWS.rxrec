@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="535090f6-8e8c-458f-9f71-ada4e8dc976a"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		DestinationFolderHBWS
 	</name>

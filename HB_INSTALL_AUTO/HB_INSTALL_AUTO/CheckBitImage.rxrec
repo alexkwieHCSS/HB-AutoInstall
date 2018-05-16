@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="62b28ca8-35c6-4831-8ecd-3c62f1608eec"
 mode="Desktop"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CheckBitImage
 	</name>
@@ -29,12 +29,286 @@ rxversion="7.1">
 	<variables>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="77264968-231d-41b1-b035-56c132ac8186"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="00db71f4-73f4-4258-b3fc-748f4ebbcd04"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Welcome' and @title~'HeavyBid']/element[@controlid='2243']
+				</path>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/?/?/?/?/?/?/tabpage[@selected='True']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c738e7a-7184-4785-8021-78d4e64b01ac"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename~'Google Chrome']/?/?/?/?/tabpage
+				</path>
+			</info>
+			<matchname>
+				Title
+			</matchname>
+			<matchvalue>
+				(HCSS|HeavyBid)
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="95d51213-1ff3-432a-9ff6-d539b23872e5"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="52cbcae3-0251-4af8-9078-d1c9da742610"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/?/?/?/?/?/?/text[@accessiblename='Address and search bar']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="True"
+		searchpropertyid="2558fef9-5944-4b2e-bde5-8c6b128b8b45">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="52cbcae3-0251-4af8-9078-d1c9da742610"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname~'chrome']/container[@accessiblename='Google Chrome']/?/?/?/?/text[@accessiblename~'Address and search bar']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				hcss.com
+			</matchvalue>
+		</validationitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="10000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="a05afa31-1ca2-4607-8f4e-2fe5b8cbd140">
+			<comment>
+				E.6
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1cc2708b-c467-4997-aa0b-3b1a7bf4b39c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="20"
+				prefcap="form"
+				rect="-8,-8,1936,1056"
+				role="form"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="active"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="appicon"
+					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJBSURBVDhPtZNLaBNRFIYnk6BERCQ1pqG+cCME
+F3WlIrVtmtrW5mFqrdBGMdHuRKHQLFwYBCn43riIBh3TRInZVHSpNbZko2lSNeIjdSIiiCAIsRNo
+bZjfc2eSpsHXyh9+Bu6c7z/n3rnD/Q/xZLdGo7lOHud5fpKecVo7Qa5jBX9TIwGv8r2dyO/vQN7d
+DnGfDaKrDaKzFXq9vkA1PrX0V22jgu8zvQRWAnr21ASIjha8t7eCak+qSFW8Tqf7lHI04zUD/jCB
+aKeA7mZYLJYSMY0qqsrJFmPOJrygLm+p88fREAKBgMwsTj/Eh6gLn8M78C22HdLYTtBWn5RZjqND
+Cm6+fQwHT/VgomsX8uEQTscluC4V4SQPXC3izbscFhJWlBK7UZpogsFgmCNUWwl4tCl6FFsELy73
+tSAx9WURtl8kXyhi5J6Euawf8lMr5GdWIGVlZ7FCCaBxkhsiPmyM+uA458H91CwcDCzD3WT/HQnz
+ubNApp1sI7exgFVKAE0wtj7iBTMLMhqN8+4rVXjveQnxZAGlrLcM2yCnlQmWKwEkf8PoEVTc+SCA
+8exXDEUkDIZmEU4UMP38Zk13rVY7U2YVrTObzT/M4cOoeGvsOIYnb+BMMorBu8NYSHctwsgo3YdU
+tKpAPYGmW4eW2APTtX5kH9trYDqzNNUvU7Gq6Cg0QZPgwVoCmY3CAHyCE3KmYyn8kmobVOT3OkD7
+y60R+lEX7FO+NwPZf0ANRuj9SrXs31pNZtfVQq4nq5emRhz3E2Eqdhf8NqZbAAAAAElFTkSuQmCC
+					</attribute>
+					<attribute
+					name="state"
+					type="System.Windows.Forms.FormWindowState, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Maximized
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Chrome_WidgetWin_1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						3411342
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						1252
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						chrome
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						RightScrollBar, Left, WindowEdge
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, TiledWindow, Maximize, ClipChildren, ClipSiblings, Visible
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						New Tab - Google Chrome
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@processname~'chrome']
+				</path>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 	name="HB_INSTALL_AUTORepository"
 	relativepath="HB_INSTALL_AUTORepository.rxrep"
-	rxversion="7.1">
+	rxversion="8.1">
 		<codegen
 		classname="HB_INSTALL_AUTORepository"
 		namespace="HB_INSTALL_AUTO">

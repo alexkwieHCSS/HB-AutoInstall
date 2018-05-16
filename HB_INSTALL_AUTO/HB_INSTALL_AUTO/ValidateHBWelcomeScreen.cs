@@ -69,7 +69,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -81,7 +81,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -92,37 +92,37 @@ namespace HB_INSTALL_AUTO
 
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitle'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, new RecordItemIndex(0));
-                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, Validate.DefaultMessage, false);
+                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitle'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitle'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.WelcomeToHeavyBidTitleInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimate'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimateInfo, new RecordItemIndex(2));
-                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimateInfo, Validate.DefaultMessage, false);
+                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenCurrentEstimateInfo, null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CreateNewEstimate'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CreateNewEstimateInfo, new RecordItemIndex(3));
-                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CreateNewEstimateInfo, Validate.DefaultMessage, false);
+                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CreateNewEstimateInfo, null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenExistingEstimate'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenExistingEstimateInfo, new RecordItemIndex(4));
-                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenExistingEstimateInfo, Validate.DefaultMessage, false);
+                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.OpenExistingEstimateInfo, null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreen'.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, new RecordItemIndex(5));
-                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, Validate.DefaultMessage, false);
+                Validate.Exists(repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.LinkNewUserWelcomeScreenInfo, null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             

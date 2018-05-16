@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="b5eb13e6-7043-43ab-993a-9a8fcc0c889f"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		MakeNewEstimate
 	</name>

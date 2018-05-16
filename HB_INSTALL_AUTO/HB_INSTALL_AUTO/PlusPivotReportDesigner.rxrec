@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="32db85bf-e5c7-4fb8-943e-88fe1795e724"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		PlusPivotReportDesigner
 	</name>

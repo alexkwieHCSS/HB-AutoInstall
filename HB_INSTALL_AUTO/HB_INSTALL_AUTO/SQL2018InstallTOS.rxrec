@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="ade5c7f9-62cc-4ee1-a7e9-bb87d45d9ae7"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		SQL2018InstallTOS
 	</name>

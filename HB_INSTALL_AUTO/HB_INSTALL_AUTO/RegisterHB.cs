@@ -84,7 +84,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -96,7 +96,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -105,12 +105,12 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'HeavyBidRegistration.RegistrationEntry'", repo.HeavyBidRegistration.RegistrationEntryInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.HeavyBidRegistration.RegistrationEntryInfo.WaitForExists(30000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'HeavyBidRegistration.RegistrationEntry'", repo.HeavyBidRegistration.RegistrationEntryInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            //repo.HeavyBidRegistration.RegistrationEntryInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidRegistration.RegistrationEntry' at Center.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(1));
-            repo.HeavyBidRegistration.RegistrationEntry.DoubleClick();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidRegistration.RegistrationEntry' at Center.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(1));
+            //repo.HeavyBidRegistration.RegistrationEntry.DoubleClick();
+            //Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
@@ -124,8 +124,8 @@ namespace HB_INSTALL_AUTO
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.", repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, new RecordItemIndex(5));
-                Validate.Attribute(repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, "Text", new Regex(SystemType), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.", repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, new RecordItemIndex(5));
+                Validate.AttributeRegex(repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, "Text", new Regex(SystemType), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
@@ -137,8 +137,8 @@ namespace HB_INSTALL_AUTO
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(10000), new RecordItemIndex(8));
-                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(10000);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(30000), new RecordItemIndex(8));
+                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(30000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             try {
@@ -148,8 +148,8 @@ namespace HB_INSTALL_AUTO
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(10000), new RecordItemIndex(10));
-                repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(10000);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(30000), new RecordItemIndex(10));
+                repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(30000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
             try {

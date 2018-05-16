@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="2a76aa71-4e60-4ad7-833b-153efeaaca77"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CloseCHeavyBid
 	</name>

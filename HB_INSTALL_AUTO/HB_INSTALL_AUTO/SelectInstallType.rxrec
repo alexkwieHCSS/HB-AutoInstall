@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="2d19a0cc-3a76-41ca-968f-ac62ff9b9d26"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		SelectInstallType
 	</name>

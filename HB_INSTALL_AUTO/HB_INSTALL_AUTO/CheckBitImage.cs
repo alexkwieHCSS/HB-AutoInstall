@@ -58,7 +58,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -70,7 +70,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -79,6 +79,41 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.BitmapImage' at Center.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.BitmapImageInfo, new RecordItemIndex(0));
+            repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.BitmapImage.Click();
+            Delay.Milliseconds(200);
+            
+            // E.6
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.Tabs'", repo.GoogleChrome.TabsInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+                repo.GoogleChrome.TabsInfo.WaitForExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            
+            // E.6
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegex (Title~'(HCSS|HeavyBid)') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(2));
+                Validate.AttributeRegex(repo.GoogleChrome.TabsInfo, "Title", new Regex("(HCSS|HeavyBid)"), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            // E.6
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nE.6\r\nWaiting 30s to exist. Associated repository item: 'GoogleChrome.AddressBar'", repo.GoogleChrome.AddressBarInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+                repo.GoogleChrome.AddressBarInfo.WaitForExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            // E.6
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.6\r\nValidating AttributeRegex (Text~'hcss.com') on item 'GoogleChrome.AddressBar'.", repo.GoogleChrome.AddressBarInfo, new RecordItemIndex(4));
+                Validate.AttributeRegex(repo.GoogleChrome.AddressBarInfo, "Text", new Regex("hcss.com"), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            // E.6
+            Report.Log(ReportLevel.Info, "Application", "E.6\r\nClosing application containing item 'GoogleChrome'.", repo.GoogleChrome.SelfInfo, new RecordItemIndex(5));
+            Host.Current.CloseApplication(repo.GoogleChrome.Self, 10000);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

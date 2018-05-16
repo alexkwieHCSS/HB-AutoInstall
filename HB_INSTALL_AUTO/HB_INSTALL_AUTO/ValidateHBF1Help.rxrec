@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="d01cce6a-7dfa-487c-b449-7b043debdbc5"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ValidateHBF1Help
 	</name>

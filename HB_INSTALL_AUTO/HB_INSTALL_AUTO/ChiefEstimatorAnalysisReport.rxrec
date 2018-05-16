@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="115fe8c9-be9d-417a-b4e2-b70028892096"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ChiefEstimatorAnalysisReport
 	</name>

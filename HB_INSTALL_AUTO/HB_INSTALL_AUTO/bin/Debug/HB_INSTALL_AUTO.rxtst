@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="7.1">
+rxversion="8.1">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="001616fb-2832-4d75-bdd8-fe349ad3cc98"
+			name="SQLDriverReadme"
+			ref="da38b228-087f-49f0-8940-a004068cd583"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="0506e5c4-c863-4b3f-b3d7-4c84fabb2f13"
 			name="CloseCHeavyBid"
@@ -50,12 +56,20 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="0c141a40-c6b7-4d3c-8af7-32286510e4a9"
+			name="CheckingC:HBWS">
+			</testcase>
+			<testcase
 			id="0dda31f9-ec44-4125-ae6d-70bd6466216e"
-			name="TestCase3">
+			name="EquipmentReport">
 			</testcase>
 			<testcase
 			id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
-			name="ValidationFileStructure">
+			name="CheckingC:HB">
+			</testcase>
+			<testcase
+			id="0f081727-0208-4631-8600-09b2377b5fea"
+			name="SpreadsheetCalculations">
 			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
@@ -80,6 +94,10 @@ rxversion="7.1">
 			<testcase
 			id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
 			name="Uninstall">
+			</testcase>
+			<testcase
+			id="1927c495-01dd-432c-a7ad-2a7112aa7320"
+			name="ChiefEstimatorAnalysisReport">
 			</testcase>
 			<testmodule
 			id="1a50af55-a79c-4f89-ab73-948ed47956d4"
@@ -109,7 +127,7 @@ rxversion="7.1">
 			</testmodule>
 			<testcase
 			id="1efca4e2-5479-41e9-9583-d9f44daa7e90"
-			name="TestCase4">
+			name="EstimateRecapReport">
 			</testcase>
 			<testcase
 			id="20702414-4550-4201-99a2-20ba74f26d33"
@@ -153,10 +171,20 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="29a5a7af-8e60-444b-8da3-bfd605a45c30"
+			name="TestingFeaturesOutsideHB">
+			</testcase>
 			<testmodule
 			id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
 			name="BiditemStructureReport"
 			ref="0aeabb35-224c-499f-8b38-96588eb45051"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2bad3dae-f99e-4641-81ba-002f57e7e126"
+			name="ChangeShowRibbon"
+			ref="db99fbaa-ee00-4634-a8cf-5e650f8418f6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -169,6 +197,11 @@ rxversion="7.1">
 			id="2d4040b2-e924-46c3-92b5-3479a875c10d"
 			name="RunningHBReports">
 			</smartfoldernode>
+			<testcase
+			datasource="HJExport"
+			id="2ed3c35a-298a-42a3-8a53-973be0b4cbbd"
+			name="ExportToHeavyJob">
+			</testcase>
 			<testmodule
 			id="37a165bb-b5bd-4120-bcee-71fc5c572b24"
 			name="UninstallCrystal"
@@ -207,6 +240,10 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="41c2eb46-5cd1-412b-9e1c-c9ba33890a9c"
+			name="BasicBidProposal">
+			</testcase>
 			<smartfoldernode
 			datasource="WSFilePath"
 			id="47fece17-4ebd-43aa-af07-044dd26a6167"
@@ -218,12 +255,10 @@ rxversion="7.1">
 			ref="e98488ca-ce92-4313-ad9d-c786d4f7ec21"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="49c0a159-96c7-4bd0-ad53-2fa87df7f949"
-			name="ChangeShowRibbon"
-			ref="db99fbaa-ee00-4634-a8cf-5e650f8418f6"
-			type="Recording">
-			</testmodule>
+			<testcase
+			id="4a157fd4-eb6e-4210-b9a1-6130ca6830f2"
+			name="BiditemStructureReport">
+			</testcase>
 			<setup
 			id="4a20da26-f170-4b6a-ac1b-be42940af183"
 			name="setup">
@@ -235,8 +270,8 @@ rxversion="7.1">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="HBVersion"
-					datasourceid="656b9040-9f1a-4629-923d-89f5d61af162"
+					dataname="SystemDescription"
+					datasourceid="fca1d951-c1d7-4d7a-adc6-c66ee90aafe3"
 					variableid="661975a3-4416-4542-b175-b94e52478a5b"
 					variablename="SystemType">
 					</var>
@@ -248,6 +283,10 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="51493804-d062-430e-b149-1ad7943457af"
+			name="PlusPivotReport">
+			</testcase>
 			<testmodule
 			enabled="False"
 			id="51c4fd3b-c5c3-4118-8fd1-199f5ed42fcb"
@@ -267,6 +306,10 @@ rxversion="7.1">
 			ref="d1b3a767-1400-4156-9216-54828a34b1ae"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="570eeeef-0c71-4c4a-a993-59d9bf2188f6"
+			name="CostPriceReport">
+			</testcase>
 			<testmodule
 			id="578f1151-6aa1-40bf-af35-844c98c77a67"
 			name="OpenAddRemovePrograms"
@@ -354,7 +397,8 @@ rxversion="7.1">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
 			</testsuite>
 			<testmodule
 			id="6b7ffee6-5f30-4258-a965-1fb601f48007"
@@ -424,10 +468,6 @@ rxversion="7.1">
 			ref="2fbb5d9e-bf9e-4f07-ba4a-8888cc9e19fe"
 			type="Recording">
 			</testmodule>
-			<teardown
-			id="86b0a53a-a474-4d4d-9a30-75a6e521ae83"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="89386457-4449-4f96-9904-6166dba7be16"
 			name="ReindexHeavyBidExternal"
@@ -440,6 +480,10 @@ rxversion="7.1">
 			ref="9989c876-1438-4146-908f-573b9db14d53"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="8fce3678-c906-49ac-bfaa-21f6530ceaf7"
+			name="ExportToAccounting">
+			</testcase>
 			<testcase
 			id="978ae580-5f4a-41bc-a118-2227f094de3b"
 			name="SuccessfullyRegisterHB">
@@ -462,6 +506,10 @@ rxversion="7.1">
 			ref="ecddafd0-84a6-4c63-b9c9-152cc7264a84"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="a21d3fea-af9a-4132-a0a0-53ee1eaa8777"
+			name="ValidatingFileStructure">
+			</smartfoldernode>
 			<testmodule
 			id="a67bfe6e-ecc7-4b06-b786-35df417e608d"
 			name="OpenHB"
@@ -495,6 +543,12 @@ rxversion="7.1">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ac7c3fd7-3452-4395-9f5c-aadad804e6c8"
+			name="RunSpreadsheetCalculations"
+			ref="8cfa06da-5018-46dd-8d9e-c93f72b24c17"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="b48a9247-54e5-41a5-b7f5-de777ec41306"
 			name="HBInstallFinishConfirmation"
@@ -521,6 +575,26 @@ rxversion="7.1">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="be734f9b-43b4-43c9-9113-ae3ec2b0ac47"
+			name="ExportToHeavyJob"
+			ref="bc585efd-e6ed-48bf-b9bb-bc2021073423"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Filepath"
+					datasourceid="7b8ae919-d16d-4df1-b6fa-d8fa7c83b059"
+					variableid="9cec515b-3cca-48be-892a-dbb23891ec26"
+					variablename="HJExportFilename">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="be8e8ded-0b52-45b0-ac8b-f00bc096184a"
+			name="CloseHB"
+			ref="6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c451ede4-f70a-4f8e-83ce-13e8074c46f1"
 			name="NavigateToCHeavyBid"
@@ -564,7 +638,7 @@ rxversion="7.1">
 			</testmodule>
 			<testcase
 			id="c9e00d3d-76ba-4f82-a303-36a5de8f5307"
-			name="TestCase2">
+			name="CustomReportClassic">
 			</testcase>
 			<testcase
 			datasource="ExistingEstimates"
@@ -575,6 +649,19 @@ rxversion="7.1">
 			id="cd087da2-c568-419d-b47a-3ada4013cac5"
 			name="CostReport">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="cf458559-33bd-4e94-ac04-1ec4c371d279"
+			name="ChangeShowRibbon"
+			ref="db99fbaa-ee00-4634-a8cf-5e650f8418f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cf51cd09-60cc-404e-b4f0-13ed3229d664"
+			name="ImportToHeavyJob"
+			ref="4f00698a-4137-44c1-80ed-910fc20ac23b"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d2d2d55c-290f-4b52-b63c-7442d84521ac"
 			name="VerifyServerVersion"
@@ -590,6 +677,7 @@ rxversion="7.1">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="d365644c-ef21-4c55-a27b-3a48b6735758"
 			name="CloseHB"
 			ref="6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d"
@@ -605,11 +693,18 @@ rxversion="7.1">
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="d9f4cf4c-2a09-4693-b8ca-6892447ecb32"
 			name="TestWrongRegCode"
 			ref="78ae137a-02fe-4c28-ba10-108bf3ab76d5"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RegistrationCode"
+					datasourceid="03e8278c-a345-4947-8003-5d719f67b881"
+					variableid="7371ef27-f2d3-4321-bda2-e53ddec4900b"
+					variablename="RegistrationCode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
@@ -621,6 +716,10 @@ rxversion="7.1">
 			id="dc95cff5-6f66-4355-9ddd-0090a5ab51a8"
 			name="InstallSQL">
 			</testcase>
+			<teardown
+			id="df3a1439-c1cb-4d06-952d-6a40c9fbd285"
+			name="teardown">
+			</teardown>
 			<testcase
 			datarangeactive="True"
 			datasource="InstallType"
@@ -643,6 +742,10 @@ rxversion="7.1">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="e7d946e6-a361-4f69-aff5-11adee16e974"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="HBYearVersion"
@@ -662,9 +765,11 @@ rxversion="7.1">
 			name="CustomReport">
 			</testcase>
 			<testcase
+			datarangeactive="True"
+			datasource="RegistrationSystem"
 			id="e9f8072b-224e-498b-bf2b-064a9232aedf"
-			maxrange="1"
-			minrange="1"
+			maxrange="3"
+			minrange="3"
 			name="TestRegistrationCodes">
 			</testcase>
 			<testmodule
@@ -675,7 +780,7 @@ rxversion="7.1">
 			</testmodule>
 			<testcase
 			id="f0b1e1f3-0e2a-4f4a-837a-0448ab9f65ee"
-			name="TestCase5">
+			name="EstimateRecapReportClassic">
 			</testcase>
 			<testmodule
 			enabled="False"
@@ -686,6 +791,12 @@ rxversion="7.1">
 			</testmodule>
 			<testmodule
 			enabled="False"
+			id="f60627f1-8f23-4fbb-9443-8231b27f8a13"
+			name="CloseHB"
+			ref="6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f730f103-3a93-4882-9e0f-e1ac24b850a0"
 			name="CheckBitImage"
 			ref="62b28ca8-35c6-4831-8ecd-3c62f1608eec"
@@ -726,7 +837,6 @@ rxversion="7.1">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
 			name="ExportToAccounting"
 			ref="199414ad-adf1-4143-a78c-006c091b5924"
@@ -882,6 +992,14 @@ rxversion="7.1">
 								name="CloseHB">
 								</testmodule>
 							</testcase>
+							<teardown
+							id="df3a1439-c1cb-4d06-952d-6a40c9fbd285"
+							name="teardown">
+								<testmodule
+								id="be8e8ded-0b52-45b0-ac8b-f00bc096184a"
+								name="CloseHB">
+								</testmodule>
+							</teardown>
 						</smartfoldernode>
 						<smartfoldernode
 						id="7b0063fb-f54b-4e79-aeed-1604101fa25e"
@@ -984,50 +1102,6 @@ rxversion="7.1">
 									id="3bc500e8-f34b-4b92-b0f6-ac8a10974e07"
 									name="CustomReport">
 									</testmodule>
-									<testmodule
-									id="251e416f-54d2-4500-a915-2d68435fbab3"
-									name="CostReport">
-									</testmodule>
-									<testmodule
-									id="09abe5c0-261a-44ef-a773-b7d814b662fb"
-									name="CustomReportClassic">
-									</testmodule>
-									<testmodule
-									id="71d8e602-f14d-4955-809f-07aa82298270"
-									name="EquipmentReport">
-									</testmodule>
-									<testmodule
-									id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
-									name="EstimateRecapReport">
-									</testmodule>
-									<testmodule
-									id="52300948-5186-40cb-9605-211fd83534fd"
-									name="EstimateRecapReportClassic">
-									</testmodule>
-									<testmodule
-									id="abc82c4f-0a95-491b-9003-1909ac616730"
-									name="ChiefEstimatorAnalysisReport">
-									</testmodule>
-									<testmodule
-									id="1a50af55-a79c-4f89-ab73-948ed47956d4"
-									name="CostPriceReport">
-									</testmodule>
-									<testmodule
-									id="1697c281-1aa0-40eb-a0f9-6d5066095766"
-									name="BasicBidProposal">
-									</testmodule>
-									<testmodule
-									id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
-									name="BiditemStructureReport">
-									</testmodule>
-									<testmodule
-									id="71199b3e-8a35-43b6-8683-931b47a1002b"
-									name="PlusPivotReportDesigner">
-									</testmodule>
-									<testmodule
-									id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
-									name="ExportToAccounting">
-									</testmodule>
 								</testcase>
 								<testcase
 								id="662390f2-aaac-4cef-9888-bee29daf53c0"
@@ -1040,65 +1114,177 @@ rxversion="7.1">
 								<testcase
 								id="cd087da2-c568-419d-b47a-3ada4013cac5"
 								name="CostReport">
+									<testmodule
+									id="251e416f-54d2-4500-a915-2d68435fbab3"
+									name="CostReport">
+									</testmodule>
 								</testcase>
 								<testcase
 								id="c9e00d3d-76ba-4f82-a303-36a5de8f5307"
-								name="TestCase2">
+								name="CustomReportClassic">
+									<testmodule
+									id="09abe5c0-261a-44ef-a773-b7d814b662fb"
+									name="CustomReportClassic">
+									</testmodule>
 								</testcase>
 								<testcase
 								id="0dda31f9-ec44-4125-ae6d-70bd6466216e"
-								name="TestCase3">
+								name="EquipmentReport">
+									<testmodule
+									id="71d8e602-f14d-4955-809f-07aa82298270"
+									name="EquipmentReport">
+									</testmodule>
 								</testcase>
 								<testcase
 								id="1efca4e2-5479-41e9-9583-d9f44daa7e90"
-								name="TestCase4">
+								name="EstimateRecapReport">
+									<testmodule
+									id="dbf36a71-3894-45d1-97e3-7ace5b57ed44"
+									name="EstimateRecapReport">
+									</testmodule>
 								</testcase>
 								<testcase
 								id="f0b1e1f3-0e2a-4f4a-837a-0448ab9f65ee"
-								name="TestCase5">
+								name="EstimateRecapReportClassic">
+									<testmodule
+									id="52300948-5186-40cb-9605-211fd83534fd"
+									name="EstimateRecapReportClassic">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="1927c495-01dd-432c-a7ad-2a7112aa7320"
+								name="ChiefEstimatorAnalysisReport">
+									<testmodule
+									id="abc82c4f-0a95-491b-9003-1909ac616730"
+									name="ChiefEstimatorAnalysisReport">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="570eeeef-0c71-4c4a-a993-59d9bf2188f6"
+								name="CostPriceReport">
+									<testmodule
+									id="1a50af55-a79c-4f89-ab73-948ed47956d4"
+									name="CostPriceReport">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="41c2eb46-5cd1-412b-9e1c-c9ba33890a9c"
+								name="BasicBidProposal">
+									<testmodule
+									id="1697c281-1aa0-40eb-a0f9-6d5066095766"
+									name="BasicBidProposal">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="4a157fd4-eb6e-4210-b9a1-6130ca6830f2"
+								name="BiditemStructureReport">
+									<testmodule
+									id="29f544d0-10b3-40de-a3f0-0e800eb7f5b9"
+									name="BiditemStructureReport">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="51493804-d062-430e-b149-1ad7943457af"
+								name="PlusPivotReport">
+									<testmodule
+									id="71199b3e-8a35-43b6-8683-931b47a1002b"
+									name="PlusPivotReportDesigner">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="8fce3678-c906-49ac-bfaa-21f6530ceaf7"
+								name="ExportToAccounting">
+									<testmodule
+									id="fe5e00c2-4706-4b6d-b10c-815bbd325d4b"
+									name="ExportToAccounting">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="2ed3c35a-298a-42a3-8a53-973be0b4cbbd"
+								name="ExportToHeavyJob">
+									<testmodule
+									id="be734f9b-43b4-43c9-9113-ae3ec2b0ac47"
+									name="ExportToHeavyJob">
+									</testmodule>
+									<testmodule
+									id="cf51cd09-60cc-404e-b4f0-13ed3229d664"
+									name="ImportToHeavyJob">
+									</testmodule>
 								</testcase>
 							</smartfoldernode>
+							<testcase
+							id="0f081727-0208-4631-8600-09b2377b5fea"
+							name="SpreadsheetCalculations">
+								<testmodule
+								id="ac7c3fd7-3452-4395-9f5c-aadad804e6c8"
+								name="RunSpreadsheetCalculations">
+								</testmodule>
+							</testcase>
 							<testcase
 							id="72fff5dd-695c-4a20-b1c8-a8ae65ba1da5"
 							name="CloseHB">
 								<testmodule
-								id="aad71a13-9257-48af-a937-5cb49b130197"
+								id="cf458559-33bd-4e94-ac04-1ec4c371d279"
+								name="ChangeShowRibbon">
+								</testmodule>
+								<testmodule
+								id="f60627f1-8f23-4fbb-9443-8231b27f8a13"
 								name="CloseHB">
 								</testmodule>
 							</testcase>
 							<teardown
-							id="86b0a53a-a474-4d4d-9a30-75a6e521ae83"
+							id="e7d946e6-a361-4f69-aff5-11adee16e974"
 							name="teardown">
 								<testmodule
-								id="49c0a159-96c7-4bd0-ad53-2fa87df7f949"
+								id="2bad3dae-f99e-4641-81ba-002f57e7e126"
 								name="ChangeShowRibbon">
+								</testmodule>
+								<testmodule
+								id="aad71a13-9257-48af-a937-5cb49b130197"
+								name="CloseHB">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
-						<testcase
-						id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
-						name="ValidationFileStructure">
-							<testmodule
-							id="c451ede4-f70a-4f8e-83ce-13e8074c46f1"
-							name="NavigateToCHeavyBid">
-							</testmodule>
-							<testmodule
-							id="0506e5c4-c863-4b3f-b3d7-4c84fabb2f13"
-							name="CloseCHeavyBid">
-							</testmodule>
-							<testmodule
-							id="2bb625ef-c42a-427e-a11e-66e014ec9fee"
-							name="NavigateToCHeavyBidWS">
-							</testmodule>
-							<testmodule
-							id="56e14ee4-9151-46de-80f0-88ff9faab518"
-							name="CloseCHeavyBidWS">
-							</testmodule>
-							<testmodule
-							id="89386457-4449-4f96-9904-6166dba7be16"
-							name="ReindexHeavyBidExternal">
-							</testmodule>
-						</testcase>
+						<smartfoldernode
+						id="a21d3fea-af9a-4132-a0a0-53ee1eaa8777"
+						name="ValidatingFileStructure">
+							<testcase
+							id="0e935d2c-fab5-454a-9a26-7e9e0593d57c"
+							name="CheckingC:HB">
+								<testmodule
+								id="c451ede4-f70a-4f8e-83ce-13e8074c46f1"
+								name="NavigateToCHeavyBid">
+								</testmodule>
+								<testmodule
+								id="0506e5c4-c863-4b3f-b3d7-4c84fabb2f13"
+								name="CloseCHeavyBid">
+								</testmodule>
+								<testmodule
+								id="001616fb-2832-4d75-bdd8-fe349ad3cc98"
+								name="SQLDriverReadme">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="0c141a40-c6b7-4d3c-8af7-32286510e4a9"
+							name="CheckingC:HBWS">
+								<testmodule
+								id="2bb625ef-c42a-427e-a11e-66e014ec9fee"
+								name="NavigateToCHeavyBidWS">
+								</testmodule>
+								<testmodule
+								id="56e14ee4-9151-46de-80f0-88ff9faab518"
+								name="CloseCHeavyBidWS">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="29a5a7af-8e60-444b-8da3-bfd605a45c30"
+							name="TestingFeaturesOutsideHB">
+								<testmodule
+								id="89386457-4449-4f96-9904-6166dba7be16"
+								name="ReindexHeavyBidExternal">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 						<testcase
 						id="1865926c-7714-4bc2-9ec2-b5e7c36a74f1"
 						name="Uninstall">
@@ -1292,6 +1478,49 @@ rxversion="7.1">
 			</table>
 		</DataSource>
 		<DataSource
+		id="7b8ae919-d16d-4df1-b6fa-d8fa7c83b059"
+		lastknownrowcount="1"
+		name="HJExport"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+				<column>
+					Filepath
+				</column>
+				<column>
+					EstimateName
+				</column>
+				<column>
+					Type
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<table>
+				<tr>
+					<th>
+						Filepath
+					</th>
+					<th>
+						EstimateName
+					</th>
+					<th>
+						Type
+					</th>
+				</tr>
+				<tr>
+					<td>
+						C:\HeavyBidWS\HBSave\HeavyJobExport.xml
+					</td>
+					<td>
+						1-Bridge
+					</td>
+					<td>
+						Test Export to HJ
+					</td>
+				</tr>
+			</table>
+		</DataSource>
+		<DataSource
 		id="b5c1ba81-ec80-48eb-809c-fcf9d4a52df5"
 		lastknownrowcount="3"
 		name="InstallType"
@@ -1328,12 +1557,15 @@ rxversion="7.1">
 		</DataSource>
 		<DataSource
 		id="03e8278c-a345-4947-8003-5d719f67b881"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="RegistrationSystem"
 		type="Ranorex.Core.Data.SimpleDataConnector">
 			<lastknowncolumns>
 				<column>
 					SystemType
+				</column>
+				<column>
+					RegistrationCode
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -1343,20 +1575,37 @@ rxversion="7.1">
 					<th>
 						SystemType
 					</th>
+					<th>
+						RegistrationCode
+					</th>
 				</tr>
 				<tr>
 					<td>
 						Basic Multiuser
+					</td>
+					<td>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						Advanced Multiuser
 					</td>
+					<td>
+					</td>
 				</tr>
 				<tr>
 					<td>
 						Comprehensive Multiuser
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Basic Standalone
+					</td>
+					<td>
+						28D7C9F7-0F26-4B09-8B40-16C84E43681B
 					</td>
 				</tr>
 			</table>
@@ -1441,6 +1690,24 @@ rxversion="7.1">
 	default="AdvanceMU">
 		<testconfiguration
 		name="AdvanceMU">
+			<testcontainer
+			id="13676e71-8764-4022-9cd8-1afa2e2b00b5">
+			</testcontainer>
+			<testcontainer
+			id="7622fd9b-f5c8-4b57-b031-9eeae2c14f6f">
+			</testcontainer>
+			<testcontainer
+			id="978ae580-5f4a-41bc-a118-2227f094de3b">
+			</testcontainer>
+			<testcontainer
+			id="d76b351a-e0db-4a50-b217-cbd5aed29063">
+			</testcontainer>
+			<testcontainer
+			id="e9b13a9d-4839-4122-b144-45de3a900e83">
+			</testcontainer>
+			<testcontainer
+			id="e9f8072b-224e-498b-bf2b-064a9232aedf">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
@@ -1456,5 +1723,8 @@ rxversion="7.1">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

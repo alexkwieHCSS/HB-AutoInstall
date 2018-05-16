@@ -80,7 +80,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -92,7 +92,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -102,35 +102,35 @@ namespace HB_INSTALL_AUTO
             Init();
 
             // B.3
-            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
-            Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
+            Report.Log(ReportLevel.Info, "Validation", "B.3\r\nValidating AttributeRegex (Text~'[HeavyBid][Setup]') on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(0));
+            Validate.AttributeRegex(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Setup]"));
             Delay.Milliseconds(0);
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidServerSetup.Titlebar'.", repo.HeavyBidServerSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.HeavyBidServerSetup.TitlebarInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.StandaloneInstallType'.", repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegex (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.StandaloneInstallType'.", repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, new RecordItemIndex(2));
+                Validate.AttributeRegex(repo.HeavyBidServerSetup.InstallTypes.StandaloneInstallTypeInfo, "Enabled", new Regex(""), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInT'.", repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, new RecordItemIndex(3));
-                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegex (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInT'.", repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, new RecordItemIndex(3));
+                Validate.AttributeRegex(repo.HeavyBidServerSetup.InstallTypes.MultiUserMultipleUsersCanWorkInTInfo, "Enabled", new Regex(""), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // B.5
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegEx (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.TrainingInstallType'.", repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, new RecordItemIndex(4));
-                Validate.Attribute(repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, "Enabled", new Regex(""), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.5\r\nValidating AttributeRegex (Enabled~'') on item 'HeavyBidServerSetup.InstallTypes.TrainingInstallType'.", repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, new RecordItemIndex(4));
+                Validate.AttributeRegex(repo.HeavyBidServerSetup.InstallTypes.TrainingInstallTypeInfo, "Enabled", new Regex(""), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             

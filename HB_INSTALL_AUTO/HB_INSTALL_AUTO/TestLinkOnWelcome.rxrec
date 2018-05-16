@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="b2ddd222-db92-4814-8e24-a6e65764eaa3"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		TestLinkOnWelcome
 	</name>

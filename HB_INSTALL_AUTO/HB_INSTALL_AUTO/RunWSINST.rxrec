@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="ecddafd0-84a6-4c63-b9c9-152cc7264a84"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		RunWSINST
 	</name>

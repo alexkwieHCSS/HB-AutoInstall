@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="6445eca2-afc8-4ce0-9d5b-fcb6946c23e7"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		NavigateToCHeavyBidWS
 	</name>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="52a2fd827c7ecb0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/15/2018 2:24:03 PM"
+		timestampiso="2018-05-15T19:24:03"
+		endtime="5/15/2018 2:24:07 PM"
+		timeoutfactor="1"
+		module="SQLDriverReadme">
+		<detail>
+			SQLDriverReadme
+		</detail>
+		<errormessage>
+			Objects are not equal (actual='0', expected='6').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.302"
+			timeRelativeToTestModuleStartTime="00:03.303"
+			timeWallClock="14:24:07"
+			time="00:03.302"
+			level="Info"
+			category="User"
+			errimg=".\SQLDrive_38831e06_cff0184b_trace.jpg"
+			errthumb=".\SQLDrive_38831e06_cff0184b_trace_thumb.jpg">
+			<message>
+				Check if '1' file(s) with pattern 'SQL Drivers ReadMe.txt' exist in the directory 'C:\HeavyBid\UTILITY\'. Search time 0 seconds.
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="85"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.331"
+			timeRelativeToTestModuleStartTime="00:03.332"
+			timeWallClock="14:24:07"
+			time="00:03.331"
+			level="Success"
+			category="Validation"
+			errimg=".\SQLDrive_38831e06_cff0184b_trace.jpg"
+			errthumb=".\SQLDrive_38831e06_cff0184b_trace_thumb.jpg">
+			<message>
+				Objects are equal (actual='1', expected='1').
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="86"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.346"
+			timeRelativeToTestModuleStartTime="00:03.346"
+			timeWallClock="14:24:07"
+			time="00:03.346"
+			level="Info"
+			category="User"
+			errimg=".\SQLDrive_38831e06_cff0184b_trace.jpg"
+			errthumb=".\SQLDrive_38831e06_cff0184b_trace_thumb.jpg">
+			<message>
+				Check if '6' file(s) with pattern '.tlx' exist in the directory 'C:\HeavyJob\Bin'. Search time 0 seconds.
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="85"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.352"
+			timeRelativeToTestModuleStartTime="00:03.352"
+			timeWallClock="14:24:07"
+			time="00:03.352"
+			level="Failure"
+			category="Validation"
+			errimg=".\SQLDrive_38831e06_cff0184b_trace.jpg"
+			errthumb=".\SQLDrive_38831e06_cff0184b_trace_thumb.jpg">
+			<message>
+				Objects are not equal (actual='0', expected='6').
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="86"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.381"
+			timeRelativeToTestModuleStartTime="00:03.381"
+			timeWallClock="14:24:07"
+			time="00:03.381"
+			level="Error"
+			category="Module"
+			errimg=".\SQLDrive_38831e06_cff0184b_trace.jpg"
+			errthumb=".\SQLDrive_38831e06_cff0184b_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Objects are not equal (actual='0', expected='6').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   at Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Options options)
+   at Ranorex.Validate.AreEqual(Object actual, Object expected, String message, Boolean exceptionOnFail)
+   at Ranorex.Validate.AreEqual(Object actual, Object expected)
+   at Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist(String path, String pattern, Int32 expectedCount, Int32 timeout) in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs:line 86
+   at HB_INSTALL_AUTO.SQLDriverReadme.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\SQLDriverReadme.cs:line 95
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="86"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

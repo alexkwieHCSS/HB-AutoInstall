@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="6cca3ba7-1b96-4f77-b89a-fddfeaed7c5d"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CloseHB
 	</name>

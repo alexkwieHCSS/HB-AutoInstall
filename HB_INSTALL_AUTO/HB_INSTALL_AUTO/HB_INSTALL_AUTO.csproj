@@ -8,9 +8,9 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>HB_INSTALL_AUTO</RootNamespace>
     <AssemblyName>HB_INSTALL_AUTO</AssemblyName>
-    <RanorexVersion>7.1</RanorexVersion>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <RanorexVersion>8.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>f9ee72cd-2697-45a6-8b95-847c016bece4</projectdefaultrepository>
     <StartAction>Project</StartAction>
   </PropertyGroup>
@@ -34,24 +34,66 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ranorex.Core" />
-    <Reference Include="Ranorex.Plugin.Cef" />
-    <Reference Include="Ranorex.Plugin.ChromeWeb" />
-    <Reference Include="Ranorex.Plugin.Flex" />
-    <Reference Include="Ranorex.Plugin.Java" />
-    <Reference Include="Ranorex.Plugin.Mobile" />
-    <Reference Include="Ranorex.Plugin.MozillaWeb" />
-    <Reference Include="Ranorex.Plugin.Msaa" />
-    <Reference Include="Ranorex.Plugin.Office" />
-    <Reference Include="Ranorex.Plugin.Qt" />
-    <Reference Include="Ranorex.Plugin.RawText" />
-    <Reference Include="Ranorex.Plugin.Sap" />
-    <Reference Include="Ranorex.Plugin.Uia" />
-    <Reference Include="Ranorex.Plugin.Web" />
-    <Reference Include="Ranorex.Plugin.WebDriver" />
-    <Reference Include="Ranorex.Plugin.Win32" />
-    <Reference Include="Ranorex.Plugin.WinForms" />
-    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -371,6 +413,18 @@
       <UserCode>true</UserCode>
       <id>2c27d6b0-2df6-4b20-bab6-59747f4a5e63</id>
     </Compile>
+    <Compile Include="ExportToHeavyJob.cs">
+      <BoundTo>e76658fb-7306-4765-a3b3-5c9a0db514a0</BoundTo>
+      <DependentUpon>ExportToHeavyJob.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>28959a22-64dc-42da-9be7-cde3212931fa</id>
+    </Compile>
+    <Compile Include="ExportToHeavyJob.UserCode.cs">
+      <BoundTo>e76658fb-7306-4765-a3b3-5c9a0db514a0</BoundTo>
+      <DependentUpon>ExportToHeavyJob.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce55cb69-6426-4326-994e-4d282156f265</id>
+    </Compile>
     <Compile Include="HBInstallFinishConfirmation.cs">
       <BoundTo>87b42290-f6c1-47ba-838e-99137fb0065d</BoundTo>
       <DependentUpon>HBInstallFinishConfirmation.rxrec</DependentUpon>
@@ -424,6 +478,18 @@
       <DependentUpon>ConfirmHBInstallFinish.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a927e21d-baac-422a-bebf-145b72419dca</id>
+    </Compile>
+    <Compile Include="ImportToHeavyJob.cs">
+      <BoundTo>ed34c6dd-dba9-4453-be41-e41ca823c13c</BoundTo>
+      <DependentUpon>ImportToHeavyJob.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23d0b676-df76-418e-a302-d813922b96f8</id>
+    </Compile>
+    <Compile Include="ImportToHeavyJob.UserCode.cs">
+      <BoundTo>ed34c6dd-dba9-4453-be41-e41ca823c13c</BoundTo>
+      <DependentUpon>ImportToHeavyJob.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>093d3b89-0269-40ce-9d6f-a50c6880063d</id>
     </Compile>
     <Compile Include="MakeNewEstimate.cs">
       <BoundTo>5676e1f8-6f52-454a-b451-b974076142d6</BoundTo>
@@ -605,6 +671,18 @@
       <UserCode>true</UserCode>
       <id>8628805f-d81c-440e-a727-dd63179f3b95</id>
     </Compile>
+    <Compile Include="RunSpreadsheetCalculations.cs">
+      <BoundTo>b2a1e09f-8b12-44b9-bdf4-181696cbb416</BoundTo>
+      <DependentUpon>RunSpreadsheetCalculations.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cb19b00-35c7-4099-a4fd-a39785ea70e3</id>
+    </Compile>
+    <Compile Include="RunSpreadsheetCalculations.UserCode.cs">
+      <BoundTo>b2a1e09f-8b12-44b9-bdf4-181696cbb416</BoundTo>
+      <DependentUpon>RunSpreadsheetCalculations.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a021ffaf-a8d8-4d08-9a54-49fa010de550</id>
+    </Compile>
     <Compile Include="RunWSINST.cs">
       <BoundTo>dc233b8b-9b97-4da4-8918-d5856396e67a</BoundTo>
       <DependentUpon>RunWSINST.rxrec</DependentUpon>
@@ -703,6 +781,18 @@
       <DependentUpon>OpenAddRemovePrograms.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1fe9c90d-6d06-44c6-a3bf-690593422feb</id>
+    </Compile>
+    <Compile Include="SQLDriverReadme.cs">
+      <BoundTo>086b64e0-acb7-45f3-b295-bfbee70638f3</BoundTo>
+      <DependentUpon>SQLDriverReadme.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>911f8b37-21f3-47ac-80b8-cea9be188cc8</id>
+    </Compile>
+    <Compile Include="SQLDriverReadme.UserCode.cs">
+      <BoundTo>086b64e0-acb7-45f3-b295-bfbee70638f3</BoundTo>
+      <DependentUpon>SQLDriverReadme.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fce82c1-7df4-4018-b41e-914d79fb0432</id>
     </Compile>
     <Compile Include="TestLinkOnWelcome.cs">
       <BoundTo>623b52f0-ea59-494a-a88c-420349ca9a40</BoundTo>
@@ -978,6 +1068,11 @@
       <id>74a833ea-058f-4a36-9a11-50b4b43abfa4</id>
       <recordtableid>199414ad-adf1-4143-a78c-006c091b5924</recordtableid>
     </None>
+    <None Include="ExportToHeavyJob.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>e76658fb-7306-4765-a3b3-5c9a0db514a0</id>
+      <recordtableid>bc585efd-e6ed-48bf-b9bb-bc2021073423</recordtableid>
+    </None>
     <None Include="HBInstallFinishConfirmation.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>87b42290-f6c1-47ba-838e-99137fb0065d</id>
@@ -1008,6 +1103,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>85f61cfa-810e-42c6-aa29-e5834fdc10ca</id>
       <recordtableid>b3a23dda-b9ca-485f-965b-05d9979d93ac</recordtableid>
+    </None>
+    <None Include="ImportToHeavyJob.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>ed34c6dd-dba9-4453-be41-e41ca823c13c</id>
+      <recordtableid>4f00698a-4137-44c1-80ed-910fc20ac23b</recordtableid>
     </None>
     <None Include="MakeNewEstimate.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -1084,6 +1184,11 @@
       <id>265bd766-88c0-4e40-a960-82f9ad8bf405</id>
       <recordtableid>8a92616a-86ba-4fc0-855c-6620b301238f</recordtableid>
     </None>
+    <None Include="RunSpreadsheetCalculations.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>b2a1e09f-8b12-44b9-bdf4-181696cbb416</id>
+      <recordtableid>8cfa06da-5018-46dd-8d9e-c93f72b24c17</recordtableid>
+    </None>
     <None Include="RunWSINST.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>dc233b8b-9b97-4da4-8918-d5856396e67a</id>
@@ -1123,6 +1228,11 @@
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
       <id>19ea4580-5b59-4df4-99cc-02a8237c1628</id>
       <recordtableid>52c57138-faa8-4de3-b51b-a991a395efda</recordtableid>
+    </None>
+    <None Include="SQLDriverReadme.rxrec">
+      <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
+      <id>086b64e0-acb7-45f3-b295-bfbee70638f3</id>
+      <recordtableid>da38b228-087f-49f0-8940-a004068cd583</recordtableid>
     </None>
     <None Include="TestLinkOnWelcome.rxrec">
       <BoundTo>f9ee72cd-2697-45a6-8b95-847c016bece4</BoundTo>
@@ -1194,6 +1304,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>65f560b7-8a02-4e3c-bb13-b0aa306c9773</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{50D45B05-EE85-422B-98D6-3041DAC4854C}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

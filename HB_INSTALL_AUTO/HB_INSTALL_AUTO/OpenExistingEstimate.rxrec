@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="8121c69b-5d8f-4a0e-b6f4-0c2db4649a2a"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		OpenExistingEstimate
 	</name>

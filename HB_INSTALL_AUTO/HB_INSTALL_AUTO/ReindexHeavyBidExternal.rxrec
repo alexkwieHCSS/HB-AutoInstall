@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="79760d42-1908-4bfb-a9ea-2af85fc59f6b"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ReindexHeavyBidExternal
 	</name>

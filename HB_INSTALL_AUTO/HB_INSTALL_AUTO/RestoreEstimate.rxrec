@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="96d67d1e-50eb-4f1d-95a2-6513f38e016c"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		RestoreEstimate
 	</name>

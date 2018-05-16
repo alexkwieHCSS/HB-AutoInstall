@@ -1,7 +1,7 @@
 ﻿<repository
 id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 name="HB_INSTALL_AUTORepository"
-rxversion="7.1">
+rxversion="8.1">
 	<codegen
 	classname="HB_INSTALL_AUTORepository"
 	namespace="HB_INSTALL_AUTO">
@@ -152,25 +152,72 @@ rxversion="7.1">
 					<item
 					capname="button"
 					id="b5b86fba-138a-4e29-ae0c-58abbcd0bf0a"
-					name="ButtonExportToAccounting"
+					name="ExportToAccounting"
+					refimgid="4041a456-ac35-47f5-b9e5-3c7b4b1cf673"
 					searchtimeout="30000ms">
 						/form[@title~'HB']/element[@class='DFMDIClient']/?/?//button[@text~'Export to Accounting']
 					</item>
 					<item
 					capname="button"
 					id="2db6a250-cf4f-4383-bacf-321ac6b57879"
-					name="ButtonExport"
+					name="ExportButton"
 					searchtimeout="30000ms">
 						/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/?/element[@class='DFbutton']/?/?/button[@accessiblename='Export']
 					</item>
 					<item
 					capname="button"
 					id="5daa53c6-434e-4668-a0f7-e362ad6c061e"
-					name="ButtonOK"
+					name="OK"
 					refimgid="67e8c7b3-2fff-4d24-b2f5-24c697e2cfbe"
 					searchtimeout="30000ms">
 						/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/?/button[@text='OK']
 					</item>
+					<item
+					capname="button"
+					id="7240d090-e159-402d-8559-add9d5617a4a"
+					name="ExportToHeavyJob"
+					searchtimeout="30000ms">
+						/form[@title~'HB']/element[@class='DFMDIClient']/?/?//button[@text~'Export to HeavyJob']
+					</item>
+					<item
+					capname="button"
+					id="d4d95777-b850-4453-887c-f30e3ab9948e"
+					name="ExpandAllTreeviewButton"
+					searchtimeout="30000ms">
+						/form[@title~'HB']/element[@class='DFMDIClient']/form[@controlid='512']/element[@controlid='3379']/?/?/button
+					</item>
+					<item
+					capname="unknown"
+					id="f0e4f1c2-2e54-4411-9701-e54b7dc90e5d"
+					name="SpreadsheetCalculationButton"
+					searchtimeout="30000ms">
+						/form[@title~'HB']/element[@class='DFMDIClient']/form[@controlid='512']/element[@controlid='3837']
+					</item>
+				</folder>
+				<item
+				capname="unknown"
+				id="1b300847-611d-4536-a482-20d67adc4032"
+				name="FilenameTextboxExportHJ"
+				searchtimeout="30000ms">
+					/form[@title~'HB']/element[@class='DFMDIClient']/form[@controlid='513']//element[@class='DFform'][1]/element[@class='DFentry']
+				</item>
+				<folder
+				capname="tree"
+				id="347e3a2a-4349-4d25-a2eb-4bf49817ce92"
+				isrooted="True"
+				name="TreeViewTree"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="treeitem"
+					id="18beab79-b869-4bc6-ba7a-7df4060cbb30"
+					name="FirstAvailableBiditem"
+					searchtimeout="30000ms">
+						/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree/treeitem/treeitem/treeitem
+					</item>
+					<basepath>
+						/form[@title~'HB']/element[@class='DFMDIClient']/?/?/?/tree
+					</basepath>
 				</folder>
 				<basepath>
 					/form[@title~'HB']/element[@class='DFMDIClient']
@@ -380,6 +427,14 @@ rxversion="7.1">
 				isrooted="False"
 				name="Exchange"
 				searchtimeout="0ms">
+					<item
+					capname="button"
+					id="8182ecf2-24f7-4be4-ab79-02bf628a7fb4"
+					name="HJAndAccountingExport"
+					refimgid="0893ab3c-a13f-4370-9350-fc0d72b2315e"
+					searchtimeout="30000ms">
+						/form[@title~'HB']/?/?/toolbar/button[@text~'Accounting' and @text!~'Classic']
+					</item>
 				</folder>
 				<folder
 				capname="unknown"
@@ -778,7 +833,7 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="Check"
 			refimgid="3002fc3d-1bc6-41c6-a57c-9b88d2a77b91"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Registration]']//button[@text='Check']
+				/form[@title~'HeavyBid Registration']//button[@text='Check']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -787,7 +842,14 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="Submit"
 			refimgid="9dd2353c-5d0c-4446-b9a2-7ed4d7742a54"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Registration]']//button[@text='Submit']
+				/form[@title~'HeavyBid Registration']//button[@text='Submit']
+			</item>
+			<item
+			capname="button"
+			id="4ac9b7e8-6c77-4315-b802-e5af5353fef9"
+			name="OKButton"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid Registration']/button[@text~'OK']
 			</item>
 			<item
 			addcaps="unknown,nativewindow"
@@ -797,7 +859,7 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="RegistrationEntry"
 			refimgid="899a3c1d-f573-401a-8748-935d33afa86c"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Registration]']/element/element[@class='DFentry']
+				/form[@title~'HeavyBid Registration']/element/element[@class='DFentry']
 			</item>
 			<item
 			capname="unknown"
@@ -805,7 +867,7 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="LinkRegistrationCode"
 			refimgid="cb7a6aa5-aecb-4600-8e6b-f37c03d56f63"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Registration]']/element[@windowtext~'Click']
+				/form[@title~'HeavyBid Registration']/element[@windowtext~'Click']
 			</item>
 			<item
 			capname="unknown"
@@ -814,10 +876,24 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="TextboxSystemDescription"
 			refimgid="d56be216-aa34-436c-806a-12baeec284e7"
 			searchtimeout="30000ms">
-				/form[@title~'[HeavyBid][Registration]']/element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']
+				/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']
+			</item>
+			<item
+			capname="text"
+			id="12627046-15d3-4506-aa01-95d90e13b06a"
+			name="WrongRegistrationCodeTextbox"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid Registration']/element[@class='DFtextbox'][1]/text
+			</item>
+			<item
+			capname="text"
+			id="9487ded3-c13f-4cb6-bfa0-bebdea1d40e7"
+			name="WrongRegistrationCodePopupTextbox"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid Registration']/text[@accessiblerole='StaticText']
 			</item>
 			<basepath>
-				/form[@title~'[HeavyBid][Registration]']
+				/form[@title~'HeavyBid Registration']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -1453,6 +1529,31 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 						</basepath>
 					</appfolder>
 				</folder>
+				<folder
+				capname="unknown"
+				id="ecf8a343-5e2a-4abb-8f64-2e74379f5b9c"
+				isrooted="False"
+				name="OpenEstimateRelated"
+				searchtimeout="0ms">
+					<appfolder
+					capname="form"
+					id="370927f9-70b7-4337-abfe-9df4b629926f"
+					isrooted="True"
+					name="SelectSpreadsheet"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="treeitem"
+						id="3554463e-4846-43e5-9df4-9a4e102c4bb4"
+						name="FirstAvailableCalculations"
+						searchtimeout="30000ms">
+							/form[@title~'Spreadsheet']/?/?//tree/?/?/treeitem/treeitem
+						</item>
+						<basepath>
+							/form[@title~'Spreadsheet']
+						</basepath>
+					</appfolder>
+				</folder>
 			</folder>
 			<folder
 			capname="unknown"
@@ -1570,7 +1671,7 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 					name="BitmapImage"
 					refimgid="95fbfe6a-b233-4ca1-9a88-1253c4d2eeb3"
 					searchtimeout="30000ms">
-						/form[@title~'Welcome' and @title~'HeavyBid']/element[@controlid='2243']
+						/form[@title~'Welcome' and @title~'HeavyBid']/element[@class='cGDIImageContainer']
 					</item>
 					<item
 					capname="unknown"
@@ -1747,6 +1848,63 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 					</appfolder>
 				</folder>
 			</folder>
+			<folder
+			capname="unknown"
+			id="89bea340-4546-419f-a0a2-65935a53a00c"
+			isrooted="False"
+			name="FromExchangeButtons"
+			searchtimeout="0ms">
+				<appfolder
+				capname="form"
+				id="84c2bb63-d760-46e2-8be0-fea130b2ad49"
+				isrooted="True"
+				name="ExportToHeavyJob"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="button"
+					id="281d6f1d-4cf4-48a4-8d5b-a581f9dadee7"
+					name="OKButton"
+					searchtimeout="30000ms">
+						/form[@title~'Export to HeavyJob']/button[@text='OK']
+					</item>
+					<item
+					capname="text"
+					id="8b7a3a51-27c2-462c-b116-e65eaddbb4ee"
+					name="CompleteConfirmationText"
+					searchtimeout="30000ms">
+						/form[@title~'Export to HeavyJob']/text[@text~'(C|c)omplete']
+					</item>
+					<basepath>
+						/form[@title~'Export to HeavyJob']
+					</basepath>
+				</appfolder>
+				<appfolder
+				capname="form"
+				id="073e1eb9-07dc-4f64-8d2d-64189feec399"
+				isrooted="True"
+				name="ExportComplete"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="button"
+					id="cbe02182-7d09-4d45-93ba-19aeffeddb07"
+					name="OKButton"
+					searchtimeout="30000ms">
+						/form[@title='Export Complete']/button[@text='OK']
+					</item>
+					<item
+					capname="text"
+					id="50b103c9-08b9-4522-b303-3303f1ecf881"
+					name="CompleteConfirmationText"
+					searchtimeout="30000ms">
+						/form[@title='Export Complete']/text[@text~'(C|c)omplete']
+					</item>
+					<basepath>
+						/form[@title='Export Complete']
+					</basepath>
+				</appfolder>
+			</folder>
 		</folder>
 		<folder
 		capname="unknown"
@@ -1815,6 +1973,24 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 				</item>
 				<basepath>
 					/form[@title~'HeavyBid Pivot Reports']
+				</basepath>
+			</appfolder>
+			<appfolder
+			capname="form"
+			id="60ac4011-bfb2-4e15-a8d1-0ddbc7e342e1"
+			isrooted="True"
+			name="SpreadsheetCalculationViewer"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="button"
+				id="bea879ce-a31c-4e33-b41b-471a9b4cd36c"
+				name="CloseButton"
+				searchtimeout="30000ms">
+					/form[@title~'Spreadsheet Calculation']/?/?/?/button[@text~'Close']
+				</item>
+				<basepath>
+					/form[@title~'Spreadsheet Calculation']
 				</basepath>
 			</appfolder>
 		</folder>
@@ -2082,7 +2258,7 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 				id="fc04455f-dfde-49bb-b761-557a0dca0337"
 				name="ButtonExportToAccounting"
 				searchtimeout="30000ms">
-					/form[@title~'HB']/element[@class='DFMDIClient']/?/?//button[@text~'Export to Accounting']
+					/form[@title~'HB']/element[@class='DFMDIClient']/?/?//button[@text~'Accounting']
 				</item>
 				<item
 				capname="button"
@@ -2105,22 +2281,48 @@ AYyMeLTxHY6uAAAAAElFTkSuQmCC
 			</basepath>
 		</appfolder>
 		<appfolder
-		capname="form"
-		id="073e1eb9-07dc-4f64-8d2d-64189feec399"
+		capname="unknown"
+		id="82c5c509-a231-4348-a951-9d230b794c75"
 		isrooted="True"
-		name="ExportComplete"
+		name="NewAppFolder"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/element
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="687d20e9-d5b3-4f26-83b5-7e68665b2fe0"
+		isrooted="True"
+		name="UTILITY"
+		refpath="/form[@title='UTILITY']"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			capname="button"
-			id="cbe02182-7d09-4d45-93ba-19aeffeddb07"
-			name="ButtonOK"
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="0134b9d7-d8f6-477a-a78e-16927eb359ea"
+			name="SystemItemNameDisplay"
+			refimgid="f7a3147d-cfc4-4bf9-91a0-313ce882d23a"
+			refpath="/form[@title='UTILITY']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/listitem[@automationid='2']/text[@automationid='System.ItemNameDisplay']"
 			searchtimeout="30000ms">
-				/form[@title='Export Complete']/button[@text='OK']
+				/form[@title='UTILITY']/element[@class='ShellTabWindowClass']//element[@instance='1']//listitem[@automationid='2']/text[@automationid='System.ItemNameDisplay']
 			</item>
 			<basepath>
-				/form[@title='Export Complete']
+				/form[@title='UTILITY']
 			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEwSURBVDhPjZJLTsNAEETnCNyIVTBJjNhyHYT4
+CQQCIRAIRAQHicIv/ANHQHJsx3YwYY0ouqc7ZJFEMyWVevVqPl1mqO/3BQzeQgw6Ib7YryHKl7r4
+uY7Pp5p1/7GGoh10FBuJYeSX5AtyA8jOyWfkU6B3Qj4G0iPyIYqHKhQbiU/2gZEeoLifEMDX9oGR
+7COfGEBv9oGR7CFvz48H8Gf5wEh2kd1NDXDDiHemBNCqfGDE28hug/EA3rEP/Buto3cToGzOzigq
+sgEOGPEWlWqJ1rhIIZWmoiJumAtGd9Oe/vOxbKeioj61ywWju4H0eu5/KirierpgRGtIryhAp6Ii
+rqcLRrSKxAbIVFTE9XTBiFaQtDhApqIiricXxJr2zJ/E5rfydflEhuJWZThLY4z5A+YuloRxRSPn
+AAAAAElFTkSuQmCC
+			</icon>
 		</appfolder>
 		<basepath>
 		</basepath>

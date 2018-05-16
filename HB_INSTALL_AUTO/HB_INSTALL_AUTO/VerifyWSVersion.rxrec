@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="26545125-eab7-44af-9a9e-580080b6c225"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		VerifyWSVersion
 	</name>

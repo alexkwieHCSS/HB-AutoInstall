@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="cf428a88-a1c6-4200-9ab2-22e40ed4c0ff"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ConfirmHBWSInstallFinish
 	</name>

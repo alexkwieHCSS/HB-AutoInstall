@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="0aeaea00-f4f8-4126-8fcf-4c438d3cb406"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CostReport
 	</name>

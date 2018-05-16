@@ -69,7 +69,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -81,7 +81,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -95,29 +95,29 @@ namespace HB_INSTALL_AUTO
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Workstation]"), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Workstation]"), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(2));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupText'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupTextInfo, new RecordItemIndex(3));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupTextInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupText'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupTextInfo, new RecordItemIndex(3));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TextBoxForValidation.WelcomeSetupTextInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.SetupText'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.SetupTextInfo, new RecordItemIndex(4));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TextBoxForValidation.SetupTextInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.SetupText'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.SetupTextInfo, new RecordItemIndex(4));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TextBoxForValidation.SetupTextInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             

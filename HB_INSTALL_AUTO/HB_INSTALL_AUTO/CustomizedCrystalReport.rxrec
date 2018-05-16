@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="73fc8886-cd4c-4580-859d-b695abe3e1a5"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CustomizedCrystalReport
 	</name>

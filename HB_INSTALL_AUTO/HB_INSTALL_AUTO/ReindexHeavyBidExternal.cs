@@ -71,7 +71,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -83,7 +83,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -116,11 +116,11 @@ namespace HB_INSTALL_AUTO
             repo.HBPopupScreens.GridViewOfEstimatesPopup.ListOfEstimatesPopup.ButtonOk.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Checked to 'True' on item 'ReindexApplication.CurrentEstimateCheckbox'.", repo.ReindexApplication.CurrentEstimateCheckboxInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'ReindexApplication.CurrentEstimateCheckbox'.", repo.ReindexApplication.CurrentEstimateCheckboxInfo, new RecordItemIndex(6));
             repo.ReindexApplication.CurrentEstimateCheckbox.Element.SetAttributeValue("Checked", "True");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Checked to 'True' on item 'ReindexApplication.SystemFilesCheckbox'.", repo.ReindexApplication.SystemFilesCheckboxInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'ReindexApplication.SystemFilesCheckbox'.", repo.ReindexApplication.SystemFilesCheckboxInfo, new RecordItemIndex(7));
             repo.ReindexApplication.SystemFilesCheckbox.Element.SetAttributeValue("Checked", "True");
             Delay.Milliseconds(0);
             

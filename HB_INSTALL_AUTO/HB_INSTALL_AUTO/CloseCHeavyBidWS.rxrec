@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="d1b3a767-1400-4156-9216-54828a34b1ae"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CloseCHeavyBidWS
 	</name>

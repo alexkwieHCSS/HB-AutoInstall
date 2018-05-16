@@ -69,7 +69,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -81,7 +81,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -99,8 +99,8 @@ namespace HB_INSTALL_AUTO
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, new RecordItemIndex(2));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             

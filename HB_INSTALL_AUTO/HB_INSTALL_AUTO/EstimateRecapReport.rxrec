@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="5857cd09-9195-4263-99e4-d23dfc9fe0ad"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		EstimateRecapReport
 	</name>

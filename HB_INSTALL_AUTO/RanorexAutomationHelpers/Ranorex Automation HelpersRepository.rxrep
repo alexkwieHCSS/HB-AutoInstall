@@ -1,0 +1,21 @@
+﻿<repository
+id="d72ec310-4a48-4fd9-a6db-48657539fb4a"
+name="Ranorex_Automation_HelpersRepository"
+rxversion="8.1">
+	<codegen
+	classname="Ranorex_Automation_HelpersRepository"
+	namespace="Ranorex_Automation_Helpers">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2789a926-4704-4d32-a90a-e6da723a3c2e"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

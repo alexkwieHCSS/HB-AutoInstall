@@ -1,11 +1,14 @@
 ﻿<configuration
-rxversion="7.1">
+rxversion="8.1">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
 	<adapter.defaultuseensurevisible>
 		True
 	</adapter.defaultuseensurevisible>
+	<adapter.functionexecutiontimeout>
+		5000ms
+	</adapter.functionexecutiontimeout>
 	<imaging.defaultfindoptions>
 		1;None;0,0,0,0;True;10000000;0ms
 	</imaging.defaultfindoptions>
@@ -27,6 +30,9 @@ rxversion="7.1">
 	<recorder.UseConfiguredTimingsOnRecord>
 		True
 	</recorder.UseConfiguredTimingsOnRecord>
+	<recorder.usekeystrokeoptimizationkey>
+		True
+	</recorder.usekeystrokeoptimizationkey>
 	<recorder.mousemovetime>
 		300ms
 	</recorder.mousemovetime>
@@ -370,8 +376,26 @@ rxversion="7.1">
 		<rawtextconfig>
 		</rawtextconfig>
 	</plugins.rawtext.whitelist>
+	<Telemetry.Enabled>
+		False
+	</Telemetry.Enabled>
 	<Endpoints.Data>
 	</Endpoints.Data>
+	<TestCase.Retry.Count>
+		0
+	</TestCase.Retry.Count>
+	<TestCase.Retry.IncludeSmartFolder>
+		True
+	</TestCase.Retry.IncludeSmartFolder>
+	<TestCase.Retry.IncludeTestCase>
+		True
+	</TestCase.Retry.IncludeTestCase>
+	<TestCase.Retry.ShowWarning>
+		True
+	</TestCase.Retry.ShowWarning>
+	<TestExecution.CopyRuntimeToOutput>
+		False
+	</TestExecution.CopyRuntimeToOutput>
 	<plugins.win32.EnableBasicDelphiSupport>
 		True
 	</plugins.win32.EnableBasicDelphiSupport>
@@ -383,6 +407,8 @@ rxversion="7.1">
 	</plugins.win32.EnableDynamicMsaa>
 	<plugins.win32.ProcessWhitelist>
 	</plugins.win32.ProcessWhitelist>
+	<plugins.win32.ProcessBlacklist>
+	</plugins.win32.ProcessBlacklist>
 	<plugins.msaa.FilterEnabled>
 		True
 	</plugins.msaa.FilterEnabled>

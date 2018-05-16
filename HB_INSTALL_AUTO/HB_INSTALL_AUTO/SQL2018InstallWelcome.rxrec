@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="29202c8a-4d6f-4a68-a1aa-c26196cfcfd0"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		SQL2018InstallWelcome
 	</name>

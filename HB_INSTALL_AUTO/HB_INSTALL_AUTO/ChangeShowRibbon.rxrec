@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="db99fbaa-ee00-4634-a8cf-5e650f8418f6"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ChangeShowRibbon
 	</name>

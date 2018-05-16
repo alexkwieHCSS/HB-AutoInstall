@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="0aeabb35-224c-499f-8b38-96588eb45051"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		BiditemStructureReport
 	</name>

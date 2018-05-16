@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="39a778c6-72a6-4992-9789-b63c17daf0e6"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		HBUserLogIn
 	</name>

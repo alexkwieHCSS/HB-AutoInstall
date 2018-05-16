@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="4fd71e3b-908c-4d93-9811-290c25bd053f"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		ValidateHBAboutHB
 	</name>

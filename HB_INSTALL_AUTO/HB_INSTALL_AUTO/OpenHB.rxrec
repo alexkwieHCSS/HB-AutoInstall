@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="1d329228-98ea-4d0a-86e5-cf7640c69a90"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		OpenHB
 	</name>

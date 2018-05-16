@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="de67b64d-9b75-47d6-91e5-9ab65e70c7b2"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		CheckRegistrationFeatures
 	</name>

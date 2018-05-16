@@ -80,7 +80,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -92,7 +92,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -103,22 +103,22 @@ namespace HB_INSTALL_AUTO
 
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(0));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Workstation]"), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~'[HeavyBid][Workstation]') on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(0));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex("[HeavyBid][Workstation]"), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             // B.3
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegEx (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex(YearVersion), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nB.3\r\nValidating AttributeRegex (Text~$YearVersion) on item 'HeavyBidWorkstationSetup.Titlebar'.", repo.HeavyBidWorkstationSetup.TitlebarInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TitlebarInfo, "Text", new Regex(YearVersion), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // ASK AUTOMATION
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nASK AUTOMATION\r\nValidating AttributeRegEx (Text~$WSFilePath) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, new RecordItemIndex(2));
-                Validate.Attribute(repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, "Text", new Regex(WSFilePath), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nASK AUTOMATION\r\nValidating AttributeRegex (Text~$WSFilePath) on item 'HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePath'.", repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, new RecordItemIndex(2));
+                Validate.AttributeRegex(repo.HeavyBidWorkstationSetup.TextBoxForValidation.OutputForFilePathInfo, "Text", new Regex(WSFilePath), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             

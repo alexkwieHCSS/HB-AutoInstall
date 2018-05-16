@@ -41,7 +41,7 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public TestWrongRegCode()
         {
-            RegistrationCode = "01AF8E32-C236-435F-8C95-2518C339B7C0";
+            RegistrationCode = "28d7c9f7-0f26-4b09-8b40-16c84e43681b";
         }
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -83,7 +83,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -92,42 +92,37 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'HeavyBidRegistration.RegistrationEntry'", repo.HeavyBidRegistration.RegistrationEntryInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.HeavyBidRegistration.RegistrationEntryInfo.WaitForExists(30000);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.RegistrationEntry' at Center.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(0));
+            //repo.HeavyBidRegistration.RegistrationEntry.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'HeavyBidRegistration.RegistrationEntry' at Center.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(1));
-            repo.HeavyBidRegistration.RegistrationEntry.DoubleClick();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RegistrationCode' with focus on 'HeavyBidRegistration.RegistrationEntry'.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RegistrationCode' with focus on 'HeavyBidRegistration.RegistrationEntry'.", repo.HeavyBidRegistration.RegistrationEntryInfo, new RecordItemIndex(2));
             repo.HeavyBidRegistration.RegistrationEntry.PressKeys(RegistrationCode);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Check' at Center.", repo.HeavyBidRegistration.CheckInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Check' at Center.", repo.HeavyBidRegistration.CheckInfo, new RecordItemIndex(3));
             repo.HeavyBidRegistration.Check.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'", repo.HeavyBidRegistration.SubmitInfo, new ActionTimeout(10000), new RecordItemIndex(5));
-            repo.HeavyBidRegistration.SubmitInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'attempting') on item 'HeavyBidRegistration.WrongRegistrationCodeTextbox'.", repo.HeavyBidRegistration.WrongRegistrationCodeTextboxInfo, new RecordItemIndex(4));
+            Validate.AttributeRegex(repo.HeavyBidRegistration.WrongRegistrationCodeTextboxInfo, "Text", new Regex("attempting"));
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(5));
             repo.HeavyBidRegistration.Submit.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(10000), new RecordItemIndex(7));
-            repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(10000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW' at Center.", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new RecordItemIndex(8));
-            repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(10000), new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(10000), new RecordItemIndex(6));
             repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'attempting') on item 'HeavyBidRegistration.WrongRegistrationCodePopupTextbox'.", repo.HeavyBidRegistration.WrongRegistrationCodePopupTextboxInfo, new RecordItemIndex(7));
+            Validate.AttributeRegex(repo.HeavyBidRegistration.WrongRegistrationCodePopupTextboxInfo, "Text", new Regex("attempting"));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(8));
             repo.ActivateHeavyBidServer.ButtonOK.Click();
             Delay.Milliseconds(200);
             

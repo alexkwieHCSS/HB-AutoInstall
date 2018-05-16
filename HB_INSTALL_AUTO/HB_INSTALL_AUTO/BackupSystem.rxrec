@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="9989c876-1438-4146-908f-573b9db14d53"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		BackupSystem
 	</name>

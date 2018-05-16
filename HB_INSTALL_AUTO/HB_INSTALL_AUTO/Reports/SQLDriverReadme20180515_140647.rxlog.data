@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2901fe6a891ec9ca"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/15/2018 2:06:51 PM"
+		timestampiso="2018-05-15T19:06:51"
+		endtime="5/15/2018 2:06:52 PM"
+		timeoutfactor="1"
+		module="SQLDriverReadme">
+		<detail>
+			SQLDriverReadme
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.953"
+			timeRelativeToTestModuleStartTime="00:00.953"
+			timeWallClock="14:06:52"
+			time="00:00.953"
+			level="Info"
+			category="User">
+			<message>
+				Check if '0' file(s) with pattern '' exist in the directory 'C:\HeavyBid\UTILITY\SQL Drivers ReadMe.txt'. Search time 0 seconds.
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="85"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.985"
+			timeRelativeToTestModuleStartTime="00:00.985"
+			timeWallClock="14:06:52"
+			time="00:00.985"
+			level="Success"
+			category="Validation">
+			<message>
+				Objects are equal (actual='0', expected='0').
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\RanorexAutomationHelpers\UserCodeCollections\FileLibrary.cs"
+				codeline="86"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

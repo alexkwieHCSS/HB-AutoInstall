@@ -58,7 +58,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -70,7 +70,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -86,15 +86,15 @@ namespace HB_INSTALL_AUTO
             
             // E.2
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.2\r\nValidating AttributeRegEx (Text~'[support][hcss]') on item 'GoogleChrome.AddressBar'.", repo.GoogleChrome.AddressBarInfo, new RecordItemIndex(1));
-                Validate.Attribute(repo.GoogleChrome.AddressBarInfo, "Text", new Regex("[support][hcss]"), Validate.DefaultMessage, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.2\r\nValidating AttributeRegex (Text~'[support][hcss]') on item 'GoogleChrome.AddressBar'.", repo.GoogleChrome.AddressBarInfo, new RecordItemIndex(1));
+                Validate.AttributeRegex(repo.GoogleChrome.AddressBarInfo, "Text", new Regex("[support][hcss]"), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             // E.2
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.2\r\nValidating AttributeRegEx (Text~'[support][hcss]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(2));
-                //Validate.Attribute(repo.GoogleChrome.TabsInfo, "Text", new Regex("[support][hcss]"), Validate.DefaultMessage, false);
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nE.2\r\nValidating AttributeRegex (Text~'[support][hcss]') on item 'GoogleChrome.Tabs'.", repo.GoogleChrome.TabsInfo, new RecordItemIndex(2));
+                //Validate.AttributeRegex(repo.GoogleChrome.TabsInfo, "Text", new Regex("[support][hcss]"), null, false);
                 //Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             

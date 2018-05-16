@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="c5579e1d-5544-40dc-acf8-545f36cf39c7"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		VerifyServerVersion
 	</name>

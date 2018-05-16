@@ -3,7 +3,7 @@
 embeddedrepository="False"
 id="19c0f50a-d08e-4dfb-82fe-befaf85a22ae"
 mode="Global"
-rxversion="7.1">
+rxversion="8.1">
 	<name>
 		UninstallSQL
 	</name>

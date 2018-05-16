@@ -58,7 +58,7 @@ namespace HB_INSTALL_AUTO
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -70,7 +70,7 @@ namespace HB_INSTALL_AUTO
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.1")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.1")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -83,16 +83,24 @@ namespace HB_INSTALL_AUTO
             repo.HeavyBidApp.Tabs.ExchangeTab.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.Buttons.ButtonExportToAccounting' at Center.", repo.HBMultiDocumentInterface.Buttons.ButtonExportToAccountingInfo, new RecordItemIndex(1));
-            repo.HBMultiDocumentInterface.Buttons.ButtonExportToAccounting.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.Exchange.HJAndAccountingExport' at Center.", repo.HeavyBidApp.Buttons.Exchange.HJAndAccountingExportInfo, new RecordItemIndex(1));
+            repo.HeavyBidApp.Buttons.Exchange.HJAndAccountingExport.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBMultiDocumentInterface.Buttons.ButtonExport' at Center.", repo.HBMultiDocumentInterface.Buttons.ButtonExportInfo, new RecordItemIndex(2));
-            repo.HBMultiDocumentInterface.Buttons.ButtonExport.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportToAccounting' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportToAccountingInfo, new RecordItemIndex(2));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportToAccounting.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportComplete.ButtonOK' at Center.", repo.ExportComplete.ButtonOKInfo, new RecordItemIndex(3));
-            repo.ExportComplete.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportButton' at Center.", repo.HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportButtonInfo, new RecordItemIndex(3));
+            repo.HeavyBidApp.HBMultiDocumentInterface.Buttons.ExportButton.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HBPopupScreens.FromExchangeButtons.ExportComplete.CompleteConfirmationText'.", repo.HBPopupScreens.FromExchangeButtons.ExportComplete.CompleteConfirmationTextInfo, new RecordItemIndex(4));
+            Validate.Exists(repo.HBPopupScreens.FromExchangeButtons.ExportComplete.CompleteConfirmationTextInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromExchangeButtons.ExportComplete.OKButton' at Center.", repo.HBPopupScreens.FromExchangeButtons.ExportComplete.OKButtonInfo, new RecordItemIndex(5));
+            repo.HBPopupScreens.FromExchangeButtons.ExportComplete.OKButton.Click();
             Delay.Milliseconds(200);
             
         }
