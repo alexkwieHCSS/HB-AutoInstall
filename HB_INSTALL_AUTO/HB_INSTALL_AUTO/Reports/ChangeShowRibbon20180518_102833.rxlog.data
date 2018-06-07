@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="286e384eecd48b49"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/18/2018 10:28:35 AM"
+		timestampiso="2018-05-18T15:28:35"
+		endtime="5/18/2018 10:28:38 AM"
+		timeoutfactor="1"
+		module="ChangeShowRibbon">
+		<detail>
+			ChangeShowRibbon
+		</detail>
+		<errormessage>
+			Setting attribute 'Checked' failed on element '{MenuItem:Show Ribbon Bar}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.827"
+			timeRelativeToTestModuleStartTime="00:00.827"
+			timeWallClock="10:28:36"
+			time="00:00.827"
+			level="Info"
+			category="Set value"
+			errimg=".\ChangeSh_557d6757_4fd00fe5_trace.jpg"
+			errthumb=".\ChangeSh_557d6757_4fd00fe5_trace_thumb.jpg">
+			<message>
+				Setting attribute Checked to 'false' on item 'HBButtonDropdownOptions.ShowRibbonBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='HEAVYBID' and @class='XTPPopupBar']/?/?/menuitem[@text~'Show Ribbon Bar']"
+				itempath="?/?/menuitem[@text~'Show Ribbon Bar']"
+				fullname="HB_INSTALL_AUTORepository.HBButtonDropdownOptions.ShowRibbonBar"
+				id="514a5807f0da43f8a0465b8a2fcc7dc0"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="82"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.093"
+			timeRelativeToTestModuleStartTime="00:03.093"
+			timeWallClock="10:28:38"
+			time="00:03.093"
+			level="Error"
+			category="Module"
+			errimg=".\ChangeSh_557d6757_e187b041_trace.jpg"
+			errthumb=".\ChangeSh_557d6757_e187b041_trace_thumb.jpg">
+			<message>
+				Setting attribute 'Checked' failed on element '{MenuItem:Show Ribbon Bar}'.<br/>The operation is not supported.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at HB_INSTALL_AUTO.ChangeShowRibbon.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs:line 83
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="83"
+				loglvl="Error"
+				itemindex="8">
+			</metainfo>
+		</item>
+	</activity>
+</report>

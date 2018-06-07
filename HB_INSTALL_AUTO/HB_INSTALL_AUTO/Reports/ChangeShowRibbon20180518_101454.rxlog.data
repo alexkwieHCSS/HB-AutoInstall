@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="a1d12118c61ea87"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/18/2018 10:14:56 AM"
+		timestampiso="2018-05-18T15:14:56"
+		endtime="5/18/2018 10:15:27 AM"
+		timeoutfactor="1"
+		module="ChangeShowRibbon">
+		<detail>
+			ChangeShowRibbon
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.685"
+			timeRelativeToTestModuleStartTime="00:00.701"
+			timeWallClock="10:14:57"
+			time="00:00.685"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CloseButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Welcome' and @title~'HeavyBid']/?/button[@accessiblename='Close']"
+				itempath="?/button[@accessiblename='Close']"
+				fullname="HB_INSTALL_AUTORepository.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CloseButton"
+				id="f23e9136b37a48de9bdd008f57dcfbe4"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.000"
+			timeRelativeToTestModuleStartTime="00:21.015"
+			timeWallClock="10:15:17"
+			time="00:21.000"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 500ms.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.896"
+			timeRelativeToTestModuleStartTime="00:29.912"
+			timeWallClock="10:15:26"
+			time="00:29.896"
+			level="Failure"
+			category="Validation"
+			errimg=".\ChangeSh_559c097a_e18331a5_trace.jpg"
+			errthumb=".\ChangeSh_559c097a_e18331a5_trace_thumb.jpg">
+			<message>
+				Ribbon was not clicked
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.UserCode.cs"
+				codeline="43"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.975"
+			timeRelativeToTestModuleStartTime="00:29.990"
+			timeWallClock="10:15:26"
+			time="00:29.975"
+			level="Success"
+			category="Validation"
+			errimg=".\ChangeSh_559c097a_008f0d6a_trace.jpg"
+			errthumb=".\ChangeSh_559c097a_008f0d6a_trace_thumb.jpg">
+			<message>
+				Ribbon was clicked
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.UserCode.cs"
+				codeline="47"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:30.720"
+			timeRelativeToTestModuleStartTime="00:30.735"
+			timeWallClock="10:15:27"
+			time="00:30.720"
+			level="Error"
+			category="Module"
+			errimg=".\ChangeSh_559c097a_14784ca1_trace.jpg"
+			errthumb=".\ChangeSh_559c097a_14784ca1_trace_thumb.jpg">
+			<message>
+				The module has failed because one or more actions have failed.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

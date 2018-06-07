@@ -41,8 +41,10 @@ namespace HB_INSTALL_AUTO
         /// </summary>
         public RegisterHB()
         {
-            RegistrationCode = "01af8e32-c236-435f-8c95-2518c339b7c0";
+            RegistrationCode = "01AF8E32-C236-435F-8C95-2518C339B7C0";
             SystemType = "Advanced Multiuser";
+            RegistrationName = "Test Company";
+            Licenses = "100";
         }
 
         /// <summary>
@@ -77,6 +79,30 @@ namespace HB_INSTALL_AUTO
         {
             get { return _SystemType; }
             set { _SystemType = value; }
+        }
+
+        string _RegistrationName;
+
+        /// <summary>
+        /// Gets or sets the value of variable RegistrationName.
+        /// </summary>
+        [TestVariable("85c7ac2e-ca25-4b16-a0da-2e05c3784f87")]
+        public string RegistrationName
+        {
+            get { return _RegistrationName; }
+            set { _RegistrationName = value; }
+        }
+
+        string _Licenses;
+
+        /// <summary>
+        /// Gets or sets the value of variable Licenses.
+        /// </summary>
+        [TestVariable("b8eff3fd-81d6-45c4-9b13-57f9fbd543de")]
+        public string Licenses
+        {
+            get { return _Licenses; }
+            set { _Licenses = value; }
         }
 
 #endregion
@@ -124,39 +150,51 @@ namespace HB_INSTALL_AUTO
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.", repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, new RecordItemIndex(5));
-                Validate.AttributeRegex(repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, "Text", new Regex(SystemType), null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Windowtext~$RegistrationName) on item 'HeavyBidRegistration.CompanyNameTextbox'.", repo.HeavyBidRegistration.CompanyNameTextboxInfo, new RecordItemIndex(5));
+                Validate.AttributeRegex(repo.HeavyBidRegistration.CompanyNameTextboxInfo, "Windowtext", new Regex(RegistrationName), null, false);
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'", repo.HeavyBidRegistration.SubmitInfo, new ActionTimeout(10000), new RecordItemIndex(6));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Windowtext~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.", repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, new RecordItemIndex(6));
+                Validate.AttributeRegex(repo.HeavyBidRegistration.TextboxSystemDescriptionInfo, "Windowtext", new Regex(SystemType), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Windowtext~$Licenses) on item 'HeavyBidRegistration.LicenseTextbox'.", repo.HeavyBidRegistration.LicenseTextboxInfo, new RecordItemIndex(7));
+                Validate.AttributeRegex(repo.HeavyBidRegistration.LicenseTextboxInfo, "Windowtext", new Regex(Licenses), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'HeavyBidRegistration.Submit'", repo.HeavyBidRegistration.SubmitInfo, new ActionTimeout(10000), new RecordItemIndex(8));
             repo.HeavyBidRegistration.SubmitInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidRegistration.Submit' at Center.", repo.HeavyBidRegistration.SubmitInfo, new RecordItemIndex(9));
             repo.HeavyBidRegistration.Submit.Click();
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(30000), new RecordItemIndex(8));
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW'", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new ActionTimeout(30000), new RecordItemIndex(10));
                 repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo.WaitForExists(30000);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW' at Center.", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new RecordItemIndex(9));
-                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW.Click();
-                Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(30000), new RecordItemIndex(10));
-                repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(30000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(11));
-                repo.ActivateHeavyBidServer.ButtonOK.Click();
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ReplaceTheExistingProductionServerW' at Center.", repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerWInfo, new RecordItemIndex(11));
+                repo.ActivateHeavyBidServer.ReplaceTheExistingProductionServerW.Click();
                 Delay.Milliseconds(200);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'ActivateHeavyBidServer.ButtonOK'", repo.ActivateHeavyBidServer.ButtonOKInfo, new ActionTimeout(30000), new RecordItemIndex(12));
+                repo.ActivateHeavyBidServer.ButtonOKInfo.WaitForExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(12)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'ActivateHeavyBidServer.ButtonOK' at Center.", repo.ActivateHeavyBidServer.ButtonOKInfo, new RecordItemIndex(13));
+                repo.ActivateHeavyBidServer.ButtonOK.Click();
+                Delay.Milliseconds(200);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(13)); }
             
         }
 

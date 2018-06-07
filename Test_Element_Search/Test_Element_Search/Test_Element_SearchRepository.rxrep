@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Test_Element_SearchRepository"
+id="8c937ef8-5350-4cc7-9b34-251133ae0760"
+rxversion="8.1">
+  <codegen
+  classname="Test_Element_SearchRepository"
+  namespace="Test_Element_Search"/>
+  <rootfolder
+  name="Root"
+  id="b87b1a35-2af1-43bf-91e0-a96bdda485fe"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

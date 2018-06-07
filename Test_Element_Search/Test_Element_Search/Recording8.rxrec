@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2a423e8f-13a7-4102-8f3a-39ec847ba654"
+mode="Global"
+rxversion="8.1">
+	<name>
+		Recording8
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording8"
+	namespace="Test_Element_Search">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="8c937ef8-5350-4cc7-9b34-251133ae0760"
+	name="Test_Element_SearchRepository"
+	relativepath="Test_Element_SearchRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="Test_Element_SearchRepository"
+		namespace="Test_Element_Search">
+		</codegen>
+		<rootfolder
+		id="b87b1a35-2af1-43bf-91e0-a96bdda485fe"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording8.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

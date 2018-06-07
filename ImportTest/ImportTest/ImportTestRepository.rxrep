@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="ImportTestRepository"
+id="38e2e58e-05be-4b69-80c3-6ac4f4e41a55"
+rxversion="8.1">
+  <codegen
+  classname="ImportTestRepository"
+  namespace="ImportTest"/>
+  <rootfolder
+  name="Root"
+  id="b7ed5c1b-bdb1-44dd-addc-67d843b7bbd4"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

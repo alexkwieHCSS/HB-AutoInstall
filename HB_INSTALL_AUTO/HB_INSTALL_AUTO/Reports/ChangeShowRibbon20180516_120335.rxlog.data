@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="13840cc9e352c16"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/16/2018 12:03:39 PM"
+		timestampiso="2018-05-16T17:03:39"
+		endtime="5/16/2018 12:03:45 PM"
+		timeoutfactor="1"
+		module="ChangeShowRibbon">
+		<detail>
+			ChangeShowRibbon
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.254"
+			timeRelativeToTestModuleStartTime="00:02.254"
+			timeWallClock="12:03:41"
+			time="00:02.254"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidApp.Buttons.HCSSIcon' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HB']///toolbar/button[@accessiblename~'App']"
+				itempath=".///toolbar/button[@accessiblename~'App']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidApp.Buttons.HCSSIcon"
+				id="0cde0962f6ba4e5e99c0dd98a17c0783"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.702"
+			timeRelativeToTestModuleStartTime="00:05.702"
+			timeWallClock="12:03:45"
+			time="00:05.702"
+			level="Success"
+			category="Validation">
+			<message>
+				Ribbon has been checked
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.UserCode.cs"
+				codeline="43"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -197,6 +197,9 @@
       <UserCode>true</UserCode>
       <id>2ebfcfd0-442c-411e-9c9b-c69a1b7f6c61</id>
     </Compile>
+    <Compile Include="CheckShowRibbon.cs">
+      <id>aae0a3ba-dda8-492b-80cd-925f0eb0f60f</id>
+    </Compile>
     <Compile Include="ChiefEstimatorAnalysisReport.cs">
       <BoundTo>186ffb0d-379d-48d6-a7f0-1678ce8d908e</BoundTo>
       <DependentUpon>ChiefEstimatorAnalysisReport.rxrec</DependentUpon>
@@ -866,6 +869,9 @@
       <UserCode>true</UserCode>
       <id>bda0a079-0365-465d-ba5a-3cc5affcfacf</id>
     </Compile>
+    <Compile Include="UserCodeModule1.cs">
+      <id>8de58007-50b0-418c-a42f-c188edc4f413</id>
+    </Compile>
     <Compile Include="UserLicense.cs">
       <BoundTo>fe8f62e9-e09b-4cc6-a6a1-d233fc48df88</BoundTo>
       <DependentUpon>UserLicense.rxrec</DependentUpon>
@@ -1304,12 +1310,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>65f560b7-8a02-4e3c-bb13-b0aa306c9773</id>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{50D45B05-EE85-422B-98D6-3041DAC4854C}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

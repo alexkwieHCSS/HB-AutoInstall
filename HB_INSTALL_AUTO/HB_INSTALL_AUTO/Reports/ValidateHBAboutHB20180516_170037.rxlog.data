@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="21892fc2c1b29ba2"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/16/2018 5:00:39 PM"
+		timestampiso="2018-05-16T22:00:39"
+		endtime="5/16/2018 5:00:41 PM"
+		timeoutfactor="1"
+		module="ValidateHBAboutHB">
+		<detail>
+			ValidateHBAboutHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.661"
+			timeRelativeToTestModuleStartTime="00:00.662"
+			timeWallClock="17:00:40"
+			time="00:00.661"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RegistrationName, SystemType, Licenses, InstallType, YearVersion
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.683"
+			timeRelativeToTestModuleStartTime="00:00.684"
+			timeWallClock="17:00:40"
+			time="00:00.683"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'GoogleChrome.ShuffleboardGoogleSearch' at 43;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname~'chrome']/container[@accessiblename~'^Robert\ Pennington\ says\.\.\.']/container[@accessiblename='Google Chrome']//tabpage[@accessiblename~'^shuffleboard\ -\ Google\ Sea']/text[@accessiblename~'^shuffleboard\ -\ Google\ Sea']"
+				itempath="container[@accessiblename~'^Robert\ Pennington\ says\.\.\.']/container[@accessiblename='Google Chrome']//tabpage[@accessiblename~'^shuffleboard\ -\ Google\ Sea']/text[@accessiblename~'^shuffleboard\ -\ Google\ Sea']"
+				fullname="HB_INSTALL_AUTORepository.GoogleChrome.ShuffleboardGoogleSearch"
+				id="0c40d9da9b364b5795c8710a1148525e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\ValidateHBAboutHB.cs"
+				codeline="145"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

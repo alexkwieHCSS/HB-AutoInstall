@@ -9,6 +9,6 @@
       <string>e29b418e-7757-4f1e-b5d2-20cd70f1177b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution HB_INSTALL_AUTO[Solution Items[]Ranorex Automation Helpers[References[]]]]&#xD;&#xA;Solution HB_INSTALL_AUTO\HB_INSTALL_AUTO&#xD;&#xA;Solution HB_INSTALL_AUTO" />
+  <ProjectBrowserState value="[Solution HB_INSTALL_AUTO[Solution Items[]HB_INSTALL_AUTO[]]]&#xD;&#xA;Solution HB_INSTALL_AUTO\HB_INSTALL_AUTO\HB_INSTALL_AUTO.rxtst&#xD;&#xA;Solution HB_INSTALL_AUTO\HB_INSTALL_AUTO\ChangeShowRibbon.rxrec" />
   <StartupProject value="{860E1650-2004-4602-B17B-B75863CEB56B}" />
 </Properties>

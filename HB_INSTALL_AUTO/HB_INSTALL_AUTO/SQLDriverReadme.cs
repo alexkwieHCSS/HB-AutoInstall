@@ -89,11 +89,14 @@ namespace HB_INSTALL_AUTO
                 //Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist("C:\\HeavyBid\\UTILITY\\", "SQL Drivers ReadMe.txt", ValueConverter.ArgumentFromString<int>("expectedCount", "1"), ValueConverter.ArgumentFromString<int>("timeout", "0"));
+            CheckIfTXTFIleExists("C:\\HeavyBid\\UTILITY\\");
             Delay.Milliseconds(0);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist("C:\\HeavyJob\\Bin", ".tlx", ValueConverter.ArgumentFromString<int>("expectedCount", "6"), ValueConverter.ArgumentFromString<int>("timeout", "0"));
-            Delay.Milliseconds(0);
+            //CheckFilesExist("C:\\HeavyBid\\UTILITY\\", "SQL Drivers ReadMe.txt", ValueConverter.ArgumentFromString<int>("expectedCount", "1"), ValueConverter.ArgumentFromString<int>("timeout", "0"));
+            //Delay.Milliseconds(0);
+            
+            //CheckFilesExist("C:\\HeavyJob\\Bin", ".tlx", ValueConverter.ArgumentFromString<int>("expectedCount", "6"), ValueConverter.ArgumentFromString<int>("timeout", "0"));
+            //Delay.Milliseconds(0);
             
         }
 

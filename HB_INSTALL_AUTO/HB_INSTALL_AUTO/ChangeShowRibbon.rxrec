@@ -37,6 +37,39 @@ rxversion="8.1">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="a2fc86c4-0fea-4ffd-9bcc-f8767612a077"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f23e9136-b37a-48de-9bdd-008f57dcfbe4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Welcome' and @title~'HeavyBid']/?/button[@accessiblename='Close']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="d68c8d80-2b4e-40f4-b3bb-8034a8f8f173"
 		sx="0"
 		sy="0"
@@ -55,7 +88,7 @@ rxversion="8.1">
 		</mouseitem>
 		<validationitem
 		action="AttributeNotEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="319c4ada-ea87-4de0-97b4-c00a865bb70a">
 			<comment>
@@ -80,7 +113,7 @@ rxversion="8.1">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -353,7 +386,7 @@ RRRQAUUUUAFFFFAFeX7k/wCP/oIrItP9VWvL9yf8f/QRWRaf6qgCeiiigD//2Q==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -375,7 +408,7 @@ RRRQAUUUUAFFFFAFeX7k/wCP/oIrItP9VWvL9yf8f/QRWRaf6qgCeiiigD//2Q==
 		</mouseitem>
 		<validationitem
 		action="Exists"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="319c4ada-ea87-4de0-97b4-c00a865bb70a">
 			<comment>
@@ -401,7 +434,7 @@ RRRQAUUUUAFFFFAFeX7k/wCP/oIrItP9VWvL9yf8f/QRWRaf6qgCeiiigD//2Q==
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 	name="HB_INSTALL_AUTORepository"
 	relativepath="HB_INSTALL_AUTORepository.rxrep"
-	rxversion="7.1">
+	rxversion="8.1">
 		<codegen
 		classname="HB_INSTALL_AUTORepository"
 		namespace="HB_INSTALL_AUTO">

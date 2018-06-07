@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1e12bb23a9d273c4"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/16/2018 11:41:35 AM"
+		timestampiso="2018-05-16T16:41:35"
+		endtime="5/16/2018 11:41:48 AM"
+		timeoutfactor="1"
+		module="CheckShowRibbon">
+		<detail>
+			CheckShowRibbon
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.037"
+			timeRelativeToTestModuleStartTime="00:00.039"
+			timeWallClock="11:41:35"
+			time="00:00.037"
+			level="Success"
+			category="Validation">
+			<message>
+				Checked
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CheckShowRibbon.cs"
+				codeline="38"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.407"
+			timeRelativeToTestModuleStartTime="00:12.409"
+			timeWallClock="11:41:48"
+			time="00:12.407"
+			level="Failure"
+			category="Validation"
+			errimg=".\CheckSho_8d4a2299_9c679ecd_trace.jpg"
+			errthumb=".\CheckSho_8d4a2299_9c679ecd_trace_thumb.jpg">
+			<message>
+				Checked
+			</message>
+			<metainfo
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\CheckShowRibbon.cs"
+				codeline="38"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<activity
+			result="Failed"
+			duration="23ms"
+			durationms="23"
+			type="test-module"
+			rid="20e31f7f16c49d7e"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="0"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="0"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			modulename="CheckShowRibbon"
+			displayName="CheckShowRibbon"
+			moduleid="56567ae5-7cec-47e0-92fd-9ab10cd77ccd"
+			moduletype="Unknown"
+			iteration="1"
+			activity-exectype="runiteration"
+			testentry-activity-type="testmodule">
+			<errormessage>
+				Exception has been thrown by the target of an invocation.
+			</errormessage>
+			<item
+				timeRelativeToTestSuiteStartTime="00:12.453"
+				timeRelativeToTestModuleStartTime="00:00.018"
+				timeWallClock="11:41:48"
+				time="00:12.453"
+				level="Error"
+				category="Module">
+				<message>
+					Exception has been thrown by the target of an invocation.<br/>u don't know what ur doing
+				</message>
+				<metainfo
+					stacktrace="   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean&amp; canBeCached, RuntimeMethodHandleInternal&amp; ctor, Boolean&amp; bNeedSecurityCheck)&#13;&#10;   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark&amp; stackMark)&#13;&#10;   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark&amp; stackMark)&#13;&#10;   at System.Activator.CreateInstance(Type type, Boolean nonPublic)&#13;&#10;   at System.Activator.CreateInstance(Type type)&#13;&#10;   at Ranorex.Core.Testing.TestModuleActivator.DefaultFactoryMethod.CreateFactory()&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.InitializeTestModuleInstance(TestModuleLeaf runTargetLeaf)&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.GetTestModuleInstance(TestModuleLeaf runTargetLeaf)&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunWithRepeats(DataContext parentDataContext, ErrorBehavior errorBehavior)&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.Run(DataContext parentDataContext, Boolean childSkip)"
+					loglvl="Error">
+				</metainfo>
+			</item>
+		</activity>
+	</activity>
+</report>

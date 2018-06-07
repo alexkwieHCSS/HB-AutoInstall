@@ -58,8 +58,34 @@ rxversion="8.1">
 			</args>
 		</runapprecorditem>
 		<userrecorditem
-		classname="FileLibrary"
+		classname="SQLDriverReadme"
 		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckIfTXTFIleExists"
+		namespace="HB_INSTALL_AUTO"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="15bae7ec-72db-431e-8335-0214cefb13bb">
+				<argument
+				argname="path"
+				id="a2927764-e32b-432b-944d-e227cd8aacde">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\HeavyBid\UTILITY\
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="FileLibrary"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="CheckFilesExist"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -115,7 +141,7 @@ rxversion="8.1">
 		</userrecorditem>
 		<userrecorditem
 		classname="FileLibrary"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="CheckFilesExist"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"

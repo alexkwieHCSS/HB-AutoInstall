@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="7ea63e1dd76d7b8"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="5/16/2018 2:05:46 PM"
+		timestampiso="2018-05-16T19:05:46"
+		endtime="5/16/2018 2:05:56 PM"
+		timeoutfactor="1"
+		module="RegisterHB">
+		<detail>
+			RegisterHB
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.937"
+			timeRelativeToTestModuleStartTime="00:02.938"
+			timeWallClock="14:05:49"
+			time="00:02.937"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>RegistrationCode, SystemType, RegistrationName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.973"
+			timeRelativeToTestModuleStartTime="00:02.973"
+			timeWallClock="14:05:49"
+			time="00:02.973"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 1s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="128"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.989"
+			timeRelativeToTestModuleStartTime="00:03.989"
+			timeWallClock="14:05:50"
+			time="00:03.989"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence from variable '$RegistrationCode' with focus on 'HeavyBidRegistration.RegistrationEntry'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element/element[@class='DFentry']"
+				itempath="element/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.RegistrationEntry"
+				id="588d4131a39243df92cf4b8c1e94a82f"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="131"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.857"
+			timeRelativeToTestModuleStartTime="00:08.857"
+			timeWallClock="14:05:55"
+			time="00:08.857"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidRegistration.Check' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']//button[@text='Check']"
+				itempath=".//button[@text='Check']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.Check"
+				id="7965edbb7fdd4cfdbe1292582177ed8e"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="135"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.795"
+			timeRelativeToTestModuleStartTime="00:09.795"
+			timeWallClock="14:05:56"
+			time="00:09.795"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegex (Windowtext~$RegistrationName) on item 'HeavyBidRegistration.CompanyNameTextbox'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']"
+				itempath="element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.CompanyNameTextbox"
+				id="96899ccf22824aa28c1a9eea5097db81"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="140"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.051"
+			timeRelativeToTestModuleStartTime="00:10.051"
+			timeWallClock="14:05:56"
+			time="00:10.051"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Windowtext' of element for item 'HB_INSTALL_AUTORepository.HeavyBidRegistration.CompanyNameTextbox' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']"
+				itempath="element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.CompanyNameTextbox"
+				id="96899ccf22824aa28c1a9eea5097db81"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="141"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.060"
+			timeRelativeToTestModuleStartTime="00:10.060"
+			timeWallClock="14:05:56"
+			time="00:10.060"
+			level="Info"
+			category="Validation">
+			<message>
+				(Optional Action)<br/>Validating AttributeRegex (Windowtext~$SystemType) on item 'HeavyBidRegistration.TextboxSystemDescription'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']"
+				itempath="element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.TextboxSystemDescription"
+				id="aed411505eac430e9c3327609edb7586"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="146"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.296"
+			timeRelativeToTestModuleStartTime="00:10.296"
+			timeWallClock="14:05:56"
+			time="00:10.296"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Windowtext' of element for item 'HB_INSTALL_AUTORepository.HeavyBidRegistration.TextboxSystemDescription' does match the specified RegEx.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']"
+				itempath="element[@controlid='91']/element[@controlid='94']/element[@class='DFentry']"
+				fullname="HB_INSTALL_AUTORepository.HeavyBidRegistration.TextboxSystemDescription"
+				id="aed411505eac430e9c3327609edb7586"
+				timeout="60000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HB_INSTALL_AUTO\HB_INSTALL_AUTO\RegisterHB.cs"
+				codeline="147"
+				loglvl="Success"
+				itemindex="6">
+			</metainfo>
+		</item>
+	</activity>
+</report>

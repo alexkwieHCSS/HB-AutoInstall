@@ -33,5 +33,22 @@ namespace HB_INSTALL_AUTO
             // Your recording specific initialization code goes here.
         }
 
+        public void CheckRibbonBar()
+        {
+            // TODO: Replace the following line with your code implementation.
+             	var repo = HB_INSTALL_AUTORepository.Instance;
+          //  var showRibbonBar = repo.HBButtonDropdownOptions.ShowRibbonBar;
+            
+            // Do not delete - a parameterless constructor is required!
+            if(Validate.Attribute(repo.HBButtonDropdownOptions.ShowRibbonBar, "Checked", false, "Ribbon was not clicked", false))            
+            	{         	
+            		repo.HBButtonDropdownOptions.ShowRibbonBar.Click();
+            	}
+            if(Validate.Attribute(repo.HBButtonDropdownOptions.ShowRibbonBar, "Checked", true, "Ribbon was clicked", true))
+	            {
+            		repo.HeavyBidApp.HCSSIcon.Click();
+	            }
+        }
+
     }
 }

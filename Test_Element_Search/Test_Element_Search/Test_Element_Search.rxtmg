@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Test_Element_Search"
+      id="369580f6-cd71-46fb-b14b-e5d1b95d8c8f"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Test_Element_Search"
+      id="369580f6-cd71-46fb-b14b-e5d1b95d8c8f"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -34,6 +34,147 @@ rxversion="8.1">
 		</var>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="abe6df39-4644-4f84-82d4-a9cf08dd5615"
+		sx="742"
+		sy="41"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f7760583-32ad-4ea0-ae2b-7afacacf7a0a"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
+				index="10"
+				prefcap="tabpage"
+				rect="712,25,54,24"
+				role="tabpage"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						10
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Help
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Switch
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Help
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PageTab
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focused, Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'HB']/element[@controlid='59419']/element[2]/toolbar[1]/tabpagelist[@accessiblename='']/tabpage[@accessiblename='Help']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a0ed7c9e-9b79-4781-85d2-a0644aab3915">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABMANgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoqOig
+CSio6KAJKKjooAkoqOigCSmTSpBEZJW2ovU4zSVT1b/kGy/h/MUm7K5dOKlNRfUf/a1j/wA9/wDx
+xv8ACj+1rH/nv/443+FR21tA9vFmGPPlqSdgJORUv2G3/wCea/8AfC/4VPvGr9inaz/D/IT+1rH/
+AJ7/APjjf4Uf2tY/89//ABxv8KX7Db/881/74X/Cj7Db/wDPNf8Avhf8KfvCvR7P8P8AIT+1rH/n
+v/443+FH9rWP/Pf/AMcb/Cl+w2//ADzX/vhf8KPsNv8A881/74X/AAo94L0ez/D/ACE/tax/57/+
+ON/hVi3uIrlC8LblBxnBHP41AtrbhipgiOADnYP89qq6F/x5P/10P8hRd3swcabg5Rvoa1FR0VRg
+SUVHRQBJRUdFAElFR0UASUVHRQBmG/uWWNIo0eRmkGVGRhTjuw/n+FaSElFLLtYjkelVIre1W2WG
+UwzAEsdwGMnknHbrVgSRKoVXQAcAAjigCSimebH/AM9E/wC+hR5sf/PRP++hQArokiFJFVlPUMMg
+1m2wW3TFtFDHJLcPHvKcAAse2M9MYzWj5sf/AD0T/voUxhbPGY2ELIxyVOCCevSgCst1PIyRKYlk
+O/LlSVO0gcDI9fXjFRpPNJK00KAyNBGcdQPmbJ6jNXHS0eNY3WBo1+6pAIH4USLayAiQQuCACGAO
+QOlAD4JPNgR9wbI6hSufwPIqvq3/ACDZfw/mKsK8KKFRo1UDAAIAFVdVkRtOlAdSeOAfcUpbM0o/
+xI+qJLU4t4v+uSfyNSl+KqwuotovmH+qQdfY07zV/vD86FsTP4mUUkn/ALKt1McYjzH8wkOfvDtt
+/rT5ru4nhuh5QEIWRc8cEAjruz+GKs5i2BMJtGMLgYGKr3qwfZriUJH5pib58Dd09aYhZb64QusX
+lfKyoqspJYlQfXjHJ/Cqsj3DyyEvcu38XlFgq9OAB9RxyaS8t306dWm/eLv3JO3UjbgqT64wffHr
+xTorqWDcI4klV23Bt+3H6c1rFaXSuzCT96zdkWtMvCZVhlkL71AifGScZPJ+n8qfoX/Hk/8A10P8
+hVLTI9t1AodcQZZyWx1BAH6/pVzRHRbNwzKD5h6n2FZ1ElNWOqi26Mr+X6lu94tjIOsZD/kcn9M1
+R3b5Cuci9YFfcA8/+O4rTMsRGC6EH3FNBtxtwYhs4Xp8v09KRmUraaWJxnZ5L3Ei4wdw5Y5z+HSo
+pLy5ljcKypzGyPsxlWbHQMf6d+K0s24xzFw24dOD6/XmmCKyVWVUgCv94ADB+tADLjzbeMvFglm3
+SMULBRtxkKCD2Hc0y/Xz1tAHxulBDDsdrEGp5FtJUVJFhdF6KwBAp5eFsZaM7TkZI4NAGa14yTTy
+BB5yRxoy9gxYj245z2qf7XdRqFmiVZHBCZGMtkY4BPr69jVk/ZmLFvKJcYbOPmHoaREtI1CxrCgU
+7gFAGD60AJaXBuAzbcKMD3zjJ/nRUivCgwjRqM54IHNFAFiiiigAooooAKKKKACiiigAqvfwNc2c
+kKEBmxgseOoNWKKHqOLcWmjKS11aNFRLqEKowBjt/wB807yNX/5+ofy/+xrToqeU29u+y+4zPI1f
+/n6h/L/7GoL2HVBY3BkuYigibcAOoxz2rapssayxPHIMo6lWHqDRy+YnWfZfcU9Qu7MQ3EE487Yg
+aSJBltpPX8Ovt1rLXRbyV5GLFAW48x8Mwx1O3Iz79+takumR7U+z7Y2VmJ3guHDD5g3POeOvpVq2
+i8i1ih3bvLQJnGM4GKpmcZcrva5mw2eqQRLFFcQqijAAH/2NWtLtJLO2aOUqSXLfKT6D/CrlFSo6
+3LlVco8tkvkFFFFUZBRRRQAUUUUAFFFFABRRRQAUVmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2
+yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7
+w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8h
+QBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadF
+Zn2yf+8PyFH2yf8AvD8hQBp0VmfbJ/7w/IUfbJ/7w/IUAadFZn2yf+8PyFFAH//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0f2f5769-6757-40b1-a959-c700dbcd507a"
+		sx="527"
+		sy="108"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="16ed6d20-f6c5-402e-9751-e85241ad596c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HB']///toolbar/button[@text~'Welcome Screen']
+				</path>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="Exists"
 		enabled="True"
@@ -58,7 +199,7 @@ rxversion="8.1">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegEx"
+		action="AttributeRegex"
 		enabled="True"
 		optional="True"
 		searchpropertyid="54cfc3d9-6e4b-4bf5-816e-c764313c114c">
@@ -368,7 +509,7 @@ rxversion="8.1">
 	id="a970ed20-62c5-4a8f-946c-ff3e643da1d9"
 	name="HB_INSTALL_AUTORepository"
 	relativepath="HB_INSTALL_AUTORepository.rxrep"
-	rxversion="7.1">
+	rxversion="8.1">
 		<codegen
 		classname="HB_INSTALL_AUTORepository"
 		namespace="HB_INSTALL_AUTO">

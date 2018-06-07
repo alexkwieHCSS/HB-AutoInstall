@@ -33,5 +33,22 @@ namespace HB_INSTALL_AUTO
             // Your recording specific initialization code goes here.
         }
 
+        public void CheckIfTXTFIleExists(string path)
+        {
+            
+        	string sqlDriver = path + "SQL Drivers Readme5.txt";
+        	if(System.IO.File.Exists(sqlDriver))
+        	{
+				
+				Report.Info("Passed",sqlDriver);
+        	} else{
+
+					Report.Info("Fails", sqlDriver);
+        	   	   }
+
+           
+        
+        }
+
     }
 }

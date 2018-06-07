@@ -42,6 +42,10 @@ namespace HB_INSTALL_AUTO
         public ValidateHBAboutHB()
         {
             YearVersion = "2018.1";
+            RegistrationName = "Test Company 999";
+            SystemType = "Advanced";
+            Licenses = "100";
+            InstallType = "Multiuser";
         }
 
         /// <summary>
@@ -53,6 +57,54 @@ namespace HB_INSTALL_AUTO
         }
 
 #region Variables
+
+        string _RegistrationName;
+
+        /// <summary>
+        /// Gets or sets the value of variable RegistrationName.
+        /// </summary>
+        [TestVariable("fd9a158d-db82-43f9-adef-d7560b4aefd9")]
+        public string RegistrationName
+        {
+            get { return _RegistrationName; }
+            set { _RegistrationName = value; }
+        }
+
+        string _SystemType;
+
+        /// <summary>
+        /// Gets or sets the value of variable SystemType.
+        /// </summary>
+        [TestVariable("baf4656d-c96b-4cd0-b790-ecf29039a99c")]
+        public string SystemType
+        {
+            get { return _SystemType; }
+            set { _SystemType = value; }
+        }
+
+        string _Licenses;
+
+        /// <summary>
+        /// Gets or sets the value of variable Licenses.
+        /// </summary>
+        [TestVariable("89cc8f80-fe26-4a5d-84e5-cfb65d07b8af")]
+        public string Licenses
+        {
+            get { return _Licenses; }
+            set { _Licenses = value; }
+        }
+
+        string _InstallType;
+
+        /// <summary>
+        /// Gets or sets the value of variable InstallType.
+        /// </summary>
+        [TestVariable("3b4745cb-9a75-48e2-9335-37686931ea58")]
+        public string InstallType
+        {
+            get { return _InstallType; }
+            set { _InstallType = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable YearVersion.
@@ -104,15 +156,39 @@ namespace HB_INSTALL_AUTO
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfo' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfoInfo, new RecordItemIndex(3));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$RegistrationName) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.CompanyNameTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CompanyNameTextLineInfo, new RecordItemIndex(3));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CompanyNameTextLineInfo, "Text", new Regex(RegistrationName), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$SystemType) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, new RecordItemIndex(4));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.HBTextLineInfo, "Text", new Regex(SystemType), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$InstallType) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLineInfo, new RecordItemIndex(5));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLineInfo, "Text", new Regex(InstallType), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~$Licenses) on item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLine'.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLineInfo, new RecordItemIndex(6));
+                Validate.AttributeRegex(repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.LicenseAmountTextLineInfo, "Text", new Regex(Licenses), null, false);
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfo' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfoInfo, new RecordItemIndex(7));
             repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.SystemInfo.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButtonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButtonInfo, new RecordItemIndex(8));
             repo.HBPopupScreens.FromHelpButtons.SystemInformationAboutHB.CloseButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButtonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButtonInfo, new RecordItemIndex(9));
             repo.HBPopupScreens.FromHelpButtons.AboutHeavyBid.CloseButton.Click();
             Delay.Milliseconds(200);
             

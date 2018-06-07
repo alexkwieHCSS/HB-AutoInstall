@@ -30,12 +30,22 @@ rxversion="8.1">
 		<var
 		id="d65c4ab9-9643-45fd-aeae-c34fd340a0e4"
 		name="RegistrationCode">
-			01af8e32-c236-435f-8c95-2518c339b7c0
+			01AF8E32-C236-435F-8C95-2518C339B7C0
 		</var>
 		<var
 		id="661975a3-4416-4542-b175-b94e52478a5b"
 		name="SystemType">
 			Advanced Multiuser
+		</var>
+		<var
+		id="85c7ac2e-ca25-4b16-a0da-2e05c3784f87"
+		name="RegistrationName">
+			Test Company
+		</var>
+		<var
+		id="b8eff3fd-81d6-45c4-9b13-57f9fbd543de"
+		name="Licenses">
+			100
 		</var>
 	</variables>
 	<recorditems>
@@ -767,6 +777,33 @@ loooAMUUtFACUUtFACUuKKKYgxRRS0AFGKKWgQlLiiimAUUtFACUtFFMQtFFFAj/2Q==
 		action="AttributeRegex"
 		enabled="True"
 		optional="True"
+		searchpropertyid="c5274e07-fb6c-49c5-a2ee-2ced712b7aa0">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RegistrationName">
+				</binding>
+			</bindings>
+			<info
+			id="96899ccf-2282-4aa2-8c1a-9eea5097db81"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']
+				</path>
+			</info>
+			<matchname>
+				Windowtext
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="True"
 		searchpropertyid="9d60b40a-062b-48ac-a251-529a21fcb13a">
 			<comment>
 			</comment>
@@ -784,7 +821,34 @@ loooAMUUtFACUUtFACUuKKKYgxRRS0AFGKKWgQlLiiimAUUtFACUtFFMQtFFFAj/2Q==
 				</path>
 			</info>
 			<matchname>
-				Text
+				Windowtext
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="True"
+		searchpropertyid="9d60b40a-062b-48ac-a251-529a21fcb13a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Licenses">
+				</binding>
+			</bindings>
+			<info
+			id="ee67e64e-3355-4d73-b6c8-c547ae147076"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='96']/element[@class='DFentry']
+				</path>
+			</info>
+			<matchname>
+				Windowtext
 			</matchname>
 			<matchvalue>
 				yourtext

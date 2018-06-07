@@ -285,7 +285,7 @@ rxversion="8.1">
 				name="HelpTab"
 				refimgid="744188eb-6029-489d-99f3-f2cbe8a8ea58"
 				searchtimeout="30000ms">
-					/form[@title~'HB']///toolbar/tabpagelist/tabpage[@title~'Help']
+					/form[@title~'HB']//toolbar/tabpagelist/tabpage[@title~'Help']
 				</item>
 				<item
 				addcaps="tabpage,accessible"
@@ -303,14 +303,6 @@ rxversion="8.1">
 			isrooted="False"
 			name="Buttons"
 			searchtimeout="0ms">
-				<item
-				capname="button"
-				id="0cde0962-f6ba-4e5e-99c0-dd98a17c0783"
-				name="HCSSIcon"
-				refimgid="43587b24-e2f1-467f-bc4f-e1d80bdb3ffc"
-				searchtimeout="30000ms">
-					/form[@title~'HB']///toolbar/button[@accessiblename~'App']
-				</item>
 				<folder
 				capname="unknown"
 				id="0e0bf963-cb1b-4e98-94c2-de7b4b360712"
@@ -472,6 +464,13 @@ rxversion="8.1">
 					searchtimeout="30000ms">
 						/form[@title~'HB']///toolbar/button[@text~'About HeavyBid']
 					</item>
+					<item
+					capname="button"
+					id="16ed6d20-f6c5-402e-9751-e85241ad596c"
+					name="WelcomeScreenButton"
+					searchtimeout="30000ms">
+						/form[@title~'HB']///toolbar/button[@text~'Welcome Screen']
+					</item>
 				</folder>
 				<folder
 				capname="unknown"
@@ -489,6 +488,14 @@ rxversion="8.1">
 					</item>
 				</folder>
 			</folder>
+			<item
+			capname="button"
+			id="0cde0962-f6ba-4e5e-99c0-dd98a17c0783"
+			name="HCSSIcon"
+			refimgid="43587b24-e2f1-467f-bc4f-e1d80bdb3ffc"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@controlid='59419']/element[@instance='0']/toolbar[2]/button[@accessiblename='App']
+			</item>
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -508,6 +515,26 @@ rxversion="8.1">
 			refpath="/form[@title='HB 2018.1']/element[@controlid='59419']/element[@class='XTPToolBar' and @instance='0']/toolbar[1]"
 			searchtimeout="30000ms">
 				/form[@title~'HB']/element[@controlid='59419']/element[@instance='0']/toolbar[1]
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7c8fd6d8-5724-4923-8055-8fefbd10509d"
+			name="ButtonApp"
+			refimgid="3e0c7e0e-341c-4108-8668-967f9a3b1bd4"
+			refpath="/form[@title='HB 2018.1']/element[@controlid='59419']/element[@class='XTPToolBar' and @instance='0']/toolbar[1]/button[@accessiblename='App']"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@controlid='59419']/element[2]/toolbar[1]/button[@accessiblename='App']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="745bb38a-267d-46de-8c24-35570df60abe"
+			name="Element3244"
+			refimgid="243c5a4a-0bc9-49c9-a098-09f886b40e4f"
+			refpath="/form[@title='HB 2018.1']/element[@controlid='3244']"
+			searchtimeout="30000ms">
+				/form[@title~'HB']/element[@controlid='3244']
 			</item>
 			<basepath>
 				/form[@title~'HB']
@@ -891,6 +918,20 @@ FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
 			name="WrongRegistrationCodePopupTextbox"
 			searchtimeout="30000ms">
 				/form[@title~'HeavyBid Registration']/text[@accessiblerole='StaticText']
+			</item>
+			<item
+			capname="unknown"
+			id="96899ccf-2282-4aa2-8c1a-9eea5097db81"
+			name="CompanyNameTextbox"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='92']/element[@class='DFentry']
+			</item>
+			<item
+			capname="unknown"
+			id="ee67e64e-3355-4d73-b6c8-c547ae147076"
+			name="LicenseTextbox"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid Registration']/element[@controlid='91']/element[@controlid='96']/element[@class='DFentry']
 			</item>
 			<basepath>
 				/form[@title~'HeavyBid Registration']
@@ -1572,6 +1613,7 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 					capname="text"
 					id="78abad0f-0752-4e53-a093-0f0c8446d2b4"
 					name="HBTextLine"
+					refimgid="a2c71247-b862-4507-a4b8-0e8171ba1ac8"
 					searchtimeout="30000ms">
 						/form[@title~'About HeavyBid']//text[@text~'HeavyBid']
 					</item>
@@ -1591,6 +1633,20 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 					refimgid="1fc15ad7-8878-4b42-a74b-fe4446bc05ed"
 					searchtimeout="30000ms">
 						/form[@title~'About HeavyBid']/.//button[@text~'Close']
+					</item>
+					<item
+					capname="text"
+					id="8f3121ee-6fcb-490a-b949-1f58060118cb"
+					name="CompanyNameTextLine"
+					searchtimeout="30000ms">
+						/form[@title~'About HeavyBid']//text[@text~'Licensed to']
+					</item>
+					<item
+					capname="text"
+					id="0d6dfa93-c3d6-4fbd-8cd8-a4a0b9a27705"
+					name="LicenseAmountTextLine"
+					searchtimeout="30000ms">
+						/form[@title~'About HeavyBid']//text[@text~'registered users']
 					</item>
 					<basepath>
 						/form[@title~'About HeavyBid']
@@ -1653,6 +1709,13 @@ qNhKiGrDlHy7OPrv7KSNu461qwo+9p86xIXkOeufJi0SyQ8zjcog1KF4oQAAAABJRU5ErkJggg==
 						refimgid="06e7e707-9298-4820-8b21-91e83d6e76dd"
 						searchtimeout="30000ms">
 							/form[@title~'Welcome' and @title~'HeavyBid']/element[7]/element[@class='DFbutton']/?/button[@accessiblerole='PushButton']
+						</item>
+						<item
+						capname="button"
+						id="f23e9136-b37a-48de-9bdd-008f57dcfbe4"
+						name="CloseButton"
+						searchtimeout="30000ms">
+							/form[@title~'Welcome' and @title~'HeavyBid']/?/button[@accessiblename='Close']
 						</item>
 					</folder>
 					<item

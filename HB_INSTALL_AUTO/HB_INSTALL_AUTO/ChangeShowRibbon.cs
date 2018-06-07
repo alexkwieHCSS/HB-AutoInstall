@@ -79,25 +79,32 @@ namespace HB_INSTALL_AUTO
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.HCSSIcon' at Center.", repo.HeavyBidApp.Buttons.HCSSIconInfo, new RecordItemIndex(0));
-            repo.HeavyBidApp.Buttons.HCSSIcon.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CloseButton' at Center.", repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CloseButtonInfo, new RecordItemIndex(0));
+            repo.HBPopupScreens.FromHelpButtons.WelcomeToHeavyBidScreen.Buttons.CloseButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (Checked!='Show Ribbon Bar') on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(1));
-            Validate.AttributeNotEqual(repo.HBButtonDropdownOptions.ShowRibbonBarInfo, "Checked", "Show Ribbon Bar");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.ShowRibbonBar' at Center.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(2));
-            repo.HBButtonDropdownOptions.ShowRibbonBar.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.HCSSIcon' at Center.", repo.HeavyBidApp.HCSSIconInfo, new RecordItemIndex(2));
+            //repo.HeavyBidApp.HCSSIcon.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.Buttons.HCSSIcon' at Center.", repo.HeavyBidApp.Buttons.HCSSIconInfo, new RecordItemIndex(3));
-            repo.HeavyBidApp.Buttons.HCSSIcon.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (Checked!='Show Ribbon Bar') on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(3));
+            //Validate.AttributeNotEqual(repo.HBButtonDropdownOptions.ShowRibbonBarInfo, "Checked", "Show Ribbon Bar");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.HBButtonDropdownOptions.ShowRibbonBarInfo);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HBButtonDropdownOptions.ShowRibbonBar' at Center.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(4));
+            //repo.HBButtonDropdownOptions.ShowRibbonBar.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HeavyBidApp.HCSSIcon' at Center.", repo.HeavyBidApp.HCSSIconInfo, new RecordItemIndex(5));
+            //repo.HeavyBidApp.HCSSIcon.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HBButtonDropdownOptions.ShowRibbonBar'.", repo.HBButtonDropdownOptions.ShowRibbonBarInfo, new RecordItemIndex(6));
+            //Validate.Exists(repo.HBButtonDropdownOptions.ShowRibbonBarInfo);
+            //Delay.Milliseconds(0);
             
         }
 
